@@ -687,3 +687,49 @@
 [2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [asyncmake]: success
 [2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [pretix-sofort]: success
 [2023-05-29 01:31:51] INFO root fetch - main [MainThread]: Store serial: [18284139]
+[2023-05-29 01:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284139]
+[2023-05-29 01:36:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pretix-quickpay
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-idaice
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nounseed
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aij
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: themachinethatgoesping
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rising-plugin
+[2023-05-29 01:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deepof
+[2023-05-29 01:36:59] INFO root fetch - processPackages [aij]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-05-29 01:36:59] INFO root fetch - processPackages [nounseed]: New version: [1.0.1] Old Version: [1.0]
+[2023-05-29 01:36:59] INFO root fetch - processPackages [themachinethatgoesping]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-29 01:36:59] INFO root fetch - processPackages [pretix-quickpay]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 01:36:59] INFO root fetch - processPackages [honeybee-idaice]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 01:36:59] INFO root fetch - processPackages [deepof]: New version: [0.4.5] Old Version: [0.4]
+[2023-05-29 01:36:59] INFO root fetch - processPackages [rising-plugin]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 01:37:00] INFO root fetch - processPackages [nounseed]: Downloading https://files.pythonhosted.org/packages/3d/37/fbf0fda6ce44e78937a0de01ca53bb1aaf2bb8d8c23ec8822d9eedb5cb90/nounseed-1.0.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [pretix-quickpay]: Downloading https://files.pythonhosted.org/packages/ef/d6/3e58ad9bee8fde9864ea9098049bc0481310d0584acfa7573308a06da291/pretix-quickpay-1.1.0.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/da/24/d98ac111ae65488b156028a032149592b7dbbeeedef04c804844eb3ee7fd/aij-1.2.0.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [themachinethatgoesping]: Downloading https://files.pythonhosted.org/packages/41/86/59fbfb9c94764077e4d5f0a685f969526b626c456da17df7ec9e30b477f9/themachinethatgoesping-0.6.8-cp39-cp39-win_amd64.whl
+[2023-05-29 01:37:00] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/ca/2d/e5167e32080bed589ef1fcafe47a832e9c9c7422a122de4984ce075f807e/rising_plugin-0.1.0.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [honeybee-idaice]: Downloading https://files.pythonhosted.org/packages/71/ac/ecf915c30d9e465508f5751b0f8087a4fd8ab4f8836f0ab8d109b485ae03/honeybee-idaice-0.1.2.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [deepof]: Downloading https://files.pythonhosted.org/packages/3d/a5/b688ff9a3781e4084f4c08b6f566e17c366aa0ba03da84dcf30e685d74fc/deepof-0.4.5.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-29 01:37:00] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.1.5.tar.gz tmp/aij-1.2.0.tar.gz --markdown 20230529/a/aij/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 01:37:00] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-29 01:37:00] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.9.tar.gz tmp/rising_plugin-0.1.0.tar.gz --markdown 20230529/r/rising-plugin/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 01:37:00] INFO root fetch - processPackages [nounseed]: Downloading https://files.pythonhosted.org/packages/24/5b/e3e21f0a1bfafcee71b49d1d9ab061284e261ccfc8182adecfc576b345dd/nounseed-1.0.1.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [honeybee-idaice]: executing diffoscope
+[2023-05-29 01:37:00] INFO root fetch - processPackages [honeybee-idaice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-idaice-0.1.1.tar.gz tmp/honeybee-idaice-0.1.2.tar.gz --markdown 20230529/h/honeybee-idaice/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 01:37:00] INFO root fetch - processPackages [pretix-quickpay]: Downloading https://files.pythonhosted.org/packages/90/05/f87e0f9fcfcf85bc9fad752357f7c00c363995ca8924f1488a9814d5b45b/pretix-quickpay-1.1.1.tar.gz
+[2023-05-29 01:37:00] INFO root fetch - processPackages [pretix-quickpay]: executing diffoscope
+[2023-05-29 01:37:00] INFO root fetch - processPackages [pretix-quickpay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-quickpay-1.1.0.tar.gz tmp/pretix-quickpay-1.1.1.tar.gz --markdown 20230529/p/pretix-quickpay/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 01:37:00] WARNING root fetch - processPackages [themachinethatgoesping]: Skipping package: exceeds size limit 13352847>=10485760
+[2023-05-29 01:37:00] INFO root fetch - main [MainThread]: End processing [themachinethatgoesping] error
+[2023-05-29 01:37:00] INFO root fetch - processPackages [nounseed]: executing diffoscope
+[2023-05-29 01:37:00] INFO root fetch - processPackages [nounseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nounseed-1.0.tar.gz tmp/nounseed-1.0.1.tar.gz --markdown 20230529/n/nounseed/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 01:37:01] INFO root fetch - processPackages [deepof]: executing diffoscope
+[2023-05-29 01:37:01] INFO root fetch - processPackages [deepof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepof-0.4.tar.gz tmp/deepof-0.4.5.tar.gz --markdown 20230529/d/deepof/0.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-29 01:37:01] INFO root fetch - main [MainThread]: End processing [honeybee-idaice]: success
+[2023-05-29 01:37:01] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-29 01:37:01] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-29 01:37:01] INFO root fetch - main [MainThread]: End processing [nounseed]: success
+[2023-05-29 01:37:02] INFO root fetch - main [MainThread]: End processing [pretix-quickpay]: success
+[2023-05-29 01:37:03] INFO root fetch - main [MainThread]: End processing [deepof]: success
+[2023-05-29 01:37:03] INFO root fetch - main [MainThread]: Store serial: [18284161]
