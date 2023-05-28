@@ -439,3 +439,54 @@
 [2023-05-29 01:09:35] INFO root fetch - main [MainThread]: End processing [pretix-mollie]: success
 [2023-05-29 01:10:22] INFO root fetch - main [MainThread]: End processing [pretix-bitpay]: success
 [2023-05-29 01:10:22] INFO root fetch - main [MainThread]: Store serial: [18284020]
+[2023-05-29 01:15:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284020]
+[2023-05-29 01:15:31] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Twitch-Edog0049a
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretix-oppwa
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: klu-test-pipeline
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commutauto
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Twitch-Edog0049a
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyHP3577A
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: optimal-loc
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: refaci
+[2023-05-29 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edaplore
+[2023-05-29 01:15:31] INFO root fetch - processPackages [Twitch-Edog0049a]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-29 01:15:31] INFO root fetch - processPackages [optimal-loc]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 01:15:31] WARNING root fetch - processPackages [PyHP3577A]: Skipping, unable to determine old version
+[2023-05-29 01:15:31] INFO root fetch - main [MainThread]: End processing [PyHP3577A] error
+[2023-05-29 01:15:31] INFO root fetch - processPackages [pretix-oppwa]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 01:15:31] INFO root fetch - processPackages [edaplore]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-29 01:15:31] INFO root fetch - processPackages [commutauto]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-29 01:15:31] INFO root fetch - processPackages [Twitch-Edog0049a]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-29 01:15:31] ERROR root fetch - processPackages [klu-test-pipeline]: Unable to get metadata: No such project 'klu-test-pipeline'
+[2023-05-29 01:15:31] INFO root fetch - main [MainThread]: End processing [klu-test-pipeline] error
+[2023-05-29 01:15:31] WARNING root fetch - processPackages [refaci]: Skipping, unable to determine old version
+[2023-05-29 01:15:31] INFO root fetch - main [MainThread]: End processing [refaci] error
+[2023-05-29 01:15:31] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/8d/d8/fc27e4e0c439d06f5ebd062e40b93473abe8ea4dde101313709015961e69/Twitch_Edog0049a-0.0.33.tar.gz
+[2023-05-29 01:15:31] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/8d/d8/fc27e4e0c439d06f5ebd062e40b93473abe8ea4dde101313709015961e69/Twitch_Edog0049a-0.0.33.tar.gz
+[2023-05-29 01:15:31] INFO root fetch - processPackages [optimal-loc]: Downloading https://files.pythonhosted.org/packages/28/8f/ce1fa18e44e3cfe925b7172b75989c78fe59e627b1176ee8a4a1629b38ce/optimal_loc-0.1.1.tar.gz
+[2023-05-29 01:15:31] INFO root fetch - processPackages [pretix-oppwa]: Downloading https://files.pythonhosted.org/packages/e2/74/b9d8e068d748cb16ded0b37fb9340b0068cd715e4351315c90220f20d419/pretix-oppwa-1.1.1.tar.gz
+[2023-05-29 01:15:32] INFO root fetch - processPackages [commutauto]: Downloading https://files.pythonhosted.org/packages/d8/33/f2a4a4fe23515712ed126db6cd28e1995f2f80ce801186cf4228a6c9acfa/commutauto-0.1.1.tar.gz
+[2023-05-29 01:15:32] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 01:15:32] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.6-py3-none-any.whl.zip tmp/edaplore-0.3.7-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-29 01:15:32] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-29 01:15:32] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.1.0.tar.gz tmp/optimal_loc-0.1.1.tar.gz --markdown 20230529/o/optimal-loc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 01:15:32] INFO root fetch - processPackages [pretix-oppwa]: Downloading https://files.pythonhosted.org/packages/6a/29/1597eeb48634b26953512709477a357665e830a3eb4a1c005af902f5daa7/pretix-oppwa-1.1.2.tar.gz
+[2023-05-29 01:15:32] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/49/f3/f145d32e8cf79a9226048f5431589bf866244bbbee37639b0bcf409b6eb5/Twitch_Edog0049a-0.0.34.tar.gz
+[2023-05-29 01:15:32] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/49/f3/f145d32e8cf79a9226048f5431589bf866244bbbee37639b0bcf409b6eb5/Twitch_Edog0049a-0.0.34.tar.gz
+[2023-05-29 01:15:32] INFO root fetch - processPackages [commutauto]: Downloading https://files.pythonhosted.org/packages/44/37/3efdf3ec35b5d2a9061a988b5bda69ac7977d47ceb61a5288d3d61017554/commutauto-0.2.0.tar.gz
+[2023-05-29 01:15:32] INFO root fetch - processPackages [pretix-oppwa]: executing diffoscope
+[2023-05-29 01:15:32] INFO root fetch - processPackages [pretix-oppwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-oppwa-1.1.1.tar.gz tmp/pretix-oppwa-1.1.2.tar.gz --markdown 20230529/p/pretix-oppwa/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 01:15:32] INFO root fetch - processPackages [commutauto]: executing diffoscope
+[2023-05-29 01:15:32] INFO root fetch - processPackages [commutauto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commutauto-0.1.1.tar.gz tmp/commutauto-0.2.0.tar.gz --markdown 20230529/c/commutauto/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 01:15:32] INFO root fetch - processPackages [Twitch-Edog0049a]: executing diffoscope
+[2023-05-29 01:15:32] INFO root fetch - processPackages [Twitch-Edog0049a]: executing diffoscope
+[2023-05-29 01:15:32] INFO root fetch - processPackages [Twitch-Edog0049a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Twitch_Edog0049a-0.0.33.tar.gz tmp/Twitch_Edog0049a-0.0.34.tar.gz --markdown 20230529/T/Twitch-Edog0049a/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-05-29 01:15:32] INFO root fetch - processPackages [Twitch-Edog0049a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Twitch_Edog0049a-0.0.33.tar.gz tmp/Twitch_Edog0049a-0.0.34.tar.gz --markdown 20230529/T/Twitch-Edog0049a/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: End processing [commutauto]: success
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a]: success
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: End processing [pretix-oppwa]: success
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a]: success
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-29 01:15:33] INFO root fetch - main [MainThread]: Store serial: [18284052]
