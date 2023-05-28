@@ -209,3 +209,24 @@
 [2023-05-29 00:31:57] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
 [2023-05-29 00:32:44] INFO root fetch - main [MainThread]: End processing [esphome]: success
 [2023-05-29 00:32:44] INFO root fetch - main [MainThread]: Store serial: [18283889]
+[2023-05-29 00:37:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283889]
+[2023-05-29 00:37:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-29 00:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matchmeta
+[2023-05-29 00:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyperdrive
+[2023-05-29 00:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coconut-develop
+[2023-05-29 00:37:52] INFO root fetch - processPackages [matchmeta]: New version: [2023.5.29] Old Version: [2023.5.28]
+[2023-05-29 00:37:52] INFO root fetch - processPackages [hyperdrive]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-29 00:37:52] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev9] Old Version: [3.0.1.post0.dev8]
+[2023-05-29 00:37:52] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-29 00:37:52] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev8.tar.gz tmp/coconut-develop-3.0.1.post0.dev9.tar.gz --markdown 20230529/c/coconut-develop/3.0.1.post0.dev8-3.0.1.post0.dev9/diff.md --exclude *.pyd
+[2023-05-29 00:37:52] INFO root fetch - processPackages [hyperdrive]: Downloading https://files.pythonhosted.org/packages/38/15/4781539e3471340b6477c42f42eea56c1525464cd3eadad93b22eb81e50d/hyperdrive-1.9.5.tar.gz
+[2023-05-29 00:37:53] INFO root fetch - processPackages [matchmeta]: Downloading https://files.pythonhosted.org/packages/d6/ed/0b6a4747c7eeca3f0dc331906d6ac9cfa48c56824c1d245f241c875f0867/matchmeta-2023.5.29.tar.gz
+[2023-05-29 00:37:53] INFO root fetch - processPackages [hyperdrive]: Downloading https://files.pythonhosted.org/packages/13/86/8d620021a02e34e1bb50f6af84b59685e4f9f930093918de1c6a204c9f39/hyperdrive-1.9.6.tar.gz
+[2023-05-29 00:37:53] INFO root fetch - processPackages [matchmeta]: executing diffoscope
+[2023-05-29 00:37:53] INFO root fetch - processPackages [matchmeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmeta-2023.5.28.tar.gz tmp/matchmeta-2023.5.29.tar.gz --markdown 20230529/m/matchmeta/2023.5.28-2023.5.29/diff.md --exclude *.pyd
+[2023-05-29 00:37:53] INFO root fetch - processPackages [hyperdrive]: executing diffoscope
+[2023-05-29 00:37:53] INFO root fetch - processPackages [hyperdrive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperdrive-1.9.5.tar.gz tmp/hyperdrive-1.9.6.tar.gz --markdown 20230529/h/hyperdrive/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-29 00:37:54] INFO root fetch - main [MainThread]: End processing [matchmeta]: success
+[2023-05-29 00:37:54] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-29 00:37:54] INFO root fetch - main [MainThread]: End processing [hyperdrive]: success
+[2023-05-29 00:37:54] INFO root fetch - main [MainThread]: Store serial: [18283898]
