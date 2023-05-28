@@ -557,3 +557,76 @@
 [2023-05-29 01:20:46] INFO root fetch - main [MainThread]: End processing [deepof]: success
 [2023-05-29 01:21:24] INFO root fetch - main [MainThread]: End processing [checkov3]: success
 [2023-05-29 01:21:24] INFO root fetch - main [MainThread]: Store serial: [18284080]
+[2023-05-29 01:26:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284080]
+[2023-05-29 01:26:34] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shenko
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cardstock
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: optimal-loc
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qute-style
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfsd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aimped
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: parsetypes
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nounseed
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edaplore
+[2023-05-29 01:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: captif-cpx-config
+[2023-05-29 01:26:34] INFO root fetch - processPackages [shenko]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [cardstock]: New version: [0.99.3] Old Version: [0.99.2]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [optimal-loc]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [qute-style]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [kfsd]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 01:26:34] WARNING root fetch - processPackages [nounseed]: Skipping, unable to determine old version
+[2023-05-29 01:26:34] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [nounseed]: Start processing: dvc-data
+[2023-05-29 01:26:34] INFO root fetch - processPackages [captif-cpx-config]: New version: [0.2] Old Version: [0.1]
+[2023-05-29 01:26:34] INFO root fetch - main [MainThread]: End processing [nounseed] error
+[2023-05-29 01:26:34] INFO root fetch - processPackages [parsetypes]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [aimped]: New version: [0.1.43] Old Version: [0.1.42]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [dvc-data]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 01:26:34] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [qute-style]: Downloading https://files.pythonhosted.org/packages/19/ef/745ce73129af6ace05d81ef079f7defbf8b013313618736ad94276077143/qute_style-1.0.3.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [cardstock]: Downloading https://files.pythonhosted.org/packages/6c/d6/cf680fa5bb0e55ce5b19b3098c3bda80a0fc6fbf1539a3d23985bc2087b5/cardstock-0.99.2.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [captif-cpx-config]: Downloading https://files.pythonhosted.org/packages/81/7f/29464c63cd29fd7c51b6908a81f21be8792d87f1fa72178ae895a0861894/captif_cpx_config-0.1.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [optimal-loc]: Downloading https://files.pythonhosted.org/packages/53/22/b90d7e844e4059540977b0627fff16a4f59ca4aeb5746f66e196a9dd7953/optimal_loc-0.1.2.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [aimped]: Downloading https://files.pythonhosted.org/packages/1b/7f/f123f95ed91291b86d5afcc4483c90a3ddbdafa5b16c3a736a9fc08e736b/aimped-0.1.42.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/fa/51/33949e428d87d9e9d72e0b2d0eca695328be2ca312e37bc4acd581283a48/parsetypes-0.2.4.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.1.1.tar.gz tmp/optimal_loc-0.1.2.tar.gz --markdown 20230529/o/optimal-loc/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [dvc-data]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [dvc-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-data-0.8.0.tar.gz tmp/dvc-data-0.9.0.tar.gz --markdown 20230529/d/dvc-data/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [shenko]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [shenko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shenko-0.1.7.tar.gz tmp/shenko-0.1.8-py2.py3-none-any.whl.zip --markdown 20230529/s/shenko/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [kfsd]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [aimped]: Downloading https://files.pythonhosted.org/packages/7b/ed/92a58be57743b25d30154e0cee2bed7ab754073ba1974ddf5ca6277cf7f0/aimped-0.1.43.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [kfsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsd-0.0.8.tar.gz tmp/kfsd-0.0.9.tar.gz --markdown 20230529/k/kfsd/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.2.3.tar.gz tmp/parsetypes-0.2.4.tar.gz --markdown 20230529/p/parsetypes/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [cardstock]: Downloading https://files.pythonhosted.org/packages/bb/53/9a70ee3629c4b1b32cc50d47548ad0aef72389189365ffe06b101338ef58/cardstock-0.99.3.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [captif-cpx-config]: Downloading https://files.pythonhosted.org/packages/b8/ca/ffae3f092871693c0e5162e268823aa731e9cb81af019cfc4d1234a343cf/captif_cpx_config-0.2.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [aimped]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [aimped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimped-0.1.42.tar.gz tmp/aimped-0.1.43.tar.gz --markdown 20230529/a/aimped/0.1.42-0.1.43/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [qute-style]: Downloading https://files.pythonhosted.org/packages/57/f5/97924f40a7f596e7bb56141e0fd7faaa822e2cfb9e142479d2a655457d81/qute_style-1.0.4.tar.gz
+[2023-05-29 01:26:34] INFO root fetch - processPackages [captif-cpx-config]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [captif-cpx-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/captif_cpx_config-0.1.tar.gz tmp/captif_cpx_config-0.2.tar.gz --markdown 20230529/c/captif-cpx-config/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [cardstock]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [cardstock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardstock-0.99.2.tar.gz tmp/cardstock-0.99.3.tar.gz --markdown 20230529/c/cardstock/0.99.2-0.99.3/diff.md --exclude *.pyd
+[2023-05-29 01:26:34] INFO root fetch - processPackages [qute-style]: executing diffoscope
+[2023-05-29 01:26:34] INFO root fetch - processPackages [qute-style]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qute_style-1.0.3.tar.gz tmp/qute_style-1.0.4.tar.gz --markdown 20230529/q/qute-style/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 01:26:35] INFO root fetch - processPackages [edaplore]: Start processing: pretix-sepadebit
+[2023-05-29 01:26:35] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 01:26:35] INFO root fetch - processPackages [pretix-sepadebit]: New version: [2.4.1] Old Version: [2.4.0.post1]
+[2023-05-29 01:26:35] INFO root fetch - processPackages [pretix-sepadebit]: Downloading https://files.pythonhosted.org/packages/12/86/bad49e585a2d27457a85b22275383a2b2f5edf9f236f65d08012294b14e9/pretix-sepadebit-2.4.0.post1.tar.gz
+[2023-05-29 01:26:36] INFO root fetch - main [MainThread]: End processing [shenko]: success
+[2023-05-29 01:26:36] INFO root fetch - processPackages [pretix-sepadebit]: Downloading https://files.pythonhosted.org/packages/74/68/585e0bdbcd06ed408b7d9910288e1a62ac7d4803b64affb24a0bc0edd701/pretix-sepadebit-2.4.1.tar.gz
+[2023-05-29 01:26:36] INFO root fetch - processPackages [pretix-sepadebit]: executing diffoscope
+[2023-05-29 01:26:36] INFO root fetch - processPackages [pretix-sepadebit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-sepadebit-2.4.0.post1.tar.gz tmp/pretix-sepadebit-2.4.1.tar.gz --markdown 20230529/p/pretix-sepadebit/2.4.0.post1-2.4.1/diff.md --exclude *.pyd
+[2023-05-29 01:26:36] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-29 01:26:36] INFO root fetch - main [MainThread]: End processing [captif-cpx-config]: success
+[2023-05-29 01:26:36] INFO root fetch - main [MainThread]: End processing [aimped]: success
+[2023-05-29 01:26:36] INFO root fetch - main [MainThread]: End processing [kfsd]: success
+[2023-05-29 01:26:37] INFO root fetch - main [MainThread]: End processing [dvc-data]: success
+[2023-05-29 01:26:37] INFO root fetch - main [MainThread]: End processing [qute-style]: success
+[2023-05-29 01:26:37] INFO root fetch - main [MainThread]: End processing [cardstock]: success
+[2023-05-29 01:26:37] INFO root fetch - main [MainThread]: End processing [pretix-sepadebit]: success
+[2023-05-29 01:26:40] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-29 01:26:40] INFO root fetch - main [MainThread]: Store serial: [18284116]
