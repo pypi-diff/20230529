@@ -310,3 +310,24 @@
 [2023-05-29 00:53:27] INFO root fetch - main [MainThread]: End processing [twscrape]: success
 [2023-05-29 00:54:00] INFO root fetch - main [MainThread]: End processing [zen-dash]: success
 [2023-05-29 00:54:00] INFO root fetch - main [MainThread]: Store serial: [18283949]
+[2023-05-29 00:59:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283949]
+[2023-05-29 00:59:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-29 00:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edaplore
+[2023-05-29 00:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ma-fi
+[2023-05-29 00:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Twitch-Edog0049a
+[2023-05-29 00:59:10] INFO root fetch - processPackages [ma-fi]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-05-29 00:59:10] INFO root fetch - processPackages [Twitch-Edog0049a]: New version: [0.0.31] Old Version: [0.0.2]
+[2023-05-29 00:59:10] INFO root fetch - processPackages [edaplore]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-29 00:59:11] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/46/97/376eacda55435b91291d68ba255f79d9ff2d08c0124fc5335fbae70bbfa5/Twitch_Edog0049a-0.0.31.tar.gz
+[2023-05-29 00:59:11] INFO root fetch - processPackages [Twitch-Edog0049a]: executing diffoscope
+[2023-05-29 00:59:11] INFO root fetch - processPackages [Twitch-Edog0049a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Twitch_Edog0049a-0.0.2.tar.gz tmp/Twitch_Edog0049a-0.0.31.tar.gz --markdown 20230529/T/Twitch-Edog0049a/0.0.2-0.0.31/diff.md --exclude *.pyd
+[2023-05-29 00:59:11] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/92/9d/788148db161fcfb82cfae9f0dc7125ba8f6ca87157c73c33f44098da95ba/edaplore-0.3.7-py3-none-any.whl
+[2023-05-29 00:59:11] INFO root fetch - processPackages [ma-fi]: Downloading https://files.pythonhosted.org/packages/ce/1e/7d42656a1bc6555a6c161fd9bddb1afca57cc84a3ea027c1cadc104a65ca/ma_fi-0.1.4.tar.gz
+[2023-05-29 00:59:11] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 00:59:11] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.6-py3-none-any.whl.zip tmp/edaplore-0.3.7-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-29 00:59:11] INFO root fetch - processPackages [ma-fi]: executing diffoscope
+[2023-05-29 00:59:11] INFO root fetch - processPackages [ma-fi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ma_fi-0.1.2.tar.gz tmp/ma_fi-0.1.4.tar.gz --markdown 20230529/m/ma-fi/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 00:59:12] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 00:59:12] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a]: success
+[2023-05-29 00:59:12] INFO root fetch - main [MainThread]: End processing [ma-fi]: success
+[2023-05-29 00:59:12] INFO root fetch - main [MainThread]: Store serial: [18283961]
