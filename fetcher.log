@@ -113,3 +113,30 @@
 [2023-05-29 00:16:09] INFO root fetch - main [MainThread]: End processing [adbkit]: success
 [2023-05-29 00:16:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-29 00:16:24] INFO root fetch - main [MainThread]: Store serial: [18283850]
+[2023-05-29 00:21:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283850]
+[2023-05-29 00:21:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 00:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matchmeta
+[2023-05-29 00:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edaplore
+[2023-05-29 00:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psychicapi
+[2023-05-29 00:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: static-frame
+[2023-05-29 00:21:32] INFO root fetch - processPackages [edaplore]: New version: [0.3.1] Old Version: [0.2.3]
+[2023-05-29 00:21:32] INFO root fetch - processPackages [matchmeta]: New version: [2023.5.28] Old Version: [2023.5.19]
+[2023-05-29 00:21:32] INFO root fetch - processPackages [psychicapi]: New version: [0.5] Old Version: [0.4]
+[2023-05-29 00:21:32] INFO root fetch - processPackages [static-frame]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-29 00:21:33] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/2a/4b/ac2855e7e2c198482a68ddd087c3e36821ae59cb59c30cd87f60c4c31a40/edaplore-0.3.1-py3-none-any.whl
+[2023-05-29 00:21:33] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 00:21:33] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.2.3.tar.gz tmp/edaplore-0.3.1-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.2.3-0.3.1/diff.md --exclude *.pyd
+[2023-05-29 00:21:33] INFO root fetch - processPackages [matchmeta]: Downloading https://files.pythonhosted.org/packages/a3/5f/829a02660cb226dd22a343fdba22e8aee8c280e54cd2b77743c038bf4e64/matchmeta-2023.5.28.tar.gz
+[2023-05-29 00:21:33] INFO root fetch - processPackages [psychicapi]: Downloading https://files.pythonhosted.org/packages/68/a3/358ab8443065ad1fadcbef8342f76ae180070c68aaf23c5a0c22ab58eb6b/psychicapi-0.5.tar.gz
+[2023-05-29 00:21:33] INFO root fetch - processPackages [static-frame]: Downloading https://files.pythonhosted.org/packages/03/f8/b3a4ce042dbbff6df44c59bb7c45c9c2a95a68c134799153aaeed37a04d8/static-frame-1.4.4.tar.gz
+[2023-05-29 00:21:33] INFO root fetch - processPackages [matchmeta]: executing diffoscope
+[2023-05-29 00:21:33] INFO root fetch - processPackages [matchmeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmeta-2023.5.19.tar.gz tmp/matchmeta-2023.5.28.tar.gz --markdown 20230529/m/matchmeta/2023.5.19-2023.5.28/diff.md --exclude *.pyd
+[2023-05-29 00:21:33] INFO root fetch - processPackages [psychicapi]: executing diffoscope
+[2023-05-29 00:21:33] INFO root fetch - processPackages [psychicapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychicapi-0.4.tar.gz tmp/psychicapi-0.5.tar.gz --markdown 20230529/p/psychicapi/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-29 00:21:33] INFO root fetch - processPackages [static-frame]: executing diffoscope
+[2023-05-29 00:21:33] INFO root fetch - processPackages [static-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/static-frame-1.4.3.tar.gz tmp/static-frame-1.4.4.tar.gz --markdown 20230529/s/static-frame/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-29 00:21:34] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 00:21:34] INFO root fetch - main [MainThread]: End processing [matchmeta]: success
+[2023-05-29 00:21:34] INFO root fetch - main [MainThread]: End processing [psychicapi]: success
+[2023-05-29 00:21:35] INFO root fetch - main [MainThread]: End processing [static-frame]: success
+[2023-05-29 00:21:35] INFO root fetch - main [MainThread]: Store serial: [18283861]
