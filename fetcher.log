@@ -230,3 +230,12 @@
 [2023-05-29 00:37:54] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-05-29 00:37:54] INFO root fetch - main [MainThread]: End processing [hyperdrive]: success
 [2023-05-29 00:37:54] INFO root fetch - main [MainThread]: Store serial: [18283898]
+[2023-05-29 00:42:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283898]
+[2023-05-29 00:43:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-29 00:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: install-pybci
+[2023-05-29 00:43:03] INFO root fetch - processPackages [install-pybci]: New version: [0.2.2b0] Old Version: [0.2.1b0]
+[2023-05-29 00:43:03] INFO root fetch - processPackages [install-pybci]: Downloading https://files.pythonhosted.org/packages/8f/37/164e6f48f1d2d851f6c665565102a1359e2e1f23b15da617787645fdb83c/install-pybci-0.2.2b0.tar.gz
+[2023-05-29 00:43:03] INFO root fetch - processPackages [install-pybci]: executing diffoscope
+[2023-05-29 00:43:03] INFO root fetch - processPackages [install-pybci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/install-pybci-0.2.1b0.tar.gz tmp/install-pybci-0.2.2b0.tar.gz --markdown 20230529/i/install-pybci/0.2.1b0-0.2.2b0/diff.md --exclude *.pyd
+[2023-05-29 00:43:05] INFO root fetch - main [MainThread]: End processing [install-pybci]: success
+[2023-05-29 00:43:05] INFO root fetch - main [MainThread]: Store serial: [18283901]
