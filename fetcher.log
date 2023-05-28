@@ -630,3 +630,60 @@
 [2023-05-29 01:26:37] INFO root fetch - main [MainThread]: End processing [pretix-sepadebit]: success
 [2023-05-29 01:26:40] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
 [2023-05-29 01:26:40] INFO root fetch - main [MainThread]: Store serial: [18284116]
+[2023-05-29 01:31:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284116]
+[2023-05-29 01:31:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbta-gtfs-sqlite
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edaplore
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asyncmake
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odin-pkg-rioatmadja2018
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: talk-codebase
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pretix-sofort
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Twitch-Edog0049a
+[2023-05-29 01:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pretix-stay22
+[2023-05-29 01:31:49] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [odin-pkg-rioatmadja2018]: New version: [0.1.1685316459] Old Version: [0.1.1682526602]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [mbta-gtfs-sqlite]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-stay22]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [Twitch-Edog0049a]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.19] Old Version: [0.1.18]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [asyncmake]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-sofort]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-29 01:31:49] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [mbta-gtfs-sqlite]: Downloading https://files.pythonhosted.org/packages/97/3a/e5e3156d383c19bec05362cb7d88b303640f0d8eafc5c0d0ddaf66722642/mbta-gtfs-sqlite-0.9.8.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [asyncmake]: Downloading https://files.pythonhosted.org/packages/e3/0d/64d2fb9f147915fdf1b03112d341b3933597259232bd3d98a42ac81a8af5/asyncmake-0.1.0.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-stay22]: Downloading https://files.pythonhosted.org/packages/b5/ac/fdd9bd12f1a5189a1d53a4cf2d1440ea5c9ae3ccd91053b4d36eadb586a8/pretix-stay22-1.2.0.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/06/0e/8e3d3612f6bfb7beb55dce89b9c4f0560d346300b8ad1aa090daddeaeefd/Twitch_Edog0049a-0.0.36.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-sofort]: Downloading https://files.pythonhosted.org/packages/7a/f6/d03276a1bfa145ca2bd415184cb5ea53991967e199beb57622e222fc2100/pretix-sofort-1.4.0.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/5d/0e/69932f1cff9888d04307c403f3c649c25b35e7bc04a1a2f4579b492be188/odin_pkg_rioatmadja2018-0.1.1682526602-py3-none-any.whl
+[2023-05-29 01:31:49] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/3f/e9/96c1b7b5912d5dcbd3fea0a3584d71aaae275796603c4d45cb0ac9ed9915/talk_codebase-0.1.19.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.18.tar.gz tmp/talk_codebase-0.1.19.tar.gz --markdown 20230529/t/talk-codebase/0.1.18-0.1.19/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [Twitch-Edog0049a]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [Twitch-Edog0049a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Twitch_Edog0049a-0.0.35.tar.gz tmp/Twitch_Edog0049a-0.0.36.tar.gz --markdown 20230529/T/Twitch-Edog0049a/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [asyncmake]: Downloading https://files.pythonhosted.org/packages/f0/ee/30d7748057098415ef910aa9823d677e818b25cb01a790fd2e14df35ca20/asyncmake-0.1.1.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-stay22]: Downloading https://files.pythonhosted.org/packages/40/b4/c6eeda92598ea5b3013b905a69248a66abde68c0119df8dc5d7563d9f8f8/pretix-stay22-1.2.1.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-sofort]: Downloading https://files.pythonhosted.org/packages/f2/d4/b2610570a406aa345aeb414cb2dfcb79db27366cd76b4d9fb5e8d4657efe/pretix-sofort-1.4.1.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [mbta-gtfs-sqlite]: Downloading https://files.pythonhosted.org/packages/70/a8/f415b4a818fbde0089b7a3270ce0b296e52cb63d89b2c82655d08227ce17/mbta-gtfs-sqlite-0.9.9.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/ed/37/4d316b9598bf720ff22f4bb34b4da2f7e611d01a293ea46fe17542c35101/odin-pkg-rioatmadja2018-0.1.1685316459.tar.gz
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-stay22]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-stay22]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-stay22-1.2.0.tar.gz tmp/pretix-stay22-1.2.1.tar.gz --markdown 20230529/p/pretix-stay22/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-sofort]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [pretix-sofort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-sofort-1.4.0.tar.gz tmp/pretix-sofort-1.4.1.tar.gz --markdown 20230529/p/pretix-sofort/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odin_pkg_rioatmadja2018-0.1.1682526602-py3-none-any.whl.zip tmp/odin-pkg-rioatmadja2018-0.1.1685316459.tar.gz --markdown 20230529/o/odin-pkg-rioatmadja2018/0.1.1682526602-0.1.1685316459/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [mbta-gtfs-sqlite]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [mbta-gtfs-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbta-gtfs-sqlite-0.9.8.tar.gz tmp/mbta-gtfs-sqlite-0.9.9.tar.gz --markdown 20230529/m/mbta-gtfs-sqlite/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 01:31:49] INFO root fetch - processPackages [asyncmake]: executing diffoscope
+[2023-05-29 01:31:49] INFO root fetch - processPackages [asyncmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncmake-0.1.0.tar.gz tmp/asyncmake-0.1.1.tar.gz --markdown 20230529/a/asyncmake/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 01:31:50] ERROR root fetch - processPackages [odin-pkg-rioatmadja2018]: Diffoscope failed: Error: error creating container storage: the container name "loving_elbakyan" is already in use by "65a6f34f5454499cecc9de18379e4b4425d4577d5ce7383558e9c30a1958c0b6". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-29 01:31:50] INFO root fetch - main [MainThread]: End processing [odin-pkg-rioatmadja2018] error
+[2023-05-29 01:31:50] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 01:31:50] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a]: success
+[2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [pretix-stay22]: success
+[2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [mbta-gtfs-sqlite]: success
+[2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [asyncmake]: success
+[2023-05-29 01:31:51] INFO root fetch - main [MainThread]: End processing [pretix-sofort]: success
+[2023-05-29 01:31:51] INFO root fetch - main [MainThread]: Store serial: [18284139]
