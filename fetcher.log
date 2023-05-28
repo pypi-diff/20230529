@@ -189,3 +189,23 @@
 [2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [OASYS1-ShadowOui-Advanced-Tools]: success
 [2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
 [2023-05-29 00:26:46] INFO root fetch - main [MainThread]: Store serial: [18283882]
+[2023-05-29 00:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283882]
+[2023-05-29 00:31:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-29 00:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: attune-project-api
+[2023-05-29 00:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esphome
+[2023-05-29 00:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edaplore
+[2023-05-29 00:31:55] INFO root fetch - processPackages [edaplore]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-29 00:31:55] INFO root fetch - processPackages [attune-project-api]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 00:31:55] INFO root fetch - processPackages [esphome]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-29 00:31:55] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/92/c2/d8d21890bafa0907517e4b69df3105aeb31d8bce47862feb5e4dc0dca1de/edaplore-0.3.3-py3-none-any.whl
+[2023-05-29 00:31:55] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 00:31:55] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.2-py3-none-any.whl.zip tmp/edaplore-0.3.3-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-29 00:31:55] INFO root fetch - processPackages [esphome]: Downloading https://files.pythonhosted.org/packages/ba/99/e3de03c370f1d42ddf8aef3c7f34680b185c74ec86ea48d828a322c361ac/esphome-2023.5.5.tar.gz
+[2023-05-29 00:31:55] INFO root fetch - processPackages [attune-project-api]: executing diffoscope
+[2023-05-29 00:31:55] INFO root fetch - processPackages [attune-project-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attune-project-api-0.9.8.tar.gz tmp/attune-project-api-0.9.9.tar.gz --markdown 20230529/a/attune-project-api/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 00:31:56] INFO root fetch - processPackages [esphome]: executing diffoscope
+[2023-05-29 00:31:56] INFO root fetch - processPackages [esphome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esphome-2023.5.4.tar.gz tmp/esphome-2023.5.5.tar.gz --markdown 20230529/e/esphome/2023.5.4-2023.5.5/diff.md --exclude *.pyd
+[2023-05-29 00:31:56] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 00:31:57] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
+[2023-05-29 00:32:44] INFO root fetch - main [MainThread]: End processing [esphome]: success
+[2023-05-29 00:32:44] INFO root fetch - main [MainThread]: Store serial: [18283889]
