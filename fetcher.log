@@ -140,3 +140,52 @@
 [2023-05-29 00:21:34] INFO root fetch - main [MainThread]: End processing [psychicapi]: success
 [2023-05-29 00:21:35] INFO root fetch - main [MainThread]: End processing [static-frame]: success
 [2023-05-29 00:21:35] INFO root fetch - main [MainThread]: Store serial: [18283861]
+[2023-05-29 00:26:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283861]
+[2023-05-29 00:26:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optimal-loc
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edaplore
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnschema_core
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdfdataprocess
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Twitch-Edog0049a
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: asyncmake
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: OASYS1-ShadowOui-Advanced-Tools
+[2023-05-29 00:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: attune-project-api
+[2023-05-29 00:26:44] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-29 00:26:44] INFO root fetch - processPackages [optimal-loc]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 00:26:44] INFO root fetch - processPackages [edaplore]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-29 00:26:44] INFO root fetch - processPackages [pdfdataprocess]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 00:26:44] INFO root fetch - processPackages [Twitch-Edog0049a]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 00:26:44] WARNING root fetch - processPackages [asyncmake]: Skipping, unable to determine old version
+[2023-05-29 00:26:44] INFO root fetch - main [MainThread]: End processing [asyncmake] error
+[2023-05-29 00:26:44] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-05-29 00:26:44] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230529/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 00:26:44] INFO root fetch - processPackages [OASYS1-ShadowOui-Advanced-Tools]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-29 00:26:44] INFO root fetch - processPackages [attune-project-api]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 00:26:44] INFO root fetch - processPackages [pdfdataprocess]: Downloading https://files.pythonhosted.org/packages/8c/6a/d793f931e006f92bd3b038e331db1c07ebb22a33ba172e08f32856f99d7a/pdfdataprocess-0.1.0.tar.gz
+[2023-05-29 00:26:44] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/54/d1/b28529d8ed363b9c36921a3fae9c011fc57ae80fbad7595cd00a33c56a73/Twitch_Edog0049a-0.0.2.tar.gz
+[2023-05-29 00:26:44] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/15/b0/86067e2e2140fb87bb1a54478559028841aaeb8c8e446dd88bf154d04f4d/edaplore-0.3.2-py3-none-any.whl
+[2023-05-29 00:26:44] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 00:26:44] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.1-py3-none-any.whl.zip tmp/edaplore-0.3.2-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-29 00:26:44] INFO root fetch - processPackages [pdfdataprocess]: Downloading https://files.pythonhosted.org/packages/86/ab/ef83518f9a067ff9d57a9cf9d3353666915d3f1e1ab673779dbbffb36d1e/pdfdataprocess-0.1.1.tar.gz
+[2023-05-29 00:26:44] INFO root fetch - processPackages [attune-project-api]: Downloading https://files.pythonhosted.org/packages/d7/f8/ced67fc9acf12de675f2d634457c7373e34106fd88baa6288503685dd4d6/attune-project-api-0.9.8.tar.gz
+[2023-05-29 00:26:44] INFO root fetch - processPackages [optimal-loc]: Downloading https://files.pythonhosted.org/packages/97/80/e6eba6a021d710a3b8a0c05512b6b6e5adfe4350bfb1e2985c7d1ecdae46/optimal_loc-0.1.0.tar.gz
+[2023-05-29 00:26:44] INFO root fetch - processPackages [Twitch-Edog0049a]: Downloading https://files.pythonhosted.org/packages/5e/f6/26eea1976e0ebdbfaa3d3d4b567a1a0e7a73daa6edf61f834d82854407df/Twitch_Edog0049a-0.0.3.tar.gz
+[2023-05-29 00:26:44] INFO root fetch - processPackages [Twitch-Edog0049a]: executing diffoscope
+[2023-05-29 00:26:44] INFO root fetch - processPackages [Twitch-Edog0049a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Twitch_Edog0049a-0.0.2.tar.gz tmp/Twitch_Edog0049a-0.0.3.tar.gz --markdown 20230529/T/Twitch-Edog0049a/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 00:26:44] INFO root fetch - processPackages [OASYS1-ShadowOui-Advanced-Tools]: executing diffoscope
+[2023-05-29 00:26:44] INFO root fetch - processPackages [OASYS1-ShadowOui-Advanced-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OASYS1-ShadowOui-Advanced-Tools-1.0.98.tar.gz tmp/OASYS1-ShadowOui-Advanced-Tools-1.0.99.tar.gz --markdown 20230529/O/OASYS1-ShadowOui-Advanced-Tools/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-29 00:26:44] INFO root fetch - processPackages [pdfdataprocess]: executing diffoscope
+[2023-05-29 00:26:44] INFO root fetch - processPackages [pdfdataprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfdataprocess-0.1.0.tar.gz tmp/pdfdataprocess-0.1.1.tar.gz --markdown 20230529/p/pdfdataprocess/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 00:26:45] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-29 00:26:45] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.0.9.tar.gz tmp/optimal_loc-0.1.0.tar.gz --markdown 20230529/o/optimal-loc/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 00:26:45] INFO root fetch - processPackages [attune-project-api]: Downloading https://files.pythonhosted.org/packages/c7/16/d44eb9ceaa1f24e93d7e0ef5a7cc8f16ca2354efe09e1f3d05025fa94147/attune-project-api-0.9.9.tar.gz
+[2023-05-29 00:26:45] INFO root fetch - processPackages [attune-project-api]: executing diffoscope
+[2023-05-29 00:26:45] INFO root fetch - processPackages [attune-project-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attune-project-api-0.9.8.tar.gz tmp/attune-project-api-0.9.9.tar.gz --markdown 20230529/a/attune-project-api/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 00:26:45] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [pdfdataprocess]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [OASYS1-ShadowOui-Advanced-Tools]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
+[2023-05-29 00:26:46] INFO root fetch - main [MainThread]: Store serial: [18283882]
