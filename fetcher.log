@@ -777,3 +777,29 @@
 [2023-05-29 01:42:14] INFO root fetch - main [MainThread]: End processing [tti-dataset-tools]: success
 [2023-05-29 01:42:14] INFO root fetch - main [MainThread]: End processing [maccarone]: success
 [2023-05-29 01:42:14] INFO root fetch - main [MainThread]: Store serial: [18284179]
+[2023-05-29 01:47:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284179]
+[2023-05-29 01:47:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 01:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kserve
+[2023-05-29 01:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lank
+[2023-05-29 01:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nounseed
+[2023-05-29 01:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edaplore
+[2023-05-29 01:47:23] INFO root fetch - processPackages [kserve]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-29 01:47:23] INFO root fetch - processPackages [lank]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-29 01:47:23] INFO root fetch - processPackages [nounseed]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 01:47:23] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 01:47:23] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 01:47:23] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 01:47:23] INFO root fetch - processPackages [lank]: Downloading https://files.pythonhosted.org/packages/b9/e4/2929773fb6cdd6311d5ec7b2ec96d305d2c7b2193a6e0486305827d27fa9/lank-0.6.0.tar.gz
+[2023-05-29 01:47:23] INFO root fetch - processPackages [nounseed]: Downloading https://files.pythonhosted.org/packages/ec/23/1af219c0eef25696dbc932dfd5c35e7e2b7c38e0e3ca6ed8b6eabfad8bf2/nounseed-1.0.2.tar.gz
+[2023-05-29 01:47:23] INFO root fetch - processPackages [kserve]: executing diffoscope
+[2023-05-29 01:47:23] INFO root fetch - processPackages [kserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kserve-0.9.0.tar.gz tmp/kserve-0.9.0rc0.tar.gz --markdown 20230529/k/kserve/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-29 01:47:23] INFO root fetch - processPackages [nounseed]: executing diffoscope
+[2023-05-29 01:47:23] INFO root fetch - processPackages [nounseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nounseed-1.0.1.tar.gz tmp/nounseed-1.0.2.tar.gz --markdown 20230529/n/nounseed/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 01:47:23] INFO root fetch - processPackages [lank]: Downloading https://files.pythonhosted.org/packages/6f/9d/833d640d7f7dc3f5fa660be1b25721d23e2ad1966bf3bed7d67cc2e8d145/lank-0.6.1.tar.gz
+[2023-05-29 01:47:24] INFO root fetch - processPackages [lank]: executing diffoscope
+[2023-05-29 01:47:24] INFO root fetch - processPackages [lank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lank-0.6.0.tar.gz tmp/lank-0.6.1.tar.gz --markdown 20230529/l/lank/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-29 01:47:24] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 01:47:24] INFO root fetch - main [MainThread]: End processing [nounseed]: success
+[2023-05-29 01:47:26] INFO root fetch - main [MainThread]: End processing [lank]: success
+[2023-05-29 01:47:26] INFO root fetch - main [MainThread]: End processing [kserve]: success
+[2023-05-29 01:47:26] INFO root fetch - main [MainThread]: Store serial: [18284191]
