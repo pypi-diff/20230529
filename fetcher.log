@@ -82,3 +82,34 @@
 [2023-05-29 00:10:09] INFO root fetch - main [MainThread]: End processing [github3-utils]: success
 [2023-05-29 00:10:58] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
 [2023-05-29 00:10:58] INFO root fetch - main [MainThread]: Store serial: [18283830]
+[2023-05-29 00:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283830]
+[2023-05-29 00:16:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 00:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyDynamicRoutingUpdater
+[2023-05-29 00:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: windmill-api
+[2023-05-29 00:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wmill
+[2023-05-29 00:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wmill-pg
+[2023-05-29 00:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: adbkit
+[2023-05-29 00:16:07] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 00:16:07] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 00:16:07] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 00:16:07] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 00:16:07] INFO root fetch - processPackages [adbkit]: New version: [0.19] Old Version: [0.18]
+[2023-05-29 00:16:07] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: Downloading https://files.pythonhosted.org/packages/40/bf/254635e33f671875f04267d3405ce273be8e52d1dfa8312ef44331703ea3/pyDynamicRoutingUpdater-0.0.3.tar.gz
+[2023-05-29 00:16:07] INFO root fetch - processPackages [adbkit]: Downloading https://files.pythonhosted.org/packages/24/0d/9753ad9636c19096b5ce519c35fa97a6e98eccc3811bebda474b801c810f/adbkit-0.19.tar.gz
+[2023-05-29 00:16:07] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-29 00:16:07] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230529/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 00:16:07] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-29 00:16:07] INFO root fetch - processPackages [adbkit]: executing diffoscope
+[2023-05-29 00:16:07] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230529/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 00:16:07] INFO root fetch - processPackages [adbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbkit-0.18.tar.gz tmp/adbkit-0.19.tar.gz --markdown 20230529/a/adbkit/0.18-0.19/diff.md --exclude *.pyd
+[2023-05-29 00:16:08] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: Downloading https://files.pythonhosted.org/packages/c1/1d/c5ed4e2261b8c014244975a9abdfa670c29c0b76a39823e3fbdf8b5ef428/pyDynamicRoutingUpdater-0.0.4.tar.gz
+[2023-05-29 00:16:08] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-29 00:16:08] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230529/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 00:16:08] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: executing diffoscope
+[2023-05-29 00:16:08] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyDynamicRoutingUpdater-0.0.3.tar.gz tmp/pyDynamicRoutingUpdater-0.0.4.tar.gz --markdown 20230529/p/pyDynamicRoutingUpdater/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 00:16:08] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-29 00:16:09] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-29 00:16:09] INFO root fetch - main [MainThread]: End processing [pyDynamicRoutingUpdater]: success
+[2023-05-29 00:16:09] INFO root fetch - main [MainThread]: End processing [adbkit]: success
+[2023-05-29 00:16:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-29 00:16:24] INFO root fetch - main [MainThread]: Store serial: [18283850]
