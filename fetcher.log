@@ -803,3 +803,41 @@
 [2023-05-29 01:47:26] INFO root fetch - main [MainThread]: End processing [lank]: success
 [2023-05-29 01:47:26] INFO root fetch - main [MainThread]: End processing [kserve]: success
 [2023-05-29 01:47:26] INFO root fetch - main [MainThread]: Store serial: [18284191]
+[2023-05-29 01:52:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284191]
+[2023-05-29 01:52:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 01:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vision6D
+[2023-05-29 01:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shenko
+[2023-05-29 01:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oknpatch
+[2023-05-29 01:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edaplore
+[2023-05-29 01:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: winkeyerserial
+[2023-05-29 01:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aij
+[2023-05-29 01:52:34] INFO root fetch - processPackages [oknpatch]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-29 01:52:35] INFO root fetch - processPackages [shenko]: New version: [0.1.8] Old Version: [0.1.74]
+[2023-05-29 01:52:35] INFO root fetch - processPackages [vision6D]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 01:52:35] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 01:52:35] INFO root fetch - processPackages [aij]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-05-29 01:52:35] INFO root fetch - processPackages [shenko]: Downloading https://files.pythonhosted.org/packages/82/02/1c3d99d69b34ca7a36244939b6b53f5059b8d65d6bc3ea7e365ab8ba8baf/shenko-0.1.74-py2.py3-none-any.whl
+[2023-05-29 01:52:35] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 01:52:35] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 01:52:35] INFO root fetch - processPackages [winkeyerserial]: New version: [23.5.28] Old Version: [23.5.11]
+[2023-05-29 01:52:35] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-29 01:52:35] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.1.5.tar.gz tmp/aij-1.2.0.tar.gz --markdown 20230529/a/aij/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 01:52:35] INFO root fetch - processPackages [vision6D]: Downloading https://files.pythonhosted.org/packages/98/85/cccf86427193fc5b4f335127de10b158a236976be0eca8d1dfa93e2eceb6/vision6D-0.1.2.tar.gz
+[2023-05-29 01:52:35] INFO root fetch - processPackages [oknpatch]: Downloading https://files.pythonhosted.org/packages/dd/b6/ca78f0c9cbe91fc1fdbf355b64ed63c7c65705dc82a21f3c9348bc9b3a70/oknpatch-3.0.0.tar.gz
+[2023-05-29 01:52:35] INFO root fetch - processPackages [winkeyerserial]: Downloading https://files.pythonhosted.org/packages/0f/f7/9347dacf8b033d5be5109fe56ddb9751b3fea8f1373c65a40a92605592e2/winkeyerserial-23.5.11.tar.gz
+[2023-05-29 01:52:35] INFO root fetch - processPackages [shenko]: executing diffoscope
+[2023-05-29 01:52:35] INFO root fetch - processPackages [shenko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shenko-0.1.74-py2.py3-none-any.whl.zip tmp/shenko-0.1.8-py2.py3-none-any.whl.zip --markdown 20230529/s/shenko/0.1.74-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 01:52:35] INFO root fetch - processPackages [vision6D]: executing diffoscope
+[2023-05-29 01:52:35] INFO root fetch - processPackages [vision6D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision6D-0.1.1.tar.gz tmp/vision6D-0.1.2.tar.gz --markdown 20230529/v/vision6D/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 01:52:35] INFO root fetch - processPackages [oknpatch]: executing diffoscope
+[2023-05-29 01:52:35] INFO root fetch - processPackages [oknpatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oknpatch-2.0.0.tar.gz tmp/oknpatch-3.0.0.tar.gz --markdown 20230529/o/oknpatch/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-29 01:52:35] INFO root fetch - processPackages [winkeyerserial]: Downloading https://files.pythonhosted.org/packages/ea/64/9a29f8eb9c3209a213e53eb966e48908ef5d526bfb3d19e8b525e784fbe8/winkeyerserial-23.5.28.tar.gz
+[2023-05-29 01:52:35] INFO root fetch - processPackages [winkeyerserial]: executing diffoscope
+[2023-05-29 01:52:35] INFO root fetch - processPackages [winkeyerserial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/winkeyerserial-23.5.11.tar.gz tmp/winkeyerserial-23.5.28.tar.gz --markdown 20230529/w/winkeyerserial/23.5.11-23.5.28/diff.md --exclude *.pyd
+[2023-05-29 01:52:36] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 01:52:36] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-29 01:52:36] INFO root fetch - main [MainThread]: End processing [shenko]: success
+[2023-05-29 01:52:36] INFO root fetch - main [MainThread]: End processing [oknpatch]: success
+[2023-05-29 01:52:36] INFO root fetch - main [MainThread]: End processing [vision6D]: success
+[2023-05-29 01:52:37] INFO root fetch - main [MainThread]: End processing [winkeyerserial]: success
+[2023-05-29 01:52:37] INFO root fetch - main [MainThread]: Store serial: [18284208]
