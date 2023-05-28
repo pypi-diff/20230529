@@ -239,3 +239,44 @@
 [2023-05-29 00:43:03] INFO root fetch - processPackages [install-pybci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/install-pybci-0.2.1b0.tar.gz tmp/install-pybci-0.2.2b0.tar.gz --markdown 20230529/i/install-pybci/0.2.1b0-0.2.2b0/diff.md --exclude *.pyd
 [2023-05-29 00:43:05] INFO root fetch - main [MainThread]: End processing [install-pybci]: success
 [2023-05-29 00:43:05] INFO root fetch - main [MainThread]: Store serial: [18283901]
+[2023-05-29 00:48:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283901]
+[2023-05-29 00:48:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edaplore
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tubeup
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-skill-personal
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osqp
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylibrb
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edaplore
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ovos-skill-personal]: New version: [0.0.4a1] Old Version: [0.0.3a4]
+[2023-05-29 00:48:13] INFO root fetch - processPackages [edaplore]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-29 00:48:13] INFO root fetch - processPackages [osqp]: New version: [1.0.0a3] Old Version: [1.0.0a1]
+[2023-05-29 00:48:13] INFO root fetch - processPackages [edaplore]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-29 00:48:13] INFO root fetch - processPackages [tubeup]: New version: [28.5.2023] Old Version: [0.0.9]
+[2023-05-29 00:48:13] INFO root fetch - processPackages [pylibrb]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 00:48:13] INFO root fetch - processPackages [ovos-skill-personal]: Downloading https://files.pythonhosted.org/packages/be/1c/65dc70bc262a61c328ce39a0a9a721a937ecd2e681881ca879f519db1708/ovos_skill_personal-0.0.3a4-py3-none-any.whl
+[2023-05-29 00:48:14] INFO root fetch - processPackages [tubeup]: Downloading https://files.pythonhosted.org/packages/50/56/0d9b21cf70b9f1b6617f2424ec342df3a4090cf0ae4297300b0781c9a38d/tubeup-0.0.9.tar.gz
+[2023-05-29 00:48:14] INFO root fetch - processPackages [osqp]: Downloading https://files.pythonhosted.org/packages/1b/4d/584ff185e9fa6ee5cb0b082c826672ac7252ca0ec4f4a791a0b6096fa188/osqp-1.0.0a3-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-29 00:48:14] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/0d/a7/4a182d337dbc3b299b88b52720496e0687cd60b1ec073aac87410c96f724/edaplore-0.3.4-py3-none-any.whl
+[2023-05-29 00:48:14] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/0d/a7/4a182d337dbc3b299b88b52720496e0687cd60b1ec073aac87410c96f724/edaplore-0.3.4-py3-none-any.whl
+[2023-05-29 00:48:14] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 00:48:14] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.3-py3-none-any.whl.zip tmp/edaplore-0.3.4-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-29 00:48:14] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 00:48:14] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.3-py3-none-any.whl.zip tmp/edaplore-0.3.4-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-29 00:48:14] INFO root fetch - processPackages [ovos-skill-personal]: Downloading https://files.pythonhosted.org/packages/2f/c3/ed96bf12bf300132b9bc00ac9179d51b301a268ce47c87c1bd555601da5f/ovos_skill_personal-0.0.4a1-py3-none-any.whl
+[2023-05-29 00:48:14] INFO root fetch - processPackages [osqp]: executing diffoscope
+[2023-05-29 00:48:14] INFO root fetch - processPackages [osqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osqp-1.0.0a1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip tmp/osqp-1.0.0a3-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230529/o/osqp/1.0.0a1-1.0.0a3/diff.md --exclude *.pyd
+[2023-05-29 00:48:14] INFO root fetch - processPackages [pylibrb]: Downloading https://files.pythonhosted.org/packages/44/8a/177b8b23beefb20b644526b5f22b3daf2eb70f93413c51d92938e9cb836c/pylibrb-0.0.6-cp311-cp311-musllinux_1_1_x86_64.whl
+[2023-05-29 00:48:14] INFO root fetch - processPackages [ovos-skill-personal]: executing diffoscope
+[2023-05-29 00:48:14] INFO root fetch - processPackages [ovos-skill-personal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_personal-0.0.3a4-py3-none-any.whl.zip tmp/ovos_skill_personal-0.0.4a1-py3-none-any.whl.zip --markdown 20230529/o/ovos-skill-personal/0.0.3a4-0.0.4a1/diff.md --exclude *.pyd
+[2023-05-29 00:48:14] INFO root fetch - processPackages [tubeup]: Downloading https://files.pythonhosted.org/packages/fa/1e/157dc167da5ed17e7d8f7e41bd1744744085228c46e817e0e1bcb8dfc440/tubeup-28.5.2023.tar.gz
+[2023-05-29 00:48:14] INFO root fetch - processPackages [tubeup]: executing diffoscope
+[2023-05-29 00:48:14] INFO root fetch - processPackages [tubeup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tubeup-0.0.9.tar.gz tmp/tubeup-28.5.2023.tar.gz --markdown 20230529/t/tubeup/0.0.9-28.5.2023/diff.md --exclude *.pyd
+[2023-05-29 00:48:15] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 00:48:15] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 00:48:15] INFO root fetch - processPackages [pylibrb]: executing diffoscope
+[2023-05-29 00:48:15] INFO root fetch - processPackages [pylibrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylibrb-0.0.5.tar.gz tmp/pylibrb-0.0.6-cp311-cp311-musllinux_1_1_x86_64.whl.zip --markdown 20230529/p/pylibrb/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 00:48:15] INFO root fetch - main [MainThread]: End processing [tubeup]: success
+[2023-05-29 00:48:16] INFO root fetch - main [MainThread]: End processing [pylibrb]: success
+[2023-05-29 00:48:16] INFO root fetch - main [MainThread]: End processing [ovos-skill-personal]: success
+[2023-05-29 00:48:16] INFO root fetch - main [MainThread]: End processing [osqp]: success
+[2023-05-29 00:48:16] INFO root fetch - main [MainThread]: Store serial: [18283922]
