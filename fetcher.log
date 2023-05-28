@@ -1,0 +1,42 @@
+[2023-05-29 00:04:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283767]
+[2023-05-29 00:04:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baichat-py
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: berens-neat
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vanty
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twscrape
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: noisyenv
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cpggen
+[2023-05-29 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: daba
+[2023-05-29 00:04:57] INFO root fetch - processPackages [twscrape]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-29 00:04:57] INFO root fetch - processPackages [baichat-py]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-29 00:04:57] INFO root fetch - processPackages [vanty]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 00:04:57] INFO root fetch - processPackages [daba]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 00:04:57] INFO root fetch - processPackages [cpggen]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-29 00:04:57] INFO root fetch - processPackages [berens-neat]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 00:04:57] WARNING root fetch - processPackages [noisyenv]: Skipping, unable to determine old version
+[2023-05-29 00:04:57] INFO root fetch - main [MainThread]: End processing [noisyenv] error
+[2023-05-29 00:04:57] INFO root fetch - processPackages [twscrape]: Downloading https://files.pythonhosted.org/packages/da/65/4dcc12c4ad03a7f80bff970f5300fe9e6296d3ce3b3c5d77b30a2c00c765/twscrape-0.1.1.tar.gz
+[2023-05-29 00:04:57] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/57/f0/25ec5a5ac87e8efab83373cafbd4cd257a0a346e7738ea468d2bbd209704/cpggen-1.3.0.tar.gz
+[2023-05-29 00:04:57] WARNING root fetch - processPackages [cpggen]: Skipping package: exceeds size limit 72045094>=10485760
+[2023-05-29 00:04:57] INFO root fetch - main [MainThread]: End processing [cpggen] error
+[2023-05-29 00:04:57] INFO root fetch - processPackages [vanty]: Downloading https://files.pythonhosted.org/packages/6b/2e/bc1e586bc97e29dc32a834cf9789f48e33a7ed66453188f4b5aa788563dd/vanty-0.0.6.tar.gz
+[2023-05-29 00:04:57] INFO root fetch - processPackages [berens-neat]: Downloading https://files.pythonhosted.org/packages/75/2e/8bfb3e31249e0c8ab36d119eb1e28e0dcc3eb99cc47a4eb649187429d686/berens-neat-0.1.2.tar.gz
+[2023-05-29 00:04:57] INFO root fetch - processPackages [berens-neat]: executing diffoscope
+[2023-05-29 00:04:57] INFO root fetch - processPackages [berens-neat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/berens-neat-0.1.1.tar.gz tmp/berens-neat-0.1.2.tar.gz --markdown 20230529/b/berens-neat/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 00:04:57] INFO root fetch - processPackages [daba]: Downloading https://files.pythonhosted.org/packages/c5/cd/53924737a3d8b3bdc53fcbeda6b36eb52a762db5566b1c76fddaeb4645fe/daba-0.0.6.tar.gz
+[2023-05-29 00:04:57] INFO root fetch - processPackages [baichat-py]: Downloading https://files.pythonhosted.org/packages/c8/01/1d4e827b5a3555d9c9a5c035d00a9d0bb84d121b6625772abbc09e35574a/baichat_py-0.3.0.tar.gz
+[2023-05-29 00:04:57] INFO root fetch - processPackages [vanty]: executing diffoscope
+[2023-05-29 00:04:57] INFO root fetch - processPackages [vanty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanty-0.0.5.tar.gz tmp/vanty-0.0.6.tar.gz --markdown 20230529/v/vanty/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 00:04:57] INFO root fetch - processPackages [baichat-py]: executing diffoscope
+[2023-05-29 00:04:57] INFO root fetch - processPackages [baichat-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baichat_py-0.2.2.tar.gz tmp/baichat_py-0.3.0.tar.gz --markdown 20230529/b/baichat-py/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 00:04:57] INFO root fetch - processPackages [twscrape]: Downloading https://files.pythonhosted.org/packages/73/68/bdcf3594072c83ac27b9ba403959429529a8e40fa3463b542ea4c3c40b84/twscrape-0.2.0.tar.gz
+[2023-05-29 00:04:57] INFO root fetch - processPackages [daba]: executing diffoscope
+[2023-05-29 00:04:57] INFO root fetch - processPackages [daba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daba-0.0.5.tar.gz tmp/daba-0.0.6.tar.gz --markdown 20230529/d/daba/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 00:04:58] INFO root fetch - processPackages [twscrape]: executing diffoscope
+[2023-05-29 00:04:58] INFO root fetch - processPackages [twscrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twscrape-0.1.1.tar.gz tmp/twscrape-0.2.0.tar.gz --markdown 20230529/t/twscrape/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 00:04:58] INFO root fetch - main [MainThread]: End processing [baichat-py]: success
+[2023-05-29 00:04:59] INFO root fetch - main [MainThread]: End processing [vanty]: success
+[2023-05-29 00:04:59] INFO root fetch - main [MainThread]: End processing [berens-neat]: success
+[2023-05-29 00:04:59] INFO root fetch - main [MainThread]: End processing [daba]: success
+[2023-05-29 00:04:59] INFO root fetch - main [MainThread]: End processing [twscrape]: success
+[2023-05-29 00:04:59] INFO root fetch - main [MainThread]: Store serial: [18283790]
