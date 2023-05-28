@@ -371,3 +371,71 @@
 [2023-05-29 01:04:22] INFO root fetch - main [MainThread]: End processing [aioworkers]: success
 [2023-05-29 01:04:23] INFO root fetch - main [MainThread]: End processing [pretix-adyen]: success
 [2023-05-29 01:04:23] INFO root fetch - main [MainThread]: Store serial: [18283988]
+[2023-05-29 01:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283988]
+[2023-05-29 01:09:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pretix-bitpay
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spida
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pretix-bounces
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ma-fi
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pretix-closer2event
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pretix-computop
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pretix-covid-certificates
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pretix-cwa
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pretix-mollie
+[2023-05-29 01:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pretix-modirum
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-computop]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-bounces]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-cwa]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-closer2event]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-bitpay]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-29 01:09:31] WARNING root fetch - processPackages [ma-fi]: Skipping, unable to determine old version
+[2023-05-29 01:09:31] INFO root fetch - main [MainThread]: End processing [ma-fi] error
+[2023-05-29 01:09:31] INFO root fetch - processPackages [spida]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-modirum]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-mollie]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-29 01:09:31] INFO root fetch - processPackages [pretix-covid-certificates]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-modirum]: Downloading https://files.pythonhosted.org/packages/d3/a9/4b4dd60a3b4bcc03e91ad3d128d772612a0f1b6ffb8e42e01d7e41eec3bc/pretix-modirum-1.1.0.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-cwa]: Downloading https://files.pythonhosted.org/packages/f7/80/b872da9ab218d08a41befbadc6b372e407361ea6d26a692307a7616c2116/pretix-cwa-1.1.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bitpay]: Downloading https://files.pythonhosted.org/packages/1b/4c/c6acaf802f52e6206b7200f41754cc681e48ce75c3cccc568fc7ffbb5b19/pretix-bitpay-1.5.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bounces]: Downloading https://files.pythonhosted.org/packages/df/91/4e62cb36d8516fbbc07698d11e88990696dec6662f6bcf7cb05b644733f2/pretix-bounces-1.4.0.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [spida]: Downloading https://files.pythonhosted.org/packages/2e/19/eff098f9930d1e421246f894c4582d910622d7cb0b6ff3cf097f2efd45b0/spida-0.2.5.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-computop]: Downloading https://files.pythonhosted.org/packages/0f/53/b0f1b3cf921a1843a931f580615df24368eae9f068d33c6586c8e082e72c/pretix-computop-1.1.0.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-mollie]: Downloading https://files.pythonhosted.org/packages/25/4d/a057b6bbed850edc5c6b1d329af07e03b9d0cce6f312a52305b5bf82eaaa/pretix-mollie-1.5.2.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-covid-certificates]: Downloading https://files.pythonhosted.org/packages/0e/a2/675f8b75473018a5369b8939e5fb990b9a667a87ac25103f19b9aecbcdfe/pretix-covid-certificates-2.3.0.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-closer2event]: Downloading https://files.pythonhosted.org/packages/23/4d/6e8a9048cef3d106db659a2b60fa9f85d411d350f453fa01b123ceb5a511/pretix-closer2event-1.2.0.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [spida]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [spida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spida-0.2.4.tar.gz tmp/spida-0.2.5.tar.gz --markdown 20230529/s/spida/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-cwa]: Downloading https://files.pythonhosted.org/packages/e6/84/4df64484b2a8719b254a868aa34a52e726f9d58e60e70d3cedf7b4d434aa/pretix-cwa-1.1.2.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bounces]: Downloading https://files.pythonhosted.org/packages/ab/62/8176014f4dbd3ccee21d32ed5bb1c686c77a21a47c7a85b69c9d117f49ca/pretix-bounces-1.4.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bitpay]: Downloading https://files.pythonhosted.org/packages/67/41/9a40b5777152813e53a37a516d0f02a33d49cea4cc15a5d872463b18cb7f/pretix-bitpay-1.5.2.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-mollie]: Downloading https://files.pythonhosted.org/packages/b6/43/b936409da71188df33310d5fe2e7d3d8a767532fc3ce3d5219f5bce47565/pretix-mollie-1.5.3.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-computop]: Downloading https://files.pythonhosted.org/packages/c6/6f/c202eceaf5633817dcd7c12622f66aa469caf77c81cd3765e0b031d036cc/pretix-computop-1.1.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-modirum]: Downloading https://files.pythonhosted.org/packages/18/b3/97f430e5855f9b8e271091e2ecbe8a4a1f743f901017ec2810010ddc9512/pretix-modirum-1.1.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-closer2event]: Downloading https://files.pythonhosted.org/packages/97/b7/b664f6b676e19f1edfa7d034dd22f91ea76b77eaae26efc67564272aa580/pretix-closer2event-1.2.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bounces]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bounces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-bounces-1.4.0.tar.gz tmp/pretix-bounces-1.4.1.tar.gz --markdown 20230529/p/pretix-bounces/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-cwa]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-cwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-cwa-1.1.1.tar.gz tmp/pretix-cwa-1.1.2.tar.gz --markdown 20230529/p/pretix-cwa/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-covid-certificates]: Downloading https://files.pythonhosted.org/packages/cd/44/b12652e1e6602ee6945ecf678df44f55341850b5b75329ea9874b70714da/pretix-covid-certificates-2.3.1.tar.gz
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bitpay]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-bitpay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-bitpay-1.5.1.tar.gz tmp/pretix-bitpay-1.5.2.tar.gz --markdown 20230529/p/pretix-bitpay/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-closer2event]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-closer2event]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-closer2event-1.2.0.tar.gz tmp/pretix-closer2event-1.2.1.tar.gz --markdown 20230529/p/pretix-closer2event/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-computop]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-computop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-computop-1.1.0.tar.gz tmp/pretix-computop-1.1.1.tar.gz --markdown 20230529/p/pretix-computop/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-modirum]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-modirum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-modirum-1.1.0.tar.gz tmp/pretix-modirum-1.1.1.tar.gz --markdown 20230529/p/pretix-modirum/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-mollie]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-mollie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-mollie-1.5.2.tar.gz tmp/pretix-mollie-1.5.3.tar.gz --markdown 20230529/p/pretix-mollie/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-covid-certificates]: executing diffoscope
+[2023-05-29 01:09:32] INFO root fetch - processPackages [pretix-covid-certificates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-covid-certificates-2.3.0.tar.gz tmp/pretix-covid-certificates-2.3.1.tar.gz --markdown 20230529/p/pretix-covid-certificates/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-29 01:09:33] INFO root fetch - main [MainThread]: End processing [spida]: success
+[2023-05-29 01:09:34] INFO root fetch - main [MainThread]: End processing [pretix-cwa]: success
+[2023-05-29 01:09:34] INFO root fetch - main [MainThread]: End processing [pretix-bounces]: success
+[2023-05-29 01:09:34] INFO root fetch - main [MainThread]: End processing [pretix-closer2event]: success
+[2023-05-29 01:09:34] INFO root fetch - main [MainThread]: End processing [pretix-modirum]: success
+[2023-05-29 01:09:34] INFO root fetch - main [MainThread]: End processing [pretix-computop]: success
+[2023-05-29 01:09:34] INFO root fetch - main [MainThread]: End processing [pretix-covid-certificates]: success
+[2023-05-29 01:09:35] INFO root fetch - main [MainThread]: End processing [pretix-mollie]: success
+[2023-05-29 01:10:22] INFO root fetch - main [MainThread]: End processing [pretix-bitpay]: success
+[2023-05-29 01:10:22] INFO root fetch - main [MainThread]: Store serial: [18284020]
