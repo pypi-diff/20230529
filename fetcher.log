@@ -4030,3 +4030,38 @@
 [2023-05-29 05:20:11] INFO root fetch - main [MainThread]: End processing [spherediff]: success
 [2023-05-29 05:20:11] INFO root fetch - main [MainThread]: End processing [jatool]: success
 [2023-05-29 05:20:11] INFO root fetch - main [MainThread]: Store serial: [18286003]
+[2023-05-29 05:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286003]
+[2023-05-29 05:25:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 05:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radvis
+[2023-05-29 05:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tlcloud
+[2023-05-29 05:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inspursmsdk
+[2023-05-29 05:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jatool
+[2023-05-29 05:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: je-auto-control-dev
+[2023-05-29 05:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: je-api-testka-dev
+[2023-05-29 05:25:20] WARNING root fetch - processPackages [tlcloud]: Skipping, unable to determine old version
+[2023-05-29 05:25:20] INFO root fetch - main [MainThread]: End processing [tlcloud] error
+[2023-05-29 05:25:20] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 05:25:20] INFO root fetch - processPackages [inspursmsdk]: New version: [2.1.0] Old Version: [2.0.7]
+[2023-05-29 05:25:20] INFO root fetch - processPackages [radvis]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 05:25:20] INFO root fetch - processPackages [je-api-testka-dev]: New version: [0.0.9] Old Version: [0.0.89]
+[2023-05-29 05:25:20] INFO root fetch - processPackages [jatool]: New version: [1.98] Old Version: [1.97]
+[2023-05-29 05:25:20] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-05-29 05:25:20] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230529/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:25:20] INFO root fetch - processPackages [inspursmsdk]: Downloading https://files.pythonhosted.org/packages/3f/16/57db5f4d814ce02ec93899589abd5939b7ca2059482dc0365a935f017487/inspursmsdk-2.0.7.tar.gz
+[2023-05-29 05:25:20] INFO root fetch - processPackages [je-api-testka-dev]: executing diffoscope
+[2023-05-29 05:25:20] INFO root fetch - processPackages [je-api-testka-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka_dev-0.0.89.tar.gz tmp/je_api_testka_dev-0.0.9.tar.gz --markdown 20230529/j/je-api-testka-dev/0.0.89-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:25:20] INFO root fetch - processPackages [jatool]: Downloading https://files.pythonhosted.org/packages/4b/d4/cca9f612e6d28472d3dd4fdf2877d1a10a7af22e185290ad710b0213e9e3/jatool-1.98.tar.gz
+[2023-05-29 05:25:20] INFO root fetch - processPackages [radvis]: Downloading https://files.pythonhosted.org/packages/31/43/d7a7b8a512eb5d915a240d395d9471a1a160955f590f346a0d644f319ca0/radvis-0.2.1.tar.gz
+[2023-05-29 05:25:20] INFO root fetch - processPackages [jatool]: executing diffoscope
+[2023-05-29 05:25:20] INFO root fetch - processPackages [jatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jatool-1.97.tar.gz tmp/jatool-1.98.tar.gz --markdown 20230529/j/jatool/1.97-1.98/diff.md --exclude *.pyd
+[2023-05-29 05:25:20] INFO root fetch - processPackages [radvis]: executing diffoscope
+[2023-05-29 05:25:20] INFO root fetch - processPackages [radvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radvis-0.2.0.tar.gz tmp/radvis-0.2.1.tar.gz --markdown 20230529/r/radvis/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 05:25:20] INFO root fetch - processPackages [inspursmsdk]: Downloading https://files.pythonhosted.org/packages/75/97/e0c66ee7123d7ef4248b25926146fea6aa8d646df8f56781df2ac6be8d0c/inspursmsdk-2.1.0.tar.gz
+[2023-05-29 05:25:21] INFO root fetch - processPackages [inspursmsdk]: executing diffoscope
+[2023-05-29 05:25:21] INFO root fetch - processPackages [inspursmsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspursmsdk-2.0.7.tar.gz tmp/inspursmsdk-2.1.0.tar.gz --markdown 20230529/i/inspursmsdk/2.0.7-2.1.0/diff.md --exclude *.pyd
+[2023-05-29 05:25:21] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
+[2023-05-29 05:25:21] INFO root fetch - main [MainThread]: End processing [je-auto-control-dev]: success
+[2023-05-29 05:25:22] INFO root fetch - main [MainThread]: End processing [radvis]: success
+[2023-05-29 05:25:22] INFO root fetch - main [MainThread]: End processing [jatool]: success
+[2023-05-29 05:25:24] INFO root fetch - main [MainThread]: End processing [inspursmsdk]: success
+[2023-05-29 05:25:24] INFO root fetch - main [MainThread]: Store serial: [18286020]
