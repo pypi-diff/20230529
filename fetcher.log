@@ -14052,3 +14052,56 @@ EOFError: EOF read where object expected
 [2023-05-29 18:41:02] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-05-29 18:41:06] INFO root fetch - main [MainThread]: End processing [domain-paas-sdk-python]: success
 [2023-05-29 18:41:06] INFO root fetch - main [MainThread]: Store serial: [18292048]
+[2023-05-29 18:46:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292048]
+[2023-05-29 18:46:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mccmnc
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wakeProtocol
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crappy
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: red-postgres
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: roscopilot
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: transaction-service-quality-checker
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: romy
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: skytag
+[2023-05-29 18:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: artesian-sdk
+[2023-05-29 18:46:15] INFO root fetch - processPackages [crappy]: New version: [2.0.0.dev2] Old Version: [2.0.0.dev1]
+[2023-05-29 18:46:15] INFO root fetch - processPackages [transaction-service-quality-checker]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 18:46:15] WARNING root fetch - processPackages [wakeProtocol]: Skipping, unable to determine old version
+[2023-05-29 18:46:15] INFO root fetch - main [MainThread]: End processing [wakeProtocol] error
+[2023-05-29 18:46:15] INFO root fetch - processPackages [artesian-sdk]: New version: [3.0.9.dev7] Old Version: [3.0.9.dev5]
+[2023-05-29 18:46:15] INFO root fetch - processPackages [red-postgres]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-29 18:46:15] WARNING root fetch - processPackages [roscopilot]: Skipping, unable to determine old version
+[2023-05-29 18:46:15] INFO root fetch - processPackages [romy]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 18:46:15] INFO root fetch - main [MainThread]: End processing [roscopilot] error
+[2023-05-29 18:46:15] INFO root fetch - processPackages [skytag]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 18:46:15] WARNING root fetch - processPackages [mccmnc]: Skipping, unable to determine old version
+[2023-05-29 18:46:15] INFO root fetch - main [MainThread]: End processing [mccmnc] error
+[2023-05-29 18:46:15] INFO root fetch - processPackages [red-postgres]: Downloading https://files.pythonhosted.org/packages/aa/c9/bf6c6073512bced907323ae8f6a435c9d4701b8f9cf108fb7a6b1b720590/red_postgres-0.0.1-py3-none-any.whl
+[2023-05-29 18:46:15] INFO root fetch - processPackages [transaction-service-quality-checker]: Downloading https://files.pythonhosted.org/packages/8b/18/69516fc6e483c7b4d3f5452864e62faab023c77d8499c24f1516ddb490a2/transaction_service_quality_checker-0.0.5.tar.gz
+[2023-05-29 18:46:15] INFO root fetch - processPackages [crappy]: Downloading https://files.pythonhosted.org/packages/07/2b/9d87b5cd0452642654946e97013db8ce55b323ab3ff9a1ff4ed12fb88dbb/crappy-2.0.0.dev1.tar.gz
+[2023-05-29 18:46:15] INFO root fetch - processPackages [skytag]: Downloading https://files.pythonhosted.org/packages/74/9d/d3b397df5b2d19c280821350093d690d0c411997b971d53daa0080c73ca5/skytag-0.2.0.tar.gz
+[2023-05-29 18:46:15] INFO root fetch - processPackages [artesian-sdk]: Downloading https://files.pythonhosted.org/packages/cf/6f/95b3252ae933fc13a40a9acc2e8566d25f9333ac3a1f277eceb29d015321/artesian-sdk-3.0.9.dev5.tar.gz
+[2023-05-29 18:46:15] INFO root fetch - processPackages [romy]: Downloading https://files.pythonhosted.org/packages/8d/8c/1dd328cad817c0fb10dc618458787cf94fd9bfe269e01e1a32471cdcb6f5/romy-0.0.1.tar.gz
+[2023-05-29 18:46:15] INFO root fetch - processPackages [transaction-service-quality-checker]: executing diffoscope
+[2023-05-29 18:46:15] INFO root fetch - processPackages [transaction-service-quality-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction_service_quality_checker-0.0.4.tar.gz tmp/transaction_service_quality_checker-0.0.5.tar.gz --markdown 20230529/t/transaction-service-quality-checker/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 18:46:16] INFO root fetch - processPackages [red-postgres]: Downloading https://files.pythonhosted.org/packages/92/28/0b1ed0ef7cedc6b606d7548bdfa1a0ea7de75362ea5ead7d65e597e8c635/red-postgres-0.0.3.tar.gz
+[2023-05-29 18:46:16] INFO root fetch - processPackages [romy]: Downloading https://files.pythonhosted.org/packages/70/84/4bce8e4b616a332fb9a5ab8ded2ddaecbed06feb70fafbfefa679962372b/romy-0.0.2.tar.gz
+[2023-05-29 18:46:16] INFO root fetch - processPackages [artesian-sdk]: Downloading https://files.pythonhosted.org/packages/b6/b8/ec730f0c3bcecc6f4e99d511bf4fc60aced2bd2167cbb795553d42da053b/artesian-sdk-3.0.9.dev7.tar.gz
+[2023-05-29 18:46:16] INFO root fetch - processPackages [crappy]: Downloading https://files.pythonhosted.org/packages/8c/c3/afbc96e1b8280622873634af5541a256d630eed2f604d16b84271683f70b/crappy-2.0.0.dev2.tar.gz
+[2023-05-29 18:46:16] INFO root fetch - processPackages [skytag]: Downloading https://files.pythonhosted.org/packages/cb/0f/5f40cd01288cb52e1d707b9b39a6c95faac0e007cbf4a9f9ca4ee8372e3a/skytag-0.3.0.tar.gz
+[2023-05-29 18:46:16] INFO root fetch - processPackages [red-postgres]: executing diffoscope
+[2023-05-29 18:46:16] INFO root fetch - processPackages [red-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red_postgres-0.0.1-py3-none-any.whl.zip tmp/red-postgres-0.0.3.tar.gz --markdown 20230529/r/red-postgres/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 18:46:16] INFO root fetch - processPackages [romy]: executing diffoscope
+[2023-05-29 18:46:16] INFO root fetch - processPackages [romy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/romy-0.0.1.tar.gz tmp/romy-0.0.2.tar.gz --markdown 20230529/r/romy/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 18:46:16] INFO root fetch - processPackages [artesian-sdk]: executing diffoscope
+[2023-05-29 18:46:16] INFO root fetch - processPackages [artesian-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artesian-sdk-3.0.9.dev5.tar.gz tmp/artesian-sdk-3.0.9.dev7.tar.gz --markdown 20230529/a/artesian-sdk/3.0.9.dev5-3.0.9.dev7/diff.md --exclude *.pyd
+[2023-05-29 18:46:16] INFO root fetch - processPackages [crappy]: executing diffoscope
+[2023-05-29 18:46:16] INFO root fetch - processPackages [crappy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crappy-2.0.0.dev1.tar.gz tmp/crappy-2.0.0.dev2.tar.gz --markdown 20230529/c/crappy/2.0.0.dev1-2.0.0.dev2/diff.md --exclude *.pyd
+[2023-05-29 18:46:16] INFO root fetch - processPackages [skytag]: executing diffoscope
+[2023-05-29 18:46:16] INFO root fetch - processPackages [skytag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytag-0.2.0.tar.gz tmp/skytag-0.3.0.tar.gz --markdown 20230529/s/skytag/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 18:46:17] INFO root fetch - main [MainThread]: End processing [transaction-service-quality-checker]: success
+[2023-05-29 18:46:17] INFO root fetch - main [MainThread]: End processing [red-postgres]: success
+[2023-05-29 18:46:17] INFO root fetch - main [MainThread]: End processing [romy]: success
+[2023-05-29 18:46:17] INFO root fetch - main [MainThread]: End processing [skytag]: success
+[2023-05-29 18:46:19] INFO root fetch - main [MainThread]: End processing [artesian-sdk]: success
+[2023-05-29 18:46:21] INFO root fetch - main [MainThread]: End processing [crappy]: success
+[2023-05-29 18:46:21] INFO root fetch - main [MainThread]: Store serial: [18292081]
