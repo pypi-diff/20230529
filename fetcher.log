@@ -13125,3 +13125,55 @@ EOFError: EOF read where object expected
 [2023-05-29 17:39:13] INFO root fetch - main [MainThread]: End processing [vyper]: success
 [2023-05-29 17:39:15] INFO root fetch - main [MainThread]: End processing [yangsuite-grpc-telemetry]: success
 [2023-05-29 17:39:15] INFO root fetch - main [MainThread]: Store serial: [18291539]
+[2023-05-29 17:44:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291539]
+[2023-05-29 17:44:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idem-gcp
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cxmlinvbot
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adam-sim
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transaction-service-quality-checker
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: filesystem-dict
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openepd
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: datupapi
+[2023-05-29 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mkdocs-material
+[2023-05-29 17:44:27] INFO root fetch - processPackages [transaction-service-quality-checker]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [filesystem-dict]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [idem-gcp]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [adam-sim]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [openepd]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [cxmlinvbot]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [datupapi]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [mkdocs-material]: New version: [9.1.9] Old Version: [9.1.8]
+[2023-05-29 17:44:27] INFO root fetch - processPackages [filesystem-dict]: executing diffoscope
+[2023-05-29 17:44:27] INFO root fetch - processPackages [filesystem-dict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filesystem-dict-0.1.8.tar.gz tmp/filesystem-dict-0.1.9.tar.gz --markdown 20230529/f/filesystem-dict/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 17:44:27] INFO root fetch - processPackages [idem-gcp]: executing diffoscope
+[2023-05-29 17:44:27] INFO root fetch - processPackages [idem-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idem_gcp-0.8.0.tar.gz tmp/idem_gcp-0.9.0.tar.gz --markdown 20230529/i/idem-gcp/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 17:44:27] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/ee/ec/be38552f4184e6a72076c58eeb5e5366922cedce23e8358c75197299f1a2/cxmlinvbot-1.1.0.tar.gz
+[2023-05-29 17:44:27] INFO root fetch - processPackages [openepd]: Downloading https://files.pythonhosted.org/packages/b4/0b/661e74352666fea6aaba5a932af4fd4b866e8de89370d97a18f41fc2dd58/openepd-0.4.0.tar.gz
+[2023-05-29 17:44:27] INFO root fetch - processPackages [adam-sim]: Downloading https://files.pythonhosted.org/packages/9e/51/648c6fa241686de5f650a2436a6607fc947dd0abb1adb51624f9152048a6/adam_sim-1.0.0.tar.gz
+[2023-05-29 17:44:28] INFO root fetch - processPackages [datupapi]: Downloading https://files.pythonhosted.org/packages/1d/ac/5081ecaeb46eff6a3d8d6902c7c5cb49ce1eef0ad43338a8fed29140ce89/datupapi-1.9.0-py3-none-any.whl
+[2023-05-29 17:44:28] INFO root fetch - processPackages [transaction-service-quality-checker]: Downloading https://files.pythonhosted.org/packages/f6/34/3a4f720530829f976fca9594b68787587d19b9e17bc913c28f38d48d726b/transaction_service_quality_checker-0.0.4.tar.gz
+[2023-05-29 17:44:28] INFO root fetch - processPackages [transaction-service-quality-checker]: executing diffoscope
+[2023-05-29 17:44:28] INFO root fetch - processPackages [transaction-service-quality-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction_service_quality_checker-0.0.3.tar.gz tmp/transaction_service_quality_checker-0.0.4.tar.gz --markdown 20230529/t/transaction-service-quality-checker/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 17:44:28] INFO root fetch - processPackages [openepd]: executing diffoscope
+[2023-05-29 17:44:28] INFO root fetch - processPackages [openepd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openepd-0.3.0.tar.gz tmp/openepd-0.4.0.tar.gz --markdown 20230529/o/openepd/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 17:44:28] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/4c/c6/7e25b48baa7f5042fade9aee3dd225cbd9531a1afe9381907949b56f184c/cxmlinvbot-1.1.1.tar.gz
+[2023-05-29 17:44:28] INFO root fetch - processPackages [mkdocs-material]: executing diffoscope
+[2023-05-29 17:44:28] INFO root fetch - processPackages [mkdocs-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_material-9.1.8.tar.gz tmp/mkdocs_material-9.1.9.tar.gz --markdown 20230529/m/mkdocs-material/9.1.8-9.1.9/diff.md --exclude *.pyd
+[2023-05-29 17:44:28] INFO root fetch - processPackages [cxmlinvbot]: executing diffoscope
+[2023-05-29 17:44:28] INFO root fetch - processPackages [cxmlinvbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxmlinvbot-1.1.0.tar.gz tmp/cxmlinvbot-1.1.1.tar.gz --markdown 20230529/c/cxmlinvbot/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 17:44:28] INFO root fetch - processPackages [datupapi]: Downloading https://files.pythonhosted.org/packages/d6/2c/228b04741162c0ccb1494c9c89d6c22551aeecd23eb2f8db49b9aa73cea5/datupapi-1.9.1-py3-none-any.whl
+[2023-05-29 17:44:28] INFO root fetch - processPackages [datupapi]: executing diffoscope
+[2023-05-29 17:44:28] INFO root fetch - processPackages [datupapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datupapi-1.9.0-py3-none-any.whl.zip tmp/datupapi-1.9.1-py3-none-any.whl.zip --markdown 20230529/d/datupapi/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-29 17:44:29] INFO root fetch - processPackages [adam-sim]: Downloading https://files.pythonhosted.org/packages/4a/c3/a979ce87567dad5fc505e853d460a122ded4288bf11b591e5b667523ffe7/adam_sim-1.0.1.tar.gz
+[2023-05-29 17:44:29] INFO root fetch - main [MainThread]: End processing [filesystem-dict]: success
+[2023-05-29 17:44:29] INFO root fetch - main [MainThread]: End processing [openepd]: success
+[2023-05-29 17:44:29] INFO root fetch - main [MainThread]: End processing [idem-gcp]: success
+[2023-05-29 17:44:29] INFO root fetch - main [MainThread]: End processing [datupapi]: success
+[2023-05-29 17:44:30] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
+[2023-05-29 17:44:30] INFO root fetch - processPackages [adam-sim]: executing diffoscope
+[2023-05-29 17:44:30] INFO root fetch - processPackages [adam-sim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adam_sim-1.0.0.tar.gz tmp/adam_sim-1.0.1.tar.gz --markdown 20230529/a/adam-sim/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 17:44:35] INFO root fetch - main [MainThread]: End processing [adam-sim]: success
+[2023-05-29 17:45:13] INFO root fetch - main [MainThread]: End processing [transaction-service-quality-checker]: success
+[2023-05-29 17:47:28] ERROR root fetch - processPackages [mkdocs-material]: Timeout during execution of pkgdiff
+[2023-05-29 17:47:28] INFO root fetch - main [MainThread]: End processing [mkdocs-material] error
+[2023-05-29 17:47:28] INFO root fetch - main [MainThread]: Store serial: [18291562]
