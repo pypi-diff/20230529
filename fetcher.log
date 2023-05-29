@@ -17815,3 +17815,47 @@ EOFError: EOF read where object expected
 [2023-05-29 23:02:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-tetris-stats]: success
 [2023-05-29 23:02:52] INFO root fetch - main [MainThread]: End processing [torchlie]: success
 [2023-05-29 23:02:52] INFO root fetch - main [MainThread]: Store serial: [18294481]
+[2023-05-29 23:07:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294481]
+[2023-05-29 23:08:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reddit-photo-aggregator-hamolicious
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: np-codeocean
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apigratis-sdk-python
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whisper-autosrt
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: medialibrary
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rocm-docs-core
+[2023-05-29 23:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: calixa-proto-py
+[2023-05-29 23:08:02] WARNING root fetch - processPackages [reddit-photo-aggregator-hamolicious]: Skipping, unable to determine old version
+[2023-05-29 23:08:02] INFO root fetch - main [MainThread]: End processing [reddit-photo-aggregator-hamolicious] error
+[2023-05-29 23:08:02] INFO root fetch - processPackages [whisper-autosrt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 23:08:02] INFO root fetch - processPackages [np-codeocean]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 23:08:02] INFO root fetch - processPackages [apigratis-sdk-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 23:08:02] INFO root fetch - processPackages [medialibrary]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-05-29 23:08:02] INFO root fetch - processPackages [rocm-docs-core]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-29 23:08:02] INFO root fetch - processPackages [calixa-proto-py]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-29 23:08:02] INFO root fetch - processPackages [medialibrary]: Downloading https://files.pythonhosted.org/packages/8d/8f/88efb6f7c2c7ea5687b8b27a20c7ffe3f32816896ac936c30984bcba2c7b/medialibrary-0.1.7.tar.gz
+[2023-05-29 23:08:02] INFO root fetch - processPackages [apigratis-sdk-python]: Downloading https://files.pythonhosted.org/packages/87/f3/b5f4bea4dafbd979205138a9d665ea4c52d54e5126d562dc898d980109ec/apigratis-sdk-python-0.0.1.tar.gz
+[2023-05-29 23:08:02] INFO root fetch - processPackages [np-codeocean]: Downloading https://files.pythonhosted.org/packages/24/fb/3b2c0cefd202a8895699e20d01fee1aa3cdc03b9d002f63db1c9e1ce7db1/np_codeocean-0.1.5.tar.gz
+[2023-05-29 23:08:02] INFO root fetch - processPackages [np-codeocean]: executing diffoscope
+[2023-05-29 23:08:02] INFO root fetch - processPackages [np-codeocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_codeocean-0.1.4.tar.gz tmp/np_codeocean-0.1.5.tar.gz --markdown 20230529/n/np-codeocean/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 23:08:02] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/71/2d/d75b067fc40aa6a962035055f58a91d33a8009244157d5d0ff828f07f6a3/whisper_autosrt-0.0.3.tar.gz
+[2023-05-29 23:08:02] INFO root fetch - processPackages [calixa-proto-py]: Downloading https://files.pythonhosted.org/packages/27/dc/1cf17f2821980cbec5b9227d53697bc45bd153a9b5546f2da3895414859f/calixa-proto-py-2.0.8.tar.gz
+[2023-05-29 23:08:02] INFO root fetch - processPackages [rocm-docs-core]: executing diffoscope
+[2023-05-29 23:08:02] INFO root fetch - processPackages [rocm-docs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocm-docs-core-0.9.1.tar.gz tmp/rocm-docs-core-0.9.2.tar.gz --markdown 20230529/r/rocm-docs-core/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-29 23:08:02] INFO root fetch - processPackages [whisper-autosrt]: executing diffoscope
+[2023-05-29 23:08:02] INFO root fetch - processPackages [whisper-autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_autosrt-0.0.2.tar.gz tmp/whisper_autosrt-0.0.3.tar.gz --markdown 20230529/w/whisper-autosrt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 23:08:03] INFO root fetch - processPackages [apigratis-sdk-python]: Downloading https://files.pythonhosted.org/packages/25/f9/380ba209fbf2515c34751853638047cdf0ef3b23957de16fd752a93678b4/apigratis_sdk_python-0.0.2-py3-none-any.whl
+[2023-05-29 23:08:03] INFO root fetch - processPackages [medialibrary]: Downloading https://files.pythonhosted.org/packages/57/0f/6c86604052791fb217b60806ca6b06d90ad220b524b5eefaa6b132e8e2f3/medialibrary-0.1.9.tar.gz
+[2023-05-29 23:08:03] INFO root fetch - processPackages [medialibrary]: executing diffoscope
+[2023-05-29 23:08:03] INFO root fetch - processPackages [medialibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medialibrary-0.1.7.tar.gz tmp/medialibrary-0.1.9.tar.gz --markdown 20230529/m/medialibrary/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 23:08:03] INFO root fetch - processPackages [apigratis-sdk-python]: executing diffoscope
+[2023-05-29 23:08:03] INFO root fetch - processPackages [apigratis-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apigratis-sdk-python-0.0.1.tar.gz tmp/apigratis_sdk_python-0.0.2-py3-none-any.whl.zip --markdown 20230529/a/apigratis-sdk-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 23:08:03] INFO root fetch - processPackages [calixa-proto-py]: Downloading https://files.pythonhosted.org/packages/01/30/86465543b3806024012227bd625eeaee344a1d145c297042b83becfd8a64/calixa-proto-py-2.0.9.tar.gz
+[2023-05-29 23:08:04] INFO root fetch - processPackages [calixa-proto-py]: executing diffoscope
+[2023-05-29 23:08:04] INFO root fetch - processPackages [calixa-proto-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calixa-proto-py-2.0.8.tar.gz tmp/calixa-proto-py-2.0.9.tar.gz --markdown 20230529/c/calixa-proto-py/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:08:04] INFO root fetch - main [MainThread]: End processing [np-codeocean]: success
+[2023-05-29 23:08:04] INFO root fetch - main [MainThread]: End processing [apigratis-sdk-python]: success
+[2023-05-29 23:08:04] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
+[2023-05-29 23:08:04] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
+[2023-05-29 23:08:04] INFO root fetch - main [MainThread]: End processing [medialibrary]: success
+[2023-05-29 23:08:07] INFO root fetch - main [MainThread]: End processing [calixa-proto-py]: success
+[2023-05-29 23:08:07] INFO root fetch - main [MainThread]: Store serial: [18294515]
