@@ -5261,3 +5261,36 @@
 [2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [msg2po]: success
 [2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
 [2023-05-29 08:12:44] INFO root fetch - main [MainThread]: Store serial: [18286683]
+[2023-05-29 08:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286683]
+[2023-05-29 08:17:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: e2enetworks
+[2023-05-29 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pingdatautil
+[2023-05-29 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiotoolbox
+[2023-05-29 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt-fts
+[2023-05-29 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sitcom
+[2023-05-29 08:17:53] INFO root fetch - processPackages [e2enetworks]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:17:53] INFO root fetch - processPackages [pingdatautil]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 08:17:53] INFO root fetch - processPackages [sitcom]: New version: [1.5.0] Old Version: [1.4.5]
+[2023-05-29 08:17:53] INFO root fetch - processPackages [audiotoolbox]: New version: [0.65] Old Version: [0.64.1]
+[2023-05-29 08:17:53] INFO root fetch - processPackages [yt-fts]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 08:17:53] INFO root fetch - processPackages [pingdatautil]: Downloading https://files.pythonhosted.org/packages/d6/87/152edbacb0c6bafaba33073eb37655b4174089efddd95169686297fb853e/pingdatautil-0.0.3.tar.gz
+[2023-05-29 08:17:53] INFO root fetch - processPackages [audiotoolbox]: Downloading https://files.pythonhosted.org/packages/ea/c1/dae6abea569112ddbf51b5be3c9b8a1ed9ade72cb63c45e16c46c91777ca/audiotoolbox-0.64.1-py3-none-any.whl
+[2023-05-29 08:17:53] INFO root fetch - processPackages [sitcom]: Downloading https://files.pythonhosted.org/packages/71/6d/fc9231775aa82037b589b19a0ffff5d3cc1c505e817571349c892dcab4ea/sitcom-1.4.5.tar.gz
+[2023-05-29 08:17:53] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/cc/8e/ae4141f826d640233b639757ad4c6bd23f66defdde327360075e47c946df/yt-fts-0.1.5.tar.gz
+[2023-05-29 08:17:54] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-29 08:17:54] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.4.tar.gz tmp/yt-fts-0.1.5.tar.gz --markdown 20230529/y/yt-fts/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 08:17:54] WARNING root fetch - processPackages [sitcom]: Skipping package: exceeds size limit 10772861>=10485760
+[2023-05-29 08:17:54] INFO root fetch - main [MainThread]: End processing [sitcom] error
+[2023-05-29 08:17:54] INFO root fetch - processPackages [e2enetworks]: executing diffoscope
+[2023-05-29 08:17:54] INFO root fetch - processPackages [e2enetworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2enetworks-0.0.8.tar.gz tmp/e2enetworks-0.0.9.tar.gz --markdown 20230529/e/e2enetworks/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:17:54] INFO root fetch - processPackages [pingdatautil]: Downloading https://files.pythonhosted.org/packages/8b/36/e6cd953c3a20b8220e4fcee2f145845a532f451b4715e5e24c7b8957be77/pingdatautil-0.0.4.tar.gz
+[2023-05-29 08:17:54] INFO root fetch - processPackages [audiotoolbox]: Downloading https://files.pythonhosted.org/packages/84/9b/8c2121e1c4bde1cf114875003f37bba5a661a7ec957c46a212c619c1a7a7/audiotoolbox-0.65.tar.gz
+[2023-05-29 08:17:54] INFO root fetch - processPackages [pingdatautil]: executing diffoscope
+[2023-05-29 08:17:54] INFO root fetch - processPackages [pingdatautil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pingdatautil-0.0.3.tar.gz tmp/pingdatautil-0.0.4.tar.gz --markdown 20230529/p/pingdatautil/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 08:17:54] INFO root fetch - processPackages [audiotoolbox]: executing diffoscope
+[2023-05-29 08:17:54] INFO root fetch - processPackages [audiotoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiotoolbox-0.64.1-py3-none-any.whl.zip tmp/audiotoolbox-0.65.tar.gz --markdown 20230529/a/audiotoolbox/0.64.1-0.65/diff.md --exclude *.pyd
+[2023-05-29 08:17:55] INFO root fetch - main [MainThread]: End processing [e2enetworks]: success
+[2023-05-29 08:17:55] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-29 08:17:55] INFO root fetch - main [MainThread]: End processing [audiotoolbox]: success
+[2023-05-29 08:17:55] INFO root fetch - main [MainThread]: End processing [pingdatautil]: success
+[2023-05-29 08:17:55] INFO root fetch - main [MainThread]: Store serial: [18286697]
