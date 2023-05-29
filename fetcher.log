@@ -16037,3 +16037,70 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 20:47:51] INFO root fetch - main [MainThread]: End processing [kfactory]: success
 [2023-05-29 20:47:55] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-29 20:47:55] INFO root fetch - main [MainThread]: Store serial: [18293273]
+[2023-05-29 20:52:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293273]
+[2023-05-29 20:53:04] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rest-framework-material
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hummuspy
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fluvio
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: superstes-ctf-tools
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rest-framework-redesign
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pautobot
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: assisted-service-client
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: superstes-ctf-tools
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: v7e-utils
+[2023-05-29 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: exact
+[2023-05-29 20:53:04] INFO root fetch - processPackages [rest-framework-material]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [superstes-ctf-tools]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [rest-framework-redesign]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [pautobot]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [superstes-ctf-tools]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [v7e-utils]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [fluvio]: New version: [0.9.6b3] Old Version: [0.9.6b2]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [exact]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 20:53:04] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-29 20:53:04] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230529/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-29 20:53:04] INFO root fetch - processPackages [superstes-ctf-tools]: Downloading https://files.pythonhosted.org/packages/c1/8b/26fb49e936af4ad4f220152f9409ade635cfaa5bc57a19a1ea67ffe7cb2d/superstes_ctf_tools-1.0.0.tar.gz
+[2023-05-29 20:53:04] INFO root fetch - processPackages [superstes-ctf-tools]: Downloading https://files.pythonhosted.org/packages/c1/8b/26fb49e936af4ad4f220152f9409ade635cfaa5bc57a19a1ea67ffe7cb2d/superstes_ctf_tools-1.0.0.tar.gz
+[2023-05-29 20:53:04] INFO root fetch - processPackages [rest-framework-material]: Downloading https://files.pythonhosted.org/packages/fe/e3/0d840a74d5801ff71f4a2729a1164f56b2c21574a27daa4a9d85c99e7d0a/rest_framework_material-0.1.7.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-redesign]: Downloading https://files.pythonhosted.org/packages/de/64/a8b5a0827348a073970833229f3f80d58080b2ba07a05a063606cf2d9291/rest_framework_redesign-0.2.0.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [fluvio]: Downloading https://files.pythonhosted.org/packages/2c/67/bbd723943d40166391480c5995c9b6cbfa7694bb91c2f806ddc4ecf18fa5/fluvio-0.9.6b2.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [v7e-utils]: Downloading https://files.pythonhosted.org/packages/07/de/b70f2feabc7730eda0f1b6583c6d4ed54e9ffd9ee833fcecb158316256c7/v7e_utils-0.5.1.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [pautobot]: Downloading https://files.pythonhosted.org/packages/72/fa/063938be6d4f975d16c62357f7feb0dbac827224baa3aa90f91f583529b6/pautobot-0.0.3.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [exact]: Downloading https://files.pythonhosted.org/packages/8b/3e/1f80a77deaf180e71354a9c442d5a931a4bfb4be693b8b99b229fa92c31d/exact-1.1.1-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-29 20:53:05] INFO root fetch - processPackages [v7e-utils]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [v7e-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v7e_utils-0.5.0.tar.gz tmp/v7e_utils-0.5.1.tar.gz --markdown 20230529/v/v7e-utils/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-material]: Downloading https://files.pythonhosted.org/packages/61/1f/a646b503e13e8414e5ff37ac663c5f87d8fc9f32a19bd6fc6c8200cbddc1/rest_framework_material-0.1.8.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230529/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [superstes-ctf-tools]: Downloading https://files.pythonhosted.org/packages/84/0e/ea2130fc0177b94a50e1ffbb278a2da63b5c684238e0d4350f6ae62af4ae/superstes_ctf_tools-1.0.1.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [superstes-ctf-tools]: Downloading https://files.pythonhosted.org/packages/84/0e/ea2130fc0177b94a50e1ffbb278a2da63b5c684238e0d4350f6ae62af4ae/superstes_ctf_tools-1.0.1.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-material]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_framework_material-0.1.7.tar.gz tmp/rest_framework_material-0.1.8.tar.gz --markdown 20230529/r/rest-framework-material/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-redesign]: Downloading https://files.pythonhosted.org/packages/88/2b/79274cdea1a9f42a9192a00b1737ad6c167b8b4192c11288e0d76d56ba19/rest_framework_redesign-0.2.1.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [superstes-ctf-tools]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [superstes-ctf-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superstes_ctf_tools-1.0.0.tar.gz tmp/superstes_ctf_tools-1.0.1.tar.gz --markdown 20230529/s/superstes-ctf-tools/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [superstes-ctf-tools]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [superstes-ctf-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superstes_ctf_tools-1.0.0.tar.gz tmp/superstes_ctf_tools-1.0.1.tar.gz --markdown 20230529/s/superstes-ctf-tools/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [fluvio]: Downloading https://files.pythonhosted.org/packages/58/40/5f4952aa89ee08388f9802782d9c28afe1be06d726eb5e76c5c0d9f8b1a9/fluvio-0.9.6b3.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-redesign]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [rest-framework-redesign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_framework_redesign-0.2.0.tar.gz tmp/rest_framework_redesign-0.2.1.tar.gz --markdown 20230529/r/rest-framework-redesign/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [pautobot]: Downloading https://files.pythonhosted.org/packages/2c/69/8656363dbcfb65425665949777def65f55ed9dd9b1f9994953c22be7b0ef/pautobot-0.0.4.tar.gz
+[2023-05-29 20:53:05] INFO root fetch - processPackages [fluvio]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [fluvio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluvio-0.9.6b2.tar.gz tmp/fluvio-0.9.6b3.tar.gz --markdown 20230529/f/fluvio/0.9.6b2-0.9.6b3/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [pautobot]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [pautobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pautobot-0.0.3.tar.gz tmp/pautobot-0.0.4.tar.gz --markdown 20230529/p/pautobot/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 20:53:05] INFO root fetch - processPackages [exact]: executing diffoscope
+[2023-05-29 20:53:05] INFO root fetch - processPackages [exact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exact-1.1.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip tmp/exact-1.1.1-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230529/e/exact/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 20:53:06] INFO root fetch - main [MainThread]: End processing [v7e-utils]: success
+[2023-05-29 20:53:06] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-05-29 20:53:07] INFO root fetch - main [MainThread]: End processing [superstes-ctf-tools]: success
+[2023-05-29 20:53:07] INFO root fetch - main [MainThread]: End processing [rest-framework-material]: success
+[2023-05-29 20:53:07] INFO root fetch - main [MainThread]: End processing [superstes-ctf-tools]: success
+[2023-05-29 20:53:07] INFO root fetch - main [MainThread]: End processing [fluvio]: success
+[2023-05-29 20:53:07] INFO root fetch - main [MainThread]: End processing [rest-framework-redesign]: success
+[2023-05-29 20:53:08] INFO root fetch - main [MainThread]: End processing [pautobot]: success
+[2023-05-29 20:53:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-29 20:53:41] INFO root fetch - main [MainThread]: End processing [exact]: success
+[2023-05-29 20:53:41] INFO root fetch - main [MainThread]: Store serial: [18293319]
