@@ -11633,3 +11633,88 @@ EOFError: EOF read where object expected
 [2023-05-29 16:02:45] INFO root fetch - main [MainThread]: End processing [ToolBox4Test]: success
 [2023-05-29 16:02:45] INFO root fetch - main [MainThread]: End processing [pyxbox]: success
 [2023-05-29 16:02:45] INFO root fetch - main [MainThread]: Store serial: [18290659]
+[2023-05-29 16:07:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290659]
+[2023-05-29 16:07:54] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nzpyida
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: example-package-zss
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wand-ai-client
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aij
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maggma
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cg
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tablepy-lib
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: asociita
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-kafka-streamer
+[2023-05-29 16:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: esptool
+[2023-05-29 16:07:54] INFO root fetch - processPackages [wand-ai-client]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [tablepy-lib]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [nzpyida]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [example-package-zss]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [asociita]: New version: [0.1.6.9] Old Version: [0.1.6.8]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [django-kafka-streamer]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [aij]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [maggma]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [esptool]: New version: [4.6.dev1] Old Version: [4.6]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [cg]: New version: [33.0.1] Old Version: [33.0.0]
+[2023-05-29 16:07:54] INFO root fetch - processPackages [maggma]: executing diffoscope
+[2023-05-29 16:07:54] INFO root fetch - processPackages [maggma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maggma-0.8.0.tar.gz tmp/maggma-0.9.0.tar.gz --markdown 20230529/m/maggma/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 16:07:54] INFO root fetch - processPackages [wand-ai-client]: Downloading https://files.pythonhosted.org/packages/24/81/0196d3a56100fed4610e73b3de556029660771184a6bfaf328cada840e81/wand-ai-client-0.0.6.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [esptool]: Downloading https://files.pythonhosted.org/packages/ec/b1/83b39e12696f49c594e2a70d6868424e816594c7e68abe49c72fb71d3ff6/esptool-4.6.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [example-package-zss]: Downloading https://files.pythonhosted.org/packages/e9/d1/a5e34e5259dc735e6b132c9bd4d3be3c324fbb9893c82f2df0d9478a19dd/example_package_zss-0.0.1.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [nzpyida]: Downloading https://files.pythonhosted.org/packages/db/d5/5395b8faa9ce754b71bc116deadbd190c83d8d786e25f59d0e40809539ee/nzpyida-0.3.4.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/be/91/44e082d1385ae9b82fef7450db81aa32a0958c46423d441be98d480f6bdb/cg-33.0.1.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [django-kafka-streamer]: Downloading https://files.pythonhosted.org/packages/31/c6/3ac3a9bf8a8c5cfaa4125457deae3dd9f9508cf63e5a7a73ddbb7feb6046/django-kafka-streamer-1.0.0.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/b8/89/a970aad64f23235e51e33b8a794b062022b5258912c74c4af5f5789d4c62/aij-1.2.7.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [tablepy-lib]: Downloading https://files.pythonhosted.org/packages/16/f0/aea85751a070b061db03fd718d8c92e7a740c562029b3374e3bf0caec305/tablepy_lib-0.4.0.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-29 16:07:54] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.2.6.tar.gz tmp/aij-1.2.7.tar.gz --markdown 20230529/a/aij/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-05-29 16:07:54] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-29 16:07:54] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-33.0.0.tar.gz tmp/cg-33.0.1.tar.gz --markdown 20230529/c/cg/33.0.0-33.0.1/diff.md --exclude *.pyd
+[2023-05-29 16:07:54] INFO root fetch - processPackages [asociita]: Downloading https://files.pythonhosted.org/packages/3d/e5/c75ac61b47c0e0286b48ddae149d226937d037c0adfa0fb3cb8217bd9915/asociita-0.1.6.9.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [wand-ai-client]: Downloading https://files.pythonhosted.org/packages/d7/5e/1088c454a90291940ace272f8b5a3340cb225dd19095a7dbea49c430b2a4/wand-ai-client-0.0.7.tar.gz
+[2023-05-29 16:07:54] INFO root fetch - processPackages [tablepy-lib]: executing diffoscope
+[2023-05-29 16:07:54] INFO root fetch - processPackages [tablepy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablepy_lib-0.3.0.tar.gz tmp/tablepy_lib-0.4.0.tar.gz --markdown 20230529/t/tablepy-lib/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 16:07:55] INFO root fetch - processPackages [django-kafka-streamer]: Downloading https://files.pythonhosted.org/packages/75/b3/c7278c64bd3f3df9026c50efa8a9350560af999adc9d1e6ae80214b11215/django-kafka-streamer-1.1.0.tar.gz
+[2023-05-29 16:07:55] INFO root fetch - processPackages [example-package-zss]: Downloading https://files.pythonhosted.org/packages/1c/3d/68d19e0d5b521f47a72454599f6a0bc1bd9b35dad65028c0492ab09374e5/example_package_zss-0.0.2.tar.gz
+[2023-05-29 16:07:55] INFO root fetch - processPackages [nzpyida]: Downloading https://files.pythonhosted.org/packages/da/7a/e40e6ebbcd0e79f2b3e3e543d182d47977d56ba316df24ec9deb6c261955/nzpyida-0.3.5.tar.gz
+[2023-05-29 16:07:55] INFO root fetch - processPackages [asociita]: executing diffoscope
+[2023-05-29 16:07:55] INFO root fetch - processPackages [wand-ai-client]: executing diffoscope
+[2023-05-29 16:07:55] INFO root fetch - processPackages [asociita]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asociita-0.1.6.8.tar.gz tmp/asociita-0.1.6.9.tar.gz --markdown 20230529/a/asociita/0.1.6.8-0.1.6.9/diff.md --exclude *.pyd
+[2023-05-29 16:07:55] INFO root fetch - processPackages [wand-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wand-ai-client-0.0.6.tar.gz tmp/wand-ai-client-0.0.7.tar.gz --markdown 20230529/w/wand-ai-client/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 16:07:55] INFO root fetch - processPackages [esptool]: Downloading https://files.pythonhosted.org/packages/5b/c6/6343b61959181c959ffd82544c41d9b7f5194d8ec8d40a6ee2440db46751/esptool-4.6.dev1.tar.gz
+[2023-05-29 16:07:55] INFO root fetch - processPackages [example-package-zss]: executing diffoscope
+[2023-05-29 16:07:55] INFO root fetch - processPackages [example-package-zss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/example_package_zss-0.0.1.tar.gz tmp/example_package_zss-0.0.2.tar.gz --markdown 20230529/e/example-package-zss/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 16:07:55] INFO root fetch - processPackages [django-kafka-streamer]: executing diffoscope
+[2023-05-29 16:07:55] INFO root fetch - processPackages [django-kafka-streamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-kafka-streamer-1.0.0.tar.gz tmp/django-kafka-streamer-1.1.0.tar.gz --markdown 20230529/d/django-kafka-streamer/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 16:07:55] INFO root fetch - processPackages [nzpyida]: executing diffoscope
+[2023-05-29 16:07:55] INFO root fetch - processPackages [nzpyida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nzpyida-0.3.4.tar.gz tmp/nzpyida-0.3.5.tar.gz --markdown 20230529/n/nzpyida/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-29 16:07:55] INFO root fetch - processPackages [esptool]: executing diffoscope
+[2023-05-29 16:07:55] INFO root fetch - processPackages [esptool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esptool-4.6.tar.gz tmp/esptool-4.6.dev1.tar.gz --markdown 20230529/e/esptool/4.6-4.6.dev1/diff.md --exclude *.pyd
+[2023-05-29 16:07:56] INFO root fetch - processPackages [tablepy-lib]: Start processing: assemblyline-service-utilities
+[2023-05-29 16:07:56] INFO root fetch - main [MainThread]: End processing [tablepy-lib]: success
+[2023-05-29 16:07:56] INFO root fetch - processPackages [assemblyline-service-utilities]: New version: [4.4.1.dev5] Old Version: [4.4.1.dev4]
+[2023-05-29 16:07:56] INFO root fetch - processPackages [maggma]: Start processing: tailraiders
+[2023-05-29 16:07:56] INFO root fetch - main [MainThread]: End processing [maggma]: success
+[2023-05-29 16:07:56] INFO root fetch - processPackages [tailraiders]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 16:07:56] INFO root fetch - processPackages [assemblyline-service-utilities]: Downloading https://files.pythonhosted.org/packages/d5/9e/0eaf7df3e4472ea7168510d375e2084a224afa9b3163f089aa787060ec66/assemblyline_service_utilities-4.4.1.dev5-py3-none-any.whl
+[2023-05-29 16:07:56] INFO root fetch - processPackages [tailraiders]: Downloading https://files.pythonhosted.org/packages/0a/81/f7132e85f64840379915e205e0aa97ef3187eb789804c9e210cdcaeb2282/tailraiders-0.0.7.tar.gz
+[2023-05-29 16:07:56] INFO root fetch - processPackages [assemblyline-service-utilities]: executing diffoscope
+[2023-05-29 16:07:56] INFO root fetch - processPackages [assemblyline-service-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_utilities-4.4.1.dev4-py3-none-any.whl.zip tmp/assemblyline_service_utilities-4.4.1.dev5-py3-none-any.whl.zip --markdown 20230529/a/assemblyline-service-utilities/4.4.1.dev4-4.4.1.dev5/diff.md --exclude *.pyd
+[2023-05-29 16:07:56] INFO root fetch - processPackages [example-package-zss]: Start processing: python-tools-scripts
+[2023-05-29 16:07:56] INFO root fetch - main [MainThread]: End processing [example-package-zss]: success
+[2023-05-29 16:07:56] INFO root fetch - processPackages [python-tools-scripts]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-29 16:07:56] INFO root fetch - main [MainThread]: End processing [wand-ai-client]: success
+[2023-05-29 16:07:56] INFO root fetch - processPackages [python-tools-scripts]: executing diffoscope
+[2023-05-29 16:07:56] INFO root fetch - processPackages [python-tools-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tools-scripts-0.9.6.tar.gz tmp/python-tools-scripts-0.9.7.tar.gz --markdown 20230529/p/python-tools-scripts/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-29 16:07:56] INFO root fetch - processPackages [tailraiders]: Downloading https://files.pythonhosted.org/packages/c4/af/d57cceb47e9dac984378c19214aee20e137efb2ca2bcb361151ba0b06c9b/tailraiders-0.0.8.tar.gz
+[2023-05-29 16:07:56] INFO root fetch - main [MainThread]: End processing [asociita]: success
+[2023-05-29 16:07:57] INFO root fetch - processPackages [tailraiders]: executing diffoscope
+[2023-05-29 16:07:57] INFO root fetch - processPackages [tailraiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailraiders-0.0.7.tar.gz tmp/tailraiders-0.0.8.tar.gz --markdown 20230529/t/tailraiders/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 16:07:57] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-29 16:07:57] INFO root fetch - main [MainThread]: End processing [django-kafka-streamer]: success
+[2023-05-29 16:07:58] INFO root fetch - main [MainThread]: End processing [nzpyida]: success
+[2023-05-29 16:07:58] INFO root fetch - main [MainThread]: End processing [esptool]: success
+[2023-05-29 16:07:58] INFO root fetch - main [MainThread]: End processing [python-tools-scripts]: success
+[2023-05-29 16:07:58] INFO root fetch - main [MainThread]: End processing [tailraiders]: success
+[2023-05-29 16:07:59] INFO root fetch - main [MainThread]: End processing [assemblyline-service-utilities]: success
+[2023-05-29 16:08:08] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-29 16:08:08] INFO root fetch - main [MainThread]: Store serial: [18290699]
