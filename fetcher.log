@@ -16621,3 +16621,34 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:36:29] INFO root fetch - processPackages [django-virtual-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-virtual-models-0.1.4.tar.gz tmp/django-virtual-models-0.1.5.tar.gz --markdown 20230529/d/django-virtual-models/0.1.4-0.1.5/diff.md --exclude *.pyd
 [2023-05-29 21:36:30] INFO root fetch - main [MainThread]: End processing [django-virtual-models]: success
 [2023-05-29 21:36:30] INFO root fetch - main [MainThread]: Store serial: [18293600]
+[2023-05-29 21:41:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293600]
+[2023-05-29 21:41:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 21:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: turbo-docs
+[2023-05-29 21:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webdns
+[2023-05-29 21:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oloren
+[2023-05-29 21:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg8000
+[2023-05-29 21:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-pipelines
+[2023-05-29 21:41:39] WARNING root fetch - processPackages [webdns]: Skipping, unable to determine old version
+[2023-05-29 21:41:39] INFO root fetch - main [MainThread]: End processing [webdns] error
+[2023-05-29 21:41:39] INFO root fetch - processPackages [oloren]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:41:39] INFO root fetch - processPackages [turbo-docs]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-29 21:41:39] INFO root fetch - processPackages [vector-pipelines]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 21:41:39] INFO root fetch - processPackages [pg8000]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-29 21:41:40] INFO root fetch - processPackages [oloren]: executing diffoscope
+[2023-05-29 21:41:40] INFO root fetch - processPackages [oloren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oloren-0.0.8.tar.gz tmp/oloren-0.0.9.tar.gz --markdown 20230529/o/oloren/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:41:40] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/ae/5b/2b29af28608808f0f323b4319ff65416b3d8cc77c206792ecd776267520d/turbo_docs-0.8.3.tar.gz
+[2023-05-29 21:41:40] INFO root fetch - processPackages [pg8000]: Downloading https://files.pythonhosted.org/packages/65/e9/ec11aa94842e65712402367dde63c925ef6ed5bfa3491de9e4cda23530bc/pg8000-1.9.8.tar.gz
+[2023-05-29 21:41:40] INFO root fetch - processPackages [vector-pipelines]: Downloading https://files.pythonhosted.org/packages/03/61/7ff685a6a27be171182ec97fcba3f77be9bb2350baca79c01d73dff733bb/vector_pipelines-0.0.3.tar.gz
+[2023-05-29 21:41:40] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/b5/14/9d0552d03c9158e9a7e2ddf6f0976633e2d023da55177ced813eabaa6d13/turbo_docs-0.8.4.tar.gz
+[2023-05-29 21:41:40] INFO root fetch - processPackages [vector-pipelines]: executing diffoscope
+[2023-05-29 21:41:40] INFO root fetch - processPackages [vector-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_pipelines-0.0.2.tar.gz tmp/vector_pipelines-0.0.3.tar.gz --markdown 20230529/v/vector-pipelines/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 21:41:40] INFO root fetch - processPackages [pg8000]: Downloading https://files.pythonhosted.org/packages/76/38/3c2b3384c447bdac7cd3f1155894dd6522935f7c923492baed5cc3d9b2bf/pg8000-1.9.9.tar.gz
+[2023-05-29 21:41:40] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-05-29 21:41:40] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.8.3.tar.gz tmp/turbo_docs-0.8.4.tar.gz --markdown 20230529/t/turbo-docs/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-29 21:41:40] INFO root fetch - processPackages [pg8000]: executing diffoscope
+[2023-05-29 21:41:40] INFO root fetch - processPackages [pg8000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg8000-1.9.8.tar.gz tmp/pg8000-1.9.9.tar.gz --markdown 20230529/p/pg8000/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-29 21:41:41] INFO root fetch - main [MainThread]: End processing [vector-pipelines]: success
+[2023-05-29 21:41:41] INFO root fetch - main [MainThread]: End processing [pg8000]: success
+[2023-05-29 21:41:41] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-05-29 21:41:45] INFO root fetch - main [MainThread]: End processing [oloren]: success
+[2023-05-29 21:41:45] INFO root fetch - main [MainThread]: Store serial: [18293616]
