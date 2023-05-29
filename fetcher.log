@@ -11442,3 +11442,71 @@ EOFError: EOF read where object expected
 [2023-05-29 15:46:50] INFO root fetch - main [MainThread]: End processing [AsyncPywhatKit]: success
 [2023-05-29 15:47:00] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-29 15:47:00] INFO root fetch - main [MainThread]: Store serial: [18290488]
+[2023-05-29 15:52:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290488]
+[2023-05-29 15:52:10] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quanturf
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uk-postcodes-parsing
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabledocs
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indexed-bzip2
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aimped
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygitguardian
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sabledocs
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: find-known-secrets
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: yangsuite-devices
+[2023-05-29 15:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cybrid-api-organization-python
+[2023-05-29 15:52:10] INFO root fetch - processPackages [sabledocs]: New version: [0.3.146] Old Version: [0.3.144.dev0]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [pygitguardian]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [sabledocs]: New version: [0.3.146] Old Version: [0.3.144.dev0]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [find-known-secrets]: New version: [1.3.0] Old Version: [1.0.30]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [uk-postcodes-parsing]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [quanturf]: New version: [8.6.1] Old Version: [8.5]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [indexed-bzip2]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [aimped]: New version: [0.1.45] Old Version: [0.1.44]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-29 15:52:10] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 15:52:10] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/50/79/e26c838791cbdaa17a56bf87e7cd4b87afaa563dbf44e38cd3581e157a82/sabledocs-0.3.144.dev0.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/50/79/e26c838791cbdaa17a56bf87e7cd4b87afaa563dbf44e38cd3581e157a82/sabledocs-0.3.144.dev0.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [yangsuite-devices]: New version: [2.9.5.post0.dev6] Old Version: [2.9.5.post0.dev5]
+[2023-05-29 15:52:10] INFO root fetch - processPackages [pygitguardian]: Downloading https://files.pythonhosted.org/packages/8b/25/f8e1487820fe5db4dc1f3b7e7d21d74778978fb98499b34ff7b4aba38ebc/pygitguardian-1.6.0.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [indexed-bzip2]: Downloading https://files.pythonhosted.org/packages/e0/bc/c60f5f0c4585fe6995297d56d38772777b370bb4a9051d62998d9eebc45e/indexed_bzip2-1.4.0.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [aimped]: Downloading https://files.pythonhosted.org/packages/a0/a6/b5da9d65cfdc3ce5d3a88fd27d88f89372ef781b5c268d0da1ecf6e38bea/aimped-0.1.45.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [uk-postcodes-parsing]: Downloading https://files.pythonhosted.org/packages/1c/7a/63a7c7768b4d4b81d22133d83a50c6c328c5d9d4146c882c49a5af95247d/uk_postcodes_parsing-0.0.3.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [find-known-secrets]: Downloading https://files.pythonhosted.org/packages/02/ae/d84d34a8331bfb2235438870865f3e688c91b7bb905f5b78ced6c94c540e/find_known_secrets-1.0.30.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [uk-postcodes-parsing]: executing diffoscope
+[2023-05-29 15:52:10] INFO root fetch - processPackages [uk-postcodes-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_postcodes_parsing-0.0.2.tar.gz tmp/uk_postcodes_parsing-0.0.3.tar.gz --markdown 20230529/u/uk-postcodes-parsing/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 15:52:10] INFO root fetch - processPackages [aimped]: executing diffoscope
+[2023-05-29 15:52:10] INFO root fetch - processPackages [aimped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimped-0.1.44.tar.gz tmp/aimped-0.1.45.tar.gz --markdown 20230529/a/aimped/0.1.44-0.1.45/diff.md --exclude *.pyd
+[2023-05-29 15:52:10] INFO root fetch - processPackages [yangsuite-devices]: Downloading https://files.pythonhosted.org/packages/08/98/59120b966104529ae223267c605c9a9dea49465cec5c7d30c572b194cefc/yangsuite_devices-2.9.5.post0.dev5-py3-none-any.whl
+[2023-05-29 15:52:10] INFO root fetch - processPackages [quanturf]: Downloading https://files.pythonhosted.org/packages/d0/4a/f9f7a2257d990bf6e60973b509da25092ebb626458645c6d1822a940510b/quanturf-8.6.1.tar.gz
+[2023-05-29 15:52:10] INFO root fetch - processPackages [pygitguardian]: Downloading https://files.pythonhosted.org/packages/f1/6c/7de50e7bbb27c4b40404bcf82902e62f440adf402f381e04396a382dd3dc/pygitguardian-1.7.0.tar.gz
+[2023-05-29 15:52:11] INFO root fetch - processPackages [indexed-bzip2]: Downloading https://files.pythonhosted.org/packages/b7/e0/596c473a0caffab7189db00f3f8b2a03716111fd7e7d66c1dafc40c0113d/indexed_bzip2-1.5.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-29 15:52:11] INFO root fetch - processPackages [pygitguardian]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [pygitguardian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygitguardian-1.6.0.tar.gz tmp/pygitguardian-1.7.0.tar.gz --markdown 20230529/p/pygitguardian/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-05-29 15:52:11] INFO root fetch - processPackages [find-known-secrets]: Downloading https://files.pythonhosted.org/packages/28/82/e9625c52833b517c5da864d173e0b8bee4241e828b0a3fa2a107db036b99/find_known_secrets-1.3.0.tar.gz
+[2023-05-29 15:52:11] INFO root fetch - processPackages [find-known-secrets]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [find-known-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/find_known_secrets-1.0.30.tar.gz tmp/find_known_secrets-1.3.0.tar.gz --markdown 20230529/f/find-known-secrets/1.0.30-1.3.0/diff.md --exclude *.pyd
+[2023-05-29 15:52:11] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/61/3f/b41f12ffb1b10a038d60f423f89ad7935dbbd70d45b98d7f8d03b086c324/sabledocs-0.3.146.tar.gz
+[2023-05-29 15:52:11] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/61/3f/b41f12ffb1b10a038d60f423f89ad7935dbbd70d45b98d7f8d03b086c324/sabledocs-0.3.146.tar.gz
+[2023-05-29 15:52:11] INFO root fetch - processPackages [indexed-bzip2]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [indexed-bzip2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexed_bzip2-1.4.0.tar.gz tmp/indexed_bzip2-1.5.0-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20230529/i/indexed-bzip2/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-29 15:52:11] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.3.144.dev0.tar.gz tmp/sabledocs-0.3.146.tar.gz --markdown 20230529/s/sabledocs/0.3.144.dev0-0.3.146/diff.md --exclude *.pyd
+[2023-05-29 15:52:11] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.3.144.dev0.tar.gz tmp/sabledocs-0.3.146.tar.gz --markdown 20230529/s/sabledocs/0.3.144.dev0-0.3.146/diff.md --exclude *.pyd
+[2023-05-29 15:52:11] INFO root fetch - processPackages [quanturf]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [quanturf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quanturf-8.5.tar.gz tmp/quanturf-8.6.1.tar.gz --markdown 20230529/q/quanturf/8.5-8.6.1/diff.md --exclude *.pyd
+[2023-05-29 15:52:11] INFO root fetch - processPackages [yangsuite-devices]: Downloading https://files.pythonhosted.org/packages/dd/96/e0d9c3cac7057ad31fa9130ef8a2fa9c0b9ce306cc859025e301ac1e6927/yangsuite_devices-2.9.5.post0.dev6-py3-none-any.whl
+[2023-05-29 15:52:11] INFO root fetch - processPackages [yangsuite-devices]: executing diffoscope
+[2023-05-29 15:52:11] INFO root fetch - processPackages [yangsuite-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_devices-2.9.5.post0.dev5-py3-none-any.whl.zip tmp/yangsuite_devices-2.9.5.post0.dev6-py3-none-any.whl.zip --markdown 20230529/y/yangsuite-devices/2.9.5.post0.dev5-2.9.5.post0.dev6/diff.md --exclude *.pyd
+[2023-05-29 15:52:12] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-29 15:52:12] INFO root fetch - main [MainThread]: End processing [uk-postcodes-parsing]: success
+[2023-05-29 15:52:12] INFO root fetch - main [MainThread]: End processing [pygitguardian]: success
+[2023-05-29 15:52:12] INFO root fetch - main [MainThread]: End processing [find-known-secrets]: success
+[2023-05-29 15:52:12] INFO root fetch - main [MainThread]: End processing [indexed-bzip2]: success
+[2023-05-29 15:52:12] INFO root fetch - main [MainThread]: End processing [aimped]: success
+[2023-05-29 15:52:13] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-05-29 15:52:13] INFO root fetch - main [MainThread]: End processing [quanturf]: success
+[2023-05-29 15:52:13] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-05-29 15:52:17] INFO root fetch - main [MainThread]: End processing [yangsuite-devices]: success
+[2023-05-29 15:52:17] INFO root fetch - main [MainThread]: Store serial: [18290532]
