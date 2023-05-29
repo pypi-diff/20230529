@@ -16384,3 +16384,65 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:10:24] INFO root fetch - main [MainThread]: End processing [lammps-step]: success
 [2023-05-29 21:10:25] INFO root fetch - main [MainThread]: End processing [airfrans]: success
 [2023-05-29 21:10:25] INFO root fetch - main [MainThread]: Store serial: [18293478]
+[2023-05-29 21:15:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293478]
+[2023-05-29 21:15:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: splight-cli
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iron-toolbox
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyDelphin
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coinlib
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strawberry-django-plus
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cs-telegram-bot-api
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gwemopt
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: seamm
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pydit-jceresearch
+[2023-05-29 21:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tablepy-lib
+[2023-05-29 21:15:34] INFO root fetch - processPackages [gwemopt]: New version: [0.1.0] Old Version: [0.0.84]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [iron-toolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [PyDelphin]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [cs-telegram-bot-api]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [tablepy-lib]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [pydit-jceresearch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [coinlib]: New version: [2.2.5] Old Version: [2.2.3]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [seamm]: New version: [220.8.3] Old Version: [2023.5.29]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [strawberry-django-plus]: New version: [2.5.0] Old Version: [2.4.2]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-29 21:15:34] INFO root fetch - processPackages [iron-toolbox]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [iron-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iron_toolbox-1.0.8.tar.gz tmp/iron_toolbox-1.0.9.tar.gz --markdown 20230529/i/iron-toolbox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [tablepy-lib]: Downloading https://files.pythonhosted.org/packages/cc/f5/a9a65ba2d44c0875cd1658d687f9e7447deb1ab627deac3f72201ff246e6/tablepy_lib-0.7.0.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [seamm]: Downloading https://files.pythonhosted.org/packages/58/fa/4068363099fc368cb3d63b46a03f5286544770e74946716ccd82f8560135/seamm-2023.5.29.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [PyDelphin]: Downloading https://files.pythonhosted.org/packages/7e/11/425678d0ca350d6d4a24c4b5b6f84021b634f5896011aa2aa6f94430f208/PyDelphin-1.8.0.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [cs-telegram-bot-api]: Downloading https://files.pythonhosted.org/packages/3a/57/9ceb3282b1639e08cf54bea02adf94f16bf5882f3d01755bf80d8a4d691a/cs-telegram-bot-api-0.0.5.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [strawberry-django-plus]: Downloading https://files.pythonhosted.org/packages/06/c8/9f4f9c0fd5487fd2426033251b72d5382952e67512bf4eedef0740881d4f/strawberry_django_plus-2.5.0.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [coinlib]: Downloading https://files.pythonhosted.org/packages/a8/e8/26169079de835efeb0e2478cddf2c5e3eda919c2fe26d2c5eecc3a59d5e9/coinlib-2.2.5.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/1e/91/674322339d18cdd438f47d326d31e95561af16932c3eec0ba47ee2c904d1/gwemopt-0.0.84.tar.gz
+[2023-05-29 21:15:34] INFO root fetch - processPackages [tablepy-lib]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [tablepy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablepy_lib-0.6.0.tar.gz tmp/tablepy_lib-0.7.0.tar.gz --markdown 20230529/t/tablepy-lib/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [cs-telegram-bot-api]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [cs-telegram-bot-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-telegram-bot-api-0.0.4.tar.gz tmp/cs-telegram-bot-api-0.0.5.tar.gz --markdown 20230529/c/cs-telegram-bot-api/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230529/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [pydit-jceresearch]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [pydit-jceresearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydit-jceresearch-0.0.8.tar.gz tmp/pydit-jceresearch-0.0.9.tar.gz --markdown 20230529/p/pydit-jceresearch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [strawberry-django-plus]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [strawberry-django-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_django_plus-2.4.2.tar.gz tmp/strawberry_django_plus-2.5.0.tar.gz --markdown 20230529/s/strawberry-django-plus/2.4.2-2.5.0/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [coinlib]: executing diffoscope
+[2023-05-29 21:15:34] INFO root fetch - processPackages [coinlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coinlib-2.2.3.tar.gz tmp/coinlib-2.2.5.tar.gz --markdown 20230529/c/coinlib/2.2.3-2.2.5/diff.md --exclude *.pyd
+[2023-05-29 21:15:34] INFO root fetch - processPackages [PyDelphin]: Downloading https://files.pythonhosted.org/packages/77/1a/e52f55f1be2fb3ddfeace59d014ca0ed3594c4393cc9220cc33bfe6ce628/PyDelphin-1.8.1.tar.gz
+[2023-05-29 21:15:35] INFO root fetch - processPackages [seamm]: Downloading https://files.pythonhosted.org/packages/73/a6/b374fc37a4d9a1891852ea20c1c820584f15f1a55e0d2f73b4b733637218/seamm-220.8.3.tar.gz
+[2023-05-29 21:15:35] INFO root fetch - processPackages [PyDelphin]: executing diffoscope
+[2023-05-29 21:15:35] INFO root fetch - processPackages [PyDelphin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDelphin-1.8.0.tar.gz tmp/PyDelphin-1.8.1.tar.gz --markdown 20230529/P/PyDelphin/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-29 21:15:35] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/85/c7/673e4cbd0ec00161d6a593a335c8c574f5ba857132d3e074583fe1ae364d/gwemopt-0.1.0.tar.gz
+[2023-05-29 21:15:35] WARNING root fetch - processPackages [gwemopt]: Skipping package: exceeds size limit 128382218>=10485760
+[2023-05-29 21:15:35] INFO root fetch - main [MainThread]: End processing [gwemopt] error
+[2023-05-29 21:15:35] INFO root fetch - processPackages [seamm]: executing diffoscope
+[2023-05-29 21:15:35] INFO root fetch - processPackages [seamm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seamm-2023.5.29.tar.gz tmp/seamm-220.8.3.tar.gz --markdown 20230529/s/seamm/2023.5.29-220.8.3/diff.md --exclude *.pyd
+[2023-05-29 21:15:35] INFO root fetch - main [MainThread]: End processing [iron-toolbox]: success
+[2023-05-29 21:15:36] INFO root fetch - main [MainThread]: End processing [cs-telegram-bot-api]: success
+[2023-05-29 21:15:36] INFO root fetch - main [MainThread]: End processing [tablepy-lib]: success
+[2023-05-29 21:15:36] INFO root fetch - main [MainThread]: End processing [pydit-jceresearch]: success
+[2023-05-29 21:15:36] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
+[2023-05-29 21:15:37] INFO root fetch - main [MainThread]: End processing [PyDelphin]: success
+[2023-05-29 21:15:37] INFO root fetch - main [MainThread]: End processing [seamm]: success
+[2023-05-29 21:15:37] INFO root fetch - main [MainThread]: End processing [coinlib]: success
+[2023-05-29 21:15:37] INFO root fetch - main [MainThread]: End processing [strawberry-django-plus]: success
+[2023-05-29 21:15:37] INFO root fetch - main [MainThread]: Store serial: [18293511]
