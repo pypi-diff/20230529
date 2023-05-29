@@ -8740,3 +8740,60 @@
 [2023-05-29 12:50:58] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-29 12:51:33] INFO root fetch - main [MainThread]: End processing [funcat3]: success
 [2023-05-29 12:51:33] INFO root fetch - main [MainThread]: Store serial: [18288858]
+[2023-05-29 12:56:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288858]
+[2023-05-29 12:56:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cluster-experiments
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: areaTestMouldByHuang
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mb-base
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: google-ads-api-report-fetcher
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dscan-api-client
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-vendor-promo
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ccdgen
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Tools-OC
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: obrpy
+[2023-05-29 12:56:42] INFO root fetch - processPackages [django-vendor-promo]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [cluster-experiments]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [google-ads-api-report-fetcher]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [areaTestMouldByHuang]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291052] Old Version: [1.0.202305291049]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [ccdgen]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [Tools-OC]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 12:56:42] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-29 12:56:42] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.8-py3-none-any.whl.zip tmp/dscan_api_client-1.0.9-py3-none-any.whl.zip --markdown 20230529/d/dscan-api-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 12:56:42] INFO root fetch - processPackages [google-ads-api-report-fetcher]: Downloading https://files.pythonhosted.org/packages/05/20/f7abd483ef102888d5b26d87d888e17ff727684b79b95ef77e992c89dafa/google-ads-api-report-fetcher-1.4.0.tar.gz
+[2023-05-29 12:56:43] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/68/9c/cf37c1dddf5cf012cc0b2e54977bec750431f691bddb64ae6d45ba2c7c8d/mb_base-1.0.202305291052-py3-none-any.whl
+[2023-05-29 12:56:43] INFO root fetch - processPackages [areaTestMouldByHuang]: Downloading https://files.pythonhosted.org/packages/48/be/e3cf433f1d73930bfe06cb16d1b867ebf4fc427573a766e4bec1a7a40afe/areaTestMouldByHuang-0.1.5.tar.gz
+[2023-05-29 12:56:43] INFO root fetch - processPackages [ccdgen]: Downloading https://files.pythonhosted.org/packages/34/99/b9d4c5afad96d57ab3abd11a4befad7cd149ecf4753cb01578178b017a99/ccdgen-0.0.5-py3-none-any.whl
+[2023-05-29 12:56:43] INFO root fetch - processPackages [Tools-OC]: Downloading https://files.pythonhosted.org/packages/68/06/f922da063b08bee14d2e534e5f1f479d1e47db32964f0ab6ca0a5cb67167/Tools-OC-1.0.0.tar.gz
+[2023-05-29 12:56:43] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291049-py3-none-any.whl.zip tmp/mb_base-1.0.202305291052-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291049-1.0.202305291052/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [django-vendor-promo]: Downloading https://files.pythonhosted.org/packages/a0/b2/a4431cb3249dbb48f9f5857e63ed13b26251aee296bc7db4665135578fa9/django-vendor-promo-0.2.3.tar.gz
+[2023-05-29 12:56:43] INFO root fetch - processPackages [areaTestMouldByHuang]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [areaTestMouldByHuang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areaTestMouldByHuang-0.1.4.tar.gz tmp/areaTestMouldByHuang-0.1.5.tar.gz --markdown 20230529/a/areaTestMouldByHuang/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [cluster-experiments]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [cluster-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_experiments-0.9.0.tar.gz tmp/cluster_experiments-0.9.1.tar.gz --markdown 20230529/c/cluster-experiments/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [google-ads-api-report-fetcher]: Downloading https://files.pythonhosted.org/packages/22/d7/eab9f3e1b2eda5587751d39525a870f0fc0cd70628c8ffd7a78bf1970543/google-ads-api-report-fetcher-1.5.0.tar.gz
+[2023-05-29 12:56:43] INFO root fetch - processPackages [ccdgen]: Downloading https://files.pythonhosted.org/packages/00/65/02e3a04c5a98c48e6bee650c54d2f92a3019b09daa6d67637340a0735821/ccdgen-0.0.6-py3-none-any.whl
+[2023-05-29 12:56:43] INFO root fetch - processPackages [Tools-OC]: Downloading https://files.pythonhosted.org/packages/84/ec/8859629c2e0b21d86cff630c78bbb1e6ad7a09ba9c643fa2e66f0386a5b2/Tools-OC-1.1.0.tar.gz
+[2023-05-29 12:56:43] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [google-ads-api-report-fetcher]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [google-ads-api-report-fetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-ads-api-report-fetcher-1.4.0.tar.gz tmp/google-ads-api-report-fetcher-1.5.0.tar.gz --markdown 20230529/g/google-ads-api-report-fetcher/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [django-vendor-promo]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [django-vendor-promo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-promo-0.2.2.tar.gz tmp/django-vendor-promo-0.2.3.tar.gz --markdown 20230529/d/django-vendor-promo/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [ccdgen]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [ccdgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdgen-0.0.5-py3-none-any.whl.zip tmp/ccdgen-0.0.6-py3-none-any.whl.zip --markdown 20230529/c/ccdgen/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 12:56:43] INFO root fetch - processPackages [Tools-OC]: executing diffoscope
+[2023-05-29 12:56:43] INFO root fetch - processPackages [Tools-OC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Tools-OC-1.0.0.tar.gz tmp/Tools-OC-1.1.0.tar.gz --markdown 20230529/T/Tools-OC/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 12:56:44] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:56:44] INFO root fetch - main [MainThread]: End processing [areaTestMouldByHuang]: success
+[2023-05-29 12:56:44] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-29 12:56:44] INFO root fetch - main [MainThread]: End processing [ccdgen]: success
+[2023-05-29 12:56:45] INFO root fetch - main [MainThread]: End processing [Tools-OC]: success
+[2023-05-29 12:56:45] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 12:56:45] INFO root fetch - main [MainThread]: End processing [cluster-experiments]: success
+[2023-05-29 12:56:45] INFO root fetch - main [MainThread]: End processing [google-ads-api-report-fetcher]: success
+[2023-05-29 12:57:34] INFO root fetch - main [MainThread]: End processing [django-vendor-promo]: success
+[2023-05-29 12:57:34] INFO root fetch - main [MainThread]: Store serial: [18288882]
