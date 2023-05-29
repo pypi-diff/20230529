@@ -1350,3 +1350,43 @@
 [2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
 [2023-05-29 02:35:52] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
 [2023-05-29 02:35:52] INFO root fetch - main [MainThread]: Store serial: [18284523]
+[2023-05-29 02:40:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284523]
+[2023-05-29 02:41:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swachhdata
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-monitoring-constructs
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssrs
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: state-machine-semaphore
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: searchlogit
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymino
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fasttextaug
+[2023-05-29 02:41:00] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-29 02:41:00] INFO root fetch - processPackages [ssrs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 02:41:00] WARNING root fetch - processPackages [fasttextaug]: Skipping, unable to determine old version
+[2023-05-29 02:41:00] INFO root fetch - main [MainThread]: End processing [fasttextaug] error
+[2023-05-29 02:41:00] INFO root fetch - processPackages [swachhdata]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-29 02:41:00] INFO root fetch - processPackages [pymino]: New version: [1.1.8.4] Old Version: [1.1.8.3]
+[2023-05-29 02:41:00] INFO root fetch - processPackages [cdk-monitoring-constructs]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-05-29 02:41:00] INFO root fetch - processPackages [searchlogit]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 02:41:01] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-29 02:41:01] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230529/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-29 02:41:01] INFO root fetch - processPackages [ssrs]: Downloading https://files.pythonhosted.org/packages/60/4b/cac1b22db7afdda9ca4d6a3f4833e5761f1e6517d2a0f4afdc62ddbade0e/ssrs-0.1.0.tar.gz
+[2023-05-29 02:41:01] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-05-29 02:41:01] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.8.tar.gz tmp/searchlogit-0.3.9.tar.gz --markdown 20230529/s/searchlogit/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 02:41:01] INFO root fetch - processPackages [pymino]: Downloading https://files.pythonhosted.org/packages/64/23/6bb2f4d563e0a0e57de9d18ee12b63cc4770ca40f87ee25669a4cc4de5c3/pymino-1.1.8.4.tar.gz
+[2023-05-29 02:41:01] INFO root fetch - processPackages [cdk-monitoring-constructs]: Downloading https://files.pythonhosted.org/packages/b4/72/384a62cce06a67acd81240b25c4896fa00241b332bad775e3f7b43081d39/cdk-monitoring-constructs-4.0.9.tar.gz
+[2023-05-29 02:41:01] INFO root fetch - processPackages [ssrs]: Downloading https://files.pythonhosted.org/packages/41/fd/5e07ac9a8ca1c2acbc3dafe568b3edcd844555c5ee17d241441fbb5d51cd/ssrs-0.1.1.tar.gz
+[2023-05-29 02:41:01] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-29 02:41:01] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-2.0.0rc1-py3-none-any.whl.zip tmp/swachhdata-2.0.0rc2-py3-none-any.whl.zip --markdown 20230529/s/swachhdata/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-29 02:41:01] INFO root fetch - processPackages [pymino]: executing diffoscope
+[2023-05-29 02:41:01] INFO root fetch - processPackages [pymino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymino-1.1.8.3.tar.gz tmp/pymino-1.1.8.4.tar.gz --markdown 20230529/p/pymino/1.1.8.3-1.1.8.4/diff.md --exclude *.pyd
+[2023-05-29 02:41:01] INFO root fetch - processPackages [ssrs]: executing diffoscope
+[2023-05-29 02:41:01] INFO root fetch - processPackages [ssrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssrs-0.1.0.tar.gz tmp/ssrs-0.1.1.tar.gz --markdown 20230529/s/ssrs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 02:41:01] INFO root fetch - processPackages [cdk-monitoring-constructs]: executing diffoscope
+[2023-05-29 02:41:01] INFO root fetch - processPackages [cdk-monitoring-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-monitoring-constructs-4.0.8.tar.gz tmp/cdk-monitoring-constructs-4.0.9.tar.gz --markdown 20230529/c/cdk-monitoring-constructs/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-05-29 02:41:02] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-29 02:41:02] INFO root fetch - main [MainThread]: End processing [ssrs]: success
+[2023-05-29 02:41:02] INFO root fetch - main [MainThread]: End processing [pymino]: success
+[2023-05-29 02:41:02] INFO root fetch - main [MainThread]: End processing [cdk-monitoring-constructs]: success
+[2023-05-29 02:41:03] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-29 02:41:03] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
+[2023-05-29 02:41:03] INFO root fetch - main [MainThread]: Store serial: [18284555]
