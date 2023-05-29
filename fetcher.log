@@ -17576,3 +17576,33 @@ EOFError: EOF read where object expected
 [2023-05-29 22:35:55] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2023-05-29 22:35:57] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
 [2023-05-29 22:35:57] INFO root fetch - main [MainThread]: Store serial: [18294296]
+[2023-05-29 22:41:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294296]
+[2023-05-29 22:41:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-myaskapi
+[2023-05-29 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vision6D
+[2023-05-29 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikvision-isapi-cli
+[2023-05-29 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clunester
+[2023-05-29 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: enigma-cipher-machine
+[2023-05-29 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fxn
+[2023-05-29 22:41:07] INFO root fetch - processPackages [vision6D]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 22:41:07] WARNING root fetch - processPackages [enigma-cipher-machine]: Skipping, unable to determine old version
+[2023-05-29 22:41:07] INFO root fetch - main [MainThread]: End processing [enigma-cipher-machine] error
+[2023-05-29 22:41:07] WARNING root fetch - processPackages [py-myaskapi]: Skipping, unable to determine old version
+[2023-05-29 22:41:07] INFO root fetch - main [MainThread]: End processing [py-myaskapi] error
+[2023-05-29 22:41:07] INFO root fetch - processPackages [fxn]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 22:41:07] WARNING root fetch - processPackages [clunester]: Skipping, unable to determine old version
+[2023-05-29 22:41:07] INFO root fetch - main [MainThread]: End processing [clunester] error
+[2023-05-29 22:41:07] INFO root fetch - processPackages [hikvision-isapi-cli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 22:41:07] INFO root fetch - processPackages [vision6D]: Downloading https://files.pythonhosted.org/packages/e7/6a/604dfc54f8c5f65e8103d92c85ff004aa927facfb1681f2b6d7644bdd849/vision6D-0.1.5.tar.gz
+[2023-05-29 22:41:07] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/f6/d0/830118db59d210c9a93b7883d7c6298116681c31c394a877e93bc951cd8b/fxn-0.0.8.tar.gz
+[2023-05-29 22:41:07] INFO root fetch - processPackages [hikvision-isapi-cli]: Downloading https://files.pythonhosted.org/packages/80/9d/8fc7b30a0de0039fb64132d18a124a0c91231dc7a850001e8862acbfb5cc/hikvision_isapi_cli-1.1.1.tar.gz
+[2023-05-29 22:41:07] INFO root fetch - processPackages [vision6D]: executing diffoscope
+[2023-05-29 22:41:07] INFO root fetch - processPackages [vision6D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision6D-0.1.4.tar.gz tmp/vision6D-0.1.5.tar.gz --markdown 20230529/v/vision6D/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 22:41:07] INFO root fetch - processPackages [fxn]: executing diffoscope
+[2023-05-29 22:41:07] INFO root fetch - processPackages [fxn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fxn-0.0.7.tar.gz tmp/fxn-0.0.8.tar.gz --markdown 20230529/f/fxn/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 22:41:07] INFO root fetch - processPackages [hikvision-isapi-cli]: executing diffoscope
+[2023-05-29 22:41:07] INFO root fetch - processPackages [hikvision-isapi-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikvision_isapi_cli-1.1.0.tar.gz tmp/hikvision_isapi_cli-1.1.1.tar.gz --markdown 20230529/h/hikvision-isapi-cli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 22:41:08] INFO root fetch - main [MainThread]: End processing [fxn]: success
+[2023-05-29 22:41:09] INFO root fetch - main [MainThread]: End processing [vision6D]: success
+[2023-05-29 22:41:10] INFO root fetch - main [MainThread]: End processing [hikvision-isapi-cli]: success
+[2023-05-29 22:41:10] INFO root fetch - main [MainThread]: Store serial: [18294322]
