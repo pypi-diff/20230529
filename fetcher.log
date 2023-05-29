@@ -1856,3 +1856,42 @@
 [2023-05-29 03:35:56] INFO root fetch - main [MainThread]: End processing [adbkit]: success
 [2023-05-29 03:35:56] INFO root fetch - main [MainThread]: End processing [pvbm]: success
 [2023-05-29 03:35:56] INFO root fetch - main [MainThread]: Store serial: [18284859]
+[2023-05-29 03:41:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284859]
+[2023-05-29 03:41:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-numpy
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HaversineAPI
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-pandas
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-pytorch
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: usepy
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-scipy
+[2023-05-29 03:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pepperize.cdk-organizations
+[2023-05-29 03:41:05] INFO root fetch - processPackages [HaversineAPI]: New version: [1.9] Old Version: [1.8]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [usepy]: New version: [0.2.41] Old Version: [0.2.3a0]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-05-29 03:41:05] INFO root fetch - processPackages [HaversineAPI]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [HaversineAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HaversineAPI-1.8.tar.gz tmp/HaversineAPI-1.9.tar.gz --markdown 20230529/H/HaversineAPI/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230529/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:41:05] INFO root fetch - processPackages [usepy]: Downloading https://files.pythonhosted.org/packages/35/83/48649fa9efb09d02e1b2a2f0a4bdfd1a7287a8b6c1511d70822641493790/usepy-0.2.41.tar.gz
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230529/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230529/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230529/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:41:05] INFO root fetch - processPackages [usepy]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [usepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usepy-0.2.3a0.tar.gz tmp/usepy-0.2.41.tar.gz --markdown 20230529/u/usepy/0.2.3a0-0.2.41/diff.md --exclude *.pyd
+[2023-05-29 03:41:05] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-05-29 03:41:05] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230529/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-05-29 03:41:06] INFO root fetch - main [MainThread]: End processing [HaversineAPI]: success
+[2023-05-29 03:41:06] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-29 03:41:06] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-29 03:41:07] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-05-29 03:41:07] INFO root fetch - main [MainThread]: End processing [usepy]: success
+[2023-05-29 03:41:07] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-29 03:41:08] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-29 03:41:08] INFO root fetch - main [MainThread]: Store serial: [18284881]
