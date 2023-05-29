@@ -4453,3 +4453,67 @@
 [2023-05-29 06:13:48] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
 [2023-05-29 06:13:52] INFO root fetch - main [MainThread]: End processing [pdm]: success
 [2023-05-29 06:13:52] INFO root fetch - main [MainThread]: Store serial: [18286248]
+[2023-05-29 06:18:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286248]
+[2023-05-29 06:19:00] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mask-util
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-clone
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelon-impact-client
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cloudtoken
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: signalflow
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pdc-dp-means
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wasm-exec
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py4web
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ChatLLM
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: parsetypes
+[2023-05-29 06:19:00] INFO root fetch - processPackages [signalflow]: New version: [0.4.0] Old Version: [0.0.8]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [django-clone]: New version: [5.3.2] Old Version: [5.3.1]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [wasm-exec]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [cloudtoken]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [pdc-dp-means]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [parsetypes]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [mask-util]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [py4web]: New version: [1.20230528.1] Old Version: [1.20230521.2]
+[2023-05-29 06:19:00] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-29 06:19:01] INFO root fetch - processPackages [wasm-exec]: Downloading https://files.pythonhosted.org/packages/55/35/f01f161e0c8c0b48713e686dec2115ae9045a28dd20d32ea479ab54ef91a/wasm_exec-0.1.0.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/3c/47/b01ec37976c8629b4d741e821d53c103e251135dbf47c1651dfb5fec3828/parsetypes-0.2.6.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [django-clone]: Downloading https://files.pythonhosted.org/packages/c4/f0/d5e399c401dfaf7a46451132ed393892929a884909859ae5bdb68620c873/django-clone-5.3.1.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230529/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230529/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [mask-util]: Downloading https://files.pythonhosted.org/packages/47/66/29b5d193da795019fed774c91387af7ecb419de29d4d718de8f8aa08dd82/mask_util-0.0.2.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [pdc-dp-means]: Downloading https://files.pythonhosted.org/packages/57/7c/b9ed415e9af6b79110ab7e4a9cd4785f13f906d01f19fe38550fe7c21cfc/pdc_dp_means-0.0.5-cp39-cp39-win_amd64.whl
+[2023-05-29 06:19:01] INFO root fetch - processPackages [cloudtoken]: Downloading https://files.pythonhosted.org/packages/92/ff/f37d730f54a9256a98338f410317b62d55a883d50f3d796ffefad8e19115/cloudtoken-2.1.7-py3-none-any.whl
+[2023-05-29 06:19:01] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/c0/73/ccb852fb051da6032ede74c5ff756e009a97832c8adc13be9484dcab2bd4/py4web-1.20230528.1.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [signalflow]: Downloading https://files.pythonhosted.org/packages/81/ba/4cf8dd0d9f9b27e8ae5dcd0f8bc61007328bd21a3f6b638e294c6a1a0c86/signalflow-0.4.0-cp39-cp39-macosx_11_0_arm64.whl
+[2023-05-29 06:19:01] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.2.5.tar.gz tmp/parsetypes-0.2.6.tar.gz --markdown 20230529/p/parsetypes/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [cloudtoken]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [cloudtoken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudtoken-2.1.6-py3-none-any.whl.zip tmp/cloudtoken-2.1.7-py3-none-any.whl.zip --markdown 20230529/c/cloudtoken/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [wasm-exec]: Downloading https://files.pythonhosted.org/packages/b1/35/d975dd6d15af4e837bc953188ffa0e0a2836de55a7d5cad9b71811bdfbab/wasm_exec-0.1.1.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [mask-util]: Downloading https://files.pythonhosted.org/packages/69/b9/60c9a8b42038e454fb445e6db67535d1ec32e716b340048671d0498363ee/mask_util-0.0.3.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20230521.2.tar.gz tmp/py4web-1.20230528.1.tar.gz --markdown 20230529/p/py4web/1.20230521.2-1.20230528.1/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [django-clone]: Downloading https://files.pythonhosted.org/packages/44/b7/f49a636ed2f7680d638ffc450ce6beeb7820f75b691e9969460b5a9abb68/django-clone-5.3.2.tar.gz
+[2023-05-29 06:19:01] INFO root fetch - processPackages [mask-util]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [mask-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mask_util-0.0.2.tar.gz tmp/mask_util-0.0.3.tar.gz --markdown 20230529/m/mask-util/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [django-clone]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [django-clone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-clone-5.3.1.tar.gz tmp/django-clone-5.3.2.tar.gz --markdown 20230529/d/django-clone/5.3.1-5.3.2/diff.md --exclude *.pyd
+[2023-05-29 06:19:01] INFO root fetch - processPackages [signalflow]: executing diffoscope
+[2023-05-29 06:19:01] INFO root fetch - processPackages [signalflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signalflow-0.0.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/signalflow-0.4.0-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20230529/s/signalflow/0.0.8-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 06:19:02] INFO root fetch - processPackages [pdc-dp-means]: executing diffoscope
+[2023-05-29 06:19:02] INFO root fetch - processPackages [pdc-dp-means]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdc_dp_means-0.0.4-cp39-cp39-win_amd64.whl.zip tmp/pdc_dp_means-0.0.5-cp39-cp39-win_amd64.whl.zip --markdown 20230529/p/pdc-dp-means/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 06:19:02] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-05-29 06:19:02] INFO root fetch - main [MainThread]: End processing [mask-util]: success
+[2023-05-29 06:19:02] INFO root fetch - main [MainThread]: End processing [cloudtoken]: success
+[2023-05-29 06:19:03] INFO root fetch - processPackages [wasm-exec]: executing diffoscope
+[2023-05-29 06:19:03] INFO root fetch - processPackages [wasm-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasm_exec-0.1.0.tar.gz tmp/wasm_exec-0.1.1.tar.gz --markdown 20230529/w/wasm-exec/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 06:19:03] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-29 06:19:04] INFO root fetch - main [MainThread]: End processing [django-clone]: success
+[2023-05-29 06:19:04] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-29 06:19:04] INFO root fetch - main [MainThread]: End processing [wasm-exec]: success
+[2023-05-29 06:19:04] INFO root fetch - main [MainThread]: End processing [signalflow]: success
+[2023-05-29 06:19:10] INFO root fetch - main [MainThread]: End processing [pdc-dp-means]: success
+[2023-05-29 06:19:20] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2023-05-29 06:19:20] INFO root fetch - main [MainThread]: Store serial: [18286293]
