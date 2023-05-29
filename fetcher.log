@@ -12245,3 +12245,137 @@ EOFError: EOF read where object expected
 [2023-05-29 16:45:17] INFO root fetch - main [MainThread]: End processing [distgen]: success
 [2023-05-29 16:45:18] INFO root fetch - main [MainThread]: End processing [funcat3]: success
 [2023-05-29 16:45:18] INFO root fetch - main [MainThread]: Store serial: [18291016]
+[2023-05-29 16:50:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291016]
+[2023-05-29 16:50:27] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rosecape-airflow
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scintillometry
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ietf-reviewtool
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lab-partner
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datasieve
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lab-partner-utils
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vlogs
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qwak-core
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tensorcircuit-nightly
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nucliadb
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ietf-reviewtool]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [lab-partner]: New version: [0.7.32] Old Version: [0.5.25]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.32] Old Version: [0.5.25]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [datasieve]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [scintillometry]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [vlogs]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [qwak-core]: New version: [0.0.87] Old Version: [0.0.86]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [rosecape-airflow]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [nucliadb]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230529] Old Version: [0.9.1.dev20230528]
+[2023-05-29 16:50:27] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/76/06/8e153d5f66b13c1e5d229806a5fffe228d84e80395a6158830d1c29b127a/lab-partner-utils-0.5.25.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [ietf-reviewtool]: Downloading https://files.pythonhosted.org/packages/b3/9f/c1de5baae08d75621e1607f9920460137559f98abd0c792ac437795a1df3/ietf_reviewtool-0.3.1.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [vlogs]: Downloading https://files.pythonhosted.org/packages/08/8e/b4399a5d8021c48473ad921f88323f121976790892cbb43e951769e5c525/vlogs-1.0.2.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [datasieve]: Downloading https://files.pythonhosted.org/packages/71/28/fa0fc0a50acea69d73868344fa6aab08d72573150f19f54006dd816703ee/datasieve-0.0.9.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/08/40/6f6f971766a01794fa5f19c0e57afcaaf4d07a352d8aa52e51651c748234/qwak_core-0.0.87.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [scintillometry]: Downloading https://files.pythonhosted.org/packages/09/2c/6fbe8bca11c2d5089e0221dac620aff2d8a3e03ef03e116cc33e6de0a86b/scintillometry-1.0.4.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/cc/fb/4080be0421c9ed22510fcee3bb1172376415dd8ea26d455e4885594e8800/lab-partner-0.5.25.tar.gz
+[2023-05-29 16:50:27] INFO root fetch - processPackages [rosecape-airflow]: Downloading https://files.pythonhosted.org/packages/4e/8f/c1cc48e9f85379bdc4e4b852187223743739ff4c2addcb00c6dd57ceff23/rosecape_airflow-0.0.1.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/58/9c/51fc1679af6e16c59c8a3b350d8e9d57bd2382ec292e9f4ba7ced1eba3e8/tensorcircuit-nightly-0.9.1.dev20230528.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [ietf-reviewtool]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [ietf-reviewtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ietf_reviewtool-0.3.0.tar.gz tmp/ietf_reviewtool-0.3.1.tar.gz --markdown 20230529/i/ietf-reviewtool/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [vlogs]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [vlogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vlogs-1.0.1.tar.gz tmp/vlogs-1.0.2.tar.gz --markdown 20230529/v/vlogs/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [datasieve]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [datasieve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasieve-0.0.8.tar.gz tmp/datasieve-0.0.9.tar.gz --markdown 20230529/d/datasieve/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [nucliadb]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [nucliadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/f1/35/6d6544508acc4edd0bbe1858b6bcbc75ad603e52f45621e383b43a8a17b3/lab-partner-utils-0.7.32.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/b3/3f/639af0ffe992a62ed4b3facc2c9178b60f333a963515714296486d3fbab2/lab-partner-0.7.32.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [scintillometry]: Downloading https://files.pythonhosted.org/packages/3e/89/aea47ebff15a905b51550a425d6d0937b51908b19bc55b17e79eaa610eb0/scintillometry-1.0.5.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.86.tar.gz tmp/qwak_core-0.0.87.tar.gz --markdown 20230529/q/qwak-core/0.0.86-0.0.87/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [rosecape-airflow]: Downloading https://files.pythonhosted.org/packages/e5/93/b12a94352a874c702148a806dba484f910f09637596f6e63dbfb23e79894/rosecape_airflow-0.0.2.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.5.25.tar.gz tmp/lab-partner-utils-0.7.32.tar.gz --markdown 20230529/l/lab-partner-utils/0.5.25-0.7.32/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.5.25.tar.gz tmp/lab-partner-0.7.32.tar.gz --markdown 20230529/l/lab-partner/0.5.25-0.7.32/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/f3/f7/2612b646f1dac116be3485c05e882cd72c032b8f663c3ef2eec23d37839e/tensorcircuit-nightly-0.9.1.dev20230529.tar.gz
+[2023-05-29 16:50:28] INFO root fetch - processPackages [scintillometry]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [scintillometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scintillometry-1.0.4.tar.gz tmp/scintillometry-1.0.5.tar.gz --markdown 20230529/s/scintillometry/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230528.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230529.tar.gz --markdown 20230529/t/tensorcircuit-nightly/0.9.1.dev20230528-0.9.1.dev20230529/diff.md --exclude *.pyd
+[2023-05-29 16:50:28] INFO root fetch - processPackages [rosecape-airflow]: executing diffoscope
+[2023-05-29 16:50:28] INFO root fetch - processPackages [rosecape-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosecape_airflow-0.0.1.tar.gz tmp/rosecape_airflow-0.0.2.tar.gz --markdown 20230529/r/rosecape-airflow/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 16:50:29] INFO root fetch - processPackages [vlogs]: Start processing: nucliadb-client
+[2023-05-29 16:50:29] INFO root fetch - main [MainThread]: End processing [vlogs]: success
+[2023-05-29 16:50:29] INFO root fetch - processPackages [nucliadb-client]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:29] INFO root fetch - processPackages [lab-partner-utils]: Start processing: sparksnake
+[2023-05-29 16:50:29] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 16:50:30] INFO root fetch - processPackages [sparksnake]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 16:50:30] INFO root fetch - processPackages [datasieve]: Start processing: nucliadb-dataset
+[2023-05-29 16:50:30] INFO root fetch - main [MainThread]: End processing [datasieve]: success
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-client]: executing diffoscope
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_client-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_client-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-client/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-dataset]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:30] INFO root fetch - processPackages [ietf-reviewtool]: Start processing: nucliadb-models
+[2023-05-29 16:50:30] INFO root fetch - main [MainThread]: End processing [ietf-reviewtool]: success
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-models]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:30] INFO root fetch - processPackages [rosecape-airflow]: Start processing: nucliadb-protos
+[2023-05-29 16:50:30] INFO root fetch - main [MainThread]: End processing [rosecape-airflow]: success
+[2023-05-29 16:50:30] INFO root fetch - processPackages [sparksnake]: executing diffoscope
+[2023-05-29 16:50:30] INFO root fetch - processPackages [sparksnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparksnake-0.1.8.tar.gz tmp/sparksnake-0.1.9.tar.gz --markdown 20230529/s/sparksnake/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-protos]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-dataset]: executing diffoscope
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_dataset-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_dataset-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-dataset/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:30] INFO root fetch - processPackages [lab-partner]: Start processing: nucliadb-sdk
+[2023-05-29 16:50:30] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-sdk]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-models]: executing diffoscope
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_models-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_models-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-models/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:30] INFO root fetch - processPackages [scintillometry]: Start processing: nucliadb-utils
+[2023-05-29 16:50:30] INFO root fetch - main [MainThread]: End processing [scintillometry]: success
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-utils]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-protos]: executing diffoscope
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-protos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_protos-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_protos-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-protos/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-sdk]: executing diffoscope
+[2023-05-29 16:50:30] INFO root fetch - processPackages [nucliadb-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_sdk-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_sdk-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-sdk/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:31] INFO root fetch - processPackages [nucliadb-utils]: executing diffoscope
+[2023-05-29 16:50:31] INFO root fetch - processPackages [nucliadb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_utils-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_utils-2.9.0.post267-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-utils/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-29 16:50:31] INFO root fetch - processPackages [nucliadb-client]: Start processing: kolo
+[2023-05-29 16:50:31] INFO root fetch - main [MainThread]: End processing [nucliadb-client]: success
+[2023-05-29 16:50:31] INFO root fetch - processPackages [kolo]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-05-29 16:50:31] INFO root fetch - processPackages [kolo]: Downloading https://files.pythonhosted.org/packages/cd/ae/94d7044ac03871852234c4c46315fe9a8f3c4c073e68674bc63364f8c213/kolo-2.9.4-cp38-cp38-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2023-05-29 16:50:31] INFO root fetch - processPackages [sparksnake]: Start processing: lib-dzne-math
+[2023-05-29 16:50:31] INFO root fetch - main [MainThread]: End processing [sparksnake]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [lib-dzne-math]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-29 16:50:32] INFO root fetch - processPackages [nucliadb-dataset]: Start processing: isabelle-client
+[2023-05-29 16:50:32] INFO root fetch - main [MainThread]: End processing [nucliadb-dataset]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [nucliadb-models]: Start processing: WeConnect-SolarManager
+[2023-05-29 16:50:32] INFO root fetch - main [MainThread]: End processing [nucliadb-models]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [isabelle-client]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 16:50:32] INFO root fetch - processPackages [WeConnect-SolarManager]: New version: [0.3.0rc5] Old Version: [0.3.0rc4]
+[2023-05-29 16:50:32] INFO root fetch - processPackages [lib-dzne-math]: Downloading https://files.pythonhosted.org/packages/d3/02/5eb1cb2338b6d62628b10764c624b3560fd860b8b139b181044cd53ca1e6/lib-dzne-math-0.2.2.tar.gz
+[2023-05-29 16:50:32] INFO root fetch - processPackages [isabelle-client]: Downloading https://files.pythonhosted.org/packages/f6/0a/ec8bcf777206059ba51c46ea8f3ac9d801ec7e82915ddd2c493ed8bb875f/isabelle-client-0.3.8.tar.gz
+[2023-05-29 16:50:32] INFO root fetch - processPackages [nucliadb]: Start processing: datatable-ajax-request-parser
+[2023-05-29 16:50:32] INFO root fetch - main [MainThread]: End processing [nucliadb]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [WeConnect-SolarManager]: Downloading https://files.pythonhosted.org/packages/cf/a5/7cd0c06d77ab16249ed219748c0ab97ed1430c30665a86680df604bffcaa/WeConnect_SolarManager-0.3.0rc4-py3-none-any.whl
+[2023-05-29 16:50:32] INFO root fetch - processPackages [datatable-ajax-request-parser]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 16:50:32] INFO root fetch - main [MainThread]: End processing [nucliadb-sdk]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [lib-dzne-math]: executing diffoscope
+[2023-05-29 16:50:32] INFO root fetch - processPackages [lib-dzne-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-math-0.2.1.tar.gz tmp/lib-dzne-math-0.2.2.tar.gz --markdown 20230529/l/lib-dzne-math/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-29 16:50:32] INFO root fetch - main [MainThread]: End processing [nucliadb-protos]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [datatable-ajax-request-parser]: Downloading https://files.pythonhosted.org/packages/11/92/db4be569ca97d3ea8fc3d0999b51147ea80033bb623a1a822097f2a02306/datatable-ajax-request-parser-1.0.3.tar.gz
+[2023-05-29 16:50:32] INFO root fetch - processPackages [WeConnect-SolarManager]: Downloading https://files.pythonhosted.org/packages/34/d7/36ec93c4f6aa3dd124745b75d39179569f93ababffd9bd1ea3c547fa3e23/WeConnect_SolarManager-0.3.0rc5-py3-none-any.whl
+[2023-05-29 16:50:32] INFO root fetch - processPackages [datatable-ajax-request-parser]: executing diffoscope
+[2023-05-29 16:50:32] INFO root fetch - processPackages [datatable-ajax-request-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatable-ajax-request-parser-1.0.2.tar.gz tmp/datatable-ajax-request-parser-1.0.3.tar.gz --markdown 20230529/d/datatable-ajax-request-parser/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 16:50:32] INFO root fetch - processPackages [WeConnect-SolarManager]: executing diffoscope
+[2023-05-29 16:50:32] INFO root fetch - processPackages [WeConnect-SolarManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WeConnect_SolarManager-0.3.0rc4-py3-none-any.whl.zip tmp/WeConnect_SolarManager-0.3.0rc5-py3-none-any.whl.zip --markdown 20230529/W/WeConnect-SolarManager/0.3.0rc4-0.3.0rc5/diff.md --exclude *.pyd
+[2023-05-29 16:50:32] INFO root fetch - processPackages [kolo]: executing diffoscope
+[2023-05-29 16:50:32] INFO root fetch - processPackages [kolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolo-2.9.3.tar.gz tmp/kolo-2.9.4-cp38-cp38-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20230529/k/kolo/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-05-29 16:50:32] INFO root fetch - main [MainThread]: End processing [nucliadb-utils]: success
+[2023-05-29 16:50:32] INFO root fetch - processPackages [isabelle-client]: Downloading https://files.pythonhosted.org/packages/a9/60/2ef798369857ed7529b3f15c82498c3671ae358a4c3447038994a475a4ec/isabelle-client-0.3.9.tar.gz
+[2023-05-29 16:50:33] INFO root fetch - processPackages [isabelle-client]: executing diffoscope
+[2023-05-29 16:50:33] INFO root fetch - processPackages [isabelle-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isabelle-client-0.3.8.tar.gz tmp/isabelle-client-0.3.9.tar.gz --markdown 20230529/i/isabelle-client/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 16:50:33] INFO root fetch - main [MainThread]: End processing [lib-dzne-math]: success
+[2023-05-29 16:50:33] INFO root fetch - main [MainThread]: End processing [kolo]: success
+[2023-05-29 16:50:34] INFO root fetch - main [MainThread]: End processing [datatable-ajax-request-parser]: success
+[2023-05-29 16:50:34] INFO root fetch - main [MainThread]: End processing [isabelle-client]: success
+[2023-05-29 16:50:34] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-29 16:50:37] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-29 16:50:37] INFO root fetch - main [MainThread]: End processing [WeConnect-SolarManager]: success
+[2023-05-29 16:50:37] INFO root fetch - main [MainThread]: Store serial: [18291101]
