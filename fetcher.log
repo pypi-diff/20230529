@@ -14596,3 +14596,45 @@ EOFError: EOF read where object expected
 [2023-05-29 19:33:40] INFO root fetch - main [MainThread]: End processing [wellmet]: success
 [2023-05-29 19:33:40] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
 [2023-05-29 19:33:40] INFO root fetch - main [MainThread]: Store serial: [18292362]
+[2023-05-29 19:38:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292362]
+[2023-05-29 19:38:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rosecape-airflow
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: madtypes
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloud-governance
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: creativecontrol-circuitpython-ltc166x
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neo3-boa
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: loophost
+[2023-05-29 19:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: optimuslib
+[2023-05-29 19:38:49] WARNING root fetch - processPackages [creativecontrol-circuitpython-ltc166x]: Skipping, unable to determine old version
+[2023-05-29 19:38:49] INFO root fetch - main [MainThread]: End processing [creativecontrol-circuitpython-ltc166x] error
+[2023-05-29 19:38:49] INFO root fetch - processPackages [optimuslib]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 19:38:49] INFO root fetch - processPackages [madtypes]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 19:38:49] INFO root fetch - processPackages [rosecape-airflow]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 19:38:49] INFO root fetch - processPackages [loophost]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-05-29 19:38:49] INFO root fetch - processPackages [neo3-boa]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-29 19:38:49] INFO root fetch - processPackages [cloud-governance]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-29 19:38:50] INFO root fetch - processPackages [optimuslib]: executing diffoscope
+[2023-05-29 19:38:50] INFO root fetch - processPackages [optimuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimuslib-0.0.6.tar.gz tmp/optimuslib-0.0.7.tar.gz --markdown 20230529/o/optimuslib/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 19:38:50] INFO root fetch - processPackages [neo3-boa]: Downloading https://files.pythonhosted.org/packages/e9/11/bf2d3f41135e4b6e37e6d551961fabdfd81a8e07adcae8e406d1f87b3968/neo3-boa-0.8.3.tar.gz
+[2023-05-29 19:38:50] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/95/b9/912ffc7dd31e882bb8be741f001d1125ac4f10cf84d7977d59e27befa5fb/loophost-0.2.9.tar.gz
+[2023-05-29 19:38:50] INFO root fetch - processPackages [rosecape-airflow]: Downloading https://files.pythonhosted.org/packages/ad/de/467cc4b0e0ec237654ea5835e4ac75b9af0015c7bbd1dea981542a0d7316/rosecape_airflow-0.0.5.tar.gz
+[2023-05-29 19:38:50] INFO root fetch - processPackages [madtypes]: Downloading https://files.pythonhosted.org/packages/05/4e/21ef7e12831a7ffd919f0433e9da22caa3b157fc9c80d2d650096aadee13/madtypes-0.0.4.tar.gz
+[2023-05-29 19:38:50] INFO root fetch - processPackages [rosecape-airflow]: executing diffoscope
+[2023-05-29 19:38:50] INFO root fetch - processPackages [rosecape-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosecape_airflow-0.0.4.tar.gz tmp/rosecape_airflow-0.0.5.tar.gz --markdown 20230529/r/rosecape-airflow/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 19:38:50] INFO root fetch - processPackages [madtypes]: executing diffoscope
+[2023-05-29 19:38:50] INFO root fetch - processPackages [madtypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madtypes-0.0.3.tar.gz tmp/madtypes-0.0.4.tar.gz --markdown 20230529/m/madtypes/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 19:38:50] INFO root fetch - processPackages [cloud-governance]: executing diffoscope
+[2023-05-29 19:38:50] INFO root fetch - processPackages [cloud-governance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-governance-1.1.98.tar.gz tmp/cloud-governance-1.1.99.tar.gz --markdown 20230529/c/cloud-governance/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-29 19:38:50] INFO root fetch - processPackages [neo3-boa]: Downloading https://files.pythonhosted.org/packages/02/3c/c1067779d0f8c332d5f47a7674048a0c185e75aa17ad926992efe175ca1c/neo3-boa-0.9.0.tar.gz
+[2023-05-29 19:38:50] INFO root fetch - processPackages [neo3-boa]: executing diffoscope
+[2023-05-29 19:38:50] INFO root fetch - processPackages [neo3-boa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neo3-boa-0.8.3.tar.gz tmp/neo3-boa-0.9.0.tar.gz --markdown 20230529/n/neo3-boa/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 19:38:51] INFO root fetch - main [MainThread]: End processing [optimuslib]: success
+[2023-05-29 19:38:51] INFO root fetch - main [MainThread]: End processing [rosecape-airflow]: success
+[2023-05-29 19:38:51] INFO root fetch - main [MainThread]: End processing [madtypes]: success
+[2023-05-29 19:38:51] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/9f/33/3240ac9fa30f8bd0b08d5d982ad2a15df949336c1f85cfeddcf56c8460f0/loophost-0.3.0.tar.gz
+[2023-05-29 19:38:51] INFO root fetch - processPackages [loophost]: executing diffoscope
+[2023-05-29 19:38:51] INFO root fetch - processPackages [loophost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loophost-0.2.9.tar.gz tmp/loophost-0.3.0.tar.gz --markdown 20230529/l/loophost/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 19:38:52] INFO root fetch - main [MainThread]: End processing [cloud-governance]: success
+[2023-05-29 19:38:53] INFO root fetch - main [MainThread]: End processing [loophost]: success
+[2023-05-29 19:38:55] INFO root fetch - main [MainThread]: End processing [neo3-boa]: success
+[2023-05-29 19:38:55] INFO root fetch - main [MainThread]: Store serial: [18292386]
