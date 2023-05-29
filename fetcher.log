@@ -17606,3 +17606,75 @@ EOFError: EOF read where object expected
 [2023-05-29 22:41:09] INFO root fetch - main [MainThread]: End processing [vision6D]: success
 [2023-05-29 22:41:10] INFO root fetch - main [MainThread]: End processing [hikvision-isapi-cli]: success
 [2023-05-29 22:41:10] INFO root fetch - main [MainThread]: Store serial: [18294322]
+[2023-05-29 22:46:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294322]
+[2023-05-29 22:46:19] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dwave-system
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coniferest
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latch-asgi
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lcextension
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gs-coordinator
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gs-engine
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tablebase
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gs-include
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lab-partner
+[2023-05-29 22:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lab-partner-utils
+[2023-05-29 22:46:19] WARNING root fetch - processPackages [latch-asgi]: Skipping, unable to determine old version
+[2023-05-29 22:46:19] INFO root fetch - processPackages [latch-asgi]: Start processing: tupa123
+[2023-05-29 22:46:19] WARNING root fetch - processPackages [lcextension]: Skipping, unable to determine old version
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lcextension]: Start processing: granular-engine
+[2023-05-29 22:46:19] INFO root fetch - main [MainThread]: End processing [latch-asgi] error
+[2023-05-29 22:46:19] INFO root fetch - main [MainThread]: End processing [lcextension] error
+[2023-05-29 22:46:19] INFO root fetch - processPackages [dwave-system]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tablebase]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [coniferest]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner]: New version: [0.7.38] Old Version: [0.7.37]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-engine]: New version: [0.22.0a20230529] Old Version: [0.22.0a20230528]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-coordinator]: New version: [0.22.0a20230529] Old Version: [0.22.0a20230528]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tupa123]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-include]: New version: [0.22.0a20230529] Old Version: [0.22.0a20230528]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.38] Old Version: [0.7.37]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/41/82/02f4dd4b5921f4bfc2b651cd86c686e3d678ae8afec3d48c25acfa293b6d/lab-partner-0.7.37.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tablebase]: Downloading https://files.pythonhosted.org/packages/f5/b4/ece1b262aec31d379891fbeeb594c293a5dcb0154ef2706f670780b094c1/tablebase-1.6.4.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/c0/ff/a546ff6174cf615d95f257b2f33017c4d7ab8e5e551c53542f919bdeec4b/gs_engine-0.22.0a20230528-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-29 22:46:19] INFO root fetch - processPackages [dwave-system]: Downloading https://files.pythonhosted.org/packages/e5/a1/b81d63768e6e4fce85b3de31244e390cd206f225075085b7c6874d7cf936/dwave-system-1.8.0.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [coniferest]: Downloading https://files.pythonhosted.org/packages/04/d2/ab0345da1178841a74f14d1bc66a8e0bffcc06caac751f516e8047486e06/coniferest-0.0.7.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/1c/83/af03ff8d2b15be2bf85d4d8493bb3d589215cf28a3fe8122601828fb1a95/gs_include-0.22.0a20230528-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tupa123]: Downloading https://files.pythonhosted.org/packages/83/8e/fb773f585ded02967d678e6435a71f5de80aec149a99c0ea4c5b04544148/tupa123-1.5.0.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/c2/22/ba05ba49728010aa78e0ca70c58df02989ea5233c549b03a97398a2a1a54/lab-partner-utils-0.7.37.tar.gz
+[2023-05-29 22:46:19] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 30330798>=10485760
+[2023-05-29 22:46:19] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-05-29 22:46:19] WARNING root fetch - processPackages [coniferest]: Skipping package: exceeds size limit 19303853>=10485760
+[2023-05-29 22:46:19] INFO root fetch - main [MainThread]: End processing [coniferest] error
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/ae/9a/4dcc5cf31f505ed4ada810baee1e1cf4d78c0d45a0cababe04b5e538527c/gs_coordinator-0.22.0a20230528-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tablebase]: executing diffoscope
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tablebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablebase-1.6.3.tar.gz tmp/tablebase-1.6.4.tar.gz --markdown 20230529/t/tablebase/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/58/f5/52267497402cce1417192ee8c90efd2c2cbde99b2229de421d865a5ec9fe/lab-partner-0.7.38.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/9d/36/e38cc7e8ea6089492e0bb0bf7a0c7715d31527521dea38d7152871babbdd/gs_engine-0.22.0a20230529-py2.py3-none-any.whl
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tupa123]: Downloading https://files.pythonhosted.org/packages/f5/4c/ad713f60d026c0cfc0edf7b2c0c94e02ac1259aa032830016a2ba416a4c0/tupa123-1.5.1.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/6b/5e/defb4cb279be2a6a3d77d3073e68732d46375f83d827cb4c5f38ce65d798/lab-partner-utils-0.7.38.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-29 22:46:19] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230529/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.7.37.tar.gz tmp/lab-partner-0.7.38.tar.gz --markdown 20230529/l/lab-partner/0.7.37-0.7.38/diff.md --exclude *.pyd
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/72/51/11b3f7af45ecb8fb06cafed4980f74b13d83f7301e2cdc1b3b1cb3e0ee3f/gs_coordinator-0.22.0a20230529-py2.py3-none-any.whl
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-05-29 22:46:19] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.5.0.tar.gz tmp/tupa123-1.5.1.tar.gz --markdown 20230529/t/tupa123/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 22:46:19] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.7.37.tar.gz tmp/lab-partner-utils-0.7.38.tar.gz --markdown 20230529/l/lab-partner-utils/0.7.37-0.7.38/diff.md --exclude *.pyd
+[2023-05-29 22:46:19] INFO root fetch - processPackages [dwave-system]: Downloading https://files.pythonhosted.org/packages/c3/ff/780908ef2cb3a9b065571412332adbe2e442d2ea8c90aa371b8f581ee705/dwave-system-1.9.0.tar.gz
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-engine]: executing diffoscope
+[2023-05-29 22:46:19] INFO root fetch - processPackages [gs-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_engine-0.22.0a20230528-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_engine-0.22.0a20230529-py2.py3-none-any.whl.zip --markdown 20230529/g/gs-engine/0.22.0a20230528-0.22.0a20230529/diff.md --exclude *.pyd
+[2023-05-29 22:46:20] INFO root fetch - processPackages [dwave-system]: executing diffoscope
+[2023-05-29 22:46:20] INFO root fetch - processPackages [dwave-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwave-system-1.8.0.tar.gz tmp/dwave-system-1.9.0.tar.gz --markdown 20230529/d/dwave-system/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-29 22:46:20] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-05-29 22:46:20] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.22.0a20230528-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_coordinator-0.22.0a20230529-py2.py3-none-any.whl.zip --markdown 20230529/g/gs-coordinator/0.22.0a20230528-0.22.0a20230529/diff.md --exclude *.pyd
+[2023-05-29 22:46:20] INFO root fetch - main [MainThread]: End processing [tablebase]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [dwave-system]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-05-29 22:46:21] INFO root fetch - main [MainThread]: Store serial: [18294395]
