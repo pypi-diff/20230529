@@ -5056,3 +5056,32 @@
 [2023-05-29 07:40:58] INFO root fetch - main [MainThread]: End processing [radvis]: success
 [2023-05-29 07:41:19] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-29 07:41:19] INFO root fetch - main [MainThread]: Store serial: [18286593]
+[2023-05-29 07:46:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286593]
+[2023-05-29 07:46:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 07:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyVolSuggester
+[2023-05-29 07:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adbkit
+[2023-05-29 07:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: feffery-utils-components
+[2023-05-29 07:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fossiler
+[2023-05-29 07:46:30] INFO root fetch - processPackages [adbkit]: New version: [0.23] Old Version: [0.22]
+[2023-05-29 07:46:30] INFO root fetch - processPackages [PyVolSuggester]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 07:46:30] INFO root fetch - processPackages [feffery-utils-components]: New version: [0.2.0a1] Old Version: [0.1.9]
+[2023-05-29 07:46:30] INFO root fetch - processPackages [fossiler]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 07:46:30] INFO root fetch - processPackages [PyVolSuggester]: Downloading https://files.pythonhosted.org/packages/cd/11/3c05953f59e5c25edbaff7db9cc898a032cdbbe5a59a0301b1623924188a/pyvolsuggester-0.0.3.tar.gz
+[2023-05-29 07:46:30] INFO root fetch - processPackages [feffery-utils-components]: Downloading https://files.pythonhosted.org/packages/ea/15/47eccd42985e6e8fa5737278bfb1a6c182de38f3d0377920e3ff46997d43/feffery_utils_components-0.2.0a1.tar.gz
+[2023-05-29 07:46:30] INFO root fetch - processPackages [fossiler]: Downloading https://files.pythonhosted.org/packages/cd/9f/b009f16aac85bbe72961cf1595ea312319ff164201f5765883fa87b22658/fossiler-0.0.1.tar.gz
+[2023-05-29 07:46:31] INFO root fetch - processPackages [adbkit]: Downloading https://files.pythonhosted.org/packages/60/0d/4125d3f828d88b13f3c6dd25e4f5f9983bf6bb0bea3ab3fcb1e90c562693/adbkit-0.23.tar.gz
+[2023-05-29 07:46:31] INFO root fetch - processPackages [feffery-utils-components]: executing diffoscope
+[2023-05-29 07:46:31] INFO root fetch - processPackages [feffery-utils-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_utils_components-0.1.9.tar.gz tmp/feffery_utils_components-0.2.0a1.tar.gz --markdown 20230529/f/feffery-utils-components/0.1.9-0.2.0a1/diff.md --exclude *.pyd
+[2023-05-29 07:46:31] INFO root fetch - processPackages [PyVolSuggester]: Downloading https://files.pythonhosted.org/packages/c7/c2/3c193a384ff54d185a5ed047da55fd12a1b96acabf27926c2ce77cd3e5ec/pyvolsuggester-0.0.4.tar.gz
+[2023-05-29 07:46:31] INFO root fetch - processPackages [fossiler]: Downloading https://files.pythonhosted.org/packages/77/31/d5bd891f82d9853ebcff7ef1c3a34a46006998d2b4b2b1ea300dc968d6b8/fossiler-0.0.2.tar.gz
+[2023-05-29 07:46:31] INFO root fetch - processPackages [adbkit]: executing diffoscope
+[2023-05-29 07:46:31] INFO root fetch - processPackages [adbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbkit-0.22.tar.gz tmp/adbkit-0.23.tar.gz --markdown 20230529/a/adbkit/0.22-0.23/diff.md --exclude *.pyd
+[2023-05-29 07:46:31] INFO root fetch - processPackages [PyVolSuggester]: executing diffoscope
+[2023-05-29 07:46:31] INFO root fetch - processPackages [PyVolSuggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvolsuggester-0.0.3.tar.gz tmp/pyvolsuggester-0.0.4.tar.gz --markdown 20230529/P/PyVolSuggester/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 07:46:31] INFO root fetch - processPackages [fossiler]: executing diffoscope
+[2023-05-29 07:46:31] INFO root fetch - processPackages [fossiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fossiler-0.0.1.tar.gz tmp/fossiler-0.0.2.tar.gz --markdown 20230529/f/fossiler/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 07:46:32] INFO root fetch - main [MainThread]: End processing [fossiler]: success
+[2023-05-29 07:46:32] INFO root fetch - main [MainThread]: End processing [PyVolSuggester]: success
+[2023-05-29 07:46:32] INFO root fetch - main [MainThread]: End processing [adbkit]: success
+[2023-05-29 07:46:44] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
+[2023-05-29 07:46:44] INFO root fetch - main [MainThread]: Store serial: [18286604]
