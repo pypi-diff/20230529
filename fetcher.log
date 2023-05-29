@@ -14638,3 +14638,77 @@ EOFError: EOF read where object expected
 [2023-05-29 19:38:53] INFO root fetch - main [MainThread]: End processing [loophost]: success
 [2023-05-29 19:38:55] INFO root fetch - main [MainThread]: End processing [neo3-boa]: success
 [2023-05-29 19:38:55] INFO root fetch - main [MainThread]: Store serial: [18292386]
+[2023-05-29 19:43:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292386]
+[2023-05-29 19:44:04] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyezviz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybsc
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sosecrets-core
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: upgini
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: creativecontrol-circuitpython-ltc166x
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xklb
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: baboo-game
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tablecheck
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gitinspired-cli
+[2023-05-29 19:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyasic
+[2023-05-29 19:44:04] INFO root fetch - processPackages [sosecrets-core]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-29 19:44:04] WARNING root fetch - processPackages [tablecheck]: Skipping, unable to determine old version
+[2023-05-29 19:44:04] INFO root fetch - processPackages [creativecontrol-circuitpython-ltc166x]: New version: [1.1] Old Version: [0.1.1rc2]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [tablecheck]: Start processing: psygnal
+[2023-05-29 19:44:04] INFO root fetch - main [MainThread]: End processing [tablecheck] error
+[2023-05-29 19:44:04] INFO root fetch - processPackages [baboo-game]: New version: [2.0.5] Old Version: [2.0.1]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [gitinspired-cli]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pyasic]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pybsc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [xklb]: New version: [1.29.3] Old Version: [1.29.2]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pyezviz]: New version: [0.2.0.9] Old Version: [0.2.0.8]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [psygnal]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 19:44:04] INFO root fetch - processPackages [creativecontrol-circuitpython-ltc166x]: Downloading https://files.pythonhosted.org/packages/c2/cc/f909a255ed2c998924a91542c365f5608ee66f5df390eeb9a8182c1e09ad/creativecontrol-circuitpython-ltc166x-0.1.1rc2.tar.gz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pybsc]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pybsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybsc-0.1.8.tar.gz tmp/pybsc-0.1.9.tar.gz --markdown 20230529/p/pybsc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 19:44:04] INFO root fetch - processPackages [baboo-game]: Downloading https://files.pythonhosted.org/packages/a8/bf/227a2a9bd0da5f5420d1f1043f810fc1dd50e670422723f109ef4ebbc053/baboo_game-2.0.5.tar.gz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230529/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-29 19:44:04] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/a4/8f/14f60f11df4697c5baf6c3cd38fc42019a856bda5bc7276c7b8571172c32/xklb-1.29.3.tar.gz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [psygnal]: Downloading https://files.pythonhosted.org/packages/06/b9/063c422dcd6ed2334dc2866e5e956c2c9d6673caa912560f78b75e7211c2/psygnal-0.9.0.tar.gz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [sosecrets-core]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [sosecrets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosecrets_core-1.0.4.tar.gz tmp/sosecrets_core-1.0.5.tar.gz --markdown 20230529/s/sosecrets-core/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-29 19:44:04] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.29.2.tar.gz tmp/xklb-1.29.3.tar.gz --markdown 20230529/x/xklb/1.29.2-1.29.3/diff.md --exclude *.pyd
+[2023-05-29 19:44:04] INFO root fetch - processPackages [gitinspired-cli]: Downloading https://files.pythonhosted.org/packages/a0/91/84873632bbc1df69dab25465e8f1ecca897a21f6b53cb9b076c4c04e0186/gitinspired-cli-1.0.3.tar.gz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [creativecontrol-circuitpython-ltc166x]: Downloading https://files.pythonhosted.org/packages/0a/4b/342ec1eab7c3321d0a744e625e270abe7d5f7c85f5a63c7d7452cd7d033f/creativecontrol-circuitpython-ltc166x-1.1.tar.gz
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pyasic]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pyasic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasic-0.9.3.tar.gz tmp/pyasic-0.9.4.tar.gz --markdown 20230529/p/pyasic/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-29 19:44:04] INFO root fetch - processPackages [baboo-game]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [baboo-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baboo_game-2.0.1.tar.gz tmp/baboo_game-2.0.5.tar.gz --markdown 20230529/b/baboo-game/2.0.1-2.0.5/diff.md --exclude *.pyd
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pyezviz]: executing diffoscope
+[2023-05-29 19:44:04] INFO root fetch - processPackages [pyezviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyezviz-0.2.0.8.tar.gz tmp/pyezviz-0.2.0.9.tar.gz --markdown 20230529/p/pyezviz/0.2.0.8-0.2.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:44:05] INFO root fetch - processPackages [gitinspired-cli]: executing diffoscope
+[2023-05-29 19:44:05] INFO root fetch - processPackages [gitinspired-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitinspired-cli-1.0.2.tar.gz tmp/gitinspired-cli-1.0.3.tar.gz --markdown 20230529/g/gitinspired-cli/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 19:44:05] INFO root fetch - processPackages [psygnal]: Downloading https://files.pythonhosted.org/packages/9d/6d/286beb6d617d3ab042ca60d61d1ddf6093cb127cdbb5832d72d5c438db40/psygnal-0.9.1.tar.gz
+[2023-05-29 19:44:05] INFO root fetch - processPackages [creativecontrol-circuitpython-ltc166x]: executing diffoscope
+[2023-05-29 19:44:05] INFO root fetch - processPackages [creativecontrol-circuitpython-ltc166x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/creativecontrol-circuitpython-ltc166x-0.1.1rc2.tar.gz tmp/creativecontrol-circuitpython-ltc166x-1.1.tar.gz --markdown 20230529/c/creativecontrol-circuitpython-ltc166x/0.1.1rc2-1.1/diff.md --exclude *.pyd
+[2023-05-29 19:44:05] INFO root fetch - processPackages [psygnal]: executing diffoscope
+[2023-05-29 19:44:05] INFO root fetch - processPackages [psygnal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psygnal-0.9.0.tar.gz tmp/psygnal-0.9.1.tar.gz --markdown 20230529/p/psygnal/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 19:44:06] INFO root fetch - processPackages [pybsc]: Start processing: MEGABYTE-pytorch
+[2023-05-29 19:44:06] INFO root fetch - main [MainThread]: End processing [pybsc]: success
+[2023-05-29 19:44:06] INFO root fetch - processPackages [sosecrets-core]: Start processing: tronapi-JCO
+[2023-05-29 19:44:06] INFO root fetch - main [MainThread]: End processing [sosecrets-core]: success
+[2023-05-29 19:44:06] INFO root fetch - processPackages [tronapi-JCO]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-29 19:44:06] INFO root fetch - processPackages [MEGABYTE-pytorch]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 19:44:06] INFO root fetch - processPackages [tronapi-JCO]: executing diffoscope
+[2023-05-29 19:44:06] INFO root fetch - processPackages [tronapi-JCO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tronapi-JCO-3.1.8.tar.gz tmp/tronapi-JCO-3.1.9.tar.gz --markdown 20230529/t/tronapi-JCO/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-29 19:44:06] INFO root fetch - processPackages [MEGABYTE-pytorch]: Downloading https://files.pythonhosted.org/packages/4a/e2/69982980f822eb6fcfa66708167e0db8a4b178108ce9e9b852ed83f2b6b3/MEGABYTE-pytorch-0.1.2.tar.gz
+[2023-05-29 19:44:06] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-29 19:44:06] INFO root fetch - main [MainThread]: End processing [gitinspired-cli]: success
+[2023-05-29 19:44:06] INFO root fetch - processPackages [MEGABYTE-pytorch]: executing diffoscope
+[2023-05-29 19:44:06] INFO root fetch - processPackages [MEGABYTE-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MEGABYTE-pytorch-0.1.1.tar.gz tmp/MEGABYTE-pytorch-0.1.2.tar.gz --markdown 20230529/M/MEGABYTE-pytorch/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 19:44:07] INFO root fetch - main [MainThread]: End processing [baboo-game]: success
+[2023-05-29 19:44:07] INFO root fetch - main [MainThread]: End processing [creativecontrol-circuitpython-ltc166x]: success
+[2023-05-29 19:44:07] INFO root fetch - main [MainThread]: End processing [pyezviz]: success
+[2023-05-29 19:44:07] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-29 19:44:08] INFO root fetch - main [MainThread]: End processing [MEGABYTE-pytorch]: success
+[2023-05-29 19:44:08] INFO root fetch - main [MainThread]: End processing [psygnal]: success
+[2023-05-29 19:44:08] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
+[2023-05-29 19:44:08] INFO root fetch - main [MainThread]: End processing [pyasic]: success
+[2023-05-29 19:44:08] INFO root fetch - main [MainThread]: Store serial: [18292425]
