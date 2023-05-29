@@ -16996,3 +16996,71 @@ EOFError: EOF read where object expected
 [2023-05-29 22:02:56] INFO root fetch - main [MainThread]: End processing [smashed]: success
 [2023-05-29 22:02:57] INFO root fetch - main [MainThread]: End processing [intake-parquet]: success
 [2023-05-29 22:02:57] INFO root fetch - main [MainThread]: Store serial: [18293873]
+[2023-05-29 22:08:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293873]
+[2023-05-29 22:08:06] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: linkplay-cli
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git-batch
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansible-doctor
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ansible-later
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nornir-http
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SplatStats
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: intake-xarray
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: coverage
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jobmatchup
+[2023-05-29 22:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fronty
+[2023-05-29 22:08:06] INFO root fetch - processPackages [SplatStats]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [git-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [linkplay-cli]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-later]: New version: [3.3.2] Old Version: [3.3.1]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [fronty]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-doctor]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-29 22:08:07] WARNING root fetch - processPackages [jobmatchup]: Skipping, unable to determine old version
+[2023-05-29 22:08:07] INFO root fetch - main [MainThread]: End processing [jobmatchup] error
+[2023-05-29 22:08:07] INFO root fetch - processPackages [nornir-http]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [intake-xarray]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [coverage]: New version: [7.2.7] Old Version: [7.2.6]
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-later]: Downloading https://files.pythonhosted.org/packages/88/fd/03776fac1af0b05e6b48758bc9540fc7f639d24bda1dec82c8075a3813f5/ansible_later-3.3.1.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [git-batch]: Downloading https://files.pythonhosted.org/packages/80/59/2c67bd9c90ba1f8933a9e01e0c36ef8624448b06286d8688849a27e03253/git_batch-2.0.8.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [fronty]: Downloading https://files.pythonhosted.org/packages/e4/b6/38f53bd30d7bca78e63918403baf99aa66384a16d4a306417c93e0853998/fronty-0.0.3.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-doctor]: Downloading https://files.pythonhosted.org/packages/95/a5/fd71ccef3f5ec08ae14574a761095b6ebafb85ca748e578bbc230002ab23/ansible_doctor-2.0.4.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [intake-xarray]: Downloading https://files.pythonhosted.org/packages/a6/13/0c9c21d4d07e9e74b69f8ba4e04125cf60dad0c3b41fb264569b4a8e12ac/intake-xarray-0.6.1.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [nornir-http]: Downloading https://files.pythonhosted.org/packages/07/60/aa2e0755a5c9cd6f2e86684326dd8bbdb905f60a730cbacb40b42a96aedf/nornir_http-0.1.2.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/fc/6d/e8658433ce675a34ac82167ce8b890b1c020dcb6bacc7a0e4505af82bfaa/coverage-7.2.6.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [linkplay-cli]: Downloading https://files.pythonhosted.org/packages/1b/78/d1a7f07f160f1a426cb1645c030de6500d2b5679f346d19128e4205f9bd3/linkplay-cli-0.0.1.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [SplatStats]: Downloading https://files.pythonhosted.org/packages/09/fa/d979f1ea7c2bdece743afacf06d0077673176252bc8a775221b9b89b652c/SplatStats-2.0.5.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [fronty]: Downloading https://files.pythonhosted.org/packages/30/3e/bbd05a3c1fb794dcb8cb2555a9a6364aa11e88e9013260329f09a9846c0b/fronty-0.0.4.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [SplatStats]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [SplatStats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SplatStats-2.0.4.tar.gz tmp/SplatStats-2.0.5.tar.gz --markdown 20230529/S/SplatStats/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-29 22:08:07] INFO root fetch - processPackages [nornir-http]: Downloading https://files.pythonhosted.org/packages/9a/fb/f5659e172f9ee6d19ea06c702051c2e98e0433d997366ba6ff55ac96fa26/nornir_http-0.1.3.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-later]: Downloading https://files.pythonhosted.org/packages/df/a0/deec1bcd83c4b0418d24e02b6e55a378ff6475f9f6b99397a14950349c42/ansible_later-3.3.2.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-doctor]: Downloading https://files.pythonhosted.org/packages/c7/b9/c1f0d21db5a39b8b14c7f51e982a84f14dde77dad6a9989c349b45aca21c/ansible_doctor-2.0.5.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [git-batch]: Downloading https://files.pythonhosted.org/packages/0d/9a/2d5689bead957415cbbf9e884809859fbfc35f386c265ec32cddc3a81714/git_batch-2.0.9.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [intake-xarray]: Downloading https://files.pythonhosted.org/packages/be/59/26e751bec1f89a59e329adae6a50f9706b2ce06c98af7d448309110cd229/intake-xarray-0.7.0.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [nornir-http]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [nornir-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nornir_http-0.1.2.tar.gz tmp/nornir_http-0.1.3.tar.gz --markdown 20230529/n/nornir-http/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 22:08:07] INFO root fetch - processPackages [linkplay-cli]: Downloading https://files.pythonhosted.org/packages/d6/28/32cb2633699e8ee546378b1406a155d7b7f5ac140594a0c179acd55723fe/linkplay-cli-0.0.2.tar.gz
+[2023-05-29 22:08:07] INFO root fetch - processPackages [fronty]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [fronty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fronty-0.0.3.tar.gz tmp/fronty-0.0.4.tar.gz --markdown 20230529/f/fronty/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 22:08:07] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/8d/d6/53e999ec1bf7498ca4bc5f3b8227eb61db39068d2de5dcc359dec5601b5a/coverage-7.2.7-cp37-cp37m-musllinux_1_1_x86_64.whl
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-later]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-later]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_later-3.3.1.tar.gz tmp/ansible_later-3.3.2.tar.gz --markdown 20230529/a/ansible-later/3.3.1-3.3.2/diff.md --exclude *.pyd
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-doctor]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [ansible-doctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_doctor-2.0.4.tar.gz tmp/ansible_doctor-2.0.5.tar.gz --markdown 20230529/a/ansible-doctor/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-29 22:08:07] INFO root fetch - processPackages [intake-xarray]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [intake-xarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intake-xarray-0.6.1.tar.gz tmp/intake-xarray-0.7.0.tar.gz --markdown 20230529/i/intake-xarray/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-05-29 22:08:07] INFO root fetch - processPackages [linkplay-cli]: executing diffoscope
+[2023-05-29 22:08:07] INFO root fetch - processPackages [linkplay-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkplay-cli-0.0.1.tar.gz tmp/linkplay-cli-0.0.2.tar.gz --markdown 20230529/l/linkplay-cli/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 22:08:08] INFO root fetch - processPackages [git-batch]: executing diffoscope
+[2023-05-29 22:08:08] INFO root fetch - processPackages [git-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_batch-2.0.8.tar.gz tmp/git_batch-2.0.9.tar.gz --markdown 20230529/g/git-batch/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-29 22:08:08] INFO root fetch - processPackages [coverage]: executing diffoscope
+[2023-05-29 22:08:08] INFO root fetch - processPackages [coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coverage-7.2.6.tar.gz tmp/coverage-7.2.7-cp37-cp37m-musllinux_1_1_x86_64.whl.zip --markdown 20230529/c/coverage/7.2.6-7.2.7/diff.md --exclude *.pyd
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [nornir-http]: success
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [fronty]: success
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [ansible-doctor]: success
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [linkplay-cli]: success
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [ansible-later]: success
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [SplatStats]: success
+[2023-05-29 22:08:09] INFO root fetch - main [MainThread]: End processing [git-batch]: success
+[2023-05-29 22:08:10] INFO root fetch - main [MainThread]: End processing [intake-xarray]: success
+[2023-05-29 22:09:01] INFO root fetch - main [MainThread]: End processing [coverage]: success
+[2023-05-29 22:09:01] INFO root fetch - main [MainThread]: Store serial: [18293948]
