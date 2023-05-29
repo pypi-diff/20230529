@@ -15885,3 +15885,71 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 20:37:13] INFO root fetch - main [MainThread]: End processing [discordlevelingcard]: success
 [2023-05-29 20:37:14] INFO root fetch - main [MainThread]: End processing [exact]: success
 [2023-05-29 20:37:14] INFO root fetch - main [MainThread]: Store serial: [18293201]
+[2023-05-29 20:42:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293201]
+[2023-05-29 20:42:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exact
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webdns
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: triessentials
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dreamai
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ubi-reader
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mw
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vscode-task-runner
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: localstack-core
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: maisaedu-utilities-prefect
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: maisaedu-poormans-dms
+[2023-05-29 20:42:28] INFO root fetch - processPackages [exact]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [vscode-task-runner]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [maisaedu-poormans-dms]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [maisaedu-utilities-prefect]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [triessentials]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [webdns]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [mw]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ubi-reader]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [localstack-core]: New version: [2.1.1.dev20230529183933] Old Version: [2.1.1.dev20230529165133]
+[2023-05-29 20:42:28] INFO root fetch - processPackages [maisaedu-utilities-prefect]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [maisaedu-utilities-prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-utilities-prefect-1.0.8.tar.gz tmp/maisaedu-utilities-prefect-1.0.9.tar.gz --markdown 20230529/m/maisaedu-utilities-prefect/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [maisaedu-poormans-dms]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [maisaedu-poormans-dms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-poormans-dms-1.0.8.tar.gz tmp/maisaedu-poormans-dms-1.0.9.tar.gz --markdown 20230529/m/maisaedu-poormans-dms/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [triessentials]: Downloading https://files.pythonhosted.org/packages/5b/18/51b5910b4e55619974a00227ac85b8fde7e58fdadcfd71b03c375ae4cceb/triessentials-0.1.3.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [vscode-task-runner]: Downloading https://files.pythonhosted.org/packages/a4/cc/277da7d5da7ccbe866e914a53576e1e181df7eeeefd76f43a6388c941543/vscode_task_runner-0.1.2.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/78/45/6d1dab6087cca8209c7759a88b57210331f9fc92086cd9033dc54b09da6d/localstack-core-2.1.1.dev20230529183933.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [webdns]: Downloading https://files.pythonhosted.org/packages/72/a6/fea139935f3518bb44a263a222c3ef7a9b9292ae057b54b8cea83b579068/webdns-0.0.4.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ubi-reader]: Downloading https://files.pythonhosted.org/packages/30/9b/c1c3efabdc0c6bc15aeaa1e402d8b396db10b8c41575c4ce88644d5cc4c2/ubi_reader-0.8.8.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [exact]: Downloading https://files.pythonhosted.org/packages/22/46/c1e457911d15c35439b337525eeb460f3057cab04726ca6c09d0d25258f5/exact-1.1.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-29 20:42:28] INFO root fetch - processPackages [webdns]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [webdns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webdns-0.0.3.tar.gz tmp/webdns-0.0.4.tar.gz --markdown 20230529/w/webdns/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [triessentials]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [triessentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triessentials-0.1.2.tar.gz tmp/triessentials-0.1.3.tar.gz --markdown 20230529/t/triessentials/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [mw]: Downloading https://files.pythonhosted.org/packages/8e/f9/a3d43697591ab8b820a79b17268aa1cd77a3aeaf500128211e346f9f5a9c/mw-0.3.0.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.1.1.dev20230529165133.tar.gz tmp/localstack-core-2.1.1.dev20230529183933.tar.gz --markdown 20230529/l/localstack-core/2.1.1.dev20230529165133-2.1.1.dev20230529183933/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [vscode-task-runner]: Downloading https://files.pythonhosted.org/packages/28/56/3ae9d345076f544076c3436d521362b3aa7bbb71aac0c839d5acd36c69dd/vscode_task_runner-0.1.3.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230529/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [mw]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [exact]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [mw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mw-0.2.0.tar.gz tmp/mw-0.3.0.tar.gz --markdown 20230529/m/mw/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [exact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exact-1.0.3.tar.gz tmp/exact-1.1.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230529/e/exact/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ubi-reader]: Downloading https://files.pythonhosted.org/packages/70/a3/2970c204adf7053ad94045290c501bf27905fb279438c2c20d00c43510ee/ubi_reader-0.8.9.tar.gz
+[2023-05-29 20:42:28] INFO root fetch - processPackages [vscode-task-runner]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [vscode-task-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vscode_task_runner-0.1.2.tar.gz tmp/vscode_task_runner-0.1.3.tar.gz --markdown 20230529/v/vscode-task-runner/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ubi-reader]: executing diffoscope
+[2023-05-29 20:42:28] INFO root fetch - processPackages [ubi-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubi_reader-0.8.8.tar.gz tmp/ubi_reader-0.8.9.tar.gz --markdown 20230529/u/ubi-reader/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-29 20:42:29] INFO root fetch - processPackages [maisaedu-poormans-dms]: Start processing: discordlevelingcard
+[2023-05-29 20:42:29] INFO root fetch - main [MainThread]: End processing [maisaedu-poormans-dms]: success
+[2023-05-29 20:42:29] INFO root fetch - processPackages [discordlevelingcard]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-29 20:42:30] INFO root fetch - processPackages [discordlevelingcard]: Downloading https://files.pythonhosted.org/packages/34/96/5a056a6eda9632027ec0f68e780164bff0c9c9e0f2a75afc5edece65e1f5/discordlevelingcard-0.5.5.tar.gz
+[2023-05-29 20:42:30] INFO root fetch - main [MainThread]: End processing [maisaedu-utilities-prefect]: success
+[2023-05-29 20:42:30] INFO root fetch - main [MainThread]: End processing [triessentials]: success
+[2023-05-29 20:42:30] INFO root fetch - processPackages [discordlevelingcard]: executing diffoscope
+[2023-05-29 20:42:30] INFO root fetch - processPackages [discordlevelingcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordlevelingcard-0.5.4.tar.gz tmp/discordlevelingcard-0.5.5.tar.gz --markdown 20230529/d/discordlevelingcard/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-29 20:42:30] INFO root fetch - main [MainThread]: End processing [webdns]: success
+[2023-05-29 20:42:30] INFO root fetch - main [MainThread]: End processing [mw]: success
+[2023-05-29 20:42:30] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-29 20:42:30] INFO root fetch - main [MainThread]: End processing [exact]: success
+[2023-05-29 20:42:31] INFO root fetch - main [MainThread]: End processing [vscode-task-runner]: success
+[2023-05-29 20:42:31] INFO root fetch - main [MainThread]: End processing [ubi-reader]: success
+[2023-05-29 20:42:31] INFO root fetch - main [MainThread]: End processing [discordlevelingcard]: success
+[2023-05-29 20:42:37] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-29 20:42:37] INFO root fetch - main [MainThread]: Store serial: [18293231]
