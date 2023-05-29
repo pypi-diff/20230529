@@ -13369,3 +13369,116 @@ EOFError: EOF read where object expected
 [2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [highrise-bot-sdk]: success
 [2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
 [2023-05-29 18:03:09] INFO root fetch - main [MainThread]: Store serial: [18291665]
+[2023-05-29 18:08:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291665]
+[2023-05-29 18:08:18] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: centesimal-iot
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycelium
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amazon-braket-build-tools
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-yaml
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fieldedge-utilities
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: poetry
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: denpy
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prophet
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: python-semantic-release
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: notification-service-nightly
+[2023-05-29 18:08:18] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 18:08:18] WARNING root fetch - processPackages [drf-yaml]: Skipping, unable to determine old version
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-build-tools]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [drf-yaml]: Start processing: ai-flow-nightly
+[2023-05-29 18:08:18] INFO root fetch - main [MainThread]: End processing [drf-yaml] error
+[2023-05-29 18:08:18] WARNING root fetch - processPackages [denpy]: Skipping, unable to determine old version
+[2023-05-29 18:08:18] INFO root fetch - processPackages [pycelium]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [denpy]: Start processing: amazon-braket-algorithm-library
+[2023-05-29 18:08:18] INFO root fetch - main [MainThread]: End processing [denpy] error
+[2023-05-29 18:08:18] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [prophet]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [poetry]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [python-semantic-release]: New version: [8.0.0a5] Old Version: [8.0.0a4]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-algorithm-library]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-29 18:08:18] INFO root fetch - processPackages [python-semantic-release]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [python-semantic-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-semantic-release-8.0.0a4.tar.gz tmp/python-semantic-release-8.0.0a5.tar.gz --markdown 20230529/p/python-semantic-release/8.0.0a4-8.0.0a5/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.8-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.9-py2.py3-none-any.whl.zip --markdown 20230529/c/centesimal-iot/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230529/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [pycelium]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [pycelium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycelium-0.1.8.tar.gz tmp/pycelium-0.1.9.tar.gz --markdown 20230529/p/pycelium/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230529/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [poetry]: Downloading https://files.pythonhosted.org/packages/8d/e3/60a9675b72c1a2c2a6d528b4aa794ea9930ef9ebb6697ec31ad8833e8d8b/poetry-1.5.0.tar.gz
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-algorithm-library]: Downloading https://files.pythonhosted.org/packages/ba/c4/1cf9b0eac88ba541acf922713281d37703226cb1df328ff190d747f3df50/amazon-braket-algorithm-library-1.3.4.tar.gz
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-build-tools]: Downloading https://files.pythonhosted.org/packages/a6/95/a01e067585e5e33af121d9dd8ce63a7a748937c75199af052d76f5996b13/amazon-braket-build-tools-0.2.3.tar.gz
+[2023-05-29 18:08:18] INFO root fetch - processPackages [prophet]: Downloading https://files.pythonhosted.org/packages/d4/72/1ace3121c049225fd61dc53aa70f57bdf485d624675e8317c41f1d74f526/prophet-1.1.4.tar.gz
+[2023-05-29 18:08:18] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230529/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [poetry]: Downloading https://files.pythonhosted.org/packages/ab/42/1c8769483f4e72d17fd7b827d11be37a48289d38df40b1d8640ef53d7b33/poetry-1.5.1.tar.gz
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-build-tools]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-build-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-braket-build-tools-0.2.2.tar.gz tmp/amazon-braket-build-tools-0.2.3.tar.gz --markdown 20230529/a/amazon-braket-build-tools/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-algorithm-library]: Downloading https://files.pythonhosted.org/packages/df/68/80ecfd598ee67d9bcb7b865ab91b511ec55dd0b57fb317c9e6dd9bc8c88f/amazon-braket-algorithm-library-1.3.5.tar.gz
+[2023-05-29 18:08:18] INFO root fetch - processPackages [prophet]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [prophet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prophet-1.1.3.tar.gz tmp/prophet-1.1.4.tar.gz --markdown 20230529/p/prophet/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [poetry]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [poetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry-1.5.0.tar.gz tmp/poetry-1.5.1.tar.gz --markdown 20230529/p/poetry/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-algorithm-library]: executing diffoscope
+[2023-05-29 18:08:18] INFO root fetch - processPackages [amazon-braket-algorithm-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-braket-algorithm-library-1.3.4.tar.gz tmp/amazon-braket-algorithm-library-1.3.5.tar.gz --markdown 20230529/a/amazon-braket-algorithm-library/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-29 18:08:19] INFO root fetch - processPackages [centesimal-iot]: Start processing: aioroboremote
+[2023-05-29 18:08:19] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-29 18:08:19] WARNING root fetch - processPackages [aioroboremote]: Skipping, unable to determine old version
+[2023-05-29 18:08:19] INFO root fetch - processPackages [aioroboremote]: Start processing: large-image
+[2023-05-29 18:08:19] INFO root fetch - main [MainThread]: End processing [aioroboremote] error
+[2023-05-29 18:08:19] INFO root fetch - processPackages [large-image]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:19] INFO root fetch - processPackages [large-image]: executing diffoscope
+[2023-05-29 18:08:19] INFO root fetch - processPackages [large-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-1.9.1.dev6.tar.gz tmp/large-image-1.9.1.dev8.tar.gz --markdown 20230529/l/large-image/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:20] INFO root fetch - processPackages [pycelium]: Start processing: girder-large-image
+[2023-05-29 18:08:20] INFO root fetch - main [MainThread]: End processing [pycelium]: success
+[2023-05-29 18:08:20] INFO root fetch - processPackages [girder-large-image]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:20] INFO root fetch - processPackages [girder-large-image]: executing diffoscope
+[2023-05-29 18:08:20] INFO root fetch - processPackages [girder-large-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girder-large-image-1.9.1.dev6.tar.gz tmp/girder-large-image-1.9.1.dev8.tar.gz --markdown 20230529/g/girder-large-image/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:20] INFO root fetch - processPackages [amazon-braket-build-tools]: Start processing: girder-large-image-annotation
+[2023-05-29 18:08:20] INFO root fetch - main [MainThread]: End processing [amazon-braket-build-tools]: success
+[2023-05-29 18:08:20] INFO root fetch - processPackages [girder-large-image-annotation]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:20] INFO root fetch - processPackages [fieldedge-utilities]: Start processing: large-image-converter
+[2023-05-29 18:08:20] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-29 18:08:20] INFO root fetch - processPackages [prophet]: Start processing: large-image-tasks
+[2023-05-29 18:08:20] INFO root fetch - main [MainThread]: End processing [prophet]: success
+[2023-05-29 18:08:20] INFO root fetch - processPackages [notification-service-nightly]: Start processing: large-image-source-bioformats
+[2023-05-29 18:08:20] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-29 18:08:20] INFO root fetch - processPackages [girder-large-image-annotation]: executing diffoscope
+[2023-05-29 18:08:20] INFO root fetch - processPackages [girder-large-image-annotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girder-large-image-annotation-1.9.1.dev6.tar.gz tmp/girder-large-image-annotation-1.9.1.dev8.tar.gz --markdown 20230529/g/girder-large-image-annotation/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-converter]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-tasks]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-source-bioformats]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-converter]: executing diffoscope
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-converter-1.9.1.dev6.tar.gz tmp/large-image-converter-1.9.1.dev8.tar.gz --markdown 20230529/l/large-image-converter/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-source-bioformats]: executing diffoscope
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-source-bioformats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-bioformats-1.9.1.dev6.tar.gz tmp/large-image-source-bioformats-1.9.1.dev8.tar.gz --markdown 20230529/l/large-image-source-bioformats/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-tasks]: executing diffoscope
+[2023-05-29 18:08:21] INFO root fetch - processPackages [large-image-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-tasks-1.9.1.dev6.tar.gz tmp/large-image-tasks-1.9.1.dev8.tar.gz --markdown 20230529/l/large-image-tasks/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:21] INFO root fetch - processPackages [python-semantic-release]: Start processing: hiddifypanel
+[2023-05-29 18:08:21] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
+[2023-05-29 18:08:21] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-29 18:08:21] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-29 18:08:21] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230529/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image]: Start processing: large-image-source-deepzoom
+[2023-05-29 18:08:22] INFO root fetch - main [MainThread]: End processing [large-image]: success
+[2023-05-29 18:08:22] INFO root fetch - processPackages [amazon-braket-algorithm-library]: Start processing: large-image-source-dicom
+[2023-05-29 18:08:22] INFO root fetch - main [MainThread]: End processing [amazon-braket-algorithm-library]: success
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image-source-deepzoom]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image-source-dicom]: New version: [1.21.1.dev9] Old Version: [1.21.1.dev8]
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image-source-deepzoom]: executing diffoscope
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image-source-deepzoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-deepzoom-1.9.1.dev6.tar.gz tmp/large-image-source-deepzoom-1.9.1.dev8.tar.gz --markdown 20230529/l/large-image-source-deepzoom/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image-source-dicom]: executing diffoscope
+[2023-05-29 18:08:22] INFO root fetch - processPackages [large-image-source-dicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-dicom-1.21.1.dev8.tar.gz tmp/large-image-source-dicom-1.21.1.dev9.tar.gz --markdown 20230529/l/large-image-source-dicom/1.21.1.dev8-1.21.1.dev9/diff.md --exclude *.pyd
+[2023-05-29 18:08:22] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-29 18:08:22] INFO root fetch - main [MainThread]: End processing [large-image-converter]: success
+[2023-05-29 18:08:22] INFO root fetch - main [MainThread]: End processing [large-image-tasks]: success
+[2023-05-29 18:08:22] INFO root fetch - main [MainThread]: End processing [large-image-source-bioformats]: success
+[2023-05-29 18:08:23] INFO root fetch - main [MainThread]: End processing [girder-large-image]: success
+[2023-05-29 18:08:23] INFO root fetch - main [MainThread]: End processing [large-image-source-deepzoom]: success
+[2023-05-29 18:08:23] INFO root fetch - main [MainThread]: End processing [large-image-source-dicom]: success
+[2023-05-29 18:08:24] INFO root fetch - main [MainThread]: End processing [girder-large-image-annotation]: success
+[2023-05-29 18:08:27] INFO root fetch - main [MainThread]: End processing [poetry]: success
+[2023-05-29 18:08:42] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-29 18:08:42] INFO root fetch - main [MainThread]: Store serial: [18291740]
