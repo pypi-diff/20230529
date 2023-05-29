@@ -11892,3 +11892,71 @@ EOFError: EOF read where object expected
 [2023-05-29 16:18:49] INFO root fetch - main [MainThread]: End processing [airflow-mcd]: success
 [2023-05-29 16:18:49] INFO root fetch - main [MainThread]: End processing [marionette-predeployed]: success
 [2023-05-29 16:18:49] INFO root fetch - main [MainThread]: Store serial: [18290806]
+[2023-05-29 16:23:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290806]
+[2023-05-29 16:23:58] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiledb-jupyter-bioimg
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dataherb
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quanturf
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyLogForge
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: octavvs
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: maisaedu-utilities-prefect
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: maisaedu-poormans-dms
+[2023-05-29 16:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: yangsuite-yangtree
+[2023-05-29 16:23:58] WARNING root fetch - processPackages [tiledb-jupyter-bioimg]: Skipping, unable to determine old version
+[2023-05-29 16:23:58] INFO root fetch - processPackages [tiledb-jupyter-bioimg]: Start processing: fsspec-dnanexus
+[2023-05-29 16:23:58] INFO root fetch - main [MainThread]: End processing [tiledb-jupyter-bioimg] error
+[2023-05-29 16:23:58] INFO root fetch - processPackages [dataherb]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 16:23:58] INFO root fetch - processPackages [quanturf]: New version: [8.6.2] Old Version: [8.5]
+[2023-05-29 16:23:58] INFO root fetch - processPackages [octavvs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 16:23:58] INFO root fetch - processPackages [PyLogForge]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 16:23:58] WARNING root fetch - processPackages [fsspec-dnanexus]: Skipping, unable to determine old version
+[2023-05-29 16:23:58] INFO root fetch - processPackages [fsspec-dnanexus]: Start processing: vlogs
+[2023-05-29 16:23:58] INFO root fetch - main [MainThread]: End processing [fsspec-dnanexus] error
+[2023-05-29 16:23:59] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-29 16:23:59] INFO root fetch - processPackages [maisaedu-utilities-prefect]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 16:23:59] INFO root fetch - processPackages [maisaedu-poormans-dms]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 16:23:59] INFO root fetch - processPackages [yangsuite-yangtree]: New version: [2.1.5.post0.dev2] Old Version: [2.1.5]
+[2023-05-29 16:23:59] WARNING root fetch - processPackages [vlogs]: Skipping, unable to determine old version
+[2023-05-29 16:23:59] INFO root fetch - processPackages [vlogs]: Start processing: JsOnXmLSe814Rializer748
+[2023-05-29 16:23:59] INFO root fetch - main [MainThread]: End processing [vlogs] error
+[2023-05-29 16:23:59] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-29 16:23:59] WARNING root fetch - processPackages [JsOnXmLSe814Rializer748]: Skipping, unable to determine old version
+[2023-05-29 16:23:59] INFO root fetch - main [MainThread]: End processing [JsOnXmLSe814Rializer748] error
+[2023-05-29 16:23:59] INFO root fetch - processPackages [dataherb]: Downloading https://files.pythonhosted.org/packages/62/d1/cdadba29893a9102abb09171de834986c5b5215c9442500d359c89b90502/dataherb-0.1.9.tar.gz
+[2023-05-29 16:23:59] INFO root fetch - processPackages [PyLogForge]: Downloading https://files.pythonhosted.org/packages/da/ae/d5a86889c654380687fb76c78ff8aaff0bb11565af44bfcedf75ecec0363/PyLogForge-1.0.0.tar.gz
+[2023-05-29 16:23:59] INFO root fetch - processPackages [octavvs]: Downloading https://files.pythonhosted.org/packages/ce/98/268514c914529888c4087a35d5431b78070fcddaac0b4fea4f17917a12f3/octavvs-0.1.8.tar.gz
+[2023-05-29 16:23:59] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230529/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230529/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [dataherb]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [yangsuite-yangtree]: Downloading https://files.pythonhosted.org/packages/10/df/46e335d80583e7488e710221a72dfb90fc9d8c21d71f10b1d6dbfb326f5c/yangsuite_yangtree-2.1.5-py3-none-any.whl
+[2023-05-29 16:23:59] INFO root fetch - processPackages [dataherb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataherb-0.1.8.tar.gz tmp/dataherb-0.1.9.tar.gz --markdown 20230529/d/dataherb/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [quanturf]: Downloading https://files.pythonhosted.org/packages/8d/ef/675ce766376936cc29b945bb37a51273ba242ddea712ff896a15cf5f1270/quanturf-8.6.2.tar.gz
+[2023-05-29 16:23:59] INFO root fetch - processPackages [maisaedu-utilities-prefect]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [maisaedu-utilities-prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-utilities-prefect-1.0.8.tar.gz tmp/maisaedu-utilities-prefect-1.0.9.tar.gz --markdown 20230529/m/maisaedu-utilities-prefect/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [quanturf]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [quanturf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quanturf-8.5.tar.gz tmp/quanturf-8.6.2.tar.gz --markdown 20230529/q/quanturf/8.5-8.6.2/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [PyLogForge]: Downloading https://files.pythonhosted.org/packages/9d/a9/9ee2367125cad2e80723d56be51533aad1514c6958fef2af36f173eda1ef/PyLogForge-1.0.1.tar.gz
+[2023-05-29 16:23:59] INFO root fetch - processPackages [maisaedu-poormans-dms]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [maisaedu-poormans-dms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-poormans-dms-1.0.8.tar.gz tmp/maisaedu-poormans-dms-1.0.9.tar.gz --markdown 20230529/m/maisaedu-poormans-dms/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [PyLogForge]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [PyLogForge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyLogForge-1.0.0.tar.gz tmp/PyLogForge-1.0.1.tar.gz --markdown 20230529/P/PyLogForge/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 16:23:59] INFO root fetch - processPackages [yangsuite-yangtree]: Downloading https://files.pythonhosted.org/packages/43/1a/1b49a1dd0c273d229a0b99ea50da4fb32e0ac9781f24e146f575d9b09c4b/yangsuite_yangtree-2.1.5.post0.dev2-py3-none-any.whl
+[2023-05-29 16:23:59] INFO root fetch - processPackages [yangsuite-yangtree]: executing diffoscope
+[2023-05-29 16:23:59] INFO root fetch - processPackages [yangsuite-yangtree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_yangtree-2.1.5-py3-none-any.whl.zip tmp/yangsuite_yangtree-2.1.5.post0.dev2-py3-none-any.whl.zip --markdown 20230529/y/yangsuite-yangtree/2.1.5-2.1.5.post0.dev2/diff.md --exclude *.pyd
+[2023-05-29 16:24:00] INFO root fetch - processPackages [octavvs]: Downloading https://files.pythonhosted.org/packages/d7/67/71bc104826b96df7020c406de256e055c1de34c01aba04871d74cdbf1329/octavvs-0.1.9.tar.gz
+[2023-05-29 16:24:00] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-29 16:24:00] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-29 16:24:01] INFO root fetch - main [MainThread]: End processing [maisaedu-poormans-dms]: success
+[2023-05-29 16:24:01] INFO root fetch - main [MainThread]: End processing [PyLogForge]: success
+[2023-05-29 16:24:01] INFO root fetch - main [MainThread]: End processing [maisaedu-utilities-prefect]: success
+[2023-05-29 16:24:01] INFO root fetch - main [MainThread]: End processing [dataherb]: success
+[2023-05-29 16:24:01] INFO root fetch - processPackages [octavvs]: executing diffoscope
+[2023-05-29 16:24:01] INFO root fetch - processPackages [octavvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octavvs-0.1.8.tar.gz tmp/octavvs-0.1.9.tar.gz --markdown 20230529/o/octavvs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:24:03] INFO root fetch - main [MainThread]: End processing [quanturf]: success
+[2023-05-29 16:24:03] INFO root fetch - main [MainThread]: End processing [octavvs]: success
+[2023-05-29 16:24:05] INFO root fetch - main [MainThread]: End processing [yangsuite-yangtree]: success
+[2023-05-29 16:24:05] INFO root fetch - main [MainThread]: Store serial: [18290847]
