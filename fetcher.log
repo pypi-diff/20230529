@@ -17949,3 +17949,63 @@ EOFError: EOF read where object expected
 [2023-05-29 23:18:34] INFO root fetch - main [MainThread]: End processing [analytix]: success
 [2023-05-29 23:18:35] INFO root fetch - main [MainThread]: End processing [pyaaf2]: success
 [2023-05-29 23:18:35] INFO root fetch - main [MainThread]: Store serial: [18294560]
+[2023-05-29 23:23:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294560]
+[2023-05-29 23:23:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reduct-py
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: caveclient
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jack-srs-fleet-manager
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: satori-ci
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PHX
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: terka
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ig-gds-utilities
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: feast-teradata
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: anaouder
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: game-qu
+[2023-05-29 23:23:45] WARNING root fetch - processPackages [jack-srs-fleet-manager]: Skipping, unable to determine old version
+[2023-05-29 23:23:45] INFO root fetch - main [MainThread]: End processing [jack-srs-fleet-manager] error
+[2023-05-29 23:23:45] INFO root fetch - processPackages [reduct-py]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [caveclient]: New version: [5.7.0] Old Version: [5.6.0]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ig-gds-utilities]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [anaouder]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [feast-teradata]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [terka]: New version: [1.9.1] Old Version: [1.9.0.1]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [game-qu]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-29 23:23:45] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.1.tar.gz tmp/terka-1.9.1.tar.gz --markdown 20230529/t/terka/1.9.0.1-1.9.1/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [anaouder]: Downloading https://files.pythonhosted.org/packages/e9/11/646c871078bde3f4d267accdcc8b0227332efe3b5c85ea69646933eb6e6c/anaouder-0.7.8.tar.gz
+[2023-05-29 23:23:45] INFO root fetch - processPackages [reduct-py]: Downloading https://files.pythonhosted.org/packages/c7/64/753bf7935fa219c80f3355254a34408f7c1e93b54d79ed5c07791d20dc03/reduct_py-1.3.1-py3-none-any.whl
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ig-gds-utilities]: Downloading https://files.pythonhosted.org/packages/83/6d/2db912e7b93dd5b49c6a4c97e00c8362992320199fba3ca879fecf8ef2bd/ig_gds_utilities-0.1.6-py2.py3-none-any.whl
+[2023-05-29 23:23:45] INFO root fetch - processPackages [feast-teradata]: Downloading https://files.pythonhosted.org/packages/2b/b4/1caa6f495e4de4059b9c509ade8a2ace1aebc854568e768d37e98daaccc3/feast-teradata-1.0.3.tar.gz
+[2023-05-29 23:23:45] INFO root fetch - processPackages [game-qu]: Downloading https://files.pythonhosted.org/packages/ad/d8/ea2db5074584d68c963c8eec7d27ffa01b4dc2e73252c34a95aa1f46bd64/game_qu-2.0.3.tar.gz
+[2023-05-29 23:23:45] INFO root fetch - processPackages [caveclient]: Downloading https://files.pythonhosted.org/packages/b5/d2/dac876a99c37da2d4017cdd6cfc1b2136f4569de980ddec4a9b3a0dc3b1e/caveclient-5.7.0.tar.gz
+[2023-05-29 23:23:45] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20230529/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [caveclient]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [caveclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caveclient-5.6.0.tar.gz tmp/caveclient-5.7.0.tar.gz --markdown 20230529/c/caveclient/5.6.0-5.7.0/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [reduct-py]: Downloading https://files.pythonhosted.org/packages/c3/59/020a640383c1909fa4fba6e16d713bbe7e18c9bc8ae9d9df7016efa7f5ed/reduct_py-1.4.0-py3-none-any.whl
+[2023-05-29 23:23:45] INFO root fetch - processPackages [game-qu]: Downloading https://files.pythonhosted.org/packages/69/c7/65937d9e191eed3e2c6feed45103a1a28412048dd16dbf26d9e5e783d5e3/game_qu-2.0.4.tar.gz
+[2023-05-29 23:23:45] INFO root fetch - processPackages [reduct-py]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [reduct-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reduct_py-1.3.1-py3-none-any.whl.zip tmp/reduct_py-1.4.0-py3-none-any.whl.zip --markdown 20230529/r/reduct-py/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [feast-teradata]: Downloading https://files.pythonhosted.org/packages/e2/9b/80354c79909b8770f71f9c2671cff2d39dd61ed44d36bded26ea7553e901/feast-teradata-1.0.4.tar.gz
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ig-gds-utilities]: Downloading https://files.pythonhosted.org/packages/2f/a4/67fa1048faaa76d12577d7bea8afdd9dd22675dcf47f1b469ac3c8e08537/ig_gds_utilities-0.1.7-py2.py3-none-any.whl
+[2023-05-29 23:23:45] INFO root fetch - processPackages [feast-teradata]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [feast-teradata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feast-teradata-1.0.3.tar.gz tmp/feast-teradata-1.0.4.tar.gz --markdown 20230529/f/feast-teradata/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ig-gds-utilities]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [ig-gds-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ig_gds_utilities-0.1.6-py2.py3-none-any.whl.zip tmp/ig_gds_utilities-0.1.7-py2.py3-none-any.whl.zip --markdown 20230529/i/ig-gds-utilities/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 23:23:45] INFO root fetch - processPackages [game-qu]: executing diffoscope
+[2023-05-29 23:23:45] INFO root fetch - processPackages [game-qu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/game_qu-2.0.3.tar.gz tmp/game_qu-2.0.4.tar.gz --markdown 20230529/g/game-qu/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-29 23:23:46] WARNING root fetch - processPackages [anaouder]: Skipping package: exceeds size limit 73418928>=10485760
+[2023-05-29 23:23:46] INFO root fetch - main [MainThread]: End processing [anaouder] error
+[2023-05-29 23:23:46] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 23:23:46] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-05-29 23:23:47] INFO root fetch - main [MainThread]: End processing [reduct-py]: success
+[2023-05-29 23:23:47] INFO root fetch - main [MainThread]: End processing [caveclient]: success
+[2023-05-29 23:23:47] INFO root fetch - main [MainThread]: End processing [ig-gds-utilities]: success
+[2023-05-29 23:23:47] INFO root fetch - main [MainThread]: End processing [feast-teradata]: success
+[2023-05-29 23:23:47] INFO root fetch - main [MainThread]: End processing [game-qu]: success
+[2023-05-29 23:23:49] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2023-05-29 23:23:49] INFO root fetch - main [MainThread]: Store serial: [18294587]
