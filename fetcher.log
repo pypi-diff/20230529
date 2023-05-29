@@ -18009,3 +18009,42 @@ EOFError: EOF read where object expected
 [2023-05-29 23:23:47] INFO root fetch - main [MainThread]: End processing [game-qu]: success
 [2023-05-29 23:23:49] INFO root fetch - main [MainThread]: End processing [PHX]: success
 [2023-05-29 23:23:49] INFO root fetch - main [MainThread]: Store serial: [18294587]
+[2023-05-29 23:28:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294587]
+[2023-05-29 23:28:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 23:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maisaedu-utilities-prefect
+[2023-05-29 23:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maisaedu-poormans-dms
+[2023-05-29 23:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dimod
+[2023-05-29 23:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manipulation
+[2023-05-29 23:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graph-kmer-index
+[2023-05-29 23:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: game-qu
+[2023-05-29 23:28:58] INFO root fetch - processPackages [game-qu]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-29 23:28:58] INFO root fetch - processPackages [maisaedu-poormans-dms]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 23:28:58] INFO root fetch - processPackages [maisaedu-utilities-prefect]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 23:28:58] INFO root fetch - processPackages [manipulation]: New version: [2023.5.29] Old Version: [2022.9.23]
+[2023-05-29 23:28:58] INFO root fetch - processPackages [dimod]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 23:28:58] INFO root fetch - processPackages [graph-kmer-index]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 23:28:58] INFO root fetch - processPackages [game-qu]: executing diffoscope
+[2023-05-29 23:28:58] INFO root fetch - processPackages [game-qu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/game_qu-2.0.3.tar.gz tmp/game_qu-2.0.4.tar.gz --markdown 20230529/g/game-qu/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-29 23:28:58] INFO root fetch - processPackages [maisaedu-poormans-dms]: executing diffoscope
+[2023-05-29 23:28:58] INFO root fetch - processPackages [maisaedu-poormans-dms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-poormans-dms-1.0.8.tar.gz tmp/maisaedu-poormans-dms-1.0.9.tar.gz --markdown 20230529/m/maisaedu-poormans-dms/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:28:58] INFO root fetch - processPackages [maisaedu-utilities-prefect]: executing diffoscope
+[2023-05-29 23:28:58] INFO root fetch - processPackages [maisaedu-utilities-prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-utilities-prefect-1.0.8.tar.gz tmp/maisaedu-utilities-prefect-1.0.9.tar.gz --markdown 20230529/m/maisaedu-utilities-prefect/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:28:58] INFO root fetch - processPackages [dimod]: Downloading https://files.pythonhosted.org/packages/76/58/645a597eed11830b92a2e2f18a2b34609d89fb54cac0770e6665dee4fced/dimod-0.9.8.tar.gz
+[2023-05-29 23:28:58] INFO root fetch - processPackages [manipulation]: Downloading https://files.pythonhosted.org/packages/9e/5a/a672d12c8cd0b448cd30a45e13224b8ca70a3ceb2cd623b0841f4fdc92ce/manipulation-2022.9.23.tar.gz
+[2023-05-29 23:28:58] INFO root fetch - processPackages [graph-kmer-index]: Downloading https://files.pythonhosted.org/packages/a3/8a/47497953ba83e88c711d662ba18dc3f9b7e2478f906951a74ea1f8149194/graph_kmer_index-0.0.8.tar.gz
+[2023-05-29 23:28:59] INFO root fetch - processPackages [manipulation]: Downloading https://files.pythonhosted.org/packages/8f/60/75eef7daa55e24f3a862415a974ca2591e089c322456411b41f483cf1116/manipulation-2023.5.29.tar.gz
+[2023-05-29 23:28:59] INFO root fetch - processPackages [graph-kmer-index]: Downloading https://files.pythonhosted.org/packages/d5/9e/92a9b1aec3f373edd60a2ce878dcd5f1552348870debd55a22ab8117210d/graph_kmer_index-0.0.9.tar.gz
+[2023-05-29 23:28:59] INFO root fetch - processPackages [manipulation]: executing diffoscope
+[2023-05-29 23:28:59] INFO root fetch - processPackages [manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manipulation-2022.9.23.tar.gz tmp/manipulation-2023.5.29.tar.gz --markdown 20230529/m/manipulation/2022.9.23-2023.5.29/diff.md --exclude *.pyd
+[2023-05-29 23:28:59] INFO root fetch - processPackages [graph-kmer-index]: executing diffoscope
+[2023-05-29 23:28:59] INFO root fetch - processPackages [graph-kmer-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_kmer_index-0.0.8.tar.gz tmp/graph_kmer_index-0.0.9.tar.gz --markdown 20230529/g/graph-kmer-index/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:28:59] INFO root fetch - processPackages [dimod]: Downloading https://files.pythonhosted.org/packages/ad/78/2ad2a1953daba92bde62f5c0750d0bd0ea504800e351e637c16059665652/dimod-0.9.9.tar.gz
+[2023-05-29 23:28:59] INFO root fetch - processPackages [dimod]: executing diffoscope
+[2023-05-29 23:28:59] INFO root fetch - processPackages [dimod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dimod-0.9.8.tar.gz tmp/dimod-0.9.9.tar.gz --markdown 20230529/d/dimod/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 23:28:59] INFO root fetch - main [MainThread]: End processing [maisaedu-poormans-dms]: success
+[2023-05-29 23:28:59] INFO root fetch - main [MainThread]: End processing [game-qu]: success
+[2023-05-29 23:29:00] INFO root fetch - main [MainThread]: End processing [maisaedu-utilities-prefect]: success
+[2023-05-29 23:29:00] INFO root fetch - main [MainThread]: End processing [graph-kmer-index]: success
+[2023-05-29 23:29:02] INFO root fetch - main [MainThread]: End processing [manipulation]: success
+[2023-05-29 23:29:02] INFO root fetch - main [MainThread]: End processing [dimod]: success
+[2023-05-29 23:29:02] INFO root fetch - main [MainThread]: Store serial: [18294626]
