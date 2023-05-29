@@ -13894,3 +13894,121 @@ EOFError: EOF read where object expected
 [2023-05-29 18:30:31] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
 [2023-05-29 18:30:31] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
 [2023-05-29 18:30:31] INFO root fetch - main [MainThread]: Store serial: [18291950]
+[2023-05-29 18:35:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291950]
+[2023-05-29 18:35:40] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eArsivPortal
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aksharify
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baboo-game
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hrin-msb
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ma-gym
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fief-server
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: red-postgres
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cli-command-parser
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: google-cloud-rapidmigrationassessment
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pwdriver
+[2023-05-29 18:35:40] INFO root fetch - processPackages [red-postgres]: New version: [0.0.2] Old Version: [0.0.1a0]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [ma-gym]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [pwdriver]: New version: [0.27.2] Old Version: [0.26.9]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [eArsivPortal]: New version: [1.0.0] Old Version: [0.0.9]
+[2023-05-29 18:35:40] WARNING root fetch - processPackages [google-cloud-rapidmigrationassessment]: Skipping, unable to determine old version
+[2023-05-29 18:35:40] INFO root fetch - processPackages [google-cloud-rapidmigrationassessment]: Start processing: aiosumma
+[2023-05-29 18:35:40] INFO root fetch - main [MainThread]: End processing [google-cloud-rapidmigrationassessment] error
+[2023-05-29 18:35:40] INFO root fetch - processPackages [aksharify]: New version: [2.5.5] Old Version: [2.5.3]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [baboo-game]: New version: [2.0.1] Old Version: [0.0.0]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [fief-server]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.5.8] Old Version: [2023.5.29]
+[2023-05-29 18:35:40] INFO root fetch - processPackages [aiosumma]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-29 18:35:41] INFO root fetch - processPackages [aiosumma]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [aiosumma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosumma-2.9.8-py3-none-any.whl.zip tmp/aiosumma-2.9.9-py3-none-any.whl.zip --markdown 20230529/a/aiosumma/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [red-postgres]: Downloading https://files.pythonhosted.org/packages/70/71/e243e582e74198f81c8211fb6ad13efbe1c9e4ef96b5bdabb74c6a99bb51/red_postgres-0.0.1a0-py3-none-any.whl
+[2023-05-29 18:35:41] INFO root fetch - processPackages [pwdriver]: Downloading https://files.pythonhosted.org/packages/9d/e1/70b491b24de9de9d7434e2b86dc3d316a7c937ac527f898c2c8f82785b56/pwdriver-0.26.9.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [fief-server]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [fief-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fief-server-0.8.2.tar.gz tmp/fief-server-0.9.0.tar.gz --markdown 20230529/f/fief-server/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/47/38/96b0271e33aa3c14dd47d9bdac04ded5e5c2bab6d012bf051edca04142ab/cli_command_parser-2023.5.29.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [baboo-game]: Downloading https://files.pythonhosted.org/packages/34/4f/0ae66d31f6d6c0f86dbaf4414926268b1b489ee6df11bbc378300c2fd0e1/baboo_game-0.0.0.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [ma-gym]: Downloading https://files.pythonhosted.org/packages/c7/0d/dc6b7860fec9d1d0feb011be8f63be6b490e7342133d3969b2ff7872e8c7/ma_gym-0.0.8.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/90/04/ed0ba0ef7d8cfa5dcf3c490273f253ab9583b1bef330be469f86d8f030a3/eArsivPortal-1.0.0.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [aksharify]: Downloading https://files.pythonhosted.org/packages/72/cb/530177a6e7b8495c2f3975d663c119b870b4bfb517d79c54715feb14213f/aksharify-2.5.5.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [aksharify]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [aksharify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aksharify-2.5.3.tar.gz tmp/aksharify-2.5.5.tar.gz --markdown 20230529/a/aksharify/2.5.3-2.5.5/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [eArsivPortal]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [eArsivPortal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eArsivPortal-0.0.9.tar.gz tmp/eArsivPortal-1.0.0.tar.gz --markdown 20230529/e/eArsivPortal/0.0.9-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230529/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [pwdriver]: Downloading https://files.pythonhosted.org/packages/61/83/18e11cbb619577616edbec7e504a2a4f765cb91f74e95a457ca80fff4dd7/pwdriver-0.27.2.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [red-postgres]: Downloading https://files.pythonhosted.org/packages/d8/a2/2cccf24fb9ce4416bdb17e5b98e84fd74bc0ead40a910562b8a214aaf76e/red_postgres-0.0.2-py3-none-any.whl
+[2023-05-29 18:35:41] INFO root fetch - processPackages [pwdriver]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [pwdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwdriver-0.26.9.tar.gz tmp/pwdriver-0.27.2.tar.gz --markdown 20230529/p/pwdriver/0.26.9-0.27.2/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.5.29.tar.gz tmp/cli_command_parser-2023.5.8.tar.gz --markdown 20230529/c/cli-command-parser/2023.5.29-2023.5.8/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [baboo-game]: Downloading https://files.pythonhosted.org/packages/f9/ac/48316ceb8c28ce46073c160689868d5666b68b3d14d61eaed861284b8af8/baboo_game-2.0.1.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [baboo-game]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [baboo-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baboo_game-0.0.0.tar.gz tmp/baboo_game-2.0.1.tar.gz --markdown 20230529/b/baboo-game/0.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [red-postgres]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [red-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red_postgres-0.0.1a0-py3-none-any.whl.zip tmp/red_postgres-0.0.2-py3-none-any.whl.zip --markdown 20230529/r/red-postgres/0.0.1a0-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 18:35:41] INFO root fetch - processPackages [ma-gym]: Downloading https://files.pythonhosted.org/packages/e2/c3/24602d0c023fd3d70dc348bf4fd1d451f3291fa187d7a49b452d062978b0/ma_gym-0.0.9.tar.gz
+[2023-05-29 18:35:41] INFO root fetch - processPackages [ma-gym]: executing diffoscope
+[2023-05-29 18:35:41] INFO root fetch - processPackages [ma-gym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ma_gym-0.0.8.tar.gz tmp/ma_gym-0.0.9.tar.gz --markdown 20230529/m/ma-gym/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 18:35:42] INFO root fetch - processPackages [aiosumma]: Start processing: akshare
+[2023-05-29 18:35:42] INFO root fetch - main [MainThread]: End processing [aiosumma]: success
+[2023-05-29 18:35:42] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2023-05-29 18:35:42] INFO root fetch - processPackages [aksharify]: Start processing: ripandtear
+[2023-05-29 18:35:42] INFO root fetch - main [MainThread]: End processing [aksharify]: success
+[2023-05-29 18:35:42] INFO root fetch - processPackages [ripandtear]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-29 18:35:43] INFO root fetch - processPackages [eArsivPortal]: Start processing: mypackage-himza-itcollege-lviv-ua
+[2023-05-29 18:35:43] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
+[2023-05-29 18:35:43] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-05-29 18:35:43] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.7.tar.gz tmp/ripandtear-0.9.9.tar.gz --markdown 20230529/r/ripandtear/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 18:35:43] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: Downloading https://files.pythonhosted.org/packages/fb/ed/14864c059fd6d8e909cc154aad1c7f0d82f6a0d2ebca22a7bdc442c18787/mypackage_himza_itcollege_lviv_ua-0.0.1.tar.gz
+[2023-05-29 18:35:43] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-05-29 18:35:43] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20230529/a/akshare/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2023-05-29 18:35:43] INFO root fetch - processPackages [pwdriver]: Start processing: mypackage-himza-itcollege-lviv-ua
+[2023-05-29 18:35:43] INFO root fetch - main [MainThread]: End processing [pwdriver]: success
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 18:35:43] INFO root fetch - processPackages [red-postgres]: Start processing: red-postgres
+[2023-05-29 18:35:43] INFO root fetch - main [MainThread]: End processing [red-postgres]: success
+[2023-05-29 18:35:43] INFO root fetch - processPackages [red-postgres]: New version: [0.0.2] Old Version: [0.0.1a0]
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: Downloading https://files.pythonhosted.org/packages/10/31/b65a17fde28771220ba0b2fc1441b1ef1b8703b14307cf848a881b1af050/mypackage_himza_itcollege_lviv_ua-0.0.2.tar.gz
+[2023-05-29 18:35:43] INFO root fetch - processPackages [baboo-game]: Start processing: vector-quantize-pytorch
+[2023-05-29 18:35:43] INFO root fetch - main [MainThread]: End processing [baboo-game]: success
+[2023-05-29 18:35:43] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: Downloading https://files.pythonhosted.org/packages/10/31/b65a17fde28771220ba0b2fc1441b1ef1b8703b14307cf848a881b1af050/mypackage_himza_itcollege_lviv_ua-0.0.2.tar.gz
+[2023-05-29 18:35:43] INFO root fetch - processPackages [red-postgres]: executing diffoscope
+[2023-05-29 18:35:43] INFO root fetch - processPackages [red-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red_postgres-0.0.1a0-py3-none-any.whl.zip tmp/red_postgres-0.0.2-py3-none-any.whl.zip --markdown 20230529/r/red-postgres/0.0.1a0-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: executing diffoscope
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypackage_himza_itcollege_lviv_ua-0.0.1.tar.gz tmp/mypackage_himza_itcollege_lviv_ua-0.0.2.tar.gz --markdown 20230529/m/mypackage-himza-itcollege-lviv-ua/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: executing diffoscope
+[2023-05-29 18:35:43] INFO root fetch - processPackages [mypackage-himza-itcollege-lviv-ua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypackage_himza_itcollege_lviv_ua-0.0.1.tar.gz tmp/mypackage_himza_itcollege_lviv_ua-0.0.2.tar.gz --markdown 20230529/m/mypackage-himza-itcollege-lviv-ua/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 18:35:43] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/1b/f1/feb0e82f1057f3ccdd951e3d561dbabe9c8a9b5a22dd39ccb59582a0549d/vector_quantize_pytorch-1.6.6.tar.gz
+[2023-05-29 18:35:43] INFO root fetch - processPackages [ma-gym]: Start processing: airflow-provider-anomaly-detection
+[2023-05-29 18:35:43] INFO root fetch - main [MainThread]: End processing [ma-gym]: success
+[2023-05-29 18:35:43] INFO root fetch - processPackages [airflow-provider-anomaly-detection]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 18:35:43] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-29 18:35:43] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.6.5.tar.gz tmp/vector_quantize_pytorch-1.6.6.tar.gz --markdown 20230529/v/vector-quantize-pytorch/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-05-29 18:35:43] INFO root fetch - processPackages [cli-command-parser]: Start processing: mccmnc
+[2023-05-29 18:35:43] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-05-29 18:35:44] WARNING root fetch - processPackages [mccmnc]: Skipping, unable to determine old version
+[2023-05-29 18:35:44] INFO root fetch - processPackages [mccmnc]: Start processing: mathbib
+[2023-05-29 18:35:44] INFO root fetch - main [MainThread]: End processing [mccmnc] error
+[2023-05-29 18:35:44] INFO root fetch - processPackages [mathbib]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 18:35:44] INFO root fetch - main [MainThread]: End processing [fief-server]: success
+[2023-05-29 18:35:44] INFO root fetch - processPackages [airflow-provider-anomaly-detection]: Downloading https://files.pythonhosted.org/packages/09/50/6b084375e446e30ecd753063df31514c7862304f290a742694a2d6067ab5/airflow_provider_anomaly_detection-0.0.8.tar.gz
+[2023-05-29 18:35:44] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-29 18:35:44] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/8a/a6/6ea4fe7fa7b49baad40d5d9766be47b14134c4bef82570b6eee09b7c0288/mathbib-0.3.0.tar.gz
+[2023-05-29 18:35:44] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-05-29 18:35:44] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.2.0.tar.gz tmp/mathbib-0.3.0.tar.gz --markdown 20230529/m/mathbib/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 18:35:44] INFO root fetch - processPackages [airflow-provider-anomaly-detection]: Downloading https://files.pythonhosted.org/packages/6a/ef/6a14c6f17aa64c5fd5f15ab602eb183edcbe6e06dd3eed4445d6ae0ea170/airflow_provider_anomaly_detection-0.0.9.tar.gz
+[2023-05-29 18:35:44] INFO root fetch - processPackages [airflow-provider-anomaly-detection]: executing diffoscope
+[2023-05-29 18:35:44] INFO root fetch - processPackages [airflow-provider-anomaly-detection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_anomaly_detection-0.0.8.tar.gz tmp/airflow_provider_anomaly_detection-0.0.9.tar.gz --markdown 20230529/a/airflow-provider-anomaly-detection/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 18:35:44] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-05-29 18:35:45] INFO root fetch - main [MainThread]: End processing [mypackage-himza-itcollege-lviv-ua]: success
+[2023-05-29 18:35:45] INFO root fetch - main [MainThread]: End processing [mypackage-himza-itcollege-lviv-ua]: success
+[2023-05-29 18:35:45] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-29 18:35:45] INFO root fetch - main [MainThread]: End processing [red-postgres]: success
+[2023-05-29 18:35:45] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-05-29 18:35:46] INFO root fetch - main [MainThread]: End processing [airflow-provider-anomaly-detection]: success
+[2023-05-29 18:35:50] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-05-29 18:35:50] INFO root fetch - main [MainThread]: Store serial: [18292015]
