@@ -4212,3 +4212,31 @@
 [2023-05-29 05:35:51] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account-payment-brcobranca]: success
 [2023-05-29 05:35:55] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
 [2023-05-29 05:35:55] INFO root fetch - main [MainThread]: Store serial: [18286090]
+[2023-05-29 05:41:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286090]
+[2023-05-29 05:41:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 05:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lp-ap-tools
+[2023-05-29 05:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pystools
+[2023-05-29 05:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: look-like-scanned
+[2023-05-29 05:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jatool
+[2023-05-29 05:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macrometa-source-snowflake
+[2023-05-29 05:41:05] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 05:41:05] INFO root fetch - processPackages [jatool]: New version: [1.99] Old Version: [1.98]
+[2023-05-29 05:41:05] WARNING root fetch - processPackages [lp-ap-tools]: Skipping, unable to determine old version
+[2023-05-29 05:41:05] INFO root fetch - processPackages [look-like-scanned]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 05:41:05] INFO root fetch - main [MainThread]: End processing [lp-ap-tools] error
+[2023-05-29 05:41:05] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 05:41:06] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-29 05:41:06] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:41:06] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2023-05-29 05:41:06] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20230529/p/pystools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:41:06] INFO root fetch - processPackages [jatool]: Downloading https://files.pythonhosted.org/packages/e9/42/0ee72e977607101e6a2f1129574ad99e64ca3cba4b88c37b11036e5c287f/jatool-1.99.tar.gz
+[2023-05-29 05:41:06] INFO root fetch - processPackages [look-like-scanned]: Downloading https://files.pythonhosted.org/packages/f8/a1/7da8c25f9ee714aa6e5a9ff971dff06d6b130d66d18ba9811f6074dd0501/look_like_scanned-0.2.3.tar.gz
+[2023-05-29 05:41:06] INFO root fetch - processPackages [look-like-scanned]: executing diffoscope
+[2023-05-29 05:41:06] INFO root fetch - processPackages [look-like-scanned]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/look_like_scanned-0.2.2.tar.gz tmp/look_like_scanned-0.2.3.tar.gz --markdown 20230529/l/look-like-scanned/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 05:41:06] INFO root fetch - processPackages [jatool]: executing diffoscope
+[2023-05-29 05:41:06] INFO root fetch - processPackages [jatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jatool-1.98.tar.gz tmp/jatool-1.99.tar.gz --markdown 20230529/j/jatool/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-29 05:41:07] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-29 05:41:07] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2023-05-29 05:41:07] INFO root fetch - main [MainThread]: End processing [look-like-scanned]: success
+[2023-05-29 05:41:09] INFO root fetch - main [MainThread]: End processing [jatool]: success
+[2023-05-29 05:41:09] INFO root fetch - main [MainThread]: Store serial: [18286110]
