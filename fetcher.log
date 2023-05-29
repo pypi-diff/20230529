@@ -6831,3 +6831,76 @@
 [2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
 [2023-05-29 10:43:32] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-29 10:43:32] INFO root fetch - main [MainThread]: Store serial: [18287718]
+[2023-05-29 10:48:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287718]
+[2023-05-29 10:48:41] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lanarky
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-shopfloor-mobile
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assisted-service-client
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsaugmentation
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: generate-invitation-codes
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kikuchipy
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: semantic-cleaning
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-stock-release-channel
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tfp-nightly
+[2023-05-29 10:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: generate-invitation-codes
+[2023-05-29 10:48:41] INFO root fetch - processPackages [lanarky]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile]: New version: [14.0.1.9.2] Old Version: [14.0.1.9.1]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: New version: [16.0.2.1.0] Old Version: [16.0.2.0.1.2]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [semantic-cleaning]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [generate-invitation-codes]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [generate-invitation-codes]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [kikuchipy]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [tsaugmentation]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-29 10:48:41] INFO root fetch - processPackages [generate-invitation-codes]: Downloading https://files.pythonhosted.org/packages/62/c9/8624a47cfb6aa9195f1fd15b417ae765592004fc88fed4ea3577fd3c2d81/generate-invitation-codes-1.0.0.tar.gz
+[2023-05-29 10:48:41] INFO root fetch - processPackages [generate-invitation-codes]: Downloading https://files.pythonhosted.org/packages/62/c9/8624a47cfb6aa9195f1fd15b417ae765592004fc88fed4ea3577fd3c2d81/generate-invitation-codes-1.0.0.tar.gz
+[2023-05-29 10:48:41] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-29 10:48:41] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230529/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230529/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: Downloading https://files.pythonhosted.org/packages/ae/de/c8a0baec964ff0482f1c84ca12996988770eb55a601104311ac491a38a36/odoo_addon_stock_release_channel-16.0.2.1.0-py3-none-any.whl
+[2023-05-29 10:48:42] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopfloor_mobile-14.0.1.9.1-py3-none-any.whl.zip tmp/odoo14_addon_shopfloor_mobile-14.0.1.9.2-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-shopfloor-mobile/14.0.1.9.1-14.0.1.9.2/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [tsaugmentation]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [tsaugmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsaugmentation-0.5.8.tar.gz tmp/tsaugmentation-0.5.9.tar.gz --markdown 20230529/t/tsaugmentation/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [kikuchipy]: Downloading https://files.pythonhosted.org/packages/0d/29/6d6b83dac0dad79f6fdaaa13982962b16c8e4cfbca67374d8f03d40cd010/kikuchipy-0.8.6.tar.gz
+[2023-05-29 10:48:42] INFO root fetch - processPackages [generate-invitation-codes]: Downloading https://files.pythonhosted.org/packages/8c/cb/6e2a6e634bb6297912b1632e9dc35cee104b0b685d8336db7205aec6f3b4/generate-invitation-codes-1.0.1.tar.gz
+[2023-05-29 10:48:42] INFO root fetch - processPackages [generate-invitation-codes]: Downloading https://files.pythonhosted.org/packages/8c/cb/6e2a6e634bb6297912b1632e9dc35cee104b0b685d8336db7205aec6f3b4/generate-invitation-codes-1.0.1.tar.gz
+[2023-05-29 10:48:42] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_release_channel-16.0.2.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_stock_release_channel-16.0.2.1.0-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-stock-release-channel/16.0.2.0.1.2-16.0.2.1.0/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [lanarky]: Downloading https://files.pythonhosted.org/packages/d3/1b/f430d9e93e05535db04ada7947dbb7fdf85b08232b9c7f1300055d1edd7c/lanarky-0.7.1.tar.gz
+[2023-05-29 10:48:42] INFO root fetch - processPackages [kikuchipy]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [kikuchipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kikuchipy-0.8.5.tar.gz tmp/kikuchipy-0.8.6.tar.gz --markdown 20230529/k/kikuchipy/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [generate-invitation-codes]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [generate-invitation-codes]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [generate-invitation-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generate-invitation-codes-1.0.0.tar.gz tmp/generate-invitation-codes-1.0.1.tar.gz --markdown 20230529/g/generate-invitation-codes/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [generate-invitation-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generate-invitation-codes-1.0.0.tar.gz tmp/generate-invitation-codes-1.0.1.tar.gz --markdown 20230529/g/generate-invitation-codes/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 10:48:42] INFO root fetch - processPackages [lanarky]: executing diffoscope
+[2023-05-29 10:48:42] INFO root fetch - processPackages [lanarky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanarky-0.7.0.tar.gz tmp/lanarky-0.7.1.tar.gz --markdown 20230529/l/lanarky/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-29 10:48:43] INFO root fetch - processPackages [semantic-cleaning]: Downloading https://files.pythonhosted.org/packages/7e/b6/3a85542123b7afb56262804f39169ee03a3e2a58aae6083fc6a7f2be109d/semantic-cleaning-0.0.3.tar.gz
+[2023-05-29 10:48:43] INFO root fetch - processPackages [semantic-cleaning]: executing diffoscope
+[2023-05-29 10:48:43] INFO root fetch - processPackages [semantic-cleaning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic-cleaning-0.0.2.tar.gz tmp/semantic-cleaning-0.0.3.tar.gz --markdown 20230529/s/semantic-cleaning/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 10:48:44] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: Start processing: bionty
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-release-channel]: success
+[2023-05-29 10:48:44] INFO root fetch - processPackages [generate-invitation-codes]: Start processing: scisdk
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [generate-invitation-codes]: success
+[2023-05-29 10:48:44] INFO root fetch - processPackages [bionty]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-05-29 10:48:44] INFO root fetch - processPackages [scisdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [lanarky]: success
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [tsaugmentation]: success
+[2023-05-29 10:48:44] INFO root fetch - processPackages [scisdk]: Downloading https://files.pythonhosted.org/packages/a6/58/7bd19148d4c116bc22f47de74dc2fbf001d35ca8a35fcb62e1ec6db74489/scisdk-0.0.3.tar.gz
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [generate-invitation-codes]: success
+[2023-05-29 10:48:44] INFO root fetch - processPackages [bionty]: executing diffoscope
+[2023-05-29 10:48:44] INFO root fetch - processPackages [bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bionty-0.9.0.tar.gz tmp/bionty-0.9.0rc1.tar.gz --markdown 20230529/b/bionty/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-29 10:48:44] INFO root fetch - processPackages [scisdk]: Downloading https://files.pythonhosted.org/packages/a0/1c/44116c9544bb8f48c4cc304c1b1f3f6059a1a1eb1acce1d38a33f5889290/scisdk-0.0.4.tar.gz
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor-mobile]: success
+[2023-05-29 10:48:44] INFO root fetch - processPackages [scisdk]: executing diffoscope
+[2023-05-29 10:48:44] INFO root fetch - processPackages [scisdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scisdk-0.0.3.tar.gz tmp/scisdk-0.0.4.tar.gz --markdown 20230529/s/scisdk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 10:48:44] INFO root fetch - main [MainThread]: End processing [semantic-cleaning]: success
+[2023-05-29 10:48:45] INFO root fetch - main [MainThread]: End processing [kikuchipy]: success
+[2023-05-29 10:48:46] INFO root fetch - main [MainThread]: End processing [scisdk]: success
+[2023-05-29 10:48:46] INFO root fetch - main [MainThread]: End processing [bionty]: success
+[2023-05-29 10:48:46] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-29 10:48:59] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-29 10:48:59] INFO root fetch - main [MainThread]: Store serial: [18287752]
