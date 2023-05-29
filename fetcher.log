@@ -12508,3 +12508,102 @@ EOFError: EOF read where object expected
 [2023-05-29 17:01:14] INFO root fetch - processPackages [yangsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite-2.9.8.post0.dev8-py3-none-any.whl.zip tmp/yangsuite-2.9.9-py3-none-any.whl.zip --markdown 20230529/y/yangsuite/2.9.8.post0.dev8-2.9.9/diff.md --exclude *.pyd
 [2023-05-29 17:01:22] INFO root fetch - main [MainThread]: End processing [yangsuite]: success
 [2023-05-29 17:01:22] INFO root fetch - main [MainThread]: Store serial: [18291190]
+[2023-05-29 17:06:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291190]
+[2023-05-29 17:06:35] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cgcsdk
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iron-toolbox
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskcli
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: srecli
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kube-copilot
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: obrpy
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PySciMath
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: optframe
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tiledb-jupyter-bioimg
+[2023-05-29 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: funcat3
+[2023-05-29 17:06:35] INFO root fetch - processPackages [srecli]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [PySciMath]: New version: [1.5.7] Old Version: [1.5.6]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [optframe]: New version: [5.0.8rc0] Old Version: [5.0.7rc0]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [cgcsdk]: New version: [0.8.8] Old Version: [0.8.7]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [funcat3]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [iron-toolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [kube-copilot]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [taskcli]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [tiledb-jupyter-bioimg]: New version: [0.1.0a0] Old Version: [0.1.0]
+[2023-05-29 17:06:35] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 17:06:35] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 17:06:35] INFO root fetch - processPackages [tiledb-jupyter-bioimg]: Downloading https://files.pythonhosted.org/packages/20/22/7d98a383a53a69a08e9655941a293c8ad1df1758005a3524891184da30b5/tiledb_jupyter_bioimg-0.1.0.tar.gz
+[2023-05-29 17:06:35] INFO root fetch - processPackages [funcat3]: Downloading https://files.pythonhosted.org/packages/2f/d9/91b903e1b763582e8a2d171d13bcfd0afe3c1d6b8edcb82a5ef0c2f6df9c/funcat3-1.1.4.tar.gz
+[2023-05-29 17:06:35] INFO root fetch - processPackages [srecli]: Downloading https://files.pythonhosted.org/packages/3f/bf/fa538d1cb0dbe0a2f610bba7eca46c8d065e5722fba100316795fdcc068f/srecli-0.0.4.tar.gz
+[2023-05-29 17:06:35] INFO root fetch - processPackages [taskcli]: Downloading https://files.pythonhosted.org/packages/4d/ca/8741980345f9153a3b29034551d066732f548151af87b07643d0087cdb55/taskcli-0.0.3.tar.gz
+[2023-05-29 17:06:35] INFO root fetch - processPackages [kube-copilot]: Downloading https://files.pythonhosted.org/packages/92/ed/ae22c3eb11fd91f9bc01dbdcba0f4a7c22cef980bf8f5fef46caec814480/kube_copilot-0.1.8.tar.gz
+[2023-05-29 17:06:35] INFO root fetch - processPackages [funcat3]: executing diffoscope
+[2023-05-29 17:06:35] INFO root fetch - processPackages [funcat3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcat3-1.1.3.tar.gz tmp/funcat3-1.1.4.tar.gz --markdown 20230529/f/funcat3/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-29 17:06:35] INFO root fetch - processPackages [cgcsdk]: Downloading https://files.pythonhosted.org/packages/f4/7b/3e07fa71931ed721e40f87c4fd29e65ff87ad55c9a1d978499117d864a2f/cgcsdk-0.8.8.tar.gz
+[2023-05-29 17:06:35] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/d6/3a/5b07a5b934acd63f21f4e6cd5a7049c350d28df05ed9937613ee35abae8e/PySciMath-1.5.7.tar.gz
+[2023-05-29 17:06:36] INFO root fetch - processPackages [optframe]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [optframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optframe-5.0.7rc0.tar.gz tmp/optframe-5.0.8rc0.tar.gz --markdown 20230529/o/optframe/5.0.7rc0-5.0.8rc0/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [PySciMath]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [PySciMath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySciMath-1.5.6.tar.gz tmp/PySciMath-1.5.7.tar.gz --markdown 20230529/P/PySciMath/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [cgcsdk]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [cgcsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgcsdk-0.8.7.tar.gz tmp/cgcsdk-0.8.8.tar.gz --markdown 20230529/c/cgcsdk/0.8.7-0.8.8/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [srecli]: Downloading https://files.pythonhosted.org/packages/97/9f/91add2a17e9927ba6354b90ffa0b15d13cdb26a21fd6d388f9e137ed40b1/srecli-0.0.5.tar.gz
+[2023-05-29 17:06:36] INFO root fetch - processPackages [tiledb-jupyter-bioimg]: Downloading https://files.pythonhosted.org/packages/3b/95/3c6e4a7fc20663e2165f9dd6264aa9f91524681aa1a2ca662e63aa75126a/tiledb_jupyter_bioimg-0.1.0a0.tar.gz
+[2023-05-29 17:06:36] INFO root fetch - processPackages [iron-toolbox]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [iron-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iron_toolbox-1.0.8.tar.gz tmp/iron_toolbox-1.0.9.tar.gz --markdown 20230529/i/iron-toolbox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [kube-copilot]: Downloading https://files.pythonhosted.org/packages/fd/35/3e18869b47a41c295ac800019e28347fde14879ede6506f97393faade562/kube_copilot-0.1.9.tar.gz
+[2023-05-29 17:06:36] INFO root fetch - processPackages [srecli]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [srecli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srecli-0.0.4.tar.gz tmp/srecli-0.0.5.tar.gz --markdown 20230529/s/srecli/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [taskcli]: Downloading https://files.pythonhosted.org/packages/e2/1e/d6235f32ec94e2b6eeb4d43a1fef14db686ad9ecc794fde1a7c1623e42b8/taskcli-0.0.5.tar.gz
+[2023-05-29 17:06:36] INFO root fetch - processPackages [kube-copilot]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [kube-copilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kube_copilot-0.1.8.tar.gz tmp/kube_copilot-0.1.9.tar.gz --markdown 20230529/k/kube-copilot/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [taskcli]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [taskcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskcli-0.0.3.tar.gz tmp/taskcli-0.0.5.tar.gz --markdown 20230529/t/taskcli/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 17:06:36] INFO root fetch - processPackages [tiledb-jupyter-bioimg]: executing diffoscope
+[2023-05-29 17:06:36] INFO root fetch - processPackages [tiledb-jupyter-bioimg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiledb_jupyter_bioimg-0.1.0.tar.gz tmp/tiledb_jupyter_bioimg-0.1.0a0.tar.gz --markdown 20230529/t/tiledb-jupyter-bioimg/0.1.0-0.1.0a0/diff.md --exclude *.pyd
+[2023-05-29 17:06:37] INFO root fetch - processPackages [obrpy]: Start processing: dav-tools
+[2023-05-29 17:06:37] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 17:06:37] INFO root fetch - processPackages [dav-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 17:06:37] INFO root fetch - processPackages [dav-tools]: Downloading https://files.pythonhosted.org/packages/9b/2d/bd15254940b7d487483e50e9aa1720a242cb97840845ee631169965fd6d0/dav_tools-0.0.9.tar.gz
+[2023-05-29 17:06:37] INFO root fetch - processPackages [dav-tools]: executing diffoscope
+[2023-05-29 17:06:37] INFO root fetch - processPackages [dav-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dav_tools-0.0.8.tar.gz tmp/dav_tools-0.0.9.tar.gz --markdown 20230529/d/dav-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 17:06:37] INFO root fetch - processPackages [funcat3]: Start processing: igi-lab3-redgateman
+[2023-05-29 17:06:37] INFO root fetch - main [MainThread]: End processing [funcat3]: success
+[2023-05-29 17:06:37] INFO root fetch - processPackages [PySciMath]: Start processing: pydflow
+[2023-05-29 17:06:37] INFO root fetch - main [MainThread]: End processing [PySciMath]: success
+[2023-05-29 17:06:37] WARNING root fetch - processPackages [igi-lab3-redgateman]: Skipping, unable to determine old version
+[2023-05-29 17:06:37] INFO root fetch - processPackages [igi-lab3-redgateman]: Start processing: aij
+[2023-05-29 17:06:37] INFO root fetch - main [MainThread]: End processing [igi-lab3-redgateman] error
+[2023-05-29 17:06:37] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-29 17:06:37] INFO root fetch - processPackages [aij]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-29 17:06:37] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-05-29 17:06:37] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230529/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-29 17:06:37] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/b3/76/817e5edbce00b0c02011dd638e8fbfa21bbb1d7e917f43fba1d3fdde6603/aij-1.2.8.tar.gz
+[2023-05-29 17:06:37] INFO root fetch - processPackages [optframe]: Start processing: dnaapler
+[2023-05-29 17:06:37] INFO root fetch - main [MainThread]: End processing [optframe]: success
+[2023-05-29 17:06:37] WARNING root fetch - processPackages [dnaapler]: Skipping, unable to determine old version
+[2023-05-29 17:06:37] INFO root fetch - processPackages [dnaapler]: Start processing: pyqrack
+[2023-05-29 17:06:37] INFO root fetch - main [MainThread]: End processing [dnaapler] error
+[2023-05-29 17:06:38] INFO root fetch - processPackages [iron-toolbox]: Start processing: dedlin
+[2023-05-29 17:06:38] INFO root fetch - main [MainThread]: End processing [iron-toolbox]: success
+[2023-05-29 17:06:38] INFO root fetch - processPackages [pyqrack]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-29 17:06:38] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-29 17:06:38] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.2.7.tar.gz tmp/aij-1.2.8.tar.gz --markdown 20230529/a/aij/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-29 17:06:38] INFO root fetch - processPackages [pyqrack]: executing diffoscope
+[2023-05-29 17:06:38] INFO root fetch - processPackages [pyqrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqrack-1.9.5.tar.gz tmp/pyqrack-1.9.6.tar.gz --markdown 20230529/p/pyqrack/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-29 17:06:38] INFO root fetch - processPackages [dedlin]: New version: [1.14.0] Old Version: [1.13.0]
+[2023-05-29 17:06:38] INFO root fetch - main [MainThread]: End processing [cgcsdk]: success
+[2023-05-29 17:06:38] INFO root fetch - processPackages [dedlin]: Downloading https://files.pythonhosted.org/packages/74/3d/4b33d637be00ff501e7b66f53acd8a5c45811f71587337333380e80f6e44/dedlin-1.13.0.tar.gz
+[2023-05-29 17:06:38] INFO root fetch - main [MainThread]: End processing [kube-copilot]: success
+[2023-05-29 17:06:38] INFO root fetch - main [MainThread]: End processing [taskcli]: success
+[2023-05-29 17:06:38] INFO root fetch - main [MainThread]: End processing [srecli]: success
+[2023-05-29 17:06:38] INFO root fetch - processPackages [dedlin]: Downloading https://files.pythonhosted.org/packages/96/f2/21632a70beb3071bf87136694a22e8e8a8258d852848b6d74a493576ea6f/dedlin-1.14.0.tar.gz
+[2023-05-29 17:06:38] INFO root fetch - processPackages [dedlin]: executing diffoscope
+[2023-05-29 17:06:38] INFO root fetch - processPackages [dedlin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dedlin-1.13.0.tar.gz tmp/dedlin-1.14.0.tar.gz --markdown 20230529/d/dedlin/1.13.0-1.14.0/diff.md --exclude *.pyd
+[2023-05-29 17:06:39] INFO root fetch - main [MainThread]: End processing [dav-tools]: success
+[2023-05-29 17:06:39] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-05-29 17:06:39] INFO root fetch - main [MainThread]: End processing [pyqrack]: success
+[2023-05-29 17:06:40] INFO root fetch - main [MainThread]: End processing [dedlin]: success
+[2023-05-29 17:06:40] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-29 17:06:42] INFO root fetch - main [MainThread]: End processing [tiledb-jupyter-bioimg]: success
+[2023-05-29 17:06:42] INFO root fetch - main [MainThread]: Store serial: [18291248]
