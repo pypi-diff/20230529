@@ -9641,3 +9641,41 @@
 [2023-05-29 13:47:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-component-operation]: success
 [2023-05-29 13:47:43] INFO root fetch - main [MainThread]: End processing [mercury-reels]: success
 [2023-05-29 13:47:43] INFO root fetch - main [MainThread]: Store serial: [18289397]
+[2023-05-29 13:52:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289397]
+[2023-05-29 13:52:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whatsapp-api-webhook-server-python
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tsaugmentation
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libcnmc
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BioSAK
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mitzu
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ygModbus
+[2023-05-29 13:52:52] INFO root fetch - processPackages [mitzu]: New version: [0.6.1] Old Version: [0.6.0rc9]
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ygModbus]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 13:52:52] INFO root fetch - processPackages [whatsapp-api-webhook-server-python]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 13:52:52] INFO root fetch - processPackages [tsaugmentation]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 13:52:52] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-29 13:52:52] INFO root fetch - processPackages [BioSAK]: New version: [1.64.9] Old Version: [1.64.8]
+[2023-05-29 13:52:52] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-29 13:52:52] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230529/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-29 13:52:52] INFO root fetch - processPackages [tsaugmentation]: executing diffoscope
+[2023-05-29 13:52:52] INFO root fetch - processPackages [tsaugmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsaugmentation-0.5.8.tar.gz tmp/tsaugmentation-0.5.9.tar.gz --markdown 20230529/t/tsaugmentation/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 13:52:52] INFO root fetch - processPackages [mitzu]: Downloading https://files.pythonhosted.org/packages/cd/97/d18f96a32331c75ee5a7115f076b6e80eb2e15d3660aae3890d60ce8b228/mitzu-0.6.0rc9.tar.gz
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ygModbus]: Downloading https://files.pythonhosted.org/packages/cd/d7/8b3a69176288621ced44771599d521be13504b1ad951276ea597d95e3e3f/ygModbus-0.0.8-py3-none-any.whl
+[2023-05-29 13:52:52] INFO root fetch - processPackages [whatsapp-api-webhook-server-python]: Downloading https://files.pythonhosted.org/packages/e5/74/4b3bdaeaeced2a17218bbf7abceeafb96867d592acd0d9fa9b9753fe189d/whatsapp-api-webhook-server-python-0.0.5.tar.gz
+[2023-05-29 13:52:52] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/f9/a4/e9986ffd2e1f64be085e51d19322e585ce922c2749e2db9b561595d911cc/BioSAK-1.64.8.tar.gz
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ygModbus]: executing diffoscope
+[2023-05-29 13:52:52] INFO root fetch - processPackages [ygModbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ygModbus-0.0.7-py3-none-any.whl.zip tmp/ygModbus-0.0.8-py3-none-any.whl.zip --markdown 20230529/y/ygModbus/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 13:52:52] INFO root fetch - processPackages [whatsapp-api-webhook-server-python]: Downloading https://files.pythonhosted.org/packages/4a/e2/37b0ebd74fd2844689409a888cf602583f889f40c9081fabf3d6a5a95613/whatsapp-api-webhook-server-python-0.0.6.tar.gz
+[2023-05-29 13:52:52] INFO root fetch - processPackages [mitzu]: Downloading https://files.pythonhosted.org/packages/1f/03/6abac8a29198630b5461625c50765f9ca6c4450074a3f5fb3fee0361e643/mitzu-0.6.1.tar.gz
+[2023-05-29 13:52:52] INFO root fetch - processPackages [whatsapp-api-webhook-server-python]: executing diffoscope
+[2023-05-29 13:52:52] INFO root fetch - processPackages [whatsapp-api-webhook-server-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatsapp-api-webhook-server-python-0.0.5.tar.gz tmp/whatsapp-api-webhook-server-python-0.0.6.tar.gz --markdown 20230529/w/whatsapp-api-webhook-server-python/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 13:52:52] INFO root fetch - processPackages [mitzu]: executing diffoscope
+[2023-05-29 13:52:52] INFO root fetch - processPackages [mitzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitzu-0.6.0rc9.tar.gz tmp/mitzu-0.6.1.tar.gz --markdown 20230529/m/mitzu/0.6.0rc9-0.6.1/diff.md --exclude *.pyd
+[2023-05-29 13:52:53] WARNING root fetch - processPackages [BioSAK]: Skipping package: exceeds size limit 21171011>=10485760
+[2023-05-29 13:52:53] INFO root fetch - main [MainThread]: End processing [BioSAK] error
+[2023-05-29 13:52:53] INFO root fetch - main [MainThread]: End processing [ygModbus]: success
+[2023-05-29 13:52:53] INFO root fetch - main [MainThread]: End processing [tsaugmentation]: success
+[2023-05-29 13:52:53] INFO root fetch - main [MainThread]: End processing [whatsapp-api-webhook-server-python]: success
+[2023-05-29 13:52:54] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-29 13:52:54] INFO root fetch - main [MainThread]: End processing [mitzu]: success
+[2023-05-29 13:52:54] INFO root fetch - main [MainThread]: Store serial: [18289414]
