@@ -15815,3 +15815,73 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 20:32:00] INFO root fetch - main [MainThread]: End processing [iotbr]: success
 [2023-05-29 20:32:01] INFO root fetch - main [MainThread]: End processing [jupysql-plugin]: success
 [2023-05-29 20:32:01] INFO root fetch - main [MainThread]: Store serial: [18293169]
+[2023-05-29 20:37:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293169]
+[2023-05-29 20:37:10] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: udc
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-stock-location-package-restriction
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: feature-store-utils
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyFinitDiff
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dscan-api-client
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: discordlevelingcard
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: exact
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wf-video-io
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: maisaedu-utilities-prefect
+[2023-05-29 20:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: maisaedu-poormans-dms
+[2023-05-29 20:37:10] WARNING root fetch - processPackages [odoo14-addon-stock-location-package-restriction]: Skipping, unable to determine old version
+[2023-05-29 20:37:10] INFO root fetch - processPackages [odoo14-addon-stock-location-package-restriction]: Start processing: dictkit
+[2023-05-29 20:37:10] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-location-package-restriction] error
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dscan-api-client]: New version: [1.1.1] Old Version: [1.0.9]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [feature-store-utils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [maisaedu-utilities-prefect]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [discordlevelingcard]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [PyFinitDiff]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [maisaedu-poormans-dms]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [udc]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [exact]: New version: [1.0.3] Old Version: [1.0.0]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [wf-video-io]: New version: [3.3.5] Old Version: [3.3.4]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dictkit]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 20:37:10] INFO root fetch - processPackages [maisaedu-utilities-prefect]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [maisaedu-utilities-prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-utilities-prefect-1.0.8.tar.gz tmp/maisaedu-utilities-prefect-1.0.9.tar.gz --markdown 20230529/m/maisaedu-utilities-prefect/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [maisaedu-poormans-dms]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [maisaedu-poormans-dms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-poormans-dms-1.0.8.tar.gz tmp/maisaedu-poormans-dms-1.0.9.tar.gz --markdown 20230529/m/maisaedu-poormans-dms/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [exact]: Downloading https://files.pythonhosted.org/packages/7e/e1/0010eb0fce91427f77752b69e1715b88671e0528c852c745ba0e9b29874f/exact-1.0.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-29 20:37:10] INFO root fetch - processPackages [PyFinitDiff]: Downloading https://files.pythonhosted.org/packages/66/a7/a649bae325300fd3b568e7f6272d73adac824feb5dfafb05fa79a1ca9650/PyFinitDiff-0.3.6-py3-none-any.whl
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/ce/13/21e193eff11d35675250c0e91715c4f0df6c28adc38ce306ba21d06334a8/dscan_api_client-1.1.1-py3-none-any.whl
+[2023-05-29 20:37:10] INFO root fetch - processPackages [discordlevelingcard]: Downloading https://files.pythonhosted.org/packages/43/f6/a4fad9b41c156a8143bf851fb2dc913c7a27e8eabaf0a910cc3af4fab27a/discordlevelingcard-0.5.3.tar.gz
+[2023-05-29 20:37:10] INFO root fetch - processPackages [wf-video-io]: Downloading https://files.pythonhosted.org/packages/ab/c8/0c143ecc388daa6b32a22504b6f642faf8c7db2e78440c864964b7ce4936/wf_video_io-3.3.5.tar.gz
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dictkit]: Downloading https://files.pythonhosted.org/packages/38/ae/3511c8e013d41b1c11e9f575874303142a1d1e162bdb22ecb671dff7163d/dictkit-0.1.6.tar.gz
+[2023-05-29 20:37:10] INFO root fetch - processPackages [PyFinitDiff]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [PyFinitDiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFinitDiff-0.3.5-py3-none-any.whl.zip tmp/PyFinitDiff-0.3.6-py3-none-any.whl.zip --markdown 20230529/P/PyFinitDiff/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [feature-store-utils]: Downloading https://files.pythonhosted.org/packages/88/00/4e3fbeab07724c0b3b5ab9b5ae484d4a2f80aded68375602df928a4c2ba2/feature_store_utils-0.0.3.tar.gz
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.9-py3-none-any.whl.zip tmp/dscan_api_client-1.1.1-py3-none-any.whl.zip --markdown 20230529/d/dscan-api-client/1.0.9-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [udc]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [udc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udc-0.2.3.tar.gz tmp/udc-0.2.4.tar.gz --markdown 20230529/u/udc/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [feature-store-utils]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [feature-store-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_store_utils-0.0.2.tar.gz tmp/feature_store_utils-0.0.3.tar.gz --markdown 20230529/f/feature-store-utils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [wf-video-io]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [wf-video-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wf_video_io-3.3.4.tar.gz tmp/wf_video_io-3.3.5.tar.gz --markdown 20230529/w/wf-video-io/3.3.4-3.3.5/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dictkit]: executing diffoscope
+[2023-05-29 20:37:10] INFO root fetch - processPackages [dictkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dictkit-0.1.5.tar.gz tmp/dictkit-0.1.6.tar.gz --markdown 20230529/d/dictkit/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 20:37:10] INFO root fetch - processPackages [exact]: Downloading https://files.pythonhosted.org/packages/f3/af/0ca266d1eeaf1f13e91b656ba016e8115681c38b22c095999720b0581f18/exact-1.0.3.tar.gz
+[2023-05-29 20:37:10] INFO root fetch - processPackages [discordlevelingcard]: Downloading https://files.pythonhosted.org/packages/04/b8/7214894695c0d492b660ef43b99a674a88fcbe123834b988e17f9a5a711c/discordlevelingcard-0.5.4.tar.gz
+[2023-05-29 20:37:11] INFO root fetch - processPackages [exact]: executing diffoscope
+[2023-05-29 20:37:11] INFO root fetch - processPackages [exact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exact-1.0.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip tmp/exact-1.0.3.tar.gz --markdown 20230529/e/exact/1.0.0-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 20:37:11] INFO root fetch - processPackages [discordlevelingcard]: executing diffoscope
+[2023-05-29 20:37:11] INFO root fetch - processPackages [discordlevelingcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordlevelingcard-0.5.3.tar.gz tmp/discordlevelingcard-0.5.4.tar.gz --markdown 20230529/d/discordlevelingcard/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-29 20:37:11] INFO root fetch - processPackages [maisaedu-poormans-dms]: Start processing: discordlevelingcard
+[2023-05-29 20:37:11] INFO root fetch - main [MainThread]: End processing [maisaedu-poormans-dms]: success
+[2023-05-29 20:37:11] INFO root fetch - processPackages [discordlevelingcard]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-29 20:37:11] INFO root fetch - processPackages [discordlevelingcard]: executing diffoscope
+[2023-05-29 20:37:11] INFO root fetch - processPackages [discordlevelingcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordlevelingcard-0.5.3.tar.gz tmp/discordlevelingcard-0.5.4.tar.gz --markdown 20230529/d/discordlevelingcard/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-29 20:37:11] INFO root fetch - main [MainThread]: End processing [maisaedu-utilities-prefect]: success
+[2023-05-29 20:37:12] INFO root fetch - main [MainThread]: End processing [udc]: success
+[2023-05-29 20:37:12] INFO root fetch - main [MainThread]: End processing [PyFinitDiff]: success
+[2023-05-29 20:37:12] INFO root fetch - main [MainThread]: End processing [dictkit]: success
+[2023-05-29 20:37:12] INFO root fetch - main [MainThread]: End processing [wf-video-io]: success
+[2023-05-29 20:37:12] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-29 20:37:12] INFO root fetch - main [MainThread]: End processing [feature-store-utils]: success
+[2023-05-29 20:37:13] INFO root fetch - main [MainThread]: End processing [discordlevelingcard]: success
+[2023-05-29 20:37:13] INFO root fetch - main [MainThread]: End processing [discordlevelingcard]: success
+[2023-05-29 20:37:14] INFO root fetch - main [MainThread]: End processing [exact]: success
+[2023-05-29 20:37:14] INFO root fetch - main [MainThread]: Store serial: [18293201]
