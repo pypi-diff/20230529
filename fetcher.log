@@ -14012,3 +14012,43 @@ EOFError: EOF read where object expected
 [2023-05-29 18:35:46] INFO root fetch - main [MainThread]: End processing [airflow-provider-anomaly-detection]: success
 [2023-05-29 18:35:50] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-05-29 18:35:50] INFO root fetch - main [MainThread]: Store serial: [18292015]
+[2023-05-29 18:40:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292015]
+[2023-05-29 18:40:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autonomi-nos
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deep-proto
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DLTA-AI
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smeagol-gw
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: domain-paas-sdk-python
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiosumma
+[2023-05-29 18:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nucliadb-contributor-assets
+[2023-05-29 18:40:59] INFO root fetch - processPackages [DLTA-AI]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 18:40:59] INFO root fetch - processPackages [domain-paas-sdk-python]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 18:40:59] WARNING root fetch - processPackages [smeagol-gw]: Skipping, unable to determine old version
+[2023-05-29 18:40:59] INFO root fetch - main [MainThread]: End processing [smeagol-gw] error
+[2023-05-29 18:40:59] INFO root fetch - processPackages [autonomi-nos]: New version: [0.0.4a4] Old Version: [0.0.4a3]
+[2023-05-29 18:40:59] INFO root fetch - processPackages [deep-proto]: New version: [1.0.0] Old Version: [0.9.dev0]
+[2023-05-29 18:40:59] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post803] Old Version: [1.0.0.post800]
+[2023-05-29 18:40:59] INFO root fetch - processPackages [aiosumma]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-29 18:41:00] INFO root fetch - processPackages [DLTA-AI]: Downloading https://files.pythonhosted.org/packages/f1/2e/eec58ab1ac70c8cd6c4749bbde79a95c1b4c6922f05ca6b49b11574a4b5a/DLTA-AI-1.0.1.tar.gz
+[2023-05-29 18:41:00] INFO root fetch - processPackages [aiosumma]: executing diffoscope
+[2023-05-29 18:41:00] INFO root fetch - processPackages [aiosumma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosumma-2.9.8-py3-none-any.whl.zip tmp/aiosumma-2.9.9-py3-none-any.whl.zip --markdown 20230529/a/aiosumma/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-29 18:41:00] WARNING root fetch - processPackages [DLTA-AI]: Skipping package: exceeds size limit 32632626>=10485760
+[2023-05-29 18:41:00] INFO root fetch - main [MainThread]: End processing [DLTA-AI] error
+[2023-05-29 18:41:00] INFO root fetch - processPackages [deep-proto]: Downloading https://files.pythonhosted.org/packages/df/a8/5ea2d35f62e557d8505c44ac7f386eb7cd89e86dc2d9d993ff0d98e6a5f6/deep_proto-1.0.0.tar.gz
+[2023-05-29 18:41:00] INFO root fetch - processPackages [domain-paas-sdk-python]: Downloading https://files.pythonhosted.org/packages/f7/e9/9d1f674310810409f4530f1921d32ceca0ca22793cde72e9070f11211da9/domain-paas-sdk-python-1.0.4.tar.gz
+[2023-05-29 18:41:00] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/23/36/83ef610e2d6ed01a867684802b7e5f4555fcebebcf4d49eb70bf531b84d3/nucliadb_contributor_assets-1.0.0.post803-py3-none-any.whl
+[2023-05-29 18:41:00] INFO root fetch - processPackages [autonomi-nos]: Downloading https://files.pythonhosted.org/packages/e0/58/0ab3e4be72995fcaa1381cb184668420932f2df5c9e04bd361c6365d773c/autonomi_nos-0.0.4a4-py3-none-any.whl
+[2023-05-29 18:41:00] INFO root fetch - processPackages [deep-proto]: executing diffoscope
+[2023-05-29 18:41:00] INFO root fetch - processPackages [deep-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_proto-0.9.dev0.tar.gz tmp/deep_proto-1.0.0.tar.gz --markdown 20230529/d/deep-proto/0.9.dev0-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 18:41:00] INFO root fetch - processPackages [domain-paas-sdk-python]: executing diffoscope
+[2023-05-29 18:41:00] INFO root fetch - processPackages [domain-paas-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-paas-sdk-python-1.0.3.tar.gz tmp/domain-paas-sdk-python-1.0.4.tar.gz --markdown 20230529/d/domain-paas-sdk-python/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 18:41:00] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-29 18:41:00] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post800-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post803-py3-none-any.whl.zip --markdown 20230529/n/nucliadb-contributor-assets/1.0.0.post800-1.0.0.post803/diff.md --exclude *.pyd
+[2023-05-29 18:41:00] INFO root fetch - processPackages [autonomi-nos]: executing diffoscope
+[2023-05-29 18:41:00] INFO root fetch - processPackages [autonomi-nos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomi_nos-0.0.4a3-py3-none-any.whl.zip tmp/autonomi_nos-0.0.4a4-py3-none-any.whl.zip --markdown 20230529/a/autonomi-nos/0.0.4a3-0.0.4a4/diff.md --exclude *.pyd
+[2023-05-29 18:41:01] INFO root fetch - main [MainThread]: End processing [aiosumma]: success
+[2023-05-29 18:41:01] INFO root fetch - main [MainThread]: End processing [deep-proto]: success
+[2023-05-29 18:41:01] INFO root fetch - main [MainThread]: End processing [autonomi-nos]: success
+[2023-05-29 18:41:02] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-29 18:41:06] INFO root fetch - main [MainThread]: End processing [domain-paas-sdk-python]: success
+[2023-05-29 18:41:06] INFO root fetch - main [MainThread]: Store serial: [18292048]
