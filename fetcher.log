@@ -4938,3 +4938,35 @@
 [2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
 [2023-05-29 07:20:10] INFO root fetch - main [MainThread]: End processing [servicefoundry]: success
 [2023-05-29 07:20:10] INFO root fetch - main [MainThread]: Store serial: [18286538]
+[2023-05-29 07:25:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286538]
+[2023-05-29 07:25:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 07:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visor-gligen
+[2023-05-29 07:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyFastNER
+[2023-05-29 07:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rgmining-fraudar
+[2023-05-29 07:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: period-iterator
+[2023-05-29 07:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bluenetwork
+[2023-05-29 07:25:19] INFO root fetch - processPackages [PyFastNER]: New version: [1.0.dev1] Old Version: [1.0.9b1]
+[2023-05-29 07:25:19] WARNING root fetch - processPackages [bluenetwork]: Skipping, unable to determine old version
+[2023-05-29 07:25:19] INFO root fetch - processPackages [visor-gligen]: New version: [1.2] Old Version: [1.1]
+[2023-05-29 07:25:19] INFO root fetch - main [MainThread]: End processing [bluenetwork] error
+[2023-05-29 07:25:19] INFO root fetch - processPackages [period-iterator]: New version: [1.3.0] Old Version: [1.2.5]
+[2023-05-29 07:25:19] INFO root fetch - processPackages [rgmining-fraudar]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-29 07:25:20] INFO root fetch - processPackages [PyFastNER]: executing diffoscope
+[2023-05-29 07:25:20] INFO root fetch - processPackages [PyFastNER]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFastNER-1.0.9b1.tar.gz tmp/PyFastNER-1.0.dev1-py3-none-any.whl.zip --markdown 20230529/P/PyFastNER/1.0.9b1-1.0.dev1/diff.md --exclude *.pyd
+[2023-05-29 07:25:20] INFO root fetch - processPackages [period-iterator]: Downloading https://files.pythonhosted.org/packages/b3/8d/0d87ec0a3ffc5d26499dbf502603b81ab12b500b49ce4aab22c06d7e84d2/period-iterator-1.2.5.tar.gz
+[2023-05-29 07:25:20] INFO root fetch - processPackages [visor-gligen]: Downloading https://files.pythonhosted.org/packages/f9/fa/6ce769168615883da281a78c91510718c28d20b416687f9665f69a26f166/visor_gligen-1.1.tar.gz
+[2023-05-29 07:25:20] INFO root fetch - processPackages [rgmining-fraudar]: Downloading https://files.pythonhosted.org/packages/33/db/4678edfae0cab7061549fa9faae99464441a0cc6b1d31d010b279a5f60ee/rgmining_fraudar-0.7.0.tar.gz
+[2023-05-29 07:25:20] INFO root fetch - processPackages [period-iterator]: Downloading https://files.pythonhosted.org/packages/3e/a8/0acc3bf18c4634e69364068fb4dbdd62667a82b8b434d3f02c74197d9beb/period-iterator-1.3.0.tar.gz
+[2023-05-29 07:25:20] INFO root fetch - processPackages [rgmining-fraudar]: Downloading https://files.pythonhosted.org/packages/f3/c0/8b9df2bbb8e4e3bbb3c4d424d215c986e5fe2f57f9b26c977d13c963e632/rgmining_fraudar-0.7.1.tar.gz
+[2023-05-29 07:25:20] INFO root fetch - processPackages [visor-gligen]: Downloading https://files.pythonhosted.org/packages/4c/a4/466771ab92bfdd64f042c36bbe5f8a90a703ab61b260f7f5f0bb19b0d9ef/visor_gligen-1.2.tar.gz
+[2023-05-29 07:25:20] INFO root fetch - processPackages [period-iterator]: executing diffoscope
+[2023-05-29 07:25:20] INFO root fetch - processPackages [period-iterator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/period-iterator-1.2.5.tar.gz tmp/period-iterator-1.3.0.tar.gz --markdown 20230529/p/period-iterator/1.2.5-1.3.0/diff.md --exclude *.pyd
+[2023-05-29 07:25:20] INFO root fetch - processPackages [rgmining-fraudar]: executing diffoscope
+[2023-05-29 07:25:20] INFO root fetch - processPackages [rgmining-fraudar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgmining_fraudar-0.7.0.tar.gz tmp/rgmining_fraudar-0.7.1.tar.gz --markdown 20230529/r/rgmining-fraudar/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-29 07:25:20] INFO root fetch - processPackages [visor-gligen]: executing diffoscope
+[2023-05-29 07:25:20] INFO root fetch - processPackages [visor-gligen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visor_gligen-1.1.tar.gz tmp/visor_gligen-1.2.tar.gz --markdown 20230529/v/visor-gligen/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-29 07:25:21] INFO root fetch - main [MainThread]: End processing [PyFastNER]: success
+[2023-05-29 07:25:21] INFO root fetch - main [MainThread]: End processing [period-iterator]: success
+[2023-05-29 07:25:21] INFO root fetch - main [MainThread]: End processing [rgmining-fraudar]: success
+[2023-05-29 07:25:21] INFO root fetch - main [MainThread]: End processing [visor-gligen]: success
+[2023-05-29 07:25:21] INFO root fetch - main [MainThread]: Store serial: [18286555]
