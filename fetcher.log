@@ -3833,3 +3833,32 @@
 [2023-05-29 04:47:41] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-29 04:48:48] INFO root fetch - main [MainThread]: End processing [streamlit-code-editor]: success
 [2023-05-29 04:48:48] INFO root fetch - main [MainThread]: Store serial: [18285861]
+[2023-05-29 04:53:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18285861]
+[2023-05-29 04:53:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 04:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imageio
+[2023-05-29 04:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lesscode-py
+[2023-05-29 04:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sloth-framework
+[2023-05-29 04:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lumibot
+[2023-05-29 04:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: liuzh594Crypto
+[2023-05-29 04:53:58] INFO root fetch - processPackages [sloth-framework]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-29 04:53:58] INFO root fetch - processPackages [lumibot]: New version: [2.6.2] Old Version: [2.6.1]
+[2023-05-29 04:53:58] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 04:53:58] INFO root fetch - processPackages [liuzh594Crypto]: New version: [5.9.4.99.9] Old Version: [5.9.4.9.99]
+[2023-05-29 04:53:58] INFO root fetch - processPackages [imageio]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-29 04:53:58] INFO root fetch - processPackages [lumibot]: Downloading https://files.pythonhosted.org/packages/64/b0/296886b31c59da323dc27cee0144bda298a1f9632ce947367e455f7407c0/lumibot-2.6.1.tar.gz
+[2023-05-29 04:53:58] WARNING root fetch - processPackages [lumibot]: Skipping package: exceeds size limit 23654721>=10485760
+[2023-05-29 04:53:58] INFO root fetch - main [MainThread]: End processing [lumibot] error
+[2023-05-29 04:53:58] INFO root fetch - processPackages [liuzh594Crypto]: executing diffoscope
+[2023-05-29 04:53:58] INFO root fetch - processPackages [liuzh594Crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liuzh594Crypto-5.9.4.9.99.tar.gz tmp/liuzh594Crypto-5.9.4.99.9.tar.gz --markdown 20230529/l/liuzh594Crypto/5.9.4.9.99-5.9.4.99.9/diff.md --exclude *.pyd
+[2023-05-29 04:53:58] INFO root fetch - processPackages [sloth-framework]: Downloading https://files.pythonhosted.org/packages/5c/74/a7ed099f50f5d16db09ef329cb60316b471ff6dda688852fc5b6f6b8e958/sloth-framework-0.1.7.tar.gz
+[2023-05-29 04:53:58] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-05-29 04:53:58] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230529/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 04:53:58] INFO root fetch - processPackages [imageio]: executing diffoscope
+[2023-05-29 04:53:58] INFO root fetch - processPackages [imageio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imageio-2.8.0.tar.gz tmp/imageio-2.9.0.tar.gz --markdown 20230529/i/imageio/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-29 04:53:59] INFO root fetch - processPackages [sloth-framework]: executing diffoscope
+[2023-05-29 04:53:59] INFO root fetch - processPackages [sloth-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sloth-framework-0.1.6.tar.gz tmp/sloth-framework-0.1.7.tar.gz --markdown 20230529/s/sloth-framework/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 04:53:59] INFO root fetch - main [MainThread]: End processing [liuzh594Crypto]: success
+[2023-05-29 04:54:00] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-05-29 04:54:00] INFO root fetch - main [MainThread]: End processing [imageio]: success
+[2023-05-29 04:54:03] INFO root fetch - main [MainThread]: End processing [sloth-framework]: success
+[2023-05-29 04:54:03] INFO root fetch - main [MainThread]: Store serial: [18285878]
