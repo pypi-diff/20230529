@@ -15738,3 +15738,80 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 20:25:35] INFO root fetch - main [MainThread]: End processing [pyats.reporter]: success
 [2023-05-29 20:25:46] INFO root fetch - main [MainThread]: End processing [pyats.easypy]: success
 [2023-05-29 20:25:46] INFO root fetch - main [MainThread]: Store serial: [18293125]
+[2023-05-29 20:31:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293125]
+[2023-05-29 20:31:54] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cxfreezepy
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: novalabs-backtest
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tradernet-sdk
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sanic-prometheus-qubit
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cwsearch-utils
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: digikuery
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jupysql-plugin
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: iotbr
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: absl-extra
+[2023-05-29 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dictkit
+[2023-05-29 20:31:54] INFO root fetch - processPackages [novalabs-backtest]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 20:31:54] WARNING root fetch - processPackages [sanic-prometheus-qubit]: Skipping, unable to determine old version
+[2023-05-29 20:31:54] WARNING root fetch - processPackages [cxfreezepy]: Skipping, unable to determine old version
+[2023-05-29 20:31:54] INFO root fetch - processPackages [sanic-prometheus-qubit]: Start processing: jadn
+[2023-05-29 20:31:54] INFO root fetch - main [MainThread]: End processing [sanic-prometheus-qubit] error
+[2023-05-29 20:31:54] INFO root fetch - processPackages [cxfreezepy]: Start processing: turbo-docs
+[2023-05-29 20:31:54] INFO root fetch - main [MainThread]: End processing [cxfreezepy] error
+[2023-05-29 20:31:54] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 20:31:54] WARNING root fetch - processPackages [digikuery]: Skipping, unable to determine old version
+[2023-05-29 20:31:54] INFO root fetch - processPackages [jupysql-plugin]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [tradernet-sdk]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [digikuery]: Start processing: clevertable
+[2023-05-29 20:31:54] INFO root fetch - main [MainThread]: End processing [digikuery] error
+[2023-05-29 20:31:54] INFO root fetch - processPackages [dictkit]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [absl-extra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [iotbr]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [jadn]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [clevertable]: New version: [3.0.0] Old Version: [2.6.0]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [turbo-docs]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-29 20:31:54] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230529/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [absl-extra]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [absl-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/absl_extra-0.0.8.tar.gz tmp/absl_extra-0.0.9.tar.gz --markdown 20230529/a/absl-extra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [jadn]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [jadn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jadn-0.6.8.tar.gz tmp/jadn-0.6.9.tar.gz --markdown 20230529/j/jadn/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [jupysql-plugin]: Downloading https://files.pythonhosted.org/packages/92/d8/3b3cfc38f417b76a1688642716c76dfc257e0a8a9a1468d35fb51e767274/jupysql_plugin-0.1.3.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [dictkit]: Downloading https://files.pythonhosted.org/packages/31/36/b1934563e18f783836d8f24a009c8eeb5cd35877c7069bf9f3d10ea3450c/dictkit-0.1.4.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/a2/76/c84725f8c3f866c2c3cbedb2527c271b98599c426724a785c15ce7752503/clevertable-2.6.0.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [novalabs-backtest]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [novalabs-backtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novalabs-backtest-1.1.8.tar.gz tmp/novalabs-backtest-1.1.9.tar.gz --markdown 20230529/n/novalabs-backtest/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/2e/20/dd8b6fe2dc534a7defe2c41de1fc446ac429874b30295ba1efc203692223/turbo_docs-0.8.1.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [tradernet-sdk]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [tradernet-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradernet_sdk-0.3.8.tar.gz tmp/tradernet_sdk-0.3.9.tar.gz --markdown 20230529/t/tradernet-sdk/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [dictkit]: Downloading https://files.pythonhosted.org/packages/22/3d/a70f62c6c214962c43a441aac177985b88d4553511e44b8cc03a56774d49/dictkit-0.1.5.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [iotbr]: Downloading https://files.pythonhosted.org/packages/8c/42/71e81b196ad9e00b1433aa6e4a330d210c2aff8bb8b388bf4e37bf5d264e/iotbr-0.0.5.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.8.0.tar.gz tmp/turbo_docs-0.8.1.tar.gz --markdown 20230529/t/turbo-docs/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [jupysql-plugin]: Downloading https://files.pythonhosted.org/packages/89/20/1a644aa3bf9c6fb9e56e76b222376a6f84c8512734fbda129f3c155ef3bb/jupysql_plugin-0.1.4.tar.gz
+[2023-05-29 20:31:54] INFO root fetch - processPackages [dictkit]: executing diffoscope
+[2023-05-29 20:31:54] INFO root fetch - processPackages [dictkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dictkit-0.1.4.tar.gz tmp/dictkit-0.1.5.tar.gz --markdown 20230529/d/dictkit/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 20:31:54] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/e1/84/fe04d967d0b776f89f6fb3a45c20d5c189e895c34de5b64f57f1cc1797f4/clevertable-3.0.0.tar.gz
+[2023-05-29 20:31:55] INFO root fetch - processPackages [clevertable]: executing diffoscope
+[2023-05-29 20:31:55] INFO root fetch - processPackages [clevertable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clevertable-2.6.0.tar.gz tmp/clevertable-3.0.0.tar.gz --markdown 20230529/c/clevertable/2.6.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-29 20:31:55] INFO root fetch - processPackages [iotbr]: executing diffoscope
+[2023-05-29 20:31:55] INFO root fetch - processPackages [iotbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iotbr-0.0.4.tar.gz tmp/iotbr-0.0.5.tar.gz --markdown 20230529/i/iotbr/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 20:31:55] INFO root fetch - processPackages [jupysql-plugin]: executing diffoscope
+[2023-05-29 20:31:55] INFO root fetch - processPackages [jupysql-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupysql_plugin-0.1.3.tar.gz tmp/jupysql_plugin-0.1.4.tar.gz --markdown 20230529/j/jupysql-plugin/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 20:31:55] INFO root fetch - processPackages [cwsearch-utils]: Start processing: udc
+[2023-05-29 20:31:55] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-29 20:31:55] INFO root fetch - main [MainThread]: End processing [absl-extra]: success
+[2023-05-29 20:31:56] INFO root fetch - processPackages [udc]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-29 20:31:56] INFO root fetch - processPackages [udc]: Downloading https://files.pythonhosted.org/packages/eb/58/fc8dfa39630164ea504b1e0f1845905a9602270a8deacbda99da8cc76bf9/udc-0.2.3.tar.gz
+[2023-05-29 20:31:56] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-05-29 20:31:56] INFO root fetch - main [MainThread]: End processing [novalabs-backtest]: success
+[2023-05-29 20:31:56] INFO root fetch - processPackages [udc]: Downloading https://files.pythonhosted.org/packages/ca/58/653ca8118b3a1f05583e43da2d7defa57db0e33b2eec4f130891e105f720/udc-0.2.4.tar.gz
+[2023-05-29 20:31:56] INFO root fetch - main [MainThread]: End processing [jadn]: success
+[2023-05-29 20:31:56] INFO root fetch - main [MainThread]: End processing [tradernet-sdk]: success
+[2023-05-29 20:31:56] INFO root fetch - main [MainThread]: End processing [dictkit]: success
+[2023-05-29 20:31:57] INFO root fetch - main [MainThread]: End processing [clevertable]: success
+[2023-05-29 20:31:57] INFO root fetch - processPackages [udc]: executing diffoscope
+[2023-05-29 20:31:57] INFO root fetch - processPackages [udc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udc-0.2.3.tar.gz tmp/udc-0.2.4.tar.gz --markdown 20230529/u/udc/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-29 20:31:58] INFO root fetch - main [MainThread]: End processing [udc]: success
+[2023-05-29 20:32:00] INFO root fetch - main [MainThread]: End processing [iotbr]: success
+[2023-05-29 20:32:01] INFO root fetch - main [MainThread]: End processing [jupysql-plugin]: success
+[2023-05-29 20:32:01] INFO root fetch - main [MainThread]: Store serial: [18293169]
