@@ -9072,3 +9072,77 @@
 [2023-05-29 13:13:40] INFO root fetch - main [MainThread]: End processing [vmware-nsxlib]: success
 [2023-05-29 13:13:40] INFO root fetch - main [MainThread]: End processing [bagbag]: success
 [2023-05-29 13:13:40] INFO root fetch - main [MainThread]: Store serial: [18289025]
+[2023-05-29 13:18:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289025]
+[2023-05-29 13:18:49] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-web-responsive
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: file-io-cli-tddschn
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Bigsansar
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bagbag
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: obrpy
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: file-io-cli-tddschn
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: driveup
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: semi-tensor-product
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: scsd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ogc-na
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ogc-na]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [odoo-addon-web-responsive]: New version: [16.0.1.1.1] Old Version: [16.0.1.1.0.2]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [semi-tensor-product]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [scsd]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [driveup]: New version: [0.7.0] Old Version: [0.6.5]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 13:18:49] INFO root fetch - processPackages [scsd]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [scsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scsd-0.0.7.tar.gz tmp/scsd-0.0.8.tar.gz --markdown 20230529/s/scsd/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/a5/cf/f7297c4dfa2abccdc264338e80f9eddbe7fb257e1158c0a54d9b7337b19c/file_io_cli_tddschn-1.1.1.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/a5/cf/f7297c4dfa2abccdc264338e80f9eddbe7fb257e1158c0a54d9b7337b19c/file_io_cli_tddschn-1.1.1.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [driveup]: Downloading https://files.pythonhosted.org/packages/9c/8a/ec60d3c9d94a6bc0365d91618af271f1a5ee6b4814971b3d62d52b4fc450/driveup-0.6.5.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [semi-tensor-product]: Downloading https://files.pythonhosted.org/packages/81/a1/37d4c764463bcc7896e513596dd12ba38ab1c807a89b84774b68456faaa2/semi-tensor-product-0.0.1.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/05/e5/75417341f816c47eade8daffb3247e96f9586dc88ba5293b8da31e638c6c/Bigsansar-1.5.9.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [odoo-addon-web-responsive]: Downloading https://files.pythonhosted.org/packages/eb/99/a320b9f50ce307c8e1983f3c19b2c0afa6601d9fba083f073e34ad9961e7/odoo_addon_web_responsive-16.0.1.1.1-py3-none-any.whl
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/0d/30/a0bfdf0afcff9fb5f83a1eef22bd764aaea0546051e34ccc36a2de94a6a3/file_io_cli_tddschn-1.1.2.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/0d/30/a0bfdf0afcff9fb5f83a1eef22bd764aaea0546051e34ccc36a2de94a6a3/file_io_cli_tddschn-1.1.2.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ogc-na]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [ogc-na]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogc_na-0.2.8.tar.gz tmp/ogc_na-0.2.9.tar.gz --markdown 20230529/o/ogc-na/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.5.8.tar.gz tmp/Bigsansar-1.5.9.tar.gz --markdown 20230529/B/Bigsansar/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [semi-tensor-product]: Downloading https://files.pythonhosted.org/packages/cf/76/ab74bfcac7d79784b1721d207f63ef052f29c1130172453be448f691edab/semi-tensor-product-0.0.2.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_io_cli_tddschn-1.1.1.tar.gz tmp/file_io_cli_tddschn-1.1.2.tar.gz --markdown 20230529/f/file-io-cli-tddschn/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [file-io-cli-tddschn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_io_cli_tddschn-1.1.1.tar.gz tmp/file_io_cli_tddschn-1.1.2.tar.gz --markdown 20230529/f/file-io-cli-tddschn/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [odoo-addon-web-responsive]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [odoo-addon-web-responsive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_responsive-16.0.1.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_web_responsive-16.0.1.1.1-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-web-responsive/16.0.1.1.0.2-16.0.1.1.1/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [driveup]: Downloading https://files.pythonhosted.org/packages/fc/97/47fce72ba0eb1719a96306422d5749c4d03f1412a43da712b8b5cd682ada/driveup-0.7.0.tar.gz
+[2023-05-29 13:18:49] INFO root fetch - processPackages [semi-tensor-product]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [semi-tensor-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semi-tensor-product-0.0.1.tar.gz tmp/semi-tensor-product-0.0.2.tar.gz --markdown 20230529/s/semi-tensor-product/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 13:18:49] INFO root fetch - processPackages [driveup]: executing diffoscope
+[2023-05-29 13:18:49] INFO root fetch - processPackages [driveup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/driveup-0.6.5.tar.gz tmp/driveup-0.7.0.tar.gz --markdown 20230529/d/driveup/0.6.5-0.7.0/diff.md --exclude *.pyd
+[2023-05-29 13:18:50] INFO root fetch - processPackages [scsd]: Start processing: statml
+[2023-05-29 13:18:50] INFO root fetch - main [MainThread]: End processing [scsd]: success
+[2023-05-29 13:18:50] INFO root fetch - processPackages [statml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 13:18:51] INFO root fetch - processPackages [obrpy]: Start processing: BehaviorPattern
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 13:18:51] INFO root fetch - processPackages [BehaviorPattern]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 13:18:51] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/35/03/e91226adf2fbbb74ef391a63da0df5b15c158f84465e0d1010c49cc41ce4/statml-0.0.9.tar.gz
+[2023-05-29 13:18:51] INFO root fetch - processPackages [BehaviorPattern]: Downloading https://files.pythonhosted.org/packages/36/b2/f6bd99374d579a0a6b62d4821569d5a1b043eb50939332dea7acf09faabc/BehaviorPattern-0.0.7.tar.gz
+[2023-05-29 13:18:51] WARNING root fetch - processPackages [statml]: Skipping package: exceeds size limit 21677555>=10485760
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [statml] error
+[2023-05-29 13:18:51] INFO root fetch - processPackages [BehaviorPattern]: executing diffoscope
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [file-io-cli-tddschn]: success
+[2023-05-29 13:18:51] INFO root fetch - processPackages [BehaviorPattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BehaviorPattern-0.0.6.tar.gz tmp/BehaviorPattern-0.0.7.tar.gz --markdown 20230529/B/BehaviorPattern/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [file-io-cli-tddschn]: success
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [semi-tensor-product]: success
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [ogc-na]: success
+[2023-05-29 13:18:51] INFO root fetch - main [MainThread]: End processing [driveup]: success
+[2023-05-29 13:18:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-responsive]: success
+[2023-05-29 13:18:52] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-29 13:18:52] INFO root fetch - main [MainThread]: End processing [BehaviorPattern]: success
+[2023-05-29 13:18:54] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-29 13:18:54] INFO root fetch - main [MainThread]: Store serial: [18289064]
