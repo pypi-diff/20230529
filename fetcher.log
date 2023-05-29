@@ -5939,3 +5939,64 @@
 [2023-05-29 09:16:57] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-29 09:17:57] INFO root fetch - main [MainThread]: End processing [streamlit-code-editor]: success
 [2023-05-29 09:17:57] INFO root fetch - main [MainThread]: Store serial: [18287145]
+[2023-05-29 09:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287145]
+[2023-05-29 09:23:06] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datatable-ajax-request-parser
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gistowais
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opencve
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thsquant
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: encomp
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: terraform-backend-s3-bucket
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spotON_sdk
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pretix-pages
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cwsearch-utils
+[2023-05-29 09:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pretix-passbook
+[2023-05-29 09:23:06] INFO root fetch - processPackages [opencve]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [thsquant]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 09:23:06] WARNING root fetch - processPackages [gistowais]: Skipping, unable to determine old version
+[2023-05-29 09:23:06] INFO root fetch - main [MainThread]: End processing [gistowais] error
+[2023-05-29 09:23:06] INFO root fetch - processPackages [datatable-ajax-request-parser]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [encomp]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [terraform-backend-s3-bucket]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [pretix-pages]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.5.12] Old Version: [0.0.5.11]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 09:23:06] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-29 09:23:06] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230529/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [encomp]: Downloading https://files.pythonhosted.org/packages/3a/12/5d476118fc9bdd78efb17b1a4f524a565fcfd464ee5a4b4d1baa2502591d/encomp-0.9.4.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [opencve]: Downloading https://files.pythonhosted.org/packages/99/fd/bb91f8f6006cf2f8cd859e23456d10c736673f0cada81c7052873731751d/opencve-1.4.0.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [thsquant]: Downloading https://files.pythonhosted.org/packages/d5/99/5465e2c634566fa2d21c418e8e930478a65792d607ff67605733f9e10e27/thsquant-0.1.3.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-pages]: Downloading https://files.pythonhosted.org/packages/b2/3e/6b6c0556acd3bc66c991f662fc1fc9a2718438ad6b183ef1585c17834ddd/pretix-pages-1.5.2.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-passbook]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-29 09:23:07] INFO root fetch - processPackages [datatable-ajax-request-parser]: Downloading https://files.pythonhosted.org/packages/d4/94/c861a3040a734796f315b3cdb6b563009213b4825f70cddc63c71a654f10/datatable-ajax-request-parser-1.0.2.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [thsquant]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [thsquant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thsquant-0.1.2.tar.gz tmp/thsquant-0.1.3.tar.gz --markdown 20230529/t/thsquant/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/c8/69/50fec17b2f8493f8ef18150560754200c66b187cbda5b823151f68af2238/spotON_sdk-0.0.5.12.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [datatable-ajax-request-parser]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [datatable-ajax-request-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatable_ajax_request_parser-1.0.1.tar.gz tmp/datatable-ajax-request-parser-1.0.2.tar.gz --markdown 20230529/d/datatable-ajax-request-parser/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [encomp]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [encomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encomp-0.9.3.tar.gz tmp/encomp-0.9.4.tar.gz --markdown 20230529/e/encomp/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [terraform-backend-s3-bucket]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [terraform-backend-s3-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terraform-backend-s3-bucket-0.0.8.tar.gz tmp/terraform-backend-s3-bucket-0.0.9.tar.gz --markdown 20230529/t/terraform-backend-s3-bucket/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-passbook]: Downloading https://files.pythonhosted.org/packages/d8/26/871292b6c4a5eec3901ba260585dac54a7bce4b29438ad0881ee7ec785e6/pretix-passbook-1.9.0.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.5.11.tar.gz tmp/spotON_sdk-0.0.5.12.tar.gz --markdown 20230529/s/spotON_sdk/0.0.5.11-0.0.5.12/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-pages]: Downloading https://files.pythonhosted.org/packages/27/e1/898935be384a04d23f428943418df3cc8bc010ded18629e8798bbd046b09/pretix-pages-1.5.3.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [opencve]: Downloading https://files.pythonhosted.org/packages/84/31/aac3ebf758b773f7a1c176df24235864f6708431426fdf0facb04cc645d1/opencve-1.4.1.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-passbook]: Downloading https://files.pythonhosted.org/packages/08/66/cb0b27ac219cef59b6332642e32d18bc2784a09c2b7862efd75ca700a70a/pretix-passbook-1.9.1.tar.gz
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-pages]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-pages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-pages-1.5.2.tar.gz tmp/pretix-pages-1.5.3.tar.gz --markdown 20230529/p/pretix-pages/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [opencve]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [opencve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencve-1.4.0.tar.gz tmp/opencve-1.4.1.tar.gz --markdown 20230529/o/opencve/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-passbook]: executing diffoscope
+[2023-05-29 09:23:07] INFO root fetch - processPackages [pretix-passbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-passbook-1.9.0.tar.gz tmp/pretix-passbook-1.9.1.tar.gz --markdown 20230529/p/pretix-passbook/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-29 09:23:08] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-29 09:23:08] INFO root fetch - main [MainThread]: End processing [thsquant]: success
+[2023-05-29 09:23:08] INFO root fetch - main [MainThread]: End processing [datatable-ajax-request-parser]: success
+[2023-05-29 09:23:08] INFO root fetch - main [MainThread]: End processing [terraform-backend-s3-bucket]: success
+[2023-05-29 09:23:08] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-29 09:23:09] INFO root fetch - main [MainThread]: End processing [encomp]: success
+[2023-05-29 09:23:09] INFO root fetch - main [MainThread]: End processing [pretix-pages]: success
+[2023-05-29 09:23:10] INFO root fetch - main [MainThread]: End processing [opencve]: success
+[2023-05-29 09:23:11] INFO root fetch - main [MainThread]: End processing [pretix-passbook]: success
+[2023-05-29 09:23:11] INFO root fetch - main [MainThread]: Store serial: [18287174]
