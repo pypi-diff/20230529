@@ -2161,3 +2161,47 @@
 [2023-05-29 04:08:00] INFO root fetch - main [MainThread]: End processing [tccli]: success
 [2023-05-29 04:08:31] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
 [2023-05-29 04:08:31] INFO root fetch - main [MainThread]: Store serial: [18285024]
+[2023-05-29 04:13:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18285024]
+[2023-05-29 04:13:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-nagabus
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pango-collapse
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: usb4a
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adbkit
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dd8
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xj-enroll
+[2023-05-29 04:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wordfreq-lemma
+[2023-05-29 04:13:42] INFO root fetch - processPackages [usb4a]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 04:13:42] INFO root fetch - processPackages [nonebot-plugin-nagabus]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 04:13:42] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-29 04:13:42] INFO root fetch - processPackages [dd8]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 04:13:42] WARNING root fetch - processPackages [wordfreq-lemma]: Skipping, unable to determine old version
+[2023-05-29 04:13:42] INFO root fetch - main [MainThread]: End processing [wordfreq-lemma] error
+[2023-05-29 04:13:42] INFO root fetch - processPackages [pango-collapse]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-29 04:13:42] INFO root fetch - processPackages [adbkit]: New version: [0.22] Old Version: [0.21]
+[2023-05-29 04:13:42] INFO root fetch - processPackages [dd8]: executing diffoscope
+[2023-05-29 04:13:42] INFO root fetch - processPackages [dd8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dd8-0.0.8.tar.gz tmp/dd8-0.0.9.tar.gz --markdown 20230529/d/dd8/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 04:13:42] INFO root fetch - processPackages [usb4a]: Downloading https://files.pythonhosted.org/packages/c8/29/5e58043dac54c352d7f26c0ba4b6629c829bade0a1cd412d0a49a79b2a61/usb4a-0.2.0.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [adbkit]: Downloading https://files.pythonhosted.org/packages/94/3e/3ecac9da0fc9b2b803d9f9e210c7869cd69bc7cd3846c4d044bd02095a54/adbkit-0.21.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [pango-collapse]: Downloading https://files.pythonhosted.org/packages/8b/21/5d3eba178f9bc80f9e15cd140af15dc74dc5a6a567bc9f29b35b98e5e780/pango_collapse-0.6.2.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [nonebot-plugin-nagabus]: Downloading https://files.pythonhosted.org/packages/5b/fb/d88b04acf5ddeddc072bf8a4d294d8480a0427730544a3ccb47b3720bd68/nonebot_plugin_nagabus-0.1.2.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [usb4a]: Downloading https://files.pythonhosted.org/packages/dc/d7/0606705ffdfd474b31a323a88b7c20264ad5d396e11e233fe1d33bf9c067/usb4a-0.3.0.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [adbkit]: Downloading https://files.pythonhosted.org/packages/74/bd/395e33aeac0d90a6b3b615b4f1546d042a74f0092b394802dceefa318c86/adbkit-0.22.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-05-29 04:13:42] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230529/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-29 04:13:42] INFO root fetch - processPackages [nonebot-plugin-nagabus]: Downloading https://files.pythonhosted.org/packages/f4/ea/5bc9b8be938494e90de7c9417b682148e5f0f670b8acb22d021d7a1b2041/nonebot_plugin_nagabus-0.1.3.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [usb4a]: executing diffoscope
+[2023-05-29 04:13:42] INFO root fetch - processPackages [usb4a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usb4a-0.2.0.tar.gz tmp/usb4a-0.3.0.tar.gz --markdown 20230529/u/usb4a/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 04:13:42] INFO root fetch - processPackages [pango-collapse]: Downloading https://files.pythonhosted.org/packages/1d/28/a937462b068485ac3ceebc83a6fc8fe7941963e8edfaac993d9d2ad8d423/pango_collapse-0.6.3.tar.gz
+[2023-05-29 04:13:42] INFO root fetch - processPackages [pango-collapse]: executing diffoscope
+[2023-05-29 04:13:42] INFO root fetch - processPackages [pango-collapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pango_collapse-0.6.2.tar.gz tmp/pango_collapse-0.6.3.tar.gz --markdown 20230529/p/pango-collapse/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-29 04:13:42] INFO root fetch - processPackages [adbkit]: executing diffoscope
+[2023-05-29 04:13:42] INFO root fetch - processPackages [adbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbkit-0.21.tar.gz tmp/adbkit-0.22.tar.gz --markdown 20230529/a/adbkit/0.21-0.22/diff.md --exclude *.pyd
+[2023-05-29 04:13:42] INFO root fetch - processPackages [nonebot-plugin-nagabus]: executing diffoscope
+[2023-05-29 04:13:42] INFO root fetch - processPackages [nonebot-plugin-nagabus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nagabus-0.1.2.tar.gz tmp/nonebot_plugin_nagabus-0.1.3.tar.gz --markdown 20230529/n/nonebot-plugin-nagabus/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 04:13:43] INFO root fetch - main [MainThread]: End processing [dd8]: success
+[2023-05-29 04:13:43] INFO root fetch - main [MainThread]: End processing [usb4a]: success
+[2023-05-29 04:13:44] INFO root fetch - main [MainThread]: End processing [xj-enroll]: success
+[2023-05-29 04:13:44] INFO root fetch - main [MainThread]: End processing [pango-collapse]: success
+[2023-05-29 04:13:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nagabus]: success
+[2023-05-29 04:13:44] INFO root fetch - main [MainThread]: End processing [adbkit]: success
+[2023-05-29 04:13:44] INFO root fetch - main [MainThread]: Store serial: [18285049]
