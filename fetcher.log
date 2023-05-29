@@ -16719,3 +16719,44 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:47:00] INFO root fetch - main [MainThread]: End processing [bioumlsim]: success
 [2023-05-29 21:47:00] INFO root fetch - main [MainThread]: End processing [st4sd-runtime-core]: success
 [2023-05-29 21:47:00] INFO root fetch - main [MainThread]: Store serial: [18293692]
+[2023-05-29 21:52:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293692]
+[2023-05-29 21:52:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webdns
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ajm1102pandemic2d
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bfcm
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trainkit
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycalaos
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: klp-commons
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-handyhelpers
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jsonl2
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ajm1102pandemic2d]: New version: [0.5] Old Version: [0.4]
+[2023-05-29 21:52:10] WARNING root fetch - processPackages [webdns]: Skipping, unable to determine old version
+[2023-05-29 21:52:10] INFO root fetch - main [MainThread]: End processing [webdns] error
+[2023-05-29 21:52:10] INFO root fetch - processPackages [bfcm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:52:10] WARNING root fetch - processPackages [trainkit]: Skipping, unable to determine old version
+[2023-05-29 21:52:10] INFO root fetch - main [MainThread]: End processing [trainkit] error
+[2023-05-29 21:52:10] INFO root fetch - processPackages [pycalaos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:52:10] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:52:10] INFO root fetch - processPackages [jsonl2]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 21:52:10] INFO root fetch - processPackages [django-handyhelpers]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-29 21:52:10] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-05-29 21:52:10] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230529/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:52:10] INFO root fetch - processPackages [pycalaos]: executing diffoscope
+[2023-05-29 21:52:10] INFO root fetch - processPackages [pycalaos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycalaos-0.0.8.tar.gz tmp/pycalaos-0.0.9.tar.gz --markdown 20230529/p/pycalaos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ajm1102pandemic2d]: Downloading https://files.pythonhosted.org/packages/30/f5/b6756d3b6ed2bbfd14446b8089f3a2b5937fa88528693d258f21982cd2e4/ajm1102pandemic2d-0.5-py3-none-any.whl
+[2023-05-29 21:52:10] INFO root fetch - processPackages [django-handyhelpers]: Downloading https://files.pythonhosted.org/packages/4d/77/83e4b1c854e94b72f91296aa37e3b177b2abb1d58c08b6c0fb9cc3fde7a5/django-handyhelpers-0.3.3.tar.gz
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ajm1102pandemic2d]: executing diffoscope
+[2023-05-29 21:52:10] INFO root fetch - processPackages [ajm1102pandemic2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ajm1102pandemic2d-0.4-py3-none-any.whl.zip tmp/ajm1102pandemic2d-0.5-py3-none-any.whl.zip --markdown 20230529/a/ajm1102pandemic2d/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-29 21:52:10] INFO root fetch - processPackages [bfcm]: Downloading https://files.pythonhosted.org/packages/89/63/6744b2b57002391f2358f70f5cfb419326613ae311bcefecb1095d0ba0ee/bfcm-0.0.9.tar.gz
+[2023-05-29 21:52:10] WARNING root fetch - processPackages [django-handyhelpers]: Skipping package: exceeds size limit 15622455>=10485760
+[2023-05-29 21:52:10] INFO root fetch - main [MainThread]: End processing [django-handyhelpers] error
+[2023-05-29 21:52:10] INFO root fetch - processPackages [bfcm]: executing diffoscope
+[2023-05-29 21:52:10] INFO root fetch - processPackages [bfcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfcm-0.0.8.tar.gz tmp/bfcm-0.0.9.tar.gz --markdown 20230529/b/bfcm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:52:10] INFO root fetch - processPackages [jsonl2]: executing diffoscope
+[2023-05-29 21:52:10] INFO root fetch - processPackages [jsonl2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonl2-1.1.8.tar.gz tmp/jsonl2-1.1.9.tar.gz --markdown 20230529/j/jsonl2/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 21:52:11] INFO root fetch - main [MainThread]: End processing [pycalaos]: success
+[2023-05-29 21:52:11] INFO root fetch - main [MainThread]: End processing [ajm1102pandemic2d]: success
+[2023-05-29 21:52:11] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-05-29 21:52:11] INFO root fetch - main [MainThread]: End processing [bfcm]: success
+[2023-05-29 21:52:12] INFO root fetch - main [MainThread]: End processing [jsonl2]: success
+[2023-05-29 21:52:12] INFO root fetch - main [MainThread]: Store serial: [18293757]
