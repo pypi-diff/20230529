@@ -14510,3 +14510,29 @@ EOFError: EOF read where object expected
 [2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [aos-prov]: success
 [2023-05-29 19:23:19] INFO root fetch - main [MainThread]: End processing [jadn]: success
 [2023-05-29 19:23:19] INFO root fetch - main [MainThread]: Store serial: [18292309]
+[2023-05-29 19:28:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292309]
+[2023-05-29 19:28:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 19:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IOTAILibrary
+[2023-05-29 19:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quik-ai
+[2023-05-29 19:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2023-05-29 19:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ssh-dashboard
+[2023-05-29 19:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seaplane
+[2023-05-29 19:28:27] WARNING root fetch - processPackages [quik-ai]: Skipping, unable to determine old version
+[2023-05-29 19:28:27] INFO root fetch - processPackages [seaplane]: New version: [0.3.4] Old Version: [0.3.2]
+[2023-05-29 19:28:27] INFO root fetch - main [MainThread]: End processing [quik-ai] error
+[2023-05-29 19:28:27] WARNING root fetch - processPackages [ssh-dashboard]: Skipping, unable to determine old version
+[2023-05-29 19:28:27] INFO root fetch - main [MainThread]: End processing [ssh-dashboard] error
+[2023-05-29 19:28:27] INFO root fetch - processPackages [IOTAILibrary]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2023-05-29 19:28:27] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-29 19:28:28] INFO root fetch - processPackages [seaplane]: executing diffoscope
+[2023-05-29 19:28:28] INFO root fetch - processPackages [seaplane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplane-0.3.2.tar.gz tmp/seaplane-0.3.4.tar.gz --markdown 20230529/s/seaplane/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2023-05-29 19:28:28] INFO root fetch - processPackages [IOTAILibrary]: Downloading https://files.pythonhosted.org/packages/25/e4/f85583589b67d48cdc4974863302b1f55960405333dc6b4bf63453357455/IOTAILibrary-0.0.0.1-py3-none-any.whl
+[2023-05-29 19:28:28] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-29 19:28:28] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230529/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-29 19:28:28] INFO root fetch - processPackages [IOTAILibrary]: Downloading https://files.pythonhosted.org/packages/9f/b0/577133408fc63abf9aef9c94154820408a24d4200ebc52623d7a2032889a/IOTAILibrary-0.0.0.2-py3-none-any.whl
+[2023-05-29 19:28:28] INFO root fetch - processPackages [IOTAILibrary]: executing diffoscope
+[2023-05-29 19:28:28] INFO root fetch - processPackages [IOTAILibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IOTAILibrary-0.0.0.1-py3-none-any.whl.zip tmp/IOTAILibrary-0.0.0.2-py3-none-any.whl.zip --markdown 20230529/I/IOTAILibrary/0.0.0.1-0.0.0.2/diff.md --exclude *.pyd
+[2023-05-29 19:28:29] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-29 19:28:29] INFO root fetch - main [MainThread]: End processing [IOTAILibrary]: success
+[2023-05-29 19:28:29] INFO root fetch - main [MainThread]: End processing [seaplane]: success
+[2023-05-29 19:28:29] INFO root fetch - main [MainThread]: Store serial: [18292330]
