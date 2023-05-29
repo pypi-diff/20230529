@@ -1699,3 +1699,45 @@
 [2023-05-29 03:17:59] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-05-29 03:18:01] INFO root fetch - main [MainThread]: End processing [pygubu-designer]: success
 [2023-05-29 03:18:01] INFO root fetch - main [MainThread]: Store serial: [18284729]
+[2023-05-29 03:23:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284729]
+[2023-05-29 03:23:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyarmor.cli.runtime
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prometheus-http-sd
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyarmor
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HaversineAPI
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-lambda-subminute
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-curl
+[2023-05-29 03:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: guh
+[2023-05-29 03:23:10] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [3.2.dev2] Old Version: [3.2.dev1]
+[2023-05-29 03:23:10] INFO root fetch - processPackages [guh]: New version: [2.0] Old Version: [1.2]
+[2023-05-29 03:23:10] INFO root fetch - processPackages [HaversineAPI]: New version: [1.9] Old Version: [1.8]
+[2023-05-29 03:23:10] INFO root fetch - processPackages [prometheus-http-sd]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-29 03:23:10] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:23:10] INFO root fetch - processPackages [pyarmor]: New version: [8.2.dev2] Old Version: [8.2.dev1]
+[2023-05-29 03:23:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:23:11] INFO root fetch - processPackages [HaversineAPI]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [HaversineAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HaversineAPI-1.8.tar.gz tmp/HaversineAPI-1.9.tar.gz --markdown 20230529/H/HaversineAPI/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-29 03:23:11] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230529/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:23:11] INFO root fetch - processPackages [prometheus-http-sd]: Downloading https://files.pythonhosted.org/packages/91/5a/4309569909f5996521bbdd00b747d1b5efcfec7f0dea88102aa9814c8456/prometheus_http_sd-1.2.3.tar.gz
+[2023-05-29 03:23:11] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/e4/08/b520f33f6d26cefb1a4365c22432e19fabefce6b9950c5dd1127a317f981/guh-1.2.tar.gz
+[2023-05-29 03:23:11] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230529/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:23:11] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-3.2.dev1-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-3.2.dev2-cp39-none-any.whl.zip --markdown 20230529/p/pyarmor.cli.runtime/3.2.dev1-3.2.dev2/diff.md --exclude *.pyd
+[2023-05-29 03:23:11] INFO root fetch - processPackages [prometheus-http-sd]: Downloading https://files.pythonhosted.org/packages/be/d4/fe085b26c69e43a18f40ab1bfd14c91c8ea53129d2124cd268762159cdff/prometheus_http_sd-1.2.4.tar.gz
+[2023-05-29 03:23:11] INFO root fetch - processPackages [pyarmor]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [pyarmor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor-8.2.dev1.zip tmp/pyarmor-8.2.dev2.zip --markdown 20230529/p/pyarmor/8.2.dev1-8.2.dev2/diff.md --exclude *.pyd
+[2023-05-29 03:23:11] INFO root fetch - processPackages [prometheus-http-sd]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [prometheus-http-sd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prometheus_http_sd-1.2.3.tar.gz tmp/prometheus_http_sd-1.2.4.tar.gz --markdown 20230529/p/prometheus-http-sd/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-29 03:23:11] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/71/24/c2467e882bb452867fb01d32857e37afea28452dffb222cba24b2201e191/guh-2.0.tar.gz
+[2023-05-29 03:23:11] INFO root fetch - processPackages [guh]: executing diffoscope
+[2023-05-29 03:23:11] INFO root fetch - processPackages [guh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guh-1.2.tar.gz tmp/guh-2.0.tar.gz --markdown 20230529/g/guh/1.2-2.0/diff.md --exclude *.pyd
+[2023-05-29 03:23:12] INFO root fetch - main [MainThread]: End processing [HaversineAPI]: success
+[2023-05-29 03:23:12] INFO root fetch - main [MainThread]: End processing [prometheus-http-sd]: success
+[2023-05-29 03:23:12] INFO root fetch - main [MainThread]: End processing [guh]: success
+[2023-05-29 03:23:12] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-05-29 03:23:13] INFO root fetch - main [MainThread]: End processing [pyarmor]: success
+[2023-05-29 03:23:15] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-29 03:23:34] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.runtime]: success
+[2023-05-29 03:23:34] INFO root fetch - main [MainThread]: Store serial: [18284765]
