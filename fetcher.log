@@ -16104,3 +16104,143 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 20:53:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-29 20:53:41] INFO root fetch - main [MainThread]: End processing [exact]: success
 [2023-05-29 20:53:41] INFO root fetch - main [MainThread]: Store serial: [18293319]
+[2023-05-29 20:58:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293319]
+[2023-05-29 20:58:50] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webdns
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nornir-rich
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superstes-ctf-tools
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: klp-commons
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: infobotbytoken
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dktoparserhtml
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: coffeefetch
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sympytorch
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: citros
+[2023-05-29 20:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: findmyorder
+[2023-05-29 20:58:50] INFO root fetch - processPackages [nornir-rich]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [superstes-ctf-tools]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 20:58:50] WARNING root fetch - processPackages [webdns]: Skipping, unable to determine old version
+[2023-05-29 20:58:50] INFO root fetch - processPackages [webdns]: Start processing: idtrackerai
+[2023-05-29 20:58:50] INFO root fetch - main [MainThread]: End processing [webdns] error
+[2023-05-29 20:58:50] WARNING root fetch - processPackages [infobotbytoken]: Skipping, unable to determine old version
+[2023-05-29 20:58:50] INFO root fetch - processPackages [infobotbytoken]: Start processing: sosecrets
+[2023-05-29 20:58:50] INFO root fetch - main [MainThread]: End processing [infobotbytoken] error
+[2023-05-29 20:58:50] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [coffeefetch]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sympytorch]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [citros]: New version: [23.19.2] Old Version: [23.19.1]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [dktoparserhtml]: New version: [1.0.1a0] Old Version: [1.0.0]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sosecrets]: New version: [0.1.7] Old Version: [0.1.4]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [findmyorder]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [idtrackerai]: New version: [5.1.4] Old Version: [5.1.3]
+[2023-05-29 20:58:50] INFO root fetch - processPackages [nornir-rich]: Downloading https://files.pythonhosted.org/packages/69/7c/65f3c71d2e51653a7579bc790df71d1cd540ac61004db672186a00e432dc/nornir-rich-0.1.5.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [dktoparserhtml]: Downloading https://files.pythonhosted.org/packages/9b/12/5c677490e98d557826ad1d74b4429967ff793b3ac73ca97dc70bc5cd9deb/dktoparserhtml-1.0.0.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sympytorch]: Downloading https://files.pythonhosted.org/packages/02/81/c5b3d37dc8868ae2c6082c4b77502dcb4fbb2079d5d90fada0edd1ccdf19/sympytorch-0.1.2.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [superstes-ctf-tools]: Downloading https://files.pythonhosted.org/packages/7c/36/16d33bf454318dc6de0653c073c5f20aa48434eeccd568006d41b985d9fd/superstes_ctf_tools-1.0.2.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [idtrackerai]: Downloading https://files.pythonhosted.org/packages/47/41/debe9c61049d8b4af5fca1eae6de1631c256e70318333fb591e435729488/idtrackerai-5.1.3.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [klp-commons]: Downloading https://files.pythonhosted.org/packages/e3/94/b9d41734be8fbd3cebf962ef11a4248d4440e5a30e129d67ac7ed28b4f70/klp-commons-0.0.8.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [coffeefetch]: Downloading https://files.pythonhosted.org/packages/0e/b9/7357618849bdd99bad055e48477264ba68624c62bb7a851842165d24643a/coffeefetch-1.0.0.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [dktoparserhtml]: Downloading https://files.pythonhosted.org/packages/da/03/f206571538a53b31a3bf65fde049d4ad0b0b4d6deff48caba920c03f71df/dktoparserhtml-1.0.1a0.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sympytorch]: Downloading https://files.pythonhosted.org/packages/b5/1b/3e0ee1af11c887da77dc0864dc1581f6a284f7db346626e2b7c1213f387c/sympytorch-0.1.3.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.8.tar.gz tmp/findmyorder-1.3.9.tar.gz --markdown 20230529/f/findmyorder/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.19.1.tar.gz tmp/citros-23.19.2.tar.gz --markdown 20230529/c/citros/23.19.1-23.19.2/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sosecrets]: Downloading https://files.pythonhosted.org/packages/79/4b/63dad9516a4fd6817d342a452296ca30da13d36f7b521670dbdb6eec009e/sosecrets-0.1.7.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [superstes-ctf-tools]: Downloading https://files.pythonhosted.org/packages/e7/5c/721b4fed315e5dbec1df47fcbd0e505ae0ea72af76328241743cb9050ea3/superstes_ctf_tools-1.0.3.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [nornir-rich]: Downloading https://files.pythonhosted.org/packages/e4/80/543272471f7909f5ef421a0af4781d958248b334c6ec7a689e174715a70a/nornir_rich-0.1.6.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sympytorch]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sympytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympytorch-0.1.2.tar.gz tmp/sympytorch-0.1.3.tar.gz --markdown 20230529/s/sympytorch/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [coffeefetch]: Downloading https://files.pythonhosted.org/packages/f5/53/bc369bcea8feed3f92ed986e74f74abdb03d8bb549963c513030cf6eb837/coffeefetch-1.1.0.tar.gz
+[2023-05-29 20:58:50] INFO root fetch - processPackages [superstes-ctf-tools]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [superstes-ctf-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superstes_ctf_tools-1.0.2.tar.gz tmp/superstes_ctf_tools-1.0.3.tar.gz --markdown 20230529/s/superstes-ctf-tools/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sosecrets]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [sosecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosecrets-0.1.4.tar.gz tmp/sosecrets-0.1.7.tar.gz --markdown 20230529/s/sosecrets/0.1.4-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [nornir-rich]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [nornir-rich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nornir-rich-0.1.5.tar.gz tmp/nornir_rich-0.1.6.tar.gz --markdown 20230529/n/nornir-rich/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [dktoparserhtml]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [dktoparserhtml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dktoparserhtml-1.0.0.tar.gz tmp/dktoparserhtml-1.0.1a0.tar.gz --markdown 20230529/d/dktoparserhtml/1.0.0-1.0.1a0/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [coffeefetch]: executing diffoscope
+[2023-05-29 20:58:50] INFO root fetch - processPackages [coffeefetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coffeefetch-1.0.0.tar.gz tmp/coffeefetch-1.1.0.tar.gz --markdown 20230529/c/coffeefetch/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 20:58:50] INFO root fetch - processPackages [klp-commons]: Downloading https://files.pythonhosted.org/packages/53/33/d9ffdd5b9e8330b9db6c43b84e3bde30134298a6bf8696655c5c0ee970e2/klp-commons-0.0.9.tar.gz
+[2023-05-29 20:58:51] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-05-29 20:58:51] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230529/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:58:51] INFO root fetch - processPackages [idtrackerai]: Downloading https://files.pythonhosted.org/packages/dd/7f/df73855d8ff159291f4e528eda14eb4c34175567d3669d0d05f01ea72396/idtrackerai-5.1.4.tar.gz
+[2023-05-29 20:58:51] INFO root fetch - processPackages [idtrackerai]: executing diffoscope
+[2023-05-29 20:58:51] INFO root fetch - processPackages [idtrackerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idtrackerai-5.1.3.tar.gz tmp/idtrackerai-5.1.4.tar.gz --markdown 20230529/i/idtrackerai/5.1.3-5.1.4/diff.md --exclude *.pyd
+[2023-05-29 20:58:52] INFO root fetch - processPackages [findmyorder]: Start processing: superstes-ctf-tools
+[2023-05-29 20:58:52] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-29 20:58:52] INFO root fetch - processPackages [superstes-ctf-tools]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 20:58:52] INFO root fetch - processPackages [superstes-ctf-tools]: executing diffoscope
+[2023-05-29 20:58:52] INFO root fetch - processPackages [superstes-ctf-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superstes_ctf_tools-1.0.2.tar.gz tmp/superstes_ctf_tools-1.0.3.tar.gz --markdown 20230529/s/superstes-ctf-tools/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 20:58:52] INFO root fetch - processPackages [citros]: Start processing: TFL
+[2023-05-29 20:58:52] INFO root fetch - main [MainThread]: End processing [citros]: success
+[2023-05-29 20:58:52] INFO root fetch - processPackages [superstes-ctf-tools]: Start processing: CAL
+[2023-05-29 20:58:52] INFO root fetch - main [MainThread]: End processing [superstes-ctf-tools]: success
+[2023-05-29 20:58:52] INFO root fetch - processPackages [TFL]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:52] INFO root fetch - processPackages [CAL]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:52] INFO root fetch - processPackages [TFL]: Downloading https://files.pythonhosted.org/packages/f4/13/2acac8a89ec4ff244fc4d71a026cc3910acf3ff67add1fa170a017da31b2/TFL-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:52] INFO root fetch - processPackages [sosecrets]: Start processing: CHJ
+[2023-05-29 20:58:52] INFO root fetch - main [MainThread]: End processing [sosecrets]: success
+[2023-05-29 20:58:52] INFO root fetch - processPackages [CAL]: Downloading https://files.pythonhosted.org/packages/8f/c9/e909ac477905e211eced7fda691979719d64d349a6128faf050c3aa400b8/CAL-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [nornir-rich]: Start processing: ReST-Tapyr
+[2023-05-29 20:58:53] INFO root fetch - main [MainThread]: End processing [nornir-rich]: success
+[2023-05-29 20:58:53] INFO root fetch - processPackages [sympytorch]: Start processing: ATAX
+[2023-05-29 20:58:53] INFO root fetch - main [MainThread]: End processing [sympytorch]: success
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CHJ]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:53] INFO root fetch - processPackages [coffeefetch]: Start processing: JNJ
+[2023-05-29 20:58:53] INFO root fetch - main [MainThread]: End processing [coffeefetch]: success
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ReST-Tapyr]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:53] INFO root fetch - processPackages [dktoparserhtml]: Start processing: MOM-Tapyr
+[2023-05-29 20:58:53] INFO root fetch - main [MainThread]: End processing [dktoparserhtml]: success
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ATAX]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CAL]: Downloading https://files.pythonhosted.org/packages/30/6c/55e2801b53a70d2c05532759f267e1c61185fb58afb5cd1fe27af03e1598/CAL-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [TFL]: Downloading https://files.pythonhosted.org/packages/f5/2e/5f60d033bbee161baf3a6b7d6a556e42832d80594ead28b9d90ea40970b2/TFL-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [JNJ]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CHJ]: Downloading https://files.pythonhosted.org/packages/00/7d/82e202233aa705b2b5b84168d096bef455010b4b74c27861fdd9eca7be57/CHJ-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [MOM-Tapyr]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ReST-Tapyr]: Downloading https://files.pythonhosted.org/packages/bf/6d/da18d2f29c8c53d27d634cb3ef33c70b6fee4906b5de01192d44792a116c/ReST_Tapyr-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ATAX]: Downloading https://files.pythonhosted.org/packages/48/54/ec677a02186207168c9c6badf0074123841c17cd7f05e1ce78d57c3b653e/ATAX-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CAL]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CAL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CAL-3.7-py2.py3-none-any.whl.zip tmp/CAL-3.8-py2.py3-none-any.whl.zip --markdown 20230529/C/CAL/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:53] INFO root fetch - processPackages [JNJ]: Downloading https://files.pythonhosted.org/packages/b6/2b/89e3dd54685c973c79a704545c55097117f8460cce3f381d61f19d706e68/JNJ-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [MOM-Tapyr]: Downloading https://files.pythonhosted.org/packages/b7/b3/3675c3c9f60c65f4ebccdd9b8c62468204a2f141344bb9ecaa4113046f11/MOM_Tapyr-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CHJ]: Downloading https://files.pythonhosted.org/packages/cc/46/160218bdd60020da3ed7080c8d7dce5e3d23c20df15a717c272f91142526/CHJ-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ReST-Tapyr]: Downloading https://files.pythonhosted.org/packages/a3/b4/71aac7af9e767c2dbe9a11e4663711469a4ab0532213437129d467321cd6/ReST_Tapyr-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ATAX]: Downloading https://files.pythonhosted.org/packages/66/81/245676b3e5da5e01063647c1ebd74902c48cbe560f6f45b7383f4d0812d6/ATAX-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [JNJ]: Downloading https://files.pythonhosted.org/packages/02/1c/d6d5210c38948d9a6c3dca985c3410ba0635e46edc0b3bc81408ca10261b/JNJ-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [TFL]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [TFL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TFL-3.7-py2.py3-none-any.whl.zip tmp/TFL-3.8-py2.py3-none-any.whl.zip --markdown 20230529/T/TFL/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CHJ]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [CHJ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CHJ-3.7-py2.py3-none-any.whl.zip tmp/CHJ-3.8-py2.py3-none-any.whl.zip --markdown 20230529/C/CHJ/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:53] INFO root fetch - processPackages [superstes-ctf-tools]: Start processing: GTW
+[2023-05-29 20:58:53] INFO root fetch - main [MainThread]: End processing [superstes-ctf-tools]: success
+[2023-05-29 20:58:53] INFO root fetch - processPackages [MOM-Tapyr]: Downloading https://files.pythonhosted.org/packages/12/37/18a7ed9abae61512d6a7e0d7288fabd9ae2a3abca73f1b57f1ad1f5360cf/MOM_Tapyr-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ReST-Tapyr]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ReST-Tapyr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReST_Tapyr-3.7-py2.py3-none-any.whl.zip tmp/ReST_Tapyr-3.8-py2.py3-none-any.whl.zip --markdown 20230529/R/ReST-Tapyr/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ATAX]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [ATAX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ATAX-3.7-py2.py3-none-any.whl.zip tmp/ATAX-3.8-py2.py3-none-any.whl.zip --markdown 20230529/A/ATAX/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:53] INFO root fetch - processPackages [JNJ]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [JNJ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JNJ-3.7-py2.py3-none-any.whl.zip tmp/JNJ-3.8-py2.py3-none-any.whl.zip --markdown 20230529/J/JNJ/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:53] INFO root fetch - processPackages [GTW]: New version: [3.8] Old Version: [3.7]
+[2023-05-29 20:58:53] INFO root fetch - processPackages [MOM-Tapyr]: executing diffoscope
+[2023-05-29 20:58:53] INFO root fetch - processPackages [MOM-Tapyr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MOM_Tapyr-3.7-py2.py3-none-any.whl.zip tmp/MOM_Tapyr-3.8-py2.py3-none-any.whl.zip --markdown 20230529/M/MOM-Tapyr/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:54] INFO root fetch - processPackages [GTW]: Downloading https://files.pythonhosted.org/packages/c3/cf/196535454a5845cb3967fe6c54e4866a857b849ab3018b7fb4a2ba6519ab/GTW-3.7-py2.py3-none-any.whl
+[2023-05-29 20:58:54] INFO root fetch - processPackages [klp-commons]: Start processing: mainnet
+[2023-05-29 20:58:54] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-05-29 20:58:55] INFO root fetch - processPackages [mainnet]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 20:58:55] INFO root fetch - main [MainThread]: End processing [CAL]: success
+[2023-05-29 20:58:55] INFO root fetch - processPackages [GTW]: Downloading https://files.pythonhosted.org/packages/e3/70/a49fe8028261cd522751c2a7705e45a78023f4450a91c336bdd0409ed39c/GTW-3.8-py2.py3-none-any.whl
+[2023-05-29 20:58:55] INFO root fetch - main [MainThread]: End processing [ReST-Tapyr]: success
+[2023-05-29 20:58:55] INFO root fetch - main [MainThread]: End processing [CHJ]: success
+[2023-05-29 20:58:55] INFO root fetch - processPackages [mainnet]: executing diffoscope
+[2023-05-29 20:58:55] INFO root fetch - processPackages [mainnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainnet-1.1.8.tar.gz tmp/mainnet-1.1.9.tar.gz --markdown 20230529/m/mainnet/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 20:58:55] INFO root fetch - main [MainThread]: End processing [ATAX]: success
+[2023-05-29 20:58:55] INFO root fetch - processPackages [GTW]: executing diffoscope
+[2023-05-29 20:58:55] INFO root fetch - processPackages [GTW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GTW-3.7-py2.py3-none-any.whl.zip tmp/GTW-3.8-py2.py3-none-any.whl.zip --markdown 20230529/G/GTW/3.7-3.8/diff.md --exclude *.pyd
+[2023-05-29 20:58:58] INFO root fetch - main [MainThread]: End processing [MOM-Tapyr]: success
+[2023-05-29 20:58:58] INFO root fetch - main [MainThread]: End processing [JNJ]: success
+[2023-05-29 20:58:59] INFO root fetch - main [MainThread]: End processing [TFL]: success
+[2023-05-29 20:58:59] INFO root fetch - main [MainThread]: End processing [idtrackerai]: success
+[2023-05-29 20:59:08] INFO root fetch - main [MainThread]: End processing [mainnet]: success
+[2023-05-29 20:59:47] INFO root fetch - main [MainThread]: End processing [GTW]: success
+[2023-05-29 20:59:47] INFO root fetch - main [MainThread]: Store serial: [18293383]
