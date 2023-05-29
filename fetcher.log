@@ -13265,3 +13265,55 @@ EOFError: EOF read where object expected
 [2023-05-29 17:52:40] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
 [2023-05-29 17:52:44] INFO root fetch - main [MainThread]: End processing [yangsuite-devices]: success
 [2023-05-29 17:52:44] INFO root fetch - main [MainThread]: Store serial: [18291606]
+[2023-05-29 17:57:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291606]
+[2023-05-29 17:57:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-intel
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py3d
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: specmatic
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py3d
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kayle
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chatarena
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mathtranslate
+[2023-05-29 17:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: alacorder
+[2023-05-29 17:57:55] INFO root fetch - processPackages [specmatic]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [py3d]: New version: [0.0.96] Old Version: [0.0.95]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [chatarena]: New version: [0.1.9] Old Version: [0.1.8.dev0]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [py3d]: New version: [0.0.96] Old Version: [0.0.95]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230529] Old Version: [2.14.0.dev20230528]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [mathtranslate]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [alacorder]: New version: [80.8.5] Old Version: [80.8.4]
+[2023-05-29 17:57:55] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/10/41/60f0134a0f49108f56436eaf26432f4f3d1b494679d21c2b9a8c6d0213a9/py3d-0.0.95.tar.gz
+[2023-05-29 17:57:55] INFO root fetch - processPackages [specmatic]: Downloading https://files.pythonhosted.org/packages/94/7f/bdbf7a779e0c5cffbb84123b6b6e4d7f460197c31b6b1b4c5722dea21b02/specmatic-0.7.3.tar.gz
+[2023-05-29 17:57:55] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/10/41/60f0134a0f49108f56436eaf26432f4f3d1b494679d21c2b9a8c6d0213a9/py3d-0.0.95.tar.gz
+[2023-05-29 17:57:56] INFO root fetch - processPackages [chatarena]: Downloading https://files.pythonhosted.org/packages/86/e0/c9e6be405708dabdbd9d89ab161d23bb0679e8283482beb136bc5b5982ac/chatarena-0.1.8.dev0.tar.gz
+[2023-05-29 17:57:56] WARNING root fetch - processPackages [specmatic]: Skipping package: exceeds size limit 79090502>=10485760
+[2023-05-29 17:57:56] INFO root fetch - main [MainThread]: End processing [specmatic] error
+[2023-05-29 17:57:56] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/25/be/7a54767ea54b9e4065ce28697f55ec4fe041717d7f0b5a38c5b67d43d497/tf_nightly_intel-2.14.0.dev20230528-cp39-cp39-win_amd64.whl
+[2023-05-29 17:57:56] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/f1/17/51fcd6c55b9821348f7f16cdfd798ae93c19d366e77eb7c0524ad514ff80/alacorder-80.8.4.tar.gz
+[2023-05-29 17:57:56] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 182569466>=10485760
+[2023-05-29 17:57:56] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-05-29 17:57:56] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-29 17:57:56] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230529/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 17:57:56] INFO root fetch - processPackages [mathtranslate]: Downloading https://files.pythonhosted.org/packages/84/71/aa053993f59d3c1d839e1e1e4da20e0e7b196ffb22bef9e981f7223653a2/mathtranslate-2.3.2.tar.gz
+[2023-05-29 17:57:56] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/9a/f1/5453a715839ba57f3f914e71aaa087626f0f0c5e8f858f92299118378f89/py3d-0.0.96.tar.gz
+[2023-05-29 17:57:56] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/9a/f1/5453a715839ba57f3f914e71aaa087626f0f0c5e8f858f92299118378f89/py3d-0.0.96.tar.gz
+[2023-05-29 17:57:56] INFO root fetch - processPackages [chatarena]: Downloading https://files.pythonhosted.org/packages/de/be/85946199fb324ac4db32f7e1406677e8f96516b562e17f036e817b71d47f/chatarena-0.1.9.tar.gz
+[2023-05-29 17:57:56] INFO root fetch - processPackages [mathtranslate]: executing diffoscope
+[2023-05-29 17:57:56] INFO root fetch - processPackages [mathtranslate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathtranslate-2.3.1.tar.gz tmp/mathtranslate-2.3.2.tar.gz --markdown 20230529/m/mathtranslate/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-29 17:57:56] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2023-05-29 17:57:56] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.0.95.tar.gz tmp/py3d-0.0.96.tar.gz --markdown 20230529/p/py3d/0.0.95-0.0.96/diff.md --exclude *.pyd
+[2023-05-29 17:57:56] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/72/a7/4be2539e0c782d248aa1ed703831fb682bdec764d6c6a9b1ff57ec3457d4/alacorder-80.8.5.tar.gz
+[2023-05-29 17:57:56] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2023-05-29 17:57:56] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.0.95.tar.gz tmp/py3d-0.0.96.tar.gz --markdown 20230529/p/py3d/0.0.95-0.0.96/diff.md --exclude *.pyd
+[2023-05-29 17:57:56] INFO root fetch - processPackages [chatarena]: executing diffoscope
+[2023-05-29 17:57:56] INFO root fetch - processPackages [chatarena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatarena-0.1.8.dev0.tar.gz tmp/chatarena-0.1.9.tar.gz --markdown 20230529/c/chatarena/0.1.8.dev0-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 17:57:56] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-29 17:57:56] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.8.4.tar.gz tmp/alacorder-80.8.5.tar.gz --markdown 20230529/a/alacorder/80.8.4-80.8.5/diff.md --exclude *.pyd
+[2023-05-29 17:57:57] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-29 17:57:57] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2023-05-29 17:57:57] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2023-05-29 17:57:57] INFO root fetch - main [MainThread]: End processing [mathtranslate]: success
+[2023-05-29 17:57:58] INFO root fetch - main [MainThread]: End processing [chatarena]: success
+[2023-05-29 17:57:58] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-29 17:57:58] INFO root fetch - main [MainThread]: Store serial: [18291631]
