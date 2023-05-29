@@ -6212,3 +6212,31 @@
 [2023-05-29 09:44:01] INFO root fetch - main [MainThread]: End processing [hopic]: success
 [2023-05-29 09:44:02] INFO root fetch - main [MainThread]: End processing [mammopy]: success
 [2023-05-29 09:44:02] INFO root fetch - main [MainThread]: Store serial: [18287326]
+[2023-05-29 09:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287326]
+[2023-05-29 09:49:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discover-overlay
+[2023-05-29 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cs-eventsender
+[2023-05-29 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-nightly
+[2023-05-29 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Apycula
+[2023-05-29 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: serializer-for-oop-progect
+[2023-05-29 09:49:11] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-29 09:49:11] WARNING root fetch - processPackages [cs-eventsender]: Skipping, unable to determine old version
+[2023-05-29 09:49:11] INFO root fetch - main [MainThread]: End processing [cs-eventsender] error
+[2023-05-29 09:49:11] INFO root fetch - processPackages [Apycula]: New version: [0.8.1] Old Version: [0.8]
+[2023-05-29 09:49:11] INFO root fetch - processPackages [discover-overlay]: New version: [0.6.5] Old Version: [0.6.3]
+[2023-05-29 09:49:11] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-29 09:49:11] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230529/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-29 09:49:11] WARNING root fetch - processPackages [serializer-for-oop-progect]: Skipping, unable to determine old version
+[2023-05-29 09:49:11] INFO root fetch - main [MainThread]: End processing [serializer-for-oop-progect] error
+[2023-05-29 09:49:11] INFO root fetch - processPackages [discover-overlay]: Downloading https://files.pythonhosted.org/packages/f6/04/93fab5892f05304b3e30e776371b979e2943792873f39515207d81d3328b/discover-overlay-0.6.3.tar.gz
+[2023-05-29 09:49:11] INFO root fetch - processPackages [Apycula]: Downloading https://files.pythonhosted.org/packages/73/9c/64c125f9102af4883518d691fc93e5b4402785bb361b89faee8c36694177/Apycula-0.8.tar.gz
+[2023-05-29 09:49:12] INFO root fetch - processPackages [discover-overlay]: Downloading https://files.pythonhosted.org/packages/b7/3e/93b28c7226f1ccfb0dd26bf1064904ebd3f58f9e662c5cb323a86b84def1/discover-overlay-0.6.5.tar.gz
+[2023-05-29 09:49:12] INFO root fetch - processPackages [discover-overlay]: executing diffoscope
+[2023-05-29 09:49:12] INFO root fetch - processPackages [discover-overlay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discover-overlay-0.6.3.tar.gz tmp/discover-overlay-0.6.5.tar.gz --markdown 20230529/d/discover-overlay/0.6.3-0.6.5/diff.md --exclude *.pyd
+[2023-05-29 09:49:13] INFO root fetch - processPackages [Apycula]: Downloading https://files.pythonhosted.org/packages/21/0f/b15f184f8345be5b85df92b5efb0ef690c3b34b4b656d38764ad49c6d6a7/Apycula-0.8.1.tar.gz
+[2023-05-29 09:49:13] INFO root fetch - processPackages [Apycula]: executing diffoscope
+[2023-05-29 09:49:13] INFO root fetch - processPackages [Apycula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Apycula-0.8.tar.gz tmp/Apycula-0.8.1.tar.gz --markdown 20230529/A/Apycula/0.8-0.8.1/diff.md --exclude *.pyd
+[2023-05-29 09:49:13] INFO root fetch - main [MainThread]: End processing [discover-overlay]: success
+[2023-05-29 09:49:20] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-29 09:50:12] INFO root fetch - main [MainThread]: End processing [Apycula]: success
+[2023-05-29 09:50:12] INFO root fetch - main [MainThread]: Store serial: [18287345]
