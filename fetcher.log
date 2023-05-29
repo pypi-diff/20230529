@@ -1605,3 +1605,47 @@
 [2023-05-29 03:07:34] INFO root fetch - main [MainThread]: End processing [yfinance-extended]: success
 [2023-05-29 03:07:35] INFO root fetch - main [MainThread]: End processing [vision6D]: success
 [2023-05-29 03:07:35] INFO root fetch - main [MainThread]: Store serial: [18284663]
+[2023-05-29 03:12:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284663]
+[2023-05-29 03:12:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fxn
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: guh
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bipartitepandas
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: leafmap
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nounseed
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-hugo-deploy
+[2023-05-29 03:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pygubu
+[2023-05-29 03:12:43] INFO root fetch - processPackages [guh]: New version: [1.1] Old Version: [1.0]
+[2023-05-29 03:12:43] INFO root fetch - processPackages [pygubu]: New version: [0.9.8.6] Old Version: [0.9.8.5]
+[2023-05-29 03:12:43] INFO root fetch - processPackages [fxn]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 03:12:43] INFO root fetch - processPackages [nounseed]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 03:12:43] INFO root fetch - processPackages [leafmap]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-29 03:12:43] INFO root fetch - processPackages [bipartitepandas]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-29 03:12:44] INFO root fetch - processPackages [cdk-hugo-deploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:12:44] INFO root fetch - processPackages [nounseed]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [nounseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nounseed-1.0.3.tar.gz tmp/nounseed-1.0.4.tar.gz --markdown 20230529/n/nounseed/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 03:12:44] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/83/e0/2eaeb45ce99309440f591674837b70112803ffb51b43bb8355814d85e5f9/guh-1.0.tar.gz
+[2023-05-29 03:12:44] INFO root fetch - processPackages [bipartitepandas]: Downloading https://files.pythonhosted.org/packages/79/72/173c5ae4a2c9e6e4bc7a6be13cf8790c2c816985d159823305b64e1f52f5/bipartitepandas-1.1.8.tar.gz
+[2023-05-29 03:12:44] INFO root fetch - processPackages [cdk-hugo-deploy]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [cdk-hugo-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-hugo-deploy-0.0.98.tar.gz tmp/cdk-hugo-deploy-0.0.99.tar.gz --markdown 20230529/c/cdk-hugo-deploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:12:44] INFO root fetch - processPackages [pygubu]: Downloading https://files.pythonhosted.org/packages/06/4a/cbee79c44123c3c64727d971e6a59bdce059ef46c98df805a45eeb0f4563/pygubu-0.9.8.5.tar.gz
+[2023-05-29 03:12:44] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/c7/a9/6ab3bd2b52ab3b8f17d906c2c2572602258bae23ff72a1d8e6f10e6dad0e/fxn-0.0.3.tar.gz
+[2023-05-29 03:12:44] INFO root fetch - processPackages [fxn]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [fxn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fxn-0.0.2.tar.gz tmp/fxn-0.0.3.tar.gz --markdown 20230529/f/fxn/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 03:12:44] INFO root fetch - processPackages [leafmap]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [leafmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leafmap-0.9.5.tar.gz tmp/leafmap-0.9.6.tar.gz --markdown 20230529/l/leafmap/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-29 03:12:44] INFO root fetch - processPackages [bipartitepandas]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [bipartitepandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipartitepandas-1.1.7.tar.gz tmp/bipartitepandas-1.1.8.tar.gz --markdown 20230529/b/bipartitepandas/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-29 03:12:44] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/42/c3/dae471114817a32630655aaedde050b13e4aa996d89d970fa74bd2ca6355/guh-1.1.tar.gz
+[2023-05-29 03:12:44] INFO root fetch - processPackages [pygubu]: Downloading https://files.pythonhosted.org/packages/42/b6/19b3771db930bf94f704ed79a0510adc9c1d734f494699369d953612e863/pygubu-0.9.8.6.tar.gz
+[2023-05-29 03:12:44] INFO root fetch - processPackages [guh]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [guh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guh-1.0.tar.gz tmp/guh-1.1.tar.gz --markdown 20230529/g/guh/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-29 03:12:44] INFO root fetch - processPackages [pygubu]: executing diffoscope
+[2023-05-29 03:12:44] INFO root fetch - processPackages [pygubu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygubu-0.9.8.5.tar.gz tmp/pygubu-0.9.8.6.tar.gz --markdown 20230529/p/pygubu/0.9.8.5-0.9.8.6/diff.md --exclude *.pyd
+[2023-05-29 03:12:45] INFO root fetch - main [MainThread]: End processing [nounseed]: success
+[2023-05-29 03:12:45] INFO root fetch - main [MainThread]: End processing [cdk-hugo-deploy]: success
+[2023-05-29 03:12:45] INFO root fetch - main [MainThread]: End processing [guh]: success
+[2023-05-29 03:12:45] INFO root fetch - main [MainThread]: End processing [leafmap]: success
+[2023-05-29 03:12:46] INFO root fetch - main [MainThread]: End processing [fxn]: success
+[2023-05-29 03:12:47] INFO root fetch - main [MainThread]: End processing [pygubu]: success
+[2023-05-29 03:12:47] INFO root fetch - main [MainThread]: End processing [bipartitepandas]: success
+[2023-05-29 03:12:47] INFO root fetch - main [MainThread]: Store serial: [18284684]
