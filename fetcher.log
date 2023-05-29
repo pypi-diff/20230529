@@ -5159,3 +5159,36 @@
 [2023-05-29 07:57:07] INFO root fetch - main [MainThread]: End processing [yz-core2]: success
 [2023-05-29 07:57:07] INFO root fetch - main [MainThread]: End processing [nautobot-circuit-maintenance]: success
 [2023-05-29 07:57:07] INFO root fetch - main [MainThread]: Store serial: [18286638]
+[2023-05-29 08:02:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286638]
+[2023-05-29 08:02:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AppDemo
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-Ayiin
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MyDataSort001
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: convlab
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ml-management
+[2023-05-29 08:02:16] INFO root fetch - processPackages [MyDataSort001]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ml-management]: New version: [0.0.33] Old Version: [0.0.32]
+[2023-05-29 08:02:16] INFO root fetch - processPackages [AppDemo]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 08:02:16] INFO root fetch - processPackages [py-Ayiin]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-29 08:02:16] INFO root fetch - processPackages [convlab]: New version: [3.0.2a0] Old Version: [3.0.1]
+[2023-05-29 08:02:16] INFO root fetch - processPackages [AppDemo]: Downloading https://files.pythonhosted.org/packages/72/65/f0694367b668141781aa0d708c71936ddeb6b0411e96eea0bcadf7a8f622/AppDemo-0.0.3-py3-none-any.whl
+[2023-05-29 08:02:16] INFO root fetch - processPackages [MyDataSort001]: Downloading https://files.pythonhosted.org/packages/aa/2e/d2d8c6d7dd1badc22b2c43dd327ddc86504788ac039eb467845510df1212/MyDataSort001-0.0.4-py3-none-any.whl
+[2023-05-29 08:02:16] INFO root fetch - processPackages [convlab]: Downloading https://files.pythonhosted.org/packages/32/cd/92314b87d2c127a4e838ab66b6e26839cfe6a22ba642344fa7ec37e85a47/convlab-3.0.1.tar.gz
+[2023-05-29 08:02:16] WARNING root fetch - processPackages [convlab]: Skipping package: exceeds size limit 21095283>=10485760
+[2023-05-29 08:02:16] INFO root fetch - main [MainThread]: End processing [convlab] error
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ml-management]: Downloading https://files.pythonhosted.org/packages/8f/28/8b8aaa9e3c7ea87587d0fd96759c07194959d8881b025a961cedc63e6b7f/ml-management-0.0.33.tar.gz
+[2023-05-29 08:02:16] INFO root fetch - processPackages [py-Ayiin]: Downloading https://files.pythonhosted.org/packages/26/f1/6073eb1c6506db2779662614a2be09225413ee514cfeded1707d89bedbbf/py-Ayiin-0.4.2.tar.gz
+[2023-05-29 08:02:16] INFO root fetch - processPackages [MyDataSort001]: executing diffoscope
+[2023-05-29 08:02:16] INFO root fetch - processPackages [MyDataSort001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyDataSort001-0.0.3-py3-none-any.whl.zip tmp/MyDataSort001-0.0.4-py3-none-any.whl.zip --markdown 20230529/M/MyDataSort001/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 08:02:16] INFO root fetch - processPackages [AppDemo]: Downloading https://files.pythonhosted.org/packages/4e/1a/15dcb107c4869f99bef8e4be99011255339b7a1b280c8645f5514bc01775/AppDemo-0.0.4-py3-none-any.whl
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ml-management]: executing diffoscope
+[2023-05-29 08:02:16] INFO root fetch - processPackages [ml-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-management-0.0.32.tar.gz tmp/ml-management-0.0.33.tar.gz --markdown 20230529/m/ml-management/0.0.32-0.0.33/diff.md --exclude *.pyd
+[2023-05-29 08:02:16] INFO root fetch - processPackages [py-Ayiin]: executing diffoscope
+[2023-05-29 08:02:16] INFO root fetch - processPackages [py-Ayiin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayiin-0.4.1.tar.gz tmp/py-Ayiin-0.4.2.tar.gz --markdown 20230529/p/py-Ayiin/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-29 08:02:16] INFO root fetch - processPackages [AppDemo]: executing diffoscope
+[2023-05-29 08:02:16] INFO root fetch - processPackages [AppDemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AppDemo-0.0.3-py3-none-any.whl.zip tmp/AppDemo-0.0.4-py3-none-any.whl.zip --markdown 20230529/A/AppDemo/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 08:02:17] INFO root fetch - main [MainThread]: End processing [MyDataSort001]: success
+[2023-05-29 08:02:17] INFO root fetch - main [MainThread]: End processing [AppDemo]: success
+[2023-05-29 08:02:18] INFO root fetch - main [MainThread]: End processing [ml-management]: success
+[2023-05-29 08:02:18] INFO root fetch - main [MainThread]: End processing [py-Ayiin]: success
+[2023-05-29 08:02:18] INFO root fetch - main [MainThread]: Store serial: [18286650]
