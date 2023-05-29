@@ -9341,3 +9341,87 @@
 [2023-05-29 13:29:34] INFO root fetch - main [MainThread]: End processing [obrpy]: success
 [2023-05-29 13:29:35] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-29 13:29:35] INFO root fetch - main [MainThread]: Store serial: [18289180]
+[2023-05-29 13:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289180]
+[2023-05-29 13:34:44] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Flask-of-Oil
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tksheet
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wxpay-sec-test
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Qmlview
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baseEnvServiceChecker
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-nano
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-chronos
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-serving
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jijbench
+[2023-05-29 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: teda
+[2023-05-29 13:34:44] INFO root fetch - processPackages [Flask-of-Oil]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-29 13:34:44] WARNING root fetch - processPackages [wxpay-sec-test]: Skipping, unable to determine old version
+[2023-05-29 13:34:44] INFO root fetch - processPackages [wxpay-sec-test]: Start processing: cycode
+[2023-05-29 13:34:44] INFO root fetch - main [MainThread]: End processing [wxpay-sec-test] error
+[2023-05-29 13:34:44] WARNING root fetch - processPackages [baseEnvServiceChecker]: Skipping, unable to determine old version
+[2023-05-29 13:34:44] INFO root fetch - processPackages [baseEnvServiceChecker]: Start processing: edu-segmentation
+[2023-05-29 13:34:44] INFO root fetch - main [MainThread]: End processing [baseEnvServiceChecker] error
+[2023-05-29 13:34:44] INFO root fetch - processPackages [teda]: New version: [3.1.0] Old Version: [3.0.2]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [jijbench]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [tksheet]: New version: [6.2.0] Old Version: [6.1.9]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [Qmlview]: New version: [3.2] Old Version: [3.1b0]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230529] Old Version: [2.4.0b20230528]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [cycode]: New version: [0.2.5.dev1] Old Version: [0.2.4.dev8]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230529] Old Version: [2.4.0b20230528]
+[2023-05-29 13:34:44] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230529] Old Version: [2.4.0b20230528]
+[2023-05-29 13:34:45] INFO root fetch - processPackages [Flask-of-Oil]: Downloading https://files.pythonhosted.org/packages/76/41/178134eb146662d33f8a48b853b9f74436f4e579734112a5d4b413dd12fb/Flask-of-Oil-1.2.0.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/74/d2/f75b04043f25796bad97563466f734b4bcc375c675b49b4c0a2d6fdf9cd0/edu_segmentation-0.0.99.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [jijbench]: Downloading https://files.pythonhosted.org/packages/05/cc/fa4f1b0ace95fe160c77db8963f085c9b4f932a570acc8f2f55bd6571afd/jijbench-0.5.2.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/ae/f2/aeab74798da2bcb603547beaa8874ba488649944de122747eea52c51708b/bigdl_serving-2.4.0b20230529-py2.py3-none-any.whl
+[2023-05-29 13:34:45] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/c4/9d/9508dad87d96cc00214edc345638b01148e59d1d769d096d03748d82ac21/tksheet-6.1.9.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [Qmlview]: Downloading https://files.pythonhosted.org/packages/a0/88/088a9484bd5bf0f0a2d455000c4c0bd411c82a72a82d9c249d1f2bf9a6c5/Qmlview-3.1b0.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu-segmentation-0.0.98.tar.gz tmp/edu_segmentation-0.0.99.tar.gz --markdown 20230529/e/edu-segmentation/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230528-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230529-py2.py3-none-any.whl.zip --markdown 20230529/b/bigdl-serving/2.4.0b20230528-2.4.0b20230529/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] INFO root fetch - processPackages [teda]: Downloading https://files.pythonhosted.org/packages/22/a9/780909c30059cd92ef67ae1b41917eb0e00ad9838e8065ea22babf244380/teda-3.0.2.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [Flask-of-Oil]: Downloading https://files.pythonhosted.org/packages/4e/f2/3d4d58ab887391a1794d38cfde7fa10481db28c94d8dad50f73578e713cb/Flask-of-Oil-1.2.1.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/10/f7/f2affa734d86d35154fec8cf54c58caf5ce34dc41a082cbd58e7753107d3/bigdl_chronos-2.4.0b20230529-py3-none-win_amd64.whl
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/b6/74/17c5f303567e4006359ce82a345ec47719aa7a422c5ba09b672b8ab21b44/bigdl_nano-2.4.0b20230529-py3-none-win_amd64.whl
+[2023-05-29 13:34:45] INFO root fetch - processPackages [cycode]: Downloading https://files.pythonhosted.org/packages/5e/72/21c15a84753145df492beba0f5ccfd03e8e0c4175619d97c51c662de4963/cycode-0.2.5.dev1.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [Flask-of-Oil]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [Flask-of-Oil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-of-Oil-1.2.0.tar.gz tmp/Flask-of-Oil-1.2.1.tar.gz --markdown 20230529/F/Flask-of-Oil/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/42/b0/60c6c86302495f20a933d6ff90db8ac2ec2181a501454800470cbebcd108/tksheet-6.2.0.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [cycode]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [cycode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycode-0.2.4.dev8.tar.gz tmp/cycode-0.2.5.dev1.tar.gz --markdown 20230529/c/cycode/0.2.4.dev8-0.2.5.dev1/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] INFO root fetch - processPackages [tksheet]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [tksheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tksheet-6.1.9.tar.gz tmp/tksheet-6.2.0.tar.gz --markdown 20230529/t/tksheet/6.1.9-6.2.0/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230528-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230529-py3-none-win_amd64.whl.zip --markdown 20230529/b/bigdl-chronos/2.4.0b20230528-2.4.0b20230529/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] INFO root fetch - processPackages [teda]: Downloading https://files.pythonhosted.org/packages/51/31/dd6311b98fb9f52e60dc6b56c15ba604e244476faae2512146c68125cbc7/teda-3.1.0.tar.gz
+[2023-05-29 13:34:45] INFO root fetch - processPackages [teda]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [teda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teda-3.0.2.tar.gz tmp/teda-3.1.0.tar.gz --markdown 20230529/t/teda/3.0.2-3.1.0/diff.md --exclude *.pyd
+[2023-05-29 13:34:45] WARNING root fetch - processPackages [Qmlview]: Skipping package: exceeds size limit 11342617>=10485760
+[2023-05-29 13:34:45] INFO root fetch - processPackages [Qmlview]: Start processing: ygModbus
+[2023-05-29 13:34:45] INFO root fetch - main [MainThread]: End processing [Qmlview] error
+[2023-05-29 13:34:45] INFO root fetch - processPackages [ygModbus]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-05-29 13:34:45] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230528-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230529-py3-none-win_amd64.whl.zip --markdown 20230529/b/bigdl-nano/2.4.0b20230528-2.4.0b20230529/diff.md --exclude *.pyd
+[2023-05-29 13:34:46] INFO root fetch - processPackages [ygModbus]: Downloading https://files.pythonhosted.org/packages/42/b2/324338d201310469abb5aae84f10ff57ca814e5350f58527c19e6aaf65de/ygModbus-0.0.4-py3-none-any.whl
+[2023-05-29 13:34:46] INFO root fetch - processPackages [jijbench]: Downloading https://files.pythonhosted.org/packages/7f/43/a8ea5ad56a3758fe094dad2d62ec30448250f7ff2bfaf70d608ba5cd6230/jijbench-0.5.3.tar.gz
+[2023-05-29 13:34:46] INFO root fetch - processPackages [ygModbus]: executing diffoscope
+[2023-05-29 13:34:46] INFO root fetch - processPackages [ygModbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ygModbus-0.0.3-py3-none-any.whl.zip tmp/ygModbus-0.0.4-py3-none-any.whl.zip --markdown 20230529/y/ygModbus/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 13:34:46] INFO root fetch - processPackages [jijbench]: executing diffoscope
+[2023-05-29 13:34:46] INFO root fetch - processPackages [jijbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jijbench-0.5.2.tar.gz tmp/jijbench-0.5.3.tar.gz --markdown 20230529/j/jijbench/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-29 13:34:46] INFO root fetch - processPackages [edu-segmentation]: Start processing: aio-fluid
+[2023-05-29 13:34:46] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 13:34:46] INFO root fetch - processPackages [aio-fluid]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-29 13:34:46] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-05-29 13:34:47] INFO root fetch - processPackages [aio-fluid]: Downloading https://files.pythonhosted.org/packages/1e/77/bac6d9eb39ddabdfe82d93182f4bc38c3a8cae14ab25d945c2f941943345/aio_fluid-0.5.3.tar.gz
+[2023-05-29 13:34:47] INFO root fetch - processPackages [aio-fluid]: executing diffoscope
+[2023-05-29 13:34:47] INFO root fetch - processPackages [aio-fluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_fluid-0.5.2.tar.gz tmp/aio_fluid-0.5.3.tar.gz --markdown 20230529/a/aio-fluid/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-29 13:34:47] INFO root fetch - main [MainThread]: End processing [Flask-of-Oil]: success
+[2023-05-29 13:34:47] INFO root fetch - main [MainThread]: End processing [ygModbus]: success
+[2023-05-29 13:34:47] INFO root fetch - main [MainThread]: End processing [teda]: success
+[2023-05-29 13:34:48] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-05-29 13:34:48] INFO root fetch - main [MainThread]: End processing [tksheet]: success
+[2023-05-29 13:34:48] INFO root fetch - main [MainThread]: End processing [aio-fluid]: success
+[2023-05-29 13:34:48] INFO root fetch - main [MainThread]: End processing [cycode]: success
+[2023-05-29 13:34:48] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-05-29 13:36:01] INFO root fetch - main [MainThread]: End processing [jijbench]: success
+[2023-05-29 13:36:01] INFO root fetch - main [MainThread]: Store serial: [18289229]
