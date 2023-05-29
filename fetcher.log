@@ -5801,3 +5801,75 @@
 [2023-05-29 09:06:06] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-29 09:06:08] INFO root fetch - main [MainThread]: End processing [libmata]: success
 [2023-05-29 09:06:08] INFO root fetch - main [MainThread]: Store serial: [18287059]
+[2023-05-29 09:11:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287059]
+[2023-05-29 09:11:17] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoai-libs
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybsc
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: encomp
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mootdx
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chalkpy
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: e2enetworks
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-hub-nightly
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: testpipxyz3
+[2023-05-29 09:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vbarongdatools001
+[2023-05-29 09:11:17] INFO root fetch - processPackages [pybsc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [mootdx]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [encomp]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [vbarongdatools001]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [e2enetworks]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [autoai-libs]: New version: [1.15.2] Old Version: [1.15.1]
+[2023-05-29 09:11:17] WARNING root fetch - processPackages [testpipxyz3]: Skipping, unable to determine old version
+[2023-05-29 09:11:17] INFO root fetch - processPackages [testpipxyz3]: Start processing: gurux-dlms
+[2023-05-29 09:11:17] INFO root fetch - main [MainThread]: End processing [testpipxyz3] error
+[2023-05-29 09:11:17] INFO root fetch - processPackages [chalkpy]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [gurux-dlms]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-29 09:11:17] INFO root fetch - processPackages [e2enetworks]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [e2enetworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2enetworks-0.0.8.tar.gz tmp/e2enetworks-0.0.9.tar.gz --markdown 20230529/e/e2enetworks/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230529/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [encomp]: Downloading https://files.pythonhosted.org/packages/45/b0/dfd2d90af7a0ebc8b51276d4f5e5692947f2563b4f93ce69a655d8716f9e/encomp-0.9.2.tar.gz
+[2023-05-29 09:11:17] INFO root fetch - processPackages [autoai-libs]: Downloading https://files.pythonhosted.org/packages/d9/97/fcc8257f191db5103871dd3812764e3315ab82636624efa5c5120c04fe44/autoai_libs-1.15.1-75-cp39-cp39-win_amd64.whl
+[2023-05-29 09:11:17] INFO root fetch - processPackages [gurux-dlms]: Downloading https://files.pythonhosted.org/packages/3a/19/6ba6cf899efdf6f3e7df7b43471459e895a22370aa70ff24b8ec0d37867b/gurux_dlms-1.0.98.tar.gz
+[2023-05-29 09:11:17] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230529/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [vbarongdatools001]: Downloading https://files.pythonhosted.org/packages/20/19/dfde87cfe8c06f74b781979ee3b10d93745fb6d0a9b2447c7d644c9de836/vbarongdatools001-0.0.4.tar.gz
+[2023-05-29 09:11:17] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/d0/db/abb8b0f44335b7df86c111032fdb903978130d5331e8e30c5eecae0f50cf/chalkpy-2.4.3.tar.gz
+[2023-05-29 09:11:17] INFO root fetch - processPackages [pybsc]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [pybsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybsc-0.1.8.tar.gz tmp/pybsc-0.1.9.tar.gz --markdown 20230529/p/pybsc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [mootdx]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [mootdx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mootdx-0.9.8.tar.gz tmp/mootdx-0.9.9.tar.gz --markdown 20230529/m/mootdx/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [encomp]: Downloading https://files.pythonhosted.org/packages/b2/f8/7caea139c0ecbb2aa040e34a28af8bc4d276a546239ad4e6d7747e0e442b/encomp-0.9.3.tar.gz
+[2023-05-29 09:11:17] INFO root fetch - processPackages [vbarongdatools001]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [vbarongdatools001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbarongdatools001-0.0.3.tar.gz tmp/vbarongdatools001-0.0.4.tar.gz --markdown 20230529/v/vbarongdatools001/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.4.2.tar.gz tmp/chalkpy-2.4.3.tar.gz --markdown 20230529/c/chalkpy/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [encomp]: executing diffoscope
+[2023-05-29 09:11:17] INFO root fetch - processPackages [encomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encomp-0.9.2.tar.gz tmp/encomp-0.9.3.tar.gz --markdown 20230529/e/encomp/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-29 09:11:17] INFO root fetch - processPackages [gurux-dlms]: Downloading https://files.pythonhosted.org/packages/ea/9f/4151ff3e3361970601669bef12d45c4bd694cfa85f752d9f267ccbc2f78d/gurux_dlms-1.0.99.tar.gz
+[2023-05-29 09:11:18] INFO root fetch - processPackages [gurux-dlms]: executing diffoscope
+[2023-05-29 09:11:18] INFO root fetch - processPackages [gurux-dlms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gurux_dlms-1.0.98.tar.gz tmp/gurux_dlms-1.0.99.tar.gz --markdown 20230529/g/gurux-dlms/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-29 09:11:18] INFO root fetch - processPackages [autoai-libs]: Downloading https://files.pythonhosted.org/packages/1b/7b/789fdf98a58f18261c1bd3d0752c1cc784de057cc82d9f1e4a42270bb0b9/autoai_libs-1.15.2-76-cp39-cp39-win_amd64.whl
+[2023-05-29 09:11:18] INFO root fetch - processPackages [e2enetworks]: Start processing: nice-datapath
+[2023-05-29 09:11:18] INFO root fetch - main [MainThread]: End processing [e2enetworks]: success
+[2023-05-29 09:11:18] WARNING root fetch - processPackages [nice-datapath]: Skipping, unable to determine old version
+[2023-05-29 09:11:18] INFO root fetch - processPackages [nice-datapath]: Start processing: tf-models-nightly
+[2023-05-29 09:11:18] INFO root fetch - main [MainThread]: End processing [nice-datapath] error
+[2023-05-29 09:11:18] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-29 09:11:18] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-29 09:11:18] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230529/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-29 09:11:19] INFO root fetch - main [MainThread]: End processing [pybsc]: success
+[2023-05-29 09:11:19] INFO root fetch - processPackages [autoai-libs]: executing diffoscope
+[2023-05-29 09:11:19] INFO root fetch - processPackages [autoai-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoai_libs-1.15.1-75-cp39-cp39-win_amd64.whl.zip tmp/autoai_libs-1.15.2-76-cp39-cp39-win_amd64.whl.zip --markdown 20230529/a/autoai-libs/1.15.1-1.15.2/diff.md --exclude *.pyd
+[2023-05-29 09:11:19] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-29 09:11:19] INFO root fetch - main [MainThread]: End processing [mootdx]: success
+[2023-05-29 09:11:19] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-05-29 09:11:20] INFO root fetch - main [MainThread]: End processing [autoai-libs]: success
+[2023-05-29 09:11:20] INFO root fetch - main [MainThread]: End processing [encomp]: success
+[2023-05-29 09:11:21] INFO root fetch - main [MainThread]: End processing [gurux-dlms]: success
+[2023-05-29 09:11:21] INFO root fetch - main [MainThread]: End processing [vbarongdatools001]: success
+[2023-05-29 09:11:23] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-29 09:11:37] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-29 09:11:37] INFO root fetch - main [MainThread]: Store serial: [18287107]
