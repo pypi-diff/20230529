@@ -18089,3 +18089,50 @@ EOFError: EOF read where object expected
 [2023-05-29 23:34:15] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
 [2023-05-29 23:34:15] INFO root fetch - main [MainThread]: End processing [graphdisplay]: success
 [2023-05-29 23:34:15] INFO root fetch - main [MainThread]: Store serial: [18294652]
+[2023-05-29 23:39:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294652]
+[2023-05-29 23:39:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fossiler
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: std-daq-client
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioslimproto
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datasieve
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Simba-UW-tf-dev
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: std-daq-client
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ooo-dev-tools
+[2023-05-29 23:39:24] INFO root fetch - processPackages [fossiler]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [aioslimproto]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [std-daq-client]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.61.5] Old Version: [1.61.4]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [std-daq-client]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [datasieve]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-29 23:39:24] INFO root fetch - processPackages [aioslimproto]: Downloading https://files.pythonhosted.org/packages/c1/0a/c224b64c5931510ef5983f6011e4de3b3f60c25cde075ebcf7201dba11d5/aioslimproto-2.2.0.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/30/7a/8d4a0073ad1996e0cad06aaa86749e2812ffe711d4127f3bffe102e5fd00/Simba-UW-tf-dev-1.61.5.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [fossiler]: Downloading https://files.pythonhosted.org/packages/66/26/1f6cbde2b91e0b870e37042eebe0d3ce7b249cfb43ab370c0efd1254d4d4/fossiler-0.0.4.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [std-daq-client]: Downloading https://files.pythonhosted.org/packages/8b/f5/584d2663b48d3e85f043f38ab3452c1041d04c9efddf507742bff87cc8cf/std_daq_client-1.3.0.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [std-daq-client]: Downloading https://files.pythonhosted.org/packages/8b/f5/584d2663b48d3e85f043f38ab3452c1041d04c9efddf507742bff87cc8cf/std_daq_client-1.3.0.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [datasieve]: Downloading https://files.pythonhosted.org/packages/e1/59/e3e10ec7438362127111958819817e64ff9554403a4d5fd89bf44618afbb/datasieve-0.1.0.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [datasieve]: executing diffoscope
+[2023-05-29 23:39:24] INFO root fetch - processPackages [datasieve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasieve-0.0.9.tar.gz tmp/datasieve-0.1.0.tar.gz --markdown 20230529/d/datasieve/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 23:39:24] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-05-29 23:39:24] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.61.4.tar.gz tmp/Simba-UW-tf-dev-1.61.5.tar.gz --markdown 20230529/S/Simba-UW-tf-dev/1.61.4-1.61.5/diff.md --exclude *.pyd
+[2023-05-29 23:39:24] INFO root fetch - processPackages [fossiler]: executing diffoscope
+[2023-05-29 23:39:24] INFO root fetch - processPackages [fossiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fossiler-0.0.3.tar.gz tmp/fossiler-0.0.4.tar.gz --markdown 20230529/f/fossiler/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2023-05-29 23:39:24] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.7.tar.gz tmp/ooo_dev_tools-0.9.8.tar.gz --markdown 20230529/o/ooo-dev-tools/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-29 23:39:24] INFO root fetch - processPackages [std-daq-client]: Downloading https://files.pythonhosted.org/packages/ed/b2/6527f0a3213d8655281a04c48f3e84fd0a601de20c352c0bf867dade6c1a/std_daq_client-1.3.1.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [std-daq-client]: Downloading https://files.pythonhosted.org/packages/ed/b2/6527f0a3213d8655281a04c48f3e84fd0a601de20c352c0bf867dade6c1a/std_daq_client-1.3.1.tar.gz
+[2023-05-29 23:39:24] INFO root fetch - processPackages [aioslimproto]: Downloading https://files.pythonhosted.org/packages/a9/4a/0f0a26b6b6c4b2f00aad39b73e6d7fe89aca0a93651a1f9dfd22e4742d36/aioslimproto-2.2.1.tar.gz
+[2023-05-29 23:39:25] INFO root fetch - processPackages [std-daq-client]: executing diffoscope
+[2023-05-29 23:39:25] INFO root fetch - processPackages [std-daq-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std_daq_client-1.3.0.tar.gz tmp/std_daq_client-1.3.1.tar.gz --markdown 20230529/s/std-daq-client/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-29 23:39:25] INFO root fetch - processPackages [std-daq-client]: executing diffoscope
+[2023-05-29 23:39:25] INFO root fetch - processPackages [std-daq-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std_daq_client-1.3.0.tar.gz tmp/std_daq_client-1.3.1.tar.gz --markdown 20230529/s/std-daq-client/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-29 23:39:25] INFO root fetch - processPackages [aioslimproto]: executing diffoscope
+[2023-05-29 23:39:25] INFO root fetch - processPackages [aioslimproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioslimproto-2.2.0.tar.gz tmp/aioslimproto-2.2.1.tar.gz --markdown 20230529/a/aioslimproto/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-29 23:39:26] INFO root fetch - main [MainThread]: End processing [datasieve]: success
+[2023-05-29 23:39:26] INFO root fetch - main [MainThread]: End processing [fossiler]: success
+[2023-05-29 23:39:26] INFO root fetch - main [MainThread]: End processing [std-daq-client]: success
+[2023-05-29 23:39:26] INFO root fetch - main [MainThread]: End processing [aioslimproto]: success
+[2023-05-29 23:39:26] INFO root fetch - main [MainThread]: End processing [std-daq-client]: success
+[2023-05-29 23:39:29] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-05-29 23:39:34] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2023-05-29 23:39:34] INFO root fetch - main [MainThread]: Store serial: [18294672]
