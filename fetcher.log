@@ -10828,3 +10828,109 @@ EOFError: EOF read where object expected
 [2023-05-29 15:09:04] INFO root fetch - main [MainThread]: End processing [ephios]: success
 [2023-05-29 15:09:41] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-29 15:09:41] INFO root fetch - main [MainThread]: Store serial: [18290096]
+[2023-05-29 15:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290096]
+[2023-05-29 15:14:50] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muvinai
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solidlibs
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isystem.connect
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytestifyx
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-pandas
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: safelog
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rampedpyrox
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-pytorch
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ovos-config
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ygModbus
+[2023-05-29 15:14:50] INFO root fetch - processPackages [rampedpyrox]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [solidlibs]: New version: [2.6.7] Old Version: [2.6.6]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [muvinai]: New version: [0.2.9] Old Version: [0.2.8.dev0]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [pytestifyx]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ygModbus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [ovos-config]: New version: [0.0.9a6] Old Version: [0.0.9a5]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [safelog]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 15:14:50] INFO root fetch - processPackages [isystem.connect]: New version: [9.21.99.0] Old Version: [9.21.98.0]
+[2023-05-29 15:14:51] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 15:14:51] INFO root fetch - processPackages [ygModbus]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [ygModbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ygModbus-0.0.8-py3-none-any.whl.zip tmp/ygModbus-0.0.9-py3-none-any.whl.zip --markdown 20230529/y/ygModbus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230529/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230529/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [solidlibs]: Downloading https://files.pythonhosted.org/packages/f9/d4/4007f86c8ef49fd726d53b0d01a0dc75d8646271de972747d92abb363bb6/solidlibs-2.6.6.tar.gz
+[2023-05-29 15:14:51] INFO root fetch - processPackages [rampedpyrox]: Downloading https://files.pythonhosted.org/packages/6e/9e/aa27071fbbe88ffe91df245e2b03c503b7bcde3603a530357e33cf482e01/rampedpyrox-1.0.3.tar.gz
+[2023-05-29 15:14:51] INFO root fetch - processPackages [safelog]: Downloading https://files.pythonhosted.org/packages/7d/d8/c2deb96093da131761733e244b79278764171e1a411e8ebd119ebdaf7dc7/safelog-1.8.1.tar.gz
+[2023-05-29 15:14:51] INFO root fetch - processPackages [pytestifyx]: Downloading https://files.pythonhosted.org/packages/d4/c1/abbcdde9434d578425215fd0e1edc71dd39e176303340b5e8e7010cd3727/pytestifyx-0.5.1-py2.py3-none-any.whl
+[2023-05-29 15:14:51] INFO root fetch - processPackages [muvinai]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [muvinai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muvinai-0.2.8.dev0.tar.gz tmp/muvinai-0.2.9.tar.gz --markdown 20230529/m/muvinai/0.2.8.dev0-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [pytestifyx]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [pytestifyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytestifyx-0.5.0-py2.py3-none-any.whl.zip tmp/pytestifyx-0.5.1-py2.py3-none-any.whl.zip --markdown 20230529/p/pytestifyx/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [ovos-config]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [ovos-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-config-0.0.9a5.tar.gz tmp/ovos-config-0.0.9a6.tar.gz --markdown 20230529/o/ovos-config/0.0.9a5-0.0.9a6/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [isystem.connect]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [isystem.connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isystem.connect-9.21.98.0-cp39-none-win_amd64.whl.zip tmp/isystem.connect-9.21.99.0-cp39-none-win_amd64.whl.zip --markdown 20230529/i/isystem.connect/9.21.98.0-9.21.99.0/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [safelog]: Downloading https://files.pythonhosted.org/packages/ac/55/28a927cfbec12170a1c2ea84e9454003fd2b12826ef77a6ae547e5330ec6/safelog-1.8.2.tar.gz
+[2023-05-29 15:14:51] INFO root fetch - processPackages [rampedpyrox]: Downloading https://files.pythonhosted.org/packages/25/2a/eaedc2bb41e90339c527590fddbe626e52833481b68d83ccb05dfff369b6/rampedpyrox-1.0.4-py3-none-any.whl
+[2023-05-29 15:14:51] INFO root fetch - processPackages [safelog]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [safelog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safelog-1.8.1.tar.gz tmp/safelog-1.8.2.tar.gz --markdown 20230529/s/safelog/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [rampedpyrox]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [rampedpyrox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rampedpyrox-1.0.3.tar.gz tmp/rampedpyrox-1.0.4-py3-none-any.whl.zip --markdown 20230529/r/rampedpyrox/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 15:14:51] INFO root fetch - processPackages [solidlibs]: Downloading https://files.pythonhosted.org/packages/2f/87/ce704f0edb6227940df46662e9edea9a8982477effc519236d6699f8ce34/solidlibs-2.6.7.tar.gz
+[2023-05-29 15:14:51] INFO root fetch - processPackages [solidlibs]: executing diffoscope
+[2023-05-29 15:14:51] INFO root fetch - processPackages [solidlibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solidlibs-2.6.6.tar.gz tmp/solidlibs-2.6.7.tar.gz --markdown 20230529/s/solidlibs/2.6.6-2.6.7/diff.md --exclude *.pyd
+[2023-05-29 15:14:52] INFO root fetch - processPackages [ygModbus]: Start processing: libcnmc
+[2023-05-29 15:14:52] INFO root fetch - main [MainThread]: End processing [ygModbus]: success
+[2023-05-29 15:14:52] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-29 15:14:52] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-29 15:14:52] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230529/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-29 15:14:53] INFO root fetch - processPackages [isystem.connect]: Start processing: webdns
+[2023-05-29 15:14:53] INFO root fetch - main [MainThread]: End processing [isystem.connect]: success
+[2023-05-29 15:14:53] INFO root fetch - processPackages [webdns]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 15:14:53] INFO root fetch - processPackages [safelog]: Start processing: aiavatar
+[2023-05-29 15:14:53] INFO root fetch - main [MainThread]: End processing [safelog]: success
+[2023-05-29 15:14:53] INFO root fetch - processPackages [aiavatar]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 15:14:53] INFO root fetch - processPackages [webdns]: Downloading https://files.pythonhosted.org/packages/8c/c5/390d29cfbcc0a3e609eeafe1b23d17f63cd13de453fa04bb9b98e4901139/webdns-0.0.2.tar.gz
+[2023-05-29 15:14:53] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/9f/61/5cd0a19e109101b775a9ab6971cb04d651ec973cfb260d2aecbee1e43320/aiavatar-0.1.0-py3-none-any.whl
+[2023-05-29 15:14:53] INFO root fetch - processPackages [webdns]: Downloading https://files.pythonhosted.org/packages/50/98/776eb8c9211b6777784576d4c262bb7910c5913ae1a9d53cd522659a30ce/webdns-0.0.3.tar.gz
+[2023-05-29 15:14:53] INFO root fetch - processPackages [pytestifyx]: Start processing: hiddifypanel
+[2023-05-29 15:14:53] INFO root fetch - main [MainThread]: End processing [pytestifyx]: success
+[2023-05-29 15:14:53] INFO root fetch - processPackages [webdns]: executing diffoscope
+[2023-05-29 15:14:53] INFO root fetch - processPackages [webdns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webdns-0.0.2.tar.gz tmp/webdns-0.0.3.tar.gz --markdown 20230529/w/webdns/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 15:14:53] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/2c/7a/1829a84136f5603d431d51fa46bf929079528e2494da2d55f35c544922db/aiavatar-0.1.1-py3-none-any.whl
+[2023-05-29 15:14:53] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-29 15:14:53] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2023-05-29 15:14:53] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.1.0-py3-none-any.whl.zip tmp/aiavatar-0.1.1-py3-none-any.whl.zip --markdown 20230529/a/aiavatar/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 15:14:53] INFO root fetch - processPackages [rampedpyrox]: Start processing: nbdev-scipy
+[2023-05-29 15:14:53] INFO root fetch - main [MainThread]: End processing [rampedpyrox]: success
+[2023-05-29 15:14:53] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 15:14:53] INFO root fetch - processPackages [ovos-config]: Start processing: curvit
+[2023-05-29 15:14:53] INFO root fetch - main [MainThread]: End processing [ovos-config]: success
+[2023-05-29 15:14:53] INFO root fetch - processPackages [curvit]: New version: [1.6.8] Old Version: [1.6.7]
+[2023-05-29 15:14:53] INFO root fetch - processPackages [muvinai]: Start processing: optimuslib
+[2023-05-29 15:14:53] INFO root fetch - main [MainThread]: End processing [muvinai]: success
+[2023-05-29 15:14:53] INFO root fetch - processPackages [optimuslib]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 15:14:53] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-29 15:14:53] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230529/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-29 15:14:54] INFO root fetch - processPackages [nbdev-pytorch]: Start processing: nbdev-sphinx
+[2023-05-29 15:14:54] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-29 15:14:54] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-29 15:14:54] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230529/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 15:14:54] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 15:14:54] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/71/48/c4b5b8541d9addb10899a21f8b8eb2dcc104d0b32531b5e1421f7d12c0d6/optimuslib-0.0.5.tar.gz
+[2023-05-29 15:14:54] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-29 15:14:54] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230529/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 15:14:54] INFO root fetch - processPackages [optimuslib]: executing diffoscope
+[2023-05-29 15:14:54] INFO root fetch - processPackages [optimuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimuslib-0.0.4.tar.gz tmp/optimuslib-0.0.5.tar.gz --markdown 20230529/o/optimuslib/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 15:14:54] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-29 15:14:54] INFO root fetch - processPackages [curvit]: Downloading https://files.pythonhosted.org/packages/d5/37/46d7858df40b48925ed8abb3f457ab3ef08a677a10166f583db8a039027e/curvit-1.6.8.tar.gz
+[2023-05-29 15:14:54] INFO root fetch - processPackages [curvit]: executing diffoscope
+[2023-05-29 15:14:54] INFO root fetch - processPackages [curvit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curvit-1.6.7.tar.gz tmp/curvit-1.6.8.tar.gz --markdown 20230529/c/curvit/1.6.7-1.6.8/diff.md --exclude *.pyd
+[2023-05-29 15:14:54] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-29 15:14:55] INFO root fetch - main [MainThread]: End processing [webdns]: success
+[2023-05-29 15:14:55] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2023-05-29 15:14:55] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-29 15:14:55] INFO root fetch - main [MainThread]: End processing [optimuslib]: success
+[2023-05-29 15:14:55] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-29 15:14:56] INFO root fetch - main [MainThread]: End processing [curvit]: success
+[2023-05-29 15:14:58] INFO root fetch - main [MainThread]: End processing [solidlibs]: success
+[2023-05-29 15:15:11] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-29 15:15:11] INFO root fetch - main [MainThread]: Store serial: [18290156]
