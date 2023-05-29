@@ -8013,3 +8013,73 @@
 [2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [esparto]: success
 [2023-05-29 12:11:32] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
 [2023-05-29 12:11:32] INFO root fetch - main [MainThread]: Store serial: [18288359]
+[2023-05-29 12:16:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288359]
+[2023-05-29 12:16:41] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dm-reverb-nightly
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: garpix-page
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycalaos
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mb-base
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipyfilite
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gistingv4
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: garpixcms
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mb-base
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nvfuser-cu121
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Bigsansar
+[2023-05-29 12:16:41] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291014] Old Version: [1.0.202305291012]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [pycalaos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ipyfilite]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [garpix-page]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-29 12:16:41] WARNING root fetch - processPackages [gistingv4]: Skipping, unable to determine old version
+[2023-05-29 12:16:41] INFO root fetch - processPackages [gistingv4]: Start processing: keypact
+[2023-05-29 12:16:41] INFO root fetch - main [MainThread]: End processing [gistingv4] error
+[2023-05-29 12:16:41] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291014] Old Version: [1.0.202305291012]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [garpixcms]: New version: [4.2.0] Old Version: [4.1.1]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [keypact]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-05-29 12:16:41] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-29 12:16:41] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.5.4.tar.gz tmp/Bigsansar-1.5.5.tar.gz --markdown 20230529/B/Bigsansar/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-05-29 12:16:41] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/bc/9f/d36e06fd3b67f661bccf0b16e97ddffee4cbd59eb53a2f8fbac08ce47fc5/mb_base-1.0.202305291012-py3-none-any.whl
+[2023-05-29 12:16:41] INFO root fetch - processPackages [keypact]: executing diffoscope
+[2023-05-29 12:16:41] INFO root fetch - processPackages [keypact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keypact-0.2.5.tar.gz tmp/keypact-0.3.0.tar.gz --markdown 20230529/k/keypact/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 12:16:41] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-29 12:16:41] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230529/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-29 12:16:41] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/bc/9f/d36e06fd3b67f661bccf0b16e97ddffee4cbd59eb53a2f8fbac08ce47fc5/mb_base-1.0.202305291012-py3-none-any.whl
+[2023-05-29 12:16:41] INFO root fetch - processPackages [garpix-page]: Downloading https://files.pythonhosted.org/packages/11/17/20c2a4cd79f6d4f1add00722e84ff9ae4f2d04fd3224f466af5c1b8de1ca/garpix_page-2.8.0.tar.gz
+[2023-05-29 12:16:41] INFO root fetch - processPackages [garpixcms]: Downloading https://files.pythonhosted.org/packages/fe/5f/7834327bd0e024e9c75ad4f1cf60d16613e5715dacbc59664b576de96174/garpixcms-4.1.1.tar.gz
+[2023-05-29 12:16:41] INFO root fetch - processPackages [ipyfilite]: Downloading https://files.pythonhosted.org/packages/cb/42/d4c7368929c66a1b607938743ad560c2c7f9817d2f7bf216fe1e0b7c251f/ipyfilite-0.1.3.tar.gz
+[2023-05-29 12:16:42] INFO root fetch - processPackages [pycalaos]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [pycalaos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycalaos-0.0.8.tar.gz tmp/pycalaos-0.0.9.tar.gz --markdown 20230529/p/pycalaos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 12:16:42] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu121-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/n/nvfuser-cu121/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-29 12:16:42] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/8f/d6/04db1ee4a3a724e45c7dd7abb988d2463cc30eb564c27517c28b28fcd95f/mb_base-1.0.202305291014-py3-none-any.whl
+[2023-05-29 12:16:42] INFO root fetch - processPackages [ipyfilite]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [ipyfilite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyfilite-0.1.2.tar.gz tmp/ipyfilite-0.1.3.tar.gz --markdown 20230529/i/ipyfilite/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 12:16:42] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/8f/d6/04db1ee4a3a724e45c7dd7abb988d2463cc30eb564c27517c28b28fcd95f/mb_base-1.0.202305291014-py3-none-any.whl
+[2023-05-29 12:16:42] INFO root fetch - processPackages [garpixcms]: Downloading https://files.pythonhosted.org/packages/78/2f/b35355280bd639044831ffab399cdd6179d11217157e107695172ae03695/garpixcms-4.2.0.tar.gz
+[2023-05-29 12:16:42] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291012-py3-none-any.whl.zip tmp/mb_base-1.0.202305291014-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291012-1.0.202305291014/diff.md --exclude *.pyd
+[2023-05-29 12:16:42] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291012-py3-none-any.whl.zip tmp/mb_base-1.0.202305291014-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291012-1.0.202305291014/diff.md --exclude *.pyd
+[2023-05-29 12:16:42] INFO root fetch - processPackages [garpixcms]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [garpixcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garpixcms-4.1.1.tar.gz tmp/garpixcms-4.2.0.tar.gz --markdown 20230529/g/garpixcms/4.1.1-4.2.0/diff.md --exclude *.pyd
+[2023-05-29 12:16:42] INFO root fetch - processPackages [garpix-page]: Downloading https://files.pythonhosted.org/packages/f0/ba/ed6a5c2b76619fa0ca3bc7cbf58fb1306b3bbdde7ba4d718e5bee021991a/garpix_page-2.9.0.tar.gz
+[2023-05-29 12:16:42] INFO root fetch - processPackages [garpix-page]: executing diffoscope
+[2023-05-29 12:16:42] INFO root fetch - processPackages [garpix-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garpix_page-2.8.0.tar.gz tmp/garpix_page-2.9.0.tar.gz --markdown 20230529/g/garpix-page/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-29 12:16:43] INFO root fetch - processPackages [keypact]: Start processing: edaplore
+[2023-05-29 12:16:43] INFO root fetch - main [MainThread]: End processing [keypact]: success
+[2023-05-29 12:16:43] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 12:16:43] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 12:16:43] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 12:16:43] INFO root fetch - main [MainThread]: End processing [pycalaos]: success
+[2023-05-29 12:16:43] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:16:44] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:16:44] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-29 12:16:44] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 12:16:44] INFO root fetch - main [MainThread]: End processing [garpix-page]: success
+[2023-05-29 12:16:44] INFO root fetch - main [MainThread]: End processing [garpixcms]: success
+[2023-05-29 12:16:45] INFO root fetch - main [MainThread]: End processing [ipyfilite]: success
+[2023-05-29 12:16:46] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2023-05-29 12:17:35] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-29 12:17:35] INFO root fetch - main [MainThread]: Store serial: [18288406]
