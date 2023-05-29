@@ -13317,3 +13317,55 @@ EOFError: EOF read where object expected
 [2023-05-29 17:57:58] INFO root fetch - main [MainThread]: End processing [chatarena]: success
 [2023-05-29 17:57:58] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-05-29 17:57:58] INFO root fetch - main [MainThread]: Store serial: [18291631]
+[2023-05-29 18:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291631]
+[2023-05-29 18:03:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iron-toolbox
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srecli
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: highrise-bot-sdk
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: filesystem-dict
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arcade
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: defi-services-lib
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eArsivPortal
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: matlab-tictoc
+[2023-05-29 18:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyDynamicRoutingUpdater
+[2023-05-29 18:03:07] INFO root fetch - processPackages [iron-toolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 18:03:07] INFO root fetch - processPackages [highrise-bot-sdk]: New version: [23.1.0b9] Old Version: [23.1.0b8]
+[2023-05-29 18:03:07] INFO root fetch - processPackages [srecli]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 18:03:07] WARNING root fetch - processPackages [defi-services-lib]: Skipping, unable to determine old version
+[2023-05-29 18:03:07] INFO root fetch - processPackages [filesystem-dict]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 18:03:07] INFO root fetch - main [MainThread]: End processing [defi-services-lib] error
+[2023-05-29 18:03:07] INFO root fetch - processPackages [matlab-tictoc]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-29 18:03:07] INFO root fetch - processPackages [arcade]: New version: [3.0.0.dev22] Old Version: [3.0.0.dev21]
+[2023-05-29 18:03:07] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 18:03:07] INFO root fetch - processPackages [eArsivPortal]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 18:03:07] INFO root fetch - processPackages [filesystem-dict]: executing diffoscope
+[2023-05-29 18:03:07] INFO root fetch - processPackages [filesystem-dict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filesystem-dict-0.1.8.tar.gz tmp/filesystem-dict-0.1.9.tar.gz --markdown 20230529/f/filesystem-dict/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 18:03:07] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: executing diffoscope
+[2023-05-29 18:03:07] INFO root fetch - processPackages [pyDynamicRoutingUpdater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyDynamicRoutingUpdater-0.0.3.tar.gz tmp/pyDynamicRoutingUpdater-0.0.4.tar.gz --markdown 20230529/p/pyDynamicRoutingUpdater/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 18:03:07] INFO root fetch - processPackages [matlab-tictoc]: Downloading https://files.pythonhosted.org/packages/b7/5d/d9ff5f34a7ca89a0b908f8734b285e224cc75deda283b2d11b4e900bd571/matlab-tictoc-1.2.0.tar.gz
+[2023-05-29 18:03:07] INFO root fetch - processPackages [srecli]: Downloading https://files.pythonhosted.org/packages/4f/2a/70b41410ef0fcbc8b101ab6d70f6b2e4072a843afcd82cdb3576f4250e67/srecli-0.0.6.tar.gz
+[2023-05-29 18:03:07] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/0e/ef/f844ebac52d99a4fdbfee591cd27a0620e5494077d78e2f5cb0e1b878657/eArsivPortal-0.0.7.tar.gz
+[2023-05-29 18:03:07] INFO root fetch - processPackages [highrise-bot-sdk]: Downloading https://files.pythonhosted.org/packages/9e/7a/166090069cb26db15a97cf0f76551e0b46b799267bfe38724670f1d5c38b/highrise_bot_sdk-23.1.0b8.tar.gz
+[2023-05-29 18:03:07] INFO root fetch - processPackages [arcade]: Downloading https://files.pythonhosted.org/packages/8b/eb/6a6229bf51039c0023f78432f879375054bc809649f1a1dbda591fb2b2bb/arcade-3.0.0.dev21.tar.gz
+[2023-05-29 18:03:07] INFO root fetch - processPackages [matlab-tictoc]: executing diffoscope
+[2023-05-29 18:03:07] INFO root fetch - processPackages [matlab-tictoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matlab-tictoc-1.1.0.tar.gz tmp/matlab-tictoc-1.2.0.tar.gz --markdown 20230529/m/matlab-tictoc/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 18:03:07] INFO root fetch - processPackages [srecli]: executing diffoscope
+[2023-05-29 18:03:07] INFO root fetch - processPackages [srecli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srecli-0.0.5.tar.gz tmp/srecli-0.0.6.tar.gz --markdown 20230529/s/srecli/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 18:03:07] WARNING root fetch - processPackages [arcade]: Skipping package: exceeds size limit 38233274>=10485760
+[2023-05-29 18:03:07] INFO root fetch - main [MainThread]: End processing [arcade] error
+[2023-05-29 18:03:07] INFO root fetch - processPackages [iron-toolbox]: executing diffoscope
+[2023-05-29 18:03:07] INFO root fetch - processPackages [iron-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iron_toolbox-1.0.8.tar.gz tmp/iron_toolbox-1.0.9.tar.gz --markdown 20230529/i/iron-toolbox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 18:03:07] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/41/6c/737e09c5ab621779d420d979907853ed1eefbbb39d265c664f24e202830a/eArsivPortal-0.0.8.tar.gz
+[2023-05-29 18:03:07] INFO root fetch - processPackages [highrise-bot-sdk]: Downloading https://files.pythonhosted.org/packages/d8/2e/d478c8615ab808c6782ccfc14040e1326b207fe0187fe64a760f8532ed5e/highrise_bot_sdk-23.1.0b9.tar.gz
+[2023-05-29 18:03:08] INFO root fetch - processPackages [highrise-bot-sdk]: executing diffoscope
+[2023-05-29 18:03:08] INFO root fetch - processPackages [highrise-bot-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highrise_bot_sdk-23.1.0b8.tar.gz tmp/highrise_bot_sdk-23.1.0b9.tar.gz --markdown 20230529/h/highrise-bot-sdk/23.1.0b8-23.1.0b9/diff.md --exclude *.pyd
+[2023-05-29 18:03:08] INFO root fetch - processPackages [eArsivPortal]: executing diffoscope
+[2023-05-29 18:03:08] INFO root fetch - processPackages [eArsivPortal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eArsivPortal-0.0.7.tar.gz tmp/eArsivPortal-0.0.8.tar.gz --markdown 20230529/e/eArsivPortal/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 18:03:08] INFO root fetch - main [MainThread]: End processing [filesystem-dict]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [matlab-tictoc]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [pyDynamicRoutingUpdater]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [srecli]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [iron-toolbox]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [highrise-bot-sdk]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
+[2023-05-29 18:03:09] INFO root fetch - main [MainThread]: Store serial: [18291665]
