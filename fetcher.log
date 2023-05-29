@@ -14156,3 +14156,89 @@ EOFError: EOF read where object expected
 [2023-05-29 18:51:33] INFO root fetch - main [MainThread]: End processing [customdataclass]: success
 [2023-05-29 18:51:34] INFO root fetch - main [MainThread]: End processing [datarobot-early-access]: success
 [2023-05-29 18:51:34] INFO root fetch - main [MainThread]: Store serial: [18292105]
+[2023-05-29 18:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292105]
+[2023-05-29 18:56:43] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: localstack-core
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transaction-service-quality-checker
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: satori-ci
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: red-postgres
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bacteria
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: synthdog
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fxn
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: perfcount
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MEGABYTE-pytorch
+[2023-05-29 18:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: syndesi-drivers
+[2023-05-29 18:56:43] INFO root fetch - processPackages [transaction-service-quality-checker]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [synthdog]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [red-postgres]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [fxn]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 18:56:43] WARNING root fetch - processPackages [perfcount]: Skipping, unable to determine old version
+[2023-05-29 18:56:43] INFO root fetch - processPackages [perfcount]: Start processing: pautobot
+[2023-05-29 18:56:43] INFO root fetch - main [MainThread]: End processing [perfcount] error
+[2023-05-29 18:56:43] WARNING root fetch - processPackages [syndesi-drivers]: Skipping, unable to determine old version
+[2023-05-29 18:56:43] INFO root fetch - processPackages [syndesi-drivers]: Start processing: IOTAILibrary
+[2023-05-29 18:56:43] INFO root fetch - main [MainThread]: End processing [syndesi-drivers] error
+[2023-05-29 18:56:43] INFO root fetch - processPackages [bacteria]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [localstack-core]: New version: [2.1.1.dev20230529165133] Old Version: [2.1.1.dev20230526110734]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [MEGABYTE-pytorch]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 18:56:43] WARNING root fetch - processPackages [pautobot]: Skipping, unable to determine old version
+[2023-05-29 18:56:43] INFO root fetch - processPackages [pautobot]: Start processing: fl4health
+[2023-05-29 18:56:43] INFO root fetch - main [MainThread]: End processing [pautobot] error
+[2023-05-29 18:56:43] WARNING root fetch - processPackages [IOTAILibrary]: Skipping, unable to determine old version
+[2023-05-29 18:56:43] INFO root fetch - processPackages [IOTAILibrary]: Start processing: py-rpautom
+[2023-05-29 18:56:43] INFO root fetch - main [MainThread]: End processing [IOTAILibrary] error
+[2023-05-29 18:56:43] INFO root fetch - processPackages [fl4health]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [py-rpautom]: New version: [0.0.9b0] Old Version: [0.0.8b0]
+[2023-05-29 18:56:43] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 18:56:43] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 18:56:43] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/3e/c4/32b132fd865e4b78f97df7aad62c38360b5a2553287415b32330f5480f50/fxn-0.0.4.tar.gz
+[2023-05-29 18:56:43] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/6b/a3/ae6037dbfab769bcb2961d9f201ea099d7d5b28e3f3ef927a985d8b18429/bacteria-1.0.0.tar.gz
+[2023-05-29 18:56:43] INFO root fetch - processPackages [synthdog]: Downloading https://files.pythonhosted.org/packages/ab/f2/6ae53c66d4419656dfe0f82e89561f7842d81419c9c9634b34159e568a1b/synthdog-0.5.6.tar.gz
+[2023-05-29 18:56:43] ERROR root fetch - processPackages [red-postgres]: Unable to fetch info: No such project/version 'red-postgres' 0.0.4
+[2023-05-29 18:56:43] INFO root fetch - processPackages [red-postgres]: Start processing: ramodels
+[2023-05-29 18:56:43] INFO root fetch - main [MainThread]: End processing [red-postgres] error
+[2023-05-29 18:56:43] INFO root fetch - processPackages [MEGABYTE-pytorch]: Downloading https://files.pythonhosted.org/packages/9e/59/585714c36161a5a34efef8234688101bfab125254ab8aee0eb2ac3d77dc1/MEGABYTE-pytorch-0.1.1.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-05-29 18:56:44] INFO root fetch - processPackages [MEGABYTE-pytorch]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [MEGABYTE-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MEGABYTE-pytorch-0.1.0.tar.gz tmp/MEGABYTE-pytorch-0.1.1.tar.gz --markdown 20230529/M/MEGABYTE-pytorch/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [transaction-service-quality-checker]: Downloading https://files.pythonhosted.org/packages/0e/4c/73d4f41bd40743f32d544095906cb3b6f60d04006f7765ebf3d282f73a5e/transaction_service_quality_checker-0.0.6.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [py-rpautom]: Downloading https://files.pythonhosted.org/packages/6e/39/46bb536db45da28d5a4efe63087cf7df066dd3b823715358df3eaff4fe72/py-rpautom-0.0.8b0.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fl4health]: Downloading https://files.pythonhosted.org/packages/b6/e8/e022ddbe215493d35820a17aff1a1b20b3d4ddd72e347a3f267fd04e274a/fl4health-0.1.3.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [transaction-service-quality-checker]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [transaction-service-quality-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction_service_quality_checker-0.0.5.tar.gz tmp/transaction_service_quality_checker-0.0.6.tar.gz --markdown 20230529/t/transaction-service-quality-checker/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] WARNING root fetch - processPackages [synthdog]: Skipping package: exceeds size limit 21932438>=10485760
+[2023-05-29 18:56:44] INFO root fetch - processPackages [synthdog]: Start processing: nsj-rest-lib
+[2023-05-29 18:56:44] INFO root fetch - main [MainThread]: End processing [synthdog] error
+[2023-05-29 18:56:44] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/ba/01/ba05a4283b9d1e328fdefa95bd317bf76642bb0742d9bd1017ae14c6011e/localstack-core-2.1.1.dev20230529165133.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [nsj-rest-lib]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fl4health]: Downloading https://files.pythonhosted.org/packages/f6/05/df588e037c43038e2d03568d6fc070b6b86a27792a35479f31e609511ebb/fl4health-0.1.4.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/da/b0/e33234c217a971855b920a8492423004bbe3b0d7dd30b56bc3b3c92ccdb9/fxn-0.0.5.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/3f/76/91d4b60875de067ca9d950372c2c7be841c9a9484f6026cd715d8163bdd1/bacteria-1.1.0.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fl4health]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fl4health]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fl4health-0.1.3.tar.gz tmp/fl4health-0.1.4.tar.gz --markdown 20230529/f/fl4health/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fxn]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [fxn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fxn-0.0.4.tar.gz tmp/fxn-0.0.5.tar.gz --markdown 20230529/f/fxn/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [bacteria]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [bacteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacteria-1.0.0.tar.gz tmp/bacteria-1.1.0.tar.gz --markdown 20230529/b/bacteria/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [py-rpautom]: Downloading https://files.pythonhosted.org/packages/15/df/aca01fc29617ab2b4273b63a58b5cabaec5b193a2123d1bda0b5f8e7a87a/py-rpautom-0.0.9b0.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.1.1.dev20230526110734.tar.gz tmp/localstack-core-2.1.1.dev20230529165133.tar.gz --markdown 20230529/l/localstack-core/2.1.1.dev20230526110734-2.1.1.dev20230529165133/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230529/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [py-rpautom]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [py-rpautom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-rpautom-0.0.8b0.tar.gz tmp/py-rpautom-0.0.9b0.tar.gz --markdown 20230529/p/py-rpautom/0.0.8b0-0.0.9b0/diff.md --exclude *.pyd
+[2023-05-29 18:56:44] INFO root fetch - processPackages [nsj-rest-lib]: Downloading https://files.pythonhosted.org/packages/ea/43/23814e976cb34c6bcd430e208a552e2cfae3c21174d6bb08d696e686037b/nsj_rest_lib-0.2.1.tar.gz
+[2023-05-29 18:56:44] INFO root fetch - processPackages [nsj-rest-lib]: executing diffoscope
+[2023-05-29 18:56:44] INFO root fetch - processPackages [nsj-rest-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsj_rest_lib-0.2.0.tar.gz tmp/nsj_rest_lib-0.2.1.tar.gz --markdown 20230529/n/nsj-rest-lib/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 18:56:45] INFO root fetch - main [MainThread]: End processing [MEGABYTE-pytorch]: success
+[2023-05-29 18:56:45] INFO root fetch - main [MainThread]: End processing [transaction-service-quality-checker]: success
+[2023-05-29 18:56:45] INFO root fetch - main [MainThread]: End processing [bacteria]: success
+[2023-05-29 18:56:46] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 18:56:46] INFO root fetch - main [MainThread]: End processing [fl4health]: success
+[2023-05-29 18:56:46] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-05-29 18:56:46] INFO root fetch - main [MainThread]: End processing [fxn]: success
+[2023-05-29 18:56:46] INFO root fetch - main [MainThread]: End processing [py-rpautom]: success
+[2023-05-29 18:56:47] INFO root fetch - main [MainThread]: End processing [nsj-rest-lib]: success
+[2023-05-29 18:56:50] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-29 18:56:50] INFO root fetch - main [MainThread]: Store serial: [18292162]
