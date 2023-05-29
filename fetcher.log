@@ -14897,3 +14897,34 @@ EOFError: EOF read where object expected
 [2023-05-29 19:59:53] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-29 20:00:13] INFO root fetch - main [MainThread]: End processing [dnacentersdk]: success
 [2023-05-29 20:00:13] INFO root fetch - main [MainThread]: Store serial: [18292530]
+[2023-05-29 20:05:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292530]
+[2023-05-29 20:05:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 20:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wellmet
+[2023-05-29 20:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemspa-spt
+[2023-05-29 20:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dl2050utils
+[2023-05-29 20:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wf-video-io
+[2023-05-29 20:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypreql-nlp
+[2023-05-29 20:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pdc-dp-means
+[2023-05-29 20:05:23] WARNING root fetch - processPackages [gemspa-spt]: Skipping, unable to determine old version
+[2023-05-29 20:05:23] INFO root fetch - main [MainThread]: End processing [gemspa-spt] error
+[2023-05-29 20:05:23] INFO root fetch - processPackages [wf-video-io]: New version: [3.3.4] Old Version: [3.3.3]
+[2023-05-29 20:05:23] INFO root fetch - processPackages [dl2050utils]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-29 20:05:23] INFO root fetch - processPackages [pypreql-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 20:05:23] WARNING root fetch - processPackages [wellmet]: Skipping, unable to determine old version
+[2023-05-29 20:05:23] INFO root fetch - main [MainThread]: End processing [wellmet] error
+[2023-05-29 20:05:23] INFO root fetch - processPackages [pdc-dp-means]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 20:05:23] INFO root fetch - processPackages [pypreql-nlp]: executing diffoscope
+[2023-05-29 20:05:23] INFO root fetch - processPackages [pypreql-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-nlp-0.0.8.tar.gz tmp/pypreql-nlp-0.0.9.tar.gz --markdown 20230529/p/pypreql-nlp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 20:05:23] INFO root fetch - processPackages [wf-video-io]: Downloading https://files.pythonhosted.org/packages/0c/1b/e0c9e282607a9445c13d39c446bec4aa0b28b85deea375dbf891b85a2ccf/wf_video_io-3.3.4.tar.gz
+[2023-05-29 20:05:23] INFO root fetch - processPackages [dl2050utils]: executing diffoscope
+[2023-05-29 20:05:23] INFO root fetch - processPackages [dl2050utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dl2050utils-1.0.98.tar.gz tmp/dl2050utils-1.0.99.tar.gz --markdown 20230529/d/dl2050utils/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-29 20:05:23] INFO root fetch - processPackages [wf-video-io]: executing diffoscope
+[2023-05-29 20:05:23] INFO root fetch - processPackages [wf-video-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wf_video_io-3.3.3.tar.gz tmp/wf_video_io-3.3.4.tar.gz --markdown 20230529/w/wf-video-io/3.3.3-3.3.4/diff.md --exclude *.pyd
+[2023-05-29 20:05:23] INFO root fetch - processPackages [pdc-dp-means]: Downloading https://files.pythonhosted.org/packages/c4/06/a8f485c99b9ae18e97058122c15b78fe0ad5967d8f77797a4ec397a67f43/pdc_dp_means-0.0.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 20:05:24] INFO root fetch - main [MainThread]: End processing [pypreql-nlp]: success
+[2023-05-29 20:05:24] INFO root fetch - main [MainThread]: End processing [dl2050utils]: success
+[2023-05-29 20:05:24] INFO root fetch - processPackages [pdc-dp-means]: executing diffoscope
+[2023-05-29 20:05:24] INFO root fetch - processPackages [pdc-dp-means]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdc_dp_means-0.0.5-cp39-cp39-win_amd64.whl.zip tmp/pdc_dp_means-0.0.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/p/pdc-dp-means/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 20:05:24] INFO root fetch - main [MainThread]: End processing [wf-video-io]: success
+[2023-05-29 20:05:54] INFO root fetch - main [MainThread]: End processing [pdc-dp-means]: success
+[2023-05-29 20:05:54] INFO root fetch - main [MainThread]: Store serial: [18292563]
