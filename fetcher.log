@@ -1292,3 +1292,61 @@
 [2023-05-29 02:29:24] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
 [2023-05-29 02:30:39] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-29 02:30:39] INFO root fetch - main [MainThread]: Store serial: [18284489]
+[2023-05-29 02:35:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284489]
+[2023-05-29 02:35:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-github-actions
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-proxmox
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-aurora-globaldatabase
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: talk-codebase
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk8s-redis
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: everdrop-aws-cdk-constructs
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ia-wumpus
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aeppl-nightly
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.92] Old Version: [0.0.91]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.20] Old Version: [0.1.19]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ia-wumpus]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230528] Old Version: [0.1.4.dev20230527]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-29 02:35:48] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230529/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-proxmox]: Downloading https://files.pythonhosted.org/packages/00/e8/93c1744e0b511147b27c5608c0007c1be9cd5a3feb36a584d36c3b6978f9/cdktf-proxmox-0.0.91.tar.gz
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230529/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230529/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ia-wumpus]: Downloading https://files.pythonhosted.org/packages/43/ff/2aae1857a9591c029b24c550ce67ce942c6b31b60085616e824557ec595d/ia_wumpus-0.3.6.tar.gz
+[2023-05-29 02:35:48] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/1c/c2/00099f4dd803c370ba10a2b16818bcf6ee0e333c6b3e4ce7c767defbcbdc/talk_codebase-0.1.20.tar.gz
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230529/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.98.tar.gz tmp/cdktf-github-actions-0.0.99.tar.gz --markdown 20230529/c/cdktf-github-actions/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-proxmox]: Downloading https://files.pythonhosted.org/packages/b1/e1/a95d1ea9625300b30d93c62d5c75a5e2cc4653cae991461fda7b20229f3c/cdktf-proxmox-0.0.92.tar.gz
+[2023-05-29 02:35:48] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/f4/9e/837a7f651b3227453df214769fc26a73acec1995c97ec5fced3412618268/aeppl-nightly-0.1.4.dev20230528.tar.gz
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ia-wumpus]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [ia-wumpus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ia_wumpus-0.3.5.tar.gz tmp/ia_wumpus-0.3.6.tar.gz --markdown 20230529/i/ia-wumpus/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.19.tar.gz tmp/talk_codebase-0.1.20.tar.gz --markdown 20230529/t/talk-codebase/0.1.19-0.1.20/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230529/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.91.tar.gz tmp/cdktf-proxmox-0.0.92.tar.gz --markdown 20230529/c/cdktf-proxmox/0.0.91-0.0.92/diff.md --exclude *.pyd
+[2023-05-29 02:35:48] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-05-29 02:35:48] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230527.tar.gz tmp/aeppl-nightly-0.1.4.dev20230528.tar.gz --markdown 20230529/a/aeppl-nightly/0.1.4.dev20230527-0.1.4.dev20230528/diff.md --exclude *.pyd
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [ia-wumpus]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-29 02:35:50] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
+[2023-05-29 02:35:52] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
+[2023-05-29 02:35:52] INFO root fetch - main [MainThread]: Store serial: [18284523]
