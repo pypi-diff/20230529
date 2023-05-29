@@ -4887,3 +4887,54 @@
 [2023-05-29 07:14:54] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-29 07:14:57] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-05-29 07:14:57] INFO root fetch - main [MainThread]: Store serial: [18286516]
+[2023-05-29 07:20:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286516]
+[2023-05-29 07:20:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wasm-exec
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: servicefoundry
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasette-sqlite-hello
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlite-hello
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: searchlogit
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xj-thread
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: macrometa-target-snowflake
+[2023-05-29 07:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyqt-dreamstudio
+[2023-05-29 07:20:06] INFO root fetch - processPackages [wasm-exec]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 07:20:06] INFO root fetch - processPackages [datasette-sqlite-hello]: New version: [0.1.0a37] Old Version: [0.1.0a36]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [macrometa-target-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [pyqt-dreamstudio]: New version: [0.0.11] Old Version: [0.0.1]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [sqlite-hello]: New version: [0.1.0a37] Old Version: [0.1.0a36]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [servicefoundry]: New version: [0.9.1rc1] Old Version: [0.9.1]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [searchlogit]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-29 07:20:07] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/ec/48/5f8132cfcba06e09e56e2908613cfb1c930499be723393a9a900a36fd614/servicefoundry-0.9.1.tar.gz
+[2023-05-29 07:20:07] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.8.tar.gz tmp/searchlogit-0.3.9.tar.gz --markdown 20230529/s/searchlogit/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [datasette-sqlite-hello]: Downloading https://files.pythonhosted.org/packages/85/16/354719fa80d1fe5da55abf577775545bcaaee9ec19d295ed70697d8ff7a7/datasette_sqlite_hello-0.1.0a37-py3-none-any.whl
+[2023-05-29 07:20:07] INFO root fetch - processPackages [pyqt-dreamstudio]: Downloading https://files.pythonhosted.org/packages/9d/65/43f6bbd04228c3bd625cd1f73b8661a622c1f4e5140916898e07573ef1a5/pyqt-dreamstudio-0.0.1.tar.gz
+[2023-05-29 07:20:07] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230529/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [sqlite-hello]: Downloading https://files.pythonhosted.org/packages/1a/6a/6da73e45b9307a76b0ed6f719cb8f70527d2ab4c85836cae1b3097436025/sqlite_hello-0.1.0a37-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-29 07:20:07] INFO root fetch - processPackages [wasm-exec]: Downloading https://files.pythonhosted.org/packages/bf/d6/9922ae2d26ab06f9f2e67d921c44bfbeb92aae79729acffd02da1c311133/wasm_exec-0.1.4.tar.gz
+[2023-05-29 07:20:07] INFO root fetch - processPackages [datasette-sqlite-hello]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [datasette-sqlite-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_hello-0.1.0a36-py3-none-any.whl.zip tmp/datasette_sqlite_hello-0.1.0a37-py3-none-any.whl.zip --markdown 20230529/d/datasette-sqlite-hello/0.1.0a36-0.1.0a37/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [wasm-exec]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [wasm-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasm_exec-0.1.3.tar.gz tmp/wasm_exec-0.1.4.tar.gz --markdown 20230529/w/wasm-exec/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [sqlite-hello]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [sqlite-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_hello-0.1.0a36-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_hello-0.1.0a37-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230529/s/sqlite-hello/0.1.0a36-0.1.0a37/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [pyqt-dreamstudio]: Downloading https://files.pythonhosted.org/packages/0f/b2/60bf15d39e82d0e42f08bae6a1d4e295b2d6c658d9fb8fd397735591b195/pyqt-dreamstudio-0.0.11.tar.gz
+[2023-05-29 07:20:07] INFO root fetch - processPackages [servicefoundry]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [servicefoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicefoundry-0.9.1.tar.gz tmp/servicefoundry-0.9.1rc1.tar.gz --markdown 20230529/s/servicefoundry/0.9.1-0.9.1rc1/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [macrometa-target-snowflake]: Downloading https://files.pythonhosted.org/packages/2c/e4/8bcbc5f4f3068a7d86e14052af3e60ebc730e141065f99e9fd303b8c72b9/macrometa-target-snowflake-0.0.8.tar.gz
+[2023-05-29 07:20:07] INFO root fetch - processPackages [pyqt-dreamstudio]: executing diffoscope
+[2023-05-29 07:20:07] INFO root fetch - processPackages [pyqt-dreamstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt-dreamstudio-0.0.1.tar.gz tmp/pyqt-dreamstudio-0.0.11.tar.gz --markdown 20230529/p/pyqt-dreamstudio/0.0.1-0.0.11/diff.md --exclude *.pyd
+[2023-05-29 07:20:07] INFO root fetch - processPackages [macrometa-target-snowflake]: Downloading https://files.pythonhosted.org/packages/7e/fa/48b7ff1ddeb683244982cee81022d74733ce456fa556798f0546b6a9b81c/macrometa-target-snowflake-0.0.9.tar.gz
+[2023-05-29 07:20:08] INFO root fetch - processPackages [macrometa-target-snowflake]: executing diffoscope
+[2023-05-29 07:20:08] INFO root fetch - processPackages [macrometa-target-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-snowflake-0.0.8.tar.gz tmp/macrometa-target-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-target-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 07:20:08] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-hello]: success
+[2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [pyqt-dreamstudio]: success
+[2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [wasm-exec]: success
+[2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [macrometa-target-snowflake]: success
+[2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
+[2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [sqlite-hello]: success
+[2023-05-29 07:20:09] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
+[2023-05-29 07:20:10] INFO root fetch - main [MainThread]: End processing [servicefoundry]: success
+[2023-05-29 07:20:10] INFO root fetch - main [MainThread]: Store serial: [18286538]
