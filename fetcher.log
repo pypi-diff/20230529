@@ -1452,3 +1452,54 @@
 [2023-05-29 02:51:39] INFO root fetch - main [MainThread]: End processing [bipartitepandas]: success
 [2023-05-29 02:51:39] INFO root fetch - main [MainThread]: End processing [bulma-sphinx-theme]: success
 [2023-05-29 02:51:39] INFO root fetch - main [MainThread]: Store serial: [18284584]
+[2023-05-29 02:56:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284584]
+[2023-05-29 02:56:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usepy
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-databrew-cicd
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nounseed
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commutauto
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maccarone
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stale-maccarone
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yfinance-extended
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bioversions
+[2023-05-29 02:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: transpector
+[2023-05-29 02:56:48] WARNING root fetch - processPackages [yfinance-extended]: Skipping, unable to determine old version
+[2023-05-29 02:56:48] INFO root fetch - main [MainThread]: End processing [yfinance-extended] error
+[2023-05-29 02:56:48] INFO root fetch - processPackages [commutauto]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [usepy]: New version: [0.2.3a0] Old Version: [0.2.3]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [nounseed]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [stale-maccarone]: New version: [0.0.4.dev0] Old Version: [0.0.3.dev0]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [maccarone]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [transpector]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 02:56:48] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-29 02:56:48] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230529/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:56:48] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-29 02:56:48] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230529/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-29 02:56:48] INFO root fetch - processPackages [commutauto]: Downloading https://files.pythonhosted.org/packages/96/71/565d3518d4f25260292df3977d2bc3eff8091c06b4b47cb7a066ec17b9f5/commutauto-0.3.0.tar.gz
+[2023-05-29 02:56:48] INFO root fetch - processPackages [maccarone]: Downloading https://files.pythonhosted.org/packages/27/66/94cd9b5f8735b10dc6e1197fcd3b73dbf3af38bbe4caad06ff04730ce813/maccarone-0.0.3.tar.gz
+[2023-05-29 02:56:48] INFO root fetch - processPackages [stale-maccarone]: Downloading https://files.pythonhosted.org/packages/95/d7/2dcb72e75b58cdfa35dfa480178bd1232162cf97296028270140a1ee755f/stale_maccarone-0.0.3.dev0.tar.gz
+[2023-05-29 02:56:48] INFO root fetch - processPackages [nounseed]: Downloading https://files.pythonhosted.org/packages/8f/5b/5f47779d856a6811961c5f6b40c239c72c38f246cd8d9c41435c52800f1c/nounseed-1.0.4.tar.gz
+[2023-05-29 02:56:49] INFO root fetch - processPackages [transpector]: Downloading https://files.pythonhosted.org/packages/6d/2d/6c2b697bf811b121d8d7b1e5bc2c530987b1035e8e588352ceb1ab417a6f/transpector-0.1.3-py3-none-any.whl
+[2023-05-29 02:56:49] INFO root fetch - processPackages [usepy]: executing diffoscope
+[2023-05-29 02:56:49] INFO root fetch - processPackages [usepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usepy-0.2.3.tar.gz tmp/usepy-0.2.3a0.tar.gz --markdown 20230529/u/usepy/0.2.3-0.2.3a0/diff.md --exclude *.pyd
+[2023-05-29 02:56:49] INFO root fetch - processPackages [maccarone]: executing diffoscope
+[2023-05-29 02:56:49] INFO root fetch - processPackages [maccarone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maccarone-0.0.2.tar.gz tmp/maccarone-0.0.3.tar.gz --markdown 20230529/m/maccarone/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 02:56:49] INFO root fetch - processPackages [commutauto]: executing diffoscope
+[2023-05-29 02:56:49] INFO root fetch - processPackages [commutauto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commutauto-0.2.0.tar.gz tmp/commutauto-0.3.0.tar.gz --markdown 20230529/c/commutauto/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 02:56:49] INFO root fetch - processPackages [nounseed]: executing diffoscope
+[2023-05-29 02:56:49] INFO root fetch - processPackages [nounseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nounseed-1.0.3.tar.gz tmp/nounseed-1.0.4.tar.gz --markdown 20230529/n/nounseed/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 02:56:49] INFO root fetch - processPackages [stale-maccarone]: Downloading https://files.pythonhosted.org/packages/1c/7f/6cef13d695f40c78e2f4c0dc6d5e2087c9b5d0370dc21bc8c054ef9a70f9/stale_maccarone-0.0.4.dev0.tar.gz
+[2023-05-29 02:56:49] WARNING root fetch - processPackages [transpector]: Skipping package: exceeds size limit 36848274>=10485760
+[2023-05-29 02:56:49] INFO root fetch - main [MainThread]: End processing [transpector] error
+[2023-05-29 02:56:49] INFO root fetch - processPackages [stale-maccarone]: executing diffoscope
+[2023-05-29 02:56:49] INFO root fetch - processPackages [stale-maccarone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stale_maccarone-0.0.3.dev0.tar.gz tmp/stale_maccarone-0.0.4.dev0.tar.gz --markdown 20230529/s/stale-maccarone/0.0.3.dev0-0.0.4.dev0/diff.md --exclude *.pyd
+[2023-05-29 02:56:50] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-29 02:56:50] INFO root fetch - main [MainThread]: End processing [maccarone]: success
+[2023-05-29 02:56:50] INFO root fetch - main [MainThread]: End processing [nounseed]: success
+[2023-05-29 02:56:50] INFO root fetch - main [MainThread]: End processing [commutauto]: success
+[2023-05-29 02:56:50] INFO root fetch - main [MainThread]: End processing [stale-maccarone]: success
+[2023-05-29 02:56:51] INFO root fetch - main [MainThread]: End processing [usepy]: success
+[2023-05-29 02:57:09] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-29 02:57:09] INFO root fetch - main [MainThread]: Store serial: [18284611]
