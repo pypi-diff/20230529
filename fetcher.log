@@ -1223,3 +1223,72 @@
 [2023-05-29 02:24:10] INFO root fetch - main [MainThread]: End processing [cdk-pipelines-github]: success
 [2023-05-29 02:24:10] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
 [2023-05-29 02:24:10] INFO root fetch - main [MainThread]: Store serial: [18284441]
+[2023-05-29 02:29:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284441]
+[2023-05-29 02:29:19] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-docker-image-deployment
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mccmnc
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-stacksets
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-image
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-certbot-dns-route53
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-serverless-clamscan
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: policyengine-us
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: c-formatter-42
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-certbot-dns-route53
+[2023-05-29 02:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-docker-image-deployment]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 02:29:19] WARNING root fetch - processPackages [mccmnc]: Skipping, unable to determine old version
+[2023-05-29 02:29:19] INFO root fetch - processPackages [mccmnc]: Start processing: cdk-tweet-queue
+[2023-05-29 02:29:19] INFO root fetch - main [MainThread]: End processing [mccmnc] error
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-stacksets]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [policyengine-us]: New version: [0.329.3] Old Version: [0.329.2]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [c-formatter-42]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk8s-image]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.4.99] Old Version: [2.4.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-docker-image-deployment]: executing diffoscope
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-docker-image-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-docker-image-deployment-0.0.98.tar.gz tmp/cdk-docker-image-deployment-0.0.99.tar.gz --markdown 20230529/c/cdk-docker-image-deployment/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230529/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-stacksets]: executing diffoscope
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-stacksets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-stacksets-0.0.98.tar.gz tmp/cdk-stacksets-0.0.99.tar.gz --markdown 20230529/c/cdk-stacksets/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk8s-image]: executing diffoscope
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk8s-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-image-0.2.98.tar.gz tmp/cdk8s-image-0.2.99.tar.gz --markdown 20230529/c/cdk8s-image/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:19] INFO root fetch - processPackages [c-formatter-42]: Downloading https://files.pythonhosted.org/packages/53/b3/a2c78947243e2101b1526399bf054d28d11739ec73987c322e7d1efd1175/c_formatter_42-0.2.1.tar.gz
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230529/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-29 02:29:19] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230529/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:20] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/92/4d/7991632c560f70698df140a4d1f816e0a2daaf54da0568f4b05e6696832a/policyengine-us-0.329.3.tar.gz
+[2023-05-29 02:29:20] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2023-05-29 02:29:20] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.4.98.tar.gz tmp/cdk-serverless-clamscan-2.4.99.tar.gz --markdown 20230529/c/cdk-serverless-clamscan/2.4.98-2.4.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:20] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2023-05-29 02:29:20] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20230529/c/cdk-tweet-queue/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:20] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-05-29 02:29:20] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.329.2.tar.gz tmp/policyengine-us-0.329.3.tar.gz --markdown 20230529/p/policyengine-us/0.329.2-0.329.3/diff.md --exclude *.pyd
+[2023-05-29 02:29:20] INFO root fetch - processPackages [c-formatter-42]: Downloading https://files.pythonhosted.org/packages/67/51/e9f8da3afb9f0a86d0d4e6ed35048191eb85711ac61d5762a2549d36b525/c_formatter_42-0.2.2.tar.gz
+[2023-05-29 02:29:20] INFO root fetch - processPackages [c-formatter-42]: executing diffoscope
+[2023-05-29 02:29:20] INFO root fetch - processPackages [c-formatter-42]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c_formatter_42-0.2.1.tar.gz tmp/c_formatter_42-0.2.2.tar.gz --markdown 20230529/c/c-formatter-42/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Start processing: cdk-ecs-service-extensions
+[2023-05-29 02:29:21] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a9] Old Version: [2.0.1a8]
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk-stacksets]: Start processing: cdk8s-jenkins
+[2023-05-29 02:29:21] INFO root fetch - main [MainThread]: End processing [cdk-stacksets]: success
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk8s-jenkins]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a8.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a9.tar.gz --markdown 20230529/c/cdk-ecs-service-extensions/2.0.1a8-2.0.1a9/diff.md --exclude *.pyd
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk8s-jenkins]: executing diffoscope
+[2023-05-29 02:29:21] INFO root fetch - processPackages [cdk8s-jenkins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-jenkins-0.0.98.tar.gz tmp/cdk8s-jenkins-0.0.99.tar.gz --markdown 20230529/c/cdk8s-jenkins/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:29:21] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-29 02:29:21] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2023-05-29 02:29:22] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-29 02:29:22] INFO root fetch - main [MainThread]: End processing [cdk8s-image]: success
+[2023-05-29 02:29:22] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2023-05-29 02:29:22] INFO root fetch - main [MainThread]: End processing [c-formatter-42]: success
+[2023-05-29 02:29:23] INFO root fetch - main [MainThread]: End processing [cdk8s-jenkins]: success
+[2023-05-29 02:29:24] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2023-05-29 02:29:24] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
+[2023-05-29 02:30:39] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-05-29 02:30:39] INFO root fetch - main [MainThread]: Store serial: [18284489]
