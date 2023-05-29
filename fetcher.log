@@ -18136,3 +18136,46 @@ EOFError: EOF read where object expected
 [2023-05-29 23:39:29] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-05-29 23:39:34] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
 [2023-05-29 23:39:34] INFO root fetch - main [MainThread]: Store serial: [18294672]
+[2023-05-29 23:44:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294672]
+[2023-05-29 23:44:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lab-partner
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lab-partner-utils
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gdcloudlib
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kaioretry
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docker-recipe
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Simba-UW-tf-dev
+[2023-05-29 23:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ssb-sgis
+[2023-05-29 23:44:43] INFO root fetch - processPackages [lab-partner]: New version: [0.7.40] Old Version: [0.7.39]
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.40] Old Version: [0.7.39]
+[2023-05-29 23:44:44] WARNING root fetch - processPackages [gdcloudlib]: Skipping, unable to determine old version
+[2023-05-29 23:44:44] INFO root fetch - main [MainThread]: End processing [gdcloudlib] error
+[2023-05-29 23:44:44] INFO root fetch - processPackages [docker-recipe]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 23:44:44] INFO root fetch - processPackages [kaioretry]: New version: [0.9.4] Old Version: [0.9.2]
+[2023-05-29 23:44:44] INFO root fetch - processPackages [ssb-sgis]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 23:44:44] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.61.6] Old Version: [1.61.5]
+[2023-05-29 23:44:44] INFO root fetch - processPackages [kaioretry]: executing diffoscope
+[2023-05-29 23:44:44] INFO root fetch - processPackages [kaioretry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaioretry-0.9.2.tar.gz tmp/kaioretry-0.9.4.tar.gz --markdown 20230529/k/kaioretry/0.9.2-0.9.4/diff.md --exclude *.pyd
+[2023-05-29 23:44:44] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/3f/0d/a019ac35e81ccb33cd000475b52fac06b3e232ef5909eff30a526dd3483f/ssb_sgis-0.2.2.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [docker-recipe]: Downloading https://files.pythonhosted.org/packages/33/00/efeb4a255acc90443ca48f09e4e0808ee13345b64774127bf937f8ba0977/docker-recipe-0.2.0.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/c7/06/40996bdf8858ea7337b64d5c5ab1d37d0ab565a80b898df5e7261826542e/Simba-UW-tf-dev-1.61.6.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/cf/4a/46a758aca12de89d11edc5e8e494b03ed73a9aeb9306483e4b8b5162c987/lab-partner-utils-0.7.40.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/a2/e6/daf3edae67c2363a1be193594c01ec4f1155979597a518f16d91fa3e7f82/lab-partner-0.7.40.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.7.39.tar.gz tmp/lab-partner-utils-0.7.40.tar.gz --markdown 20230529/l/lab-partner-utils/0.7.39-0.7.40/diff.md --exclude *.pyd
+[2023-05-29 23:44:44] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-05-29 23:44:44] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.61.5.tar.gz tmp/Simba-UW-tf-dev-1.61.6.tar.gz --markdown 20230529/S/Simba-UW-tf-dev/1.61.5-1.61.6/diff.md --exclude *.pyd
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 23:44:44] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.7.39.tar.gz tmp/lab-partner-0.7.40.tar.gz --markdown 20230529/l/lab-partner/0.7.39-0.7.40/diff.md --exclude *.pyd
+[2023-05-29 23:44:44] INFO root fetch - processPackages [docker-recipe]: Downloading https://files.pythonhosted.org/packages/b2/e8/f80d7af20f539d7badd09252e92ff97ba0e3aef040df7b83294a5bcf7868/docker-recipe-0.3.0.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/55/bb/c4b62e3ae039b7ce349da3e394b5dc7659bfecce1c67130dccb95848b4f9/ssb_sgis-0.2.3.tar.gz
+[2023-05-29 23:44:44] INFO root fetch - processPackages [docker-recipe]: executing diffoscope
+[2023-05-29 23:44:44] INFO root fetch - processPackages [docker-recipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-recipe-0.2.0.tar.gz tmp/docker-recipe-0.3.0.tar.gz --markdown 20230529/d/docker-recipe/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 23:44:44] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-05-29 23:44:44] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.2.2.tar.gz tmp/ssb_sgis-0.2.3.tar.gz --markdown 20230529/s/ssb-sgis/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 23:44:45] INFO root fetch - main [MainThread]: End processing [kaioretry]: success
+[2023-05-29 23:44:45] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 23:44:45] INFO root fetch - main [MainThread]: End processing [docker-recipe]: success
+[2023-05-29 23:44:46] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 23:44:46] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
+[2023-05-29 23:44:49] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-05-29 23:44:49] INFO root fetch - main [MainThread]: Store serial: [18294695]
