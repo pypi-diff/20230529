@@ -8083,3 +8083,94 @@
 [2023-05-29 12:16:46] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
 [2023-05-29 12:17:35] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-29 12:17:35] INFO root fetch - main [MainThread]: Store serial: [18288406]
+[2023-05-29 12:22:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288406]
+[2023-05-29 12:22:44] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: areaTestMould
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mb-pandas
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: areaTestMouldByHuang
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oarepo-vocabularies
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scancode-toolkit
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gistingv5
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: myl
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: unipipeline
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pydflow
+[2023-05-29 12:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lsl-relay
+[2023-05-29 12:22:44] ERROR root fetch - processPackages [areaTestMould]: Unable to get metadata: No such project 'areaTestMould'
+[2023-05-29 12:22:44] INFO root fetch - processPackages [areaTestMould]: Start processing: pymc-experimental
+[2023-05-29 12:22:44] INFO root fetch - main [MainThread]: End processing [areaTestMould] error
+[2023-05-29 12:22:44] INFO root fetch - processPackages [mb-pandas]: New version: [1.0.202305291017] Old Version: [1.0.202305250348]
+[2023-05-29 12:22:44] WARNING root fetch - processPackages [areaTestMouldByHuang]: Skipping, unable to determine old version
+[2023-05-29 12:22:44] INFO root fetch - processPackages [areaTestMouldByHuang]: Start processing: neatpush
+[2023-05-29 12:22:44] INFO root fetch - main [MainThread]: End processing [areaTestMouldByHuang] error
+[2023-05-29 12:22:44] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-29 12:22:44] INFO root fetch - processPackages [myl]: New version: [0.4] Old Version: [0.3]
+[2023-05-29 12:22:44] WARNING root fetch - processPackages [gistingv5]: Skipping, unable to determine old version
+[2023-05-29 12:22:44] WARNING root fetch - processPackages [lsl-relay]: Skipping, unable to determine old version
+[2023-05-29 12:22:44] INFO root fetch - processPackages [gistingv5]: Start processing: daktari
+[2023-05-29 12:22:44] INFO root fetch - processPackages [lsl-relay]: Start processing: Bigsansar
+[2023-05-29 12:22:44] INFO root fetch - processPackages [oarepo-vocabularies]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-29 12:22:44] INFO root fetch - processPackages [pymc-experimental]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 12:22:44] INFO root fetch - main [MainThread]: End processing [gistingv5] error
+[2023-05-29 12:22:44] INFO root fetch - processPackages [unipipeline]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-29 12:22:44] INFO root fetch - main [MainThread]: End processing [lsl-relay] error
+[2023-05-29 12:22:44] INFO root fetch - processPackages [scancode-toolkit]: New version: [32.0.2] Old Version: [32.0.1]
+[2023-05-29 12:22:44] INFO root fetch - processPackages [neatpush]: New version: [0.3.1] Old Version: [0.2.0]
+[2023-05-29 12:22:44] INFO root fetch - processPackages [daktari]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 12:22:44] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.7] Old Version: [1.5.6]
+[2023-05-29 12:22:44] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-05-29 12:22:44] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230529/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-29 12:22:44] INFO root fetch - processPackages [mb-pandas]: Downloading https://files.pythonhosted.org/packages/76/83/2db4d198e764042b6997e3b187c3c1fdb94b92aac33f980fc4f5533db240/mb_pandas-1.0.202305250348-py3-none-any.whl
+[2023-05-29 12:22:44] INFO root fetch - processPackages [myl]: Downloading https://files.pythonhosted.org/packages/2b/49/9e707f24a7b0290a5bedaa783f13c1216730e85e502fb19e3cc3c419c9f0/myl-0.3.tar.gz
+[2023-05-29 12:22:44] INFO root fetch - processPackages [pymc-experimental]: Downloading https://files.pythonhosted.org/packages/ac/5f/2d15e97dc486c013c47a60bb32134fa52299a2e7bb11e57383c1a54f5b2e/pymc-experimental-0.0.2.tar.gz
+[2023-05-29 12:22:44] INFO root fetch - processPackages [scancode-toolkit]: Downloading https://files.pythonhosted.org/packages/41/72/c33c90def2f59ebf0748af3f5e8341194befd978a99fcbf64edf83422ebd/scancode-toolkit-32.0.1.tar.gz
+[2023-05-29 12:22:44] INFO root fetch - processPackages [neatpush]: Downloading https://files.pythonhosted.org/packages/b6/7d/e8a239bfe9a9659a18031fc2eab0b578d426b7a13f53218fe894eeced5dc/neatpush-0.2.0.tar.gz
+[2023-05-29 12:22:44] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/c6/3d/4d673070ad33982f8540abf755ac19efea0039a11fd72f119acc414aac53/Bigsansar-1.5.6.tar.gz
+[2023-05-29 12:22:44] INFO root fetch - processPackages [unipipeline]: Downloading https://files.pythonhosted.org/packages/12/ba/03c43c7d2d5c63b0ea5ed742f5d03810129216505a53c9c412317cc97883/unipipeline-1.9.0.tar.gz
+[2023-05-29 12:22:44] WARNING root fetch - processPackages [scancode-toolkit]: Skipping package: exceeds size limit 14450125>=10485760
+[2023-05-29 12:22:44] INFO root fetch - processPackages [scancode-toolkit]: Start processing: dolphin-python
+[2023-05-29 12:22:44] INFO root fetch - main [MainThread]: End processing [scancode-toolkit] error
+[2023-05-29 12:22:45] INFO root fetch - processPackages [oarepo-vocabularies]: Downloading https://files.pythonhosted.org/packages/d6/9e/b888c33b96dfb3afee7146ea3a13a49291a86361cb221d479065148b03a2/oarepo-vocabularies-2.0.2.tar.gz
+[2023-05-29 12:22:45] WARNING root fetch - processPackages [dolphin-python]: Skipping, unable to determine old version
+[2023-05-29 12:22:45] INFO root fetch - processPackages [dolphin-python]: Start processing: dragon-city-utils
+[2023-05-29 12:22:45] INFO root fetch - main [MainThread]: End processing [dolphin-python] error
+[2023-05-29 12:22:45] INFO root fetch - processPackages [daktari]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [daktari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daktari-0.0.98.tar.gz tmp/daktari-0.0.99.tar.gz --markdown 20230529/d/daktari/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [mb-pandas]: Downloading https://files.pythonhosted.org/packages/d0/2e/762a470b14365ad254a1c194b5719fa235db515caeb0145507317fca0591/mb_pandas-1.0.202305291017-py3-none-any.whl
+[2023-05-29 12:22:45] INFO root fetch - processPackages [dragon-city-utils]: New version: [1.9] Old Version: [1.8]
+[2023-05-29 12:22:45] INFO root fetch - processPackages [myl]: Downloading https://files.pythonhosted.org/packages/c0/f5/22709efbe4c4b961a48c778baf3610c91d95bc6bae95b4c891ab787cac3f/myl-0.4.tar.gz
+[2023-05-29 12:22:45] INFO root fetch - processPackages [mb-pandas]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [mb-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pandas-1.0.202305250348-py3-none-any.whl.zip tmp/mb_pandas-1.0.202305291017-py3-none-any.whl.zip --markdown 20230529/m/mb-pandas/1.0.202305250348-1.0.202305291017/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/60/4a/10f7ab94d8e88cd391ab6e10c68653d3d6590060669a7f91a226a1c59caf/Bigsansar-1.5.7.tar.gz
+[2023-05-29 12:22:45] INFO root fetch - processPackages [unipipeline]: Downloading https://files.pythonhosted.org/packages/eb/35/87e93e890550d3f4f4ced773ceaf084acc361751b90c4be04f40d4174bf7/unipipeline-1.9.1.tar.gz
+[2023-05-29 12:22:45] INFO root fetch - processPackages [pymc-experimental]: Downloading https://files.pythonhosted.org/packages/40/fa/94ce899c8f7ea2b0e6c2cd02583ceb2d3657c237125aa91b84a87da5ecc8/pymc-experimental-0.0.3.tar.gz
+[2023-05-29 12:22:45] INFO root fetch - processPackages [dragon-city-utils]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [dragon-city-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragon-city-utils-1.8.tar.gz tmp/dragon-city-utils-1.9.tar.gz --markdown 20230529/d/dragon-city-utils/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [oarepo-vocabularies]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [oarepo-vocabularies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-vocabularies-2.0.1.tar.gz tmp/oarepo-vocabularies-2.0.2.tar.gz --markdown 20230529/o/oarepo-vocabularies/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [myl]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [myl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myl-0.3.tar.gz tmp/myl-0.4.tar.gz --markdown 20230529/m/myl/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [unipipeline]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [unipipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unipipeline-1.9.0.tar.gz tmp/unipipeline-1.9.1.tar.gz --markdown 20230529/u/unipipeline/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.5.6.tar.gz tmp/Bigsansar-1.5.7.tar.gz --markdown 20230529/B/Bigsansar/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [pymc-experimental]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [pymc-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymc-experimental-0.0.2.tar.gz tmp/pymc-experimental-0.0.3.tar.gz --markdown 20230529/p/pymc-experimental/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 12:22:45] INFO root fetch - processPackages [neatpush]: Downloading https://files.pythonhosted.org/packages/f5/a3/8fc107f7b286bcff626ce7fb5e704e4912a556b34d19526ae2db38c0eb97/neatpush-0.3.1.tar.gz
+[2023-05-29 12:22:45] INFO root fetch - processPackages [neatpush]: executing diffoscope
+[2023-05-29 12:22:45] INFO root fetch - processPackages [neatpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neatpush-0.2.0.tar.gz tmp/neatpush-0.3.1.tar.gz --markdown 20230529/n/neatpush/0.2.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-29 12:22:46] INFO root fetch - processPackages [mb-pandas]: Start processing: edaplore
+[2023-05-29 12:22:46] INFO root fetch - main [MainThread]: End processing [mb-pandas]: success
+[2023-05-29 12:22:46] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 12:22:46] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 12:22:46] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 12:22:46] INFO root fetch - main [MainThread]: End processing [dragon-city-utils]: success
+[2023-05-29 12:22:46] INFO root fetch - main [MainThread]: End processing [myl]: success
+[2023-05-29 12:22:47] INFO root fetch - main [MainThread]: End processing [pymc-experimental]: success
+[2023-05-29 12:22:47] INFO root fetch - main [MainThread]: End processing [oarepo-vocabularies]: success
+[2023-05-29 12:22:47] INFO root fetch - main [MainThread]: End processing [unipipeline]: success
+[2023-05-29 12:22:47] INFO root fetch - main [MainThread]: End processing [daktari]: success
+[2023-05-29 12:22:47] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 12:22:47] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-05-29 12:22:48] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-29 12:22:48] INFO root fetch - main [MainThread]: End processing [neatpush]: success
+[2023-05-29 12:22:48] INFO root fetch - main [MainThread]: Store serial: [18288466]
