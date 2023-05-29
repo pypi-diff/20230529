@@ -2079,3 +2079,50 @@
 [2023-05-29 03:57:33] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-05-29 03:57:34] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-29 03:57:34] INFO root fetch - main [MainThread]: Store serial: [18284981]
+[2023-05-29 04:02:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284981]
+[2023-05-29 04:02:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorflou
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adb-unicode-keyboard
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tr0nz0d
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: video-utils
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dd8
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: func-colors
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: adbkit
+[2023-05-29 04:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tensorflou
+[2023-05-29 04:02:43] WARNING root fetch - processPackages [tensorflou]: Skipping, unable to determine old version
+[2023-05-29 04:02:43] INFO root fetch - processPackages [func-colors]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-29 04:02:43] INFO root fetch - main [MainThread]: End processing [tensorflou] error
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adb-unicode-keyboard]: New version: [0.12] Old Version: [0.11]
+[2023-05-29 04:02:43] INFO root fetch - processPackages [video-utils]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adbkit]: New version: [0.20] Old Version: [0.19]
+[2023-05-29 04:02:43] WARNING root fetch - processPackages [tensorflou]: Skipping, unable to determine old version
+[2023-05-29 04:02:43] INFO root fetch - main [MainThread]: End processing [tensorflou] error
+[2023-05-29 04:02:43] INFO root fetch - processPackages [tr0nz0d]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 04:02:43] INFO root fetch - processPackages [dd8]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adbkit]: executing diffoscope
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbkit-0.19.tar.gz tmp/adbkit-0.20.tar.gz --markdown 20230529/a/adbkit/0.19-0.20/diff.md --exclude *.pyd
+[2023-05-29 04:02:43] INFO root fetch - processPackages [func-colors]: Downloading https://files.pythonhosted.org/packages/3a/52/c92131db40668816ae0c20aa7a2d64ae3bf03a02d473ee3926e9cbdb17f5/func_colors-0.1.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adb-unicode-keyboard]: Downloading https://files.pythonhosted.org/packages/2d/17/2caae6c1df010b7b5ee4edef6279a0506b33b4a20463acbc377ebcfa1fe1/adb_unicode_keyboard-0.12.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [tr0nz0d]: Downloading https://files.pythonhosted.org/packages/af/d8/f906b22d2cf5aec5d976a0b83ce4cff917811eae6c35af0fcdec17199c42/tr0nz0d-0.1.5.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [dd8]: Downloading https://files.pythonhosted.org/packages/90/22/61643b792c55a61680e4f212b8ac0a05fb4a9e38c45307f97737c57df0e1/dd8-0.0.8.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [video-utils]: Downloading https://files.pythonhosted.org/packages/65/28/f56e31132f1a6c092590f7805b5e909573c669bda88135b1b8998297e288/video_utils-2.3.2.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adb-unicode-keyboard]: executing diffoscope
+[2023-05-29 04:02:43] INFO root fetch - processPackages [adb-unicode-keyboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adb_unicode_keyboard-0.11.tar.gz tmp/adb_unicode_keyboard-0.12.tar.gz --markdown 20230529/a/adb-unicode-keyboard/0.11-0.12/diff.md --exclude *.pyd
+[2023-05-29 04:02:43] INFO root fetch - processPackages [video-utils]: executing diffoscope
+[2023-05-29 04:02:43] INFO root fetch - processPackages [video-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/video_utils-2.3.1.tar.gz tmp/video_utils-2.3.2.tar.gz --markdown 20230529/v/video-utils/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-29 04:02:43] INFO root fetch - processPackages [func-colors]: Downloading https://files.pythonhosted.org/packages/35/22/d29b056fce9ad1dab883e9a632d003809c89347b2d0828c57b949124cef2/func_colors-0.1.1.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [tr0nz0d]: Downloading https://files.pythonhosted.org/packages/cb/00/80bdc025518e810aedf57610392ea9766f8b4e7fe1ef353883db1279570f/tr0nz0d-0.1.6.tar.gz
+[2023-05-29 04:02:43] INFO root fetch - processPackages [func-colors]: executing diffoscope
+[2023-05-29 04:02:43] INFO root fetch - processPackages [func-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_colors-0.1.tar.gz tmp/func_colors-0.1.1.tar.gz --markdown 20230529/f/func-colors/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 04:02:43] INFO root fetch - processPackages [tr0nz0d]: executing diffoscope
+[2023-05-29 04:02:43] INFO root fetch - processPackages [tr0nz0d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tr0nz0d-0.1.5.tar.gz tmp/tr0nz0d-0.1.6.tar.gz --markdown 20230529/t/tr0nz0d/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 04:02:43] INFO root fetch - processPackages [dd8]: Downloading https://files.pythonhosted.org/packages/d4/b4/e348d6b4bac1a04838f7530033ea58b4f1b7612caeb5f5fde2086227eae2/dd8-0.0.9.tar.gz
+[2023-05-29 04:02:44] INFO root fetch - processPackages [dd8]: executing diffoscope
+[2023-05-29 04:02:44] INFO root fetch - processPackages [dd8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dd8-0.0.8.tar.gz tmp/dd8-0.0.9.tar.gz --markdown 20230529/d/dd8/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 04:02:44] INFO root fetch - main [MainThread]: End processing [adbkit]: success
+[2023-05-29 04:02:44] INFO root fetch - main [MainThread]: End processing [video-utils]: success
+[2023-05-29 04:02:44] INFO root fetch - main [MainThread]: End processing [func-colors]: success
+[2023-05-29 04:02:45] INFO root fetch - main [MainThread]: End processing [tr0nz0d]: success
+[2023-05-29 04:02:45] INFO root fetch - main [MainThread]: End processing [dd8]: success
+[2023-05-29 04:02:45] INFO root fetch - main [MainThread]: End processing [adb-unicode-keyboard]: success
+[2023-05-29 04:02:45] INFO root fetch - main [MainThread]: Store serial: [18285004]
