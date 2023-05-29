@@ -14357,3 +14357,56 @@ EOFError: EOF read where object expected
 [2023-05-29 19:07:30] INFO root fetch - main [MainThread]: End processing [matchmakereft]: success
 [2023-05-29 19:07:39] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-29 19:07:39] INFO root fetch - main [MainThread]: Store serial: [18292226]
+[2023-05-29 19:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292226]
+[2023-05-29 19:12:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdxbasics
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rembg
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pautobot
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhOn
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: embedbase
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: econuker
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: human-protocol-basemodels
+[2023-05-29 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: perming
+[2023-05-29 19:12:50] INFO root fetch - processPackages [embedbase]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-29 19:12:50] INFO root fetch - processPackages [rembg]: New version: [2.0.38] Old Version: [2.0.37]
+[2023-05-29 19:12:50] INFO root fetch - processPackages [econuker]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-29 19:12:50] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 19:12:50] WARNING root fetch - processPackages [perming]: Skipping, unable to determine old version
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pautobot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 19:12:50] INFO root fetch - main [MainThread]: End processing [perming] error
+[2023-05-29 19:12:50] INFO root fetch - processPackages [human-protocol-basemodels]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 19:12:50] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230529.7.58.347034] Old Version: [20230529.17.8.312329]
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pautobot]: Downloading https://files.pythonhosted.org/packages/75/9d/7bb0656c384a6ab936a2d7de02cb1309b156e437762cb9e5da98e571bafd/pautobot-0.0.1.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/28/aa/d2b7e915bdac117dd141d6d992bf39e054609f0bc69c0dd0e2c96315030a/certora-cli-alpha-master-20230529.17.8.312329.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [human-protocol-basemodels]: Downloading https://files.pythonhosted.org/packages/28/2d/fd9d0c954d20c4e32ad7c33075840b1f65a2066b7ed3ed717568356c9d95/human-protocol-basemodels-1.1.4.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [rembg]: Downloading https://files.pythonhosted.org/packages/a1/3c/a08eb9b8ee1bbb6fd8c4eabce17b79b570de858442b63f3a78b5ec21abe0/rembg-2.0.37.tar.gz
+[2023-05-29 19:12:50] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39091084>=10485760
+[2023-05-29 19:12:50] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-29 19:12:50] INFO root fetch - processPackages [econuker]: Downloading https://files.pythonhosted.org/packages/0c/84/3e018bec9fd3063bc8de55772eb409539ad2d23b489f189757a163ce81f4/econuker-1.0.8.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [human-protocol-basemodels]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [human-protocol-basemodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/human-protocol-basemodels-1.1.3.tar.gz tmp/human-protocol-basemodels-1.1.4.tar.gz --markdown 20230529/h/human-protocol-basemodels/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-29 19:12:50] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/1a/77/4e488989f188d252ab2d99e90a6cea892facd51aa033d68796856b6e1bdb/embedbase-1.2.2.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [econuker]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [econuker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econuker-1.0.7.tar.gz tmp/econuker-1.0.8.tar.gz --markdown 20230529/e/econuker/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-29 19:12:50] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230529/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230529/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pautobot]: Downloading https://files.pythonhosted.org/packages/08/a7/019a8f19cd769b6730de22a195c15f6516a25f59d03afe0585dd641df319/pautobot-0.0.2.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [embedbase]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [embedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase-1.2.1.tar.gz tmp/embedbase-1.2.2.tar.gz --markdown 20230529/e/embedbase/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-29 19:12:50] INFO root fetch - processPackages [rembg]: Downloading https://files.pythonhosted.org/packages/b5/88/87ebfd60dc0fe72e00b5bef1486c6b52d1527c8f0b2f6effa00a17e51fee/rembg-2.0.38.tar.gz
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pautobot]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [pautobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pautobot-0.0.1.tar.gz tmp/pautobot-0.0.2.tar.gz --markdown 20230529/p/pautobot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 19:12:50] INFO root fetch - processPackages [rembg]: executing diffoscope
+[2023-05-29 19:12:50] INFO root fetch - processPackages [rembg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rembg-2.0.37.tar.gz tmp/rembg-2.0.38.tar.gz --markdown 20230529/r/rembg/2.0.37-2.0.38/diff.md --exclude *.pyd
+[2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [human-protocol-basemodels]: success
+[2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [econuker]: success
+[2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [embedbase]: success
+[2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [rembg]: success
+[2023-05-29 19:12:54] INFO root fetch - main [MainThread]: End processing [pautobot]: success
+[2023-05-29 19:12:54] INFO root fetch - main [MainThread]: Store serial: [18292259]

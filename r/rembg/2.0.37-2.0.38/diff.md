@@ -1,0 +1,3005 @@
+# Comparing `tmp/rembg-2.0.37.tar.gz` & `tmp/rembg-2.0.38.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "rembg-2.0.37.tar", last modified: Tue May 16 01:12:04 2023, max compression
++gzip compressed data, was "rembg-2.0.38.tar", last modified: Mon May 29 17:08:31 2023, max compression
+```
+
+## Comparing `rembg-2.0.37.tar` & `rembg-2.0.38.tar`
+
+### file list
+
+```diff
+@@ -1,40 +1,41 @@
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-16 01:12:04.186726 rembg-2.0.37/
+--rw-r--r--   0 runner    (1001) docker     (123)     1069 2023-05-16 01:11:53.000000 rembg-2.0.37/LICENSE.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      201 2023-05-16 01:11:53.000000 rembg-2.0.37/MANIFEST.in
+--rw-r--r--   0 runner    (1001) docker     (123)    14924 2023-05-16 01:12:04.186726 rembg-2.0.37/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)    13904 2023-05-16 01:11:53.000000 rembg-2.0.37/README.md
+--rw-r--r--   0 runner    (1001) docker     (123)      399 2023-05-16 01:11:53.000000 rembg-2.0.37/pyproject.toml
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-16 01:12:04.186726 rembg-2.0.37/rembg/
+--rw-r--r--   0 runner    (1001) docker     (123)      138 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (123)      498 2023-05-16 01:12:04.186726 rembg-2.0.37/rembg/_version.py
+--rw-r--r--   0 runner    (1001) docker     (123)     5599 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/bg.py
+--rw-r--r--   0 runner    (1001) docker     (123)      255 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/cli.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-16 01:12:04.186726 rembg-2.0.37/rembg/commands/
+--rw-r--r--   0 runner    (1001) docker     (123)      469 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/commands/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (123)     3670 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/commands/b_command.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1923 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/commands/i_command.py
+--rw-r--r--   0 runner    (1001) docker     (123)     4073 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/commands/p_command.py
+--rw-r--r--   0 runner    (1001) docker     (123)     7563 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/commands/s_command.py
+--rw-r--r--   0 runner    (1001) docker     (123)      646 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/session_factory.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-16 01:12:04.186726 rembg-2.0.37/rembg/sessions/
+--rw-r--r--   0 runner    (1001) docker     (123)      693 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1983 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/base.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1348 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/dis.py
+--rw-r--r--   0 runner    (1001) docker     (123)     5334 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/sam.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1366 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/silueta.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1360 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/u2net.py
+--rw-r--r--   0 runner    (1001) docker     (123)     2201 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/u2net_cloth_seg.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1388 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/u2net_human_seg.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1363 2023-05-16 01:11:53.000000 rembg-2.0.37/rembg/sessions/u2netp.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-16 01:12:04.182726 rembg-2.0.37/rembg.egg-info/
+--rw-r--r--   0 runner    (1001) docker     (123)    14924 2023-05-16 01:12:04.000000 rembg-2.0.37/rembg.egg-info/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)      757 2023-05-16 01:12:04.000000 rembg-2.0.37/rembg.egg-info/SOURCES.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-16 01:12:04.000000 rembg-2.0.37/rembg.egg-info/dependency_links.txt
+--rw-r--r--   0 runner    (1001) docker     (123)       42 2023-05-16 01:12:04.000000 rembg-2.0.37/rembg.egg-info/entry_points.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      337 2023-05-16 01:12:04.000000 rembg-2.0.37/rembg.egg-info/requires.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        6 2023-05-16 01:12:04.000000 rembg-2.0.37/rembg.egg-info/top_level.txt
+--rw-r--r--   0 runner    (1001) docker     (123)       24 2023-05-16 01:11:53.000000 rembg-2.0.37/requirements-gpu.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      306 2023-05-16 01:11:53.000000 rembg-2.0.37/requirements.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      235 2023-05-16 01:12:04.186726 rembg-2.0.37/setup.cfg
+--rw-r--r--   0 runner    (1001) docker     (123)     2119 2023-05-16 01:11:53.000000 rembg-2.0.37/setup.py
+--rw-r--r--   0 runner    (1001) docker     (123)    80049 2023-05-16 01:11:53.000000 rembg-2.0.37/versioneer.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-29 17:08:31.911709 rembg-2.0.38/
++-rw-r--r--   0 runner    (1001) docker     (123)     1069 2023-05-29 17:08:15.000000 rembg-2.0.38/LICENSE.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      201 2023-05-29 17:08:15.000000 rembg-2.0.38/MANIFEST.in
++-rw-r--r--   0 runner    (1001) docker     (123)    13388 2023-05-29 17:08:31.911709 rembg-2.0.38/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)    12368 2023-05-29 17:08:15.000000 rembg-2.0.38/README.md
++-rw-r--r--   0 runner    (1001) docker     (123)      399 2023-05-29 17:08:15.000000 rembg-2.0.38/pyproject.toml
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-29 17:08:31.911709 rembg-2.0.38/rembg/
++-rw-r--r--   0 runner    (1001) docker     (123)      138 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (123)      498 2023-05-29 17:08:31.911709 rembg-2.0.38/rembg/_version.py
++-rw-r--r--   0 runner    (1001) docker     (123)     5599 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/bg.py
++-rw-r--r--   0 runner    (1001) docker     (123)      255 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/cli.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-29 17:08:31.907709 rembg-2.0.38/rembg/commands/
++-rw-r--r--   0 runner    (1001) docker     (123)      469 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/commands/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (123)     3670 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/commands/b_command.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1923 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/commands/i_command.py
++-rw-r--r--   0 runner    (1001) docker     (123)     4073 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/commands/p_command.py
++-rw-r--r--   0 runner    (1001) docker     (123)     7563 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/commands/s_command.py
++-rw-r--r--   0 runner    (1001) docker     (123)      679 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/session_factory.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-29 17:08:31.911709 rembg-2.0.38/rembg/sessions/
++-rw-r--r--   0 runner    (1001) docker     (123)      693 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2336 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/base.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1336 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/dis_anime.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1348 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/dis_general_use.py
++-rw-r--r--   0 runner    (1001) docker     (123)     5334 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/sam.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1366 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/silueta.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1360 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/u2net.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2201 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/u2net_cloth_seg.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1388 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/u2net_human_seg.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1363 2023-05-29 17:08:15.000000 rembg-2.0.38/rembg/sessions/u2netp.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-29 17:08:31.903709 rembg-2.0.38/rembg.egg-info/
++-rw-r--r--   0 runner    (1001) docker     (123)    13388 2023-05-29 17:08:31.000000 rembg-2.0.38/rembg.egg-info/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)      797 2023-05-29 17:08:31.000000 rembg-2.0.38/rembg.egg-info/SOURCES.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-29 17:08:31.000000 rembg-2.0.38/rembg.egg-info/dependency_links.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       42 2023-05-29 17:08:31.000000 rembg-2.0.38/rembg.egg-info/entry_points.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      337 2023-05-29 17:08:31.000000 rembg-2.0.38/rembg.egg-info/requires.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        6 2023-05-29 17:08:31.000000 rembg-2.0.38/rembg.egg-info/top_level.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       24 2023-05-29 17:08:15.000000 rembg-2.0.38/requirements-gpu.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      306 2023-05-29 17:08:15.000000 rembg-2.0.38/requirements.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      235 2023-05-29 17:08:31.911709 rembg-2.0.38/setup.cfg
++-rw-r--r--   0 runner    (1001) docker     (123)     2119 2023-05-29 17:08:15.000000 rembg-2.0.38/setup.py
++-rw-r--r--   0 runner    (1001) docker     (123)    80049 2023-05-29 17:08:15.000000 rembg-2.0.38/versioneer.py
+```
+
+### Comparing `rembg-2.0.37/LICENSE.txt` & `rembg-2.0.38/LICENSE.txt`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/PKG-INFO` & `rembg-2.0.38/PKG-INFO`
+
+ * *Files 11% similar despite different names*
+
+```diff
+@@ -1,11 +1,11 @@
+ 00000000: 4d65 7461 6461 7461 2d56 6572 7369 6f6e  Metadata-Version
+ 00000010: 3a20 322e 310a 4e61 6d65 3a20 7265 6d62  : 2.1.Name: remb
+ 00000020: 670a 5665 7273 696f 6e3a 2032 2e30 2e33  g.Version: 2.0.3
+-00000030: 370a 5375 6d6d 6172 793a 2052 656d 6f76  7.Summary: Remov
++00000030: 380a 5375 6d6d 6172 793a 2052 656d 6f76  8.Summary: Remov
+ 00000040: 6520 696d 6167 6520 6261 636b 6772 6f75  e image backgrou
+ 00000050: 6e64 0a48 6f6d 652d 7061 6765 3a20 6874  nd.Home-page: ht
+ 00000060: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
+ 00000070: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
+ 00000080: 6267 0a41 7574 686f 723a 2044 616e 6965  bg.Author: Danie
+ 00000090: 6c20 4761 7469 730a 4175 7468 6f72 2d65  l Gatis.Author-e
+ 000000a0: 6d61 696c 3a20 6461 6e69 656c 6761 7469  mail: danielgati
+@@ -237,697 +237,601 @@
+ 00000ec0: 2f3e 0a20 203c 696d 6720 7372 633d 2268  />.  <img src="h
+ 00000ed0: 7474 7073 3a2f 2f72 6177 2e67 6974 6875  ttps://raw.githu
+ 00000ee0: 6275 7365 7263 6f6e 7465 6e74 2e63 6f6d  busercontent.com
+ 00000ef0: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
+ 00000f00: 6267 2f6d 6173 7465 722f 6578 616d 706c  bg/master/exampl
+ 00000f10: 6573 2f67 6972 6c2d 332e 6f75 742e 706e  es/girl-3.out.pn
+ 00000f20: 6722 2077 6964 7468 3d22 3130 3022 202f  g" width="100" /
+-00000f30: 3e0a 3c2f 703e 0a0a 2a2a 4966 2074 6869  >.</p>..**If thi
+-00000f40: 7320 7072 6f6a 6563 7420 6861 7320 6865  s project has he
+-00000f50: 6c70 6564 2079 6f75 2c20 706c 6561 7365  lped you, please
+-00000f60: 2063 6f6e 7369 6465 7220 6d61 6b69 6e67   consider making
+-00000f70: 2061 205b 646f 6e61 7469 6f6e 5d28 6874   a [donation](ht
+-00000f80: 7470 733a 2f2f 7777 772e 6275 796d 6561  tps://www.buymea
+-00000f90: 636f 6666 6565 2e63 6f6d 2f64 616e 6965  coffee.com/danie
+-00000fa0: 6c67 6174 6973 292e 2a2a 0a0a 2323 2053  lgatis).**..## S
+-00000fb0: 706f 6e73 6f72 0a0a 3c74 6162 6c65 3e0a  ponsor..<table>.
+-00000fc0: 2020 3c74 723e 0a20 2020 203c 7464 2061    <tr>.    <td a
+-00000fd0: 6c69 676e 3d22 6365 6e74 6572 2220 7665  lign="center" ve
+-00000fe0: 7274 6963 616c 2d61 6c69 676e 3d22 6365  rtical-align="ce
+-00000ff0: 6e74 6572 223e 0a20 2020 2020 203c 6120  nter">.      <a 
+-00001000: 6872 6566 3d22 6874 7470 733a 2f2f 7068  href="https://ph
+-00001010: 6f74 6f72 6f6f 6d2e 636f 6d2f 6170 692f  otoroom.com/api/
+-00001020: 7265 6d6f 7665 2d62 6163 6b67 726f 756e  remove-backgroun
+-00001030: 643f 7574 6d5f 736f 7572 6365 3d72 656d  d?utm_source=rem
+-00001040: 6267 2675 746d 5f6d 6564 6975 6d3d 6769  bg&utm_medium=gi
+-00001050: 7468 7562 5f77 6562 7061 6765 2675 746d  thub_webpage&utm
+-00001060: 5f63 616d 7061 6967 6e3d 7370 6f6e 736f  _campaign=sponso
+-00001070: 7222 203e 0a20 2020 2020 2020 203c 696d  r" >.        <im
+-00001080: 6720 7372 633d 2268 7474 7073 3a2f 2f66  g src="https://f
+-00001090: 6f6e 742d 6364 6e2e 7068 6f74 6f72 6f6f  ont-cdn.photoroo
+-000010a0: 6d2e 636f 6d2f 6d65 6469 612f 6170 692d  m.com/media/api-
+-000010b0: 6c6f 676f 2e70 6e67 2220 7769 6474 683d  logo.png" width=
+-000010c0: 2231 3230 7078 3b22 2061 6c74 3d22 556e  "120px;" alt="Un
+-000010d0: 7370 6c61 7368 2220 2f3e 0a20 2020 2020  splash" />.     
+-000010e0: 203c 2f61 3e0a 2020 2020 3c2f 7464 3e0a   </a>.    </td>.
+-000010f0: 2020 2020 3c74 6420 616c 6967 6e3d 2263      <td align="c
+-00001100: 656e 7465 7222 2076 6572 7469 6361 6c2d  enter" vertical-
+-00001110: 616c 6967 6e3d 2263 656e 7465 7222 3e0a  align="center">.
+-00001120: 2020 2020 2020 3c62 3e50 686f 746f 526f        <b>PhotoRo
+-00001130: 6f6d 2052 656d 6f76 6520 4261 636b 6772  om Remove Backgr
+-00001140: 6f75 6e64 2041 5049 3c2f 623e 0a20 2020  ound API</b>.   
+-00001150: 2020 203c 6272 202f 3e0a 2020 2020 2020     <br />.      
+-00001160: 3c61 2068 7265 663d 2268 7474 7073 3a2f  <a href="https:/
+-00001170: 2f70 686f 746f 726f 6f6d 2e63 6f6d 2f61  /photoroom.com/a
+-00001180: 7069 2f72 656d 6f76 652d 6261 636b 6772  pi/remove-backgr
+-00001190: 6f75 6e64 3f75 746d 5f73 6f75 7263 653d  ound?utm_source=
+-000011a0: 7265 6d62 6726 7574 6d5f 6d65 6469 756d  rembg&utm_medium
+-000011b0: 3d67 6974 6875 625f 7765 6270 6167 6526  =github_webpage&
+-000011c0: 7574 6d5f 6361 6d70 6169 676e 3d73 706f  utm_campaign=spo
+-000011d0: 6e73 6f72 223e 6874 7470 733a 2f2f 7068  nsor">https://ph
+-000011e0: 6f74 6f72 6f6f 6d2e 636f 6d2f 6170 693c  otoroom.com/api<
+-000011f0: 2f61 3e0a 2020 2020 2020 3c62 7220 2f3e  /a>.      <br />
+-00001200: 0a20 2020 2020 203c 7020 7769 6474 683d  .      <p width=
+-00001210: 2232 3030 7078 223e 0a20 2020 2020 2020  "200px">.       
+-00001220: 2046 6173 7420 616e 6420 6163 6375 7261   Fast and accura
+-00001230: 7465 2062 6163 6b67 726f 756e 6420 7265  te background re
+-00001240: 6d6f 7665 7220 4150 493c 6272 2f3e 0a20  mover API<br/>. 
+-00001250: 2020 2020 203c 2f70 3e0a 2020 2020 3c2f       </p>.    </
+-00001260: 7464 3e0a 2020 3c2f 7472 3e0a 3c2f 7461  td>.  </tr>.</ta
+-00001270: 626c 653e 0a0a 2323 2052 6571 7569 7265  ble>..## Require
+-00001280: 6d65 6e74 730a 0a60 6060 0a70 7974 686f  ments..```.pytho
+-00001290: 6e3a 203e 332e 372c 203c 332e 3131 0a60  n: >3.7, <3.11.`
+-000012a0: 6060 0a0a 2323 2049 6e73 7461 6c6c 6174  ``..## Installat
+-000012b0: 696f 6e0a 0a43 5055 2073 7570 706f 7274  ion..CPU support
+-000012c0: 3a0a 0a60 6060 6261 7368 0a70 6970 2069  :..```bash.pip i
+-000012d0: 6e73 7461 6c6c 2072 656d 6267 0a60 6060  nstall rembg.```
+-000012e0: 0a0a 4750 5520 7375 7070 6f72 743a 0a0a  ..GPU support:..
+-000012f0: 4669 7273 7420 6f66 2061 6c6c 2c20 796f  First of all, yo
+-00001300: 7520 6e65 6564 2074 6f20 6368 6563 6b20  u need to check 
+-00001310: 6966 2079 6f75 7220 7379 7374 656d 2073  if your system s
+-00001320: 7570 706f 7274 7320 7468 6520 606f 6e6e  upports the `onn
+-00001330: 7872 756e 7469 6d65 2d67 7075 602e 0a0a  xruntime-gpu`...
+-00001340: 476f 2074 6f20 6874 7470 733a 2f2f 6f6e  Go to https://on
+-00001350: 6e78 7275 6e74 696d 652e 6169 2061 6e64  nxruntime.ai and
+-00001360: 2063 6865 636b 2074 6865 2069 6e73 7461   check the insta
+-00001370: 6c6c 6174 696f 6e20 6d61 7472 6978 2e0a  llation matrix..
+-00001380: 0a3c 7020 7374 796c 653d 2264 6973 706c  .<p style="displ
+-00001390: 6179 3a20 666c 6578 3b61 6c69 676e 2d69  ay: flex;align-i
+-000013a0: 7465 6d73 3a20 6365 6e74 6572 3b6a 7573  tems: center;jus
+-000013b0: 7469 6679 2d63 6f6e 7465 6e74 3a20 6365  tify-content: ce
+-000013c0: 6e74 6572 3b22 3e0a 2020 3c69 6d67 2073  nter;">.  <img s
+-000013d0: 7263 3d22 6874 7470 733a 2f2f 7261 772e  rc="https://raw.
+-000013e0: 6769 7468 7562 7573 6572 636f 6e74 656e  githubuserconten
+-000013f0: 742e 636f 6d2f 6461 6e69 656c 6761 7469  t.com/danielgati
+-00001400: 732f 7265 6d62 672f 6d61 7374 6572 2f6f  s/rembg/master/o
+-00001410: 6e6e 7872 756e 7469 6d65 2d69 6e73 7461  nnxruntime-insta
+-00001420: 6c6c 6174 696f 6e2d 6d61 7472 6978 2e70  llation-matrix.p
+-00001430: 6e67 2220 7769 6474 683d 2234 3030 2220  ng" width="400" 
+-00001440: 2f3e 0a3c 2f70 3e0a 0a49 6620 7965 732c  />.</p>..If yes,
+-00001450: 206a 7573 7420 7275 6e3a 0a0a 6060 6062   just run:..```b
+-00001460: 6173 680a 7069 7020 696e 7374 616c 6c20  ash.pip install 
+-00001470: 7265 6d62 675b 6770 755d 0a60 6060 0a0a  rembg[gpu].```..
+-00001480: 2323 2055 7361 6765 2061 7320 6120 636c  ## Usage as a cl
+-00001490: 690a 0a41 6674 6572 2074 6865 2069 6e73  i..After the ins
+-000014a0: 7461 6c6c 6174 696f 6e20 7374 6570 2079  tallation step y
+-000014b0: 6f75 2063 616e 2075 7365 2072 656d 6267  ou can use rembg
+-000014c0: 206a 7573 7420 7479 7069 6e67 2060 7265   just typing `re
+-000014d0: 6d62 6760 2069 6e20 796f 7572 2074 6572  mbg` in your ter
+-000014e0: 6d69 6e61 6c20 7769 6e64 6f77 2e0a 0a54  minal window...T
+-000014f0: 6865 2060 7265 6d62 6760 2063 6f6d 6d61  he `rembg` comma
+-00001500: 6e64 2068 6173 2034 2073 7562 636f 6d6d  nd has 4 subcomm
+-00001510: 616e 6473 2c20 6f6e 6520 666f 7220 6561  ands, one for ea
+-00001520: 6368 2069 6e70 7574 2074 7970 653a 0a2d  ch input type:.-
+-00001530: 2060 6960 2066 6f72 2066 696c 6573 0a2d   `i` for files.-
+-00001540: 2060 7060 2066 6f72 2066 6f6c 6465 7273   `p` for folders
+-00001550: 0a2d 2060 7360 2066 6f72 2068 7474 7020  .- `s` for http 
+-00001560: 7365 7276 6572 0a2d 2060 6260 2066 6f72  server.- `b` for
+-00001570: 2052 4742 3234 2070 6978 656c 2062 696e   RGB24 pixel bin
+-00001580: 6172 7920 7374 7265 616d 0a0a 596f 7520  ary stream..You 
+-00001590: 6361 6e20 6765 7420 6865 6c70 2061 626f  can get help abo
+-000015a0: 7574 2074 6865 206d 6169 6e20 636f 6d6d  ut the main comm
+-000015b0: 616e 6420 7573 696e 673a 0a0a 6060 600a  and using:..```.
+-000015c0: 7265 6d62 6720 2d2d 6865 6c70 0a60 6060  rembg --help.```
+-000015d0: 0a0a 4173 2077 656c 6c2c 2061 626f 7574  ..As well, about
+-000015e0: 2061 6c6c 2074 6865 2073 7562 636f 6d6d   all the subcomm
+-000015f0: 616e 6473 2075 7369 6e67 3a0a 0a60 6060  ands using:..```
+-00001600: 0a72 656d 6267 203c 434f 4d4d 414e 443e  .rembg <COMMAND>
+-00001610: 202d 2d68 656c 700a 6060 600a 0a23 2323   --help.```..###
+-00001620: 2072 656d 6267 2060 6960 0a0a 5573 6564   rembg `i`..Used
+-00001630: 2077 6865 6e20 696e 7075 7420 616e 6420   when input and 
+-00001640: 6f75 7470 7574 2061 7265 2066 696c 6573  output are files
+-00001650: 2e0a 0a52 656d 6f76 6520 7468 6520 6261  ...Remove the ba
+-00001660: 636b 6772 6f75 6e64 2066 726f 6d20 6120  ckground from a 
+-00001670: 7265 6d6f 7465 2069 6d61 6765 0a0a 6060  remote image..``
+-00001680: 600a 6375 726c 202d 7320 6874 7470 3a2f  `.curl -s http:/
+-00001690: 2f69 6e70 7574 2e70 6e67 207c 2072 656d  /input.png | rem
+-000016a0: 6267 2069 203e 206f 7574 7075 742e 706e  bg i > output.pn
+-000016b0: 670a 6060 600a 0a52 656d 6f76 6520 7468  g.```..Remove th
+-000016c0: 6520 6261 636b 6772 6f75 6e64 2066 726f  e background fro
+-000016d0: 6d20 6120 6c6f 6361 6c20 6669 6c65 0a0a  m a local file..
+-000016e0: 6060 600a 7265 6d62 6720 6920 7061 7468  ```.rembg i path
+-000016f0: 2f74 6f2f 696e 7075 742e 706e 6720 7061  /to/input.png pa
+-00001700: 7468 2f74 6f2f 6f75 7470 7574 2e70 6e67  th/to/output.png
+-00001710: 0a60 6060 0a0a 5265 6d6f 7665 2074 6865  .```..Remove the
+-00001720: 2062 6163 6b67 726f 756e 6420 7370 6563   background spec
+-00001730: 6966 7969 6e67 2061 206d 6f64 656c 0a0a  ifying a model..
+-00001740: 6060 600a 7265 6d62 6720 6920 2d6d 2075  ```.rembg i -m u
+-00001750: 326e 6574 7020 7061 7468 2f74 6f2f 696e  2netp path/to/in
+-00001760: 7075 742e 706e 6720 7061 7468 2f74 6f2f  put.png path/to/
+-00001770: 6f75 7470 7574 2e70 6e67 0a60 6060 0a0a  output.png.```..
+-00001780: 5265 6d6f 7665 2074 6865 2062 6163 6b67  Remove the backg
+-00001790: 726f 756e 6420 7265 7475 726e 696e 6720  round returning 
+-000017a0: 6f6e 6c79 2074 6865 206d 6173 6b0a 0a60  only the mask..`
+-000017b0: 6060 0a72 656d 6267 2069 202d 6f6d 2070  ``.rembg i -om p
+-000017c0: 6174 682f 746f 2f69 6e70 7574 2e70 6e67  ath/to/input.png
+-000017d0: 2070 6174 682f 746f 2f6f 7574 7075 742e   path/to/output.
+-000017e0: 706e 670a 6060 600a 0a0a 5265 6d6f 7665  png.```...Remove
+-000017f0: 2074 6865 2062 6163 6b67 726f 756e 6420   the background 
+-00001800: 6170 706c 7969 6e67 2061 6e20 616c 7068  applying an alph
+-00001810: 6120 6d61 7474 696e 670a 0a60 6060 0a72  a matting..```.r
+-00001820: 656d 6267 2069 202d 6120 7061 7468 2f74  embg i -a path/t
+-00001830: 6f2f 696e 7075 742e 706e 6720 7061 7468  o/input.png path
+-00001840: 2f74 6f2f 6f75 7470 7574 2e70 6e67 0a60  /to/output.png.`
+-00001850: 6060 0a0a 5061 7373 696e 6720 6578 7472  ``..Passing extr
+-00001860: 6173 2070 6172 616d 6574 6572 730a 0a60  as parameters..`
+-00001870: 6060 0a72 656d 6267 2069 202d 6d20 7361  ``.rembg i -m sa
+-00001880: 6d20 2d78 2027 7b22 696e 7075 745f 6c61  m -x '{"input_la
+-00001890: 6265 6c73 223a 205b 315d 2c20 2269 6e70  bels": [1], "inp
+-000018a0: 7574 5f70 6f69 6e74 7322 3a20 5b5b 3130  ut_points": [[10
+-000018b0: 302c 3130 305d 5d7d 2720 7061 7468 2f74  0,100]]}' path/t
+-000018c0: 6f2f 696e 7075 742e 706e 6720 7061 7468  o/input.png path
+-000018d0: 2f74 6f2f 6f75 7470 7574 2e70 6e67 0a60  /to/output.png.`
+-000018e0: 6060 0a0a 2323 2320 7265 6d62 6720 6070  ``..### rembg `p
+-000018f0: 600a 0a55 7365 6420 7768 656e 2069 6e70  `..Used when inp
+-00001900: 7574 2061 6e64 206f 7574 7075 7420 6172  ut and output ar
+-00001910: 6520 666f 6c64 6572 732e 0a0a 5265 6d6f  e folders...Remo
+-00001920: 7665 2074 6865 2062 6163 6b67 726f 756e  ve the backgroun
+-00001930: 6420 6672 6f6d 2061 6c6c 2069 6d61 6765  d from all image
+-00001940: 7320 696e 2061 2066 6f6c 6465 720a 0a60  s in a folder..`
+-00001950: 6060 0a72 656d 6267 2070 2070 6174 682f  ``.rembg p path/
+-00001960: 746f 2f69 6e70 7574 2070 6174 682f 746f  to/input path/to
+-00001970: 2f6f 7574 7075 740a 6060 600a 0a53 616d  /output.```..Sam
+-00001980: 6520 6173 2062 6566 6f72 652c 2062 7574  e as before, but
+-00001990: 2077 6174 6368 696e 6720 666f 7220 6e65   watching for ne
+-000019a0: 772f 6368 616e 6765 6420 6669 6c65 7320  w/changed files 
+-000019b0: 746f 2070 726f 6365 7373 0a0a 6060 600a  to process..```.
+-000019c0: 7265 6d62 6720 7020 2d77 2070 6174 682f  rembg p -w path/
+-000019d0: 746f 2f69 6e70 7574 2070 6174 682f 746f  to/input path/to
+-000019e0: 2f6f 7574 7075 740a 6060 600a 0a23 2323  /output.```..###
+-000019f0: 2072 656d 6267 2060 7360 0a0a 5573 6564   rembg `s`..Used
+-00001a00: 2074 6f20 7374 6172 7420 6874 7470 2073   to start http s
+-00001a10: 6572 7665 722e 0a0a 546f 2073 6565 2074  erver...To see t
+-00001a20: 6865 2063 6f6d 706c 6574 6520 656e 6470  he complete endp
+-00001a30: 6f69 6e74 7320 646f 6375 6d65 6e74 6174  oints documentat
+-00001a40: 696f 6e2c 2067 6f20 746f 3a20 6068 7474  ion, go to: `htt
+-00001a50: 703a 2f2f 6c6f 6361 6c68 6f73 743a 3530  p://localhost:50
+-00001a60: 3030 2f64 6f63 7360 2e0a 0a52 656d 6f76  00/docs`...Remov
+-00001a70: 6520 7468 6520 6261 636b 6772 6f75 6e64  e the background
+-00001a80: 2066 726f 6d20 616e 2069 6d61 6765 2075   from an image u
+-00001a90: 726c 0a0a 6060 600a 6375 726c 202d 7320  rl..```.curl -s 
+-00001aa0: 2268 7474 703a 2f2f 6c6f 6361 6c68 6f73  "http://localhos
+-00001ab0: 743a 3530 3030 2f3f 7572 6c3d 6874 7470  t:5000/?url=http
+-00001ac0: 3a2f 2f69 6e70 7574 2e70 6e67 2220 2d6f  ://input.png" -o
+-00001ad0: 206f 7574 7075 742e 706e 670a 6060 600a   output.png.```.
+-00001ae0: 0a52 656d 6f76 6520 7468 6520 6261 636b  .Remove the back
+-00001af0: 6772 6f75 6e64 2066 726f 6d20 616e 2075  ground from an u
+-00001b00: 706c 6f61 6465 6420 696d 6167 650a 0a60  ploaded image..`
+-00001b10: 6060 0a63 7572 6c20 2d73 202d 4620 6669  ``.curl -s -F fi
+-00001b20: 6c65 3d40 2f70 6174 682f 746f 2f69 6e70  le=@/path/to/inp
+-00001b30: 7574 2e6a 7067 2022 6874 7470 3a2f 2f6c  ut.jpg "http://l
+-00001b40: 6f63 616c 686f 7374 3a35 3030 3022 2020  ocalhost:5000"  
+-00001b50: 2d6f 206f 7574 7075 742e 706e 670a 6060  -o output.png.``
+-00001b60: 600a 0a23 2323 2072 656d 6267 2060 6260  `..### rembg `b`
+-00001b70: 0a0a 5072 6f63 6573 7320 6120 7365 7175  ..Process a sequ
+-00001b80: 656e 6365 206f 6620 5247 4232 3420 696d  ence of RGB24 im
+-00001b90: 6167 6573 2066 726f 6d20 7374 6469 6e2e  ages from stdin.
+-00001ba0: 2054 6869 7320 6973 2069 6e74 656e 6465   This is intende
+-00001bb0: 6420 746f 2062 6520 7573 6564 2077 6974  d to be used wit
+-00001bc0: 6820 616e 6f74 6865 7220 7072 6f67 7261  h another progra
+-00001bd0: 6d2c 2073 7563 6820 6173 2046 464d 5045  m, such as FFMPE
+-00001be0: 472c 2074 6861 7420 6f75 7470 7574 7320  G, that outputs 
+-00001bf0: 5247 4232 3420 7069 7865 6c20 6461 7461  RGB24 pixel data
+-00001c00: 2074 6f20 7374 646f 7574 2c20 7768 6963   to stdout, whic
+-00001c10: 6820 6973 2070 6970 6564 2069 6e74 6f20  h is piped into 
+-00001c20: 7468 6520 7374 6469 6e20 6f66 2074 6869  the stdin of thi
+-00001c30: 7320 7072 6f67 7261 6d2c 2061 6c74 686f  s program, altho
+-00001c40: 7567 6820 6e6f 7468 696e 6720 7072 6576  ugh nothing prev
+-00001c50: 656e 7473 2079 6f75 2066 726f 6d20 6d61  ents you from ma
+-00001c60: 6e75 616c 6c79 2074 7970 696e 6720 696e  nually typing in
+-00001c70: 2069 6d61 6765 7320 6174 2073 7464 696e   images at stdin
+-00001c80: 2e0a 0a60 6060 0a72 656d 6267 2062 2069  ...```.rembg b i
+-00001c90: 6d61 6765 5f77 6964 7468 2069 6d61 6765  mage_width image
+-00001ca0: 5f68 6569 6768 7420 2d6f 206f 7574 7075  _height -o outpu
+-00001cb0: 745f 7370 6563 6966 6965 720a 6060 600a  t_specifier.```.
+-00001cc0: 0a41 7267 756d 656e 7473 3a0a 0a2d 2069  .Arguments:..- i
+-00001cd0: 6d61 6765 5f77 6964 7468 203a 2077 6964  mage_width : wid
+-00001ce0: 7468 206f 6620 696e 7075 7420 696d 6167  th of input imag
+-00001cf0: 6528 7329 0a2d 2069 6d61 6765 5f68 6569  e(s).- image_hei
+-00001d00: 6768 7420 3a20 6865 6967 6874 206f 6620  ght : height of 
+-00001d10: 696e 7075 7420 696d 6167 6528 7329 0a2d  input image(s).-
+-00001d20: 206f 7574 7075 745f 7370 6563 6966 6965   output_specifie
+-00001d30: 723a 2070 7269 6e74 662d 7374 796c 6520  r: printf-style 
+-00001d40: 7370 6563 6966 6965 7220 666f 7220 6f75  specifier for ou
+-00001d50: 7470 7574 2066 696c 656e 616d 6573 2c20  tput filenames, 
+-00001d60: 666f 7220 6578 616d 706c 6520 6966 2060  for example if `
+-00001d70: 6f75 7470 7574 2d25 3033 752e 706e 6760  output-%03u.png`
+-00001d80: 2c20 7468 656e 206f 7574 7075 7420 6669  , then output fi
+-00001d90: 6c65 7320 7769 6c6c 2062 6520 6e61 6d65  les will be name
+-00001da0: 6420 606f 7574 7075 742d 3030 302e 706e  d `output-000.pn
+-00001db0: 6760 2c20 606f 7574 7075 742d 3030 312e  g`, `output-001.
+-00001dc0: 706e 6760 2c20 606f 7574 7075 742d 3030  png`, `output-00
+-00001dd0: 322e 706e 6760 2c20 6574 632e 204f 7574  2.png`, etc. Out
+-00001de0: 7075 7420 6669 6c65 7320 7769 6c6c 2062  put files will b
+-00001df0: 6520 7361 7665 6420 696e 2050 4e47 2066  e saved in PNG f
+-00001e00: 6f72 6d61 7420 7265 6761 7264 6c65 7373  ormat regardless
+-00001e10: 206f 6620 7468 6520 6578 7465 6e73 696f   of the extensio
+-00001e20: 6e20 7370 6563 6966 6965 642e 2059 6f75  n specified. You
+-00001e30: 2063 616e 206f 6d69 7420 6974 2074 6f20   can omit it to 
+-00001e40: 7772 6974 6520 7265 7375 6c74 7320 746f  write results to
+-00001e50: 2073 7464 6f75 742e 0a0a 4578 616d 706c   stdout...Exampl
+-00001e60: 6520 7573 6167 6520 7769 7468 2046 464d  e usage with FFM
+-00001e70: 5045 473a 0a0a 6060 600a 6666 6d70 6567  PEG:..```.ffmpeg
+-00001e80: 202d 6920 696e 7075 742e 6d70 3420 2d73   -i input.mp4 -s
+-00001e90: 7320 3130 202d 616e 202d 6620 7261 7776  s 10 -an -f rawv
+-00001ea0: 6964 656f 202d 7069 785f 666d 7420 7267  ideo -pix_fmt rg
+-00001eb0: 6232 3420 7069 7065 3a31 207c 2072 656d  b24 pipe:1 | rem
+-00001ec0: 6267 2062 2031 3238 3020 3732 3020 2d6f  bg b 1280 720 -o
+-00001ed0: 2066 6f6c 6465 722f 6f75 7470 7574 2d25   folder/output-%
+-00001ee0: 3033 752e 706e 670a 6060 600a 0a54 6865  03u.png.```..The
+-00001ef0: 2077 6964 7468 2061 6e64 2068 6569 6768   width and heigh
+-00001f00: 7420 7661 6c75 6573 206d 7573 7420 6d61  t values must ma
+-00001f10: 7463 6820 7468 6520 6469 6d65 6e73 696f  tch the dimensio
+-00001f20: 6e20 6f66 206f 7574 7075 7420 696d 6167  n of output imag
+-00001f30: 6573 2066 726f 6d20 4646 4d50 4547 2e20  es from FFMPEG. 
+-00001f40: 4e6f 7465 2066 6f72 2046 464d 5045 472c  Note for FFMPEG,
+-00001f50: 2074 6865 2022 602d 616e 202d 6620 7261   the "`-an -f ra
+-00001f60: 7776 6964 656f 202d 7069 785f 666d 7420  wvideo -pix_fmt 
+-00001f70: 7267 6232 3420 7069 7065 3a31 6022 2070  rgb24 pipe:1`" p
+-00001f80: 6172 7420 6973 2072 6571 7569 7265 6420  art is required 
+-00001f90: 666f 7220 7468 6520 7768 6f6c 6520 7468  for the whole th
+-00001fa0: 696e 6720 746f 2077 6f72 6b2e 0a0a 0a23  ing to work....#
+-00001fb0: 2320 5573 6167 6520 6173 2061 206c 6962  # Usage as a lib
+-00001fc0: 7261 7279 0a0a 496e 7075 7420 616e 6420  rary..Input and 
+-00001fd0: 6f75 7470 7574 2061 7320 6279 7465 730a  output as bytes.
+-00001fe0: 0a60 6060 7079 7468 6f6e 0a66 726f 6d20  .```python.from 
+-00001ff0: 7265 6d62 6720 696d 706f 7274 2072 656d  rembg import rem
+-00002000: 6f76 650a 0a69 6e70 7574 5f70 6174 6820  ove..input_path 
+-00002010: 3d20 2769 6e70 7574 2e70 6e67 270a 6f75  = 'input.png'.ou
+-00002020: 7470 7574 5f70 6174 6820 3d20 276f 7574  tput_path = 'out
+-00002030: 7075 742e 706e 6727 0a0a 7769 7468 206f  put.png'..with o
+-00002040: 7065 6e28 696e 7075 745f 7061 7468 2c20  pen(input_path, 
+-00002050: 2772 6227 2920 6173 2069 3a0a 2020 2020  'rb') as i:.    
+-00002060: 7769 7468 206f 7065 6e28 6f75 7470 7574  with open(output
+-00002070: 5f70 6174 682c 2027 7762 2729 2061 7320  _path, 'wb') as 
+-00002080: 6f3a 0a20 2020 2020 2020 2069 6e70 7574  o:.        input
+-00002090: 203d 2069 2e72 6561 6428 290a 2020 2020   = i.read().    
+-000020a0: 2020 2020 6f75 7470 7574 203d 2072 656d      output = rem
+-000020b0: 6f76 6528 696e 7075 7429 0a20 2020 2020  ove(input).     
+-000020c0: 2020 206f 2e77 7269 7465 286f 7574 7075     o.write(outpu
+-000020d0: 7429 0a60 6060 0a0a 496e 7075 7420 616e  t).```..Input an
+-000020e0: 6420 6f75 7470 7574 2061 7320 6120 5049  d output as a PI
+-000020f0: 4c20 696d 6167 650a 0a60 6060 7079 7468  L image..```pyth
+-00002100: 6f6e 0a66 726f 6d20 7265 6d62 6720 696d  on.from rembg im
+-00002110: 706f 7274 2072 656d 6f76 650a 6672 6f6d  port remove.from
+-00002120: 2050 494c 2069 6d70 6f72 7420 496d 6167   PIL import Imag
+-00002130: 650a 0a69 6e70 7574 5f70 6174 6820 3d20  e..input_path = 
+-00002140: 2769 6e70 7574 2e70 6e67 270a 6f75 7470  'input.png'.outp
+-00002150: 7574 5f70 6174 6820 3d20 276f 7574 7075  ut_path = 'outpu
+-00002160: 742e 706e 6727 0a0a 696e 7075 7420 3d20  t.png'..input = 
+-00002170: 496d 6167 652e 6f70 656e 2869 6e70 7574  Image.open(input
+-00002180: 5f70 6174 6829 0a6f 7574 7075 7420 3d20  _path).output = 
+-00002190: 7265 6d6f 7665 2869 6e70 7574 290a 6f75  remove(input).ou
+-000021a0: 7470 7574 2e73 6176 6528 6f75 7470 7574  tput.save(output
+-000021b0: 5f70 6174 6829 0a60 6060 0a0a 496e 7075  _path).```..Inpu
+-000021c0: 7420 616e 6420 6f75 7470 7574 2061 7320  t and output as 
+-000021d0: 6120 6e75 6d70 7920 6172 7261 790a 0a60  a numpy array..`
+-000021e0: 6060 7079 7468 6f6e 0a66 726f 6d20 7265  ``python.from re
+-000021f0: 6d62 6720 696d 706f 7274 2072 656d 6f76  mbg import remov
+-00002200: 650a 696d 706f 7274 2063 7632 0a0a 696e  e.import cv2..in
+-00002210: 7075 745f 7061 7468 203d 2027 696e 7075  put_path = 'inpu
+-00002220: 742e 706e 6727 0a6f 7574 7075 745f 7061  t.png'.output_pa
+-00002230: 7468 203d 2027 6f75 7470 7574 2e70 6e67  th = 'output.png
+-00002240: 270a 0a69 6e70 7574 203d 2063 7632 2e69  '..input = cv2.i
+-00002250: 6d72 6561 6428 696e 7075 745f 7061 7468  mread(input_path
+-00002260: 290a 6f75 7470 7574 203d 2072 656d 6f76  ).output = remov
+-00002270: 6528 696e 7075 7429 0a63 7632 2e69 6d77  e(input).cv2.imw
+-00002280: 7269 7465 286f 7574 7075 745f 7061 7468  rite(output_path
+-00002290: 2c20 6f75 7470 7574 290a 6060 600a 0a48  , output).```..H
+-000022a0: 6f77 2074 6f20 6974 6572 6174 6520 6f76  ow to iterate ov
+-000022b0: 6572 2066 696c 6573 2069 6e20 6120 7065  er files in a pe
+-000022c0: 7266 6f72 6d61 7469 6320 7761 790a 0a60  rformatic way..`
+-000022d0: 6060 7079 7468 6f6e 0a66 726f 6d20 7061  ``python.from pa
+-000022e0: 7468 6c69 6220 696d 706f 7274 2050 6174  thlib import Pat
+-000022f0: 680a 6672 6f6d 2072 656d 6267 2069 6d70  h.from rembg imp
+-00002300: 6f72 7420 7265 6d6f 7665 2c20 6e65 775f  ort remove, new_
+-00002310: 7365 7373 696f 6e0a 0a73 6573 7369 6f6e  session..session
+-00002320: 203d 206e 6577 5f73 6573 7369 6f6e 2829   = new_session()
+-00002330: 0a0a 666f 7220 6669 6c65 2069 6e20 5061  ..for file in Pa
+-00002340: 7468 2827 7061 7468 2f74 6f2f 666f 6c64  th('path/to/fold
+-00002350: 6572 2729 2e67 6c6f 6228 272a 2e70 6e67  er').glob('*.png
+-00002360: 2729 3a0a 2020 2020 696e 7075 745f 7061  '):.    input_pa
+-00002370: 7468 203d 2073 7472 2866 696c 6529 0a20  th = str(file). 
+-00002380: 2020 206f 7574 7075 745f 7061 7468 203d     output_path =
+-00002390: 2073 7472 2866 696c 652e 7061 7265 6e74   str(file.parent
+-000023a0: 202f 2028 6669 6c65 2e73 7465 6d20 2b20   / (file.stem + 
+-000023b0: 222e 6f75 742e 706e 6722 2929 0a0a 2020  ".out.png"))..  
+-000023c0: 2020 7769 7468 206f 7065 6e28 696e 7075    with open(inpu
+-000023d0: 745f 7061 7468 2c20 2772 6227 2920 6173  t_path, 'rb') as
+-000023e0: 2069 3a0a 2020 2020 2020 2020 7769 7468   i:.        with
+-000023f0: 206f 7065 6e28 6f75 7470 7574 5f70 6174   open(output_pat
+-00002400: 682c 2027 7762 2729 2061 7320 6f3a 0a20  h, 'wb') as o:. 
+-00002410: 2020 2020 2020 2020 2020 2069 6e70 7574             input
+-00002420: 203d 2069 2e72 6561 6428 290a 2020 2020   = i.read().    
+-00002430: 2020 2020 2020 2020 6f75 7470 7574 203d          output =
+-00002440: 2072 656d 6f76 6528 696e 7075 742c 2073   remove(input, s
+-00002450: 6573 7369 6f6e 3d73 6573 7369 6f6e 290a  ession=session).
+-00002460: 2020 2020 2020 2020 2020 2020 6f2e 7772              o.wr
+-00002470: 6974 6528 6f75 7470 7574 290a 6060 600a  ite(output).```.
+-00002480: 546f 2073 6565 2061 2066 756c 6c20 6c69  To see a full li
+-00002490: 7374 206f 6620 6578 616d 706c 6573 206f  st of examples o
+-000024a0: 6e20 686f 7720 746f 2075 7365 2072 656d  n how to use rem
+-000024b0: 6267 2c20 676f 2074 6f20 7468 6520 5b65  bg, go to the [e
+-000024c0: 7861 6d70 6c65 735d 2855 5341 4745 2e6d  xamples](USAGE.m
+-000024d0: 6429 2070 6167 652e 0a23 2320 5573 6167  d) page..## Usag
+-000024e0: 6520 6173 2061 2064 6f63 6b65 720a 0a4a  e as a docker..J
+-000024f0: 7573 7420 7265 706c 6163 6520 7468 6520  ust replace the 
+-00002500: 6072 656d 6267 6020 636f 6d6d 616e 6420  `rembg` command 
+-00002510: 666f 7220 6064 6f63 6b65 7220 7275 6e20  for `docker run 
+-00002520: 6461 6e69 656c 6761 7469 732f 7265 6d62  danielgatis/remb
+-00002530: 6760 2e0a 0a54 7279 2074 6869 733a 0a0a  g`...Try this:..
+-00002540: 6060 600a 646f 636b 6572 2072 756e 2064  ```.docker run d
+-00002550: 616e 6965 6c67 6174 6973 2f72 656d 6267  anielgatis/rembg
+-00002560: 2069 2070 6174 682f 746f 2f69 6e70 7574   i path/to/input
+-00002570: 2e70 6e67 2070 6174 682f 746f 2f6f 7574  .png path/to/out
+-00002580: 7075 742e 706e 670a 6060 600a 0a23 2320  put.png.```..## 
+-00002590: 4d6f 6465 6c73 0a0a 416c 6c20 6d6f 6465  Models..All mode
+-000025a0: 6c73 2061 7265 2064 6f77 6e6c 6f61 6465  ls are downloade
+-000025b0: 6420 616e 6420 7361 7665 6420 696e 2074  d and saved in t
+-000025c0: 6865 2075 7365 7220 686f 6d65 2066 6f6c  he user home fol
+-000025d0: 6465 7220 696e 2074 6865 2060 2e75 326e  der in the `.u2n
+-000025e0: 6574 6020 6469 7265 6374 6f72 792e 0a0a  et` directory...
+-000025f0: 5468 6520 6176 6169 6c61 626c 6520 6d6f  The available mo
+-00002600: 6465 6c73 2061 7265 3a0a 0a2d 2020 2075  dels are:..-   u
+-00002610: 326e 6574 2028 5b64 6f77 6e6c 6f61 645d  2net ([download]
+-00002620: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
+-00002630: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
+-00002640: 7265 6d62 672f 7265 6c65 6173 6573 2f64  rembg/releases/d
+-00002650: 6f77 6e6c 6f61 642f 7630 2e30 2e30 2f75  ownload/v0.0.0/u
+-00002660: 326e 6574 2e6f 6e6e 7829 2c20 5b73 6f75  2net.onnx), [sou
+-00002670: 7263 655d 2868 7474 7073 3a2f 2f67 6974  rce](https://git
+-00002680: 6875 622e 636f 6d2f 7875 6562 696e 7169  hub.com/xuebinqi
+-00002690: 6e2f 552d 322d 4e65 7429 293a 2041 2070  n/U-2-Net)): A p
+-000026a0: 7265 2d74 7261 696e 6564 206d 6f64 656c  re-trained model
+-000026b0: 2066 6f72 2067 656e 6572 616c 2075 7365   for general use
+-000026c0: 2063 6173 6573 2e0a 2d20 2020 7532 6e65   cases..-   u2ne
+-000026d0: 7470 2028 5b64 6f77 6e6c 6f61 645d 2868  tp ([download](h
+-000026e0: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
+-000026f0: 6d2f 6461 6e69 656c 6761 7469 732f 7265  m/danielgatis/re
+-00002700: 6d62 672f 7265 6c65 6173 6573 2f64 6f77  mbg/releases/dow
+-00002710: 6e6c 6f61 642f 7630 2e30 2e30 2f75 326e  nload/v0.0.0/u2n
+-00002720: 6574 702e 6f6e 6e78 292c 205b 736f 7572  etp.onnx), [sour
+-00002730: 6365 5d28 6874 7470 733a 2f2f 6769 7468  ce](https://gith
+-00002740: 7562 2e63 6f6d 2f78 7565 6269 6e71 696e  ub.com/xuebinqin
+-00002750: 2f55 2d32 2d4e 6574 2929 3a20 4120 6c69  /U-2-Net)): A li
+-00002760: 6768 7477 6569 6768 7420 7665 7273 696f  ghtweight versio
+-00002770: 6e20 6f66 2075 326e 6574 206d 6f64 656c  n of u2net model
+-00002780: 2e0a 2d20 2020 7532 6e65 745f 6875 6d61  ..-   u2net_huma
+-00002790: 6e5f 7365 6720 285b 646f 776e 6c6f 6164  n_seg ([download
+-000027a0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-000027b0: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
+-000027c0: 2f72 656d 6267 2f72 656c 6561 7365 732f  /rembg/releases/
+-000027d0: 646f 776e 6c6f 6164 2f76 302e 302e 302f  download/v0.0.0/
+-000027e0: 7532 6e65 745f 6875 6d61 6e5f 7365 672e  u2net_human_seg.
+-000027f0: 6f6e 6e78 292c 205b 736f 7572 6365 5d28  onnx), [source](
+-00002800: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-00002810: 6f6d 2f78 7565 6269 6e71 696e 2f55 2d32  om/xuebinqin/U-2
+-00002820: 2d4e 6574 2929 3a20 4120 7072 652d 7472  -Net)): A pre-tr
+-00002830: 6169 6e65 6420 6d6f 6465 6c20 666f 7220  ained model for 
+-00002840: 6875 6d61 6e20 7365 676d 656e 7461 7469  human segmentati
+-00002850: 6f6e 2e0a 2d20 2020 7532 6e65 745f 636c  on..-   u2net_cl
+-00002860: 6f74 685f 7365 6720 285b 646f 776e 6c6f  oth_seg ([downlo
+-00002870: 6164 5d28 6874 7470 733a 2f2f 6769 7468  ad](https://gith
+-00002880: 7562 2e63 6f6d 2f64 616e 6965 6c67 6174  ub.com/danielgat
+-00002890: 6973 2f72 656d 6267 2f72 656c 6561 7365  is/rembg/release
+-000028a0: 732f 646f 776e 6c6f 6164 2f76 302e 302e  s/download/v0.0.
+-000028b0: 302f 7532 6e65 745f 636c 6f74 685f 7365  0/u2net_cloth_se
+-000028c0: 672e 6f6e 6e78 292c 205b 736f 7572 6365  g.onnx), [source
+-000028d0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-000028e0: 2e63 6f6d 2f6c 6576 696e 6461 6268 692f  .com/levindabhi/
+-000028f0: 636c 6f74 682d 7365 676d 656e 7461 7469  cloth-segmentati
+-00002900: 6f6e 2929 3a20 4120 7072 652d 7472 6169  on)): A pre-trai
+-00002910: 6e65 6420 6d6f 6465 6c20 666f 7220 436c  ned model for Cl
+-00002920: 6f74 6873 2050 6172 7369 6e67 2066 726f  oths Parsing fro
+-00002930: 6d20 6875 6d61 6e20 706f 7274 7261 6974  m human portrait
+-00002940: 2e20 4865 7265 2063 6c6f 7468 6573 2061  . Here clothes a
+-00002950: 7265 2070 6172 7365 6420 696e 746f 2033  re parsed into 3
+-00002960: 2063 6174 6567 6f72 793a 2055 7070 6572   category: Upper
+-00002970: 2062 6f64 792c 204c 6f77 6572 2062 6f64   body, Lower bod
+-00002980: 7920 616e 6420 4675 6c6c 2062 6f64 792e  y and Full body.
+-00002990: 0a2d 2020 2073 696c 7565 7461 2028 5b64  .-   silueta ([d
+-000029a0: 6f77 6e6c 6f61 645d 2868 7474 7073 3a2f  ownload](https:/
+-000029b0: 2f67 6974 6875 622e 636f 6d2f 6461 6e69  /github.com/dani
+-000029c0: 656c 6761 7469 732f 7265 6d62 672f 7265  elgatis/rembg/re
+-000029d0: 6c65 6173 6573 2f64 6f77 6e6c 6f61 642f  leases/download/
+-000029e0: 7630 2e30 2e30 2f73 696c 7565 7461 2e6f  v0.0.0/silueta.o
+-000029f0: 6e6e 7829 2c20 5b73 6f75 7263 655d 2868  nnx), [source](h
+-00002a00: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
+-00002a10: 6d2f 7875 6562 696e 7169 6e2f 552d 322d  m/xuebinqin/U-2-
+-00002a20: 4e65 742f 6973 7375 6573 2f32 3935 2929  Net/issues/295))
+-00002a30: 3a20 5361 6d65 2061 7320 7532 6e65 7420  : Same as u2net 
+-00002a40: 6275 7420 7468 6520 7369 7a65 2069 7320  but the size is 
+-00002a50: 7265 6475 6365 6420 746f 2034 334d 622e  reduced to 43Mb.
+-00002a60: 0a2d 2020 2069 736e 6574 2d67 656e 6572  .-   isnet-gener
+-00002a70: 616c 2d75 7365 2028 5b64 6f77 6e6c 6f61  al-use ([downloa
+-00002a80: 645d 2868 7474 7073 3a2f 2f67 6974 6875  d](https://githu
+-00002a90: 622e 636f 6d2f 6461 6e69 656c 6761 7469  b.com/danielgati
+-00002aa0: 732f 7265 6d62 672f 7265 6c65 6173 6573  s/rembg/releases
+-00002ab0: 2f64 6f77 6e6c 6f61 642f 7630 2e30 2e30  /download/v0.0.0
+-00002ac0: 2f69 736e 6574 2d67 656e 6572 616c 2d75  /isnet-general-u
+-00002ad0: 7365 2e6f 6e6e 7829 2c20 5b73 6f75 7263  se.onnx), [sourc
+-00002ae0: 655d 2868 7474 7073 3a2f 2f67 6974 6875  e](https://githu
+-00002af0: 622e 636f 6d2f 7875 6562 696e 7169 6e2f  b.com/xuebinqin/
+-00002b00: 4449 5329 293a 2041 206e 6577 2070 7265  DIS)): A new pre
+-00002b10: 2d74 7261 696e 6564 206d 6f64 656c 2066  -trained model f
+-00002b20: 6f72 2067 656e 6572 616c 2075 7365 2063  or general use c
+-00002b30: 6173 6573 2e0a 2d20 2020 7361 6d20 285b  ases..-   sam ([
+-00002b40: 646f 776e 6c6f 6164 2065 6e63 6f64 6572  download encoder
+-00002b50: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-00002b60: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
+-00002b70: 2f72 656d 6267 2f72 656c 6561 7365 732f  /rembg/releases/
+-00002b80: 646f 776e 6c6f 6164 2f76 302e 302e 302f  download/v0.0.0/
+-00002b90: 7669 745f 622d 656e 636f 6465 722d 7175  vit_b-encoder-qu
+-00002ba0: 616e 742e 6f6e 6e78 292c 205b 646f 776e  ant.onnx), [down
+-00002bb0: 6c6f 6164 2064 6563 6f64 6572 5d28 6874  load decoder](ht
+-00002bc0: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
+-00002bd0: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
+-00002be0: 6267 2f72 656c 6561 7365 732f 646f 776e  bg/releases/down
+-00002bf0: 6c6f 6164 2f76 302e 302e 302f 7669 745f  load/v0.0.0/vit_
+-00002c00: 622d 6465 636f 6465 722d 7175 616e 742e  b-decoder-quant.
+-00002c10: 6f6e 6e78 292c 205b 736f 7572 6365 5d28  onnx), [source](
+-00002c20: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-00002c30: 6f6d 2f66 6163 6562 6f6f 6b72 6573 6561  om/facebookresea
+-00002c40: 7263 682f 7365 676d 656e 742d 616e 7974  rch/segment-anyt
+-00002c50: 6869 6e67 2929 3a20 4120 7072 652d 7472  hing)): A pre-tr
+-00002c60: 6169 6e65 6420 6d6f 6465 6c20 666f 7220  ained model for 
+-00002c70: 616e 7920 7573 6520 6361 7365 732e 0a0a  any use cases...
+-00002c80: 2323 2320 536f 6d65 2064 6966 6665 7265  ### Some differe
+-00002c90: 6e63 6573 2062 6574 7765 656e 2074 6865  nces between the
+-00002ca0: 206d 6f64 656c 7320 7265 7375 6c74 0a0a   models result..
+-00002cb0: 3c74 6162 6c65 3e0a 2020 2020 3c74 723e  <table>.    <tr>
+-00002cc0: 0a20 2020 2020 2020 203c 7468 3e6f 7269  .        <th>ori
+-00002cd0: 6769 6e61 6c3c 2f74 683e 0a20 2020 2020  ginal</th>.     
+-00002ce0: 2020 203c 7468 3e75 326e 6574 3c2f 7468     <th>u2net</th
+-00002cf0: 3e0a 2020 2020 2020 2020 3c74 683e 7532  >.        <th>u2
+-00002d00: 6e65 7470 3c2f 7468 3e0a 2020 2020 2020  netp</th>.      
+-00002d10: 2020 3c74 683e 7532 6e65 745f 6875 6d61    <th>u2net_huma
+-00002d20: 6e5f 7365 673c 2f74 683e 0a20 2020 2020  n_seg</th>.     
+-00002d30: 2020 203c 7468 3e75 326e 6574 5f63 6c6f     <th>u2net_clo
+-00002d40: 7468 5f73 6567 3c2f 7468 3e0a 2020 2020  th_seg</th>.    
+-00002d50: 2020 2020 3c74 683e 7369 6c75 6574 613c      <th>silueta<
+-00002d60: 2f74 683e 0a20 2020 2020 2020 203c 7468  /th>.        <th
+-00002d70: 3e69 736e 6574 2d67 656e 6572 616c 2d75  >isnet-general-u
+-00002d80: 7365 3c2f 7468 3e0a 2020 2020 2020 2020  se</th>.        
+-00002d90: 3c74 683e 7361 6d3c 2f74 683e 0a20 2020  <th>sam</th>.   
+-00002da0: 203c 2f74 723e 0a20 2020 203c 7472 3e0a   </tr>.    <tr>.
+-00002db0: 2020 2020 2020 2020 3c74 683e 3c69 6d67          <th><img
+-00002dc0: 2073 7263 3d22 6874 7470 733a 2f2f 7261   src="https://ra
+-00002dd0: 772e 6769 7468 7562 7573 6572 636f 6e74  w.githubusercont
+-00002de0: 656e 742e 636f 6d2f 6461 6e69 656c 6761  ent.com/danielga
+-00002df0: 7469 732f 7265 6d62 672f 6d61 7374 6572  tis/rembg/master
+-00002e00: 2f74 6573 7473 2f66 6978 7475 7265 732f  /tests/fixtures/
+-00002e10: 6361 722d 312e 6a70 6722 2077 6964 7468  car-1.jpg" width
+-00002e20: 3d22 3130 3022 202f 3e3c 2f74 683e 0a20  ="100" /></th>. 
+-00002e30: 2020 2020 2020 203c 7468 3e3c 696d 6720         <th><img 
+-00002e40: 7372 633d 2268 7474 7073 3a2f 2f72 6177  src="https://raw
+-00002e50: 2e67 6974 6875 6275 7365 7263 6f6e 7465  .githubuserconte
+-00002e60: 6e74 2e63 6f6d 2f64 616e 6965 6c67 6174  nt.com/danielgat
+-00002e70: 6973 2f72 656d 6267 2f6d 6173 7465 722f  is/rembg/master/
+-00002e80: 7465 7374 732f 7265 7375 6c74 732f 6361  tests/results/ca
+-00002e90: 722d 312e 7532 6e65 742e 706e 6722 2077  r-1.u2net.png" w
+-00002ea0: 6964 7468 3d22 3130 3022 202f 3e3c 2f74  idth="100" /></t
+-00002eb0: 683e 0a20 2020 2020 2020 203c 7468 3e3c  h>.        <th><
+-00002ec0: 696d 6720 7372 633d 2268 7474 7073 3a2f  img src="https:/
+-00002ed0: 2f72 6177 2e67 6974 6875 6275 7365 7263  /raw.githubuserc
+-00002ee0: 6f6e 7465 6e74 2e63 6f6d 2f64 616e 6965  ontent.com/danie
+-00002ef0: 6c67 6174 6973 2f72 656d 6267 2f6d 6173  lgatis/rembg/mas
+-00002f00: 7465 722f 7465 7374 732f 7265 7375 6c74  ter/tests/result
+-00002f10: 732f 6361 722d 312e 7532 6e65 7470 2e70  s/car-1.u2netp.p
+-00002f20: 6e67 2220 7769 6474 683d 2231 3030 2220  ng" width="100" 
+-00002f30: 2f3e 3c2f 7468 3e0a 2020 2020 2020 2020  /></th>.        
+-00002f40: 3c74 683e 3c69 6d67 2073 7263 3d22 6874  <th><img src="ht
+-00002f50: 7470 733a 2f2f 7261 772e 6769 7468 7562  tps://raw.github
+-00002f60: 7573 6572 636f 6e74 656e 742e 636f 6d2f  usercontent.com/
+-00002f70: 6461 6e69 656c 6761 7469 732f 7265 6d62  danielgatis/remb
+-00002f80: 672f 6d61 7374 6572 2f74 6573 7473 2f72  g/master/tests/r
+-00002f90: 6573 756c 7473 2f63 6172 2d31 2e75 326e  esults/car-1.u2n
+-00002fa0: 6574 5f68 756d 616e 5f73 6567 2e70 6e67  et_human_seg.png
+-00002fb0: 2220 7769 6474 683d 2231 3030 2220 2f3e  " width="100" />
+-00002fc0: 3c2f 7468 3e0a 2020 2020 2020 2020 3c74  </th>.        <t
+-00002fd0: 683e 3c69 6d67 2073 7263 3d22 6874 7470  h><img src="http
+-00002fe0: 733a 2f2f 7261 772e 6769 7468 7562 7573  s://raw.githubus
+-00002ff0: 6572 636f 6e74 656e 742e 636f 6d2f 6461  ercontent.com/da
+-00003000: 6e69 656c 6761 7469 732f 7265 6d62 672f  nielgatis/rembg/
+-00003010: 6d61 7374 6572 2f74 6573 7473 2f72 6573  master/tests/res
+-00003020: 756c 7473 2f63 6172 2d31 2e75 326e 6574  ults/car-1.u2net
+-00003030: 5f63 6c6f 7468 5f73 6567 2e70 6e67 2220  _cloth_seg.png" 
+-00003040: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-00003050: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-00003060: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-00003070: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-00003080: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-00003090: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-000030a0: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-000030b0: 7473 2f63 6172 2d31 2e73 696c 7565 7461  ts/car-1.silueta
+-000030c0: 2e70 6e67 2220 7769 6474 683d 2231 3030  .png" width="100
+-000030d0: 2220 2f3e 3c2f 7468 3e0a 2020 2020 2020  " /></th>.      
+-000030e0: 2020 3c74 683e 3c69 6d67 2073 7263 3d22    <th><img src="
+-000030f0: 6874 7470 733a 2f2f 7261 772e 6769 7468  https://raw.gith
+-00003100: 7562 7573 6572 636f 6e74 656e 742e 636f  ubusercontent.co
+-00003110: 6d2f 6461 6e69 656c 6761 7469 732f 7265  m/danielgatis/re
+-00003120: 6d62 672f 6d61 7374 6572 2f74 6573 7473  mbg/master/tests
+-00003130: 2f72 6573 756c 7473 2f63 6172 2d31 2e69  /results/car-1.i
+-00003140: 736e 6574 2d67 656e 6572 616c 2d75 7365  snet-general-use
+-00003150: 2e70 6e67 2220 7769 6474 683d 2231 3030  .png" width="100
+-00003160: 2220 2f3e 3c2f 7468 3e0a 2020 2020 2020  " /></th>.      
+-00003170: 2020 3c74 683e 3c69 6d67 2073 7263 3d22    <th><img src="
+-00003180: 6874 7470 733a 2f2f 7261 772e 6769 7468  https://raw.gith
+-00003190: 7562 7573 6572 636f 6e74 656e 742e 636f  ubusercontent.co
+-000031a0: 6d2f 6461 6e69 656c 6761 7469 732f 7265  m/danielgatis/re
+-000031b0: 6d62 672f 6d61 7374 6572 2f74 6573 7473  mbg/master/tests
+-000031c0: 2f72 6573 756c 7473 2f63 6172 2d31 2e73  /results/car-1.s
+-000031d0: 616d 2e70 6e67 2220 7769 6474 683d 2231  am.png" width="1
+-000031e0: 3030 2220 2f3e 3c2f 7468 3e0a 2020 2020  00" /></th>.    
+-000031f0: 3c2f 7472 3e0a 2020 2020 2020 2020 3c74  </tr>.        <t
+-00003200: 683e 3c69 6d67 2073 7263 3d22 6874 7470  h><img src="http
+-00003210: 733a 2f2f 7261 772e 6769 7468 7562 7573  s://raw.githubus
+-00003220: 6572 636f 6e74 656e 742e 636f 6d2f 6461  ercontent.com/da
+-00003230: 6e69 656c 6761 7469 732f 7265 6d62 672f  nielgatis/rembg/
+-00003240: 6d61 7374 6572 2f74 6573 7473 2f66 6978  master/tests/fix
+-00003250: 7475 7265 732f 636c 6f74 682d 312e 6a70  tures/cloth-1.jp
+-00003260: 6722 2077 6964 7468 3d22 3130 3022 202f  g" width="100" /
+-00003270: 3e3c 2f74 683e 0a20 2020 2020 2020 203c  ></th>.        <
+-00003280: 7468 3e3c 696d 6720 7372 633d 2268 7474  th><img src="htt
+-00003290: 7073 3a2f 2f72 6177 2e67 6974 6875 6275  ps://raw.githubu
+-000032a0: 7365 7263 6f6e 7465 6e74 2e63 6f6d 2f64  sercontent.com/d
+-000032b0: 616e 6965 6c67 6174 6973 2f72 656d 6267  anielgatis/rembg
+-000032c0: 2f6d 6173 7465 722f 7465 7374 732f 7265  /master/tests/re
+-000032d0: 7375 6c74 732f 636c 6f74 682d 312e 7532  sults/cloth-1.u2
+-000032e0: 6e65 742e 706e 6722 2077 6964 7468 3d22  net.png" width="
+-000032f0: 3130 3022 202f 3e3c 2f74 683e 0a20 2020  100" /></th>.   
+-00003300: 2020 2020 203c 7468 3e3c 696d 6720 7372       <th><img sr
+-00003310: 633d 2268 7474 7073 3a2f 2f72 6177 2e67  c="https://raw.g
+-00003320: 6974 6875 6275 7365 7263 6f6e 7465 6e74  ithubusercontent
+-00003330: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
+-00003340: 2f72 656d 6267 2f6d 6173 7465 722f 7465  /rembg/master/te
+-00003350: 7374 732f 7265 7375 6c74 732f 636c 6f74  sts/results/clot
+-00003360: 682d 312e 7532 6e65 7470 2e70 6e67 2220  h-1.u2netp.png" 
+-00003370: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-00003380: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-00003390: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-000033a0: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-000033b0: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-000033c0: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-000033d0: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-000033e0: 7473 2f63 6c6f 7468 2d31 2e75 326e 6574  ts/cloth-1.u2net
+-000033f0: 5f68 756d 616e 5f73 6567 2e70 6e67 2220  _human_seg.png" 
+-00003400: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-00003410: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-00003420: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-00003430: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-00003440: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-00003450: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-00003460: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-00003470: 7473 2f63 6c6f 7468 2d31 2e75 326e 6574  ts/cloth-1.u2net
+-00003480: 5f63 6c6f 7468 5f73 6567 2e70 6e67 2220  _cloth_seg.png" 
+-00003490: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-000034a0: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-000034b0: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-000034c0: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-000034d0: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-000034e0: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-000034f0: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-00003500: 7473 2f63 6c6f 7468 2d31 2e73 696c 7565  ts/cloth-1.silue
+-00003510: 7461 2e70 6e67 2220 7769 6474 683d 2231  ta.png" width="1
+-00003520: 3030 2220 2f3e 3c2f 7468 3e0a 2020 2020  00" /></th>.    
+-00003530: 2020 2020 3c74 683e 3c69 6d67 2073 7263      <th><img src
+-00003540: 3d22 6874 7470 733a 2f2f 7261 772e 6769  ="https://raw.gi
+-00003550: 7468 7562 7573 6572 636f 6e74 656e 742e  thubusercontent.
+-00003560: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
+-00003570: 7265 6d62 672f 6d61 7374 6572 2f74 6573  rembg/master/tes
+-00003580: 7473 2f72 6573 756c 7473 2f63 6c6f 7468  ts/results/cloth
+-00003590: 2d31 2e69 736e 6574 2d67 656e 6572 616c  -1.isnet-general
+-000035a0: 2d75 7365 2e70 6e67 2220 7769 6474 683d  -use.png" width=
+-000035b0: 2231 3030 2220 2f3e 3c2f 7468 3e0a 2020  "100" /></th>.  
+-000035c0: 2020 2020 2020 3c74 683e 3c69 6d67 2073        <th><img s
+-000035d0: 7263 3d22 6874 7470 733a 2f2f 7261 772e  rc="https://raw.
+-000035e0: 6769 7468 7562 7573 6572 636f 6e74 656e  githubuserconten
+-000035f0: 742e 636f 6d2f 6461 6e69 656c 6761 7469  t.com/danielgati
+-00003600: 732f 7265 6d62 672f 6d61 7374 6572 2f74  s/rembg/master/t
+-00003610: 6573 7473 2f72 6573 756c 7473 2f63 6c6f  ests/results/clo
+-00003620: 7468 2d31 2e73 616d 2e70 6e67 2220 7769  th-1.sam.png" wi
+-00003630: 6474 683d 2231 3030 2220 2f3e 3c2f 7468  dth="100" /></th
+-00003640: 3e0a 2020 2020 3c2f 7472 3e0a 3c2f 7461  >.    </tr>.</ta
+-00003650: 626c 653e 0a0a 0a23 2323 2048 6f77 2074  ble>...### How t
+-00003660: 6f20 7472 6169 6e20 796f 7572 206f 776e  o train your own
+-00003670: 206d 6f64 656c 0a0a 4966 2059 6f75 206e   model..If You n
+-00003680: 6565 6420 6d6f 7265 2066 696e 6520 7475  eed more fine tu
+-00003690: 6e6e 6564 206d 6f64 656c 7320 7472 7920  nned models try 
+-000036a0: 7468 6973 3a0a 6874 7470 733a 2f2f 6769  this:.https://gi
+-000036b0: 7468 7562 2e63 6f6d 2f64 616e 6965 6c67  thub.com/danielg
+-000036c0: 6174 6973 2f72 656d 6267 2f69 7373 7565  atis/rembg/issue
+-000036d0: 732f 3139 3323 6973 7375 6563 6f6d 6d65  s/193#issuecomme
+-000036e0: 6e74 2d31 3035 3535 3334 3238 390a 0a0a  nt-1055534289...
+-000036f0: 2323 2053 6f6d 6520 7669 6465 6f20 7475  ## Some video tu
+-00003700: 746f 7269 616c 730a 0a2d 2068 7474 7073  torials..- https
+-00003710: 3a2f 2f77 7777 2e79 6f75 7475 6265 2e63  ://www.youtube.c
+-00003720: 6f6d 2f77 6174 6368 3f76 3d33 7871 7770  om/watch?v=3xqwp
+-00003730: 586a 7879 4d51 0a2d 2068 7474 7073 3a2f  XjxyMQ.- https:/
+-00003740: 2f77 7777 2e79 6f75 7475 6265 2e63 6f6d  /www.youtube.com
+-00003750: 2f77 6174 6368 3f76 3d64 464b 5247 5864  /watch?v=dFKRGXd
+-00003760: 6b47 4a55 0a2d 2068 7474 7073 3a2f 2f77  kGJU.- https://w
+-00003770: 7777 2e79 6f75 7475 6265 2e63 6f6d 2f77  ww.youtube.com/w
+-00003780: 6174 6368 3f76 3d41 692d 4253 5f54 3779  atch?v=Ai-BS_T7y
+-00003790: 6a45 0a2d 2068 7474 7073 3a2f 2f77 7777  jE.- https://www
+-000037a0: 2e79 6f75 7475 6265 2e63 6f6d 2f77 6174  .youtube.com/wat
+-000037b0: 6368 3f76 3d64 464b 5247 5864 6b47 4a55  ch?v=dFKRGXdkGJU
+-000037c0: 0a2d 2068 7474 7073 3a2f 2f77 7777 2e79  .- https://www.y
+-000037d0: 6f75 7475 6265 2e63 6f6d 2f77 6174 6368  outube.com/watch
+-000037e0: 3f76 3d44 3757 2d43 3075 7256 6351 0a0a  ?v=D7W-C0urVcQ..
+-000037f0: 2323 2052 6566 6572 656e 6365 730a 0a2d  ## References..-
+-00003800: 2068 7474 7073 3a2f 2f61 7278 6976 2e6f   https://arxiv.o
+-00003810: 7267 2f70 6466 2f32 3030 352e 3039 3030  rg/pdf/2005.0900
+-00003820: 372e 7064 660a 2d20 6874 7470 733a 2f2f  7.pdf.- https://
+-00003830: 6769 7468 7562 2e63 6f6d 2f4e 6174 6861  github.com/Natha
+-00003840: 6e55 412f 552d 322d 4e65 740a 2d20 6874  nUA/U-2-Net.- ht
+-00003850: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
+-00003860: 2f70 796d 6174 7469 6e67 2f70 796d 6174  /pymatting/pymat
+-00003870: 7469 6e67 0a0a 2323 2042 7579 206d 6520  ting..## Buy me 
+-00003880: 6120 636f 6666 6565 0a0a 4c69 6b65 6420  a coffee..Liked 
+-00003890: 736f 6d65 206f 6620 6d79 2077 6f72 6b3f  some of my work?
+-000038a0: 2042 7579 206d 6520 6120 636f 6666 6565   Buy me a coffee
+-000038b0: 2028 6f72 206d 6f72 6520 6c69 6b65 6c79   (or more likely
+-000038c0: 2061 2062 6565 7229 0a0a 3c61 2068 7265   a beer)..<a hre
+-000038d0: 663d 2268 7474 7073 3a2f 2f77 7777 2e62  f="https://www.b
+-000038e0: 7579 6d65 6163 6f66 6665 652e 636f 6d2f  uymeacoffee.com/
+-000038f0: 6461 6e69 656c 6761 7469 7322 2074 6172  danielgatis" tar
+-00003900: 6765 743d 225f 626c 616e 6b22 3e3c 696d  get="_blank"><im
+-00003910: 6720 7372 633d 2268 7474 7073 3a2f 2f62  g src="https://b
+-00003920: 6d63 2d63 646e 2e6e 7963 332e 6469 6769  mc-cdn.nyc3.digi
+-00003930: 7461 6c6f 6365 616e 7370 6163 6573 2e63  taloceanspaces.c
+-00003940: 6f6d 2f42 4d43 2d62 7574 746f 6e2d 696d  om/BMC-button-im
+-00003950: 6167 6573 2f63 7573 746f 6d5f 696d 6167  ages/custom_imag
+-00003960: 6573 2f6f 7261 6e67 655f 696d 672e 706e  es/orange_img.pn
+-00003970: 6722 2061 6c74 3d22 4275 7920 4d65 2041  g" alt="Buy Me A
+-00003980: 2043 6f66 6665 6522 2073 7479 6c65 3d22   Coffee" style="
+-00003990: 6865 6967 6874 3a20 6175 746f 2021 696d  height: auto !im
+-000039a0: 706f 7274 616e 743b 7769 6474 683a 2061  portant;width: a
+-000039b0: 7574 6f20 2169 6d70 6f72 7461 6e74 3b22  uto !important;"
+-000039c0: 3e3c 2f61 3e0a 0a23 2320 4c69 6365 6e73  ></a>..## Licens
+-000039d0: 650a 0a43 6f70 7972 6967 6874 2028 6329  e..Copyright (c)
+-000039e0: 2032 3032 302d 7072 6573 656e 7420 5b44   2020-present [D
+-000039f0: 616e 6965 6c20 4761 7469 735d 2868 7474  aniel Gatis](htt
+-00003a00: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
+-00003a10: 6461 6e69 656c 6761 7469 7329 0a0a 4c69  danielgatis)..Li
+-00003a20: 6365 6e73 6564 2075 6e64 6572 205b 4d49  censed under [MI
+-00003a30: 5420 4c69 6365 6e73 655d 282e 2f4c 4943  T License](./LIC
+-00003a40: 454e 5345 2e74 7874 290a 0a0a            ENSE.txt)...
++00000f30: 3e0a 3c2f 703e 0a0a 3c70 2073 7479 6c65  >.</p>..<p style
++00000f40: 3d22 6469 7370 6c61 793a 2066 6c65 783b  ="display: flex;
++00000f50: 616c 6967 6e2d 6974 656d 733a 2063 656e  align-items: cen
++00000f60: 7465 723b 6a75 7374 6966 792d 636f 6e74  ter;justify-cont
++00000f70: 656e 743a 2063 656e 7465 723b 223e 0a20  ent: center;">. 
++00000f80: 203c 696d 6720 7372 633d 2268 7474 7073   <img src="https
++00000f90: 3a2f 2f72 6177 2e67 6974 6875 6275 7365  ://raw.githubuse
++00000fa0: 7263 6f6e 7465 6e74 2e63 6f6d 2f64 616e  rcontent.com/dan
++00000fb0: 6965 6c67 6174 6973 2f72 656d 6267 2f6d  ielgatis/rembg/m
++00000fc0: 6173 7465 722f 6578 616d 706c 6573 2f61  aster/examples/a
++00000fd0: 6e69 6d65 2d67 6972 6c2d 312e 6a70 6722  nime-girl-1.jpg"
++00000fe0: 2077 6964 7468 3d22 3130 3022 202f 3e0a   width="100" />.
++00000ff0: 2020 3c69 6d67 2073 7263 3d22 6874 7470    <img src="http
++00001000: 733a 2f2f 7261 772e 6769 7468 7562 7573  s://raw.githubus
++00001010: 6572 636f 6e74 656e 742e 636f 6d2f 6461  ercontent.com/da
++00001020: 6e69 656c 6761 7469 732f 7265 6d62 672f  nielgatis/rembg/
++00001030: 6d61 7374 6572 2f65 7861 6d70 6c65 732f  master/examples/
++00001040: 616e 696d 652d 6769 726c 2d31 2e6f 7574  anime-girl-1.out
++00001050: 2e70 6e67 2220 7769 6474 683d 2231 3030  .png" width="100
++00001060: 2220 2f3e 0a20 203c 696d 6720 7372 633d  " />.  <img src=
++00001070: 2268 7474 7073 3a2f 2f72 6177 2e67 6974  "https://raw.git
++00001080: 6875 6275 7365 7263 6f6e 7465 6e74 2e63  hubusercontent.c
++00001090: 6f6d 2f64 616e 6965 6c67 6174 6973 2f72  om/danielgatis/r
++000010a0: 656d 6267 2f6d 6173 7465 722f 6578 616d  embg/master/exam
++000010b0: 706c 6573 2f61 6e69 6d65 2d67 6972 6c2d  ples/anime-girl-
++000010c0: 322e 6a70 6722 2077 6964 7468 3d22 3130  2.jpg" width="10
++000010d0: 3022 202f 3e0a 2020 3c69 6d67 2073 7263  0" />.  <img src
++000010e0: 3d22 6874 7470 733a 2f2f 7261 772e 6769  ="https://raw.gi
++000010f0: 7468 7562 7573 6572 636f 6e74 656e 742e  thubusercontent.
++00001100: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
++00001110: 7265 6d62 672f 6d61 7374 6572 2f65 7861  rembg/master/exa
++00001120: 6d70 6c65 732f 616e 696d 652d 6769 726c  mples/anime-girl
++00001130: 2d32 2e6f 7574 2e70 6e67 2220 7769 6474  -2.out.png" widt
++00001140: 683d 2231 3030 2220 2f3e 0a20 203c 696d  h="100" />.  <im
++00001150: 6720 7372 633d 2268 7474 7073 3a2f 2f72  g src="https://r
++00001160: 6177 2e67 6974 6875 6275 7365 7263 6f6e  aw.githubusercon
++00001170: 7465 6e74 2e63 6f6d 2f64 616e 6965 6c67  tent.com/danielg
++00001180: 6174 6973 2f72 656d 6267 2f6d 6173 7465  atis/rembg/maste
++00001190: 722f 6578 616d 706c 6573 2f61 6e69 6d65  r/examples/anime
++000011a0: 2d67 6972 6c2d 332e 6a70 6722 2077 6964  -girl-3.jpg" wid
++000011b0: 7468 3d22 3130 3022 202f 3e0a 2020 3c69  th="100" />.  <i
++000011c0: 6d67 2073 7263 3d22 6874 7470 733a 2f2f  mg src="https://
++000011d0: 7261 772e 6769 7468 7562 7573 6572 636f  raw.githubuserco
++000011e0: 6e74 656e 742e 636f 6d2f 6461 6e69 656c  ntent.com/daniel
++000011f0: 6761 7469 732f 7265 6d62 672f 6d61 7374  gatis/rembg/mast
++00001200: 6572 2f65 7861 6d70 6c65 732f 616e 696d  er/examples/anim
++00001210: 652d 6769 726c 2d33 2e6f 7574 2e70 6e67  e-girl-3.out.png
++00001220: 2220 7769 6474 683d 2231 3030 2220 2f3e  " width="100" />
++00001230: 0a3c 2f70 3e0a 0a2a 2a49 6620 7468 6973  .</p>..**If this
++00001240: 2070 726f 6a65 6374 2068 6173 2068 656c   project has hel
++00001250: 7065 6420 796f 752c 2070 6c65 6173 6520  ped you, please 
++00001260: 636f 6e73 6964 6572 206d 616b 696e 6720  consider making 
++00001270: 6120 5b64 6f6e 6174 696f 6e5d 2868 7474  a [donation](htt
++00001280: 7073 3a2f 2f77 7777 2e62 7579 6d65 6163  ps://www.buymeac
++00001290: 6f66 6665 652e 636f 6d2f 6461 6e69 656c  offee.com/daniel
++000012a0: 6761 7469 7329 2e2a 2a0a 0a23 2320 5370  gatis).**..## Sp
++000012b0: 6f6e 736f 720a 0a3c 7461 626c 653e 0a20  onsor..<table>. 
++000012c0: 203c 7472 3e0a 2020 2020 3c74 6420 616c   <tr>.    <td al
++000012d0: 6967 6e3d 2263 656e 7465 7222 2076 6572  ign="center" ver
++000012e0: 7469 6361 6c2d 616c 6967 6e3d 2263 656e  tical-align="cen
++000012f0: 7465 7222 3e0a 2020 2020 2020 3c61 2068  ter">.      <a h
++00001300: 7265 663d 2268 7474 7073 3a2f 2f70 686f  ref="https://pho
++00001310: 746f 726f 6f6d 2e63 6f6d 2f61 7069 2f72  toroom.com/api/r
++00001320: 656d 6f76 652d 6261 636b 6772 6f75 6e64  emove-background
++00001330: 3f75 746d 5f73 6f75 7263 653d 7265 6d62  ?utm_source=remb
++00001340: 6726 7574 6d5f 6d65 6469 756d 3d67 6974  g&utm_medium=git
++00001350: 6875 625f 7765 6270 6167 6526 7574 6d5f  hub_webpage&utm_
++00001360: 6361 6d70 6169 676e 3d73 706f 6e73 6f72  campaign=sponsor
++00001370: 2220 3e0a 2020 2020 2020 2020 3c69 6d67  " >.        <img
++00001380: 2073 7263 3d22 6874 7470 733a 2f2f 666f   src="https://fo
++00001390: 6e74 2d63 646e 2e70 686f 746f 726f 6f6d  nt-cdn.photoroom
++000013a0: 2e63 6f6d 2f6d 6564 6961 2f61 7069 2d6c  .com/media/api-l
++000013b0: 6f67 6f2e 706e 6722 2077 6964 7468 3d22  ogo.png" width="
++000013c0: 3132 3070 783b 2220 616c 743d 2255 6e73  120px;" alt="Uns
++000013d0: 706c 6173 6822 202f 3e0a 2020 2020 2020  plash" />.      
++000013e0: 3c2f 613e 0a20 2020 203c 2f74 643e 0a20  </a>.    </td>. 
++000013f0: 2020 203c 7464 2061 6c69 676e 3d22 6365     <td align="ce
++00001400: 6e74 6572 2220 7665 7274 6963 616c 2d61  nter" vertical-a
++00001410: 6c69 676e 3d22 6365 6e74 6572 223e 0a20  lign="center">. 
++00001420: 2020 2020 203c 623e 5068 6f74 6f52 6f6f       <b>PhotoRoo
++00001430: 6d20 5265 6d6f 7665 2042 6163 6b67 726f  m Remove Backgro
++00001440: 756e 6420 4150 493c 2f62 3e0a 2020 2020  und API</b>.    
++00001450: 2020 3c62 7220 2f3e 0a20 2020 2020 203c    <br />.      <
++00001460: 6120 6872 6566 3d22 6874 7470 733a 2f2f  a href="https://
++00001470: 7068 6f74 6f72 6f6f 6d2e 636f 6d2f 6170  photoroom.com/ap
++00001480: 692f 7265 6d6f 7665 2d62 6163 6b67 726f  i/remove-backgro
++00001490: 756e 643f 7574 6d5f 736f 7572 6365 3d72  und?utm_source=r
++000014a0: 656d 6267 2675 746d 5f6d 6564 6975 6d3d  embg&utm_medium=
++000014b0: 6769 7468 7562 5f77 6562 7061 6765 2675  github_webpage&u
++000014c0: 746d 5f63 616d 7061 6967 6e3d 7370 6f6e  tm_campaign=spon
++000014d0: 736f 7222 3e68 7474 7073 3a2f 2f70 686f  sor">https://pho
++000014e0: 746f 726f 6f6d 2e63 6f6d 2f61 7069 3c2f  toroom.com/api</
++000014f0: 613e 0a20 2020 2020 203c 6272 202f 3e0a  a>.      <br />.
++00001500: 2020 2020 2020 3c70 2077 6964 7468 3d22        <p width="
++00001510: 3230 3070 7822 3e0a 2020 2020 2020 2020  200px">.        
++00001520: 4661 7374 2061 6e64 2061 6363 7572 6174  Fast and accurat
++00001530: 6520 6261 636b 6772 6f75 6e64 2072 656d  e background rem
++00001540: 6f76 6572 2041 5049 3c62 722f 3e0a 2020  over API<br/>.  
++00001550: 2020 2020 3c2f 703e 0a20 2020 203c 2f74      </p>.    </t
++00001560: 643e 0a20 203c 2f74 723e 0a3c 2f74 6162  d>.  </tr>.</tab
++00001570: 6c65 3e0a 0a23 2320 5265 7175 6972 656d  le>..## Requirem
++00001580: 656e 7473 0a0a 6060 600a 7079 7468 6f6e  ents..```.python
++00001590: 3a20 3e33 2e37 2c20 3c33 2e31 310a 6060  : >3.7, <3.11.``
++000015a0: 600a 0a23 2320 496e 7374 616c 6c61 7469  `..## Installati
++000015b0: 6f6e 0a0a 4350 5520 7375 7070 6f72 743a  on..CPU support:
++000015c0: 0a0a 6060 6062 6173 680a 7069 7020 696e  ..```bash.pip in
++000015d0: 7374 616c 6c20 7265 6d62 670a 6060 600a  stall rembg.```.
++000015e0: 0a47 5055 2073 7570 706f 7274 3a0a 0a46  .GPU support:..F
++000015f0: 6972 7374 206f 6620 616c 6c2c 2079 6f75  irst of all, you
++00001600: 206e 6565 6420 746f 2063 6865 636b 2069   need to check i
++00001610: 6620 796f 7572 2073 7973 7465 6d20 7375  f your system su
++00001620: 7070 6f72 7473 2074 6865 2060 6f6e 6e78  pports the `onnx
++00001630: 7275 6e74 696d 652d 6770 7560 2e0a 0a47  runtime-gpu`...G
++00001640: 6f20 746f 2068 7474 7073 3a2f 2f6f 6e6e  o to https://onn
++00001650: 7872 756e 7469 6d65 2e61 6920 616e 6420  xruntime.ai and 
++00001660: 6368 6563 6b20 7468 6520 696e 7374 616c  check the instal
++00001670: 6c61 7469 6f6e 206d 6174 7269 782e 0a0a  lation matrix...
++00001680: 3c70 2073 7479 6c65 3d22 6469 7370 6c61  <p style="displa
++00001690: 793a 2066 6c65 783b 616c 6967 6e2d 6974  y: flex;align-it
++000016a0: 656d 733a 2063 656e 7465 723b 6a75 7374  ems: center;just
++000016b0: 6966 792d 636f 6e74 656e 743a 2063 656e  ify-content: cen
++000016c0: 7465 723b 223e 0a20 203c 696d 6720 7372  ter;">.  <img sr
++000016d0: 633d 2268 7474 7073 3a2f 2f72 6177 2e67  c="https://raw.g
++000016e0: 6974 6875 6275 7365 7263 6f6e 7465 6e74  ithubusercontent
++000016f0: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
++00001700: 2f72 656d 6267 2f6d 6173 7465 722f 6f6e  /rembg/master/on
++00001710: 6e78 7275 6e74 696d 652d 696e 7374 616c  nxruntime-instal
++00001720: 6c61 7469 6f6e 2d6d 6174 7269 782e 706e  lation-matrix.pn
++00001730: 6722 2077 6964 7468 3d22 3430 3022 202f  g" width="400" /
++00001740: 3e0a 3c2f 703e 0a0a 4966 2079 6573 2c20  >.</p>..If yes, 
++00001750: 6a75 7374 2072 756e 3a0a 0a60 6060 6261  just run:..```ba
++00001760: 7368 0a70 6970 2069 6e73 7461 6c6c 2072  sh.pip install r
++00001770: 656d 6267 5b67 7075 5d0a 6060 600a 0a23  embg[gpu].```..#
++00001780: 2320 5573 6167 6520 6173 2061 2063 6c69  # Usage as a cli
++00001790: 0a0a 4166 7465 7220 7468 6520 696e 7374  ..After the inst
++000017a0: 616c 6c61 7469 6f6e 2073 7465 7020 796f  allation step yo
++000017b0: 7520 6361 6e20 7573 6520 7265 6d62 6720  u can use rembg 
++000017c0: 6a75 7374 2074 7970 696e 6720 6072 656d  just typing `rem
++000017d0: 6267 6020 696e 2079 6f75 7220 7465 726d  bg` in your term
++000017e0: 696e 616c 2077 696e 646f 772e 0a0a 5468  inal window...Th
++000017f0: 6520 6072 656d 6267 6020 636f 6d6d 616e  e `rembg` comman
++00001800: 6420 6861 7320 3420 7375 6263 6f6d 6d61  d has 4 subcomma
++00001810: 6e64 732c 206f 6e65 2066 6f72 2065 6163  nds, one for eac
++00001820: 6820 696e 7075 7420 7479 7065 3a0a 2d20  h input type:.- 
++00001830: 6069 6020 666f 7220 6669 6c65 730a 2d20  `i` for files.- 
++00001840: 6070 6020 666f 7220 666f 6c64 6572 730a  `p` for folders.
++00001850: 2d20 6073 6020 666f 7220 6874 7470 2073  - `s` for http s
++00001860: 6572 7665 720a 2d20 6062 6020 666f 7220  erver.- `b` for 
++00001870: 5247 4232 3420 7069 7865 6c20 6269 6e61  RGB24 pixel bina
++00001880: 7279 2073 7472 6561 6d0a 0a59 6f75 2063  ry stream..You c
++00001890: 616e 2067 6574 2068 656c 7020 6162 6f75  an get help abou
++000018a0: 7420 7468 6520 6d61 696e 2063 6f6d 6d61  t the main comma
++000018b0: 6e64 2075 7369 6e67 3a0a 0a60 6060 0a72  nd using:..```.r
++000018c0: 656d 6267 202d 2d68 656c 700a 6060 600a  embg --help.```.
++000018d0: 0a41 7320 7765 6c6c 2c20 6162 6f75 7420  .As well, about 
++000018e0: 616c 6c20 7468 6520 7375 6263 6f6d 6d61  all the subcomma
++000018f0: 6e64 7320 7573 696e 673a 0a0a 6060 600a  nds using:..```.
++00001900: 7265 6d62 6720 3c43 4f4d 4d41 4e44 3e20  rembg <COMMAND> 
++00001910: 2d2d 6865 6c70 0a60 6060 0a0a 2323 2320  --help.```..### 
++00001920: 7265 6d62 6720 6069 600a 0a55 7365 6420  rembg `i`..Used 
++00001930: 7768 656e 2069 6e70 7574 2061 6e64 206f  when input and o
++00001940: 7574 7075 7420 6172 6520 6669 6c65 732e  utput are files.
++00001950: 0a0a 5265 6d6f 7665 2074 6865 2062 6163  ..Remove the bac
++00001960: 6b67 726f 756e 6420 6672 6f6d 2061 2072  kground from a r
++00001970: 656d 6f74 6520 696d 6167 650a 0a60 6060  emote image..```
++00001980: 0a63 7572 6c20 2d73 2068 7474 703a 2f2f  .curl -s http://
++00001990: 696e 7075 742e 706e 6720 7c20 7265 6d62  input.png | remb
++000019a0: 6720 6920 3e20 6f75 7470 7574 2e70 6e67  g i > output.png
++000019b0: 0a60 6060 0a0a 5265 6d6f 7665 2074 6865  .```..Remove the
++000019c0: 2062 6163 6b67 726f 756e 6420 6672 6f6d   background from
++000019d0: 2061 206c 6f63 616c 2066 696c 650a 0a60   a local file..`
++000019e0: 6060 0a72 656d 6267 2069 2070 6174 682f  ``.rembg i path/
++000019f0: 746f 2f69 6e70 7574 2e70 6e67 2070 6174  to/input.png pat
++00001a00: 682f 746f 2f6f 7574 7075 742e 706e 670a  h/to/output.png.
++00001a10: 6060 600a 0a52 656d 6f76 6520 7468 6520  ```..Remove the 
++00001a20: 6261 636b 6772 6f75 6e64 2073 7065 6369  background speci
++00001a30: 6679 696e 6720 6120 6d6f 6465 6c0a 0a60  fying a model..`
++00001a40: 6060 0a72 656d 6267 2069 202d 6d20 7532  ``.rembg i -m u2
++00001a50: 6e65 7470 2070 6174 682f 746f 2f69 6e70  netp path/to/inp
++00001a60: 7574 2e70 6e67 2070 6174 682f 746f 2f6f  ut.png path/to/o
++00001a70: 7574 7075 742e 706e 670a 6060 600a 0a52  utput.png.```..R
++00001a80: 656d 6f76 6520 7468 6520 6261 636b 6772  emove the backgr
++00001a90: 6f75 6e64 2072 6574 7572 6e69 6e67 206f  ound returning o
++00001aa0: 6e6c 7920 7468 6520 6d61 736b 0a0a 6060  nly the mask..``
++00001ab0: 600a 7265 6d62 6720 6920 2d6f 6d20 7061  `.rembg i -om pa
++00001ac0: 7468 2f74 6f2f 696e 7075 742e 706e 6720  th/to/input.png 
++00001ad0: 7061 7468 2f74 6f2f 6f75 7470 7574 2e70  path/to/output.p
++00001ae0: 6e67 0a60 6060 0a0a 0a52 656d 6f76 6520  ng.```...Remove 
++00001af0: 7468 6520 6261 636b 6772 6f75 6e64 2061  the background a
++00001b00: 7070 6c79 696e 6720 616e 2061 6c70 6861  pplying an alpha
++00001b10: 206d 6174 7469 6e67 0a0a 6060 600a 7265   matting..```.re
++00001b20: 6d62 6720 6920 2d61 2070 6174 682f 746f  mbg i -a path/to
++00001b30: 2f69 6e70 7574 2e70 6e67 2070 6174 682f  /input.png path/
++00001b40: 746f 2f6f 7574 7075 742e 706e 670a 6060  to/output.png.``
++00001b50: 600a 0a50 6173 7369 6e67 2065 7874 7261  `..Passing extra
++00001b60: 7320 7061 7261 6d65 7465 7273 0a0a 6060  s parameters..``
++00001b70: 600a 7265 6d62 6720 6920 2d6d 2073 616d  `.rembg i -m sam
++00001b80: 202d 7820 277b 2269 6e70 7574 5f6c 6162   -x '{"input_lab
++00001b90: 656c 7322 3a20 5b31 5d2c 2022 696e 7075  els": [1], "inpu
++00001ba0: 745f 706f 696e 7473 223a 205b 5b31 3030  t_points": [[100
++00001bb0: 2c31 3030 5d5d 7d27 2070 6174 682f 746f  ,100]]}' path/to
++00001bc0: 2f69 6e70 7574 2e70 6e67 2070 6174 682f  /input.png path/
++00001bd0: 746f 2f6f 7574 7075 742e 706e 670a 6060  to/output.png.``
++00001be0: 600a 0a23 2323 2072 656d 6267 2060 7060  `..### rembg `p`
++00001bf0: 0a0a 5573 6564 2077 6865 6e20 696e 7075  ..Used when inpu
++00001c00: 7420 616e 6420 6f75 7470 7574 2061 7265  t and output are
++00001c10: 2066 6f6c 6465 7273 2e0a 0a52 656d 6f76   folders...Remov
++00001c20: 6520 7468 6520 6261 636b 6772 6f75 6e64  e the background
++00001c30: 2066 726f 6d20 616c 6c20 696d 6167 6573   from all images
++00001c40: 2069 6e20 6120 666f 6c64 6572 0a0a 6060   in a folder..``
++00001c50: 600a 7265 6d62 6720 7020 7061 7468 2f74  `.rembg p path/t
++00001c60: 6f2f 696e 7075 7420 7061 7468 2f74 6f2f  o/input path/to/
++00001c70: 6f75 7470 7574 0a60 6060 0a0a 5361 6d65  output.```..Same
++00001c80: 2061 7320 6265 666f 7265 2c20 6275 7420   as before, but 
++00001c90: 7761 7463 6869 6e67 2066 6f72 206e 6577  watching for new
++00001ca0: 2f63 6861 6e67 6564 2066 696c 6573 2074  /changed files t
++00001cb0: 6f20 7072 6f63 6573 730a 0a60 6060 0a72  o process..```.r
++00001cc0: 656d 6267 2070 202d 7720 7061 7468 2f74  embg p -w path/t
++00001cd0: 6f2f 696e 7075 7420 7061 7468 2f74 6f2f  o/input path/to/
++00001ce0: 6f75 7470 7574 0a60 6060 0a0a 2323 2320  output.```..### 
++00001cf0: 7265 6d62 6720 6073 600a 0a55 7365 6420  rembg `s`..Used 
++00001d00: 746f 2073 7461 7274 2068 7474 7020 7365  to start http se
++00001d10: 7276 6572 2e0a 0a54 6f20 7365 6520 7468  rver...To see th
++00001d20: 6520 636f 6d70 6c65 7465 2065 6e64 706f  e complete endpo
++00001d30: 696e 7473 2064 6f63 756d 656e 7461 7469  ints documentati
++00001d40: 6f6e 2c20 676f 2074 6f3a 2060 6874 7470  on, go to: `http
++00001d50: 3a2f 2f6c 6f63 616c 686f 7374 3a35 3030  ://localhost:500
++00001d60: 302f 646f 6373 602e 0a0a 5265 6d6f 7665  0/docs`...Remove
++00001d70: 2074 6865 2062 6163 6b67 726f 756e 6420   the background 
++00001d80: 6672 6f6d 2061 6e20 696d 6167 6520 7572  from an image ur
++00001d90: 6c0a 0a60 6060 0a63 7572 6c20 2d73 2022  l..```.curl -s "
++00001da0: 6874 7470 3a2f 2f6c 6f63 616c 686f 7374  http://localhost
++00001db0: 3a35 3030 302f 3f75 726c 3d68 7474 703a  :5000/?url=http:
++00001dc0: 2f2f 696e 7075 742e 706e 6722 202d 6f20  //input.png" -o 
++00001dd0: 6f75 7470 7574 2e70 6e67 0a60 6060 0a0a  output.png.```..
++00001de0: 5265 6d6f 7665 2074 6865 2062 6163 6b67  Remove the backg
++00001df0: 726f 756e 6420 6672 6f6d 2061 6e20 7570  round from an up
++00001e00: 6c6f 6164 6564 2069 6d61 6765 0a0a 6060  loaded image..``
++00001e10: 600a 6375 726c 202d 7320 2d46 2066 696c  `.curl -s -F fil
++00001e20: 653d 402f 7061 7468 2f74 6f2f 696e 7075  e=@/path/to/inpu
++00001e30: 742e 6a70 6720 2268 7474 703a 2f2f 6c6f  t.jpg "http://lo
++00001e40: 6361 6c68 6f73 743a 3530 3030 2220 202d  calhost:5000"  -
++00001e50: 6f20 6f75 7470 7574 2e70 6e67 0a60 6060  o output.png.```
++00001e60: 0a0a 2323 2320 7265 6d62 6720 6062 600a  ..### rembg `b`.
++00001e70: 0a50 726f 6365 7373 2061 2073 6571 7565  .Process a seque
++00001e80: 6e63 6520 6f66 2052 4742 3234 2069 6d61  nce of RGB24 ima
++00001e90: 6765 7320 6672 6f6d 2073 7464 696e 2e20  ges from stdin. 
++00001ea0: 5468 6973 2069 7320 696e 7465 6e64 6564  This is intended
++00001eb0: 2074 6f20 6265 2075 7365 6420 7769 7468   to be used with
++00001ec0: 2061 6e6f 7468 6572 2070 726f 6772 616d   another program
++00001ed0: 2c20 7375 6368 2061 7320 4646 4d50 4547  , such as FFMPEG
++00001ee0: 2c20 7468 6174 206f 7574 7075 7473 2052  , that outputs R
++00001ef0: 4742 3234 2070 6978 656c 2064 6174 6120  GB24 pixel data 
++00001f00: 746f 2073 7464 6f75 742c 2077 6869 6368  to stdout, which
++00001f10: 2069 7320 7069 7065 6420 696e 746f 2074   is piped into t
++00001f20: 6865 2073 7464 696e 206f 6620 7468 6973  he stdin of this
++00001f30: 2070 726f 6772 616d 2c20 616c 7468 6f75   program, althou
++00001f40: 6768 206e 6f74 6869 6e67 2070 7265 7665  gh nothing preve
++00001f50: 6e74 7320 796f 7520 6672 6f6d 206d 616e  nts you from man
++00001f60: 7561 6c6c 7920 7479 7069 6e67 2069 6e20  ually typing in 
++00001f70: 696d 6167 6573 2061 7420 7374 6469 6e2e  images at stdin.
++00001f80: 0a0a 6060 600a 7265 6d62 6720 6220 696d  ..```.rembg b im
++00001f90: 6167 655f 7769 6474 6820 696d 6167 655f  age_width image_
++00001fa0: 6865 6967 6874 202d 6f20 6f75 7470 7574  height -o output
++00001fb0: 5f73 7065 6369 6669 6572 0a60 6060 0a0a  _specifier.```..
++00001fc0: 4172 6775 6d65 6e74 733a 0a0a 2d20 696d  Arguments:..- im
++00001fd0: 6167 655f 7769 6474 6820 3a20 7769 6474  age_width : widt
++00001fe0: 6820 6f66 2069 6e70 7574 2069 6d61 6765  h of input image
++00001ff0: 2873 290a 2d20 696d 6167 655f 6865 6967  (s).- image_heig
++00002000: 6874 203a 2068 6569 6768 7420 6f66 2069  ht : height of i
++00002010: 6e70 7574 2069 6d61 6765 2873 290a 2d20  nput image(s).- 
++00002020: 6f75 7470 7574 5f73 7065 6369 6669 6572  output_specifier
++00002030: 3a20 7072 696e 7466 2d73 7479 6c65 2073  : printf-style s
++00002040: 7065 6369 6669 6572 2066 6f72 206f 7574  pecifier for out
++00002050: 7075 7420 6669 6c65 6e61 6d65 732c 2066  put filenames, f
++00002060: 6f72 2065 7861 6d70 6c65 2069 6620 606f  or example if `o
++00002070: 7574 7075 742d 2530 3375 2e70 6e67 602c  utput-%03u.png`,
++00002080: 2074 6865 6e20 6f75 7470 7574 2066 696c   then output fil
++00002090: 6573 2077 696c 6c20 6265 206e 616d 6564  es will be named
++000020a0: 2060 6f75 7470 7574 2d30 3030 2e70 6e67   `output-000.png
++000020b0: 602c 2060 6f75 7470 7574 2d30 3031 2e70  `, `output-001.p
++000020c0: 6e67 602c 2060 6f75 7470 7574 2d30 3032  ng`, `output-002
++000020d0: 2e70 6e67 602c 2065 7463 2e20 4f75 7470  .png`, etc. Outp
++000020e0: 7574 2066 696c 6573 2077 696c 6c20 6265  ut files will be
++000020f0: 2073 6176 6564 2069 6e20 504e 4720 666f   saved in PNG fo
++00002100: 726d 6174 2072 6567 6172 646c 6573 7320  rmat regardless 
++00002110: 6f66 2074 6865 2065 7874 656e 7369 6f6e  of the extension
++00002120: 2073 7065 6369 6669 6564 2e20 596f 7520   specified. You 
++00002130: 6361 6e20 6f6d 6974 2069 7420 746f 2077  can omit it to w
++00002140: 7269 7465 2072 6573 756c 7473 2074 6f20  rite results to 
++00002150: 7374 646f 7574 2e0a 0a45 7861 6d70 6c65  stdout...Example
++00002160: 2075 7361 6765 2077 6974 6820 4646 4d50   usage with FFMP
++00002170: 4547 3a0a 0a60 6060 0a66 666d 7065 6720  EG:..```.ffmpeg 
++00002180: 2d69 2069 6e70 7574 2e6d 7034 202d 7373  -i input.mp4 -ss
++00002190: 2031 3020 2d61 6e20 2d66 2072 6177 7669   10 -an -f rawvi
++000021a0: 6465 6f20 2d70 6978 5f66 6d74 2072 6762  deo -pix_fmt rgb
++000021b0: 3234 2070 6970 653a 3120 7c20 7265 6d62  24 pipe:1 | remb
++000021c0: 6720 6220 3132 3830 2037 3230 202d 6f20  g b 1280 720 -o 
++000021d0: 666f 6c64 6572 2f6f 7574 7075 742d 2530  folder/output-%0
++000021e0: 3375 2e70 6e67 0a60 6060 0a0a 5468 6520  3u.png.```..The 
++000021f0: 7769 6474 6820 616e 6420 6865 6967 6874  width and height
++00002200: 2076 616c 7565 7320 6d75 7374 206d 6174   values must mat
++00002210: 6368 2074 6865 2064 696d 656e 7369 6f6e  ch the dimension
++00002220: 206f 6620 6f75 7470 7574 2069 6d61 6765   of output image
++00002230: 7320 6672 6f6d 2046 464d 5045 472e 204e  s from FFMPEG. N
++00002240: 6f74 6520 666f 7220 4646 4d50 4547 2c20  ote for FFMPEG, 
++00002250: 7468 6520 2260 2d61 6e20 2d66 2072 6177  the "`-an -f raw
++00002260: 7669 6465 6f20 2d70 6978 5f66 6d74 2072  video -pix_fmt r
++00002270: 6762 3234 2070 6970 653a 3160 2220 7061  gb24 pipe:1`" pa
++00002280: 7274 2069 7320 7265 7175 6972 6564 2066  rt is required f
++00002290: 6f72 2074 6865 2077 686f 6c65 2074 6869  or the whole thi
++000022a0: 6e67 2074 6f20 776f 726b 2e0a 0a0a 2323  ng to work....##
++000022b0: 2055 7361 6765 2061 7320 6120 6c69 6272   Usage as a libr
++000022c0: 6172 790a 0a49 6e70 7574 2061 6e64 206f  ary..Input and o
++000022d0: 7574 7075 7420 6173 2062 7974 6573 0a0a  utput as bytes..
++000022e0: 6060 6070 7974 686f 6e0a 6672 6f6d 2072  ```python.from r
++000022f0: 656d 6267 2069 6d70 6f72 7420 7265 6d6f  embg import remo
++00002300: 7665 0a0a 696e 7075 745f 7061 7468 203d  ve..input_path =
++00002310: 2027 696e 7075 742e 706e 6727 0a6f 7574   'input.png'.out
++00002320: 7075 745f 7061 7468 203d 2027 6f75 7470  put_path = 'outp
++00002330: 7574 2e70 6e67 270a 0a77 6974 6820 6f70  ut.png'..with op
++00002340: 656e 2869 6e70 7574 5f70 6174 682c 2027  en(input_path, '
++00002350: 7262 2729 2061 7320 693a 0a20 2020 2077  rb') as i:.    w
++00002360: 6974 6820 6f70 656e 286f 7574 7075 745f  ith open(output_
++00002370: 7061 7468 2c20 2777 6227 2920 6173 206f  path, 'wb') as o
++00002380: 3a0a 2020 2020 2020 2020 696e 7075 7420  :.        input 
++00002390: 3d20 692e 7265 6164 2829 0a20 2020 2020  = i.read().     
++000023a0: 2020 206f 7574 7075 7420 3d20 7265 6d6f     output = remo
++000023b0: 7665 2869 6e70 7574 290a 2020 2020 2020  ve(input).      
++000023c0: 2020 6f2e 7772 6974 6528 6f75 7470 7574    o.write(output
++000023d0: 290a 6060 600a 0a49 6e70 7574 2061 6e64  ).```..Input and
++000023e0: 206f 7574 7075 7420 6173 2061 2050 494c   output as a PIL
++000023f0: 2069 6d61 6765 0a0a 6060 6070 7974 686f   image..```pytho
++00002400: 6e0a 6672 6f6d 2072 656d 6267 2069 6d70  n.from rembg imp
++00002410: 6f72 7420 7265 6d6f 7665 0a66 726f 6d20  ort remove.from 
++00002420: 5049 4c20 696d 706f 7274 2049 6d61 6765  PIL import Image
++00002430: 0a0a 696e 7075 745f 7061 7468 203d 2027  ..input_path = '
++00002440: 696e 7075 742e 706e 6727 0a6f 7574 7075  input.png'.outpu
++00002450: 745f 7061 7468 203d 2027 6f75 7470 7574  t_path = 'output
++00002460: 2e70 6e67 270a 0a69 6e70 7574 203d 2049  .png'..input = I
++00002470: 6d61 6765 2e6f 7065 6e28 696e 7075 745f  mage.open(input_
++00002480: 7061 7468 290a 6f75 7470 7574 203d 2072  path).output = r
++00002490: 656d 6f76 6528 696e 7075 7429 0a6f 7574  emove(input).out
++000024a0: 7075 742e 7361 7665 286f 7574 7075 745f  put.save(output_
++000024b0: 7061 7468 290a 6060 600a 0a49 6e70 7574  path).```..Input
++000024c0: 2061 6e64 206f 7574 7075 7420 6173 2061   and output as a
++000024d0: 206e 756d 7079 2061 7272 6179 0a0a 6060   numpy array..``
++000024e0: 6070 7974 686f 6e0a 6672 6f6d 2072 656d  `python.from rem
++000024f0: 6267 2069 6d70 6f72 7420 7265 6d6f 7665  bg import remove
++00002500: 0a69 6d70 6f72 7420 6376 320a 0a69 6e70  .import cv2..inp
++00002510: 7574 5f70 6174 6820 3d20 2769 6e70 7574  ut_path = 'input
++00002520: 2e70 6e67 270a 6f75 7470 7574 5f70 6174  .png'.output_pat
++00002530: 6820 3d20 276f 7574 7075 742e 706e 6727  h = 'output.png'
++00002540: 0a0a 696e 7075 7420 3d20 6376 322e 696d  ..input = cv2.im
++00002550: 7265 6164 2869 6e70 7574 5f70 6174 6829  read(input_path)
++00002560: 0a6f 7574 7075 7420 3d20 7265 6d6f 7665  .output = remove
++00002570: 2869 6e70 7574 290a 6376 322e 696d 7772  (input).cv2.imwr
++00002580: 6974 6528 6f75 7470 7574 5f70 6174 682c  ite(output_path,
++00002590: 206f 7574 7075 7429 0a60 6060 0a0a 486f   output).```..Ho
++000025a0: 7720 746f 2069 7465 7261 7465 206f 7665  w to iterate ove
++000025b0: 7220 6669 6c65 7320 696e 2061 2070 6572  r files in a per
++000025c0: 666f 726d 6174 6963 2077 6179 0a0a 6060  formatic way..``
++000025d0: 6070 7974 686f 6e0a 6672 6f6d 2070 6174  `python.from pat
++000025e0: 686c 6962 2069 6d70 6f72 7420 5061 7468  hlib import Path
++000025f0: 0a66 726f 6d20 7265 6d62 6720 696d 706f  .from rembg impo
++00002600: 7274 2072 656d 6f76 652c 206e 6577 5f73  rt remove, new_s
++00002610: 6573 7369 6f6e 0a0a 7365 7373 696f 6e20  ession..session 
++00002620: 3d20 6e65 775f 7365 7373 696f 6e28 290a  = new_session().
++00002630: 0a66 6f72 2066 696c 6520 696e 2050 6174  .for file in Pat
++00002640: 6828 2770 6174 682f 746f 2f66 6f6c 6465  h('path/to/folde
++00002650: 7227 292e 676c 6f62 2827 2a2e 706e 6727  r').glob('*.png'
++00002660: 293a 0a20 2020 2069 6e70 7574 5f70 6174  ):.    input_pat
++00002670: 6820 3d20 7374 7228 6669 6c65 290a 2020  h = str(file).  
++00002680: 2020 6f75 7470 7574 5f70 6174 6820 3d20    output_path = 
++00002690: 7374 7228 6669 6c65 2e70 6172 656e 7420  str(file.parent 
++000026a0: 2f20 2866 696c 652e 7374 656d 202b 2022  / (file.stem + "
++000026b0: 2e6f 7574 2e70 6e67 2229 290a 0a20 2020  .out.png"))..   
++000026c0: 2077 6974 6820 6f70 656e 2869 6e70 7574   with open(input
++000026d0: 5f70 6174 682c 2027 7262 2729 2061 7320  _path, 'rb') as 
++000026e0: 693a 0a20 2020 2020 2020 2077 6974 6820  i:.        with 
++000026f0: 6f70 656e 286f 7574 7075 745f 7061 7468  open(output_path
++00002700: 2c20 2777 6227 2920 6173 206f 3a0a 2020  , 'wb') as o:.  
++00002710: 2020 2020 2020 2020 2020 696e 7075 7420            input 
++00002720: 3d20 692e 7265 6164 2829 0a20 2020 2020  = i.read().     
++00002730: 2020 2020 2020 206f 7574 7075 7420 3d20         output = 
++00002740: 7265 6d6f 7665 2869 6e70 7574 2c20 7365  remove(input, se
++00002750: 7373 696f 6e3d 7365 7373 696f 6e29 0a20  ssion=session). 
++00002760: 2020 2020 2020 2020 2020 206f 2e77 7269             o.wri
++00002770: 7465 286f 7574 7075 7429 0a60 6060 0a54  te(output).```.T
++00002780: 6f20 7365 6520 6120 6675 6c6c 206c 6973  o see a full lis
++00002790: 7420 6f66 2065 7861 6d70 6c65 7320 6f6e  t of examples on
++000027a0: 2068 6f77 2074 6f20 7573 6520 7265 6d62   how to use remb
++000027b0: 672c 2067 6f20 746f 2074 6865 205b 6578  g, go to the [ex
++000027c0: 616d 706c 6573 5d28 5553 4147 452e 6d64  amples](USAGE.md
++000027d0: 2920 7061 6765 2e0a 2323 2055 7361 6765  ) page..## Usage
++000027e0: 2061 7320 6120 646f 636b 6572 0a0a 4a75   as a docker..Ju
++000027f0: 7374 2072 6570 6c61 6365 2074 6865 2060  st replace the `
++00002800: 7265 6d62 6760 2063 6f6d 6d61 6e64 2066  rembg` command f
++00002810: 6f72 2060 646f 636b 6572 2072 756e 2064  or `docker run d
++00002820: 616e 6965 6c67 6174 6973 2f72 656d 6267  anielgatis/rembg
++00002830: 602e 0a0a 5472 7920 7468 6973 3a0a 0a60  `...Try this:..`
++00002840: 6060 0a64 6f63 6b65 7220 7275 6e20 6461  ``.docker run da
++00002850: 6e69 656c 6761 7469 732f 7265 6d62 6720  nielgatis/rembg 
++00002860: 6920 7061 7468 2f74 6f2f 696e 7075 742e  i path/to/input.
++00002870: 706e 6720 7061 7468 2f74 6f2f 6f75 7470  png path/to/outp
++00002880: 7574 2e70 6e67 0a60 6060 0a0a 2323 204d  ut.png.```..## M
++00002890: 6f64 656c 730a 0a41 6c6c 206d 6f64 656c  odels..All model
++000028a0: 7320 6172 6520 646f 776e 6c6f 6164 6564  s are downloaded
++000028b0: 2061 6e64 2073 6176 6564 2069 6e20 7468   and saved in th
++000028c0: 6520 7573 6572 2068 6f6d 6520 666f 6c64  e user home fold
++000028d0: 6572 2069 6e20 7468 6520 602e 7532 6e65  er in the `.u2ne
++000028e0: 7460 2064 6972 6563 746f 7279 2e0a 0a54  t` directory...T
++000028f0: 6865 2061 7661 696c 6162 6c65 206d 6f64  he available mod
++00002900: 656c 7320 6172 653a 0a0a 2d20 2020 7532  els are:..-   u2
++00002910: 6e65 7420 285b 646f 776e 6c6f 6164 5d28  net ([download](
++00002920: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
++00002930: 6f6d 2f64 616e 6965 6c67 6174 6973 2f72  om/danielgatis/r
++00002940: 656d 6267 2f72 656c 6561 7365 732f 646f  embg/releases/do
++00002950: 776e 6c6f 6164 2f76 302e 302e 302f 7532  wnload/v0.0.0/u2
++00002960: 6e65 742e 6f6e 6e78 292c 205b 736f 7572  net.onnx), [sour
++00002970: 6365 5d28 6874 7470 733a 2f2f 6769 7468  ce](https://gith
++00002980: 7562 2e63 6f6d 2f78 7565 6269 6e71 696e  ub.com/xuebinqin
++00002990: 2f55 2d32 2d4e 6574 2929 3a20 4120 7072  /U-2-Net)): A pr
++000029a0: 652d 7472 6169 6e65 6420 6d6f 6465 6c20  e-trained model 
++000029b0: 666f 7220 6765 6e65 7261 6c20 7573 6520  for general use 
++000029c0: 6361 7365 732e 0a2d 2020 2075 326e 6574  cases..-   u2net
++000029d0: 7020 285b 646f 776e 6c6f 6164 5d28 6874  p ([download](ht
++000029e0: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++000029f0: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
++00002a00: 6267 2f72 656c 6561 7365 732f 646f 776e  bg/releases/down
++00002a10: 6c6f 6164 2f76 302e 302e 302f 7532 6e65  load/v0.0.0/u2ne
++00002a20: 7470 2e6f 6e6e 7829 2c20 5b73 6f75 7263  tp.onnx), [sourc
++00002a30: 655d 2868 7474 7073 3a2f 2f67 6974 6875  e](https://githu
++00002a40: 622e 636f 6d2f 7875 6562 696e 7169 6e2f  b.com/xuebinqin/
++00002a50: 552d 322d 4e65 7429 293a 2041 206c 6967  U-2-Net)): A lig
++00002a60: 6874 7765 6967 6874 2076 6572 7369 6f6e  htweight version
++00002a70: 206f 6620 7532 6e65 7420 6d6f 6465 6c2e   of u2net model.
++00002a80: 0a2d 2020 2075 326e 6574 5f68 756d 616e  .-   u2net_human
++00002a90: 5f73 6567 2028 5b64 6f77 6e6c 6f61 645d  _seg ([download]
++00002aa0: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00002ab0: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
++00002ac0: 7265 6d62 672f 7265 6c65 6173 6573 2f64  rembg/releases/d
++00002ad0: 6f77 6e6c 6f61 642f 7630 2e30 2e30 2f75  ownload/v0.0.0/u
++00002ae0: 326e 6574 5f68 756d 616e 5f73 6567 2e6f  2net_human_seg.o
++00002af0: 6e6e 7829 2c20 5b73 6f75 7263 655d 2868  nnx), [source](h
++00002b00: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
++00002b10: 6d2f 7875 6562 696e 7169 6e2f 552d 322d  m/xuebinqin/U-2-
++00002b20: 4e65 7429 293a 2041 2070 7265 2d74 7261  Net)): A pre-tra
++00002b30: 696e 6564 206d 6f64 656c 2066 6f72 2068  ined model for h
++00002b40: 756d 616e 2073 6567 6d65 6e74 6174 696f  uman segmentatio
++00002b50: 6e2e 0a2d 2020 2075 326e 6574 5f63 6c6f  n..-   u2net_clo
++00002b60: 7468 5f73 6567 2028 5b64 6f77 6e6c 6f61  th_seg ([downloa
++00002b70: 645d 2868 7474 7073 3a2f 2f67 6974 6875  d](https://githu
++00002b80: 622e 636f 6d2f 6461 6e69 656c 6761 7469  b.com/danielgati
++00002b90: 732f 7265 6d62 672f 7265 6c65 6173 6573  s/rembg/releases
++00002ba0: 2f64 6f77 6e6c 6f61 642f 7630 2e30 2e30  /download/v0.0.0
++00002bb0: 2f75 326e 6574 5f63 6c6f 7468 5f73 6567  /u2net_cloth_seg
++00002bc0: 2e6f 6e6e 7829 2c20 5b73 6f75 7263 655d  .onnx), [source]
++00002bd0: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00002be0: 636f 6d2f 6c65 7669 6e64 6162 6869 2f63  com/levindabhi/c
++00002bf0: 6c6f 7468 2d73 6567 6d65 6e74 6174 696f  loth-segmentatio
++00002c00: 6e29 293a 2041 2070 7265 2d74 7261 696e  n)): A pre-train
++00002c10: 6564 206d 6f64 656c 2066 6f72 2043 6c6f  ed model for Clo
++00002c20: 7468 7320 5061 7273 696e 6720 6672 6f6d  ths Parsing from
++00002c30: 2068 756d 616e 2070 6f72 7472 6169 742e   human portrait.
++00002c40: 2048 6572 6520 636c 6f74 6865 7320 6172   Here clothes ar
++00002c50: 6520 7061 7273 6564 2069 6e74 6f20 3320  e parsed into 3 
++00002c60: 6361 7465 676f 7279 3a20 5570 7065 7220  category: Upper 
++00002c70: 626f 6479 2c20 4c6f 7765 7220 626f 6479  body, Lower body
++00002c80: 2061 6e64 2046 756c 6c20 626f 6479 2e0a   and Full body..
++00002c90: 2d20 2020 7369 6c75 6574 6120 285b 646f  -   silueta ([do
++00002ca0: 776e 6c6f 6164 5d28 6874 7470 733a 2f2f  wnload](https://
++00002cb0: 6769 7468 7562 2e63 6f6d 2f64 616e 6965  github.com/danie
++00002cc0: 6c67 6174 6973 2f72 656d 6267 2f72 656c  lgatis/rembg/rel
++00002cd0: 6561 7365 732f 646f 776e 6c6f 6164 2f76  eases/download/v
++00002ce0: 302e 302e 302f 7369 6c75 6574 612e 6f6e  0.0.0/silueta.on
++00002cf0: 6e78 292c 205b 736f 7572 6365 5d28 6874  nx), [source](ht
++00002d00: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00002d10: 2f78 7565 6269 6e71 696e 2f55 2d32 2d4e  /xuebinqin/U-2-N
++00002d20: 6574 2f69 7373 7565 732f 3239 3529 293a  et/issues/295)):
++00002d30: 2053 616d 6520 6173 2075 326e 6574 2062   Same as u2net b
++00002d40: 7574 2074 6865 2073 697a 6520 6973 2072  ut the size is r
++00002d50: 6564 7563 6564 2074 6f20 3433 4d62 2e0a  educed to 43Mb..
++00002d60: 2d20 2020 6973 6e65 742d 6765 6e65 7261  -   isnet-genera
++00002d70: 6c2d 7573 6520 285b 646f 776e 6c6f 6164  l-use ([download
++00002d80: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
++00002d90: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
++00002da0: 2f72 656d 6267 2f72 656c 6561 7365 732f  /rembg/releases/
++00002db0: 646f 776e 6c6f 6164 2f76 302e 302e 302f  download/v0.0.0/
++00002dc0: 6973 6e65 742d 6765 6e65 7261 6c2d 7573  isnet-general-us
++00002dd0: 652e 6f6e 6e78 292c 205b 736f 7572 6365  e.onnx), [source
++00002de0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
++00002df0: 2e63 6f6d 2f78 7565 6269 6e71 696e 2f44  .com/xuebinqin/D
++00002e00: 4953 2929 3a20 4120 6e65 7720 7072 652d  IS)): A new pre-
++00002e10: 7472 6169 6e65 6420 6d6f 6465 6c20 666f  trained model fo
++00002e20: 7220 6765 6e65 7261 6c20 7573 6520 6361  r general use ca
++00002e30: 7365 732e 0a2d 2020 2069 736e 6574 2d61  ses..-   isnet-a
++00002e40: 6e69 6d65 2028 5b64 6f77 6e6c 6f61 645d  nime ([download]
++00002e50: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00002e60: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
++00002e70: 7265 6d62 672f 7265 6c65 6173 6573 2f64  rembg/releases/d
++00002e80: 6f77 6e6c 6f61 642f 7630 2e30 2e30 2f69  ownload/v0.0.0/i
++00002e90: 736e 6574 2d61 6e69 6d65 2e6f 6e6e 7829  snet-anime.onnx)
++00002ea0: 2c20 5b73 6f75 7263 655d 2868 7474 7073  , [source](https
++00002eb0: 3a2f 2f67 6974 6875 622e 636f 6d2f 536b  ://github.com/Sk
++00002ec0: 7954 4e54 2f61 6e69 6d65 2d73 6567 6d65  yTNT/anime-segme
++00002ed0: 6e74 6174 696f 6e29 293a 2041 2068 6967  ntation)): A hig
++00002ee0: 682d 6163 6375 7261 6379 2073 6567 6d65  h-accuracy segme
++00002ef0: 6e74 6174 696f 6e20 666f 7220 616e 696d  ntation for anim
++00002f00: 6520 6368 6172 6163 7465 722e 0a2d 2020  e character..-  
++00002f10: 2073 616d 2028 5b64 6f77 6e6c 6f61 6420   sam ([download 
++00002f20: 656e 636f 6465 725d 2868 7474 7073 3a2f  encoder](https:/
++00002f30: 2f67 6974 6875 622e 636f 6d2f 6461 6e69  /github.com/dani
++00002f40: 656c 6761 7469 732f 7265 6d62 672f 7265  elgatis/rembg/re
++00002f50: 6c65 6173 6573 2f64 6f77 6e6c 6f61 642f  leases/download/
++00002f60: 7630 2e30 2e30 2f76 6974 5f62 2d65 6e63  v0.0.0/vit_b-enc
++00002f70: 6f64 6572 2d71 7561 6e74 2e6f 6e6e 7829  oder-quant.onnx)
++00002f80: 2c20 5b64 6f77 6e6c 6f61 6420 6465 636f  , [download deco
++00002f90: 6465 725d 2868 7474 7073 3a2f 2f67 6974  der](https://git
++00002fa0: 6875 622e 636f 6d2f 6461 6e69 656c 6761  hub.com/danielga
++00002fb0: 7469 732f 7265 6d62 672f 7265 6c65 6173  tis/rembg/releas
++00002fc0: 6573 2f64 6f77 6e6c 6f61 642f 7630 2e30  es/download/v0.0
++00002fd0: 2e30 2f76 6974 5f62 2d64 6563 6f64 6572  .0/vit_b-decoder
++00002fe0: 2d71 7561 6e74 2e6f 6e6e 7829 2c20 5b73  -quant.onnx), [s
++00002ff0: 6f75 7263 655d 2868 7474 7073 3a2f 2f67  ource](https://g
++00003000: 6974 6875 622e 636f 6d2f 6661 6365 626f  ithub.com/facebo
++00003010: 6f6b 7265 7365 6172 6368 2f73 6567 6d65  okresearch/segme
++00003020: 6e74 2d61 6e79 7468 696e 6729 293a 2041  nt-anything)): A
++00003030: 2070 7265 2d74 7261 696e 6564 206d 6f64   pre-trained mod
++00003040: 656c 2066 6f72 2061 6e79 2075 7365 2063  el for any use c
++00003050: 6173 6573 2e0a 0a23 2323 2048 6f77 2074  ases...### How t
++00003060: 6f20 7472 6169 6e20 796f 7572 206f 776e  o train your own
++00003070: 206d 6f64 656c 0a0a 4966 2059 6f75 206e   model..If You n
++00003080: 6565 6420 6d6f 7265 2066 696e 6520 7475  eed more fine tu
++00003090: 6e6e 6564 206d 6f64 656c 7320 7472 7920  nned models try 
++000030a0: 7468 6973 3a0a 6874 7470 733a 2f2f 6769  this:.https://gi
++000030b0: 7468 7562 2e63 6f6d 2f64 616e 6965 6c67  thub.com/danielg
++000030c0: 6174 6973 2f72 656d 6267 2f69 7373 7565  atis/rembg/issue
++000030d0: 732f 3139 3323 6973 7375 6563 6f6d 6d65  s/193#issuecomme
++000030e0: 6e74 2d31 3035 3535 3334 3238 390a 0a0a  nt-1055534289...
++000030f0: 2323 2053 6f6d 6520 7669 6465 6f20 7475  ## Some video tu
++00003100: 746f 7269 616c 730a 0a2d 2068 7474 7073  torials..- https
++00003110: 3a2f 2f77 7777 2e79 6f75 7475 6265 2e63  ://www.youtube.c
++00003120: 6f6d 2f77 6174 6368 3f76 3d33 7871 7770  om/watch?v=3xqwp
++00003130: 586a 7879 4d51 0a2d 2068 7474 7073 3a2f  XjxyMQ.- https:/
++00003140: 2f77 7777 2e79 6f75 7475 6265 2e63 6f6d  /www.youtube.com
++00003150: 2f77 6174 6368 3f76 3d64 464b 5247 5864  /watch?v=dFKRGXd
++00003160: 6b47 4a55 0a2d 2068 7474 7073 3a2f 2f77  kGJU.- https://w
++00003170: 7777 2e79 6f75 7475 6265 2e63 6f6d 2f77  ww.youtube.com/w
++00003180: 6174 6368 3f76 3d41 692d 4253 5f54 3779  atch?v=Ai-BS_T7y
++00003190: 6a45 0a2d 2068 7474 7073 3a2f 2f77 7777  jE.- https://www
++000031a0: 2e79 6f75 7475 6265 2e63 6f6d 2f77 6174  .youtube.com/wat
++000031b0: 6368 3f76 3d64 464b 5247 5864 6b47 4a55  ch?v=dFKRGXdkGJU
++000031c0: 0a2d 2068 7474 7073 3a2f 2f77 7777 2e79  .- https://www.y
++000031d0: 6f75 7475 6265 2e63 6f6d 2f77 6174 6368  outube.com/watch
++000031e0: 3f76 3d44 3757 2d43 3075 7256 6351 0a0a  ?v=D7W-C0urVcQ..
++000031f0: 2323 2052 6566 6572 656e 6365 730a 0a2d  ## References..-
++00003200: 2068 7474 7073 3a2f 2f61 7278 6976 2e6f   https://arxiv.o
++00003210: 7267 2f70 6466 2f32 3030 352e 3039 3030  rg/pdf/2005.0900
++00003220: 372e 7064 660a 2d20 6874 7470 733a 2f2f  7.pdf.- https://
++00003230: 6769 7468 7562 2e63 6f6d 2f4e 6174 6861  github.com/Natha
++00003240: 6e55 412f 552d 322d 4e65 740a 2d20 6874  nUA/U-2-Net.- ht
++00003250: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00003260: 2f70 796d 6174 7469 6e67 2f70 796d 6174  /pymatting/pymat
++00003270: 7469 6e67 0a0a 2323 2042 7579 206d 6520  ting..## Buy me 
++00003280: 6120 636f 6666 6565 0a0a 4c69 6b65 6420  a coffee..Liked 
++00003290: 736f 6d65 206f 6620 6d79 2077 6f72 6b3f  some of my work?
++000032a0: 2042 7579 206d 6520 6120 636f 6666 6565   Buy me a coffee
++000032b0: 2028 6f72 206d 6f72 6520 6c69 6b65 6c79   (or more likely
++000032c0: 2061 2062 6565 7229 0a0a 3c61 2068 7265   a beer)..<a hre
++000032d0: 663d 2268 7474 7073 3a2f 2f77 7777 2e62  f="https://www.b
++000032e0: 7579 6d65 6163 6f66 6665 652e 636f 6d2f  uymeacoffee.com/
++000032f0: 6461 6e69 656c 6761 7469 7322 2074 6172  danielgatis" tar
++00003300: 6765 743d 225f 626c 616e 6b22 3e3c 696d  get="_blank"><im
++00003310: 6720 7372 633d 2268 7474 7073 3a2f 2f62  g src="https://b
++00003320: 6d63 2d63 646e 2e6e 7963 332e 6469 6769  mc-cdn.nyc3.digi
++00003330: 7461 6c6f 6365 616e 7370 6163 6573 2e63  taloceanspaces.c
++00003340: 6f6d 2f42 4d43 2d62 7574 746f 6e2d 696d  om/BMC-button-im
++00003350: 6167 6573 2f63 7573 746f 6d5f 696d 6167  ages/custom_imag
++00003360: 6573 2f6f 7261 6e67 655f 696d 672e 706e  es/orange_img.pn
++00003370: 6722 2061 6c74 3d22 4275 7920 4d65 2041  g" alt="Buy Me A
++00003380: 2043 6f66 6665 6522 2073 7479 6c65 3d22   Coffee" style="
++00003390: 6865 6967 6874 3a20 6175 746f 2021 696d  height: auto !im
++000033a0: 706f 7274 616e 743b 7769 6474 683a 2061  portant;width: a
++000033b0: 7574 6f20 2169 6d70 6f72 7461 6e74 3b22  uto !important;"
++000033c0: 3e3c 2f61 3e0a 0a23 2320 4c69 6365 6e73  ></a>..## Licens
++000033d0: 650a 0a43 6f70 7972 6967 6874 2028 6329  e..Copyright (c)
++000033e0: 2032 3032 302d 7072 6573 656e 7420 5b44   2020-present [D
++000033f0: 616e 6965 6c20 4761 7469 735d 2868 7474  aniel Gatis](htt
++00003400: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++00003410: 6461 6e69 656c 6761 7469 7329 0a0a 4c69  danielgatis)..Li
++00003420: 6365 6e73 6564 2075 6e64 6572 205b 4d49  censed under [MI
++00003430: 5420 4c69 6365 6e73 655d 282e 2f4c 4943  T License](./LIC
++00003440: 454e 5345 2e74 7874 290a 0a0a            ENSE.txt)...
+```
+
+### Comparing `rembg-2.0.37/README.md` & `rembg-2.0.38/README.md`
+
+ * *Files 8% similar despite different names*
+
+```diff
+@@ -33,14 +33,23 @@
+   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-1.out.png" width="100" />
+   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-2.jpg" width="100" />
+   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-2.out.png" width="100" />
+   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.jpg" width="100" />
+   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.out.png" width="100" />
+ </p>
+ 
++<p style="display: flex;align-items: center;justify-content: center;">
++  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-1.jpg" width="100" />
++  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-1.out.png" width="100" />
++  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-2.jpg" width="100" />
++  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-2.out.png" width="100" />
++  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-3.jpg" width="100" />
++  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-3.out.png" width="100" />
++</p>
++
+ **If this project has helped you, please consider making a [donation](https://www.buymeacoffee.com/danielgatis).**
+ 
+ ## Sponsor
+ 
+ <table>
+   <tr>
+     <td align="center" vertical-align="center">
+@@ -292,51 +301,17 @@
+ 
+ -   u2net ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx), [source](https://github.com/xuebinqin/U-2-Net)): A pre-trained model for general use cases.
+ -   u2netp ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx), [source](https://github.com/xuebinqin/U-2-Net)): A lightweight version of u2net model.
+ -   u2net_human_seg ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx), [source](https://github.com/xuebinqin/U-2-Net)): A pre-trained model for human segmentation.
+ -   u2net_cloth_seg ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_cloth_seg.onnx), [source](https://github.com/levindabhi/cloth-segmentation)): A pre-trained model for Cloths Parsing from human portrait. Here clothes are parsed into 3 category: Upper body, Lower body and Full body.
+ -   silueta ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/silueta.onnx), [source](https://github.com/xuebinqin/U-2-Net/issues/295)): Same as u2net but the size is reduced to 43Mb.
+ -   isnet-general-use ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx), [source](https://github.com/xuebinqin/DIS)): A new pre-trained model for general use cases.
++-   isnet-anime ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx), [source](https://github.com/SkyTNT/anime-segmentation)): A high-accuracy segmentation for anime character.
+ -   sam ([download encoder](https://github.com/danielgatis/rembg/releases/download/v0.0.0/vit_b-encoder-quant.onnx), [download decoder](https://github.com/danielgatis/rembg/releases/download/v0.0.0/vit_b-decoder-quant.onnx), [source](https://github.com/facebookresearch/segment-anything)): A pre-trained model for any use cases.
+ 
+-### Some differences between the models result
+-
+-<table>
+-    <tr>
+-        <th>original</th>
+-        <th>u2net</th>
+-        <th>u2netp</th>
+-        <th>u2net_human_seg</th>
+-        <th>u2net_cloth_seg</th>
+-        <th>silueta</th>
+-        <th>isnet-general-use</th>
+-        <th>sam</th>
+-    </tr>
+-    <tr>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/fixtures/car-1.jpg" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.u2net.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.u2netp.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.u2net_human_seg.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.u2net_cloth_seg.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.silueta.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.isnet-general-use.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/car-1.sam.png" width="100" /></th>
+-    </tr>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/fixtures/cloth-1.jpg" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.u2net.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.u2netp.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.u2net_human_seg.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.u2net_cloth_seg.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.silueta.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.isnet-general-use.png" width="100" /></th>
+-        <th><img src="https://raw.githubusercontent.com/danielgatis/rembg/master/tests/results/cloth-1.sam.png" width="100" /></th>
+-    </tr>
+-</table>
+-
+-
+ ### How to train your own model
+ 
+ If You need more fine tunned models try this:
+ https://github.com/danielgatis/rembg/issues/193#issuecomment-1055534289
+ 
+ 
+ ## Some video tutorials
+```
+
+#### html2text {}
+
+```diff
+@@ -24,14 +24,22 @@
+ [https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-
+ 1.jpg] [https://raw.githubusercontent.com/danielgatis/rembg/master/examples/
+ girl-1.out.png] [https://raw.githubusercontent.com/danielgatis/rembg/master/
+ examples/girl-2.jpg] [https://raw.githubusercontent.com/danielgatis/rembg/
+ master/examples/girl-2.out.png] [https://raw.githubusercontent.com/danielgatis/
+ rembg/master/examples/girl-3.jpg] [https://raw.githubusercontent.com/
+ danielgatis/rembg/master/examples/girl-3.out.png]
++[https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-
++girl-1.jpg] [https://raw.githubusercontent.com/danielgatis/rembg/master/
++examples/anime-girl-1.out.png] [https://raw.githubusercontent.com/danielgatis/
++rembg/master/examples/anime-girl-2.jpg] [https://raw.githubusercontent.com/
++danielgatis/rembg/master/examples/anime-girl-2.out.png] [https://
++raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-3.jpg]
++[https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-
++girl-3.out.png]
+ **If this project has helped you, please consider making a [donation](https://
+ www.buymeacoffee.com/danielgatis).** ## Sponsor
+                PhotoRoom Remove Background API
+ [Unsplash]        https://photoroom.com/api
+            Fast and accurate background remover API
+ ## Requirements ``` python: >3.7, <3.11 ``` ## Installation CPU support:
+ ```bash pip install rembg ``` GPU support: First of all, you need to check if
+@@ -109,30 +117,25 @@
+ segmentation)): A pre-trained model for Cloths Parsing from human portrait.
+ Here clothes are parsed into 3 category: Upper body, Lower body and Full body.
+ - silueta ([download](https://github.com/danielgatis/rembg/releases/download/
+ v0.0.0/silueta.onnx), [source](https://github.com/xuebinqin/U-2-Net/issues/
+ 295)): Same as u2net but the size is reduced to 43Mb. - isnet-general-use (
+ [download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-
+ general-use.onnx), [source](https://github.com/xuebinqin/DIS)): A new pre-
+-trained model for general use cases. - sam ([download encoder](https://
+-github.com/danielgatis/rembg/releases/download/v0.0.0/vit_b-encoder-
+-quant.onnx), [download decoder](https://github.com/danielgatis/rembg/releases/
+-download/v0.0.0/vit_b-decoder-quant.onnx), [source](https://github.com/
+-facebookresearch/segment-anything)): A pre-trained model for any use cases. ###
+-Some differences between the models result
+-original                   u2net                      u2netp                     u2net_human_seg            u2net_cloth_seg            silueta                    isnet-general-use          sam
+-[https://                  [https://                  [https://                  [https://                  [https://                  [https://                  [https://                  [https://
+-raw.githubusercontent.com/ raw.githubusercontent.com/ raw.githubusercontent.com/ raw.githubusercontent.com/ raw.githubusercontent.com/ raw.githubusercontent.com/ raw.githubusercontent.com/ raw.githubusercontent.com/
+-danielgatis/rembg/master/  danielgatis/rembg/master/  danielgatis/rembg/master/  danielgatis/rembg/master/  danielgatis/rembg/master/  danielgatis/rembg/master/  danielgatis/rembg/master/  danielgatis/rembg/master/
+-tests/fixtures/car-1.jpg]  tests/results/car-         tests/results/car-         tests/results/car-         tests/results/car-         tests/results/car-         tests/results/car-1.isnet- tests/results/car-
+-                           1.u2net.png]               1.u2netp.png]              1.u2net_human_seg.png]     1.u2net_cloth_seg.png]     1.silueta.png]             general-use.png]           1.sam.png]
+-### How to train your own model If You need more fine tunned models try this:
+-https://github.com/danielgatis/rembg/issues/193#issuecomment-1055534289 ## Some
+-video tutorials - https://www.youtube.com/watch?v=3xqwpXjxyMQ - https://
+-www.youtube.com/watch?v=dFKRGXdkGJU - https://www.youtube.com/watch?v=Ai-
+-BS_T7yjE - https://www.youtube.com/watch?v=dFKRGXdkGJU - https://
+-www.youtube.com/watch?v=D7W-C0urVcQ ## References - https://arxiv.org/pdf/
+-2005.09007.pdf - https://github.com/NathanUA/U-2-Net - https://github.com/
+-pymatting/pymatting ## Buy me a coffee Liked some of my work? Buy me a coffee
+-(or more likely a beer) [Buy_Me_A_Coffee] ## License Copyright (c) 2020-present
+-[Daniel Gatis](https://github.com/danielgatis) Licensed under [MIT License](./
+-LICENSE.txt)
++trained model for general use cases. - isnet-anime ([download](https://
++github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx),
++[source](https://github.com/SkyTNT/anime-segmentation)): A high-accuracy
++segmentation for anime character. - sam ([download encoder](https://github.com/
++danielgatis/rembg/releases/download/v0.0.0/vit_b-encoder-quant.onnx), [download
++decoder](https://github.com/danielgatis/rembg/releases/download/v0.0.0/vit_b-
++decoder-quant.onnx), [source](https://github.com/facebookresearch/segment-
++anything)): A pre-trained model for any use cases. ### How to train your own
++model If You need more fine tunned models try this: https://github.com/
++danielgatis/rembg/issues/193#issuecomment-1055534289 ## Some video tutorials -
++https://www.youtube.com/watch?v=3xqwpXjxyMQ - https://www.youtube.com/
++watch?v=dFKRGXdkGJU - https://www.youtube.com/watch?v=Ai-BS_T7yjE - https://
++www.youtube.com/watch?v=dFKRGXdkGJU - https://www.youtube.com/watch?v=D7W-
++C0urVcQ ## References - https://arxiv.org/pdf/2005.09007.pdf - https://
++github.com/NathanUA/U-2-Net - https://github.com/pymatting/pymatting ## Buy me
++a coffee Liked some of my work? Buy me a coffee (or more likely a beer) [Buy_Me
++A_Coffee] ## License Copyright (c) 2020-present [Daniel Gatis](https://
++github.com/danielgatis) Licensed under [MIT License](./LICENSE.txt)
+```
+
+### Comparing `rembg-2.0.37/rembg/bg.py` & `rembg-2.0.38/rembg/bg.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/commands/b_command.py` & `rembg-2.0.38/rembg/commands/b_command.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/commands/i_command.py` & `rembg-2.0.38/rembg/commands/i_command.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/commands/p_command.py` & `rembg-2.0.38/rembg/commands/p_command.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/commands/s_command.py` & `rembg-2.0.38/rembg/commands/s_command.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/session_factory.py` & `rembg-2.0.38/rembg/session_factory.py`
+
+ * *Files 21% similar despite different names*
+
+```diff
+@@ -4,21 +4,23 @@
+ import onnxruntime as ort
+ 
+ from .sessions import sessions_class
+ from .sessions.base import BaseSession
+ from .sessions.u2net import U2netSession
+ 
+ 
+-def new_session(model_name: str = "u2net", *args, **kwargs) -> BaseSession:
++def new_session(
++    model_name: str = "u2net", providers=None, *args, **kwargs
++) -> BaseSession:
+     session_class: Type[BaseSession] = U2netSession
+ 
+     for sc in sessions_class:
+         if sc.name() == model_name:
+             session_class = sc
+             break
+ 
+     sess_opts = ort.SessionOptions()
+ 
+     if "OMP_NUM_THREADS" in os.environ:
+         sess_opts.inter_op_num_threads = int(os.environ["OMP_NUM_THREADS"])
+ 
+-    return session_class(model_name, sess_opts, *args, **kwargs)
++    return session_class(model_name, sess_opts, providers, *args, **kwargs)
+```
+
+### Comparing `rembg-2.0.37/rembg/sessions/__init__.py` & `rembg-2.0.38/rembg/sessions/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/dis.py` & `rembg-2.0.38/rembg/sessions/dis_general_use.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/sam.py` & `rembg-2.0.38/rembg/sessions/sam.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/silueta.py` & `rembg-2.0.38/rembg/sessions/silueta.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/u2net.py` & `rembg-2.0.38/rembg/sessions/u2net.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/u2net_cloth_seg.py` & `rembg-2.0.38/rembg/sessions/u2net_cloth_seg.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/u2net_human_seg.py` & `rembg-2.0.38/rembg/sessions/u2net_human_seg.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg/sessions/u2netp.py` & `rembg-2.0.38/rembg/sessions/u2netp.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/rembg.egg-info/PKG-INFO` & `rembg-2.0.38/rembg.egg-info/PKG-INFO`
+
+ * *Files 11% similar despite different names*
+
+```diff
+@@ -1,11 +1,11 @@
+ 00000000: 4d65 7461 6461 7461 2d56 6572 7369 6f6e  Metadata-Version
+ 00000010: 3a20 322e 310a 4e61 6d65 3a20 7265 6d62  : 2.1.Name: remb
+ 00000020: 670a 5665 7273 696f 6e3a 2032 2e30 2e33  g.Version: 2.0.3
+-00000030: 370a 5375 6d6d 6172 793a 2052 656d 6f76  7.Summary: Remov
++00000030: 380a 5375 6d6d 6172 793a 2052 656d 6f76  8.Summary: Remov
+ 00000040: 6520 696d 6167 6520 6261 636b 6772 6f75  e image backgrou
+ 00000050: 6e64 0a48 6f6d 652d 7061 6765 3a20 6874  nd.Home-page: ht
+ 00000060: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
+ 00000070: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
+ 00000080: 6267 0a41 7574 686f 723a 2044 616e 6965  bg.Author: Danie
+ 00000090: 6c20 4761 7469 730a 4175 7468 6f72 2d65  l Gatis.Author-e
+ 000000a0: 6d61 696c 3a20 6461 6e69 656c 6761 7469  mail: danielgati
+@@ -237,697 +237,601 @@
+ 00000ec0: 2f3e 0a20 203c 696d 6720 7372 633d 2268  />.  <img src="h
+ 00000ed0: 7474 7073 3a2f 2f72 6177 2e67 6974 6875  ttps://raw.githu
+ 00000ee0: 6275 7365 7263 6f6e 7465 6e74 2e63 6f6d  busercontent.com
+ 00000ef0: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
+ 00000f00: 6267 2f6d 6173 7465 722f 6578 616d 706c  bg/master/exampl
+ 00000f10: 6573 2f67 6972 6c2d 332e 6f75 742e 706e  es/girl-3.out.pn
+ 00000f20: 6722 2077 6964 7468 3d22 3130 3022 202f  g" width="100" /
+-00000f30: 3e0a 3c2f 703e 0a0a 2a2a 4966 2074 6869  >.</p>..**If thi
+-00000f40: 7320 7072 6f6a 6563 7420 6861 7320 6865  s project has he
+-00000f50: 6c70 6564 2079 6f75 2c20 706c 6561 7365  lped you, please
+-00000f60: 2063 6f6e 7369 6465 7220 6d61 6b69 6e67   consider making
+-00000f70: 2061 205b 646f 6e61 7469 6f6e 5d28 6874   a [donation](ht
+-00000f80: 7470 733a 2f2f 7777 772e 6275 796d 6561  tps://www.buymea
+-00000f90: 636f 6666 6565 2e63 6f6d 2f64 616e 6965  coffee.com/danie
+-00000fa0: 6c67 6174 6973 292e 2a2a 0a0a 2323 2053  lgatis).**..## S
+-00000fb0: 706f 6e73 6f72 0a0a 3c74 6162 6c65 3e0a  ponsor..<table>.
+-00000fc0: 2020 3c74 723e 0a20 2020 203c 7464 2061    <tr>.    <td a
+-00000fd0: 6c69 676e 3d22 6365 6e74 6572 2220 7665  lign="center" ve
+-00000fe0: 7274 6963 616c 2d61 6c69 676e 3d22 6365  rtical-align="ce
+-00000ff0: 6e74 6572 223e 0a20 2020 2020 203c 6120  nter">.      <a 
+-00001000: 6872 6566 3d22 6874 7470 733a 2f2f 7068  href="https://ph
+-00001010: 6f74 6f72 6f6f 6d2e 636f 6d2f 6170 692f  otoroom.com/api/
+-00001020: 7265 6d6f 7665 2d62 6163 6b67 726f 756e  remove-backgroun
+-00001030: 643f 7574 6d5f 736f 7572 6365 3d72 656d  d?utm_source=rem
+-00001040: 6267 2675 746d 5f6d 6564 6975 6d3d 6769  bg&utm_medium=gi
+-00001050: 7468 7562 5f77 6562 7061 6765 2675 746d  thub_webpage&utm
+-00001060: 5f63 616d 7061 6967 6e3d 7370 6f6e 736f  _campaign=sponso
+-00001070: 7222 203e 0a20 2020 2020 2020 203c 696d  r" >.        <im
+-00001080: 6720 7372 633d 2268 7474 7073 3a2f 2f66  g src="https://f
+-00001090: 6f6e 742d 6364 6e2e 7068 6f74 6f72 6f6f  ont-cdn.photoroo
+-000010a0: 6d2e 636f 6d2f 6d65 6469 612f 6170 692d  m.com/media/api-
+-000010b0: 6c6f 676f 2e70 6e67 2220 7769 6474 683d  logo.png" width=
+-000010c0: 2231 3230 7078 3b22 2061 6c74 3d22 556e  "120px;" alt="Un
+-000010d0: 7370 6c61 7368 2220 2f3e 0a20 2020 2020  splash" />.     
+-000010e0: 203c 2f61 3e0a 2020 2020 3c2f 7464 3e0a   </a>.    </td>.
+-000010f0: 2020 2020 3c74 6420 616c 6967 6e3d 2263      <td align="c
+-00001100: 656e 7465 7222 2076 6572 7469 6361 6c2d  enter" vertical-
+-00001110: 616c 6967 6e3d 2263 656e 7465 7222 3e0a  align="center">.
+-00001120: 2020 2020 2020 3c62 3e50 686f 746f 526f        <b>PhotoRo
+-00001130: 6f6d 2052 656d 6f76 6520 4261 636b 6772  om Remove Backgr
+-00001140: 6f75 6e64 2041 5049 3c2f 623e 0a20 2020  ound API</b>.   
+-00001150: 2020 203c 6272 202f 3e0a 2020 2020 2020     <br />.      
+-00001160: 3c61 2068 7265 663d 2268 7474 7073 3a2f  <a href="https:/
+-00001170: 2f70 686f 746f 726f 6f6d 2e63 6f6d 2f61  /photoroom.com/a
+-00001180: 7069 2f72 656d 6f76 652d 6261 636b 6772  pi/remove-backgr
+-00001190: 6f75 6e64 3f75 746d 5f73 6f75 7263 653d  ound?utm_source=
+-000011a0: 7265 6d62 6726 7574 6d5f 6d65 6469 756d  rembg&utm_medium
+-000011b0: 3d67 6974 6875 625f 7765 6270 6167 6526  =github_webpage&
+-000011c0: 7574 6d5f 6361 6d70 6169 676e 3d73 706f  utm_campaign=spo
+-000011d0: 6e73 6f72 223e 6874 7470 733a 2f2f 7068  nsor">https://ph
+-000011e0: 6f74 6f72 6f6f 6d2e 636f 6d2f 6170 693c  otoroom.com/api<
+-000011f0: 2f61 3e0a 2020 2020 2020 3c62 7220 2f3e  /a>.      <br />
+-00001200: 0a20 2020 2020 203c 7020 7769 6474 683d  .      <p width=
+-00001210: 2232 3030 7078 223e 0a20 2020 2020 2020  "200px">.       
+-00001220: 2046 6173 7420 616e 6420 6163 6375 7261   Fast and accura
+-00001230: 7465 2062 6163 6b67 726f 756e 6420 7265  te background re
+-00001240: 6d6f 7665 7220 4150 493c 6272 2f3e 0a20  mover API<br/>. 
+-00001250: 2020 2020 203c 2f70 3e0a 2020 2020 3c2f       </p>.    </
+-00001260: 7464 3e0a 2020 3c2f 7472 3e0a 3c2f 7461  td>.  </tr>.</ta
+-00001270: 626c 653e 0a0a 2323 2052 6571 7569 7265  ble>..## Require
+-00001280: 6d65 6e74 730a 0a60 6060 0a70 7974 686f  ments..```.pytho
+-00001290: 6e3a 203e 332e 372c 203c 332e 3131 0a60  n: >3.7, <3.11.`
+-000012a0: 6060 0a0a 2323 2049 6e73 7461 6c6c 6174  ``..## Installat
+-000012b0: 696f 6e0a 0a43 5055 2073 7570 706f 7274  ion..CPU support
+-000012c0: 3a0a 0a60 6060 6261 7368 0a70 6970 2069  :..```bash.pip i
+-000012d0: 6e73 7461 6c6c 2072 656d 6267 0a60 6060  nstall rembg.```
+-000012e0: 0a0a 4750 5520 7375 7070 6f72 743a 0a0a  ..GPU support:..
+-000012f0: 4669 7273 7420 6f66 2061 6c6c 2c20 796f  First of all, yo
+-00001300: 7520 6e65 6564 2074 6f20 6368 6563 6b20  u need to check 
+-00001310: 6966 2079 6f75 7220 7379 7374 656d 2073  if your system s
+-00001320: 7570 706f 7274 7320 7468 6520 606f 6e6e  upports the `onn
+-00001330: 7872 756e 7469 6d65 2d67 7075 602e 0a0a  xruntime-gpu`...
+-00001340: 476f 2074 6f20 6874 7470 733a 2f2f 6f6e  Go to https://on
+-00001350: 6e78 7275 6e74 696d 652e 6169 2061 6e64  nxruntime.ai and
+-00001360: 2063 6865 636b 2074 6865 2069 6e73 7461   check the insta
+-00001370: 6c6c 6174 696f 6e20 6d61 7472 6978 2e0a  llation matrix..
+-00001380: 0a3c 7020 7374 796c 653d 2264 6973 706c  .<p style="displ
+-00001390: 6179 3a20 666c 6578 3b61 6c69 676e 2d69  ay: flex;align-i
+-000013a0: 7465 6d73 3a20 6365 6e74 6572 3b6a 7573  tems: center;jus
+-000013b0: 7469 6679 2d63 6f6e 7465 6e74 3a20 6365  tify-content: ce
+-000013c0: 6e74 6572 3b22 3e0a 2020 3c69 6d67 2073  nter;">.  <img s
+-000013d0: 7263 3d22 6874 7470 733a 2f2f 7261 772e  rc="https://raw.
+-000013e0: 6769 7468 7562 7573 6572 636f 6e74 656e  githubuserconten
+-000013f0: 742e 636f 6d2f 6461 6e69 656c 6761 7469  t.com/danielgati
+-00001400: 732f 7265 6d62 672f 6d61 7374 6572 2f6f  s/rembg/master/o
+-00001410: 6e6e 7872 756e 7469 6d65 2d69 6e73 7461  nnxruntime-insta
+-00001420: 6c6c 6174 696f 6e2d 6d61 7472 6978 2e70  llation-matrix.p
+-00001430: 6e67 2220 7769 6474 683d 2234 3030 2220  ng" width="400" 
+-00001440: 2f3e 0a3c 2f70 3e0a 0a49 6620 7965 732c  />.</p>..If yes,
+-00001450: 206a 7573 7420 7275 6e3a 0a0a 6060 6062   just run:..```b
+-00001460: 6173 680a 7069 7020 696e 7374 616c 6c20  ash.pip install 
+-00001470: 7265 6d62 675b 6770 755d 0a60 6060 0a0a  rembg[gpu].```..
+-00001480: 2323 2055 7361 6765 2061 7320 6120 636c  ## Usage as a cl
+-00001490: 690a 0a41 6674 6572 2074 6865 2069 6e73  i..After the ins
+-000014a0: 7461 6c6c 6174 696f 6e20 7374 6570 2079  tallation step y
+-000014b0: 6f75 2063 616e 2075 7365 2072 656d 6267  ou can use rembg
+-000014c0: 206a 7573 7420 7479 7069 6e67 2060 7265   just typing `re
+-000014d0: 6d62 6760 2069 6e20 796f 7572 2074 6572  mbg` in your ter
+-000014e0: 6d69 6e61 6c20 7769 6e64 6f77 2e0a 0a54  minal window...T
+-000014f0: 6865 2060 7265 6d62 6760 2063 6f6d 6d61  he `rembg` comma
+-00001500: 6e64 2068 6173 2034 2073 7562 636f 6d6d  nd has 4 subcomm
+-00001510: 616e 6473 2c20 6f6e 6520 666f 7220 6561  ands, one for ea
+-00001520: 6368 2069 6e70 7574 2074 7970 653a 0a2d  ch input type:.-
+-00001530: 2060 6960 2066 6f72 2066 696c 6573 0a2d   `i` for files.-
+-00001540: 2060 7060 2066 6f72 2066 6f6c 6465 7273   `p` for folders
+-00001550: 0a2d 2060 7360 2066 6f72 2068 7474 7020  .- `s` for http 
+-00001560: 7365 7276 6572 0a2d 2060 6260 2066 6f72  server.- `b` for
+-00001570: 2052 4742 3234 2070 6978 656c 2062 696e   RGB24 pixel bin
+-00001580: 6172 7920 7374 7265 616d 0a0a 596f 7520  ary stream..You 
+-00001590: 6361 6e20 6765 7420 6865 6c70 2061 626f  can get help abo
+-000015a0: 7574 2074 6865 206d 6169 6e20 636f 6d6d  ut the main comm
+-000015b0: 616e 6420 7573 696e 673a 0a0a 6060 600a  and using:..```.
+-000015c0: 7265 6d62 6720 2d2d 6865 6c70 0a60 6060  rembg --help.```
+-000015d0: 0a0a 4173 2077 656c 6c2c 2061 626f 7574  ..As well, about
+-000015e0: 2061 6c6c 2074 6865 2073 7562 636f 6d6d   all the subcomm
+-000015f0: 616e 6473 2075 7369 6e67 3a0a 0a60 6060  ands using:..```
+-00001600: 0a72 656d 6267 203c 434f 4d4d 414e 443e  .rembg <COMMAND>
+-00001610: 202d 2d68 656c 700a 6060 600a 0a23 2323   --help.```..###
+-00001620: 2072 656d 6267 2060 6960 0a0a 5573 6564   rembg `i`..Used
+-00001630: 2077 6865 6e20 696e 7075 7420 616e 6420   when input and 
+-00001640: 6f75 7470 7574 2061 7265 2066 696c 6573  output are files
+-00001650: 2e0a 0a52 656d 6f76 6520 7468 6520 6261  ...Remove the ba
+-00001660: 636b 6772 6f75 6e64 2066 726f 6d20 6120  ckground from a 
+-00001670: 7265 6d6f 7465 2069 6d61 6765 0a0a 6060  remote image..``
+-00001680: 600a 6375 726c 202d 7320 6874 7470 3a2f  `.curl -s http:/
+-00001690: 2f69 6e70 7574 2e70 6e67 207c 2072 656d  /input.png | rem
+-000016a0: 6267 2069 203e 206f 7574 7075 742e 706e  bg i > output.pn
+-000016b0: 670a 6060 600a 0a52 656d 6f76 6520 7468  g.```..Remove th
+-000016c0: 6520 6261 636b 6772 6f75 6e64 2066 726f  e background fro
+-000016d0: 6d20 6120 6c6f 6361 6c20 6669 6c65 0a0a  m a local file..
+-000016e0: 6060 600a 7265 6d62 6720 6920 7061 7468  ```.rembg i path
+-000016f0: 2f74 6f2f 696e 7075 742e 706e 6720 7061  /to/input.png pa
+-00001700: 7468 2f74 6f2f 6f75 7470 7574 2e70 6e67  th/to/output.png
+-00001710: 0a60 6060 0a0a 5265 6d6f 7665 2074 6865  .```..Remove the
+-00001720: 2062 6163 6b67 726f 756e 6420 7370 6563   background spec
+-00001730: 6966 7969 6e67 2061 206d 6f64 656c 0a0a  ifying a model..
+-00001740: 6060 600a 7265 6d62 6720 6920 2d6d 2075  ```.rembg i -m u
+-00001750: 326e 6574 7020 7061 7468 2f74 6f2f 696e  2netp path/to/in
+-00001760: 7075 742e 706e 6720 7061 7468 2f74 6f2f  put.png path/to/
+-00001770: 6f75 7470 7574 2e70 6e67 0a60 6060 0a0a  output.png.```..
+-00001780: 5265 6d6f 7665 2074 6865 2062 6163 6b67  Remove the backg
+-00001790: 726f 756e 6420 7265 7475 726e 696e 6720  round returning 
+-000017a0: 6f6e 6c79 2074 6865 206d 6173 6b0a 0a60  only the mask..`
+-000017b0: 6060 0a72 656d 6267 2069 202d 6f6d 2070  ``.rembg i -om p
+-000017c0: 6174 682f 746f 2f69 6e70 7574 2e70 6e67  ath/to/input.png
+-000017d0: 2070 6174 682f 746f 2f6f 7574 7075 742e   path/to/output.
+-000017e0: 706e 670a 6060 600a 0a0a 5265 6d6f 7665  png.```...Remove
+-000017f0: 2074 6865 2062 6163 6b67 726f 756e 6420   the background 
+-00001800: 6170 706c 7969 6e67 2061 6e20 616c 7068  applying an alph
+-00001810: 6120 6d61 7474 696e 670a 0a60 6060 0a72  a matting..```.r
+-00001820: 656d 6267 2069 202d 6120 7061 7468 2f74  embg i -a path/t
+-00001830: 6f2f 696e 7075 742e 706e 6720 7061 7468  o/input.png path
+-00001840: 2f74 6f2f 6f75 7470 7574 2e70 6e67 0a60  /to/output.png.`
+-00001850: 6060 0a0a 5061 7373 696e 6720 6578 7472  ``..Passing extr
+-00001860: 6173 2070 6172 616d 6574 6572 730a 0a60  as parameters..`
+-00001870: 6060 0a72 656d 6267 2069 202d 6d20 7361  ``.rembg i -m sa
+-00001880: 6d20 2d78 2027 7b22 696e 7075 745f 6c61  m -x '{"input_la
+-00001890: 6265 6c73 223a 205b 315d 2c20 2269 6e70  bels": [1], "inp
+-000018a0: 7574 5f70 6f69 6e74 7322 3a20 5b5b 3130  ut_points": [[10
+-000018b0: 302c 3130 305d 5d7d 2720 7061 7468 2f74  0,100]]}' path/t
+-000018c0: 6f2f 696e 7075 742e 706e 6720 7061 7468  o/input.png path
+-000018d0: 2f74 6f2f 6f75 7470 7574 2e70 6e67 0a60  /to/output.png.`
+-000018e0: 6060 0a0a 2323 2320 7265 6d62 6720 6070  ``..### rembg `p
+-000018f0: 600a 0a55 7365 6420 7768 656e 2069 6e70  `..Used when inp
+-00001900: 7574 2061 6e64 206f 7574 7075 7420 6172  ut and output ar
+-00001910: 6520 666f 6c64 6572 732e 0a0a 5265 6d6f  e folders...Remo
+-00001920: 7665 2074 6865 2062 6163 6b67 726f 756e  ve the backgroun
+-00001930: 6420 6672 6f6d 2061 6c6c 2069 6d61 6765  d from all image
+-00001940: 7320 696e 2061 2066 6f6c 6465 720a 0a60  s in a folder..`
+-00001950: 6060 0a72 656d 6267 2070 2070 6174 682f  ``.rembg p path/
+-00001960: 746f 2f69 6e70 7574 2070 6174 682f 746f  to/input path/to
+-00001970: 2f6f 7574 7075 740a 6060 600a 0a53 616d  /output.```..Sam
+-00001980: 6520 6173 2062 6566 6f72 652c 2062 7574  e as before, but
+-00001990: 2077 6174 6368 696e 6720 666f 7220 6e65   watching for ne
+-000019a0: 772f 6368 616e 6765 6420 6669 6c65 7320  w/changed files 
+-000019b0: 746f 2070 726f 6365 7373 0a0a 6060 600a  to process..```.
+-000019c0: 7265 6d62 6720 7020 2d77 2070 6174 682f  rembg p -w path/
+-000019d0: 746f 2f69 6e70 7574 2070 6174 682f 746f  to/input path/to
+-000019e0: 2f6f 7574 7075 740a 6060 600a 0a23 2323  /output.```..###
+-000019f0: 2072 656d 6267 2060 7360 0a0a 5573 6564   rembg `s`..Used
+-00001a00: 2074 6f20 7374 6172 7420 6874 7470 2073   to start http s
+-00001a10: 6572 7665 722e 0a0a 546f 2073 6565 2074  erver...To see t
+-00001a20: 6865 2063 6f6d 706c 6574 6520 656e 6470  he complete endp
+-00001a30: 6f69 6e74 7320 646f 6375 6d65 6e74 6174  oints documentat
+-00001a40: 696f 6e2c 2067 6f20 746f 3a20 6068 7474  ion, go to: `htt
+-00001a50: 703a 2f2f 6c6f 6361 6c68 6f73 743a 3530  p://localhost:50
+-00001a60: 3030 2f64 6f63 7360 2e0a 0a52 656d 6f76  00/docs`...Remov
+-00001a70: 6520 7468 6520 6261 636b 6772 6f75 6e64  e the background
+-00001a80: 2066 726f 6d20 616e 2069 6d61 6765 2075   from an image u
+-00001a90: 726c 0a0a 6060 600a 6375 726c 202d 7320  rl..```.curl -s 
+-00001aa0: 2268 7474 703a 2f2f 6c6f 6361 6c68 6f73  "http://localhos
+-00001ab0: 743a 3530 3030 2f3f 7572 6c3d 6874 7470  t:5000/?url=http
+-00001ac0: 3a2f 2f69 6e70 7574 2e70 6e67 2220 2d6f  ://input.png" -o
+-00001ad0: 206f 7574 7075 742e 706e 670a 6060 600a   output.png.```.
+-00001ae0: 0a52 656d 6f76 6520 7468 6520 6261 636b  .Remove the back
+-00001af0: 6772 6f75 6e64 2066 726f 6d20 616e 2075  ground from an u
+-00001b00: 706c 6f61 6465 6420 696d 6167 650a 0a60  ploaded image..`
+-00001b10: 6060 0a63 7572 6c20 2d73 202d 4620 6669  ``.curl -s -F fi
+-00001b20: 6c65 3d40 2f70 6174 682f 746f 2f69 6e70  le=@/path/to/inp
+-00001b30: 7574 2e6a 7067 2022 6874 7470 3a2f 2f6c  ut.jpg "http://l
+-00001b40: 6f63 616c 686f 7374 3a35 3030 3022 2020  ocalhost:5000"  
+-00001b50: 2d6f 206f 7574 7075 742e 706e 670a 6060  -o output.png.``
+-00001b60: 600a 0a23 2323 2072 656d 6267 2060 6260  `..### rembg `b`
+-00001b70: 0a0a 5072 6f63 6573 7320 6120 7365 7175  ..Process a sequ
+-00001b80: 656e 6365 206f 6620 5247 4232 3420 696d  ence of RGB24 im
+-00001b90: 6167 6573 2066 726f 6d20 7374 6469 6e2e  ages from stdin.
+-00001ba0: 2054 6869 7320 6973 2069 6e74 656e 6465   This is intende
+-00001bb0: 6420 746f 2062 6520 7573 6564 2077 6974  d to be used wit
+-00001bc0: 6820 616e 6f74 6865 7220 7072 6f67 7261  h another progra
+-00001bd0: 6d2c 2073 7563 6820 6173 2046 464d 5045  m, such as FFMPE
+-00001be0: 472c 2074 6861 7420 6f75 7470 7574 7320  G, that outputs 
+-00001bf0: 5247 4232 3420 7069 7865 6c20 6461 7461  RGB24 pixel data
+-00001c00: 2074 6f20 7374 646f 7574 2c20 7768 6963   to stdout, whic
+-00001c10: 6820 6973 2070 6970 6564 2069 6e74 6f20  h is piped into 
+-00001c20: 7468 6520 7374 6469 6e20 6f66 2074 6869  the stdin of thi
+-00001c30: 7320 7072 6f67 7261 6d2c 2061 6c74 686f  s program, altho
+-00001c40: 7567 6820 6e6f 7468 696e 6720 7072 6576  ugh nothing prev
+-00001c50: 656e 7473 2079 6f75 2066 726f 6d20 6d61  ents you from ma
+-00001c60: 6e75 616c 6c79 2074 7970 696e 6720 696e  nually typing in
+-00001c70: 2069 6d61 6765 7320 6174 2073 7464 696e   images at stdin
+-00001c80: 2e0a 0a60 6060 0a72 656d 6267 2062 2069  ...```.rembg b i
+-00001c90: 6d61 6765 5f77 6964 7468 2069 6d61 6765  mage_width image
+-00001ca0: 5f68 6569 6768 7420 2d6f 206f 7574 7075  _height -o outpu
+-00001cb0: 745f 7370 6563 6966 6965 720a 6060 600a  t_specifier.```.
+-00001cc0: 0a41 7267 756d 656e 7473 3a0a 0a2d 2069  .Arguments:..- i
+-00001cd0: 6d61 6765 5f77 6964 7468 203a 2077 6964  mage_width : wid
+-00001ce0: 7468 206f 6620 696e 7075 7420 696d 6167  th of input imag
+-00001cf0: 6528 7329 0a2d 2069 6d61 6765 5f68 6569  e(s).- image_hei
+-00001d00: 6768 7420 3a20 6865 6967 6874 206f 6620  ght : height of 
+-00001d10: 696e 7075 7420 696d 6167 6528 7329 0a2d  input image(s).-
+-00001d20: 206f 7574 7075 745f 7370 6563 6966 6965   output_specifie
+-00001d30: 723a 2070 7269 6e74 662d 7374 796c 6520  r: printf-style 
+-00001d40: 7370 6563 6966 6965 7220 666f 7220 6f75  specifier for ou
+-00001d50: 7470 7574 2066 696c 656e 616d 6573 2c20  tput filenames, 
+-00001d60: 666f 7220 6578 616d 706c 6520 6966 2060  for example if `
+-00001d70: 6f75 7470 7574 2d25 3033 752e 706e 6760  output-%03u.png`
+-00001d80: 2c20 7468 656e 206f 7574 7075 7420 6669  , then output fi
+-00001d90: 6c65 7320 7769 6c6c 2062 6520 6e61 6d65  les will be name
+-00001da0: 6420 606f 7574 7075 742d 3030 302e 706e  d `output-000.pn
+-00001db0: 6760 2c20 606f 7574 7075 742d 3030 312e  g`, `output-001.
+-00001dc0: 706e 6760 2c20 606f 7574 7075 742d 3030  png`, `output-00
+-00001dd0: 322e 706e 6760 2c20 6574 632e 204f 7574  2.png`, etc. Out
+-00001de0: 7075 7420 6669 6c65 7320 7769 6c6c 2062  put files will b
+-00001df0: 6520 7361 7665 6420 696e 2050 4e47 2066  e saved in PNG f
+-00001e00: 6f72 6d61 7420 7265 6761 7264 6c65 7373  ormat regardless
+-00001e10: 206f 6620 7468 6520 6578 7465 6e73 696f   of the extensio
+-00001e20: 6e20 7370 6563 6966 6965 642e 2059 6f75  n specified. You
+-00001e30: 2063 616e 206f 6d69 7420 6974 2074 6f20   can omit it to 
+-00001e40: 7772 6974 6520 7265 7375 6c74 7320 746f  write results to
+-00001e50: 2073 7464 6f75 742e 0a0a 4578 616d 706c   stdout...Exampl
+-00001e60: 6520 7573 6167 6520 7769 7468 2046 464d  e usage with FFM
+-00001e70: 5045 473a 0a0a 6060 600a 6666 6d70 6567  PEG:..```.ffmpeg
+-00001e80: 202d 6920 696e 7075 742e 6d70 3420 2d73   -i input.mp4 -s
+-00001e90: 7320 3130 202d 616e 202d 6620 7261 7776  s 10 -an -f rawv
+-00001ea0: 6964 656f 202d 7069 785f 666d 7420 7267  ideo -pix_fmt rg
+-00001eb0: 6232 3420 7069 7065 3a31 207c 2072 656d  b24 pipe:1 | rem
+-00001ec0: 6267 2062 2031 3238 3020 3732 3020 2d6f  bg b 1280 720 -o
+-00001ed0: 2066 6f6c 6465 722f 6f75 7470 7574 2d25   folder/output-%
+-00001ee0: 3033 752e 706e 670a 6060 600a 0a54 6865  03u.png.```..The
+-00001ef0: 2077 6964 7468 2061 6e64 2068 6569 6768   width and heigh
+-00001f00: 7420 7661 6c75 6573 206d 7573 7420 6d61  t values must ma
+-00001f10: 7463 6820 7468 6520 6469 6d65 6e73 696f  tch the dimensio
+-00001f20: 6e20 6f66 206f 7574 7075 7420 696d 6167  n of output imag
+-00001f30: 6573 2066 726f 6d20 4646 4d50 4547 2e20  es from FFMPEG. 
+-00001f40: 4e6f 7465 2066 6f72 2046 464d 5045 472c  Note for FFMPEG,
+-00001f50: 2074 6865 2022 602d 616e 202d 6620 7261   the "`-an -f ra
+-00001f60: 7776 6964 656f 202d 7069 785f 666d 7420  wvideo -pix_fmt 
+-00001f70: 7267 6232 3420 7069 7065 3a31 6022 2070  rgb24 pipe:1`" p
+-00001f80: 6172 7420 6973 2072 6571 7569 7265 6420  art is required 
+-00001f90: 666f 7220 7468 6520 7768 6f6c 6520 7468  for the whole th
+-00001fa0: 696e 6720 746f 2077 6f72 6b2e 0a0a 0a23  ing to work....#
+-00001fb0: 2320 5573 6167 6520 6173 2061 206c 6962  # Usage as a lib
+-00001fc0: 7261 7279 0a0a 496e 7075 7420 616e 6420  rary..Input and 
+-00001fd0: 6f75 7470 7574 2061 7320 6279 7465 730a  output as bytes.
+-00001fe0: 0a60 6060 7079 7468 6f6e 0a66 726f 6d20  .```python.from 
+-00001ff0: 7265 6d62 6720 696d 706f 7274 2072 656d  rembg import rem
+-00002000: 6f76 650a 0a69 6e70 7574 5f70 6174 6820  ove..input_path 
+-00002010: 3d20 2769 6e70 7574 2e70 6e67 270a 6f75  = 'input.png'.ou
+-00002020: 7470 7574 5f70 6174 6820 3d20 276f 7574  tput_path = 'out
+-00002030: 7075 742e 706e 6727 0a0a 7769 7468 206f  put.png'..with o
+-00002040: 7065 6e28 696e 7075 745f 7061 7468 2c20  pen(input_path, 
+-00002050: 2772 6227 2920 6173 2069 3a0a 2020 2020  'rb') as i:.    
+-00002060: 7769 7468 206f 7065 6e28 6f75 7470 7574  with open(output
+-00002070: 5f70 6174 682c 2027 7762 2729 2061 7320  _path, 'wb') as 
+-00002080: 6f3a 0a20 2020 2020 2020 2069 6e70 7574  o:.        input
+-00002090: 203d 2069 2e72 6561 6428 290a 2020 2020   = i.read().    
+-000020a0: 2020 2020 6f75 7470 7574 203d 2072 656d      output = rem
+-000020b0: 6f76 6528 696e 7075 7429 0a20 2020 2020  ove(input).     
+-000020c0: 2020 206f 2e77 7269 7465 286f 7574 7075     o.write(outpu
+-000020d0: 7429 0a60 6060 0a0a 496e 7075 7420 616e  t).```..Input an
+-000020e0: 6420 6f75 7470 7574 2061 7320 6120 5049  d output as a PI
+-000020f0: 4c20 696d 6167 650a 0a60 6060 7079 7468  L image..```pyth
+-00002100: 6f6e 0a66 726f 6d20 7265 6d62 6720 696d  on.from rembg im
+-00002110: 706f 7274 2072 656d 6f76 650a 6672 6f6d  port remove.from
+-00002120: 2050 494c 2069 6d70 6f72 7420 496d 6167   PIL import Imag
+-00002130: 650a 0a69 6e70 7574 5f70 6174 6820 3d20  e..input_path = 
+-00002140: 2769 6e70 7574 2e70 6e67 270a 6f75 7470  'input.png'.outp
+-00002150: 7574 5f70 6174 6820 3d20 276f 7574 7075  ut_path = 'outpu
+-00002160: 742e 706e 6727 0a0a 696e 7075 7420 3d20  t.png'..input = 
+-00002170: 496d 6167 652e 6f70 656e 2869 6e70 7574  Image.open(input
+-00002180: 5f70 6174 6829 0a6f 7574 7075 7420 3d20  _path).output = 
+-00002190: 7265 6d6f 7665 2869 6e70 7574 290a 6f75  remove(input).ou
+-000021a0: 7470 7574 2e73 6176 6528 6f75 7470 7574  tput.save(output
+-000021b0: 5f70 6174 6829 0a60 6060 0a0a 496e 7075  _path).```..Inpu
+-000021c0: 7420 616e 6420 6f75 7470 7574 2061 7320  t and output as 
+-000021d0: 6120 6e75 6d70 7920 6172 7261 790a 0a60  a numpy array..`
+-000021e0: 6060 7079 7468 6f6e 0a66 726f 6d20 7265  ``python.from re
+-000021f0: 6d62 6720 696d 706f 7274 2072 656d 6f76  mbg import remov
+-00002200: 650a 696d 706f 7274 2063 7632 0a0a 696e  e.import cv2..in
+-00002210: 7075 745f 7061 7468 203d 2027 696e 7075  put_path = 'inpu
+-00002220: 742e 706e 6727 0a6f 7574 7075 745f 7061  t.png'.output_pa
+-00002230: 7468 203d 2027 6f75 7470 7574 2e70 6e67  th = 'output.png
+-00002240: 270a 0a69 6e70 7574 203d 2063 7632 2e69  '..input = cv2.i
+-00002250: 6d72 6561 6428 696e 7075 745f 7061 7468  mread(input_path
+-00002260: 290a 6f75 7470 7574 203d 2072 656d 6f76  ).output = remov
+-00002270: 6528 696e 7075 7429 0a63 7632 2e69 6d77  e(input).cv2.imw
+-00002280: 7269 7465 286f 7574 7075 745f 7061 7468  rite(output_path
+-00002290: 2c20 6f75 7470 7574 290a 6060 600a 0a48  , output).```..H
+-000022a0: 6f77 2074 6f20 6974 6572 6174 6520 6f76  ow to iterate ov
+-000022b0: 6572 2066 696c 6573 2069 6e20 6120 7065  er files in a pe
+-000022c0: 7266 6f72 6d61 7469 6320 7761 790a 0a60  rformatic way..`
+-000022d0: 6060 7079 7468 6f6e 0a66 726f 6d20 7061  ``python.from pa
+-000022e0: 7468 6c69 6220 696d 706f 7274 2050 6174  thlib import Pat
+-000022f0: 680a 6672 6f6d 2072 656d 6267 2069 6d70  h.from rembg imp
+-00002300: 6f72 7420 7265 6d6f 7665 2c20 6e65 775f  ort remove, new_
+-00002310: 7365 7373 696f 6e0a 0a73 6573 7369 6f6e  session..session
+-00002320: 203d 206e 6577 5f73 6573 7369 6f6e 2829   = new_session()
+-00002330: 0a0a 666f 7220 6669 6c65 2069 6e20 5061  ..for file in Pa
+-00002340: 7468 2827 7061 7468 2f74 6f2f 666f 6c64  th('path/to/fold
+-00002350: 6572 2729 2e67 6c6f 6228 272a 2e70 6e67  er').glob('*.png
+-00002360: 2729 3a0a 2020 2020 696e 7075 745f 7061  '):.    input_pa
+-00002370: 7468 203d 2073 7472 2866 696c 6529 0a20  th = str(file). 
+-00002380: 2020 206f 7574 7075 745f 7061 7468 203d     output_path =
+-00002390: 2073 7472 2866 696c 652e 7061 7265 6e74   str(file.parent
+-000023a0: 202f 2028 6669 6c65 2e73 7465 6d20 2b20   / (file.stem + 
+-000023b0: 222e 6f75 742e 706e 6722 2929 0a0a 2020  ".out.png"))..  
+-000023c0: 2020 7769 7468 206f 7065 6e28 696e 7075    with open(inpu
+-000023d0: 745f 7061 7468 2c20 2772 6227 2920 6173  t_path, 'rb') as
+-000023e0: 2069 3a0a 2020 2020 2020 2020 7769 7468   i:.        with
+-000023f0: 206f 7065 6e28 6f75 7470 7574 5f70 6174   open(output_pat
+-00002400: 682c 2027 7762 2729 2061 7320 6f3a 0a20  h, 'wb') as o:. 
+-00002410: 2020 2020 2020 2020 2020 2069 6e70 7574             input
+-00002420: 203d 2069 2e72 6561 6428 290a 2020 2020   = i.read().    
+-00002430: 2020 2020 2020 2020 6f75 7470 7574 203d          output =
+-00002440: 2072 656d 6f76 6528 696e 7075 742c 2073   remove(input, s
+-00002450: 6573 7369 6f6e 3d73 6573 7369 6f6e 290a  ession=session).
+-00002460: 2020 2020 2020 2020 2020 2020 6f2e 7772              o.wr
+-00002470: 6974 6528 6f75 7470 7574 290a 6060 600a  ite(output).```.
+-00002480: 546f 2073 6565 2061 2066 756c 6c20 6c69  To see a full li
+-00002490: 7374 206f 6620 6578 616d 706c 6573 206f  st of examples o
+-000024a0: 6e20 686f 7720 746f 2075 7365 2072 656d  n how to use rem
+-000024b0: 6267 2c20 676f 2074 6f20 7468 6520 5b65  bg, go to the [e
+-000024c0: 7861 6d70 6c65 735d 2855 5341 4745 2e6d  xamples](USAGE.m
+-000024d0: 6429 2070 6167 652e 0a23 2320 5573 6167  d) page..## Usag
+-000024e0: 6520 6173 2061 2064 6f63 6b65 720a 0a4a  e as a docker..J
+-000024f0: 7573 7420 7265 706c 6163 6520 7468 6520  ust replace the 
+-00002500: 6072 656d 6267 6020 636f 6d6d 616e 6420  `rembg` command 
+-00002510: 666f 7220 6064 6f63 6b65 7220 7275 6e20  for `docker run 
+-00002520: 6461 6e69 656c 6761 7469 732f 7265 6d62  danielgatis/remb
+-00002530: 6760 2e0a 0a54 7279 2074 6869 733a 0a0a  g`...Try this:..
+-00002540: 6060 600a 646f 636b 6572 2072 756e 2064  ```.docker run d
+-00002550: 616e 6965 6c67 6174 6973 2f72 656d 6267  anielgatis/rembg
+-00002560: 2069 2070 6174 682f 746f 2f69 6e70 7574   i path/to/input
+-00002570: 2e70 6e67 2070 6174 682f 746f 2f6f 7574  .png path/to/out
+-00002580: 7075 742e 706e 670a 6060 600a 0a23 2320  put.png.```..## 
+-00002590: 4d6f 6465 6c73 0a0a 416c 6c20 6d6f 6465  Models..All mode
+-000025a0: 6c73 2061 7265 2064 6f77 6e6c 6f61 6465  ls are downloade
+-000025b0: 6420 616e 6420 7361 7665 6420 696e 2074  d and saved in t
+-000025c0: 6865 2075 7365 7220 686f 6d65 2066 6f6c  he user home fol
+-000025d0: 6465 7220 696e 2074 6865 2060 2e75 326e  der in the `.u2n
+-000025e0: 6574 6020 6469 7265 6374 6f72 792e 0a0a  et` directory...
+-000025f0: 5468 6520 6176 6169 6c61 626c 6520 6d6f  The available mo
+-00002600: 6465 6c73 2061 7265 3a0a 0a2d 2020 2075  dels are:..-   u
+-00002610: 326e 6574 2028 5b64 6f77 6e6c 6f61 645d  2net ([download]
+-00002620: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
+-00002630: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
+-00002640: 7265 6d62 672f 7265 6c65 6173 6573 2f64  rembg/releases/d
+-00002650: 6f77 6e6c 6f61 642f 7630 2e30 2e30 2f75  ownload/v0.0.0/u
+-00002660: 326e 6574 2e6f 6e6e 7829 2c20 5b73 6f75  2net.onnx), [sou
+-00002670: 7263 655d 2868 7474 7073 3a2f 2f67 6974  rce](https://git
+-00002680: 6875 622e 636f 6d2f 7875 6562 696e 7169  hub.com/xuebinqi
+-00002690: 6e2f 552d 322d 4e65 7429 293a 2041 2070  n/U-2-Net)): A p
+-000026a0: 7265 2d74 7261 696e 6564 206d 6f64 656c  re-trained model
+-000026b0: 2066 6f72 2067 656e 6572 616c 2075 7365   for general use
+-000026c0: 2063 6173 6573 2e0a 2d20 2020 7532 6e65   cases..-   u2ne
+-000026d0: 7470 2028 5b64 6f77 6e6c 6f61 645d 2868  tp ([download](h
+-000026e0: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
+-000026f0: 6d2f 6461 6e69 656c 6761 7469 732f 7265  m/danielgatis/re
+-00002700: 6d62 672f 7265 6c65 6173 6573 2f64 6f77  mbg/releases/dow
+-00002710: 6e6c 6f61 642f 7630 2e30 2e30 2f75 326e  nload/v0.0.0/u2n
+-00002720: 6574 702e 6f6e 6e78 292c 205b 736f 7572  etp.onnx), [sour
+-00002730: 6365 5d28 6874 7470 733a 2f2f 6769 7468  ce](https://gith
+-00002740: 7562 2e63 6f6d 2f78 7565 6269 6e71 696e  ub.com/xuebinqin
+-00002750: 2f55 2d32 2d4e 6574 2929 3a20 4120 6c69  /U-2-Net)): A li
+-00002760: 6768 7477 6569 6768 7420 7665 7273 696f  ghtweight versio
+-00002770: 6e20 6f66 2075 326e 6574 206d 6f64 656c  n of u2net model
+-00002780: 2e0a 2d20 2020 7532 6e65 745f 6875 6d61  ..-   u2net_huma
+-00002790: 6e5f 7365 6720 285b 646f 776e 6c6f 6164  n_seg ([download
+-000027a0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-000027b0: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
+-000027c0: 2f72 656d 6267 2f72 656c 6561 7365 732f  /rembg/releases/
+-000027d0: 646f 776e 6c6f 6164 2f76 302e 302e 302f  download/v0.0.0/
+-000027e0: 7532 6e65 745f 6875 6d61 6e5f 7365 672e  u2net_human_seg.
+-000027f0: 6f6e 6e78 292c 205b 736f 7572 6365 5d28  onnx), [source](
+-00002800: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-00002810: 6f6d 2f78 7565 6269 6e71 696e 2f55 2d32  om/xuebinqin/U-2
+-00002820: 2d4e 6574 2929 3a20 4120 7072 652d 7472  -Net)): A pre-tr
+-00002830: 6169 6e65 6420 6d6f 6465 6c20 666f 7220  ained model for 
+-00002840: 6875 6d61 6e20 7365 676d 656e 7461 7469  human segmentati
+-00002850: 6f6e 2e0a 2d20 2020 7532 6e65 745f 636c  on..-   u2net_cl
+-00002860: 6f74 685f 7365 6720 285b 646f 776e 6c6f  oth_seg ([downlo
+-00002870: 6164 5d28 6874 7470 733a 2f2f 6769 7468  ad](https://gith
+-00002880: 7562 2e63 6f6d 2f64 616e 6965 6c67 6174  ub.com/danielgat
+-00002890: 6973 2f72 656d 6267 2f72 656c 6561 7365  is/rembg/release
+-000028a0: 732f 646f 776e 6c6f 6164 2f76 302e 302e  s/download/v0.0.
+-000028b0: 302f 7532 6e65 745f 636c 6f74 685f 7365  0/u2net_cloth_se
+-000028c0: 672e 6f6e 6e78 292c 205b 736f 7572 6365  g.onnx), [source
+-000028d0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-000028e0: 2e63 6f6d 2f6c 6576 696e 6461 6268 692f  .com/levindabhi/
+-000028f0: 636c 6f74 682d 7365 676d 656e 7461 7469  cloth-segmentati
+-00002900: 6f6e 2929 3a20 4120 7072 652d 7472 6169  on)): A pre-trai
+-00002910: 6e65 6420 6d6f 6465 6c20 666f 7220 436c  ned model for Cl
+-00002920: 6f74 6873 2050 6172 7369 6e67 2066 726f  oths Parsing fro
+-00002930: 6d20 6875 6d61 6e20 706f 7274 7261 6974  m human portrait
+-00002940: 2e20 4865 7265 2063 6c6f 7468 6573 2061  . Here clothes a
+-00002950: 7265 2070 6172 7365 6420 696e 746f 2033  re parsed into 3
+-00002960: 2063 6174 6567 6f72 793a 2055 7070 6572   category: Upper
+-00002970: 2062 6f64 792c 204c 6f77 6572 2062 6f64   body, Lower bod
+-00002980: 7920 616e 6420 4675 6c6c 2062 6f64 792e  y and Full body.
+-00002990: 0a2d 2020 2073 696c 7565 7461 2028 5b64  .-   silueta ([d
+-000029a0: 6f77 6e6c 6f61 645d 2868 7474 7073 3a2f  ownload](https:/
+-000029b0: 2f67 6974 6875 622e 636f 6d2f 6461 6e69  /github.com/dani
+-000029c0: 656c 6761 7469 732f 7265 6d62 672f 7265  elgatis/rembg/re
+-000029d0: 6c65 6173 6573 2f64 6f77 6e6c 6f61 642f  leases/download/
+-000029e0: 7630 2e30 2e30 2f73 696c 7565 7461 2e6f  v0.0.0/silueta.o
+-000029f0: 6e6e 7829 2c20 5b73 6f75 7263 655d 2868  nnx), [source](h
+-00002a00: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
+-00002a10: 6d2f 7875 6562 696e 7169 6e2f 552d 322d  m/xuebinqin/U-2-
+-00002a20: 4e65 742f 6973 7375 6573 2f32 3935 2929  Net/issues/295))
+-00002a30: 3a20 5361 6d65 2061 7320 7532 6e65 7420  : Same as u2net 
+-00002a40: 6275 7420 7468 6520 7369 7a65 2069 7320  but the size is 
+-00002a50: 7265 6475 6365 6420 746f 2034 334d 622e  reduced to 43Mb.
+-00002a60: 0a2d 2020 2069 736e 6574 2d67 656e 6572  .-   isnet-gener
+-00002a70: 616c 2d75 7365 2028 5b64 6f77 6e6c 6f61  al-use ([downloa
+-00002a80: 645d 2868 7474 7073 3a2f 2f67 6974 6875  d](https://githu
+-00002a90: 622e 636f 6d2f 6461 6e69 656c 6761 7469  b.com/danielgati
+-00002aa0: 732f 7265 6d62 672f 7265 6c65 6173 6573  s/rembg/releases
+-00002ab0: 2f64 6f77 6e6c 6f61 642f 7630 2e30 2e30  /download/v0.0.0
+-00002ac0: 2f69 736e 6574 2d67 656e 6572 616c 2d75  /isnet-general-u
+-00002ad0: 7365 2e6f 6e6e 7829 2c20 5b73 6f75 7263  se.onnx), [sourc
+-00002ae0: 655d 2868 7474 7073 3a2f 2f67 6974 6875  e](https://githu
+-00002af0: 622e 636f 6d2f 7875 6562 696e 7169 6e2f  b.com/xuebinqin/
+-00002b00: 4449 5329 293a 2041 206e 6577 2070 7265  DIS)): A new pre
+-00002b10: 2d74 7261 696e 6564 206d 6f64 656c 2066  -trained model f
+-00002b20: 6f72 2067 656e 6572 616c 2075 7365 2063  or general use c
+-00002b30: 6173 6573 2e0a 2d20 2020 7361 6d20 285b  ases..-   sam ([
+-00002b40: 646f 776e 6c6f 6164 2065 6e63 6f64 6572  download encoder
+-00002b50: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-00002b60: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
+-00002b70: 2f72 656d 6267 2f72 656c 6561 7365 732f  /rembg/releases/
+-00002b80: 646f 776e 6c6f 6164 2f76 302e 302e 302f  download/v0.0.0/
+-00002b90: 7669 745f 622d 656e 636f 6465 722d 7175  vit_b-encoder-qu
+-00002ba0: 616e 742e 6f6e 6e78 292c 205b 646f 776e  ant.onnx), [down
+-00002bb0: 6c6f 6164 2064 6563 6f64 6572 5d28 6874  load decoder](ht
+-00002bc0: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
+-00002bd0: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
+-00002be0: 6267 2f72 656c 6561 7365 732f 646f 776e  bg/releases/down
+-00002bf0: 6c6f 6164 2f76 302e 302e 302f 7669 745f  load/v0.0.0/vit_
+-00002c00: 622d 6465 636f 6465 722d 7175 616e 742e  b-decoder-quant.
+-00002c10: 6f6e 6e78 292c 205b 736f 7572 6365 5d28  onnx), [source](
+-00002c20: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-00002c30: 6f6d 2f66 6163 6562 6f6f 6b72 6573 6561  om/facebookresea
+-00002c40: 7263 682f 7365 676d 656e 742d 616e 7974  rch/segment-anyt
+-00002c50: 6869 6e67 2929 3a20 4120 7072 652d 7472  hing)): A pre-tr
+-00002c60: 6169 6e65 6420 6d6f 6465 6c20 666f 7220  ained model for 
+-00002c70: 616e 7920 7573 6520 6361 7365 732e 0a0a  any use cases...
+-00002c80: 2323 2320 536f 6d65 2064 6966 6665 7265  ### Some differe
+-00002c90: 6e63 6573 2062 6574 7765 656e 2074 6865  nces between the
+-00002ca0: 206d 6f64 656c 7320 7265 7375 6c74 0a0a   models result..
+-00002cb0: 3c74 6162 6c65 3e0a 2020 2020 3c74 723e  <table>.    <tr>
+-00002cc0: 0a20 2020 2020 2020 203c 7468 3e6f 7269  .        <th>ori
+-00002cd0: 6769 6e61 6c3c 2f74 683e 0a20 2020 2020  ginal</th>.     
+-00002ce0: 2020 203c 7468 3e75 326e 6574 3c2f 7468     <th>u2net</th
+-00002cf0: 3e0a 2020 2020 2020 2020 3c74 683e 7532  >.        <th>u2
+-00002d00: 6e65 7470 3c2f 7468 3e0a 2020 2020 2020  netp</th>.      
+-00002d10: 2020 3c74 683e 7532 6e65 745f 6875 6d61    <th>u2net_huma
+-00002d20: 6e5f 7365 673c 2f74 683e 0a20 2020 2020  n_seg</th>.     
+-00002d30: 2020 203c 7468 3e75 326e 6574 5f63 6c6f     <th>u2net_clo
+-00002d40: 7468 5f73 6567 3c2f 7468 3e0a 2020 2020  th_seg</th>.    
+-00002d50: 2020 2020 3c74 683e 7369 6c75 6574 613c      <th>silueta<
+-00002d60: 2f74 683e 0a20 2020 2020 2020 203c 7468  /th>.        <th
+-00002d70: 3e69 736e 6574 2d67 656e 6572 616c 2d75  >isnet-general-u
+-00002d80: 7365 3c2f 7468 3e0a 2020 2020 2020 2020  se</th>.        
+-00002d90: 3c74 683e 7361 6d3c 2f74 683e 0a20 2020  <th>sam</th>.   
+-00002da0: 203c 2f74 723e 0a20 2020 203c 7472 3e0a   </tr>.    <tr>.
+-00002db0: 2020 2020 2020 2020 3c74 683e 3c69 6d67          <th><img
+-00002dc0: 2073 7263 3d22 6874 7470 733a 2f2f 7261   src="https://ra
+-00002dd0: 772e 6769 7468 7562 7573 6572 636f 6e74  w.githubusercont
+-00002de0: 656e 742e 636f 6d2f 6461 6e69 656c 6761  ent.com/danielga
+-00002df0: 7469 732f 7265 6d62 672f 6d61 7374 6572  tis/rembg/master
+-00002e00: 2f74 6573 7473 2f66 6978 7475 7265 732f  /tests/fixtures/
+-00002e10: 6361 722d 312e 6a70 6722 2077 6964 7468  car-1.jpg" width
+-00002e20: 3d22 3130 3022 202f 3e3c 2f74 683e 0a20  ="100" /></th>. 
+-00002e30: 2020 2020 2020 203c 7468 3e3c 696d 6720         <th><img 
+-00002e40: 7372 633d 2268 7474 7073 3a2f 2f72 6177  src="https://raw
+-00002e50: 2e67 6974 6875 6275 7365 7263 6f6e 7465  .githubuserconte
+-00002e60: 6e74 2e63 6f6d 2f64 616e 6965 6c67 6174  nt.com/danielgat
+-00002e70: 6973 2f72 656d 6267 2f6d 6173 7465 722f  is/rembg/master/
+-00002e80: 7465 7374 732f 7265 7375 6c74 732f 6361  tests/results/ca
+-00002e90: 722d 312e 7532 6e65 742e 706e 6722 2077  r-1.u2net.png" w
+-00002ea0: 6964 7468 3d22 3130 3022 202f 3e3c 2f74  idth="100" /></t
+-00002eb0: 683e 0a20 2020 2020 2020 203c 7468 3e3c  h>.        <th><
+-00002ec0: 696d 6720 7372 633d 2268 7474 7073 3a2f  img src="https:/
+-00002ed0: 2f72 6177 2e67 6974 6875 6275 7365 7263  /raw.githubuserc
+-00002ee0: 6f6e 7465 6e74 2e63 6f6d 2f64 616e 6965  ontent.com/danie
+-00002ef0: 6c67 6174 6973 2f72 656d 6267 2f6d 6173  lgatis/rembg/mas
+-00002f00: 7465 722f 7465 7374 732f 7265 7375 6c74  ter/tests/result
+-00002f10: 732f 6361 722d 312e 7532 6e65 7470 2e70  s/car-1.u2netp.p
+-00002f20: 6e67 2220 7769 6474 683d 2231 3030 2220  ng" width="100" 
+-00002f30: 2f3e 3c2f 7468 3e0a 2020 2020 2020 2020  /></th>.        
+-00002f40: 3c74 683e 3c69 6d67 2073 7263 3d22 6874  <th><img src="ht
+-00002f50: 7470 733a 2f2f 7261 772e 6769 7468 7562  tps://raw.github
+-00002f60: 7573 6572 636f 6e74 656e 742e 636f 6d2f  usercontent.com/
+-00002f70: 6461 6e69 656c 6761 7469 732f 7265 6d62  danielgatis/remb
+-00002f80: 672f 6d61 7374 6572 2f74 6573 7473 2f72  g/master/tests/r
+-00002f90: 6573 756c 7473 2f63 6172 2d31 2e75 326e  esults/car-1.u2n
+-00002fa0: 6574 5f68 756d 616e 5f73 6567 2e70 6e67  et_human_seg.png
+-00002fb0: 2220 7769 6474 683d 2231 3030 2220 2f3e  " width="100" />
+-00002fc0: 3c2f 7468 3e0a 2020 2020 2020 2020 3c74  </th>.        <t
+-00002fd0: 683e 3c69 6d67 2073 7263 3d22 6874 7470  h><img src="http
+-00002fe0: 733a 2f2f 7261 772e 6769 7468 7562 7573  s://raw.githubus
+-00002ff0: 6572 636f 6e74 656e 742e 636f 6d2f 6461  ercontent.com/da
+-00003000: 6e69 656c 6761 7469 732f 7265 6d62 672f  nielgatis/rembg/
+-00003010: 6d61 7374 6572 2f74 6573 7473 2f72 6573  master/tests/res
+-00003020: 756c 7473 2f63 6172 2d31 2e75 326e 6574  ults/car-1.u2net
+-00003030: 5f63 6c6f 7468 5f73 6567 2e70 6e67 2220  _cloth_seg.png" 
+-00003040: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-00003050: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-00003060: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-00003070: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-00003080: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-00003090: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-000030a0: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-000030b0: 7473 2f63 6172 2d31 2e73 696c 7565 7461  ts/car-1.silueta
+-000030c0: 2e70 6e67 2220 7769 6474 683d 2231 3030  .png" width="100
+-000030d0: 2220 2f3e 3c2f 7468 3e0a 2020 2020 2020  " /></th>.      
+-000030e0: 2020 3c74 683e 3c69 6d67 2073 7263 3d22    <th><img src="
+-000030f0: 6874 7470 733a 2f2f 7261 772e 6769 7468  https://raw.gith
+-00003100: 7562 7573 6572 636f 6e74 656e 742e 636f  ubusercontent.co
+-00003110: 6d2f 6461 6e69 656c 6761 7469 732f 7265  m/danielgatis/re
+-00003120: 6d62 672f 6d61 7374 6572 2f74 6573 7473  mbg/master/tests
+-00003130: 2f72 6573 756c 7473 2f63 6172 2d31 2e69  /results/car-1.i
+-00003140: 736e 6574 2d67 656e 6572 616c 2d75 7365  snet-general-use
+-00003150: 2e70 6e67 2220 7769 6474 683d 2231 3030  .png" width="100
+-00003160: 2220 2f3e 3c2f 7468 3e0a 2020 2020 2020  " /></th>.      
+-00003170: 2020 3c74 683e 3c69 6d67 2073 7263 3d22    <th><img src="
+-00003180: 6874 7470 733a 2f2f 7261 772e 6769 7468  https://raw.gith
+-00003190: 7562 7573 6572 636f 6e74 656e 742e 636f  ubusercontent.co
+-000031a0: 6d2f 6461 6e69 656c 6761 7469 732f 7265  m/danielgatis/re
+-000031b0: 6d62 672f 6d61 7374 6572 2f74 6573 7473  mbg/master/tests
+-000031c0: 2f72 6573 756c 7473 2f63 6172 2d31 2e73  /results/car-1.s
+-000031d0: 616d 2e70 6e67 2220 7769 6474 683d 2231  am.png" width="1
+-000031e0: 3030 2220 2f3e 3c2f 7468 3e0a 2020 2020  00" /></th>.    
+-000031f0: 3c2f 7472 3e0a 2020 2020 2020 2020 3c74  </tr>.        <t
+-00003200: 683e 3c69 6d67 2073 7263 3d22 6874 7470  h><img src="http
+-00003210: 733a 2f2f 7261 772e 6769 7468 7562 7573  s://raw.githubus
+-00003220: 6572 636f 6e74 656e 742e 636f 6d2f 6461  ercontent.com/da
+-00003230: 6e69 656c 6761 7469 732f 7265 6d62 672f  nielgatis/rembg/
+-00003240: 6d61 7374 6572 2f74 6573 7473 2f66 6978  master/tests/fix
+-00003250: 7475 7265 732f 636c 6f74 682d 312e 6a70  tures/cloth-1.jp
+-00003260: 6722 2077 6964 7468 3d22 3130 3022 202f  g" width="100" /
+-00003270: 3e3c 2f74 683e 0a20 2020 2020 2020 203c  ></th>.        <
+-00003280: 7468 3e3c 696d 6720 7372 633d 2268 7474  th><img src="htt
+-00003290: 7073 3a2f 2f72 6177 2e67 6974 6875 6275  ps://raw.githubu
+-000032a0: 7365 7263 6f6e 7465 6e74 2e63 6f6d 2f64  sercontent.com/d
+-000032b0: 616e 6965 6c67 6174 6973 2f72 656d 6267  anielgatis/rembg
+-000032c0: 2f6d 6173 7465 722f 7465 7374 732f 7265  /master/tests/re
+-000032d0: 7375 6c74 732f 636c 6f74 682d 312e 7532  sults/cloth-1.u2
+-000032e0: 6e65 742e 706e 6722 2077 6964 7468 3d22  net.png" width="
+-000032f0: 3130 3022 202f 3e3c 2f74 683e 0a20 2020  100" /></th>.   
+-00003300: 2020 2020 203c 7468 3e3c 696d 6720 7372       <th><img sr
+-00003310: 633d 2268 7474 7073 3a2f 2f72 6177 2e67  c="https://raw.g
+-00003320: 6974 6875 6275 7365 7263 6f6e 7465 6e74  ithubusercontent
+-00003330: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
+-00003340: 2f72 656d 6267 2f6d 6173 7465 722f 7465  /rembg/master/te
+-00003350: 7374 732f 7265 7375 6c74 732f 636c 6f74  sts/results/clot
+-00003360: 682d 312e 7532 6e65 7470 2e70 6e67 2220  h-1.u2netp.png" 
+-00003370: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-00003380: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-00003390: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-000033a0: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-000033b0: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-000033c0: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-000033d0: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-000033e0: 7473 2f63 6c6f 7468 2d31 2e75 326e 6574  ts/cloth-1.u2net
+-000033f0: 5f68 756d 616e 5f73 6567 2e70 6e67 2220  _human_seg.png" 
+-00003400: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-00003410: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-00003420: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-00003430: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-00003440: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-00003450: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-00003460: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-00003470: 7473 2f63 6c6f 7468 2d31 2e75 326e 6574  ts/cloth-1.u2net
+-00003480: 5f63 6c6f 7468 5f73 6567 2e70 6e67 2220  _cloth_seg.png" 
+-00003490: 7769 6474 683d 2231 3030 2220 2f3e 3c2f  width="100" /></
+-000034a0: 7468 3e0a 2020 2020 2020 2020 3c74 683e  th>.        <th>
+-000034b0: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
+-000034c0: 2f2f 7261 772e 6769 7468 7562 7573 6572  //raw.githubuser
+-000034d0: 636f 6e74 656e 742e 636f 6d2f 6461 6e69  content.com/dani
+-000034e0: 656c 6761 7469 732f 7265 6d62 672f 6d61  elgatis/rembg/ma
+-000034f0: 7374 6572 2f74 6573 7473 2f72 6573 756c  ster/tests/resul
+-00003500: 7473 2f63 6c6f 7468 2d31 2e73 696c 7565  ts/cloth-1.silue
+-00003510: 7461 2e70 6e67 2220 7769 6474 683d 2231  ta.png" width="1
+-00003520: 3030 2220 2f3e 3c2f 7468 3e0a 2020 2020  00" /></th>.    
+-00003530: 2020 2020 3c74 683e 3c69 6d67 2073 7263      <th><img src
+-00003540: 3d22 6874 7470 733a 2f2f 7261 772e 6769  ="https://raw.gi
+-00003550: 7468 7562 7573 6572 636f 6e74 656e 742e  thubusercontent.
+-00003560: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
+-00003570: 7265 6d62 672f 6d61 7374 6572 2f74 6573  rembg/master/tes
+-00003580: 7473 2f72 6573 756c 7473 2f63 6c6f 7468  ts/results/cloth
+-00003590: 2d31 2e69 736e 6574 2d67 656e 6572 616c  -1.isnet-general
+-000035a0: 2d75 7365 2e70 6e67 2220 7769 6474 683d  -use.png" width=
+-000035b0: 2231 3030 2220 2f3e 3c2f 7468 3e0a 2020  "100" /></th>.  
+-000035c0: 2020 2020 2020 3c74 683e 3c69 6d67 2073        <th><img s
+-000035d0: 7263 3d22 6874 7470 733a 2f2f 7261 772e  rc="https://raw.
+-000035e0: 6769 7468 7562 7573 6572 636f 6e74 656e  githubuserconten
+-000035f0: 742e 636f 6d2f 6461 6e69 656c 6761 7469  t.com/danielgati
+-00003600: 732f 7265 6d62 672f 6d61 7374 6572 2f74  s/rembg/master/t
+-00003610: 6573 7473 2f72 6573 756c 7473 2f63 6c6f  ests/results/clo
+-00003620: 7468 2d31 2e73 616d 2e70 6e67 2220 7769  th-1.sam.png" wi
+-00003630: 6474 683d 2231 3030 2220 2f3e 3c2f 7468  dth="100" /></th
+-00003640: 3e0a 2020 2020 3c2f 7472 3e0a 3c2f 7461  >.    </tr>.</ta
+-00003650: 626c 653e 0a0a 0a23 2323 2048 6f77 2074  ble>...### How t
+-00003660: 6f20 7472 6169 6e20 796f 7572 206f 776e  o train your own
+-00003670: 206d 6f64 656c 0a0a 4966 2059 6f75 206e   model..If You n
+-00003680: 6565 6420 6d6f 7265 2066 696e 6520 7475  eed more fine tu
+-00003690: 6e6e 6564 206d 6f64 656c 7320 7472 7920  nned models try 
+-000036a0: 7468 6973 3a0a 6874 7470 733a 2f2f 6769  this:.https://gi
+-000036b0: 7468 7562 2e63 6f6d 2f64 616e 6965 6c67  thub.com/danielg
+-000036c0: 6174 6973 2f72 656d 6267 2f69 7373 7565  atis/rembg/issue
+-000036d0: 732f 3139 3323 6973 7375 6563 6f6d 6d65  s/193#issuecomme
+-000036e0: 6e74 2d31 3035 3535 3334 3238 390a 0a0a  nt-1055534289...
+-000036f0: 2323 2053 6f6d 6520 7669 6465 6f20 7475  ## Some video tu
+-00003700: 746f 7269 616c 730a 0a2d 2068 7474 7073  torials..- https
+-00003710: 3a2f 2f77 7777 2e79 6f75 7475 6265 2e63  ://www.youtube.c
+-00003720: 6f6d 2f77 6174 6368 3f76 3d33 7871 7770  om/watch?v=3xqwp
+-00003730: 586a 7879 4d51 0a2d 2068 7474 7073 3a2f  XjxyMQ.- https:/
+-00003740: 2f77 7777 2e79 6f75 7475 6265 2e63 6f6d  /www.youtube.com
+-00003750: 2f77 6174 6368 3f76 3d64 464b 5247 5864  /watch?v=dFKRGXd
+-00003760: 6b47 4a55 0a2d 2068 7474 7073 3a2f 2f77  kGJU.- https://w
+-00003770: 7777 2e79 6f75 7475 6265 2e63 6f6d 2f77  ww.youtube.com/w
+-00003780: 6174 6368 3f76 3d41 692d 4253 5f54 3779  atch?v=Ai-BS_T7y
+-00003790: 6a45 0a2d 2068 7474 7073 3a2f 2f77 7777  jE.- https://www
+-000037a0: 2e79 6f75 7475 6265 2e63 6f6d 2f77 6174  .youtube.com/wat
+-000037b0: 6368 3f76 3d64 464b 5247 5864 6b47 4a55  ch?v=dFKRGXdkGJU
+-000037c0: 0a2d 2068 7474 7073 3a2f 2f77 7777 2e79  .- https://www.y
+-000037d0: 6f75 7475 6265 2e63 6f6d 2f77 6174 6368  outube.com/watch
+-000037e0: 3f76 3d44 3757 2d43 3075 7256 6351 0a0a  ?v=D7W-C0urVcQ..
+-000037f0: 2323 2052 6566 6572 656e 6365 730a 0a2d  ## References..-
+-00003800: 2068 7474 7073 3a2f 2f61 7278 6976 2e6f   https://arxiv.o
+-00003810: 7267 2f70 6466 2f32 3030 352e 3039 3030  rg/pdf/2005.0900
+-00003820: 372e 7064 660a 2d20 6874 7470 733a 2f2f  7.pdf.- https://
+-00003830: 6769 7468 7562 2e63 6f6d 2f4e 6174 6861  github.com/Natha
+-00003840: 6e55 412f 552d 322d 4e65 740a 2d20 6874  nUA/U-2-Net.- ht
+-00003850: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
+-00003860: 2f70 796d 6174 7469 6e67 2f70 796d 6174  /pymatting/pymat
+-00003870: 7469 6e67 0a0a 2323 2042 7579 206d 6520  ting..## Buy me 
+-00003880: 6120 636f 6666 6565 0a0a 4c69 6b65 6420  a coffee..Liked 
+-00003890: 736f 6d65 206f 6620 6d79 2077 6f72 6b3f  some of my work?
+-000038a0: 2042 7579 206d 6520 6120 636f 6666 6565   Buy me a coffee
+-000038b0: 2028 6f72 206d 6f72 6520 6c69 6b65 6c79   (or more likely
+-000038c0: 2061 2062 6565 7229 0a0a 3c61 2068 7265   a beer)..<a hre
+-000038d0: 663d 2268 7474 7073 3a2f 2f77 7777 2e62  f="https://www.b
+-000038e0: 7579 6d65 6163 6f66 6665 652e 636f 6d2f  uymeacoffee.com/
+-000038f0: 6461 6e69 656c 6761 7469 7322 2074 6172  danielgatis" tar
+-00003900: 6765 743d 225f 626c 616e 6b22 3e3c 696d  get="_blank"><im
+-00003910: 6720 7372 633d 2268 7474 7073 3a2f 2f62  g src="https://b
+-00003920: 6d63 2d63 646e 2e6e 7963 332e 6469 6769  mc-cdn.nyc3.digi
+-00003930: 7461 6c6f 6365 616e 7370 6163 6573 2e63  taloceanspaces.c
+-00003940: 6f6d 2f42 4d43 2d62 7574 746f 6e2d 696d  om/BMC-button-im
+-00003950: 6167 6573 2f63 7573 746f 6d5f 696d 6167  ages/custom_imag
+-00003960: 6573 2f6f 7261 6e67 655f 696d 672e 706e  es/orange_img.pn
+-00003970: 6722 2061 6c74 3d22 4275 7920 4d65 2041  g" alt="Buy Me A
+-00003980: 2043 6f66 6665 6522 2073 7479 6c65 3d22   Coffee" style="
+-00003990: 6865 6967 6874 3a20 6175 746f 2021 696d  height: auto !im
+-000039a0: 706f 7274 616e 743b 7769 6474 683a 2061  portant;width: a
+-000039b0: 7574 6f20 2169 6d70 6f72 7461 6e74 3b22  uto !important;"
+-000039c0: 3e3c 2f61 3e0a 0a23 2320 4c69 6365 6e73  ></a>..## Licens
+-000039d0: 650a 0a43 6f70 7972 6967 6874 2028 6329  e..Copyright (c)
+-000039e0: 2032 3032 302d 7072 6573 656e 7420 5b44   2020-present [D
+-000039f0: 616e 6965 6c20 4761 7469 735d 2868 7474  aniel Gatis](htt
+-00003a00: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
+-00003a10: 6461 6e69 656c 6761 7469 7329 0a0a 4c69  danielgatis)..Li
+-00003a20: 6365 6e73 6564 2075 6e64 6572 205b 4d49  censed under [MI
+-00003a30: 5420 4c69 6365 6e73 655d 282e 2f4c 4943  T License](./LIC
+-00003a40: 454e 5345 2e74 7874 290a 0a0a            ENSE.txt)...
++00000f30: 3e0a 3c2f 703e 0a0a 3c70 2073 7479 6c65  >.</p>..<p style
++00000f40: 3d22 6469 7370 6c61 793a 2066 6c65 783b  ="display: flex;
++00000f50: 616c 6967 6e2d 6974 656d 733a 2063 656e  align-items: cen
++00000f60: 7465 723b 6a75 7374 6966 792d 636f 6e74  ter;justify-cont
++00000f70: 656e 743a 2063 656e 7465 723b 223e 0a20  ent: center;">. 
++00000f80: 203c 696d 6720 7372 633d 2268 7474 7073   <img src="https
++00000f90: 3a2f 2f72 6177 2e67 6974 6875 6275 7365  ://raw.githubuse
++00000fa0: 7263 6f6e 7465 6e74 2e63 6f6d 2f64 616e  rcontent.com/dan
++00000fb0: 6965 6c67 6174 6973 2f72 656d 6267 2f6d  ielgatis/rembg/m
++00000fc0: 6173 7465 722f 6578 616d 706c 6573 2f61  aster/examples/a
++00000fd0: 6e69 6d65 2d67 6972 6c2d 312e 6a70 6722  nime-girl-1.jpg"
++00000fe0: 2077 6964 7468 3d22 3130 3022 202f 3e0a   width="100" />.
++00000ff0: 2020 3c69 6d67 2073 7263 3d22 6874 7470    <img src="http
++00001000: 733a 2f2f 7261 772e 6769 7468 7562 7573  s://raw.githubus
++00001010: 6572 636f 6e74 656e 742e 636f 6d2f 6461  ercontent.com/da
++00001020: 6e69 656c 6761 7469 732f 7265 6d62 672f  nielgatis/rembg/
++00001030: 6d61 7374 6572 2f65 7861 6d70 6c65 732f  master/examples/
++00001040: 616e 696d 652d 6769 726c 2d31 2e6f 7574  anime-girl-1.out
++00001050: 2e70 6e67 2220 7769 6474 683d 2231 3030  .png" width="100
++00001060: 2220 2f3e 0a20 203c 696d 6720 7372 633d  " />.  <img src=
++00001070: 2268 7474 7073 3a2f 2f72 6177 2e67 6974  "https://raw.git
++00001080: 6875 6275 7365 7263 6f6e 7465 6e74 2e63  hubusercontent.c
++00001090: 6f6d 2f64 616e 6965 6c67 6174 6973 2f72  om/danielgatis/r
++000010a0: 656d 6267 2f6d 6173 7465 722f 6578 616d  embg/master/exam
++000010b0: 706c 6573 2f61 6e69 6d65 2d67 6972 6c2d  ples/anime-girl-
++000010c0: 322e 6a70 6722 2077 6964 7468 3d22 3130  2.jpg" width="10
++000010d0: 3022 202f 3e0a 2020 3c69 6d67 2073 7263  0" />.  <img src
++000010e0: 3d22 6874 7470 733a 2f2f 7261 772e 6769  ="https://raw.gi
++000010f0: 7468 7562 7573 6572 636f 6e74 656e 742e  thubusercontent.
++00001100: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
++00001110: 7265 6d62 672f 6d61 7374 6572 2f65 7861  rembg/master/exa
++00001120: 6d70 6c65 732f 616e 696d 652d 6769 726c  mples/anime-girl
++00001130: 2d32 2e6f 7574 2e70 6e67 2220 7769 6474  -2.out.png" widt
++00001140: 683d 2231 3030 2220 2f3e 0a20 203c 696d  h="100" />.  <im
++00001150: 6720 7372 633d 2268 7474 7073 3a2f 2f72  g src="https://r
++00001160: 6177 2e67 6974 6875 6275 7365 7263 6f6e  aw.githubusercon
++00001170: 7465 6e74 2e63 6f6d 2f64 616e 6965 6c67  tent.com/danielg
++00001180: 6174 6973 2f72 656d 6267 2f6d 6173 7465  atis/rembg/maste
++00001190: 722f 6578 616d 706c 6573 2f61 6e69 6d65  r/examples/anime
++000011a0: 2d67 6972 6c2d 332e 6a70 6722 2077 6964  -girl-3.jpg" wid
++000011b0: 7468 3d22 3130 3022 202f 3e0a 2020 3c69  th="100" />.  <i
++000011c0: 6d67 2073 7263 3d22 6874 7470 733a 2f2f  mg src="https://
++000011d0: 7261 772e 6769 7468 7562 7573 6572 636f  raw.githubuserco
++000011e0: 6e74 656e 742e 636f 6d2f 6461 6e69 656c  ntent.com/daniel
++000011f0: 6761 7469 732f 7265 6d62 672f 6d61 7374  gatis/rembg/mast
++00001200: 6572 2f65 7861 6d70 6c65 732f 616e 696d  er/examples/anim
++00001210: 652d 6769 726c 2d33 2e6f 7574 2e70 6e67  e-girl-3.out.png
++00001220: 2220 7769 6474 683d 2231 3030 2220 2f3e  " width="100" />
++00001230: 0a3c 2f70 3e0a 0a2a 2a49 6620 7468 6973  .</p>..**If this
++00001240: 2070 726f 6a65 6374 2068 6173 2068 656c   project has hel
++00001250: 7065 6420 796f 752c 2070 6c65 6173 6520  ped you, please 
++00001260: 636f 6e73 6964 6572 206d 616b 696e 6720  consider making 
++00001270: 6120 5b64 6f6e 6174 696f 6e5d 2868 7474  a [donation](htt
++00001280: 7073 3a2f 2f77 7777 2e62 7579 6d65 6163  ps://www.buymeac
++00001290: 6f66 6665 652e 636f 6d2f 6461 6e69 656c  offee.com/daniel
++000012a0: 6761 7469 7329 2e2a 2a0a 0a23 2320 5370  gatis).**..## Sp
++000012b0: 6f6e 736f 720a 0a3c 7461 626c 653e 0a20  onsor..<table>. 
++000012c0: 203c 7472 3e0a 2020 2020 3c74 6420 616c   <tr>.    <td al
++000012d0: 6967 6e3d 2263 656e 7465 7222 2076 6572  ign="center" ver
++000012e0: 7469 6361 6c2d 616c 6967 6e3d 2263 656e  tical-align="cen
++000012f0: 7465 7222 3e0a 2020 2020 2020 3c61 2068  ter">.      <a h
++00001300: 7265 663d 2268 7474 7073 3a2f 2f70 686f  ref="https://pho
++00001310: 746f 726f 6f6d 2e63 6f6d 2f61 7069 2f72  toroom.com/api/r
++00001320: 656d 6f76 652d 6261 636b 6772 6f75 6e64  emove-background
++00001330: 3f75 746d 5f73 6f75 7263 653d 7265 6d62  ?utm_source=remb
++00001340: 6726 7574 6d5f 6d65 6469 756d 3d67 6974  g&utm_medium=git
++00001350: 6875 625f 7765 6270 6167 6526 7574 6d5f  hub_webpage&utm_
++00001360: 6361 6d70 6169 676e 3d73 706f 6e73 6f72  campaign=sponsor
++00001370: 2220 3e0a 2020 2020 2020 2020 3c69 6d67  " >.        <img
++00001380: 2073 7263 3d22 6874 7470 733a 2f2f 666f   src="https://fo
++00001390: 6e74 2d63 646e 2e70 686f 746f 726f 6f6d  nt-cdn.photoroom
++000013a0: 2e63 6f6d 2f6d 6564 6961 2f61 7069 2d6c  .com/media/api-l
++000013b0: 6f67 6f2e 706e 6722 2077 6964 7468 3d22  ogo.png" width="
++000013c0: 3132 3070 783b 2220 616c 743d 2255 6e73  120px;" alt="Uns
++000013d0: 706c 6173 6822 202f 3e0a 2020 2020 2020  plash" />.      
++000013e0: 3c2f 613e 0a20 2020 203c 2f74 643e 0a20  </a>.    </td>. 
++000013f0: 2020 203c 7464 2061 6c69 676e 3d22 6365     <td align="ce
++00001400: 6e74 6572 2220 7665 7274 6963 616c 2d61  nter" vertical-a
++00001410: 6c69 676e 3d22 6365 6e74 6572 223e 0a20  lign="center">. 
++00001420: 2020 2020 203c 623e 5068 6f74 6f52 6f6f       <b>PhotoRoo
++00001430: 6d20 5265 6d6f 7665 2042 6163 6b67 726f  m Remove Backgro
++00001440: 756e 6420 4150 493c 2f62 3e0a 2020 2020  und API</b>.    
++00001450: 2020 3c62 7220 2f3e 0a20 2020 2020 203c    <br />.      <
++00001460: 6120 6872 6566 3d22 6874 7470 733a 2f2f  a href="https://
++00001470: 7068 6f74 6f72 6f6f 6d2e 636f 6d2f 6170  photoroom.com/ap
++00001480: 692f 7265 6d6f 7665 2d62 6163 6b67 726f  i/remove-backgro
++00001490: 756e 643f 7574 6d5f 736f 7572 6365 3d72  und?utm_source=r
++000014a0: 656d 6267 2675 746d 5f6d 6564 6975 6d3d  embg&utm_medium=
++000014b0: 6769 7468 7562 5f77 6562 7061 6765 2675  github_webpage&u
++000014c0: 746d 5f63 616d 7061 6967 6e3d 7370 6f6e  tm_campaign=spon
++000014d0: 736f 7222 3e68 7474 7073 3a2f 2f70 686f  sor">https://pho
++000014e0: 746f 726f 6f6d 2e63 6f6d 2f61 7069 3c2f  toroom.com/api</
++000014f0: 613e 0a20 2020 2020 203c 6272 202f 3e0a  a>.      <br />.
++00001500: 2020 2020 2020 3c70 2077 6964 7468 3d22        <p width="
++00001510: 3230 3070 7822 3e0a 2020 2020 2020 2020  200px">.        
++00001520: 4661 7374 2061 6e64 2061 6363 7572 6174  Fast and accurat
++00001530: 6520 6261 636b 6772 6f75 6e64 2072 656d  e background rem
++00001540: 6f76 6572 2041 5049 3c62 722f 3e0a 2020  over API<br/>.  
++00001550: 2020 2020 3c2f 703e 0a20 2020 203c 2f74      </p>.    </t
++00001560: 643e 0a20 203c 2f74 723e 0a3c 2f74 6162  d>.  </tr>.</tab
++00001570: 6c65 3e0a 0a23 2320 5265 7175 6972 656d  le>..## Requirem
++00001580: 656e 7473 0a0a 6060 600a 7079 7468 6f6e  ents..```.python
++00001590: 3a20 3e33 2e37 2c20 3c33 2e31 310a 6060  : >3.7, <3.11.``
++000015a0: 600a 0a23 2320 496e 7374 616c 6c61 7469  `..## Installati
++000015b0: 6f6e 0a0a 4350 5520 7375 7070 6f72 743a  on..CPU support:
++000015c0: 0a0a 6060 6062 6173 680a 7069 7020 696e  ..```bash.pip in
++000015d0: 7374 616c 6c20 7265 6d62 670a 6060 600a  stall rembg.```.
++000015e0: 0a47 5055 2073 7570 706f 7274 3a0a 0a46  .GPU support:..F
++000015f0: 6972 7374 206f 6620 616c 6c2c 2079 6f75  irst of all, you
++00001600: 206e 6565 6420 746f 2063 6865 636b 2069   need to check i
++00001610: 6620 796f 7572 2073 7973 7465 6d20 7375  f your system su
++00001620: 7070 6f72 7473 2074 6865 2060 6f6e 6e78  pports the `onnx
++00001630: 7275 6e74 696d 652d 6770 7560 2e0a 0a47  runtime-gpu`...G
++00001640: 6f20 746f 2068 7474 7073 3a2f 2f6f 6e6e  o to https://onn
++00001650: 7872 756e 7469 6d65 2e61 6920 616e 6420  xruntime.ai and 
++00001660: 6368 6563 6b20 7468 6520 696e 7374 616c  check the instal
++00001670: 6c61 7469 6f6e 206d 6174 7269 782e 0a0a  lation matrix...
++00001680: 3c70 2073 7479 6c65 3d22 6469 7370 6c61  <p style="displa
++00001690: 793a 2066 6c65 783b 616c 6967 6e2d 6974  y: flex;align-it
++000016a0: 656d 733a 2063 656e 7465 723b 6a75 7374  ems: center;just
++000016b0: 6966 792d 636f 6e74 656e 743a 2063 656e  ify-content: cen
++000016c0: 7465 723b 223e 0a20 203c 696d 6720 7372  ter;">.  <img sr
++000016d0: 633d 2268 7474 7073 3a2f 2f72 6177 2e67  c="https://raw.g
++000016e0: 6974 6875 6275 7365 7263 6f6e 7465 6e74  ithubusercontent
++000016f0: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
++00001700: 2f72 656d 6267 2f6d 6173 7465 722f 6f6e  /rembg/master/on
++00001710: 6e78 7275 6e74 696d 652d 696e 7374 616c  nxruntime-instal
++00001720: 6c61 7469 6f6e 2d6d 6174 7269 782e 706e  lation-matrix.pn
++00001730: 6722 2077 6964 7468 3d22 3430 3022 202f  g" width="400" /
++00001740: 3e0a 3c2f 703e 0a0a 4966 2079 6573 2c20  >.</p>..If yes, 
++00001750: 6a75 7374 2072 756e 3a0a 0a60 6060 6261  just run:..```ba
++00001760: 7368 0a70 6970 2069 6e73 7461 6c6c 2072  sh.pip install r
++00001770: 656d 6267 5b67 7075 5d0a 6060 600a 0a23  embg[gpu].```..#
++00001780: 2320 5573 6167 6520 6173 2061 2063 6c69  # Usage as a cli
++00001790: 0a0a 4166 7465 7220 7468 6520 696e 7374  ..After the inst
++000017a0: 616c 6c61 7469 6f6e 2073 7465 7020 796f  allation step yo
++000017b0: 7520 6361 6e20 7573 6520 7265 6d62 6720  u can use rembg 
++000017c0: 6a75 7374 2074 7970 696e 6720 6072 656d  just typing `rem
++000017d0: 6267 6020 696e 2079 6f75 7220 7465 726d  bg` in your term
++000017e0: 696e 616c 2077 696e 646f 772e 0a0a 5468  inal window...Th
++000017f0: 6520 6072 656d 6267 6020 636f 6d6d 616e  e `rembg` comman
++00001800: 6420 6861 7320 3420 7375 6263 6f6d 6d61  d has 4 subcomma
++00001810: 6e64 732c 206f 6e65 2066 6f72 2065 6163  nds, one for eac
++00001820: 6820 696e 7075 7420 7479 7065 3a0a 2d20  h input type:.- 
++00001830: 6069 6020 666f 7220 6669 6c65 730a 2d20  `i` for files.- 
++00001840: 6070 6020 666f 7220 666f 6c64 6572 730a  `p` for folders.
++00001850: 2d20 6073 6020 666f 7220 6874 7470 2073  - `s` for http s
++00001860: 6572 7665 720a 2d20 6062 6020 666f 7220  erver.- `b` for 
++00001870: 5247 4232 3420 7069 7865 6c20 6269 6e61  RGB24 pixel bina
++00001880: 7279 2073 7472 6561 6d0a 0a59 6f75 2063  ry stream..You c
++00001890: 616e 2067 6574 2068 656c 7020 6162 6f75  an get help abou
++000018a0: 7420 7468 6520 6d61 696e 2063 6f6d 6d61  t the main comma
++000018b0: 6e64 2075 7369 6e67 3a0a 0a60 6060 0a72  nd using:..```.r
++000018c0: 656d 6267 202d 2d68 656c 700a 6060 600a  embg --help.```.
++000018d0: 0a41 7320 7765 6c6c 2c20 6162 6f75 7420  .As well, about 
++000018e0: 616c 6c20 7468 6520 7375 6263 6f6d 6d61  all the subcomma
++000018f0: 6e64 7320 7573 696e 673a 0a0a 6060 600a  nds using:..```.
++00001900: 7265 6d62 6720 3c43 4f4d 4d41 4e44 3e20  rembg <COMMAND> 
++00001910: 2d2d 6865 6c70 0a60 6060 0a0a 2323 2320  --help.```..### 
++00001920: 7265 6d62 6720 6069 600a 0a55 7365 6420  rembg `i`..Used 
++00001930: 7768 656e 2069 6e70 7574 2061 6e64 206f  when input and o
++00001940: 7574 7075 7420 6172 6520 6669 6c65 732e  utput are files.
++00001950: 0a0a 5265 6d6f 7665 2074 6865 2062 6163  ..Remove the bac
++00001960: 6b67 726f 756e 6420 6672 6f6d 2061 2072  kground from a r
++00001970: 656d 6f74 6520 696d 6167 650a 0a60 6060  emote image..```
++00001980: 0a63 7572 6c20 2d73 2068 7474 703a 2f2f  .curl -s http://
++00001990: 696e 7075 742e 706e 6720 7c20 7265 6d62  input.png | remb
++000019a0: 6720 6920 3e20 6f75 7470 7574 2e70 6e67  g i > output.png
++000019b0: 0a60 6060 0a0a 5265 6d6f 7665 2074 6865  .```..Remove the
++000019c0: 2062 6163 6b67 726f 756e 6420 6672 6f6d   background from
++000019d0: 2061 206c 6f63 616c 2066 696c 650a 0a60   a local file..`
++000019e0: 6060 0a72 656d 6267 2069 2070 6174 682f  ``.rembg i path/
++000019f0: 746f 2f69 6e70 7574 2e70 6e67 2070 6174  to/input.png pat
++00001a00: 682f 746f 2f6f 7574 7075 742e 706e 670a  h/to/output.png.
++00001a10: 6060 600a 0a52 656d 6f76 6520 7468 6520  ```..Remove the 
++00001a20: 6261 636b 6772 6f75 6e64 2073 7065 6369  background speci
++00001a30: 6679 696e 6720 6120 6d6f 6465 6c0a 0a60  fying a model..`
++00001a40: 6060 0a72 656d 6267 2069 202d 6d20 7532  ``.rembg i -m u2
++00001a50: 6e65 7470 2070 6174 682f 746f 2f69 6e70  netp path/to/inp
++00001a60: 7574 2e70 6e67 2070 6174 682f 746f 2f6f  ut.png path/to/o
++00001a70: 7574 7075 742e 706e 670a 6060 600a 0a52  utput.png.```..R
++00001a80: 656d 6f76 6520 7468 6520 6261 636b 6772  emove the backgr
++00001a90: 6f75 6e64 2072 6574 7572 6e69 6e67 206f  ound returning o
++00001aa0: 6e6c 7920 7468 6520 6d61 736b 0a0a 6060  nly the mask..``
++00001ab0: 600a 7265 6d62 6720 6920 2d6f 6d20 7061  `.rembg i -om pa
++00001ac0: 7468 2f74 6f2f 696e 7075 742e 706e 6720  th/to/input.png 
++00001ad0: 7061 7468 2f74 6f2f 6f75 7470 7574 2e70  path/to/output.p
++00001ae0: 6e67 0a60 6060 0a0a 0a52 656d 6f76 6520  ng.```...Remove 
++00001af0: 7468 6520 6261 636b 6772 6f75 6e64 2061  the background a
++00001b00: 7070 6c79 696e 6720 616e 2061 6c70 6861  pplying an alpha
++00001b10: 206d 6174 7469 6e67 0a0a 6060 600a 7265   matting..```.re
++00001b20: 6d62 6720 6920 2d61 2070 6174 682f 746f  mbg i -a path/to
++00001b30: 2f69 6e70 7574 2e70 6e67 2070 6174 682f  /input.png path/
++00001b40: 746f 2f6f 7574 7075 742e 706e 670a 6060  to/output.png.``
++00001b50: 600a 0a50 6173 7369 6e67 2065 7874 7261  `..Passing extra
++00001b60: 7320 7061 7261 6d65 7465 7273 0a0a 6060  s parameters..``
++00001b70: 600a 7265 6d62 6720 6920 2d6d 2073 616d  `.rembg i -m sam
++00001b80: 202d 7820 277b 2269 6e70 7574 5f6c 6162   -x '{"input_lab
++00001b90: 656c 7322 3a20 5b31 5d2c 2022 696e 7075  els": [1], "inpu
++00001ba0: 745f 706f 696e 7473 223a 205b 5b31 3030  t_points": [[100
++00001bb0: 2c31 3030 5d5d 7d27 2070 6174 682f 746f  ,100]]}' path/to
++00001bc0: 2f69 6e70 7574 2e70 6e67 2070 6174 682f  /input.png path/
++00001bd0: 746f 2f6f 7574 7075 742e 706e 670a 6060  to/output.png.``
++00001be0: 600a 0a23 2323 2072 656d 6267 2060 7060  `..### rembg `p`
++00001bf0: 0a0a 5573 6564 2077 6865 6e20 696e 7075  ..Used when inpu
++00001c00: 7420 616e 6420 6f75 7470 7574 2061 7265  t and output are
++00001c10: 2066 6f6c 6465 7273 2e0a 0a52 656d 6f76   folders...Remov
++00001c20: 6520 7468 6520 6261 636b 6772 6f75 6e64  e the background
++00001c30: 2066 726f 6d20 616c 6c20 696d 6167 6573   from all images
++00001c40: 2069 6e20 6120 666f 6c64 6572 0a0a 6060   in a folder..``
++00001c50: 600a 7265 6d62 6720 7020 7061 7468 2f74  `.rembg p path/t
++00001c60: 6f2f 696e 7075 7420 7061 7468 2f74 6f2f  o/input path/to/
++00001c70: 6f75 7470 7574 0a60 6060 0a0a 5361 6d65  output.```..Same
++00001c80: 2061 7320 6265 666f 7265 2c20 6275 7420   as before, but 
++00001c90: 7761 7463 6869 6e67 2066 6f72 206e 6577  watching for new
++00001ca0: 2f63 6861 6e67 6564 2066 696c 6573 2074  /changed files t
++00001cb0: 6f20 7072 6f63 6573 730a 0a60 6060 0a72  o process..```.r
++00001cc0: 656d 6267 2070 202d 7720 7061 7468 2f74  embg p -w path/t
++00001cd0: 6f2f 696e 7075 7420 7061 7468 2f74 6f2f  o/input path/to/
++00001ce0: 6f75 7470 7574 0a60 6060 0a0a 2323 2320  output.```..### 
++00001cf0: 7265 6d62 6720 6073 600a 0a55 7365 6420  rembg `s`..Used 
++00001d00: 746f 2073 7461 7274 2068 7474 7020 7365  to start http se
++00001d10: 7276 6572 2e0a 0a54 6f20 7365 6520 7468  rver...To see th
++00001d20: 6520 636f 6d70 6c65 7465 2065 6e64 706f  e complete endpo
++00001d30: 696e 7473 2064 6f63 756d 656e 7461 7469  ints documentati
++00001d40: 6f6e 2c20 676f 2074 6f3a 2060 6874 7470  on, go to: `http
++00001d50: 3a2f 2f6c 6f63 616c 686f 7374 3a35 3030  ://localhost:500
++00001d60: 302f 646f 6373 602e 0a0a 5265 6d6f 7665  0/docs`...Remove
++00001d70: 2074 6865 2062 6163 6b67 726f 756e 6420   the background 
++00001d80: 6672 6f6d 2061 6e20 696d 6167 6520 7572  from an image ur
++00001d90: 6c0a 0a60 6060 0a63 7572 6c20 2d73 2022  l..```.curl -s "
++00001da0: 6874 7470 3a2f 2f6c 6f63 616c 686f 7374  http://localhost
++00001db0: 3a35 3030 302f 3f75 726c 3d68 7474 703a  :5000/?url=http:
++00001dc0: 2f2f 696e 7075 742e 706e 6722 202d 6f20  //input.png" -o 
++00001dd0: 6f75 7470 7574 2e70 6e67 0a60 6060 0a0a  output.png.```..
++00001de0: 5265 6d6f 7665 2074 6865 2062 6163 6b67  Remove the backg
++00001df0: 726f 756e 6420 6672 6f6d 2061 6e20 7570  round from an up
++00001e00: 6c6f 6164 6564 2069 6d61 6765 0a0a 6060  loaded image..``
++00001e10: 600a 6375 726c 202d 7320 2d46 2066 696c  `.curl -s -F fil
++00001e20: 653d 402f 7061 7468 2f74 6f2f 696e 7075  e=@/path/to/inpu
++00001e30: 742e 6a70 6720 2268 7474 703a 2f2f 6c6f  t.jpg "http://lo
++00001e40: 6361 6c68 6f73 743a 3530 3030 2220 202d  calhost:5000"  -
++00001e50: 6f20 6f75 7470 7574 2e70 6e67 0a60 6060  o output.png.```
++00001e60: 0a0a 2323 2320 7265 6d62 6720 6062 600a  ..### rembg `b`.
++00001e70: 0a50 726f 6365 7373 2061 2073 6571 7565  .Process a seque
++00001e80: 6e63 6520 6f66 2052 4742 3234 2069 6d61  nce of RGB24 ima
++00001e90: 6765 7320 6672 6f6d 2073 7464 696e 2e20  ges from stdin. 
++00001ea0: 5468 6973 2069 7320 696e 7465 6e64 6564  This is intended
++00001eb0: 2074 6f20 6265 2075 7365 6420 7769 7468   to be used with
++00001ec0: 2061 6e6f 7468 6572 2070 726f 6772 616d   another program
++00001ed0: 2c20 7375 6368 2061 7320 4646 4d50 4547  , such as FFMPEG
++00001ee0: 2c20 7468 6174 206f 7574 7075 7473 2052  , that outputs R
++00001ef0: 4742 3234 2070 6978 656c 2064 6174 6120  GB24 pixel data 
++00001f00: 746f 2073 7464 6f75 742c 2077 6869 6368  to stdout, which
++00001f10: 2069 7320 7069 7065 6420 696e 746f 2074   is piped into t
++00001f20: 6865 2073 7464 696e 206f 6620 7468 6973  he stdin of this
++00001f30: 2070 726f 6772 616d 2c20 616c 7468 6f75   program, althou
++00001f40: 6768 206e 6f74 6869 6e67 2070 7265 7665  gh nothing preve
++00001f50: 6e74 7320 796f 7520 6672 6f6d 206d 616e  nts you from man
++00001f60: 7561 6c6c 7920 7479 7069 6e67 2069 6e20  ually typing in 
++00001f70: 696d 6167 6573 2061 7420 7374 6469 6e2e  images at stdin.
++00001f80: 0a0a 6060 600a 7265 6d62 6720 6220 696d  ..```.rembg b im
++00001f90: 6167 655f 7769 6474 6820 696d 6167 655f  age_width image_
++00001fa0: 6865 6967 6874 202d 6f20 6f75 7470 7574  height -o output
++00001fb0: 5f73 7065 6369 6669 6572 0a60 6060 0a0a  _specifier.```..
++00001fc0: 4172 6775 6d65 6e74 733a 0a0a 2d20 696d  Arguments:..- im
++00001fd0: 6167 655f 7769 6474 6820 3a20 7769 6474  age_width : widt
++00001fe0: 6820 6f66 2069 6e70 7574 2069 6d61 6765  h of input image
++00001ff0: 2873 290a 2d20 696d 6167 655f 6865 6967  (s).- image_heig
++00002000: 6874 203a 2068 6569 6768 7420 6f66 2069  ht : height of i
++00002010: 6e70 7574 2069 6d61 6765 2873 290a 2d20  nput image(s).- 
++00002020: 6f75 7470 7574 5f73 7065 6369 6669 6572  output_specifier
++00002030: 3a20 7072 696e 7466 2d73 7479 6c65 2073  : printf-style s
++00002040: 7065 6369 6669 6572 2066 6f72 206f 7574  pecifier for out
++00002050: 7075 7420 6669 6c65 6e61 6d65 732c 2066  put filenames, f
++00002060: 6f72 2065 7861 6d70 6c65 2069 6620 606f  or example if `o
++00002070: 7574 7075 742d 2530 3375 2e70 6e67 602c  utput-%03u.png`,
++00002080: 2074 6865 6e20 6f75 7470 7574 2066 696c   then output fil
++00002090: 6573 2077 696c 6c20 6265 206e 616d 6564  es will be named
++000020a0: 2060 6f75 7470 7574 2d30 3030 2e70 6e67   `output-000.png
++000020b0: 602c 2060 6f75 7470 7574 2d30 3031 2e70  `, `output-001.p
++000020c0: 6e67 602c 2060 6f75 7470 7574 2d30 3032  ng`, `output-002
++000020d0: 2e70 6e67 602c 2065 7463 2e20 4f75 7470  .png`, etc. Outp
++000020e0: 7574 2066 696c 6573 2077 696c 6c20 6265  ut files will be
++000020f0: 2073 6176 6564 2069 6e20 504e 4720 666f   saved in PNG fo
++00002100: 726d 6174 2072 6567 6172 646c 6573 7320  rmat regardless 
++00002110: 6f66 2074 6865 2065 7874 656e 7369 6f6e  of the extension
++00002120: 2073 7065 6369 6669 6564 2e20 596f 7520   specified. You 
++00002130: 6361 6e20 6f6d 6974 2069 7420 746f 2077  can omit it to w
++00002140: 7269 7465 2072 6573 756c 7473 2074 6f20  rite results to 
++00002150: 7374 646f 7574 2e0a 0a45 7861 6d70 6c65  stdout...Example
++00002160: 2075 7361 6765 2077 6974 6820 4646 4d50   usage with FFMP
++00002170: 4547 3a0a 0a60 6060 0a66 666d 7065 6720  EG:..```.ffmpeg 
++00002180: 2d69 2069 6e70 7574 2e6d 7034 202d 7373  -i input.mp4 -ss
++00002190: 2031 3020 2d61 6e20 2d66 2072 6177 7669   10 -an -f rawvi
++000021a0: 6465 6f20 2d70 6978 5f66 6d74 2072 6762  deo -pix_fmt rgb
++000021b0: 3234 2070 6970 653a 3120 7c20 7265 6d62  24 pipe:1 | remb
++000021c0: 6720 6220 3132 3830 2037 3230 202d 6f20  g b 1280 720 -o 
++000021d0: 666f 6c64 6572 2f6f 7574 7075 742d 2530  folder/output-%0
++000021e0: 3375 2e70 6e67 0a60 6060 0a0a 5468 6520  3u.png.```..The 
++000021f0: 7769 6474 6820 616e 6420 6865 6967 6874  width and height
++00002200: 2076 616c 7565 7320 6d75 7374 206d 6174   values must mat
++00002210: 6368 2074 6865 2064 696d 656e 7369 6f6e  ch the dimension
++00002220: 206f 6620 6f75 7470 7574 2069 6d61 6765   of output image
++00002230: 7320 6672 6f6d 2046 464d 5045 472e 204e  s from FFMPEG. N
++00002240: 6f74 6520 666f 7220 4646 4d50 4547 2c20  ote for FFMPEG, 
++00002250: 7468 6520 2260 2d61 6e20 2d66 2072 6177  the "`-an -f raw
++00002260: 7669 6465 6f20 2d70 6978 5f66 6d74 2072  video -pix_fmt r
++00002270: 6762 3234 2070 6970 653a 3160 2220 7061  gb24 pipe:1`" pa
++00002280: 7274 2069 7320 7265 7175 6972 6564 2066  rt is required f
++00002290: 6f72 2074 6865 2077 686f 6c65 2074 6869  or the whole thi
++000022a0: 6e67 2074 6f20 776f 726b 2e0a 0a0a 2323  ng to work....##
++000022b0: 2055 7361 6765 2061 7320 6120 6c69 6272   Usage as a libr
++000022c0: 6172 790a 0a49 6e70 7574 2061 6e64 206f  ary..Input and o
++000022d0: 7574 7075 7420 6173 2062 7974 6573 0a0a  utput as bytes..
++000022e0: 6060 6070 7974 686f 6e0a 6672 6f6d 2072  ```python.from r
++000022f0: 656d 6267 2069 6d70 6f72 7420 7265 6d6f  embg import remo
++00002300: 7665 0a0a 696e 7075 745f 7061 7468 203d  ve..input_path =
++00002310: 2027 696e 7075 742e 706e 6727 0a6f 7574   'input.png'.out
++00002320: 7075 745f 7061 7468 203d 2027 6f75 7470  put_path = 'outp
++00002330: 7574 2e70 6e67 270a 0a77 6974 6820 6f70  ut.png'..with op
++00002340: 656e 2869 6e70 7574 5f70 6174 682c 2027  en(input_path, '
++00002350: 7262 2729 2061 7320 693a 0a20 2020 2077  rb') as i:.    w
++00002360: 6974 6820 6f70 656e 286f 7574 7075 745f  ith open(output_
++00002370: 7061 7468 2c20 2777 6227 2920 6173 206f  path, 'wb') as o
++00002380: 3a0a 2020 2020 2020 2020 696e 7075 7420  :.        input 
++00002390: 3d20 692e 7265 6164 2829 0a20 2020 2020  = i.read().     
++000023a0: 2020 206f 7574 7075 7420 3d20 7265 6d6f     output = remo
++000023b0: 7665 2869 6e70 7574 290a 2020 2020 2020  ve(input).      
++000023c0: 2020 6f2e 7772 6974 6528 6f75 7470 7574    o.write(output
++000023d0: 290a 6060 600a 0a49 6e70 7574 2061 6e64  ).```..Input and
++000023e0: 206f 7574 7075 7420 6173 2061 2050 494c   output as a PIL
++000023f0: 2069 6d61 6765 0a0a 6060 6070 7974 686f   image..```pytho
++00002400: 6e0a 6672 6f6d 2072 656d 6267 2069 6d70  n.from rembg imp
++00002410: 6f72 7420 7265 6d6f 7665 0a66 726f 6d20  ort remove.from 
++00002420: 5049 4c20 696d 706f 7274 2049 6d61 6765  PIL import Image
++00002430: 0a0a 696e 7075 745f 7061 7468 203d 2027  ..input_path = '
++00002440: 696e 7075 742e 706e 6727 0a6f 7574 7075  input.png'.outpu
++00002450: 745f 7061 7468 203d 2027 6f75 7470 7574  t_path = 'output
++00002460: 2e70 6e67 270a 0a69 6e70 7574 203d 2049  .png'..input = I
++00002470: 6d61 6765 2e6f 7065 6e28 696e 7075 745f  mage.open(input_
++00002480: 7061 7468 290a 6f75 7470 7574 203d 2072  path).output = r
++00002490: 656d 6f76 6528 696e 7075 7429 0a6f 7574  emove(input).out
++000024a0: 7075 742e 7361 7665 286f 7574 7075 745f  put.save(output_
++000024b0: 7061 7468 290a 6060 600a 0a49 6e70 7574  path).```..Input
++000024c0: 2061 6e64 206f 7574 7075 7420 6173 2061   and output as a
++000024d0: 206e 756d 7079 2061 7272 6179 0a0a 6060   numpy array..``
++000024e0: 6070 7974 686f 6e0a 6672 6f6d 2072 656d  `python.from rem
++000024f0: 6267 2069 6d70 6f72 7420 7265 6d6f 7665  bg import remove
++00002500: 0a69 6d70 6f72 7420 6376 320a 0a69 6e70  .import cv2..inp
++00002510: 7574 5f70 6174 6820 3d20 2769 6e70 7574  ut_path = 'input
++00002520: 2e70 6e67 270a 6f75 7470 7574 5f70 6174  .png'.output_pat
++00002530: 6820 3d20 276f 7574 7075 742e 706e 6727  h = 'output.png'
++00002540: 0a0a 696e 7075 7420 3d20 6376 322e 696d  ..input = cv2.im
++00002550: 7265 6164 2869 6e70 7574 5f70 6174 6829  read(input_path)
++00002560: 0a6f 7574 7075 7420 3d20 7265 6d6f 7665  .output = remove
++00002570: 2869 6e70 7574 290a 6376 322e 696d 7772  (input).cv2.imwr
++00002580: 6974 6528 6f75 7470 7574 5f70 6174 682c  ite(output_path,
++00002590: 206f 7574 7075 7429 0a60 6060 0a0a 486f   output).```..Ho
++000025a0: 7720 746f 2069 7465 7261 7465 206f 7665  w to iterate ove
++000025b0: 7220 6669 6c65 7320 696e 2061 2070 6572  r files in a per
++000025c0: 666f 726d 6174 6963 2077 6179 0a0a 6060  formatic way..``
++000025d0: 6070 7974 686f 6e0a 6672 6f6d 2070 6174  `python.from pat
++000025e0: 686c 6962 2069 6d70 6f72 7420 5061 7468  hlib import Path
++000025f0: 0a66 726f 6d20 7265 6d62 6720 696d 706f  .from rembg impo
++00002600: 7274 2072 656d 6f76 652c 206e 6577 5f73  rt remove, new_s
++00002610: 6573 7369 6f6e 0a0a 7365 7373 696f 6e20  ession..session 
++00002620: 3d20 6e65 775f 7365 7373 696f 6e28 290a  = new_session().
++00002630: 0a66 6f72 2066 696c 6520 696e 2050 6174  .for file in Pat
++00002640: 6828 2770 6174 682f 746f 2f66 6f6c 6465  h('path/to/folde
++00002650: 7227 292e 676c 6f62 2827 2a2e 706e 6727  r').glob('*.png'
++00002660: 293a 0a20 2020 2069 6e70 7574 5f70 6174  ):.    input_pat
++00002670: 6820 3d20 7374 7228 6669 6c65 290a 2020  h = str(file).  
++00002680: 2020 6f75 7470 7574 5f70 6174 6820 3d20    output_path = 
++00002690: 7374 7228 6669 6c65 2e70 6172 656e 7420  str(file.parent 
++000026a0: 2f20 2866 696c 652e 7374 656d 202b 2022  / (file.stem + "
++000026b0: 2e6f 7574 2e70 6e67 2229 290a 0a20 2020  .out.png"))..   
++000026c0: 2077 6974 6820 6f70 656e 2869 6e70 7574   with open(input
++000026d0: 5f70 6174 682c 2027 7262 2729 2061 7320  _path, 'rb') as 
++000026e0: 693a 0a20 2020 2020 2020 2077 6974 6820  i:.        with 
++000026f0: 6f70 656e 286f 7574 7075 745f 7061 7468  open(output_path
++00002700: 2c20 2777 6227 2920 6173 206f 3a0a 2020  , 'wb') as o:.  
++00002710: 2020 2020 2020 2020 2020 696e 7075 7420            input 
++00002720: 3d20 692e 7265 6164 2829 0a20 2020 2020  = i.read().     
++00002730: 2020 2020 2020 206f 7574 7075 7420 3d20         output = 
++00002740: 7265 6d6f 7665 2869 6e70 7574 2c20 7365  remove(input, se
++00002750: 7373 696f 6e3d 7365 7373 696f 6e29 0a20  ssion=session). 
++00002760: 2020 2020 2020 2020 2020 206f 2e77 7269             o.wri
++00002770: 7465 286f 7574 7075 7429 0a60 6060 0a54  te(output).```.T
++00002780: 6f20 7365 6520 6120 6675 6c6c 206c 6973  o see a full lis
++00002790: 7420 6f66 2065 7861 6d70 6c65 7320 6f6e  t of examples on
++000027a0: 2068 6f77 2074 6f20 7573 6520 7265 6d62   how to use remb
++000027b0: 672c 2067 6f20 746f 2074 6865 205b 6578  g, go to the [ex
++000027c0: 616d 706c 6573 5d28 5553 4147 452e 6d64  amples](USAGE.md
++000027d0: 2920 7061 6765 2e0a 2323 2055 7361 6765  ) page..## Usage
++000027e0: 2061 7320 6120 646f 636b 6572 0a0a 4a75   as a docker..Ju
++000027f0: 7374 2072 6570 6c61 6365 2074 6865 2060  st replace the `
++00002800: 7265 6d62 6760 2063 6f6d 6d61 6e64 2066  rembg` command f
++00002810: 6f72 2060 646f 636b 6572 2072 756e 2064  or `docker run d
++00002820: 616e 6965 6c67 6174 6973 2f72 656d 6267  anielgatis/rembg
++00002830: 602e 0a0a 5472 7920 7468 6973 3a0a 0a60  `...Try this:..`
++00002840: 6060 0a64 6f63 6b65 7220 7275 6e20 6461  ``.docker run da
++00002850: 6e69 656c 6761 7469 732f 7265 6d62 6720  nielgatis/rembg 
++00002860: 6920 7061 7468 2f74 6f2f 696e 7075 742e  i path/to/input.
++00002870: 706e 6720 7061 7468 2f74 6f2f 6f75 7470  png path/to/outp
++00002880: 7574 2e70 6e67 0a60 6060 0a0a 2323 204d  ut.png.```..## M
++00002890: 6f64 656c 730a 0a41 6c6c 206d 6f64 656c  odels..All model
++000028a0: 7320 6172 6520 646f 776e 6c6f 6164 6564  s are downloaded
++000028b0: 2061 6e64 2073 6176 6564 2069 6e20 7468   and saved in th
++000028c0: 6520 7573 6572 2068 6f6d 6520 666f 6c64  e user home fold
++000028d0: 6572 2069 6e20 7468 6520 602e 7532 6e65  er in the `.u2ne
++000028e0: 7460 2064 6972 6563 746f 7279 2e0a 0a54  t` directory...T
++000028f0: 6865 2061 7661 696c 6162 6c65 206d 6f64  he available mod
++00002900: 656c 7320 6172 653a 0a0a 2d20 2020 7532  els are:..-   u2
++00002910: 6e65 7420 285b 646f 776e 6c6f 6164 5d28  net ([download](
++00002920: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
++00002930: 6f6d 2f64 616e 6965 6c67 6174 6973 2f72  om/danielgatis/r
++00002940: 656d 6267 2f72 656c 6561 7365 732f 646f  embg/releases/do
++00002950: 776e 6c6f 6164 2f76 302e 302e 302f 7532  wnload/v0.0.0/u2
++00002960: 6e65 742e 6f6e 6e78 292c 205b 736f 7572  net.onnx), [sour
++00002970: 6365 5d28 6874 7470 733a 2f2f 6769 7468  ce](https://gith
++00002980: 7562 2e63 6f6d 2f78 7565 6269 6e71 696e  ub.com/xuebinqin
++00002990: 2f55 2d32 2d4e 6574 2929 3a20 4120 7072  /U-2-Net)): A pr
++000029a0: 652d 7472 6169 6e65 6420 6d6f 6465 6c20  e-trained model 
++000029b0: 666f 7220 6765 6e65 7261 6c20 7573 6520  for general use 
++000029c0: 6361 7365 732e 0a2d 2020 2075 326e 6574  cases..-   u2net
++000029d0: 7020 285b 646f 776e 6c6f 6164 5d28 6874  p ([download](ht
++000029e0: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++000029f0: 2f64 616e 6965 6c67 6174 6973 2f72 656d  /danielgatis/rem
++00002a00: 6267 2f72 656c 6561 7365 732f 646f 776e  bg/releases/down
++00002a10: 6c6f 6164 2f76 302e 302e 302f 7532 6e65  load/v0.0.0/u2ne
++00002a20: 7470 2e6f 6e6e 7829 2c20 5b73 6f75 7263  tp.onnx), [sourc
++00002a30: 655d 2868 7474 7073 3a2f 2f67 6974 6875  e](https://githu
++00002a40: 622e 636f 6d2f 7875 6562 696e 7169 6e2f  b.com/xuebinqin/
++00002a50: 552d 322d 4e65 7429 293a 2041 206c 6967  U-2-Net)): A lig
++00002a60: 6874 7765 6967 6874 2076 6572 7369 6f6e  htweight version
++00002a70: 206f 6620 7532 6e65 7420 6d6f 6465 6c2e   of u2net model.
++00002a80: 0a2d 2020 2075 326e 6574 5f68 756d 616e  .-   u2net_human
++00002a90: 5f73 6567 2028 5b64 6f77 6e6c 6f61 645d  _seg ([download]
++00002aa0: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00002ab0: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
++00002ac0: 7265 6d62 672f 7265 6c65 6173 6573 2f64  rembg/releases/d
++00002ad0: 6f77 6e6c 6f61 642f 7630 2e30 2e30 2f75  ownload/v0.0.0/u
++00002ae0: 326e 6574 5f68 756d 616e 5f73 6567 2e6f  2net_human_seg.o
++00002af0: 6e6e 7829 2c20 5b73 6f75 7263 655d 2868  nnx), [source](h
++00002b00: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
++00002b10: 6d2f 7875 6562 696e 7169 6e2f 552d 322d  m/xuebinqin/U-2-
++00002b20: 4e65 7429 293a 2041 2070 7265 2d74 7261  Net)): A pre-tra
++00002b30: 696e 6564 206d 6f64 656c 2066 6f72 2068  ined model for h
++00002b40: 756d 616e 2073 6567 6d65 6e74 6174 696f  uman segmentatio
++00002b50: 6e2e 0a2d 2020 2075 326e 6574 5f63 6c6f  n..-   u2net_clo
++00002b60: 7468 5f73 6567 2028 5b64 6f77 6e6c 6f61  th_seg ([downloa
++00002b70: 645d 2868 7474 7073 3a2f 2f67 6974 6875  d](https://githu
++00002b80: 622e 636f 6d2f 6461 6e69 656c 6761 7469  b.com/danielgati
++00002b90: 732f 7265 6d62 672f 7265 6c65 6173 6573  s/rembg/releases
++00002ba0: 2f64 6f77 6e6c 6f61 642f 7630 2e30 2e30  /download/v0.0.0
++00002bb0: 2f75 326e 6574 5f63 6c6f 7468 5f73 6567  /u2net_cloth_seg
++00002bc0: 2e6f 6e6e 7829 2c20 5b73 6f75 7263 655d  .onnx), [source]
++00002bd0: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00002be0: 636f 6d2f 6c65 7669 6e64 6162 6869 2f63  com/levindabhi/c
++00002bf0: 6c6f 7468 2d73 6567 6d65 6e74 6174 696f  loth-segmentatio
++00002c00: 6e29 293a 2041 2070 7265 2d74 7261 696e  n)): A pre-train
++00002c10: 6564 206d 6f64 656c 2066 6f72 2043 6c6f  ed model for Clo
++00002c20: 7468 7320 5061 7273 696e 6720 6672 6f6d  ths Parsing from
++00002c30: 2068 756d 616e 2070 6f72 7472 6169 742e   human portrait.
++00002c40: 2048 6572 6520 636c 6f74 6865 7320 6172   Here clothes ar
++00002c50: 6520 7061 7273 6564 2069 6e74 6f20 3320  e parsed into 3 
++00002c60: 6361 7465 676f 7279 3a20 5570 7065 7220  category: Upper 
++00002c70: 626f 6479 2c20 4c6f 7765 7220 626f 6479  body, Lower body
++00002c80: 2061 6e64 2046 756c 6c20 626f 6479 2e0a   and Full body..
++00002c90: 2d20 2020 7369 6c75 6574 6120 285b 646f  -   silueta ([do
++00002ca0: 776e 6c6f 6164 5d28 6874 7470 733a 2f2f  wnload](https://
++00002cb0: 6769 7468 7562 2e63 6f6d 2f64 616e 6965  github.com/danie
++00002cc0: 6c67 6174 6973 2f72 656d 6267 2f72 656c  lgatis/rembg/rel
++00002cd0: 6561 7365 732f 646f 776e 6c6f 6164 2f76  eases/download/v
++00002ce0: 302e 302e 302f 7369 6c75 6574 612e 6f6e  0.0.0/silueta.on
++00002cf0: 6e78 292c 205b 736f 7572 6365 5d28 6874  nx), [source](ht
++00002d00: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00002d10: 2f78 7565 6269 6e71 696e 2f55 2d32 2d4e  /xuebinqin/U-2-N
++00002d20: 6574 2f69 7373 7565 732f 3239 3529 293a  et/issues/295)):
++00002d30: 2053 616d 6520 6173 2075 326e 6574 2062   Same as u2net b
++00002d40: 7574 2074 6865 2073 697a 6520 6973 2072  ut the size is r
++00002d50: 6564 7563 6564 2074 6f20 3433 4d62 2e0a  educed to 43Mb..
++00002d60: 2d20 2020 6973 6e65 742d 6765 6e65 7261  -   isnet-genera
++00002d70: 6c2d 7573 6520 285b 646f 776e 6c6f 6164  l-use ([download
++00002d80: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
++00002d90: 2e63 6f6d 2f64 616e 6965 6c67 6174 6973  .com/danielgatis
++00002da0: 2f72 656d 6267 2f72 656c 6561 7365 732f  /rembg/releases/
++00002db0: 646f 776e 6c6f 6164 2f76 302e 302e 302f  download/v0.0.0/
++00002dc0: 6973 6e65 742d 6765 6e65 7261 6c2d 7573  isnet-general-us
++00002dd0: 652e 6f6e 6e78 292c 205b 736f 7572 6365  e.onnx), [source
++00002de0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
++00002df0: 2e63 6f6d 2f78 7565 6269 6e71 696e 2f44  .com/xuebinqin/D
++00002e00: 4953 2929 3a20 4120 6e65 7720 7072 652d  IS)): A new pre-
++00002e10: 7472 6169 6e65 6420 6d6f 6465 6c20 666f  trained model fo
++00002e20: 7220 6765 6e65 7261 6c20 7573 6520 6361  r general use ca
++00002e30: 7365 732e 0a2d 2020 2069 736e 6574 2d61  ses..-   isnet-a
++00002e40: 6e69 6d65 2028 5b64 6f77 6e6c 6f61 645d  nime ([download]
++00002e50: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00002e60: 636f 6d2f 6461 6e69 656c 6761 7469 732f  com/danielgatis/
++00002e70: 7265 6d62 672f 7265 6c65 6173 6573 2f64  rembg/releases/d
++00002e80: 6f77 6e6c 6f61 642f 7630 2e30 2e30 2f69  ownload/v0.0.0/i
++00002e90: 736e 6574 2d61 6e69 6d65 2e6f 6e6e 7829  snet-anime.onnx)
++00002ea0: 2c20 5b73 6f75 7263 655d 2868 7474 7073  , [source](https
++00002eb0: 3a2f 2f67 6974 6875 622e 636f 6d2f 536b  ://github.com/Sk
++00002ec0: 7954 4e54 2f61 6e69 6d65 2d73 6567 6d65  yTNT/anime-segme
++00002ed0: 6e74 6174 696f 6e29 293a 2041 2068 6967  ntation)): A hig
++00002ee0: 682d 6163 6375 7261 6379 2073 6567 6d65  h-accuracy segme
++00002ef0: 6e74 6174 696f 6e20 666f 7220 616e 696d  ntation for anim
++00002f00: 6520 6368 6172 6163 7465 722e 0a2d 2020  e character..-  
++00002f10: 2073 616d 2028 5b64 6f77 6e6c 6f61 6420   sam ([download 
++00002f20: 656e 636f 6465 725d 2868 7474 7073 3a2f  encoder](https:/
++00002f30: 2f67 6974 6875 622e 636f 6d2f 6461 6e69  /github.com/dani
++00002f40: 656c 6761 7469 732f 7265 6d62 672f 7265  elgatis/rembg/re
++00002f50: 6c65 6173 6573 2f64 6f77 6e6c 6f61 642f  leases/download/
++00002f60: 7630 2e30 2e30 2f76 6974 5f62 2d65 6e63  v0.0.0/vit_b-enc
++00002f70: 6f64 6572 2d71 7561 6e74 2e6f 6e6e 7829  oder-quant.onnx)
++00002f80: 2c20 5b64 6f77 6e6c 6f61 6420 6465 636f  , [download deco
++00002f90: 6465 725d 2868 7474 7073 3a2f 2f67 6974  der](https://git
++00002fa0: 6875 622e 636f 6d2f 6461 6e69 656c 6761  hub.com/danielga
++00002fb0: 7469 732f 7265 6d62 672f 7265 6c65 6173  tis/rembg/releas
++00002fc0: 6573 2f64 6f77 6e6c 6f61 642f 7630 2e30  es/download/v0.0
++00002fd0: 2e30 2f76 6974 5f62 2d64 6563 6f64 6572  .0/vit_b-decoder
++00002fe0: 2d71 7561 6e74 2e6f 6e6e 7829 2c20 5b73  -quant.onnx), [s
++00002ff0: 6f75 7263 655d 2868 7474 7073 3a2f 2f67  ource](https://g
++00003000: 6974 6875 622e 636f 6d2f 6661 6365 626f  ithub.com/facebo
++00003010: 6f6b 7265 7365 6172 6368 2f73 6567 6d65  okresearch/segme
++00003020: 6e74 2d61 6e79 7468 696e 6729 293a 2041  nt-anything)): A
++00003030: 2070 7265 2d74 7261 696e 6564 206d 6f64   pre-trained mod
++00003040: 656c 2066 6f72 2061 6e79 2075 7365 2063  el for any use c
++00003050: 6173 6573 2e0a 0a23 2323 2048 6f77 2074  ases...### How t
++00003060: 6f20 7472 6169 6e20 796f 7572 206f 776e  o train your own
++00003070: 206d 6f64 656c 0a0a 4966 2059 6f75 206e   model..If You n
++00003080: 6565 6420 6d6f 7265 2066 696e 6520 7475  eed more fine tu
++00003090: 6e6e 6564 206d 6f64 656c 7320 7472 7920  nned models try 
++000030a0: 7468 6973 3a0a 6874 7470 733a 2f2f 6769  this:.https://gi
++000030b0: 7468 7562 2e63 6f6d 2f64 616e 6965 6c67  thub.com/danielg
++000030c0: 6174 6973 2f72 656d 6267 2f69 7373 7565  atis/rembg/issue
++000030d0: 732f 3139 3323 6973 7375 6563 6f6d 6d65  s/193#issuecomme
++000030e0: 6e74 2d31 3035 3535 3334 3238 390a 0a0a  nt-1055534289...
++000030f0: 2323 2053 6f6d 6520 7669 6465 6f20 7475  ## Some video tu
++00003100: 746f 7269 616c 730a 0a2d 2068 7474 7073  torials..- https
++00003110: 3a2f 2f77 7777 2e79 6f75 7475 6265 2e63  ://www.youtube.c
++00003120: 6f6d 2f77 6174 6368 3f76 3d33 7871 7770  om/watch?v=3xqwp
++00003130: 586a 7879 4d51 0a2d 2068 7474 7073 3a2f  XjxyMQ.- https:/
++00003140: 2f77 7777 2e79 6f75 7475 6265 2e63 6f6d  /www.youtube.com
++00003150: 2f77 6174 6368 3f76 3d64 464b 5247 5864  /watch?v=dFKRGXd
++00003160: 6b47 4a55 0a2d 2068 7474 7073 3a2f 2f77  kGJU.- https://w
++00003170: 7777 2e79 6f75 7475 6265 2e63 6f6d 2f77  ww.youtube.com/w
++00003180: 6174 6368 3f76 3d41 692d 4253 5f54 3779  atch?v=Ai-BS_T7y
++00003190: 6a45 0a2d 2068 7474 7073 3a2f 2f77 7777  jE.- https://www
++000031a0: 2e79 6f75 7475 6265 2e63 6f6d 2f77 6174  .youtube.com/wat
++000031b0: 6368 3f76 3d64 464b 5247 5864 6b47 4a55  ch?v=dFKRGXdkGJU
++000031c0: 0a2d 2068 7474 7073 3a2f 2f77 7777 2e79  .- https://www.y
++000031d0: 6f75 7475 6265 2e63 6f6d 2f77 6174 6368  outube.com/watch
++000031e0: 3f76 3d44 3757 2d43 3075 7256 6351 0a0a  ?v=D7W-C0urVcQ..
++000031f0: 2323 2052 6566 6572 656e 6365 730a 0a2d  ## References..-
++00003200: 2068 7474 7073 3a2f 2f61 7278 6976 2e6f   https://arxiv.o
++00003210: 7267 2f70 6466 2f32 3030 352e 3039 3030  rg/pdf/2005.0900
++00003220: 372e 7064 660a 2d20 6874 7470 733a 2f2f  7.pdf.- https://
++00003230: 6769 7468 7562 2e63 6f6d 2f4e 6174 6861  github.com/Natha
++00003240: 6e55 412f 552d 322d 4e65 740a 2d20 6874  nUA/U-2-Net.- ht
++00003250: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00003260: 2f70 796d 6174 7469 6e67 2f70 796d 6174  /pymatting/pymat
++00003270: 7469 6e67 0a0a 2323 2042 7579 206d 6520  ting..## Buy me 
++00003280: 6120 636f 6666 6565 0a0a 4c69 6b65 6420  a coffee..Liked 
++00003290: 736f 6d65 206f 6620 6d79 2077 6f72 6b3f  some of my work?
++000032a0: 2042 7579 206d 6520 6120 636f 6666 6565   Buy me a coffee
++000032b0: 2028 6f72 206d 6f72 6520 6c69 6b65 6c79   (or more likely
++000032c0: 2061 2062 6565 7229 0a0a 3c61 2068 7265   a beer)..<a hre
++000032d0: 663d 2268 7474 7073 3a2f 2f77 7777 2e62  f="https://www.b
++000032e0: 7579 6d65 6163 6f66 6665 652e 636f 6d2f  uymeacoffee.com/
++000032f0: 6461 6e69 656c 6761 7469 7322 2074 6172  danielgatis" tar
++00003300: 6765 743d 225f 626c 616e 6b22 3e3c 696d  get="_blank"><im
++00003310: 6720 7372 633d 2268 7474 7073 3a2f 2f62  g src="https://b
++00003320: 6d63 2d63 646e 2e6e 7963 332e 6469 6769  mc-cdn.nyc3.digi
++00003330: 7461 6c6f 6365 616e 7370 6163 6573 2e63  taloceanspaces.c
++00003340: 6f6d 2f42 4d43 2d62 7574 746f 6e2d 696d  om/BMC-button-im
++00003350: 6167 6573 2f63 7573 746f 6d5f 696d 6167  ages/custom_imag
++00003360: 6573 2f6f 7261 6e67 655f 696d 672e 706e  es/orange_img.pn
++00003370: 6722 2061 6c74 3d22 4275 7920 4d65 2041  g" alt="Buy Me A
++00003380: 2043 6f66 6665 6522 2073 7479 6c65 3d22   Coffee" style="
++00003390: 6865 6967 6874 3a20 6175 746f 2021 696d  height: auto !im
++000033a0: 706f 7274 616e 743b 7769 6474 683a 2061  portant;width: a
++000033b0: 7574 6f20 2169 6d70 6f72 7461 6e74 3b22  uto !important;"
++000033c0: 3e3c 2f61 3e0a 0a23 2320 4c69 6365 6e73  ></a>..## Licens
++000033d0: 650a 0a43 6f70 7972 6967 6874 2028 6329  e..Copyright (c)
++000033e0: 2032 3032 302d 7072 6573 656e 7420 5b44   2020-present [D
++000033f0: 616e 6965 6c20 4761 7469 735d 2868 7474  aniel Gatis](htt
++00003400: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++00003410: 6461 6e69 656c 6761 7469 7329 0a0a 4c69  danielgatis)..Li
++00003420: 6365 6e73 6564 2075 6e64 6572 205b 4d49  censed under [MI
++00003430: 5420 4c69 6365 6e73 655d 282e 2f4c 4943  T License](./LIC
++00003440: 454e 5345 2e74 7874 290a 0a0a            ENSE.txt)...
+```
+
+### Comparing `rembg-2.0.37/rembg.egg-info/SOURCES.txt` & `rembg-2.0.38/rembg.egg-info/SOURCES.txt`
+
+ * *Files 14% similar despite different names*
+
+```diff
+@@ -21,14 +21,15 @@
+ rembg/commands/__init__.py
+ rembg/commands/b_command.py
+ rembg/commands/i_command.py
+ rembg/commands/p_command.py
+ rembg/commands/s_command.py
+ rembg/sessions/__init__.py
+ rembg/sessions/base.py
+-rembg/sessions/dis.py
++rembg/sessions/dis_anime.py
++rembg/sessions/dis_general_use.py
+ rembg/sessions/sam.py
+ rembg/sessions/silueta.py
+ rembg/sessions/u2net.py
+ rembg/sessions/u2net_cloth_seg.py
+ rembg/sessions/u2net_human_seg.py
+ rembg/sessions/u2netp.py
+```
+
+### Comparing `rembg-2.0.37/setup.py` & `rembg-2.0.38/setup.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rembg-2.0.37/versioneer.py` & `rembg-2.0.38/versioneer.py`
+
+ * *Files identical despite different names*
+
