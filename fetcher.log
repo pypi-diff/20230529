@@ -14764,3 +14764,94 @@ EOFError: EOF read where object expected
 [2023-05-29 19:49:19] INFO root fetch - main [MainThread]: End processing [E620py]: success
 [2023-05-29 19:49:25] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-05-29 19:49:25] INFO root fetch - main [MainThread]: Store serial: [18292451]
+[2023-05-29 19:54:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292451]
+[2023-05-29 19:54:34] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiodiskqueue
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Fenv
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cucumber-test-release-automation
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt-fts
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-forbid
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edge-orm
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: optimuslib
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: novalabs-backtest
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edgedb-orm
+[2023-05-29 19:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tronapi-JCO
+[2023-05-29 19:54:34] INFO root fetch - processPackages [Fenv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [django-forbid]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [optimuslib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [yt-fts]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [aiodiskqueue]: New version: [0.1.0b2] Old Version: [0.1.0b1]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edge-orm]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [cucumber-test-release-automation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [novalabs-backtest]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [tronapi-JCO]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edgedb-orm]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 19:54:34] INFO root fetch - processPackages [tronapi-JCO]: executing diffoscope
+[2023-05-29 19:54:34] INFO root fetch - processPackages [tronapi-JCO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tronapi-JCO-3.1.8.tar.gz tmp/tronapi-JCO-3.1.9.tar.gz --markdown 20230529/t/tronapi-JCO/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-29 19:54:34] INFO root fetch - processPackages [Fenv]: Downloading https://files.pythonhosted.org/packages/43/c6/602a5621dd6bf39775efffd9e3ece354f1fee05cfb00568406bd4302d48d/Fenv-0.0.8.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/a4/72/e5ed8aed67daafdeeaee77ce84706e7b284c03900bebc8b4c9a5418c9100/yt-fts-0.1.8.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/57/20/e8e01ccdf9190f201291d67ffef425d64270fcd7068a74d555a998548eef/optimuslib-0.0.8.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [cucumber-test-release-automation]: Downloading https://files.pythonhosted.org/packages/9f/0b/638f57ee5051b27465cac1124479db2242a94be2bb41e690467c1cb75123/cucumber_test_release_automation-0.0.8.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edgedb-orm]: Downloading https://files.pythonhosted.org/packages/22/8c/151e55e715bf1eddb3f361685ea2d0c0a99c94f60dac158086cae619fb39/edgedb_orm-1.0.8.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [django-forbid]: Downloading https://files.pythonhosted.org/packages/37/a4/f95cabf561e7f9ba479639397dc37d9bc0151655f4bbe6e8159c7f7cb755/django-forbid-0.1.2.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [aiodiskqueue]: Downloading https://files.pythonhosted.org/packages/ba/5f/4410d02dcbf4e7ca9aac579f4a614af4ab99fb6d704e02a302413114d895/aiodiskqueue-0.1.0b2.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-29 19:54:34] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.7.tar.gz tmp/yt-fts-0.1.8.tar.gz --markdown 20230529/y/yt-fts/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 19:54:34] INFO root fetch - processPackages [novalabs-backtest]: executing diffoscope
+[2023-05-29 19:54:34] INFO root fetch - processPackages [novalabs-backtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novalabs-backtest-1.1.8.tar.gz tmp/novalabs-backtest-1.1.9.tar.gz --markdown 20230529/n/novalabs-backtest/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/76/90/43e5bad16d06b50017f807cbd42f6489b4d46c4679619ee6a3faa604fe50/edge_orm-0.7.2.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [django-forbid]: executing diffoscope
+[2023-05-29 19:54:34] INFO root fetch - processPackages [django-forbid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-forbid-0.1.0.tar.gz tmp/django-forbid-0.1.2.tar.gz --markdown 20230529/d/django-forbid/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 19:54:34] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/0d/41/841c782b1a05dfdd5a62448da91fbf89069618daef1f764d05c3bc621557/optimuslib-0.0.9.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edgedb-orm]: Downloading https://files.pythonhosted.org/packages/ef/e6/28923949c7b56bf40a0d273ce28e74afd2443cd52d8ce522b86e4adb9d9b/edgedb_orm-1.0.9.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [Fenv]: Downloading https://files.pythonhosted.org/packages/fa/d1/19faa00d0e8decbd967ffb8f3209322cfe2c091adb781e978f9c8111dc54/Fenv-0.0.9.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edge-orm]: executing diffoscope
+[2023-05-29 19:54:34] INFO root fetch - processPackages [edge-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_orm-0.7.1.tar.gz tmp/edge_orm-0.7.2.tar.gz --markdown 20230529/e/edge-orm/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-29 19:54:34] INFO root fetch - processPackages [cucumber-test-release-automation]: Downloading https://files.pythonhosted.org/packages/48/a2/64522f22023a477e6a8f800aaa012a58d71075fecd7b1efcec413b1fa1d3/cucumber_test_release_automation-0.0.9.tar.gz
+[2023-05-29 19:54:34] INFO root fetch - processPackages [aiodiskqueue]: executing diffoscope
+[2023-05-29 19:54:34] INFO root fetch - processPackages [aiodiskqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiodiskqueue-0.1.0b1.tar.gz tmp/aiodiskqueue-0.1.0b2.tar.gz --markdown 20230529/a/aiodiskqueue/0.1.0b1-0.1.0b2/diff.md --exclude *.pyd
+[2023-05-29 19:54:35] INFO root fetch - processPackages [edgedb-orm]: executing diffoscope
+[2023-05-29 19:54:35] INFO root fetch - processPackages [edgedb-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_orm-1.0.8.tar.gz tmp/edgedb_orm-1.0.9.tar.gz --markdown 20230529/e/edgedb-orm/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:54:35] INFO root fetch - processPackages [Fenv]: executing diffoscope
+[2023-05-29 19:54:35] INFO root fetch - processPackages [Fenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fenv-0.0.8.tar.gz tmp/Fenv-0.0.9.tar.gz --markdown 20230529/F/Fenv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:54:35] INFO root fetch - processPackages [cucumber-test-release-automation]: executing diffoscope
+[2023-05-29 19:54:35] INFO root fetch - processPackages [cucumber-test-release-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cucumber_test_release_automation-0.0.8.tar.gz tmp/cucumber_test_release_automation-0.0.9.tar.gz --markdown 20230529/c/cucumber-test-release-automation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:54:35] INFO root fetch - processPackages [optimuslib]: executing diffoscope
+[2023-05-29 19:54:35] INFO root fetch - processPackages [optimuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimuslib-0.0.8.tar.gz tmp/optimuslib-0.0.9.tar.gz --markdown 20230529/o/optimuslib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:54:36] INFO root fetch - processPackages [tronapi-JCO]: Start processing: tinkoff-investments
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
+[2023-05-29 19:54:36] INFO root fetch - processPackages [tinkoff-investments]: New version: [0.2.0b9] Old Version: [0.2.0b8]
+[2023-05-29 19:54:36] INFO root fetch - processPackages [tinkoff-investments]: Downloading https://files.pythonhosted.org/packages/26/e2/450ebc25ad12ba1e49dfdd0ced24ba781f86f8d619b83497b752d53684d6/tinkoff-investments-0.2.0b8.tar.gz
+[2023-05-29 19:54:36] INFO root fetch - processPackages [yt-fts]: Start processing: multitools
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-29 19:54:36] WARNING root fetch - processPackages [multitools]: Skipping, unable to determine old version
+[2023-05-29 19:54:36] INFO root fetch - processPackages [multitools]: Start processing: jupysql
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [multitools] error
+[2023-05-29 19:54:36] INFO root fetch - processPackages [jupysql]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-29 19:54:36] INFO root fetch - processPackages [django-forbid]: Start processing: viv
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [django-forbid]: success
+[2023-05-29 19:54:36] INFO root fetch - processPackages [viv]: New version: [23.5a4] Old Version: [22.12a3]
+[2023-05-29 19:54:36] INFO root fetch - processPackages [tinkoff-investments]: Downloading https://files.pythonhosted.org/packages/94/16/7662bf8919bdb6ec8e9e97a83c077b533322c887e013f722fff35fb92b55/tinkoff-investments-0.2.0b9.tar.gz
+[2023-05-29 19:54:36] INFO root fetch - processPackages [viv]: Downloading https://files.pythonhosted.org/packages/d5/e7/1ee7466b83173a3d9a39c7786126b25666da83bf88abda71d7afc1b22138/viv-22.12a3.tar.gz
+[2023-05-29 19:54:36] INFO root fetch - processPackages [tinkoff-investments]: executing diffoscope
+[2023-05-29 19:54:36] INFO root fetch - processPackages [tinkoff-investments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinkoff-investments-0.2.0b8.tar.gz tmp/tinkoff-investments-0.2.0b9.tar.gz --markdown 20230529/t/tinkoff-investments/0.2.0b8-0.2.0b9/diff.md --exclude *.pyd
+[2023-05-29 19:54:36] INFO root fetch - processPackages [Fenv]: Start processing: MindLake
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [Fenv]: success
+[2023-05-29 19:54:36] INFO root fetch - processPackages [jupysql]: Downloading https://files.pythonhosted.org/packages/5b/af/2adf600fe4907d00ef460b7a05d2929cd6d1343b00a825edf34c50088ef7/jupysql-0.7.6.tar.gz
+[2023-05-29 19:54:36] WARNING root fetch - processPackages [MindLake]: Skipping, unable to determine old version
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [MindLake] error
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [optimuslib]: success
+[2023-05-29 19:54:36] INFO root fetch - main [MainThread]: End processing [cucumber-test-release-automation]: success
+[2023-05-29 19:54:36] INFO root fetch - processPackages [jupysql]: executing diffoscope
+[2023-05-29 19:54:36] INFO root fetch - processPackages [jupysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupysql-0.7.5.tar.gz tmp/jupysql-0.7.6.tar.gz --markdown 20230529/j/jupysql/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-29 19:54:37] INFO root fetch - main [MainThread]: End processing [aiodiskqueue]: success
+[2023-05-29 19:54:37] INFO root fetch - main [MainThread]: End processing [edgedb-orm]: success
+[2023-05-29 19:54:37] INFO root fetch - main [MainThread]: End processing [edge-orm]: success
+[2023-05-29 19:54:37] INFO root fetch - processPackages [viv]: Downloading https://files.pythonhosted.org/packages/d7/06/3c0bf6fbdf50b2cce16afc5e8d5c7e78aa6b3c62a1da25ecc6606dba9177/viv-23.5a4.tar.gz
+[2023-05-29 19:54:37] INFO root fetch - processPackages [viv]: executing diffoscope
+[2023-05-29 19:54:37] INFO root fetch - processPackages [viv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viv-22.12a3.tar.gz tmp/viv-23.5a4.tar.gz --markdown 20230529/v/viv/22.12a3-23.5a4/diff.md --exclude *.pyd
+[2023-05-29 19:54:38] INFO root fetch - main [MainThread]: End processing [novalabs-backtest]: success
+[2023-05-29 19:54:38] INFO root fetch - main [MainThread]: End processing [viv]: success
+[2023-05-29 19:54:38] INFO root fetch - main [MainThread]: End processing [jupysql]: success
+[2023-05-29 19:54:38] INFO root fetch - main [MainThread]: End processing [tinkoff-investments]: success
+[2023-05-29 19:54:38] INFO root fetch - main [MainThread]: Store serial: [18292502]
