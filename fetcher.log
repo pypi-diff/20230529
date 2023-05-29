@@ -1981,3 +1981,51 @@
 [2023-05-29 03:46:20] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-29 03:46:20] INFO root fetch - main [MainThread]: End processing [worktoy]: success
 [2023-05-29 03:46:20] INFO root fetch - main [MainThread]: Store serial: [18284926]
+[2023-05-29 03:51:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284926]
+[2023-05-29 03:51:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-wget
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shady-island
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazytables
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pssm-promoter-tool
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: guh
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: guh
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: runningz
+[2023-05-29 03:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-organizations
+[2023-05-29 03:51:29] INFO root fetch - processPackages [pssm-promoter-tool]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-29 03:51:29] INFO root fetch - processPackages [shady-island]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 03:51:29] WARNING root fetch - processPackages [lazytables]: Skipping, unable to determine old version
+[2023-05-29 03:51:29] INFO root fetch - main [MainThread]: End processing [lazytables] error
+[2023-05-29 03:51:29] INFO root fetch - processPackages [guh]: New version: [2.6] Old Version: [2.5]
+[2023-05-29 03:51:29] INFO root fetch - processPackages [runningz]: New version: [0.11.4.0] Old Version: [0.11.3.8]
+[2023-05-29 03:51:29] INFO root fetch - processPackages [guh]: New version: [2.6] Old Version: [2.5]
+[2023-05-29 03:51:29] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:51:29] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-05-29 03:51:30] INFO root fetch - processPackages [pssm-promoter-tool]: Downloading https://files.pythonhosted.org/packages/25/8c/07aa3f8794ab2eaa23f039b093503aa8ba2215cef8c5f1278cc142ede3e4/pssm-promoter-tool-1.0.4.tar.gz
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/09/40/361a0b7295bf7fa6d42bb3e463634724a3d2ed6334401081b5f8f002f797/guh-2.5.tar.gz
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/09/40/361a0b7295bf7fa6d42bb3e463634724a3d2ed6334401081b5f8f002f797/guh-2.5.tar.gz
+[2023-05-29 03:51:30] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230529/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-05-29 03:51:30] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230529/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:51:30] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/87/26/9eb8e25e22cd940001437f83e0e80a01b509168581f74d61132d37121b5c/runningz-0.11.4.0-py39-none-any.whl
+[2023-05-29 03:51:30] INFO root fetch - processPackages [runningz]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [runningz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runningz-0.11.3.8-py39-none-any.whl.zip tmp/runningz-0.11.4.0-py39-none-any.whl.zip --markdown 20230529/r/runningz/0.11.3.8-0.11.4.0/diff.md --exclude *.pyd
+[2023-05-29 03:51:30] INFO root fetch - processPackages [pssm-promoter-tool]: Downloading https://files.pythonhosted.org/packages/ca/7a/c28af6d392b68dde3335844d26528b443582b7861148b7be98453d7f6224/pssm-promoter-tool-1.0.5.tar.gz
+[2023-05-29 03:51:30] INFO root fetch - processPackages [shady-island]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [shady-island]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shady-island-0.0.8.tar.gz tmp/shady-island-0.0.9.tar.gz --markdown 20230529/s/shady-island/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 03:51:30] INFO root fetch - processPackages [pssm-promoter-tool]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [pssm-promoter-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pssm-promoter-tool-1.0.4.tar.gz tmp/pssm-promoter-tool-1.0.5.tar.gz --markdown 20230529/p/pssm-promoter-tool/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/33/12/25388a8051b86e1d2e9c15d518bacd265c05cf4e39242d4f1f9de84a140c/guh-2.6.tar.gz
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/33/12/25388a8051b86e1d2e9c15d518bacd265c05cf4e39242d4f1f9de84a140c/guh-2.6.tar.gz
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guh-2.5.tar.gz tmp/guh-2.6.tar.gz --markdown 20230529/g/guh/2.5-2.6/diff.md --exclude *.pyd
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: executing diffoscope
+[2023-05-29 03:51:30] INFO root fetch - processPackages [guh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guh-2.5.tar.gz tmp/guh-2.6.tar.gz --markdown 20230529/g/guh/2.5-2.6/diff.md --exclude *.pyd
+[2023-05-29 03:51:31] INFO root fetch - main [MainThread]: End processing [shady-island]: success
+[2023-05-29 03:51:31] INFO root fetch - main [MainThread]: End processing [pssm-promoter-tool]: success
+[2023-05-29 03:51:31] INFO root fetch - main [MainThread]: End processing [guh]: success
+[2023-05-29 03:51:32] INFO root fetch - main [MainThread]: End processing [runningz]: success
+[2023-05-29 03:51:33] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-05-29 03:51:33] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-29 03:52:20] INFO root fetch - main [MainThread]: End processing [guh]: success
+[2023-05-29 03:52:20] INFO root fetch - main [MainThread]: Store serial: [18284952]
