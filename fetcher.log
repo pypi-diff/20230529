@@ -4430,3 +4430,26 @@
 [2023-05-29 06:08:31] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
 [2023-05-29 06:08:36] INFO root fetch - main [MainThread]: End processing [actionsMCP]: success
 [2023-05-29 06:08:36] INFO root fetch - main [MainThread]: Store serial: [18286234]
+[2023-05-29 06:13:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286234]
+[2023-05-29 06:13:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 06:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmflows
+[2023-05-29 06:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdm
+[2023-05-29 06:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelon-impact-client
+[2023-05-29 06:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: preprocessing-pgp
+[2023-05-29 06:13:47] WARNING root fetch - processPackages [llmflows]: Skipping, unable to determine old version
+[2023-05-29 06:13:47] INFO root fetch - main [MainThread]: End processing [llmflows] error
+[2023-05-29 06:13:47] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.post9.dev7] Old Version: [0.2.9.post8.dev7]
+[2023-05-29 06:13:47] INFO root fetch - processPackages [pdm]: New version: [2.7.0] Old Version: [2.6.1]
+[2023-05-29 06:13:47] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-05-29 06:13:47] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-05-29 06:13:47] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230529/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-29 06:13:47] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/a9/1b/319352b361b9b01f65b5b0dca86df4dc3e5f06b995022ef3976f71acd45d/preprocessing-pgp-0.2.9.post8.dev7.tar.gz
+[2023-05-29 06:13:47] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 78857923>=10485760
+[2023-05-29 06:13:47] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-05-29 06:13:47] INFO root fetch - processPackages [pdm]: Downloading https://files.pythonhosted.org/packages/85/5a/2002159c9b871b32619d6ba1ab8738ac6f212a26ce3e1e53d2515eb35173/pdm-2.6.1.tar.gz
+[2023-05-29 06:13:47] INFO root fetch - processPackages [pdm]: Downloading https://files.pythonhosted.org/packages/66/c2/fdbf899e84cfdf8068d022296426ce9e02d58e280e93902c6e2027aeb4a4/pdm-2.7.0.tar.gz
+[2023-05-29 06:13:47] INFO root fetch - processPackages [pdm]: executing diffoscope
+[2023-05-29 06:13:47] INFO root fetch - processPackages [pdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm-2.6.1.tar.gz tmp/pdm-2.7.0.tar.gz --markdown 20230529/p/pdm/2.6.1-2.7.0/diff.md --exclude *.pyd
+[2023-05-29 06:13:48] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-05-29 06:13:52] INFO root fetch - main [MainThread]: End processing [pdm]: success
+[2023-05-29 06:13:52] INFO root fetch - main [MainThread]: Store serial: [18286248]
