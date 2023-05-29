@@ -5464,3 +5464,67 @@
 [2023-05-29 08:33:38] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
 [2023-05-29 08:34:26] INFO root fetch - main [MainThread]: End processing [sqlite-hello]: success
 [2023-05-29 08:34:26] INFO root fetch - main [MainThread]: Store serial: [18286813]
+[2023-05-29 08:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286813]
+[2023-05-29 08:39:34] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmdbAPI
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gfs-dynamical-core
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-clickzetta
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: x-filter
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: je-mail-thunder-dev
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fivbvis
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spotON_sdk
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: p-template-generator
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: code-loader
+[2023-05-29 08:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ths-quant
+[2023-05-29 08:39:35] INFO root fetch - processPackages [je-mail-thunder-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:39:35] WARNING root fetch - processPackages [tmdbAPI]: Skipping, unable to determine old version
+[2023-05-29 08:39:35] INFO root fetch - processPackages [x-filter]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [tmdbAPI]: Start processing: p-ttauto-crawler
+[2023-05-29 08:39:35] INFO root fetch - main [MainThread]: End processing [tmdbAPI] error
+[2023-05-29 08:39:35] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [ths-quant]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [fivbvis]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.5.11] Old Version: [0.0.5.1]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 08:39:35] INFO root fetch - processPackages [je-mail-thunder-dev]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [je-mail-thunder-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_mail_thunder_dev-0.0.8.tar.gz tmp/je_mail_thunder_dev-0.0.9.tar.gz --markdown 20230529/j/je-mail-thunder-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [x-filter]: Downloading https://files.pythonhosted.org/packages/d7/ad/a3f965144f135846b86dc9efbfae6c5d9bfe52429c991d5c2397281fb16d/x-filter-1.0.6.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [ths-quant]: Downloading https://files.pythonhosted.org/packages/55/13/0ea0f7edbf8c2113dde80aeca38cdb2cf51c5ced4f7368c0585f9c19f3da/ths-quant-0.1.1.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/56/4a/04541e0d231c44c5d2369be2cfaad15108e50770f5ea1a51d79f5c4aa17d/spotON_sdk-0.0.5.11.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/07/0d/c25d5d172d7c6377e49fe4848249b0a95b44c060b6b29a06b7607a3faeaa/dbt-clickzetta-0.1.0.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [fivbvis]: Downloading https://files.pythonhosted.org/packages/d2/43/a13c6d6d4ce871b0c67955a527244011c5970727a1bcf7c1e3ac444856e6/fivbvis-0.1.2.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [x-filter]: Downloading https://files.pythonhosted.org/packages/98/56/bf436703aefc707f0d294051c8ce877abd0d7d6a25fe8f0f3420210acd4f/x-filter-1.0.7.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.9.tar.gz tmp/dbt-clickzetta-0.1.0.tar.gz --markdown 20230529/d/dbt-clickzetta/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.5.1.tar.gz tmp/spotON_sdk-0.0.5.11.tar.gz --markdown 20230529/s/spotON_sdk/0.0.5.1-0.0.5.11/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [fivbvis]: Downloading https://files.pythonhosted.org/packages/42/d4/5853cd805b8d05fc6964e41aa93edc69551d5bdccdaa29efbe341ea42f57/fivbvis-0.1.3.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230529/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230529/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230529/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [x-filter]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [x-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-filter-1.0.6.tar.gz tmp/x-filter-1.0.7.tar.gz --markdown 20230529/x/x-filter/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [fivbvis]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [fivbvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fivbvis-0.1.2.tar.gz tmp/fivbvis-0.1.3.tar.gz --markdown 20230529/f/fivbvis/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 08:39:35] INFO root fetch - processPackages [ths-quant]: Downloading https://files.pythonhosted.org/packages/e1/65/0c45b91628479bc73ea57fc8da3d4e6371fc66b5569b40f593619f25c419/ths-quant-0.1.2.tar.gz
+[2023-05-29 08:39:35] INFO root fetch - processPackages [ths-quant]: executing diffoscope
+[2023-05-29 08:39:35] INFO root fetch - processPackages [ths-quant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ths-quant-0.1.1.tar.gz tmp/ths-quant-0.1.2.tar.gz --markdown 20230529/t/ths-quant/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 08:39:36] INFO root fetch - main [MainThread]: End processing [je-mail-thunder-dev]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [x-filter]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [fivbvis]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-29 08:39:37] INFO root fetch - main [MainThread]: End processing [ths-quant]: success
+[2023-05-29 08:39:39] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2023-05-29 08:39:59] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-29 08:39:59] INFO root fetch - main [MainThread]: Store serial: [18286847]
