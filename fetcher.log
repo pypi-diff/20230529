@@ -12607,3 +12607,87 @@ EOFError: EOF read where object expected
 [2023-05-29 17:06:40] INFO root fetch - main [MainThread]: End processing [aij]: success
 [2023-05-29 17:06:42] INFO root fetch - main [MainThread]: End processing [tiledb-jupyter-bioimg]: success
 [2023-05-29 17:06:42] INFO root fetch - main [MainThread]: Store serial: [18291248]
+[2023-05-29 17:11:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291248]
+[2023-05-29 17:11:51] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightcon
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dia-adfpro
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskcli
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lab-partner
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lab-partner-utils
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: obrpy
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: satori-ci
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: devflex-dbtool
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: agentflow
+[2023-05-29 17:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lab-partner
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: New version: [0.7.34] Old Version: [0.7.33]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.34] Old Version: [0.7.33]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [taskcli]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 17:11:51] WARNING root fetch - processPackages [devflex-dbtool]: Skipping, unable to determine old version
+[2023-05-29 17:11:51] INFO root fetch - processPackages [dia-adfpro]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [devflex-dbtool]: Start processing: lab-partner-utils
+[2023-05-29 17:11:51] WARNING root fetch - processPackages [agentflow]: Skipping, unable to determine old version
+[2023-05-29 17:11:51] INFO root fetch - processPackages [agentflow]: Start processing: cgcsdk
+[2023-05-29 17:11:51] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 17:11:51] INFO root fetch - main [MainThread]: End processing [devflex-dbtool] error
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: New version: [0.7.34] Old Version: [0.7.33]
+[2023-05-29 17:11:51] INFO root fetch - main [MainThread]: End processing [agentflow] error
+[2023-05-29 17:11:51] INFO root fetch - processPackages [cgcsdk]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lightcon]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.34] Old Version: [0.7.33]
+[2023-05-29 17:11:51] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/d8/a4/49f266825f0f734913cb8faff62935268c58443fc0f7b357454a9f4d194b/lab-partner-utils-0.7.33.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/d8/a4/49f266825f0f734913cb8faff62935268c58443fc0f7b357454a9f4d194b/lab-partner-utils-0.7.33.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/f8/4e/742cb3bd21b81a27004ccb3bf9e3c5811658e682a87fbc4a48e3e58471e2/lab-partner-0.7.33.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/f8/4e/742cb3bd21b81a27004ccb3bf9e3c5811658e682a87fbc4a48e3e58471e2/lab-partner-0.7.33.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [taskcli]: Downloading https://files.pythonhosted.org/packages/94/6a/d491e76a4d1243ddec62c8bafefc2b2518a763fe916c59b3721cae0dd917/taskcli-0.0.6.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [cgcsdk]: Downloading https://files.pythonhosted.org/packages/de/41/dfe9fdab1c1feedd3f06ac40fa0a0bcef39f47db0f0a3926e9bc1ad04cf5/cgcsdk-0.8.9.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lightcon]: Downloading https://files.pythonhosted.org/packages/3e/1d/823ffc77c8a3290924f6ac9d0c1e1de39d21ce531e1527d87b234863fb4f/lightcon-1.3.2.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [dia-adfpro]: Downloading https://files.pythonhosted.org/packages/4d/2c/594511a6276733283c8183e7ad9208f8e3cda6119c129b65b125f3431d1f/dia-adfpro-1.6.3.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [taskcli]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [taskcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskcli-0.0.5.tar.gz tmp/taskcli-0.0.6.tar.gz --markdown 20230529/t/taskcli/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [cgcsdk]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [cgcsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgcsdk-0.8.8.tar.gz tmp/cgcsdk-0.8.9.tar.gz --markdown 20230529/c/cgcsdk/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/25/9b/3256c91a1cc6d465f0b4a5e3c1d1f02b202ba5d0f5aebe529d012b9ea0e8/lab-partner-utils-0.7.34.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [dia-adfpro]: Downloading https://files.pythonhosted.org/packages/87/25/b8c83a434a41204af9f0dbca2c253220dd94853ab6801ba81bd0f4f36b12/dia-adfpro-1.6.4.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/25/9b/3256c91a1cc6d465f0b4a5e3c1d1f02b202ba5d0f5aebe529d012b9ea0e8/lab-partner-utils-0.7.34.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/78/73/4126932bee02fcc308e3b5cd3175317caffc4a72a9994c0e16b3ea47e8fc/lab-partner-0.7.34.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/78/73/4126932bee02fcc308e3b5cd3175317caffc4a72a9994c0e16b3ea47e8fc/lab-partner-0.7.34.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.7.33.tar.gz tmp/lab-partner-utils-0.7.34.tar.gz --markdown 20230529/l/lab-partner-utils/0.7.33-0.7.34/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [dia-adfpro]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [dia-adfpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dia-adfpro-1.6.3.tar.gz tmp/dia-adfpro-1.6.4.tar.gz --markdown 20230529/d/dia-adfpro/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.7.33.tar.gz tmp/lab-partner-utils-0.7.34.tar.gz --markdown 20230529/l/lab-partner-utils/0.7.33-0.7.34/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lightcon]: Downloading https://files.pythonhosted.org/packages/9c/9f/31c0760703cb171c54382ecc206e656240c409500351fc008ef060b5519a/lightcon-1.3.3.tar.gz
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.7.33.tar.gz tmp/lab-partner-0.7.34.tar.gz --markdown 20230529/l/lab-partner/0.7.33-0.7.34/diff.md --exclude *.pyd
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 17:11:51] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.7.33.tar.gz tmp/lab-partner-0.7.34.tar.gz --markdown 20230529/l/lab-partner/0.7.33-0.7.34/diff.md --exclude *.pyd
+[2023-05-29 17:11:52] INFO root fetch - processPackages [lightcon]: executing diffoscope
+[2023-05-29 17:11:52] INFO root fetch - processPackages [lightcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightcon-1.3.2.tar.gz tmp/lightcon-1.3.3.tar.gz --markdown 20230529/l/lightcon/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-29 17:11:52] INFO root fetch - processPackages [obrpy]: Start processing: tifftools
+[2023-05-29 17:11:52] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 17:11:52] INFO root fetch - processPackages [tifftools]: New version: [1.3.9.dev2] Old Version: [1.3.9]
+[2023-05-29 17:11:53] INFO root fetch - processPackages [taskcli]: Start processing: onboardme
+[2023-05-29 17:11:53] INFO root fetch - main [MainThread]: End processing [taskcli]: success
+[2023-05-29 17:11:53] INFO root fetch - processPackages [onboardme]: New version: [1.4.0] Old Version: [1.3.2]
+[2023-05-29 17:11:53] INFO root fetch - processPackages [tifftools]: executing diffoscope
+[2023-05-29 17:11:53] INFO root fetch - processPackages [tifftools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tifftools-1.3.9.tar.gz tmp/tifftools-1.3.9.dev2.tar.gz --markdown 20230529/t/tifftools/1.3.9-1.3.9.dev2/diff.md --exclude *.pyd
+[2023-05-29 17:11:53] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/a1/14/91909030b6cd3aaaf0c8ecbddafd198ea8fa30e8cb16bfae0d4d43f72273/onboardme-1.4.0.tar.gz
+[2023-05-29 17:11:53] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-29 17:11:53] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.3.2.tar.gz tmp/onboardme-1.4.0.tar.gz --markdown 20230529/o/onboardme/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2023-05-29 17:11:53] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 17:11:53] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 17:11:53] INFO root fetch - main [MainThread]: End processing [dia-adfpro]: success
+[2023-05-29 17:11:53] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: End processing [lightcon]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: End processing [cgcsdk]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: End processing [tifftools]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-29 17:11:54] INFO root fetch - main [MainThread]: Store serial: [18291294]
