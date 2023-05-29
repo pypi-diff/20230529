@@ -1503,3 +1503,59 @@
 [2023-05-29 02:56:51] INFO root fetch - main [MainThread]: End processing [usepy]: success
 [2023-05-29 02:57:09] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-29 02:57:09] INFO root fetch - main [MainThread]: Store serial: [18284611]
+[2023-05-29 03:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284611]
+[2023-05-29 03:02:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncmake
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-sns-notify
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-wget
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: radvis
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-utils
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: random-math-rmaiaaaa
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aemcmc-nightly
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mlflow-tmp
+[2023-05-29 03:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-lambda-layer-curl
+[2023-05-29 03:02:17] INFO root fetch - processPackages [asyncmake]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [radvis]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [python-utils]: New version: [3.6.0] Old Version: [3.5.2]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230528] Old Version: [0.0.8.dev20230527]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:02:17] WARNING root fetch - processPackages [random-math-rmaiaaaa]: Skipping, unable to determine old version
+[2023-05-29 03:02:17] INFO root fetch - main [MainThread]: End processing [random-math-rmaiaaaa] error
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230529/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [python-utils]: Downloading https://files.pythonhosted.org/packages/b5/58/6960ee22450cd006375c5f36f15acf7e82688d25c091efba05362d682b9e/python-utils-3.5.2.tar.gz
+[2023-05-29 03:02:17] INFO root fetch - processPackages [asyncmake]: Downloading https://files.pythonhosted.org/packages/2e/65/823dec044a86f2665c0b2eb07415fccb3a374cb806c3b443763f5570362f/asyncmake-0.1.2.tar.gz
+[2023-05-29 03:02:17] INFO root fetch - processPackages [radvis]: Downloading https://files.pythonhosted.org/packages/60/2e/523ce12e474949f8ec9501b4a2f2aff18b9ab138e3a8df21f3b465f15854/radvis-0.1.1.tar.gz
+[2023-05-29 03:02:17] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230527.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230528.tar.gz --markdown 20230529/a/aemcmc-nightly/0.0.8.dev20230527-0.0.8.dev20230528/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230529/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230529/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230529/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [asyncmake]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [asyncmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncmake-0.1.1.tar.gz tmp/asyncmake-0.1.2.tar.gz --markdown 20230529/a/asyncmake/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230529/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-29 03:02:17] INFO root fetch - processPackages [python-utils]: Downloading https://files.pythonhosted.org/packages/da/8d/b60c0c49aa992fca37cd5cf504dab055b56ab7dc56416baf7a8421d9bb9c/python-utils-3.6.0.tar.gz
+[2023-05-29 03:02:17] INFO root fetch - processPackages [radvis]: Downloading https://files.pythonhosted.org/packages/ed/1e/0dfd3d5b04d165bc57aea3345af4e6448fa0bc8b922ae5c4c6e6512facb1/radvis-0.1.2.tar.gz
+[2023-05-29 03:02:17] INFO root fetch - processPackages [radvis]: executing diffoscope
+[2023-05-29 03:02:17] INFO root fetch - processPackages [radvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radvis-0.1.1.tar.gz tmp/radvis-0.1.2.tar.gz --markdown 20230529/r/radvis/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 03:02:18] INFO root fetch - processPackages [python-utils]: executing diffoscope
+[2023-05-29 03:02:18] INFO root fetch - processPackages [python-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-utils-3.5.2.tar.gz tmp/python-utils-3.6.0.tar.gz --markdown 20230529/p/python-utils/3.5.2-3.6.0/diff.md --exclude *.pyd
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [asyncmake]: success
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [radvis]: success
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [python-utils]: success
+[2023-05-29 03:02:19] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-29 03:02:21] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-05-29 03:02:22] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-29 03:02:22] INFO root fetch - main [MainThread]: Store serial: [18284644]
