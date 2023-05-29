@@ -8453,3 +8453,235 @@
 [2023-05-29 12:39:20] INFO root fetch - main [MainThread]: End processing [qosd]: success
 [2023-05-29 12:40:10] INFO root fetch - main [MainThread]: End processing [ptal-api]: success
 [2023-05-29 12:40:10] INFO root fetch - main [MainThread]: Store serial: [18288623]
+[2023-05-29 12:45:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288623]
+[2023-05-29 12:45:19] INFO root fetch - main [MainThread]: Found 40 changed packages
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mb-base
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-indvi20190701
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lib-dzne-igblastn
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cs-eventsender
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ohmytmp
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edu-segmentation
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mb-base
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: backend.ai-accelerator-cuda-mock
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: backend.ai-accelerator-cuda-open
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: backend.ai-agent
+[2023-05-29 12:45:19] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291042] Old Version: [1.0.202305291040]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [lib-dzne-igblastn]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-29 12:45:19] WARNING root fetch - processPackages [alibabacloud-indvi20190701]: Skipping, unable to determine old version
+[2023-05-29 12:45:19] INFO root fetch - processPackages [alibabacloud-indvi20190701]: Start processing: django-toolshed
+[2023-05-29 12:45:19] INFO root fetch - main [MainThread]: End processing [alibabacloud-indvi20190701] error
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [cs-eventsender]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291042] Old Version: [1.0.202305291040]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-accelerator-cuda-mock]: New version: [23.3.0a4] Old Version: [23.3.0a3]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.96] Old Version: [0.0.95]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ohmytmp]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [django-toolshed]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-agent]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/8b/a9/8208d10c74d74021fcdc0843b973a06557c0c2d56a0bb08d792325bb8218/mb_base-1.0.202305291040-py3-none-any.whl
+[2023-05-29 12:45:19] INFO root fetch - processPackages [cs-eventsender]: Downloading https://files.pythonhosted.org/packages/1c/29/729483e645a5f633e303b52c45f72f5770a6d65175682f9e710ec1577df9/cs-eventsender-0.0.1.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [lib-dzne-igblastn]: Downloading https://files.pythonhosted.org/packages/bf/67/907e08a0143e4ef723083160a7f9feb5dbb2ab8f977b9ee30cf635ce8f4b/lib-dzne-igblastn-0.1.0.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ohmytmp]: Downloading https://files.pythonhosted.org/packages/ff/a0/e9ebfa0d5cdf899bed4c8e8618c9355411077def61dbf9b10e10a67bd3b7/ohmytmp-0.0.4.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-accelerator-cuda-mock]: Downloading https://files.pythonhosted.org/packages/aa/5f/3ec7aa49dda4e856ecb1c697b56c8ca15bbdb37b1b27734109654634fd38/backend.ai-accelerator-cuda-mock-23.3.0a3.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/8b/a9/8208d10c74d74021fcdc0843b973a06557c0c2d56a0bb08d792325bb8218/mb_base-1.0.202305291040-py3-none-any.whl
+[2023-05-29 12:45:19] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/2a/71/0ef88ecb3cd956db18b3ba88c24f83b052eca6365bf082e280b5e0721ea1/edu_segmentation-0.0.96.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [django-toolshed]: Downloading https://files.pythonhosted.org/packages/8d/a5/6e71b118bd17511533c208af2ee0ec58ce424a0f59dd3866b8ba5841e6ac/django_toolshed-0.5.8.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-agent]: Downloading https://files.pythonhosted.org/packages/69/b3/c53400ae859fe5b5ebebb1bb6ea2be5b91e8490dafc6c967562ae228ad85/backend.ai-agent-23.3.3.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 12:45:19] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.95-py3-none-any.whl.zip tmp/edu_segmentation-0.0.96.tar.gz --markdown 20230529/e/edu-segmentation/0.0.95-0.0.96/diff.md --exclude *.pyd
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: Downloading https://files.pythonhosted.org/packages/8b/25/491fd2bb0ad61f409628babb7de4c132f8e189d1b8145dd8fa99f902c4df/backend.ai-accelerator-cuda-open-23.3.4.tar.gz
+[2023-05-29 12:45:19] WARNING root fetch - processPackages [backend.ai-agent]: Skipping package: exceeds size limit 17976526>=10485760
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-agent]: Start processing: backend.ai-cli
+[2023-05-29 12:45:19] INFO root fetch - main [MainThread]: End processing [backend.ai-agent] error
+[2023-05-29 12:45:19] INFO root fetch - processPackages [cs-eventsender]: Downloading https://files.pythonhosted.org/packages/70/d1/4fd974453d5a5667c724e78d8b74ea7755e5660b10fe9f7d66951f464dd5/cs-eventsender-0.0.2.tar.gz
+[2023-05-29 12:45:19] INFO root fetch - processPackages [backend.ai-cli]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:19] INFO root fetch - processPackages [ohmytmp]: Downloading https://files.pythonhosted.org/packages/69/e0/33d1e59eabd3951d515c560012962c0599d1ef33909f501f85645b4c4314/ohmytmp-0.0.5.tar.gz
+[2023-05-29 12:45:20] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/7b/ea/af7c7b245f960343f096abfb5db309b9c3bafa89d2148c6e75d8ae79199c/mb_base-1.0.202305291042-py3-none-any.whl
+[2023-05-29 12:45:20] INFO root fetch - processPackages [django-toolshed]: Downloading https://files.pythonhosted.org/packages/04/53/2d81798448c97dfed978760046150ddec0e8c1a459701949d3ed6ad4c530/django_toolshed-0.5.9.tar.gz
+[2023-05-29 12:45:20] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/7b/ea/af7c7b245f960343f096abfb5db309b9c3bafa89d2148c6e75d8ae79199c/mb_base-1.0.202305291042-py3-none-any.whl
+[2023-05-29 12:45:20] INFO root fetch - processPackages [cs-eventsender]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [cs-eventsender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-eventsender-0.0.1.tar.gz tmp/cs-eventsender-0.0.2.tar.gz --markdown 20230529/c/cs-eventsender/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-accelerator-cuda-open-23.3.3.tar.gz tmp/backend.ai-accelerator-cuda-open-23.3.4.tar.gz --markdown 20230529/b/backend.ai-accelerator-cuda-open/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [lib-dzne-igblastn]: Downloading https://files.pythonhosted.org/packages/95/69/f564d7357f5adfa6fa8aac972ba2756dc6341738d27ba7cf59dcf4858b2d/lib-dzne-igblastn-0.1.2.tar.gz
+[2023-05-29 12:45:20] INFO root fetch - processPackages [ohmytmp]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [ohmytmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ohmytmp-0.0.4.tar.gz tmp/ohmytmp-0.0.5.tar.gz --markdown 20230529/o/ohmytmp/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-accelerator-cuda-mock]: Downloading https://files.pythonhosted.org/packages/66/e1/f0f785834d9e22a19cf786f69a472b5c56c936698a5ea59e2d4e541b488a/backend.ai-accelerator-cuda-mock-23.3.0a4.tar.gz
+[2023-05-29 12:45:20] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291040-py3-none-any.whl.zip tmp/mb_base-1.0.202305291042-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291040-1.0.202305291042/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [django-toolshed]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [django-toolshed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_toolshed-0.5.8.tar.gz tmp/django_toolshed-0.5.9.tar.gz --markdown 20230529/d/django-toolshed/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291040-py3-none-any.whl.zip tmp/mb_base-1.0.202305291042-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291040-1.0.202305291042/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [lib-dzne-igblastn]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [lib-dzne-igblastn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-igblastn-0.1.0.tar.gz tmp/lib-dzne-igblastn-0.1.2.tar.gz --markdown 20230529/l/lib-dzne-igblastn/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-cli]: Downloading https://files.pythonhosted.org/packages/d5/07/9038069e0d39265433fc4c6536673fd968b9b53dc10d1ee7ac6d03af4a8c/backend.ai-cli-23.3.4.tar.gz
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-accelerator-cuda-mock]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-accelerator-cuda-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-accelerator-cuda-mock-23.3.0a3.tar.gz tmp/backend.ai-accelerator-cuda-mock-23.3.0a4.tar.gz --markdown 20230529/b/backend.ai-accelerator-cuda-mock/23.3.0a3-23.3.0a4/diff.md --exclude *.pyd
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-cli]: executing diffoscope
+[2023-05-29 12:45:20] INFO root fetch - processPackages [backend.ai-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-cli-23.3.3.tar.gz tmp/backend.ai-cli-23.3.4.tar.gz --markdown 20230529/b/backend.ai-cli/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:21] INFO root fetch - processPackages [edu-segmentation]: Start processing: backend.ai-client
+[2023-05-29 12:45:21] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-client]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:21] INFO root fetch - processPackages [cs-eventsender]: Start processing: backend.ai-common
+[2023-05-29 12:45:21] INFO root fetch - main [MainThread]: End processing [cs-eventsender]: success
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-common]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-client]: Downloading https://files.pythonhosted.org/packages/ca/99/6100e50101f5f59a2ec0a86f48a670b825cda7d7f8472b4348c0493e10f2/backend.ai-client-23.3.4.tar.gz
+[2023-05-29 12:45:21] INFO root fetch - processPackages [mb-base]: Start processing: backend.ai-kernel
+[2023-05-29 12:45:21] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-kernel]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-client]: executing diffoscope
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-client-23.3.3.tar.gz tmp/backend.ai-client-23.3.4.tar.gz --markdown 20230529/b/backend.ai-client/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:21] INFO root fetch - processPackages [backend.ai-common]: Downloading https://files.pythonhosted.org/packages/c3/f4/dd0f7093454de46e1d09be19205449c7ed1542200340ae425219b2359f11/backend.ai-common-23.3.4.tar.gz
+[2023-05-29 12:45:21] INFO root fetch - processPackages [django-toolshed]: Start processing: backend.ai-accelerator-cuda-open
+[2023-05-29 12:45:21] INFO root fetch - main [MainThread]: End processing [django-toolshed]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel]: Downloading https://files.pythonhosted.org/packages/c4/fd/55c5b176317a03f45b805ea0b5951e1fe7a0efc1c61c6ed2251297f22746/backend.ai-kernel-23.3.4.tar.gz
+[2023-05-29 12:45:22] INFO root fetch - processPackages [mb-base]: Start processing: backend.ai-kernel-binary
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-common]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-common-23.3.3.tar.gz tmp/backend.ai-common-23.3.4.tar.gz --markdown 20230529/b/backend.ai-common/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-accelerator-cuda-open-23.3.3.tar.gz tmp/backend.ai-accelerator-cuda-open-23.3.4.tar.gz --markdown 20230529/b/backend.ai-accelerator-cuda-open/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel-binary]: New version: [23.3.3] Old Version: [23.3.2]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: Start processing: backend.ai-accelerator-mock
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [backend.ai-accelerator-cuda-open]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [lib-dzne-igblastn]: Start processing: backend.ai-agent
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [lib-dzne-igblastn]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-mock]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [ohmytmp]: Start processing: backend.ai-kernel-helper
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [ohmytmp]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-agent]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel-helper]: New version: [23.3.3] Old Version: [23.3.2]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-kernel-23.3.3.tar.gz tmp/backend.ai-kernel-23.3.4.tar.gz --markdown 20230529/b/backend.ai-kernel/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-agent]: Downloading https://files.pythonhosted.org/packages/69/b3/c53400ae859fe5b5ebebb1bb6ea2be5b91e8490dafc6c967562ae228ad85/backend.ai-agent-23.3.3.tar.gz
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel-binary]: Downloading https://files.pythonhosted.org/packages/d5/13/299cca35b7b1b703345da920c9e69c00e939b3410df8bb317ab0cd771179/backend.ai-kernel-binary-23.3.2.tar.gz
+[2023-05-29 12:45:22] WARNING root fetch - processPackages [backend.ai-agent]: Skipping package: exceeds size limit 17976526>=10485760
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-agent]: Start processing: backend.ai-cli
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [backend.ai-agent] error
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-cli]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-cli]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-cli-23.3.3.tar.gz tmp/backend.ai-cli-23.3.4.tar.gz --markdown 20230529/b/backend.ai-cli/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-cuda-mock]: Start processing: backend.ai-manager
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [backend.ai-accelerator-cuda-mock]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-manager]: New version: [23.3.3] Old Version: [23.3.2]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-mock]: Downloading https://files.pythonhosted.org/packages/76/b0/f89eb3fb8021250e4884e943bc869f594f89a28fd47abe13c3a50e87272b/backend.ai-accelerator-mock-23.3.4.tar.gz
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-cli]: Start processing: backend.ai-client
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [backend.ai-cli]: success
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-client]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel-helper]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-kernel-helper-23.3.2.tar.gz tmp/backend.ai-kernel-helper-23.3.3.tar.gz --markdown 20230529/b/backend.ai-kernel-helper/23.3.2-23.3.3/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] WARNING root fetch - processPackages [backend.ai-kernel-binary]: Skipping package: exceeds size limit 21983326>=10485760
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-kernel-binary]: Start processing: backend.ai-plugin
+[2023-05-29 12:45:22] INFO root fetch - main [MainThread]: End processing [backend.ai-kernel-binary] error
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-client]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-client-23.3.3.tar.gz tmp/backend.ai-client-23.3.4.tar.gz --markdown 20230529/b/backend.ai-client/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-plugin]: New version: [23.3.3] Old Version: [23.3.2]
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-mock]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-accelerator-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-accelerator-mock-23.3.3.tar.gz tmp/backend.ai-accelerator-mock-23.3.4.tar.gz --markdown 20230529/b/backend.ai-accelerator-mock/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-manager]: executing diffoscope
+[2023-05-29 12:45:22] INFO root fetch - processPackages [backend.ai-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-manager-23.3.2.tar.gz tmp/backend.ai-manager-23.3.3.tar.gz --markdown 20230529/b/backend.ai-manager/23.3.2-23.3.3/diff.md --exclude *.pyd
+[2023-05-29 12:45:23] INFO root fetch - processPackages [backend.ai-plugin]: executing diffoscope
+[2023-05-29 12:45:23] INFO root fetch - processPackages [backend.ai-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-plugin-23.3.2.tar.gz tmp/backend.ai-plugin-23.3.3.tar.gz --markdown 20230529/b/backend.ai-plugin/23.3.2-23.3.3/diff.md --exclude *.pyd
+[2023-05-29 12:45:23] INFO root fetch - processPackages [backend.ai-accelerator-cuda-open]: Start processing: backend.ai-common
+[2023-05-29 12:45:23] INFO root fetch - main [MainThread]: End processing [backend.ai-accelerator-cuda-open]: success
+[2023-05-29 12:45:23] INFO root fetch - processPackages [backend.ai-common]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:23] INFO root fetch - processPackages [backend.ai-common]: executing diffoscope
+[2023-05-29 12:45:23] INFO root fetch - processPackages [backend.ai-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-common-23.3.3.tar.gz tmp/backend.ai-common-23.3.4.tar.gz --markdown 20230529/b/backend.ai-common/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-cli]: Start processing: backend.ai-storage-proxy
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-cli]: success
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-storage-proxy]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-common]: Start processing: backend.ai-kernel
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-common]: success
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel]: executing diffoscope
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-kernel-23.3.3.tar.gz tmp/backend.ai-kernel-23.3.4.tar.gz --markdown 20230529/b/backend.ai-kernel/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel-helper]: Start processing: backend.ai-test
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-kernel-helper]: success
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-test]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-accelerator-mock]: Start processing: backend.ai-kernel-binary
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-accelerator-mock]: success
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel-binary]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-storage-proxy]: Downloading https://files.pythonhosted.org/packages/16/e2/d57af6b107074e7b8d2514470fbe5cdaf2db436a2aef7b0e6269e251e614/backend.ai-storage-proxy-23.3.4.tar.gz
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel-binary]: Downloading https://files.pythonhosted.org/packages/46/d3/dfd0490bc6c406403a781afeece565e9e89e031b8f2e65a39227fb602a6d/backend.ai-kernel-binary-23.3.3.tar.gz
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel]: Start processing: backend.ai-webserver
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-kernel]: success
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-storage-proxy]: executing diffoscope
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-storage-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-storage-proxy-23.3.3.tar.gz tmp/backend.ai-storage-proxy-23.3.4.tar.gz --markdown 20230529/b/backend.ai-storage-proxy/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-webserver]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:24] WARNING root fetch - processPackages [backend.ai-kernel-binary]: Skipping package: exceeds size limit 21983403>=10485760
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel-binary]: Start processing: backend.ai-kernel-helper
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-kernel-binary] error
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-plugin]: Start processing: beyondview
+[2023-05-29 12:45:24] INFO root fetch - main [MainThread]: End processing [backend.ai-plugin]: success
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel-helper]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-test]: Downloading https://files.pythonhosted.org/packages/8b/5f/9c31e1d093d40ff3916a618d8731604d1bae6cbb74d5840cace0e54c07d5/backend.ai-test-23.3.4.tar.gz
+[2023-05-29 12:45:24] INFO root fetch - processPackages [beyondview]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-test]: executing diffoscope
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-test-23.3.3.tar.gz tmp/backend.ai-test-23.3.4.tar.gz --markdown 20230529/b/backend.ai-test/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:24] INFO root fetch - processPackages [backend.ai-kernel-helper]: Downloading https://files.pythonhosted.org/packages/6e/30/9bf81d581a9e67d0954fac25f7fa48a5ea5d4d572c9ab51ed405c82c54ec/backend.ai-kernel-helper-23.3.4.tar.gz
+[2023-05-29 12:45:24] INFO root fetch - processPackages [beyondview]: Downloading https://files.pythonhosted.org/packages/2d/26/4a73244a68a4fafcc65e6719e620dea4f45c7dc6cc3671821551eddae978/beyondview-0.1.0.tar.gz
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-kernel-helper]: executing diffoscope
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-kernel-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-kernel-helper-23.3.3.tar.gz tmp/backend.ai-kernel-helper-23.3.4.tar.gz --markdown 20230529/b/backend.ai-kernel-helper/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-webserver]: Downloading https://files.pythonhosted.org/packages/30/7c/be0778b2cfa926c6f1f848aacb80fd72aff7983132037ac985db0c33ca5b/backend.ai-webserver-23.3.4.tar.gz
+[2023-05-29 12:45:25] INFO root fetch - processPackages [beyondview]: Downloading https://files.pythonhosted.org/packages/72/9d/3c152c3b6375b48ba6df10cd38bc8a8fb3a4c24bcb59a90be6bdc17666d1/beyondview-0.1.1.tar.gz
+[2023-05-29 12:45:25] INFO root fetch - processPackages [beyondview]: executing diffoscope
+[2023-05-29 12:45:25] INFO root fetch - processPackages [beyondview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beyondview-0.1.0.tar.gz tmp/beyondview-0.1.1.tar.gz --markdown 20230529/b/beyondview/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-client]: Start processing: backend.ai-manager
+[2023-05-29 12:45:25] INFO root fetch - main [MainThread]: End processing [backend.ai-client]: success
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-manager]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-manager]: Downloading https://files.pythonhosted.org/packages/b4/2a/2a2c4c18a6c555431e008bf5c5eec8f52234d176f5ff92cab0c3ce4be342/backend.ai-manager-23.3.4.tar.gz
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-common]: Start processing: backend.ai-plugin
+[2023-05-29 12:45:25] INFO root fetch - main [MainThread]: End processing [backend.ai-common]: success
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-manager]: executing diffoscope
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-manager-23.3.3.tar.gz tmp/backend.ai-manager-23.3.4.tar.gz --markdown 20230529/b/backend.ai-manager/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-plugin]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:25] INFO root fetch - processPackages [backend.ai-plugin]: Downloading https://files.pythonhosted.org/packages/74/bc/6df9752426ce45f6671783628b72eb670c1a126c9a3568594b5a7eba0467/backend.ai-plugin-23.3.4.tar.gz
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-plugin]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-plugin-23.3.3.tar.gz tmp/backend.ai-plugin-23.3.4.tar.gz --markdown 20230529/b/backend.ai-plugin/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-kernel]: Start processing: backend.ai-storage-proxy
+[2023-05-29 12:45:26] INFO root fetch - main [MainThread]: End processing [backend.ai-kernel]: success
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-storage-proxy]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-storage-proxy]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-storage-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-storage-proxy-23.3.3.tar.gz tmp/backend.ai-storage-proxy-23.3.4.tar.gz --markdown 20230529/b/backend.ai-storage-proxy/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-storage-proxy]: Start processing: backend.ai-test
+[2023-05-29 12:45:26] INFO root fetch - main [MainThread]: End processing [backend.ai-storage-proxy]: success
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-test]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-test]: Start processing: backend.ai-webserver
+[2023-05-29 12:45:26] INFO root fetch - main [MainThread]: End processing [backend.ai-test]: success
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-webserver]: New version: [23.3.4] Old Version: [23.3.3]
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-manager]: Start processing: always-updates
+[2023-05-29 12:45:26] INFO root fetch - main [MainThread]: End processing [backend.ai-manager]: success
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-test]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-test-23.3.3.tar.gz tmp/backend.ai-test-23.3.4.tar.gz --markdown 20230529/b/backend.ai-test/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:26] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-kernel-helper]: Start processing: always-updates
+[2023-05-29 12:45:26] INFO root fetch - main [MainThread]: End processing [backend.ai-kernel-helper]: success
+[2023-05-29 12:45:26] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-webserver]: Downloading https://files.pythonhosted.org/packages/30/7c/be0778b2cfa926c6f1f848aacb80fd72aff7983132037ac985db0c33ca5b/backend.ai-webserver-23.3.4.tar.gz
+[2023-05-29 12:45:26] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230529/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-29 12:45:26] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230529/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-webserver]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-webserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-webserver-23.3.3.tar.gz tmp/backend.ai-webserver-23.3.4.tar.gz --markdown 20230529/b/backend.ai-webserver/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-client]: Start processing: rabbitmq-broker
+[2023-05-29 12:45:26] INFO root fetch - main [MainThread]: End processing [backend.ai-client]: success
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-webserver]: executing diffoscope
+[2023-05-29 12:45:26] INFO root fetch - processPackages [backend.ai-webserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend.ai-webserver-23.3.3.tar.gz tmp/backend.ai-webserver-23.3.4.tar.gz --markdown 20230529/b/backend.ai-webserver/23.3.3-23.3.4/diff.md --exclude *.pyd
+[2023-05-29 12:45:27] INFO root fetch - main [MainThread]: End processing [beyondview]: success
+[2023-05-29 12:45:27] INFO root fetch - processPackages [rabbitmq-broker]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 12:45:27] INFO root fetch - processPackages [rabbitmq-broker]: Downloading https://files.pythonhosted.org/packages/9b/99/1e768ce86c11a6fb3f6f3033c9151efda3448ad74f515be8d8f8c7641604/rabbitmq_broker-1.0.2-py3-none-any.whl
+[2023-05-29 12:45:27] INFO root fetch - main [MainThread]: End processing [backend.ai-plugin]: success
+[2023-05-29 12:45:27] INFO root fetch - processPackages [rabbitmq-broker]: executing diffoscope
+[2023-05-29 12:45:27] INFO root fetch - processPackages [rabbitmq-broker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rabbitmq-broker-1.0.1.tar.gz tmp/rabbitmq_broker-1.0.2-py3-none-any.whl.zip --markdown 20230529/r/rabbitmq-broker/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 12:45:28] INFO root fetch - main [MainThread]: End processing [backend.ai-storage-proxy]: success
+[2023-05-29 12:45:28] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-29 12:45:28] INFO root fetch - main [MainThread]: End processing [backend.ai-test]: success
+[2023-05-29 12:45:28] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-29 12:45:28] INFO root fetch - main [MainThread]: End processing [backend.ai-manager]: success
+[2023-05-29 12:45:28] INFO root fetch - main [MainThread]: End processing [rabbitmq-broker]: success
+[2023-05-29 12:45:31] INFO root fetch - main [MainThread]: End processing [backend.ai-webserver]: success
+[2023-05-29 12:45:33] INFO root fetch - main [MainThread]: End processing [backend.ai-webserver]: success
+[2023-05-29 12:45:33] INFO root fetch - main [MainThread]: Store serial: [18288745]
