@@ -16652,3 +16652,70 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:41:41] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
 [2023-05-29 21:41:45] INFO root fetch - main [MainThread]: End processing [oloren]: success
 [2023-05-29 21:41:45] INFO root fetch - main [MainThread]: Store serial: [18293616]
+[2023-05-29 21:46:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293616]
+[2023-05-29 21:46:55] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: satori-ci
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradernet-sdk
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioumlsim
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: satori-ci
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: genda-lens
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cursesplus
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fossiler
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bitarray
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: klp-commons
+[2023-05-29 21:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cost-of-code
+[2023-05-29 21:46:55] INFO root fetch - processPackages [bioumlsim]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [tradernet-sdk]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [genda-lens]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [cursesplus]: New version: [2.3.0] Old Version: [2.2.3]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [cost-of-code]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [fossiler]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [bitarray]: New version: [2.7.4] Old Version: [2.7.3]
+[2023-05-29 21:46:55] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/a7/fb/3c20af6770217e6ddade111a000687c8c3c549168650f48588177970c688/cursesplus-2.2.3.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [genda-lens]: Downloading https://files.pythonhosted.org/packages/c7/a8/acdd48365b4312ca342a735d4ffd911e8896ef91d089f203c3907f89f28b/genda_lens-0.0.1.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [bioumlsim]: Downloading https://files.pythonhosted.org/packages/a3/cc/0e30f6f813d71eaf0b321f13c4ada98940cdbdd77eea91eeebbbb97db3b6/bioumlsim-0.3.1.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [fossiler]: Downloading https://files.pythonhosted.org/packages/a8/04/f1bed1f4890552b585a048e02af710555246a0563e5deb9c19266520b673/fossiler-0.0.3.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-05-29 21:46:55] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230529/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:46:55] INFO root fetch - processPackages [bitarray]: Downloading https://files.pythonhosted.org/packages/82/30/68a3ee41e6abbb521a3418fb25a7755127a1d6bf4604028bb404f833b2fc/bitarray-2.7.3.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [fossiler]: executing diffoscope
+[2023-05-29 21:46:55] INFO root fetch - processPackages [fossiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fossiler-0.0.2.tar.gz tmp/fossiler-0.0.3.tar.gz --markdown 20230529/f/fossiler/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 21:46:55] INFO root fetch - processPackages [cost-of-code]: Downloading https://files.pythonhosted.org/packages/0a/d4/61d944c7bfcb51053d8496a937f37a9716f2afb171e8b838f989b3be894e/cost-of-code-0.1.2.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [bioumlsim]: executing diffoscope
+[2023-05-29 21:46:55] INFO root fetch - processPackages [bioumlsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioumlsim-0.3.0.tar.gz tmp/bioumlsim-0.3.1.tar.gz --markdown 20230529/b/bioumlsim/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-29 21:46:55] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/0a/db/ef6f7e8562addb0c71bfda8c235419bb2cee1d7253b409d5f8d2b203b04b/cursesplus-2.3.0.tar.gz
+[2023-05-29 21:46:55] INFO root fetch - processPackages [tradernet-sdk]: executing diffoscope
+[2023-05-29 21:46:55] INFO root fetch - processPackages [tradernet-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradernet_sdk-0.3.8.tar.gz tmp/tradernet_sdk-0.3.9.tar.gz --markdown 20230529/t/tradernet-sdk/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 21:46:55] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 21:46:55] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 21:46:56] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 21:46:56] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 21:46:56] INFO root fetch - processPackages [genda-lens]: Downloading https://files.pythonhosted.org/packages/da/a6/c093f15120ce57929828423ad5dd33751658635184d77ee8f8a3ef029283/genda_lens-0.0.2.tar.gz
+[2023-05-29 21:46:56] INFO root fetch - processPackages [cost-of-code]: executing diffoscope
+[2023-05-29 21:46:56] INFO root fetch - processPackages [cost-of-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cost-of-code-0.1.1.tar.gz tmp/cost-of-code-0.1.2.tar.gz --markdown 20230529/c/cost-of-code/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 21:46:56] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2023-05-29 21:46:56] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-2.2.3.tar.gz tmp/cursesplus-2.3.0.tar.gz --markdown 20230529/c/cursesplus/2.2.3-2.3.0/diff.md --exclude *.pyd
+[2023-05-29 21:46:56] INFO root fetch - processPackages [genda-lens]: executing diffoscope
+[2023-05-29 21:46:56] INFO root fetch - processPackages [genda-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genda_lens-0.0.1.tar.gz tmp/genda_lens-0.0.2.tar.gz --markdown 20230529/g/genda-lens/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 21:46:56] INFO root fetch - processPackages [bitarray]: Downloading https://files.pythonhosted.org/packages/92/71/c21100b09ee6e006666d6e23b3c84f3f9169a33b4b7c9886fe6a926e4225/bitarray-2.7.4-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2023-05-29 21:46:57] INFO root fetch - processPackages [klp-commons]: Start processing: st4sd-runtime-core
+[2023-05-29 21:46:57] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-05-29 21:46:57] INFO root fetch - processPackages [bitarray]: executing diffoscope
+[2023-05-29 21:46:57] INFO root fetch - processPackages [bitarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitarray-2.7.3.tar.gz tmp/bitarray-2.7.4-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20230529/b/bitarray/2.7.3-2.7.4/diff.md --exclude *.pyd
+[2023-05-29 21:46:57] INFO root fetch - processPackages [st4sd-runtime-core]: New version: [2.0.0a9.dev8] Old Version: [2.0.0a9.dev7]
+[2023-05-29 21:46:57] INFO root fetch - main [MainThread]: End processing [fossiler]: success
+[2023-05-29 21:46:57] INFO root fetch - processPackages [st4sd-runtime-core]: executing diffoscope
+[2023-05-29 21:46:57] INFO root fetch - processPackages [st4sd-runtime-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st4sd-runtime-core-2.0.0a9.dev7.tar.gz tmp/st4sd-runtime-core-2.0.0a9.dev8.tar.gz --markdown 20230529/s/st4sd-runtime-core/2.0.0a9.dev7-2.0.0a9.dev8/diff.md --exclude *.pyd
+[2023-05-29 21:46:57] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 21:46:58] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 21:46:58] INFO root fetch - main [MainThread]: End processing [cost-of-code]: success
+[2023-05-29 21:46:58] INFO root fetch - main [MainThread]: End processing [tradernet-sdk]: success
+[2023-05-29 21:46:58] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2023-05-29 21:46:58] INFO root fetch - main [MainThread]: End processing [genda-lens]: success
+[2023-05-29 21:46:59] INFO root fetch - main [MainThread]: End processing [bitarray]: success
+[2023-05-29 21:47:00] INFO root fetch - main [MainThread]: End processing [bioumlsim]: success
+[2023-05-29 21:47:00] INFO root fetch - main [MainThread]: End processing [st4sd-runtime-core]: success
+[2023-05-29 21:47:00] INFO root fetch - main [MainThread]: Store serial: [18293692]
