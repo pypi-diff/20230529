@@ -7441,3 +7441,110 @@
 [2023-05-29 11:32:00] INFO root fetch - main [MainThread]: End processing [griffon]: success
 [2023-05-29 11:32:01] INFO root fetch - main [MainThread]: End processing [power-grid-model]: success
 [2023-05-29 11:32:01] INFO root fetch - main [MainThread]: Store serial: [18288030]
+[2023-05-29 11:37:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288030]
+[2023-05-29 11:37:10] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprites
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clickzetta-connector
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clickzetta-sqlalchemy
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sptag
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: musif
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zebrazoom
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ezyquant-execution
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: angola
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ngrad
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: atlassianhw
+[2023-05-29 11:37:10] INFO root fetch - processPackages [sprites]: New version: [1.70] Old Version: [1.69]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [sptag]: New version: [1.6.8] Old Version: [1.6.7]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ezyquant-execution]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [clickzetta-sqlalchemy]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-29 11:37:10] WARNING root fetch - processPackages [ngrad]: Skipping, unable to determine old version
+[2023-05-29 11:37:10] INFO root fetch - processPackages [clickzetta-connector]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [ngrad]: Start processing: mlc-tools
+[2023-05-29 11:37:10] INFO root fetch - main [MainThread]: End processing [ngrad] error
+[2023-05-29 11:37:10] INFO root fetch - processPackages [musif]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [angola]: New version: [0.11.0] Old Version: [0.10.9]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [zebrazoom]: New version: [1.9] Old Version: [1.8]
+[2023-05-29 11:37:10] WARNING root fetch - processPackages [atlassianhw]: Skipping, unable to determine old version
+[2023-05-29 11:37:10] INFO root fetch - processPackages [atlassianhw]: Start processing: lib-dzne-filedata
+[2023-05-29 11:37:10] INFO root fetch - main [MainThread]: End processing [atlassianhw] error
+[2023-05-29 11:37:10] INFO root fetch - processPackages [mlc-tools]: New version: [0.4.675] Old Version: [0.4.674]
+[2023-05-29 11:37:10] INFO root fetch - processPackages [lib-dzne-filedata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 11:37:11] INFO root fetch - processPackages [mlc-tools]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [mlc-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlc-tools-0.4.674.tar.gz tmp/mlc-tools-0.4.675.tar.gz --markdown 20230529/m/mlc-tools/0.4.674-0.4.675/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/2d/af/274b69716aaa3de30043fb6e33c2926b8def3d9d29d9e7dbcb06a18abd70/clickzetta-sqlalchemy-0.8.1.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clickzetta-connector]: Downloading https://files.pythonhosted.org/packages/fd/6d/1b9296e119d4abb2c8a6bd5edb447351ddc73a4fe829bdb7690cb249c12b/clickzetta-connector-0.8.1.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [musif]: Downloading https://files.pythonhosted.org/packages/fa/f4/b564f79639ee7b82ad99e60ebdff944d45c7e742f7bbc712762fb813d06c/musif-1.1.1.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [sptag]: Downloading https://files.pythonhosted.org/packages/7e/40/9db95efb76ebb1cfe080789df002ddbd753efbead0f526eeae9c272d127e/sptag-1.6.7-py39-none-win_amd64.whl
+[2023-05-29 11:37:11] INFO root fetch - processPackages [angola]: Downloading https://files.pythonhosted.org/packages/ef/c2/f915c0dd3427d9c66fde4e54b90de911fd82fcc8c329459e12cbcd4a235d/angola-0.10.9.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [lib-dzne-filedata]: Downloading https://files.pythonhosted.org/packages/4a/c1/3ff8a1390854aa7b5e3598d63d306d5a79ec1bb5ca9f83c5ca3b0a53e604/lib-dzne-filedata-0.1.1.tar.gz
+[2023-05-29 11:37:11] WARNING root fetch - processPackages [sptag]: Skipping package: exceeds size limit 11356342>=10485760
+[2023-05-29 11:37:11] INFO root fetch - processPackages [sptag]: Start processing: clemoni-utilities
+[2023-05-29 11:37:11] INFO root fetch - main [MainThread]: End processing [sptag] error
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clickzetta-sqlalchemy]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clickzetta-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-sqlalchemy-0.8.0.tar.gz tmp/clickzetta-sqlalchemy-0.8.1.tar.gz --markdown 20230529/c/clickzetta-sqlalchemy/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clemoni-utilities]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clickzetta-connector]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clickzetta-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-connector-0.8.0.tar.gz tmp/clickzetta-connector-0.8.1.tar.gz --markdown 20230529/c/clickzetta-connector/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [sprites]: Downloading https://files.pythonhosted.org/packages/da/80/0be934dbb73fc80d71d9cd8e3d86d8ed8a835ddc5b4a1b28fb4a047bdef2/sprites-1.70.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [ezyquant-execution]: Downloading https://files.pythonhosted.org/packages/12/8e/d0161471297655fba790d36f32fa6060e5fa7dc841f53dabc150248044ae/ezyquant-execution-0.1.0.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [lib-dzne-filedata]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [lib-dzne-filedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-filedata-0.1.0.tar.gz tmp/lib-dzne-filedata-0.1.1.tar.gz --markdown 20230529/l/lib-dzne-filedata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [ezyquant-execution]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [ezyquant-execution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezyquant-execution-0.0.7.tar.gz tmp/ezyquant-execution-0.1.0.tar.gz --markdown 20230529/e/ezyquant-execution/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [musif]: Downloading https://files.pythonhosted.org/packages/a7/40/a2582fa49fabb7e714c030e671f873f901e478fa3d68db8e3beac05fe2a9/musif-1.1.2.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [zebrazoom]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [zebrazoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zebrazoom-1.8.tar.gz tmp/zebrazoom-1.9.tar.gz --markdown 20230529/z/zebrazoom/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [sprites]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [sprites]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprites-1.69.tar.gz tmp/sprites-1.70.tar.gz --markdown 20230529/s/sprites/1.69-1.70/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [angola]: Downloading https://files.pythonhosted.org/packages/25/ad/6826025aa3075f01f238639a9efa8a0a4e0b4ec227deb085a620a98bb75b/angola-0.11.0.tar.gz
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clemoni-utilities]: Downloading https://files.pythonhosted.org/packages/a2/96/3891e872f49428d525e5cfc78e78a563fd72ef9d7c8a6076a6bb4f3a6bea/clemoni_utilities-1.3.6-py2.py3-none-any.whl
+[2023-05-29 11:37:11] INFO root fetch - processPackages [musif]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [musif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musif-1.1.1.tar.gz tmp/musif-1.1.2.tar.gz --markdown 20230529/m/musif/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [angola]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [angola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angola-0.10.9.tar.gz tmp/angola-0.11.0.tar.gz --markdown 20230529/a/angola/0.10.9-0.11.0/diff.md --exclude *.pyd
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clemoni-utilities]: executing diffoscope
+[2023-05-29 11:37:11] INFO root fetch - processPackages [clemoni-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clemoni_utilities-1.3.5-py2.py3-none-any.whl.zip tmp/clemoni_utilities-1.3.6-py2.py3-none-any.whl.zip --markdown 20230529/c/clemoni-utilities/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-29 11:37:12] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Start processing: vbarongdatools001
+[2023-05-29 11:37:12] INFO root fetch - main [MainThread]: End processing [clickzetta-sqlalchemy]: success
+[2023-05-29 11:37:12] INFO root fetch - processPackages [vbarongdatools001]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 11:37:12] INFO root fetch - processPackages [vbarongdatools001]: Downloading https://files.pythonhosted.org/packages/b3/37/5c17d392c14ca5b6980fbe36b8af35cf6b1fad66165a576a0d6ecf4fa2ad/vbarongdatools001-0.0.7.tar.gz
+[2023-05-29 11:37:12] INFO root fetch - processPackages [lib-dzne-filedata]: Start processing: u0-stitcher
+[2023-05-29 11:37:12] INFO root fetch - main [MainThread]: End processing [lib-dzne-filedata]: success
+[2023-05-29 11:37:12] INFO root fetch - processPackages [u0-stitcher]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 11:37:12] INFO root fetch - processPackages [vbarongdatools001]: executing diffoscope
+[2023-05-29 11:37:12] INFO root fetch - processPackages [vbarongdatools001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbarongdatools001-0.0.6.tar.gz tmp/vbarongdatools001-0.0.7.tar.gz --markdown 20230529/v/vbarongdatools001/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 11:37:13] INFO root fetch - processPackages [ezyquant-execution]: Start processing: lanarky
+[2023-05-29 11:37:13] INFO root fetch - main [MainThread]: End processing [ezyquant-execution]: success
+[2023-05-29 11:37:13] INFO root fetch - processPackages [lanarky]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-29 11:37:13] INFO root fetch - processPackages [lanarky]: Downloading https://files.pythonhosted.org/packages/35/2d/fdaa87262b45143f44ea0ce91f405e15e41abd9c179c0f31feb7b17f8469/lanarky-0.7.2.tar.gz
+[2023-05-29 11:37:13] INFO root fetch - processPackages [u0-stitcher]: Downloading https://files.pythonhosted.org/packages/ca/da/3317f9080e52afbaecb06d9fd9a36cf44717e58c17ae89cdce32b920473c/u0_stitcher-0.1.5.tar.gz
+[2023-05-29 11:37:13] INFO root fetch - processPackages [lanarky]: executing diffoscope
+[2023-05-29 11:37:13] INFO root fetch - processPackages [lanarky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanarky-0.7.1.tar.gz tmp/lanarky-0.7.2.tar.gz --markdown 20230529/l/lanarky/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-29 11:37:13] INFO root fetch - processPackages [clickzetta-connector]: Start processing: neworder
+[2023-05-29 11:37:13] INFO root fetch - main [MainThread]: End processing [clickzetta-connector]: success
+[2023-05-29 11:37:13] INFO root fetch - processPackages [neworder]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-29 11:37:13] INFO root fetch - processPackages [clemoni-utilities]: Start processing: ccmplots
+[2023-05-29 11:37:13] INFO root fetch - main [MainThread]: End processing [clemoni-utilities]: success
+[2023-05-29 11:37:13] INFO root fetch - processPackages [u0-stitcher]: executing diffoscope
+[2023-05-29 11:37:13] INFO root fetch - processPackages [u0-stitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/u0_stitcher-0.1.4.tar.gz tmp/u0_stitcher-0.1.5.tar.gz --markdown 20230529/u/u0-stitcher/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 11:37:13] WARNING root fetch - processPackages [ccmplots]: Skipping, unable to determine old version
+[2023-05-29 11:37:13] INFO root fetch - processPackages [ccmplots]: Start processing: panml
+[2023-05-29 11:37:13] INFO root fetch - main [MainThread]: End processing [ccmplots] error
+[2023-05-29 11:37:13] INFO root fetch - processPackages [panml]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-29 11:37:13] INFO root fetch - processPackages [panml]: executing diffoscope
+[2023-05-29 11:37:13] INFO root fetch - processPackages [panml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panml-0.0.18.tar.gz tmp/panml-0.0.19.tar.gz --markdown 20230529/p/panml/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-29 11:37:13] INFO root fetch - processPackages [neworder]: Downloading https://files.pythonhosted.org/packages/5f/2a/32406de32e34f763e9b915ccd61bd525de925b48559936209c30eefec6bb/neworder-1.3.0.tar.gz
+[2023-05-29 11:37:13] INFO root fetch - main [MainThread]: End processing [angola]: success
+[2023-05-29 11:37:13] INFO root fetch - processPackages [neworder]: Downloading https://files.pythonhosted.org/packages/45/2f/978c8bf1fcb40f30cb79675064d2b56327eec218a9d31513826520d21332/neworder-1.3.1.tar.gz
+[2023-05-29 11:37:13] INFO root fetch - processPackages [neworder]: executing diffoscope
+[2023-05-29 11:37:13] INFO root fetch - processPackages [neworder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neworder-1.3.0.tar.gz tmp/neworder-1.3.1.tar.gz --markdown 20230529/n/neworder/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-29 11:37:14] INFO root fetch - main [MainThread]: End processing [mlc-tools]: success
+[2023-05-29 11:37:14] INFO root fetch - main [MainThread]: End processing [u0-stitcher]: success
+[2023-05-29 11:37:14] INFO root fetch - main [MainThread]: End processing [vbarongdatools001]: success
+[2023-05-29 11:37:14] INFO root fetch - main [MainThread]: End processing [lanarky]: success
+[2023-05-29 11:37:14] INFO root fetch - main [MainThread]: End processing [panml]: success
+[2023-05-29 11:37:15] INFO root fetch - main [MainThread]: End processing [musif]: success
+[2023-05-29 11:37:15] INFO root fetch - main [MainThread]: End processing [neworder]: success
+[2023-05-29 11:37:16] INFO root fetch - main [MainThread]: End processing [zebrazoom]: success
+[2023-05-29 11:37:16] INFO root fetch - main [MainThread]: End processing [sprites]: success
+[2023-05-29 11:37:16] INFO root fetch - main [MainThread]: Store serial: [18288092]
