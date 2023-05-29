@@ -7759,3 +7759,110 @@
 [2023-05-29 11:52:59] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
 [2023-05-29 11:55:42] INFO root fetch - main [MainThread]: End processing [lino]: success
 [2023-05-29 11:55:42] INFO root fetch - main [MainThread]: Store serial: [18288211]
+[2023-05-29 12:00:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288211]
+[2023-05-29 12:00:51] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aliyun-python-sdk-market
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edaplore
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: act4e-mcdp
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-provider
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: peewee-migrate
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coguard-cli
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyFunceble
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: keycloak-utils
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: c2client
+[2023-05-29 12:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lib-dzne-filedata
+[2023-05-29 12:00:51] INFO root fetch - processPackages [aliyun-python-sdk-market]: New version: [2.0.24] Old Version: [2.0.17]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [lib-dzne-filedata]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [coguard-cli]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [c2client]: New version: [0.9] Old Version: [0.8]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [my-provider]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [keycloak-utils]: New version: [0.2.0] Old Version: [0.0.1]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [peewee-migrate]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [PyFunceble]: New version: [4.2.0] Old Version: [4.1.3]
+[2023-05-29 12:00:51] INFO root fetch - processPackages [aliyun-python-sdk-market]: Downloading https://files.pythonhosted.org/packages/34/ad/c6d3de4ad4a18af918adeac219e473d8aef32c76d61c2b1cecff6e21ef4d/aliyun-python-sdk-market-2.0.17.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [keycloak-utils]: Downloading https://files.pythonhosted.org/packages/d6/23/cc8a44d52de2181c0ff3a8ec78bf6888767f45fe2a9472bf98ab3fde91b7/keycloak-utils-0.0.1.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/e3/db/3b1ac3d967c76f4dc44d28ab0be844b282a361983f5d4bc01b8f335d3569/act4e_mcdp-0.6.5-py3-none-any.whl
+[2023-05-29 12:00:51] INFO root fetch - processPackages [c2client]: Downloading https://files.pythonhosted.org/packages/90/a8/bb126537d181d85fe057216a056ec24e2f6f5e54287e6230ff51d02873a1/c2client-0.8.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [lib-dzne-filedata]: Downloading https://files.pythonhosted.org/packages/6a/b9/98d9381fd8dce2e597eb5c4ef91e93b29ea9e621f521a345685a66316e67/lib-dzne-filedata-0.1.2.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [my-provider]: Downloading https://files.pythonhosted.org/packages/13/d2/28c6a08aec6ec85fd212af34c6c0c761545f11ddf6499c99537a6835a621/my-provider-0.1.8.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 12:00:51] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 12:00:51] INFO root fetch - processPackages [PyFunceble]: Downloading https://files.pythonhosted.org/packages/c6/bf/0261383aba2bc94288f77f6c936ac18e536f937b4941f4c55220a36b45ca/PyFunceble-4.1.3.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [coguard-cli]: executing diffoscope
+[2023-05-29 12:00:51] INFO root fetch - processPackages [coguard-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coguard-cli-0.2.8.tar.gz tmp/coguard-cli-0.2.9.tar.gz --markdown 20230529/c/coguard-cli/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 12:00:51] INFO root fetch - processPackages [peewee-migrate]: Downloading https://files.pythonhosted.org/packages/14/2e/2b97eae05e5366001ace1c36ed5d92d9439121f7dc820b399b8ca6215feb/peewee_migrate-1.7.9.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [lib-dzne-filedata]: executing diffoscope
+[2023-05-29 12:00:51] INFO root fetch - processPackages [lib-dzne-filedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-filedata-0.1.1.tar.gz tmp/lib-dzne-filedata-0.1.2.tar.gz --markdown 20230529/l/lib-dzne-filedata/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 12:00:51] INFO root fetch - processPackages [keycloak-utils]: Downloading https://files.pythonhosted.org/packages/6d/23/3251f840dbe45e49ad42ee908aa5a157e9cd795675c18fa78b59ee2dfc01/keycloak-utils-0.2.0.tar.gz
+[2023-05-29 12:00:51] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-29 12:00:51] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my-provider-0.1.7.tar.gz tmp/my-provider-0.1.8.tar.gz --markdown 20230529/m/my-provider/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [peewee-migrate]: executing diffoscope
+[2023-05-29 12:00:52] INFO root fetch - processPackages [peewee-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peewee_migrate-1.7.8.tar.gz tmp/peewee_migrate-1.7.9.tar.gz --markdown 20230529/p/peewee-migrate/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [c2client]: Downloading https://files.pythonhosted.org/packages/22/ab/8f7d62861d9df80e5a0e003547ddafdb4c522f82040fee97b89871fb71fa/c2client-0.9.tar.gz
+[2023-05-29 12:00:52] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/91/3a/c97bfbc67002e9bf88a6c21c51e56825cb9a4617156135187ffb25a24329/act4e_mcdp-0.6.6-py3-none-any.whl
+[2023-05-29 12:00:52] INFO root fetch - processPackages [keycloak-utils]: executing diffoscope
+[2023-05-29 12:00:52] INFO root fetch - processPackages [keycloak-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keycloak-utils-0.0.1.tar.gz tmp/keycloak-utils-0.2.0.tar.gz --markdown 20230529/k/keycloak-utils/0.0.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [PyFunceble]: Downloading https://files.pythonhosted.org/packages/13/35/bbbaaa8cfd1f0ee663fcb92529d113f5aa4a691fa8378ba39d5e90344924/PyFunceble-4.2.0.tar.gz
+[2023-05-29 12:00:52] INFO root fetch - processPackages [aliyun-python-sdk-market]: Downloading https://files.pythonhosted.org/packages/ba/c5/73559aa3b4d21896009dbf78b676816832c7450e10f2e794daff6ca4b1b8/aliyun-python-sdk-market-2.0.24.tar.gz
+[2023-05-29 12:00:52] INFO root fetch - processPackages [c2client]: executing diffoscope
+[2023-05-29 12:00:52] INFO root fetch - processPackages [c2client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2client-0.8.tar.gz tmp/c2client-0.9.tar.gz --markdown 20230529/c/c2client/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [aliyun-python-sdk-market]: executing diffoscope
+[2023-05-29 12:00:52] INFO root fetch - processPackages [aliyun-python-sdk-market]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-market-2.0.17.tar.gz tmp/aliyun-python-sdk-market-2.0.24.tar.gz --markdown 20230529/a/aliyun-python-sdk-market/2.0.17-2.0.24/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [PyFunceble]: executing diffoscope
+[2023-05-29 12:00:52] INFO root fetch - processPackages [PyFunceble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-4.1.3.tar.gz tmp/PyFunceble-4.2.0.tar.gz --markdown 20230529/P/PyFunceble/4.1.3-4.2.0/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-29 12:00:52] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.6.5-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.6-py3-none-any.whl.zip --markdown 20230529/a/act4e-mcdp/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-05-29 12:00:52] INFO root fetch - processPackages [edaplore]: Start processing: atlassianhw
+[2023-05-29 12:00:52] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 12:00:53] INFO root fetch - processPackages [atlassianhw]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 12:00:53] INFO root fetch - processPackages [atlassianhw]: Downloading https://files.pythonhosted.org/packages/59/35/c51b171db826bac360d2b36516748019ea4ede0374f0d6f656e8b3381127/atlassianhw-0.0.1.tar.gz
+[2023-05-29 12:00:53] INFO root fetch - processPackages [lib-dzne-filedata]: Start processing: refaci
+[2023-05-29 12:00:53] INFO root fetch - main [MainThread]: End processing [lib-dzne-filedata]: success
+[2023-05-29 12:00:53] INFO root fetch - processPackages [my-provider]: Start processing: gistingv2
+[2023-05-29 12:00:53] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-29 12:00:53] INFO root fetch - processPackages [refaci]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-29 12:00:53] INFO root fetch - processPackages [atlassianhw]: Downloading https://files.pythonhosted.org/packages/10/01/946484acd4cdf2dbdba6aca89920f4068ba02306845cdd79723d000de5da/atlassianhw-0.0.2.tar.gz
+[2023-05-29 12:00:53] WARNING root fetch - processPackages [gistingv2]: Skipping, unable to determine old version
+[2023-05-29 12:00:53] INFO root fetch - processPackages [gistingv2]: Start processing: hey-mindsdb
+[2023-05-29 12:00:53] INFO root fetch - main [MainThread]: End processing [gistingv2] error
+[2023-05-29 12:00:53] INFO root fetch - processPackages [hey-mindsdb]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 12:00:53] INFO root fetch - processPackages [refaci]: Downloading https://files.pythonhosted.org/packages/df/32/0d5e73f837e3a63217aeee5b3325dbebe65916e6780b7341dedbfcec4c3a/refaci-0.1.0.tar.gz
+[2023-05-29 12:00:53] INFO root fetch - processPackages [hey-mindsdb]: Downloading https://files.pythonhosted.org/packages/30/53/bd81dad18133a926dfa205e7cb97be40c1be39216261d377a961a1dadd06/hey-mindsdb-0.1.0.tar.gz
+[2023-05-29 12:00:53] INFO root fetch - processPackages [peewee-migrate]: Start processing: finlogic
+[2023-05-29 12:00:53] INFO root fetch - main [MainThread]: End processing [peewee-migrate]: success
+[2023-05-29 12:00:53] INFO root fetch - processPackages [keycloak-utils]: Start processing: act4e-mcdp
+[2023-05-29 12:00:53] INFO root fetch - main [MainThread]: End processing [keycloak-utils]: success
+[2023-05-29 12:00:53] INFO root fetch - processPackages [finlogic]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-29 12:00:53] INFO root fetch - processPackages [refaci]: Downloading https://files.pythonhosted.org/packages/24/56/53275ff85709d3d8fcf0157f76ba796db54ca591221b816b013725f335d6/refaci-0.2.0.tar.gz
+[2023-05-29 12:00:53] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-05-29 12:00:53] INFO root fetch - processPackages [hey-mindsdb]: Downloading https://files.pythonhosted.org/packages/8c/84/8583132cb38dfa9c6f484f32d39579d974dd739c0dc8f565bd0021078db2/hey_mindsdb-0.1.1.tar.gz
+[2023-05-29 12:00:54] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-29 12:00:54] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.6.5-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.6-py3-none-any.whl.zip --markdown 20230529/a/act4e-mcdp/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-05-29 12:00:54] INFO root fetch - processPackages [hey-mindsdb]: executing diffoscope
+[2023-05-29 12:00:54] INFO root fetch - processPackages [hey-mindsdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hey-mindsdb-0.1.0.tar.gz tmp/hey_mindsdb-0.1.1.tar.gz --markdown 20230529/h/hey-mindsdb/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 12:00:54] INFO root fetch - processPackages [atlassianhw]: executing diffoscope
+[2023-05-29 12:00:54] INFO root fetch - processPackages [atlassianhw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlassianhw-0.0.1.tar.gz tmp/atlassianhw-0.0.2.tar.gz --markdown 20230529/a/atlassianhw/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 12:00:54] INFO root fetch - processPackages [refaci]: executing diffoscope
+[2023-05-29 12:00:54] INFO root fetch - processPackages [refaci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refaci-0.1.0.tar.gz tmp/refaci-0.2.0.tar.gz --markdown 20230529/r/refaci/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 12:00:54] INFO root fetch - processPackages [coguard-cli]: Start processing: gkligo
+[2023-05-29 12:00:54] INFO root fetch - main [MainThread]: End processing [coguard-cli]: success
+[2023-05-29 12:00:54] INFO root fetch - main [MainThread]: End processing [c2client]: success
+[2023-05-29 12:00:54] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-29 12:00:54] INFO root fetch - processPackages [gkligo]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 12:00:54] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/8f/35/df609d39717e6b35caf0b4f8c75bbd455701488f89ed71151cc364a4fb37/finlogic-0.5.1.tar.gz
+[2023-05-29 12:00:54] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-05-29 12:00:54] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlogic-0.5.0.tar.gz tmp/finlogic-0.5.1.tar.gz --markdown 20230529/f/finlogic/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-29 12:00:54] INFO root fetch - processPackages [gkligo]: Downloading https://files.pythonhosted.org/packages/a8/51/2bcf493fe6c68ee5d35de41cb9f00c990c29e68a7903e29710235313b62a/gkligo-0.1.4.tar.gz
+[2023-05-29 12:00:54] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-market]: success
+[2023-05-29 12:00:54] INFO root fetch - processPackages [gkligo]: executing diffoscope
+[2023-05-29 12:00:54] INFO root fetch - processPackages [gkligo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkligo-0.1.3.tar.gz tmp/gkligo-0.1.4.tar.gz --markdown 20230529/g/gkligo/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 12:00:55] INFO root fetch - main [MainThread]: End processing [hey-mindsdb]: success
+[2023-05-29 12:00:55] INFO root fetch - main [MainThread]: End processing [refaci]: success
+[2023-05-29 12:00:55] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-29 12:00:55] INFO root fetch - main [MainThread]: End processing [finlogic]: success
+[2023-05-29 12:00:55] INFO root fetch - main [MainThread]: End processing [atlassianhw]: success
+[2023-05-29 12:00:55] INFO root fetch - main [MainThread]: End processing [gkligo]: success
+[2023-05-29 12:01:03] INFO root fetch - main [MainThread]: End processing [PyFunceble]: success
+[2023-05-29 12:01:03] INFO root fetch - main [MainThread]: Store serial: [18288261]
