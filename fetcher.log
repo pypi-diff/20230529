@@ -4593,3 +4593,11 @@
 [2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [oemer]: success
 [2023-05-29 06:29:48] INFO root fetch - main [MainThread]: End processing [pmdsky-debug-py]: success
 [2023-05-29 06:29:48] INFO root fetch - main [MainThread]: Store serial: [18286332]
+[2023-05-29 06:34:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286332]
+[2023-05-29 06:34:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-29 06:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thumbor
+[2023-05-29 06:34:57] INFO root fetch - processPackages [thumbor]: New version: [7.5.0] Old Version: [7.4.7]
+[2023-05-29 06:34:57] INFO root fetch - processPackages [thumbor]: Downloading https://files.pythonhosted.org/packages/4a/1b/a7ce3d22013abb3a2cad5f37ad25361eb02c9631a3582e66d23c3b08c82b/thumbor-7.4.7.tar.gz
+[2023-05-29 06:34:57] WARNING root fetch - processPackages [thumbor]: Skipping package: exceeds size limit 29741121>=10485760
+[2023-05-29 06:34:57] INFO root fetch - main [MainThread]: End processing [thumbor] error
+[2023-05-29 06:34:57] INFO root fetch - main [MainThread]: Store serial: [18286343]
