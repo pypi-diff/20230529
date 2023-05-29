@@ -10011,3 +10011,87 @@ EOFError: EOF read where object expected
 [2023-05-29 14:13:54] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
 [2023-05-29 14:14:02] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-05-29 14:14:02] INFO root fetch - main [MainThread]: Store serial: [18289563]
+[2023-05-29 14:19:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289563]
+[2023-05-29 14:19:12] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-helpdesk-mgmt-project
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spectrally-constrained-lvms
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinx-run
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: windmill-api
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wmill
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wmill-pg
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qwak-core
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: assemblyline-service-utilities
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ma-fi
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pytabtrust
+[2023-05-29 14:19:12] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-project]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.1.1]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [spectrally-constrained-lvms]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 14:19:12] WARNING root fetch - processPackages [sphinx-run]: Skipping, unable to determine old version
+[2023-05-29 14:19:12] INFO root fetch - processPackages [sphinx-run]: Start processing: clouding-server-manager
+[2023-05-29 14:19:12] INFO root fetch - main [MainThread]: End processing [sphinx-run] error
+[2023-05-29 14:19:12] INFO root fetch - processPackages [qwak-core]: New version: [0.0.84] Old Version: [0.0.83]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 14:19:12] WARNING root fetch - processPackages [pytabtrust]: Skipping, unable to determine old version
+[2023-05-29 14:19:12] INFO root fetch - processPackages [assemblyline-service-utilities]: New version: [4.4.1.dev4] Old Version: [4.4.1.dev3]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [pytabtrust]: Start processing: pmcyg
+[2023-05-29 14:19:12] INFO root fetch - main [MainThread]: End processing [pytabtrust] error
+[2023-05-29 14:19:12] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [clouding-server-manager]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [pmcyg]: New version: [3.2.0] Old Version: [3.0]
+[2023-05-29 14:19:12] WARNING root fetch - processPackages [ma-fi]: Skipping, unable to determine old version
+[2023-05-29 14:19:12] INFO root fetch - processPackages [ma-fi]: Start processing: mkdocstrings-crystal
+[2023-05-29 14:19:12] INFO root fetch - main [MainThread]: End processing [ma-fi] error
+[2023-05-29 14:19:12] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230529/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [mkdocstrings-crystal]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-29 14:19:12] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230529/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-project]: Downloading https://files.pythonhosted.org/packages/0a/11/d49908dc00273459c18c042e73ea7884205f84b960750176f1723d8c21bb/odoo_addon_helpdesk_mgmt_project-15.0.1.1.1-py3-none-any.whl
+[2023-05-29 14:19:12] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230529/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [assemblyline-service-utilities]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [assemblyline-service-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_utilities-4.4.1.dev3-py3-none-any.whl.zip tmp/assemblyline_service_utilities-4.4.1.dev4-py3-none-any.whl.zip --markdown 20230529/a/assemblyline-service-utilities/4.4.1.dev3-4.4.1.dev4/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [spectrally-constrained-lvms]: Downloading https://files.pythonhosted.org/packages/c4/c4/f1500cb28c05fa2c0af8b651de93759dd63493262cd2890e7611aaf7c6d0/spectrally_constrained_lvms-0.1.3.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [pmcyg]: Downloading https://files.pythonhosted.org/packages/89/07/8bedec8f321c50c562ef0f821c86e4a9fcd7dce6dbb1c50cbf24c5a0cf0f/pmcyg-3.0.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/17/95/e53cc5063719ec9265278f98b9475ede0db84f1e85c486cf0e3bb7b70e6c/qwak_core-0.0.84.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [mkdocstrings-crystal]: Downloading https://files.pythonhosted.org/packages/54/2b/45d7d7866afe6b89d1411eb8693702555d9ffeac7690969b7e98f52e9d9d/mkdocstrings-crystal-0.3.5.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [clouding-server-manager]: Downloading https://files.pythonhosted.org/packages/fb/cd/1b2afb12de1961269f044b42933de3c5baf2193d94d9f9ada1e5a099785d/clouding_server_manager-1.0.2.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.83.tar.gz tmp/qwak_core-0.0.84.tar.gz --markdown 20230529/q/qwak-core/0.0.83-0.0.84/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-project]: Downloading https://files.pythonhosted.org/packages/bb/35/9f71b4831da088f4a508d41b8492dba9b16eac2510be34c157a572862548/odoo_addon_helpdesk_mgmt_project-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-29 14:19:12] INFO root fetch - processPackages [spectrally-constrained-lvms]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [spectrally-constrained-lvms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrally_constrained_lvms-0.1.2.tar.gz tmp/spectrally_constrained_lvms-0.1.3.tar.gz --markdown 20230529/s/spectrally-constrained-lvms/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [clouding-server-manager]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [clouding-server-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clouding_server_manager-1.0.1.tar.gz tmp/clouding_server_manager-1.0.2.tar.gz --markdown 20230529/c/clouding-server-manager/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [pmcyg]: Downloading https://files.pythonhosted.org/packages/28/53/3e1ca4557c8dfbb44228848be73d6543e72bfe28d9eaca79f021ee338fe3/pmcyg-3.2.0.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-project]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_helpdesk_mgmt_project-15.0.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_helpdesk_mgmt_project-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-helpdesk-mgmt-project/15.0.1.1.1-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [mkdocstrings-crystal]: Downloading https://files.pythonhosted.org/packages/e6/53/40fcf72d9a8cfe6496b62a284c49900b57e365f238a9058c6f709d38fc03/mkdocstrings_crystal-0.3.6.tar.gz
+[2023-05-29 14:19:12] INFO root fetch - processPackages [pmcyg]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [pmcyg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmcyg-3.0.tar.gz tmp/pmcyg-3.2.0.tar.gz --markdown 20230529/p/pmcyg/3.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:19:12] INFO root fetch - processPackages [mkdocstrings-crystal]: executing diffoscope
+[2023-05-29 14:19:12] INFO root fetch - processPackages [mkdocstrings-crystal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings-crystal-0.3.5.tar.gz tmp/mkdocstrings_crystal-0.3.6.tar.gz --markdown 20230529/m/mkdocstrings-crystal/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-29 14:19:13] INFO root fetch - processPackages [wmill]: Start processing: attune-project-api
+[2023-05-29 14:19:13] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-29 14:19:13] INFO root fetch - processPackages [attune-project-api]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:19:13] INFO root fetch - processPackages [wmill-pg]: Start processing: odoo-addon-website-sale-hide-price
+[2023-05-29 14:19:13] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-29 14:19:13] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.7]
+[2023-05-29 14:19:14] INFO root fetch - processPackages [attune-project-api]: executing diffoscope
+[2023-05-29 14:19:14] INFO root fetch - processPackages [attune-project-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attune-project-api-0.9.8.tar.gz tmp/attune-project-api-0.9.9.tar.gz --markdown 20230529/a/attune-project-api/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:19:14] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: executing diffoscope
+[2023-05-29 14:19:14] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_hide_price-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_website_sale_hide_price-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-website-sale-hide-price/16.0.1.0.0.7-16.0.1.0.0.8/diff.md --exclude *.pyd
+[2023-05-29 14:19:14] INFO root fetch - processPackages [assemblyline-service-utilities]: Start processing: semi-tensor-product
+[2023-05-29 14:19:14] INFO root fetch - main [MainThread]: End processing [assemblyline-service-utilities]: success
+[2023-05-29 14:19:14] WARNING root fetch - processPackages [semi-tensor-product]: Skipping, unable to determine old version
+[2023-05-29 14:19:14] INFO root fetch - main [MainThread]: End processing [semi-tensor-product] error
+[2023-05-29 14:19:14] INFO root fetch - main [MainThread]: End processing [clouding-server-manager]: success
+[2023-05-29 14:19:14] INFO root fetch - main [MainThread]: End processing [spectrally-constrained-lvms]: success
+[2023-05-29 14:19:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-helpdesk-mgmt-project]: success
+[2023-05-29 14:19:15] INFO root fetch - main [MainThread]: End processing [mkdocstrings-crystal]: success
+[2023-05-29 14:19:15] INFO root fetch - main [MainThread]: End processing [pmcyg]: success
+[2023-05-29 14:19:15] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
+[2023-05-29 14:19:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-hide-price]: success
+[2023-05-29 14:19:18] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-29 14:19:28] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-29 14:19:28] INFO root fetch - main [MainThread]: Store serial: [18289635]
