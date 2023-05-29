@@ -4785,3 +4785,63 @@
 [2023-05-29 07:01:41] INFO root fetch - main [MainThread]: End processing [sqlite-hello]: success
 [2023-05-29 07:01:42] INFO root fetch - main [MainThread]: End processing [wasm-exec]: success
 [2023-05-29 07:01:42] INFO root fetch - main [MainThread]: Store serial: [18286437]
+[2023-05-29 07:06:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286437]
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dask-cuda
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mask-util
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqt-dreamstudio
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dagworks-sdk
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mask-util
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flowclient
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flowmachine
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flowetl
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eyes-soatra
+[2023-05-29 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kannada
+[2023-05-29 07:06:51] WARNING root fetch - processPackages [pyqt-dreamstudio]: Skipping, unable to determine old version
+[2023-05-29 07:06:51] INFO root fetch - processPackages [pyqt-dreamstudio]: Start processing: HEIC2PNG
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: End processing [pyqt-dreamstudio] error
+[2023-05-29 07:06:51] WARNING root fetch - processPackages [mask-util]: Skipping, unable to determine old version
+[2023-05-29 07:06:51] INFO root fetch - processPackages [mask-util]: Start processing: multi-model-server
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: End processing [mask-util] error
+[2023-05-29 07:06:51] WARNING root fetch - processPackages [dagworks-sdk]: Skipping, unable to determine old version
+[2023-05-29 07:06:51] INFO root fetch - processPackages [dagworks-sdk]: Start processing: MyDataSort001
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: End processing [dagworks-sdk] error
+[2023-05-29 07:06:51] INFO root fetch - processPackages [HEIC2PNG]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 07:06:51] WARNING root fetch - processPackages [kannada]: Skipping, unable to determine old version
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: End processing [kannada] error
+[2023-05-29 07:06:51] INFO root fetch - processPackages [eyes-soatra]: New version: [0.0.25] Old Version: [0.0.24]
+[2023-05-29 07:06:51] WARNING root fetch - processPackages [mask-util]: Skipping, unable to determine old version
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: End processing [mask-util] error
+[2023-05-29 07:06:51] INFO root fetch - processPackages [flowclient]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-29 07:06:51] INFO root fetch - processPackages [flowetl]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-29 07:06:51] INFO root fetch - processPackages [flowmachine]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-29 07:06:51] INFO root fetch - processPackages [dask-cuda]: New version: [23.8.0a230526] Old Version: [23.8.0a230525]
+[2023-05-29 07:06:51] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230529] Old Version: [1.1.8b20230528]
+[2023-05-29 07:06:51] WARNING root fetch - processPackages [MyDataSort001]: Skipping, unable to determine old version
+[2023-05-29 07:06:51] INFO root fetch - main [MainThread]: End processing [MyDataSort001] error
+[2023-05-29 07:06:51] INFO root fetch - processPackages [HEIC2PNG]: Downloading https://files.pythonhosted.org/packages/ad/d2/96f92574669c685cd00b2af8133dea1b1688c87929e1398d064392022af9/HEIC2PNG-1.0.0.tar.gz
+[2023-05-29 07:06:51] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-29 07:06:51] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.8.0a230525.tar.gz tmp/dask-cuda-23.8.0a230526.tar.gz --markdown 20230529/d/dask-cuda/23.8.0a230525-23.8.0a230526/diff.md --exclude *.pyd
+[2023-05-29 07:06:51] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/e0/43/701d18a7eceaac0b65aa8ec9ee476f585890560428854dc5c2438a7d46f8/multi_model_server-1.1.8b20230529-py2.py3-none-any.whl
+[2023-05-29 07:06:51] INFO root fetch - processPackages [eyes-soatra]: Downloading https://files.pythonhosted.org/packages/f2/91/7f59acbc710b9d0b9bdbcbbea0345ee2a2eb837f51895805a5e308ef938e/eyes_soatra-0.0.25.tar.gz
+[2023-05-29 07:06:52] INFO root fetch - processPackages [eyes-soatra]: executing diffoscope
+[2023-05-29 07:06:52] INFO root fetch - processPackages [eyes-soatra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyes_soatra-0.0.24.tar.gz tmp/eyes_soatra-0.0.25.tar.gz --markdown 20230529/e/eyes-soatra/0.0.24-0.0.25/diff.md --exclude *.pyd
+[2023-05-29 07:06:52] INFO root fetch - processPackages [flowmachine]: executing diffoscope
+[2023-05-29 07:06:52] INFO root fetch - processPackages [flowmachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmachine-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowmachine-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230529/f/flowmachine/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-29 07:06:52] INFO root fetch - processPackages [HEIC2PNG]: Downloading https://files.pythonhosted.org/packages/e9/7d/734b772275a319edeafec53d9ccd9be24b315de0c15b8c62ce5b1fe1e976/HEIC2PNG-1.0.1.tar.gz
+[2023-05-29 07:06:52] INFO root fetch - processPackages [flowetl]: executing diffoscope
+[2023-05-29 07:06:52] INFO root fetch - processPackages [flowetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowetl-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowetl-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230529/f/flowetl/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-29 07:06:52] INFO root fetch - processPackages [flowclient]: executing diffoscope
+[2023-05-29 07:06:52] INFO root fetch - processPackages [flowclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowclient-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowclient-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230529/f/flowclient/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-29 07:06:52] INFO root fetch - processPackages [HEIC2PNG]: executing diffoscope
+[2023-05-29 07:06:52] INFO root fetch - processPackages [HEIC2PNG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HEIC2PNG-1.0.0.tar.gz tmp/HEIC2PNG-1.0.1.tar.gz --markdown 20230529/H/HEIC2PNG/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 07:06:53] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-29 07:06:53] INFO root fetch - main [MainThread]: End processing [eyes-soatra]: success
+[2023-05-29 07:06:53] INFO root fetch - main [MainThread]: End processing [HEIC2PNG]: success
+[2023-05-29 07:06:53] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-29 07:06:53] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230528-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230529-py2.py3-none-any.whl.zip --markdown 20230529/m/multi-model-server/1.1.8b20230528-1.1.8b20230529/diff.md --exclude *.pyd
+[2023-05-29 07:06:53] INFO root fetch - main [MainThread]: End processing [flowclient]: success
+[2023-05-29 07:06:53] INFO root fetch - main [MainThread]: End processing [flowetl]: success
+[2023-05-29 07:06:54] INFO root fetch - main [MainThread]: End processing [flowmachine]: success
+[2023-05-29 07:09:43] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-29 07:09:43] INFO root fetch - main [MainThread]: Store serial: [18286483]
