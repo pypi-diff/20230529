@@ -16605,3 +16605,19 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:31:19] INFO root fetch - main [MainThread]: End processing [ajm1102pandemic2d]: success
 [2023-05-29 21:31:19] INFO root fetch - main [MainThread]: End processing [damo]: success
 [2023-05-29 21:31:19] INFO root fetch - main [MainThread]: Store serial: [18293590]
+[2023-05-29 21:36:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293590]
+[2023-05-29 21:36:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-29 21:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-virtual-models
+[2023-05-29 21:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webdns
+[2023-05-29 21:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cogsworth
+[2023-05-29 21:36:28] WARNING root fetch - processPackages [cogsworth]: Skipping, unable to determine old version
+[2023-05-29 21:36:28] INFO root fetch - main [MainThread]: End processing [cogsworth] error
+[2023-05-29 21:36:28] INFO root fetch - processPackages [django-virtual-models]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 21:36:28] WARNING root fetch - processPackages [webdns]: Skipping, unable to determine old version
+[2023-05-29 21:36:28] INFO root fetch - main [MainThread]: End processing [webdns] error
+[2023-05-29 21:36:28] INFO root fetch - processPackages [django-virtual-models]: Downloading https://files.pythonhosted.org/packages/df/9b/586a1d8308594209e8fdadf477c3041b1ad67e9690a6b353a0b503e15ea9/django-virtual-models-0.1.4.tar.gz
+[2023-05-29 21:36:29] INFO root fetch - processPackages [django-virtual-models]: Downloading https://files.pythonhosted.org/packages/b0/e2/fc43e654a4b65540286c801954fa8fa90ebee1b72384e030c70e61127df9/django-virtual-models-0.1.5.tar.gz
+[2023-05-29 21:36:29] INFO root fetch - processPackages [django-virtual-models]: executing diffoscope
+[2023-05-29 21:36:29] INFO root fetch - processPackages [django-virtual-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-virtual-models-0.1.4.tar.gz tmp/django-virtual-models-0.1.5.tar.gz --markdown 20230529/d/django-virtual-models/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 21:36:30] INFO root fetch - main [MainThread]: End processing [django-virtual-models]: success
+[2023-05-29 21:36:30] INFO root fetch - main [MainThread]: Store serial: [18293600]
