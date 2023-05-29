@@ -6240,3 +6240,54 @@
 [2023-05-29 09:49:20] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-05-29 09:50:12] INFO root fetch - main [MainThread]: End processing [Apycula]: success
 [2023-05-29 09:50:12] INFO root fetch - main [MainThread]: Store serial: [18287345]
+[2023-05-29 09:55:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287345]
+[2023-05-29 09:55:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aspectify
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiosumma
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly-cpu
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: liuzh594Crypto
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-vault
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: movies-download
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: psdm-analysis
+[2023-05-29 09:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytamaro
+[2023-05-29 09:55:38] WARNING root fetch - processPackages [aspectify]: Skipping, unable to determine old version
+[2023-05-29 09:55:38] INFO root fetch - main [MainThread]: End processing [aspectify] error
+[2023-05-29 09:55:38] INFO root fetch - processPackages [aiosumma]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [pytamaro]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [liuzh594Crypto]: New version: [5.9.4.999.1] Old Version: [5.9.4.999]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [movies-download]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [vector-vault]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [psdm-analysis]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230529] Old Version: [2.14.0.dev20230528]
+[2023-05-29 09:55:38] INFO root fetch - processPackages [movies-download]: Downloading https://files.pythonhosted.org/packages/85/74/dc2099b974eabfd7c108715973f56edec150dcda76885f0f5a43da600995/movies-download-0.0.1.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [pytamaro]: Downloading https://files.pythonhosted.org/packages/0e/7e/607de44a5c4e99e201f17873a312df579c0ad564a33a8149d6c745d4e06e/pytamaro-0.4.1.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [liuzh594Crypto]: Downloading https://files.pythonhosted.org/packages/e6/fa/6f795378e3d0af58da06320e8994fba3efcfa47fab0d8db2b5e324bc8fb8/liuzh594Crypto-5.9.4.999.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [psdm-analysis]: Downloading https://files.pythonhosted.org/packages/70/c6/2f91bd87ff53b7bdebc059157dcfb9199e5f92faa1d61b239da71e801922/psdm-analysis-0.1.3.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/8b/ee/36b16ed447c3b38c6852ba5ded0eb13a75499a46a5369d83615c27433c4e/vector_vault-1.4.0.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [aiosumma]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [aiosumma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosumma-2.9.8-py3-none-any.whl.zip tmp/aiosumma-2.9.9-py3-none-any.whl.zip --markdown 20230529/a/aiosumma/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-29 09:55:38] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.3.0.tar.gz tmp/vector_vault-1.4.0.tar.gz --markdown 20230529/v/vector-vault/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-05-29 09:55:38] INFO root fetch - processPackages [movies-download]: Downloading https://files.pythonhosted.org/packages/c5/51/85b638e512eab094b6786983d0eb1532f2e986c49ac95a69214236efacbf/movies-download-0.0.2.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [liuzh594Crypto]: Downloading https://files.pythonhosted.org/packages/2b/54/d0a7df33e049d88a1b65879fa07f3f72bb2f72ac3e4898ed2bb5f0c96763/liuzh594Crypto-5.9.4.999.1.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/f0/e1/1269bb5d93f8a5cb8a39bca0263589187b3b10511194c3ebe87dc5c4f96d/tf_nightly_cpu-2.14.0.dev20230529-cp39-cp39-win_amd64.whl
+[2023-05-29 09:55:38] INFO root fetch - processPackages [pytamaro]: Downloading https://files.pythonhosted.org/packages/3a/37/2aeb445f15ef5e3806839df6addf26a6333ead4293da99f83cd90aba3d4c/pytamaro-0.5.0.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [movies-download]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [movies-download]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movies-download-0.0.1.tar.gz tmp/movies-download-0.0.2.tar.gz --markdown 20230529/m/movies-download/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 09:55:38] INFO root fetch - processPackages [psdm-analysis]: Downloading https://files.pythonhosted.org/packages/bd/09/2beae536a0b4a924fb6c5124bc3754aa79e1cc7f90ab61cb59fb5eb96505/psdm-analysis-0.1.4.tar.gz
+[2023-05-29 09:55:38] INFO root fetch - processPackages [pytamaro]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [pytamaro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytamaro-0.4.1.tar.gz tmp/pytamaro-0.5.0.tar.gz --markdown 20230529/p/pytamaro/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-29 09:55:38] INFO root fetch - processPackages [liuzh594Crypto]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [liuzh594Crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liuzh594Crypto-5.9.4.999.tar.gz tmp/liuzh594Crypto-5.9.4.999.1.tar.gz --markdown 20230529/l/liuzh594Crypto/5.9.4.999-5.9.4.999.1/diff.md --exclude *.pyd
+[2023-05-29 09:55:38] INFO root fetch - processPackages [psdm-analysis]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [psdm-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psdm-analysis-0.1.3.tar.gz tmp/psdm-analysis-0.1.4.tar.gz --markdown 20230529/p/psdm-analysis/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 09:55:38] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-05-29 09:55:38] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.14.0.dev20230528-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.14.0.dev20230529-cp39-cp39-win_amd64.whl.zip --markdown 20230529/t/tf-nightly-cpu/2.14.0.dev20230528-2.14.0.dev20230529/diff.md --exclude *.pyd
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [movies-download]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [aiosumma]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [pytamaro]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [psdm-analysis]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [liuzh594Crypto]: success
+[2023-05-29 09:55:40] INFO root fetch - main [MainThread]: Store serial: [18287374]
