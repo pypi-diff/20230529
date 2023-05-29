@@ -5528,3 +5528,81 @@
 [2023-05-29 08:39:39] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2023-05-29 08:39:59] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-29 08:39:59] INFO root fetch - main [MainThread]: Store serial: [18286847]
+[2023-05-29 08:45:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286847]
+[2023-05-29 08:45:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: readarr-py
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apollo-sdk
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prowlarr-py
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: je-mail-thunder
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: valphi
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lidarr-py
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ths-quant
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: radarr-py
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pandas
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: macrometa-target-snowflake
+[2023-05-29 08:45:08] INFO root fetch - processPackages [prowlarr-py]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [apollo-sdk]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [readarr-py]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ths-quant]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [je-mail-thunder]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [macrometa-target-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [valphi]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [lidarr-py]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [radarr-py]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [pandas]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-29 08:45:08] INFO root fetch - processPackages [macrometa-target-snowflake]: executing diffoscope
+[2023-05-29 08:45:08] INFO root fetch - processPackages [macrometa-target-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-snowflake-0.0.8.tar.gz tmp/macrometa-target-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-target-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:45:08] INFO root fetch - processPackages [pandas]: Downloading https://files.pythonhosted.org/packages/6c/e0/73987b6ecc7246e02ab557240843f93fd5adf45d1355abb458aa1f2a0932/pandas-2.0.1.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ths-quant]: Downloading https://files.pythonhosted.org/packages/13/44/cc038dd9724b0435ccc4a5453618da2b7a71520b37d6cf98e32081d90cd3/ths-quant-0.1.3.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [readarr-py]: Downloading https://files.pythonhosted.org/packages/06/01/f48c0322527d7aef9ffb83421e848cbcf1af6aee39fec0af1cbdff6b26f9/readarr-py-0.2.2.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [prowlarr-py]: Downloading https://files.pythonhosted.org/packages/66/ba/f381fde90e94effd65dc690e868fa6f3b9ed8092fffcbc01c0ab9412e416/prowlarr-py-0.3.2.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [radarr-py]: Downloading https://files.pythonhosted.org/packages/a5/b5/e992998d5373b8e9791e90126593299ecfe9403d15e8004e62fcb5382249/radarr-py-0.2.2.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [je-mail-thunder]: Downloading https://files.pythonhosted.org/packages/00/f5/1fddea644fa72ad7caf4c3541fd95402c82966b9bf3cee33a9664308ae54/je_mail_thunder-0.0.8.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [lidarr-py]: Downloading https://files.pythonhosted.org/packages/b9/35/05a42e68bb7e8401963041df1b7ff24137c5dc7f01541cab2f33c8f03121/lidarr-py-0.2.2.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [apollo-sdk]: Downloading https://files.pythonhosted.org/packages/fd/d2/517e0a28cfee331dfeb2186a60d78caa9a23975ba34a4cc073ee80806e9a/apollo-sdk-0.2.9.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ths-quant]: executing diffoscope
+[2023-05-29 08:45:08] INFO root fetch - processPackages [ths-quant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ths-quant-0.1.2.tar.gz tmp/ths-quant-0.1.3.tar.gz --markdown 20230529/t/ths-quant/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 08:45:08] INFO root fetch - processPackages [valphi]: Downloading https://files.pythonhosted.org/packages/37/3a/2b1fe8db095137c0dbb97fc3a27f29b55cb28f6ed5b59967d991a04c834f/valphi-0.4.1.tar.gz
+[2023-05-29 08:45:08] INFO root fetch - processPackages [apollo-sdk]: executing diffoscope
+[2023-05-29 08:45:08] INFO root fetch - processPackages [apollo-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apollo-sdk-0.2.8.tar.gz tmp/apollo-sdk-0.2.9.tar.gz --markdown 20230529/a/apollo-sdk/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 08:45:08] INFO root fetch - processPackages [valphi]: executing diffoscope
+[2023-05-29 08:45:08] INFO root fetch - processPackages [valphi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valphi-0.4.0.tar.gz tmp/valphi-0.4.1.tar.gz --markdown 20230529/v/valphi/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-29 08:45:08] INFO root fetch - processPackages [radarr-py]: Downloading https://files.pythonhosted.org/packages/b2/cb/3372973800b858ab2e03e2923ca2df0590c07e18c791d6e868cd3d70d864/radarr-py-0.3.0.tar.gz
+[2023-05-29 08:45:09] INFO root fetch - processPackages [readarr-py]: Downloading https://files.pythonhosted.org/packages/e6/cf/9c89cb9ade0e0447b4a09cd41a98dd7f66a499ae0c96fecabdccccd08518/readarr-py-0.3.0.tar.gz
+[2023-05-29 08:45:09] INFO root fetch - processPackages [prowlarr-py]: Downloading https://files.pythonhosted.org/packages/60/10/8028bbec07fd889d85b1318546ba2f48ef63fc0d8652c8ffddc4ef3f153c/prowlarr-py-0.4.0.tar.gz
+[2023-05-29 08:45:09] INFO root fetch - processPackages [lidarr-py]: Downloading https://files.pythonhosted.org/packages/d2/d7/15c68a271c04f334332563013bb4b16bc1a2e0b4f006155f01821a291ecd/lidarr-py-0.3.0.tar.gz
+[2023-05-29 08:45:09] INFO root fetch - processPackages [je-mail-thunder]: Downloading https://files.pythonhosted.org/packages/0e/52/72dbb2396dffc495c2d329b371da485bd85f60db90b846ea3b2ad2944f73/je_mail_thunder-0.0.9.tar.gz
+[2023-05-29 08:45:09] INFO root fetch - processPackages [pandas]: Downloading https://files.pythonhosted.org/packages/56/60/59fdaf1d0ac5c3314f755562238a38f6f2ee64dfffb3182ee1e29abc7466/pandas-2.0.2-cp39-cp39-win_amd64.whl
+[2023-05-29 08:45:09] INFO root fetch - processPackages [readarr-py]: executing diffoscope
+[2023-05-29 08:45:09] INFO root fetch - processPackages [readarr-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readarr-py-0.2.2.tar.gz tmp/readarr-py-0.3.0.tar.gz --markdown 20230529/r/readarr-py/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 08:45:09] INFO root fetch - processPackages [prowlarr-py]: executing diffoscope
+[2023-05-29 08:45:09] INFO root fetch - processPackages [prowlarr-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prowlarr-py-0.3.2.tar.gz tmp/prowlarr-py-0.4.0.tar.gz --markdown 20230529/p/prowlarr-py/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 08:45:09] INFO root fetch - processPackages [lidarr-py]: executing diffoscope
+[2023-05-29 08:45:09] INFO root fetch - processPackages [radarr-py]: executing diffoscope
+[2023-05-29 08:45:09] INFO root fetch - processPackages [lidarr-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lidarr-py-0.2.2.tar.gz tmp/lidarr-py-0.3.0.tar.gz --markdown 20230529/l/lidarr-py/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 08:45:09] INFO root fetch - processPackages [radarr-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radarr-py-0.2.2.tar.gz tmp/radarr-py-0.3.0.tar.gz --markdown 20230529/r/radarr-py/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 08:45:09] INFO root fetch - processPackages [je-mail-thunder]: executing diffoscope
+[2023-05-29 08:45:09] INFO root fetch - processPackages [je-mail-thunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_mail_thunder-0.0.8.tar.gz tmp/je_mail_thunder-0.0.9.tar.gz --markdown 20230529/j/je-mail-thunder/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:45:09] WARNING root fetch - processPackages [pandas]: Skipping package: exceeds size limit 10749594>=10485760
+[2023-05-29 08:45:09] INFO root fetch - processPackages [pandas]: Start processing: AoiPy
+[2023-05-29 08:45:09] INFO root fetch - main [MainThread]: End processing [pandas] error
+[2023-05-29 08:45:09] INFO root fetch - processPackages [AoiPy]: New version: [0.9.18] Old Version: [0.9.17]
+[2023-05-29 08:45:09] INFO root fetch - processPackages [AoiPy]: executing diffoscope
+[2023-05-29 08:45:09] INFO root fetch - processPackages [AoiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoiPy-0.9.17-py3-none-any.whl.zip tmp/AoiPy-0.9.18-py3-none-any.whl.zip --markdown 20230529/A/AoiPy/0.9.17-0.9.18/diff.md --exclude *.pyd
+[2023-05-29 08:45:10] INFO root fetch - processPackages [ths-quant]: Start processing: yt-fts
+[2023-05-29 08:45:10] INFO root fetch - main [MainThread]: End processing [ths-quant]: success
+[2023-05-29 08:45:10] INFO root fetch - processPackages [yt-fts]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-29 08:45:10] INFO root fetch - main [MainThread]: End processing [macrometa-target-snowflake]: success
+[2023-05-29 08:45:10] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/7a/9f/cbd294ca88a12436a881a7ba53f9fb1684ecda088821785d2f51b094995f/yt-fts-0.1.7.tar.gz
+[2023-05-29 08:45:10] INFO root fetch - main [MainThread]: End processing [valphi]: success
+[2023-05-29 08:45:10] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-29 08:45:10] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.6.tar.gz tmp/yt-fts-0.1.7.tar.gz --markdown 20230529/y/yt-fts/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 08:45:10] INFO root fetch - main [MainThread]: End processing [je-mail-thunder]: success
+[2023-05-29 08:45:10] INFO root fetch - main [MainThread]: End processing [AoiPy]: success
+[2023-05-29 08:45:10] INFO root fetch - main [MainThread]: End processing [apollo-sdk]: success
+[2023-05-29 08:45:11] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-29 08:45:12] INFO root fetch - main [MainThread]: End processing [radarr-py]: success
+[2023-05-29 08:45:13] INFO root fetch - main [MainThread]: End processing [prowlarr-py]: success
+[2023-05-29 08:45:14] INFO root fetch - main [MainThread]: End processing [lidarr-py]: success
+[2023-05-29 08:45:16] INFO root fetch - main [MainThread]: End processing [readarr-py]: success
+[2023-05-29 08:45:16] INFO root fetch - main [MainThread]: Store serial: [18286912]
