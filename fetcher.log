@@ -14712,3 +14712,55 @@ EOFError: EOF read where object expected
 [2023-05-29 19:44:08] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
 [2023-05-29 19:44:08] INFO root fetch - main [MainThread]: End processing [pyasic]: success
 [2023-05-29 19:44:08] INFO root fetch - main [MainThread]: Store serial: [18292425]
+[2023-05-29 19:49:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292425]
+[2023-05-29 19:49:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycalaos
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-websocket-client
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modo-data-science-helpers
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ln-markets
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: E620py
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multitools
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: unihan-db
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gdsfactory
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ln-markets]: New version: [2.0.1] Old Version: [1.0.9]
+[2023-05-29 19:49:17] INFO root fetch - processPackages [pycalaos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 19:49:17] INFO root fetch - processPackages [E620py]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 19:49:17] WARNING root fetch - processPackages [multitools]: Skipping, unable to determine old version
+[2023-05-29 19:49:17] INFO root fetch - main [MainThread]: End processing [multitools] error
+[2023-05-29 19:49:17] INFO root fetch - processPackages [async-websocket-client]: New version: [0.0.0a7] Old Version: [0.0.0a6]
+[2023-05-29 19:49:17] INFO root fetch - processPackages [modo-data-science-helpers]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 19:49:17] INFO root fetch - processPackages [unihan-db]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-05-29 19:49:17] INFO root fetch - processPackages [gdsfactory]: New version: [6.99.0] Old Version: [6.98.2]
+[2023-05-29 19:49:17] INFO root fetch - processPackages [pycalaos]: executing diffoscope
+[2023-05-29 19:49:17] INFO root fetch - processPackages [pycalaos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycalaos-0.0.8.tar.gz tmp/pycalaos-0.0.9.tar.gz --markdown 20230529/p/pycalaos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:49:17] INFO root fetch - processPackages [modo-data-science-helpers]: Downloading https://files.pythonhosted.org/packages/f9/ff/26ffdbcfdb7f286c37756d475847332acb0ce43b5fe47c398db7db3c8fb4/modo_data_science_helpers-0.2.0.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [E620py]: Downloading https://files.pythonhosted.org/packages/78/9c/8bb8d5df4f51527940aa70dd056308f5a190e97eca781b60834d8c953bab/E620py-0.9.0.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [async-websocket-client]: Downloading https://files.pythonhosted.org/packages/3e/db/70ac580bce05e16992c7b85b68afc47a740f8d1255f618883e498e7b3eb0/async_websocket_client-0.0.0a6.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ln-markets]: Downloading https://files.pythonhosted.org/packages/e4/35/fe8cfb0f5fc766f48fa4ef8d8d682fc292a20fbd359a008d3027f0610d36/ln-markets-1.0.9.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [unihan-db]: Downloading https://files.pythonhosted.org/packages/37/e3/6ccb3f51a1f62fac6fd9f931f5ba7841ff9a9ef16c620710bf889544b538/unihan_db-0.7.2.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/7e/ec/2cd39e2ce278d617eac6988e914b8df36d3496205cac9e991937c8cd1fe3/gdsfactory-6.99.0.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [async-websocket-client]: Downloading https://files.pythonhosted.org/packages/5d/6f/0d3b3bb3ace027184aa35bda545990616d43d2514af8bd30c1eeee467ef8/async_websocket_client-0.0.0a7.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [modo-data-science-helpers]: Downloading https://files.pythonhosted.org/packages/be/a4/f530efe4aa41868bcab5c0b1a41d9d3c81f7b74167542c4d47bc26ebf637/modo_data_science_helpers-0.3.0.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [ln-markets]: Downloading https://files.pythonhosted.org/packages/88/95/9e6b17fe7b624c33d8ebd0d42b955f4f58248e76ce28ad485e2cc5b1abca/ln-markets-2.0.1.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [unihan-db]: Downloading https://files.pythonhosted.org/packages/a9/6a/baaefbbad3d0d7ae92e9ba6835d5a53978431e5e35ed02aba25e1c50fef9/unihan_db-0.8.0.tar.gz
+[2023-05-29 19:49:17] INFO root fetch - processPackages [gdsfactory]: executing diffoscope
+[2023-05-29 19:49:17] INFO root fetch - processPackages [gdsfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdsfactory-6.98.2.tar.gz tmp/gdsfactory-6.99.0.tar.gz --markdown 20230529/g/gdsfactory/6.98.2-6.99.0/diff.md --exclude *.pyd
+[2023-05-29 19:49:18] INFO root fetch - processPackages [async-websocket-client]: executing diffoscope
+[2023-05-29 19:49:18] INFO root fetch - processPackages [async-websocket-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_websocket_client-0.0.0a6.tar.gz tmp/async_websocket_client-0.0.0a7.tar.gz --markdown 20230529/a/async-websocket-client/0.0.0a6-0.0.0a7/diff.md --exclude *.pyd
+[2023-05-29 19:49:18] INFO root fetch - processPackages [modo-data-science-helpers]: executing diffoscope
+[2023-05-29 19:49:18] INFO root fetch - processPackages [modo-data-science-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modo_data_science_helpers-0.2.0.tar.gz tmp/modo_data_science_helpers-0.3.0.tar.gz --markdown 20230529/m/modo-data-science-helpers/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 19:49:18] INFO root fetch - processPackages [ln-markets]: executing diffoscope
+[2023-05-29 19:49:18] INFO root fetch - processPackages [ln-markets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ln-markets-1.0.9.tar.gz tmp/ln-markets-2.0.1.tar.gz --markdown 20230529/l/ln-markets/1.0.9-2.0.1/diff.md --exclude *.pyd
+[2023-05-29 19:49:18] INFO root fetch - processPackages [unihan-db]: executing diffoscope
+[2023-05-29 19:49:18] INFO root fetch - processPackages [unihan-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unihan_db-0.7.2.tar.gz tmp/unihan_db-0.8.0.tar.gz --markdown 20230529/u/unihan-db/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2023-05-29 19:49:18] INFO root fetch - processPackages [E620py]: Downloading https://files.pythonhosted.org/packages/28/f5/dac01290962daefd535b53d1592650b7614c03ca62f8334ef9670784eadb/E620py-0.9.1.tar.gz
+[2023-05-29 19:49:18] INFO root fetch - processPackages [E620py]: executing diffoscope
+[2023-05-29 19:49:18] INFO root fetch - processPackages [E620py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/E620py-0.9.0.tar.gz tmp/E620py-0.9.1.tar.gz --markdown 20230529/E/E620py/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 19:49:18] INFO root fetch - main [MainThread]: End processing [pycalaos]: success
+[2023-05-29 19:49:19] INFO root fetch - main [MainThread]: End processing [async-websocket-client]: success
+[2023-05-29 19:49:19] INFO root fetch - main [MainThread]: End processing [ln-markets]: success
+[2023-05-29 19:49:19] INFO root fetch - main [MainThread]: End processing [unihan-db]: success
+[2023-05-29 19:49:19] INFO root fetch - main [MainThread]: End processing [modo-data-science-helpers]: success
+[2023-05-29 19:49:19] INFO root fetch - main [MainThread]: End processing [E620py]: success
+[2023-05-29 19:49:25] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
+[2023-05-29 19:49:25] INFO root fetch - main [MainThread]: Store serial: [18292451]
