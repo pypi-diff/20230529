@@ -4379,3 +4379,54 @@
 [2023-05-29 06:03:19] INFO root fetch - main [MainThread]: End processing [aws-sso-magic]: success
 [2023-05-29 06:03:19] INFO root fetch - main [MainThread]: End processing [rgmining-rsd]: success
 [2023-05-29 06:03:19] INFO root fetch - main [MainThread]: Store serial: [18286211]
+[2023-05-29 06:08:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286211]
+[2023-05-29 06:08:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymino
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parsetypes
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langchain-serve
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drillvision
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ChatLLM
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: magic-class
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: actionsMCP
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: macrometa-source-snowflake
+[2023-05-29 06:08:27] INFO root fetch - processPackages [pymino]: New version: [1.1.8.5] Old Version: [1.1.8.4]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.9.dev9] Old Version: [0.0.9.dev22]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [parsetypes]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [actionsMCP]: New version: [1.3] Old Version: [1.2]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [drillvision]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-29 06:08:27] INFO root fetch - processPackages [magic-class]: New version: [0.7.1] Old Version: [0.7.0rc1]
+[2023-05-29 06:08:28] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [actionsMCP]: Downloading https://files.pythonhosted.org/packages/18/45/15e6c493f11ea0422a6ba5325914b0d4f99fef4ec0cd94f00652e9975cd1/actionsMCP-1.2-py3-none-any.whl
+[2023-05-29 06:08:28] INFO root fetch - processPackages [drillvision]: Downloading https://files.pythonhosted.org/packages/bf/92/5aad61e3d87fcf6c7444a98f1fbe6e43d0b916fda94b5492b8172656b6d2/drillvision-0.0.1.tar.gz
+[2023-05-29 06:08:28] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/42/a6/59d020fbd445bf3f3e6ed7ac098c37be93892aa9e2c9187e570045f0cd0f/parsetypes-0.2.5.tar.gz
+[2023-05-29 06:08:28] INFO root fetch - processPackages [magic-class]: Downloading https://files.pythonhosted.org/packages/19/b0/00e152b78b5813472befefc9b077e1eed4fdcc29ff08616d804be33f8de3/magic_class-0.7.0rc1.tar.gz
+[2023-05-29 06:08:28] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.9.dev22.tar.gz tmp/langchain-serve-0.0.9.dev9.tar.gz --markdown 20230529/l/langchain-serve/0.0.9.dev22-0.0.9.dev9/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [pymino]: Downloading https://files.pythonhosted.org/packages/b6/8e/fec00a2e87ca9d126baf1c29188baaaa871cdbb23f7e45ced45a69c89c01/pymino-1.1.8.5.tar.gz
+[2023-05-29 06:08:28] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.2.4.tar.gz tmp/parsetypes-0.2.5.tar.gz --markdown 20230529/p/parsetypes/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230529/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [pymino]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [pymino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymino-1.1.8.4.tar.gz tmp/pymino-1.1.8.5.tar.gz --markdown 20230529/p/pymino/1.1.8.4-1.1.8.5/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [actionsMCP]: Downloading https://files.pythonhosted.org/packages/ba/b7/1b75b26656fdad9972f8a178085d0a01586f2bd6f0480ab7daa51fa5dc46/actionsMCP-1.3-py3-none-any.whl
+[2023-05-29 06:08:28] INFO root fetch - processPackages [magic-class]: Downloading https://files.pythonhosted.org/packages/e0/06/f9bab6cac1cb3174494a1a0afa2b6a4271ed9720460af8e3a04f7eb6e5e7/magic_class-0.7.1.tar.gz
+[2023-05-29 06:08:28] INFO root fetch - processPackages [drillvision]: Downloading https://files.pythonhosted.org/packages/2b/42/93fcc780272d4abd77dec3109357b562e7a40a80e3d77f454d6be7658872/drillvision-0.0.2.tar.gz
+[2023-05-29 06:08:28] INFO root fetch - processPackages [actionsMCP]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [actionsMCP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/actionsMCP-1.2-py3-none-any.whl.zip tmp/actionsMCP-1.3-py3-none-any.whl.zip --markdown 20230529/a/actionsMCP/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [magic-class]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [magic-class]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_class-0.7.0rc1.tar.gz tmp/magic_class-0.7.1.tar.gz --markdown 20230529/m/magic-class/0.7.0rc1-0.7.1/diff.md --exclude *.pyd
+[2023-05-29 06:08:28] INFO root fetch - processPackages [drillvision]: executing diffoscope
+[2023-05-29 06:08:28] INFO root fetch - processPackages [drillvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drillvision-0.0.1.tar.gz tmp/drillvision-0.0.2.tar.gz --markdown 20230529/d/drillvision/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 06:08:29] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-05-29 06:08:29] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-29 06:08:30] INFO root fetch - main [MainThread]: End processing [drillvision]: success
+[2023-05-29 06:08:30] INFO root fetch - main [MainThread]: End processing [pymino]: success
+[2023-05-29 06:08:30] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-29 06:08:31] INFO root fetch - main [MainThread]: End processing [magic-class]: success
+[2023-05-29 06:08:31] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-29 06:08:36] INFO root fetch - main [MainThread]: End processing [actionsMCP]: success
+[2023-05-29 06:08:36] INFO root fetch - main [MainThread]: Store serial: [18286234]
