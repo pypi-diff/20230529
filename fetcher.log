@@ -896,3 +896,73 @@
 [2023-05-29 02:02:58] INFO root fetch - main [MainThread]: End processing [captif-cpx-config]: success
 [2023-05-29 02:02:58] INFO root fetch - main [MainThread]: End processing [aij]: success
 [2023-05-29 02:02:58] INFO root fetch - main [MainThread]: Store serial: [18284245]
+[2023-05-29 02:08:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284245]
+[2023-05-29 02:08:07] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fetch-features
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchdatasets-nightly
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pankmer
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torrentp
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-nightly
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rsbox
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aij
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jaxkern-nightly
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jaxutils-nightly
+[2023-05-29 02:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchlayers-nightly
+[2023-05-29 02:08:07] INFO root fetch - processPackages [pankmer]: New version: [0.9.0] Old Version: [0.12.1]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [fetch-features]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torrentp]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [aij]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [rsbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230528] Old Version: [0.0.8.dev20230527]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1685232197] Old Version: [1685145799]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1685232483] Old Version: [1685146029]
+[2023-05-29 02:08:07] INFO root fetch - processPackages [pankmer]: Downloading https://files.pythonhosted.org/packages/f8/66/a13ca33a42d9d0a986353d9257d2f7d6a5be5a555d70929cb31549811a5e/pankmer-0.12.1.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torrentp]: Downloading https://files.pythonhosted.org/packages/28/49/a496e8d1e1930cc5febbaa770344ad00cce26d6d1195e07d472072c98bc4/torrentp-0.1.5.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230529/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-29 02:08:07] INFO root fetch - processPackages [rsbox]: Downloading https://files.pythonhosted.org/packages/95/c7/4004dd8fe057d317ea346c71cedabba511da39bfba2a73311d4ddf8cb486/rsbox-0.0.8.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230529/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-29 02:08:07] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/94/d8/2a4e1f29bafeff06f51f7116b9ce3b5866f30f57ecac06a03810e6f4c122/aij-1.2.2.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/31/64/ddf8c0c73e53e6c9d43d05a70ec8c6e4bc81a0de1535ad42a598eb894a33/torchdatasets-nightly-1685232197.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/ea/92/0c3a2c2a0dbd9d1ca2dab4d701e3fa63f2bcbeb037d9c7319a77a71e3113/jaxutils-nightly-0.0.8.dev20230528.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [fetch-features]: Downloading https://files.pythonhosted.org/packages/d4/62/f5448dba244a3338535d585f71a92cf8404bc719f2d26f84410a35f7df2a/fetch_features-0.2.3.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [pankmer]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [pankmer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pankmer-0.12.1.tar.gz tmp/pankmer-0.9.0.tar.gz --markdown 20230529/p/pankmer/0.12.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/6e/bd/bf3ac811da132a623e371625b06b62232ee6e5d64f6a0b63fb61fccd9cdb/torchlayers-nightly-1685232483.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1685145799.tar.gz tmp/torchdatasets-nightly-1685232197.tar.gz --markdown 20230529/t/torchdatasets-nightly/1685145799-1685232197/diff.md --exclude *.pyd
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [rsbox]: Downloading https://files.pythonhosted.org/packages/14/72/60f4d32043d01f8d199e75fa13ddd6886cbb4c607974d70f60d4d13b2aeb/rsbox-0.0.9.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230527.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230528.tar.gz --markdown 20230529/j/jaxutils-nightly/0.0.8.dev20230527-0.0.8.dev20230528/diff.md --exclude *.pyd
+[2023-05-29 02:08:07] INFO root fetch - processPackages [fetch-features]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [fetch-features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetch_features-0.2.2.tar.gz tmp/fetch_features-0.2.3.tar.gz --markdown 20230529/f/fetch-features/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torrentp]: Downloading https://files.pythonhosted.org/packages/33/0a/50f52084272cd1e0d57f670a8ae89ba67ef63f318e3272c51fefed5f7219/torrentp-0.1.6.tar.gz
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-29 02:08:07] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1685146029.tar.gz tmp/torchlayers-nightly-1685232483.tar.gz --markdown 20230529/t/torchlayers-nightly/1685146029-1685232483/diff.md --exclude *.pyd
+[2023-05-29 02:08:08] INFO root fetch - processPackages [rsbox]: executing diffoscope
+[2023-05-29 02:08:08] INFO root fetch - processPackages [rsbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsbox-0.0.8.tar.gz tmp/rsbox-0.0.9.tar.gz --markdown 20230529/r/rsbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 02:08:08] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/aa/f4/cc0d47c84a2b20757851ea82ddfe16265d7448d0891270198dfae3ed85b0/aij-1.2.3.tar.gz
+[2023-05-29 02:08:08] INFO root fetch - processPackages [torrentp]: executing diffoscope
+[2023-05-29 02:08:08] INFO root fetch - processPackages [torrentp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrentp-0.1.5.tar.gz tmp/torrentp-0.1.6.tar.gz --markdown 20230529/t/torrentp/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 02:08:08] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-29 02:08:08] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.2.2.tar.gz tmp/aij-1.2.3.tar.gz --markdown 20230529/a/aij/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-29 02:08:08] INFO root fetch - processPackages [jaxkern-nightly]: Start processing: aij
+[2023-05-29 02:08:08] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-29 02:08:08] INFO root fetch - processPackages [aij]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-29 02:08:09] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/c9/ea/5c11aa07e668b2a23d105f614482ff7a3a10787f6f2348c630517dacf289/aij-1.2.4.tar.gz
+[2023-05-29 02:08:09] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-29 02:08:09] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.2.3.tar.gz tmp/aij-1.2.4.tar.gz --markdown 20230529/a/aij/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [pankmer]: success
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [rsbox]: success
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [torrentp]: success
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [fetch-features]: success
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-29 02:08:09] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-29 02:08:10] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-29 02:08:10] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-29 02:08:20] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-29 02:08:20] INFO root fetch - main [MainThread]: Store serial: [18284278]
