@@ -6046,3 +6046,68 @@
 [2023-05-29 09:28:22] INFO root fetch - main [MainThread]: End processing [nutree]: success
 [2023-05-29 09:28:22] INFO root fetch - main [MainThread]: End processing [pretix-servicefees]: success
 [2023-05-29 09:28:22] INFO root fetch - main [MainThread]: Store serial: [18287212]
+[2023-05-29 09:33:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287212]
+[2023-05-29 09:33:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhalo
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gascompressibility
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libmata
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gascompressibility
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gascompressibility
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reviewcheck
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pretix-saferpay
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: smartchart
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flare-parser
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ChatLLM
+[2023-05-29 09:33:31] INFO root fetch - processPackages [libmata]: New version: [0.62.0] Old Version: [0.61.0]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pyhalo]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [smartchart]: New version: [6.6.2] Old Version: [6.6.1]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [reviewcheck]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-29 09:33:31] WARNING root fetch - processPackages [flare-parser]: Skipping, unable to determine old version
+[2023-05-29 09:33:31] INFO root fetch - main [MainThread]: End processing [flare-parser] error
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pretix-saferpay]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-29 09:33:31] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230529/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pyhalo]: Downloading https://files.pythonhosted.org/packages/2d/44/1a909638b25500e020b58312be035857fd1f010322a3e5cfdd3331cf6869/pyhalo-0.2.3.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pretix-saferpay]: Downloading https://files.pythonhosted.org/packages/a0/c9/6156b157a0a404b47e7ba01c74458417b37b20c9b5e631521ede64260d7e/pretix-saferpay-1.4.0.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [libmata]: Downloading https://files.pythonhosted.org/packages/f8/5c/4a8fc8dcd16157e84ee4df9eed7779008dbb5974c16db1f4a7cef89a36f7/libmata-0.62.0.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [reviewcheck]: Downloading https://files.pythonhosted.org/packages/db/f2/6fe9baabecec6fe3a9491ba58dc117a85137af4f96776e0c63065fcfc14c/reviewcheck-0.5.1.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: Downloading https://files.pythonhosted.org/packages/d8/69/5c9add222853dcf8fb39ef07bc32a8efbd697c74945bbf5a92fc1e880380/gascompressibility-0.0.2.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: Downloading https://files.pythonhosted.org/packages/d8/69/5c9add222853dcf8fb39ef07bc32a8efbd697c74945bbf5a92fc1e880380/gascompressibility-0.0.2.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: Downloading https://files.pythonhosted.org/packages/d8/69/5c9add222853dcf8fb39ef07bc32a8efbd697c74945bbf5a92fc1e880380/gascompressibility-0.0.2.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [libmata]: executing diffoscope
+[2023-05-29 09:33:31] INFO root fetch - processPackages [libmata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libmata-0.61.0.tar.gz tmp/libmata-0.62.0.tar.gz --markdown 20230529/l/libmata/0.61.0-0.62.0/diff.md --exclude *.pyd
+[2023-05-29 09:33:31] INFO root fetch - processPackages [smartchart]: Downloading https://files.pythonhosted.org/packages/cf/37/36092cbf12af3a791348235229a0e104a870775798bd761b6a1cc690f381/smartchart-6.6.2.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pretix-saferpay]: Downloading https://files.pythonhosted.org/packages/16/d5/eabc5670904066d62a37e626b5b1f393de509efa6ba8ed9720bdcee2958b/pretix-saferpay-1.4.1.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pyhalo]: Downloading https://files.pythonhosted.org/packages/53/eb/26419f2042850616bbc34c68c2a4af559806812d196b3a5223f2f8a4dd44/pyhalo-0.2.4.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [reviewcheck]: Downloading https://files.pythonhosted.org/packages/f6/70/9889c4505a5e719051f19e70882e29c523b5c105192de2a0d17704f6f937/reviewcheck-0.6.0.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: Downloading https://files.pythonhosted.org/packages/28/7b/40a428dbc33c78fc83c9c4310c3626950c1c892b7e3f8acea90b6475459f/gascompressibility-0.0.3.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: Downloading https://files.pythonhosted.org/packages/28/7b/40a428dbc33c78fc83c9c4310c3626950c1c892b7e3f8acea90b6475459f/gascompressibility-0.0.3.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [gascompressibility]: Downloading https://files.pythonhosted.org/packages/28/7b/40a428dbc33c78fc83c9c4310c3626950c1c892b7e3f8acea90b6475459f/gascompressibility-0.0.3.tar.gz
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pretix-saferpay]: executing diffoscope
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pretix-saferpay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-saferpay-1.4.0.tar.gz tmp/pretix-saferpay-1.4.1.tar.gz --markdown 20230529/p/pretix-saferpay/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pyhalo]: executing diffoscope
+[2023-05-29 09:33:31] INFO root fetch - processPackages [pyhalo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhalo-0.2.3.tar.gz tmp/pyhalo-0.2.4.tar.gz --markdown 20230529/p/pyhalo/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-29 09:33:32] INFO root fetch - processPackages [smartchart]: executing diffoscope
+[2023-05-29 09:33:32] INFO root fetch - processPackages [smartchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartchart-6.6.1.tar.gz tmp/smartchart-6.6.2.tar.gz --markdown 20230529/s/smartchart/6.6.1-6.6.2/diff.md --exclude *.pyd
+[2023-05-29 09:33:32] INFO root fetch - processPackages [gascompressibility]: executing diffoscope
+[2023-05-29 09:33:32] INFO root fetch - processPackages [gascompressibility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gascompressibility-0.0.2.tar.gz tmp/gascompressibility-0.0.3.tar.gz --markdown 20230529/g/gascompressibility/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 09:33:32] INFO root fetch - processPackages [gascompressibility]: executing diffoscope
+[2023-05-29 09:33:32] INFO root fetch - processPackages [gascompressibility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gascompressibility-0.0.2.tar.gz tmp/gascompressibility-0.0.3.tar.gz --markdown 20230529/g/gascompressibility/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 09:33:32] INFO root fetch - processPackages [reviewcheck]: executing diffoscope
+[2023-05-29 09:33:32] INFO root fetch - processPackages [gascompressibility]: executing diffoscope
+[2023-05-29 09:33:32] INFO root fetch - processPackages [reviewcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reviewcheck-0.5.1.tar.gz tmp/reviewcheck-0.6.0.tar.gz --markdown 20230529/r/reviewcheck/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-29 09:33:32] INFO root fetch - processPackages [gascompressibility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gascompressibility-0.0.2.tar.gz tmp/gascompressibility-0.0.3.tar.gz --markdown 20230529/g/gascompressibility/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 09:33:33] INFO root fetch - main [MainThread]: End processing [gascompressibility]: success
+[2023-05-29 09:33:33] INFO root fetch - main [MainThread]: End processing [gascompressibility]: success
+[2023-05-29 09:33:33] INFO root fetch - main [MainThread]: End processing [gascompressibility]: success
+[2023-05-29 09:33:33] INFO root fetch - main [MainThread]: End processing [reviewcheck]: success
+[2023-05-29 09:33:33] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-29 09:33:34] INFO root fetch - main [MainThread]: End processing [pretix-saferpay]: success
+[2023-05-29 09:33:35] INFO root fetch - main [MainThread]: End processing [pyhalo]: success
+[2023-05-29 09:33:37] INFO root fetch - main [MainThread]: End processing [smartchart]: success
+[2023-05-29 09:33:37] INFO root fetch - main [MainThread]: End processing [libmata]: success
+[2023-05-29 09:33:37] INFO root fetch - main [MainThread]: Store serial: [18287247]
