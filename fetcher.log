@@ -5294,3 +5294,61 @@
 [2023-05-29 08:17:55] INFO root fetch - main [MainThread]: End processing [audiotoolbox]: success
 [2023-05-29 08:17:55] INFO root fetch - main [MainThread]: End processing [pingdatautil]: success
 [2023-05-29 08:17:55] INFO root fetch - main [MainThread]: Store serial: [18286697]
+[2023-05-29 08:22:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286697]
+[2023-05-29 08:23:04] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 08:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foliolib
+[2023-05-29 08:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monkey.dao.pymongo
+[2023-05-29 08:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pretext
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: types-requests
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-admin-tabler
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AppDemo
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zssfunniest
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: librarytest
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zpptomle
+[2023-05-29 08:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: salesea
+[2023-05-29 08:23:05] INFO root fetch - processPackages [foliolib]: New version: [0.3.6a1] Old Version: [0.3.5a1]
+[2023-05-29 08:23:05] INFO root fetch - processPackages [types-requests]: New version: [2.31.0.1] Old Version: [2.31.0.0]
+[2023-05-29 08:23:05] INFO root fetch - processPackages [pretext]: New version: [1.5.4.dev20230529] Old Version: [1.5.4.dev20230528]
+[2023-05-29 08:23:05] INFO root fetch - processPackages [monkey.dao.pymongo]: New version: [1.0.0.dev5] Old Version: [1.0.0.dev4]
+[2023-05-29 08:23:05] WARNING root fetch - processPackages [zpptomle]: Skipping, unable to determine old version
+[2023-05-29 08:23:05] WARNING root fetch - processPackages [django-admin-tabler]: Skipping, unable to determine old version
+[2023-05-29 08:23:05] INFO root fetch - processPackages [zssfunniest]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 08:23:05] INFO root fetch - processPackages [AppDemo]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 08:23:05] INFO root fetch - processPackages [zpptomle]: Start processing: macrometa-target-snowflake
+[2023-05-29 08:23:05] INFO root fetch - main [MainThread]: End processing [zpptomle] error
+[2023-05-29 08:23:05] WARNING root fetch - processPackages [librarytest]: Skipping, unable to determine old version
+[2023-05-29 08:23:05] INFO root fetch - main [MainThread]: End processing [django-admin-tabler] error
+[2023-05-29 08:23:05] INFO root fetch - processPackages [salesea]: New version: [1.0.27] Old Version: [1.0.26]
+[2023-05-29 08:23:05] INFO root fetch - main [MainThread]: End processing [librarytest] error
+[2023-05-29 08:23:05] INFO root fetch - processPackages [macrometa-target-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:23:05] INFO root fetch - processPackages [macrometa-target-snowflake]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [macrometa-target-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-snowflake-0.0.8.tar.gz tmp/macrometa-target-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-target-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:23:05] INFO root fetch - processPackages [monkey.dao.pymongo]: Downloading https://files.pythonhosted.org/packages/85/e0/dcdd2e849c5870f9dc9a09de4cb25772c11cd10d466ce7c3033e2992c563/monkey.dao.pymongo-1.0.0.dev4.tar.gz
+[2023-05-29 08:23:05] ERROR root fetch - processPackages [salesea]: Unable to fetch info: No such project/version 'salesea' 1.0.26
+[2023-05-29 08:23:05] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-29 08:23:05] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/1d/a3/152f7b3ce2d4c95578c075c489bb86906e9aa0e2e8d65e6be74b97706382/pretext-1.5.4.dev20230529.tar.gz
+[2023-05-29 08:23:05] INFO root fetch - processPackages [AppDemo]: Downloading https://files.pythonhosted.org/packages/a0/5d/5bac6d602a801f58803d531cd63b785c0d507e7a492a48068e465095d1f5/AppDemo-0.0.6-py3-none-any.whl
+[2023-05-29 08:23:05] INFO root fetch - processPackages [zssfunniest]: Downloading https://files.pythonhosted.org/packages/eb/de/1483a8c9afb5ddbf33bb52a6390961415118f67df4d2ed4476b7e5494c61/zssfunniest-0.1.2.tar.gz
+[2023-05-29 08:23:05] INFO root fetch - processPackages [types-requests]: Downloading https://files.pythonhosted.org/packages/20/8e/2f846f4295021703d4f12aebf504dd5e47b7750d104ee0a8fd253f601d02/types-requests-2.31.0.1.tar.gz
+[2023-05-29 08:23:05] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/91/e4/beca8492bd2ed17cbaa20e9ad4a75007799ec85da2668252d014eef0e8c0/foliolib-0.3.6a1.tar.gz
+[2023-05-29 08:23:05] INFO root fetch - processPackages [monkey.dao.pymongo]: Downloading https://files.pythonhosted.org/packages/f8/8a/c540c6dab91933268f7c95b9d7d2dda4e5e300799b2bf5a4a6d404bc773c/monkey.dao.pymongo-1.0.0.dev5.tar.gz
+[2023-05-29 08:23:05] INFO root fetch - processPackages [zssfunniest]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [zssfunniest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zssfunniest-0.1.1.tar.gz tmp/zssfunniest-0.1.2.tar.gz --markdown 20230529/z/zssfunniest/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 08:23:05] INFO root fetch - processPackages [AppDemo]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [AppDemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AppDemo-0.0.5-py3-none-any.whl.zip tmp/AppDemo-0.0.6-py3-none-any.whl.zip --markdown 20230529/A/AppDemo/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 08:23:05] INFO root fetch - processPackages [foliolib]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [foliolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliolib-0.3.5a1.tar.gz tmp/foliolib-0.3.6a1.tar.gz --markdown 20230529/f/foliolib/0.3.5a1-0.3.6a1/diff.md --exclude *.pyd
+[2023-05-29 08:23:05] INFO root fetch - processPackages [types-requests]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [types-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-requests-2.31.0.0.tar.gz tmp/types-requests-2.31.0.1.tar.gz --markdown 20230529/t/types-requests/2.31.0.0-2.31.0.1/diff.md --exclude *.pyd
+[2023-05-29 08:23:05] INFO root fetch - processPackages [monkey.dao.pymongo]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [monkey.dao.pymongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monkey.dao.pymongo-1.0.0.dev4.tar.gz tmp/monkey.dao.pymongo-1.0.0.dev5.tar.gz --markdown 20230529/m/monkey.dao.pymongo/1.0.0.dev4-1.0.0.dev5/diff.md --exclude *.pyd
+[2023-05-29 08:23:05] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-05-29 08:23:05] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.4.dev20230528.tar.gz tmp/pretext-1.5.4.dev20230529.tar.gz --markdown 20230529/p/pretext/1.5.4.dev20230528-1.5.4.dev20230529/diff.md --exclude *.pyd
+[2023-05-29 08:23:06] INFO root fetch - main [MainThread]: End processing [macrometa-target-snowflake]: success
+[2023-05-29 08:23:06] INFO root fetch - main [MainThread]: End processing [zssfunniest]: success
+[2023-05-29 08:23:06] INFO root fetch - main [MainThread]: End processing [AppDemo]: success
+[2023-05-29 08:23:06] INFO root fetch - main [MainThread]: End processing [monkey.dao.pymongo]: success
+[2023-05-29 08:23:07] INFO root fetch - main [MainThread]: End processing [types-requests]: success
+[2023-05-29 08:23:07] INFO root fetch - main [MainThread]: End processing [foliolib]: success
+[2023-05-29 08:23:13] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-05-29 08:23:13] INFO root fetch - main [MainThread]: Store serial: [18286734]
