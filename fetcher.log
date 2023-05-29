@@ -4987,3 +4987,52 @@
 [2023-05-29 07:30:32] INFO root fetch - processPackages [wasm-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasm_exec-0.1.4.tar.gz tmp/wasm_exec-0.1.5.tar.gz --markdown 20230529/w/wasm-exec/0.1.4-0.1.5/diff.md --exclude *.pyd
 [2023-05-29 07:30:34] INFO root fetch - main [MainThread]: End processing [wasm-exec]: success
 [2023-05-29 07:30:34] INFO root fetch - main [MainThread]: Store serial: [18286565]
+[2023-05-29 07:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286565]
+[2023-05-29 07:35:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iocbio.gel
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flowmachine
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datasette-sqlite-hello
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flowclient
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sqlite-hello
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mlqd
+[2023-05-29 07:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flowetl
+[2023-05-29 07:35:42] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [iocbio.gel]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [datasette-sqlite-hello]: New version: [0.1.0a38] Old Version: [0.1.0a37]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [sqlite-hello]: New version: [0.1.0a38] Old Version: [0.1.0a37]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [mlqd]: New version: [1.1.1] Old Version: [1.0.0]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowmachine]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowclient]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowetl]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowmachine]: executing diffoscope
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowmachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmachine-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowmachine-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230529/f/flowmachine/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowclient]: executing diffoscope
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowclient-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowclient-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230529/f/flowclient/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-29 07:35:42] INFO root fetch - processPackages [iocbio.gel]: Downloading https://files.pythonhosted.org/packages/58/36/0f80282e8ad5e7a1cb472cf42386300e81f5008653c00ed33469a91d3349/iocbio.gel-1.0.0.tar.gz
+[2023-05-29 07:35:42] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/4e/cf/d4774475c25c003c608ef2a4205aca382334e52a8ddccc549997442b2e4a/nonebot_plugin_spark_gpt-0.2.8.tar.gz
+[2023-05-29 07:35:42] INFO root fetch - processPackages [datasette-sqlite-hello]: Downloading https://files.pythonhosted.org/packages/0f/f2/fac25c0f6740cd8df0cedf684ff664e2e565e6083281dc300d37593620e3/datasette_sqlite_hello-0.1.0a38-py3-none-any.whl
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowetl]: executing diffoscope
+[2023-05-29 07:35:42] INFO root fetch - processPackages [flowetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowetl-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowetl-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230529/f/flowetl/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-29 07:35:42] INFO root fetch - processPackages [sqlite-hello]: Downloading https://files.pythonhosted.org/packages/5b/c0/fdca97440e83c0cc844d482a11374c3c138afb76430345165235eecd9fef/sqlite_hello-0.1.0a38-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-29 07:35:42] INFO root fetch - processPackages [mlqd]: Downloading https://files.pythonhosted.org/packages/9d/c7/3b74cd50d2cab9b5fcaa0183516304e82833c451f2e3ca8ff20e06571f4f/mlqd-1.0.0.tar.gz
+[2023-05-29 07:35:42] INFO root fetch - processPackages [datasette-sqlite-hello]: executing diffoscope
+[2023-05-29 07:35:42] INFO root fetch - processPackages [datasette-sqlite-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_hello-0.1.0a37-py3-none-any.whl.zip tmp/datasette_sqlite_hello-0.1.0a38-py3-none-any.whl.zip --markdown 20230529/d/datasette-sqlite-hello/0.1.0a37-0.1.0a38/diff.md --exclude *.pyd
+[2023-05-29 07:35:42] INFO root fetch - processPackages [sqlite-hello]: executing diffoscope
+[2023-05-29 07:35:42] INFO root fetch - processPackages [sqlite-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_hello-0.1.0a37-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_hello-0.1.0a38-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230529/s/sqlite-hello/0.1.0a37-0.1.0a38/diff.md --exclude *.pyd
+[2023-05-29 07:35:42] WARNING root fetch - processPackages [nonebot-plugin-spark-gpt]: Skipping package: exceeds size limit 11187848>=10485760
+[2023-05-29 07:35:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt] error
+[2023-05-29 07:35:43] INFO root fetch - processPackages [iocbio.gel]: Downloading https://files.pythonhosted.org/packages/c9/f0/ed659939eb8c09bdfcaa362f7c1c56e37fa52016d8dd9847b1fceb2fbf03/iocbio.gel-1.0.1.tar.gz
+[2023-05-29 07:35:43] INFO root fetch - processPackages [mlqd]: Downloading https://files.pythonhosted.org/packages/20/14/211cf19fb437c64cff12f03fe220d976fd1b0a00c578269f87cbb6d7da4c/mlqd-1.1.1.tar.gz
+[2023-05-29 07:35:43] INFO root fetch - processPackages [mlqd]: executing diffoscope
+[2023-05-29 07:35:43] INFO root fetch - processPackages [mlqd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlqd-1.0.0.tar.gz tmp/mlqd-1.1.1.tar.gz --markdown 20230529/m/mlqd/1.0.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 07:35:43] INFO root fetch - processPackages [iocbio.gel]: executing diffoscope
+[2023-05-29 07:35:43] INFO root fetch - processPackages [iocbio.gel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iocbio.gel-1.0.0.tar.gz tmp/iocbio.gel-1.0.1.tar.gz --markdown 20230529/i/iocbio.gel/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 07:35:44] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-hello]: success
+[2023-05-29 07:35:44] INFO root fetch - main [MainThread]: End processing [flowetl]: success
+[2023-05-29 07:35:44] INFO root fetch - main [MainThread]: End processing [flowclient]: success
+[2023-05-29 07:35:44] INFO root fetch - main [MainThread]: End processing [sqlite-hello]: success
+[2023-05-29 07:35:45] INFO root fetch - main [MainThread]: End processing [flowmachine]: success
+[2023-05-29 07:35:45] INFO root fetch - main [MainThread]: End processing [mlqd]: success
+[2023-05-29 07:35:47] INFO root fetch - main [MainThread]: End processing [iocbio.gel]: success
+[2023-05-29 07:35:47] INFO root fetch - main [MainThread]: Store serial: [18286583]
