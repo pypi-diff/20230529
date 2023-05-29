@@ -1559,3 +1559,49 @@
 [2023-05-29 03:02:21] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
 [2023-05-29 03:02:22] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-29 03:02:22] INFO root fetch - main [MainThread]: Store serial: [18284644]
+[2023-05-29 03:07:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284644]
+[2023-05-29 03:07:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fxn
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adb-unicode-keyboard
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: super-ec2
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyproject-pre-commit
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yfinance-extended
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yfinance-extended
+[2023-05-29 03:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vision6D
+[2023-05-29 03:07:32] INFO root fetch - processPackages [pyproject-pre-commit]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [fxn]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [vision6D]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [adb-unicode-keyboard]: New version: [0.11] Old Version: [0.10]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [super-ec2]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 03:07:32] INFO root fetch - processPackages [vision6D]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [vision6D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision6D-0.1.1.tar.gz tmp/vision6D-0.1.2.tar.gz --markdown 20230529/v/vision6D/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: Downloading https://files.pythonhosted.org/packages/7b/87/252142c17dc197fbb2787c37a6f31f3fa7ad1e6d8c7e5609eb43415befdb/yfinance-extended-0.0.1.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: Downloading https://files.pythonhosted.org/packages/7b/87/252142c17dc197fbb2787c37a6f31f3fa7ad1e6d8c7e5609eb43415befdb/yfinance-extended-0.0.1.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [adb-unicode-keyboard]: Downloading https://files.pythonhosted.org/packages/93/fd/8763e8aa55a2c932dd86aafe4a91456804fea3a6cc28b6c295974acfa314/adb_unicode_keyboard-0.10.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/1a/ad/618791b940679b46506a01d22f17ab19fcd1539024b4205c890d357067eb/fxn-0.0.1.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [pyproject-pre-commit]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [pyproject-pre-commit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_pre_commit-0.0.8.tar.gz tmp/pyproject_pre_commit-0.0.9.tar.gz --markdown 20230529/p/pyproject-pre-commit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: Downloading https://files.pythonhosted.org/packages/55/69/2608014764135bdc9cdb0a3707ce20b03e99d4d326af74d6ffa94a8100f5/yfinance-extended-0.0.2.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: Downloading https://files.pythonhosted.org/packages/55/69/2608014764135bdc9cdb0a3707ce20b03e99d4d326af74d6ffa94a8100f5/yfinance-extended-0.0.2.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [super-ec2]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [super-ec2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/super-ec2-0.0.98.tar.gz tmp/super-ec2-0.0.99.tar.gz --markdown 20230529/s/super-ec2/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-extended-0.0.1.tar.gz tmp/yfinance-extended-0.0.2.tar.gz --markdown 20230529/y/yfinance-extended/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [yfinance-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-extended-0.0.1.tar.gz tmp/yfinance-extended-0.0.2.tar.gz --markdown 20230529/y/yfinance-extended/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 03:07:32] INFO root fetch - processPackages [adb-unicode-keyboard]: Downloading https://files.pythonhosted.org/packages/c1/88/23609d0b17ae470ba56b331b07f5c60dc682110111d0967050b31eeab4ee/adb_unicode_keyboard-0.11.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/67/11/ea6ef88c88da437d0a544ec22e919fb393ee8600e97a5db7fc381f4bfa7f/fxn-0.0.2.tar.gz
+[2023-05-29 03:07:32] INFO root fetch - processPackages [adb-unicode-keyboard]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [adb-unicode-keyboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adb_unicode_keyboard-0.10.tar.gz tmp/adb_unicode_keyboard-0.11.tar.gz --markdown 20230529/a/adb-unicode-keyboard/0.10-0.11/diff.md --exclude *.pyd
+[2023-05-29 03:07:32] INFO root fetch - processPackages [fxn]: executing diffoscope
+[2023-05-29 03:07:32] INFO root fetch - processPackages [fxn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fxn-0.0.1.tar.gz tmp/fxn-0.0.2.tar.gz --markdown 20230529/f/fxn/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 03:07:33] INFO root fetch - main [MainThread]: End processing [pyproject-pre-commit]: success
+[2023-05-29 03:07:33] INFO root fetch - main [MainThread]: End processing [yfinance-extended]: success
+[2023-05-29 03:07:33] INFO root fetch - main [MainThread]: End processing [fxn]: success
+[2023-05-29 03:07:33] INFO root fetch - main [MainThread]: End processing [super-ec2]: success
+[2023-05-29 03:07:34] INFO root fetch - main [MainThread]: End processing [adb-unicode-keyboard]: success
+[2023-05-29 03:07:34] INFO root fetch - main [MainThread]: End processing [yfinance-extended]: success
+[2023-05-29 03:07:35] INFO root fetch - main [MainThread]: End processing [vision6D]: success
+[2023-05-29 03:07:35] INFO root fetch - main [MainThread]: Store serial: [18284663]
