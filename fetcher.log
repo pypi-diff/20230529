@@ -10466,3 +10466,70 @@ EOFError: EOF read where object expected
 [2023-05-29 14:45:55] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2023-05-29 14:45:55] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-05-29 14:45:55] INFO root fetch - main [MainThread]: Store serial: [18289863]
+[2023-05-29 14:50:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289863]
+[2023-05-29 14:51:04] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manticore
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scaneo
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rtmidi2
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kili
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: optimuslib
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: VRSget
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nigsp
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: asgi-matomo
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tuxrun
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: optimuslib
+[2023-05-29 14:51:04] INFO root fetch - processPackages [scaneo]: New version: [2023.5.29] Old Version: [0.0.9.post3]
+[2023-05-29 14:51:04] WARNING root fetch - processPackages [VRSget]: Skipping, unable to determine old version
+[2023-05-29 14:51:04] INFO root fetch - processPackages [VRSget]: Start processing: ogc-na
+[2023-05-29 14:51:04] INFO root fetch - main [MainThread]: End processing [VRSget] error
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [kili]: New version: [2.99.0] Old Version: [2.98.0]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [asgi-matomo]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [nigsp]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [tuxrun]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [rtmidi2]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ogc-na]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230529] Old Version: [0.3.8.dev230528]
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ogc-na]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [ogc-na]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogc_na-0.2.8.tar.gz tmp/ogc_na-0.2.9.tar.gz --markdown 20230529/o/ogc-na/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/96/d7/21cf21026732edebe7a7f668576608ebe5f689f11e636defa88f64696432/optimuslib-0.0.3.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/96/d7/21cf21026732edebe7a7f668576608ebe5f689f11e636defa88f64696432/optimuslib-0.0.3.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [tuxrun]: Downloading https://files.pythonhosted.org/packages/05/75/c3a2f3d058040a29b90033ef83341a25499a52eb95f05ae733070a447399/tuxrun-0.9.5.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [rtmidi2]: Downloading https://files.pythonhosted.org/packages/c8/d7/b36e782188a3660aada5d4a7766b21c88ad1890ac314bcc05d11195ce2da/rtmidi2-1.1.2.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [nigsp]: Downloading https://files.pythonhosted.org/packages/64/43/5b5f45ae17335a88ba0d508ddb8452e3fcf90bf052af8f7c4753aac58f13/nigsp-0.8.0.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/03/88/6c65c21aca216b1d133aa951db0e8036d811550bed6831bcab69b8b4ed66/manticore-0.3.8.dev230529.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [asgi-matomo]: Downloading https://files.pythonhosted.org/packages/f1/38/b8638fef97b4a16abf6a613bad2f0da242ccfd520f29980dfa8a2987f927/asgi_matomo-0.4.1.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/a0/99/c3ba122bd28cb85454b612d5b5101d2ce2fa057058ecb36d74ba24d6bff7/scaneo-2023.5.29.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimuslib-0.0.2.tar.gz tmp/optimuslib-0.0.3.tar.gz --markdown 20230529/o/optimuslib/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [optimuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimuslib-0.0.2.tar.gz tmp/optimuslib-0.0.3.tar.gz --markdown 20230529/o/optimuslib/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [kili]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [kili]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kili-2.98.0.tar.gz tmp/kili-2.99.0.tar.gz --markdown 20230529/k/kili/2.98.0-2.99.0/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [asgi-matomo]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [asgi-matomo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgi_matomo-0.4.0.tar.gz tmp/asgi_matomo-0.4.1.tar.gz --markdown 20230529/a/asgi-matomo/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post3.tar.gz tmp/scaneo-2023.5.29.tar.gz --markdown 20230529/s/scaneo/0.0.9.post3-2023.5.29/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [nigsp]: Downloading https://files.pythonhosted.org/packages/d1/87/103008752869acdaf5ffa22f049660a5009652d8babbfa6c3f5fb5da6051/nigsp-0.9.0.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [rtmidi2]: Downloading https://files.pythonhosted.org/packages/67/99/43090772b3a8f84c2ffaa2da357ccec58337759d25628bf954824667c6a0/rtmidi2-1.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 14:51:04] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230528.tar.gz tmp/manticore-0.3.8.dev230529.tar.gz --markdown 20230529/m/manticore/0.3.8.dev230528-0.3.8.dev230529/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [tuxrun]: Downloading https://files.pythonhosted.org/packages/ae/5a/4fe00d549cd779f2a99801a6e2061f2501e373810e56871af8b037beb43f/tuxrun-0.9.6.tar.gz
+[2023-05-29 14:51:04] INFO root fetch - processPackages [rtmidi2]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [rtmidi2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtmidi2-1.1.2.tar.gz tmp/rtmidi2-1.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/r/rtmidi2/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:51:04] INFO root fetch - processPackages [nigsp]: executing diffoscope
+[2023-05-29 14:51:04] INFO root fetch - processPackages [nigsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nigsp-0.8.0.tar.gz tmp/nigsp-0.9.0.tar.gz --markdown 20230529/n/nigsp/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 14:51:05] INFO root fetch - processPackages [tuxrun]: executing diffoscope
+[2023-05-29 14:51:05] INFO root fetch - processPackages [tuxrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuxrun-0.9.5.tar.gz tmp/tuxrun-0.9.6.tar.gz --markdown 20230529/t/tuxrun/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-29 14:51:05] INFO root fetch - main [MainThread]: End processing [optimuslib]: success
+[2023-05-29 14:51:05] INFO root fetch - main [MainThread]: End processing [optimuslib]: success
+[2023-05-29 14:51:06] INFO root fetch - main [MainThread]: End processing [asgi-matomo]: success
+[2023-05-29 14:51:06] INFO root fetch - main [MainThread]: End processing [rtmidi2]: success
+[2023-05-29 14:51:06] INFO root fetch - main [MainThread]: End processing [tuxrun]: success
+[2023-05-29 14:51:06] INFO root fetch - main [MainThread]: End processing [ogc-na]: success
+[2023-05-29 14:51:07] INFO root fetch - main [MainThread]: End processing [kili]: success
+[2023-05-29 14:51:07] INFO root fetch - main [MainThread]: End processing [nigsp]: success
+[2023-05-29 14:51:08] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-29 14:51:09] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-29 14:51:09] INFO root fetch - main [MainThread]: Store serial: [18289907]
