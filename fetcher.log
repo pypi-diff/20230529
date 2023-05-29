@@ -5873,3 +5873,69 @@
 [2023-05-29 09:11:23] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-29 09:11:37] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-29 09:11:37] INFO root fetch - main [MainThread]: Store serial: [18287107]
+[2023-05-29 09:16:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287107]
+[2023-05-29 09:16:46] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spida
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-nightly
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cg-hermes
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: learning-loop-node
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-code-editor
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FreeTVG-karjakak
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: east-tool
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bagbag
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vbarongdatools001
+[2023-05-29 09:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-code-editor]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [spida]: New version: [0.3] Old Version: [0.2.5]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [vbarongdatools001]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [cg-hermes]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [east-tool]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [learning-loop-node]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [FreeTVG-karjakak]: New version: [3.2.9] Old Version: [3.2.8rc1]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230529/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [FreeTVG-karjakak]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [FreeTVG-karjakak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeTVG-karjakak-3.2.8rc1.tar.gz tmp/FreeTVG-karjakak-3.2.9.tar.gz --markdown 20230529/F/FreeTVG-karjakak/3.2.8rc1-3.2.9/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230529/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [east-tool]: Downloading https://files.pythonhosted.org/packages/aa/b9/a419d04e61bd48ae734d95f9cd4f958486d35393487838669b55b851e22c/east-tool-0.8.0.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [spida]: Downloading https://files.pythonhosted.org/packages/81/e5/76a28fd1a420c98c3102f5103b5f9b717d43ecf9761431c0020a605b2f99/spida-0.3.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [cg-hermes]: Downloading https://files.pythonhosted.org/packages/6f/0c/a584534c39bc4d96f13ad4273e0913b59d074204fc74b955f3f496188808/cg-hermes-1.8.0.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [vbarongdatools001]: Downloading https://files.pythonhosted.org/packages/31/ed/972aeef162db0e0a38cc79630fe15d9e0659689e631abb857e91898bb5ec/vbarongdatools001-0.0.5.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [spida]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [spida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spida-0.2.5.tar.gz tmp/spida-0.3.tar.gz --markdown 20230529/s/spida/0.2.5-0.3/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-code-editor]: Downloading https://files.pythonhosted.org/packages/8a/df/0bd2e32c4bfc437ecfaa77bdfa19eaa978fdb2c82a70b3416bba16d55019/streamlit-code-editor-0.1.1.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [learning-loop-node]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [learning-loop-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning_loop_node-0.7.8.tar.gz tmp/learning_loop_node-0.7.9.tar.gz --markdown 20230529/l/learning-loop-node/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-code-editor]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [streamlit-code-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-code-editor-0.1.0.tar.gz tmp/streamlit-code-editor-0.1.1.tar.gz --markdown 20230529/s/streamlit-code-editor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [cg-hermes]: Downloading https://files.pythonhosted.org/packages/67/6e/f35065005ad8e514ccb9524361723cdde5d9f965e4abcae652b25b97d748/cg-hermes-1.9.0.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [cg-hermes]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [cg-hermes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-hermes-1.8.0.tar.gz tmp/cg-hermes-1.9.0.tar.gz --markdown 20230529/c/cg-hermes/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-29 09:16:46] INFO root fetch - processPackages [east-tool]: Downloading https://files.pythonhosted.org/packages/9b/6f/2e25b49e9a58602e4dce92b098f9a5e902680457f352224bd59321655dd2/east-tool-0.9.0.tar.gz
+[2023-05-29 09:16:46] INFO root fetch - processPackages [vbarongdatools001]: executing diffoscope
+[2023-05-29 09:16:46] INFO root fetch - processPackages [vbarongdatools001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbarongdatools001-0.0.4.tar.gz tmp/vbarongdatools001-0.0.5.tar.gz --markdown 20230529/v/vbarongdatools001/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 09:16:47] INFO root fetch - processPackages [east-tool]: executing diffoscope
+[2023-05-29 09:16:47] INFO root fetch - processPackages [east-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/east-tool-0.8.0.tar.gz tmp/east-tool-0.9.0.tar.gz --markdown 20230529/e/east-tool/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 09:16:48] INFO root fetch - processPackages [FreeTVG-karjakak]: Start processing: test123qwe
+[2023-05-29 09:16:48] INFO root fetch - main [MainThread]: End processing [FreeTVG-karjakak]: success
+[2023-05-29 09:16:48] INFO root fetch - processPackages [spida]: Start processing: vaksms
+[2023-05-29 09:16:48] INFO root fetch - main [MainThread]: End processing [spida]: success
+[2023-05-29 09:16:48] ERROR root fetch - processPackages [test123qwe]: Unable to get metadata: No such project 'test123qwe'
+[2023-05-29 09:16:48] INFO root fetch - main [MainThread]: End processing [test123qwe] error
+[2023-05-29 09:16:48] WARNING root fetch - processPackages [vaksms]: Skipping, unable to determine old version
+[2023-05-29 09:16:48] INFO root fetch - main [MainThread]: End processing [vaksms] error
+[2023-05-29 09:16:48] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-29 09:16:48] INFO root fetch - main [MainThread]: End processing [learning-loop-node]: success
+[2023-05-29 09:16:49] INFO root fetch - main [MainThread]: End processing [east-tool]: success
+[2023-05-29 09:16:49] INFO root fetch - main [MainThread]: End processing [cg-hermes]: success
+[2023-05-29 09:16:49] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-29 09:16:50] INFO root fetch - main [MainThread]: End processing [vbarongdatools001]: success
+[2023-05-29 09:16:57] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-29 09:17:57] INFO root fetch - main [MainThread]: End processing [streamlit-code-editor]: success
+[2023-05-29 09:17:57] INFO root fetch - main [MainThread]: Store serial: [18287145]
