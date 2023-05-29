@@ -17678,3 +17678,38 @@ EOFError: EOF read where object expected
 [2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [dwave-system]: success
 [2023-05-29 22:46:21] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
 [2023-05-29 22:46:21] INFO root fetch - main [MainThread]: Store serial: [18294395]
+[2023-05-29 22:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294395]
+[2023-05-29 22:51:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 22:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxrenderer
+[2023-05-29 22:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coconut-develop
+[2023-05-29 22:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latch-asgi
+[2023-05-29 22:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sfb-future-trading
+[2023-05-29 22:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: random-math-rmaiaaaa
+[2023-05-29 22:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: azpype
+[2023-05-29 22:51:31] INFO root fetch - processPackages [latch-asgi]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 22:51:31] WARNING root fetch - processPackages [azpype]: Skipping, unable to determine old version
+[2023-05-29 22:51:31] INFO root fetch - main [MainThread]: End processing [azpype] error
+[2023-05-29 22:51:31] INFO root fetch - processPackages [jaxrenderer]: New version: [0.0.1a1] Old Version: [0.0.1.post1]
+[2023-05-29 22:51:31] WARNING root fetch - processPackages [sfb-future-trading]: Skipping, unable to determine old version
+[2023-05-29 22:51:31] INFO root fetch - main [MainThread]: End processing [sfb-future-trading] error
+[2023-05-29 22:51:31] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev9] Old Version: [3.0.1.post0.dev8]
+[2023-05-29 22:51:31] INFO root fetch - processPackages [random-math-rmaiaaaa]: New version: [0.0.13] Old Version: [0.0.10]
+[2023-05-29 22:51:31] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-29 22:51:31] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev8.tar.gz tmp/coconut-develop-3.0.1.post0.dev9.tar.gz --markdown 20230529/c/coconut-develop/3.0.1.post0.dev8-3.0.1.post0.dev9/diff.md --exclude *.pyd
+[2023-05-29 22:51:31] INFO root fetch - processPackages [latch-asgi]: Downloading https://files.pythonhosted.org/packages/00/fa/19739bca998f2f546717162a46c5d53c5fe50d4822227eb0e5a7067ccea3/latch_asgi-0.1.0.tar.gz
+[2023-05-29 22:51:31] INFO root fetch - processPackages [jaxrenderer]: Downloading https://files.pythonhosted.org/packages/ef/23/85e4d21a250df3d97df08ddf26d9343301dab512c1244396dd2dc08736c9/jaxrenderer-0.0.1.post1.tar.gz
+[2023-05-29 22:51:31] INFO root fetch - processPackages [random-math-rmaiaaaa]: Downloading https://files.pythonhosted.org/packages/ad/1e/f5c508bc021eec6a1e5d49686d30055912f91b4907c40743e68645f7db2b/random_math_rmaiaaaa-0.0.10.tar.gz
+[2023-05-29 22:51:31] INFO root fetch - processPackages [latch-asgi]: Downloading https://files.pythonhosted.org/packages/1e/e7/f8747c8b59f66ec079b6bd0be0b58fc62a3635c3378fa29c4101473cea00/latch_asgi-0.1.1.tar.gz
+[2023-05-29 22:51:31] INFO root fetch - processPackages [random-math-rmaiaaaa]: Downloading https://files.pythonhosted.org/packages/aa/6a/a08f568c8ee86c261437e07054573ea781b1371c34369686aa79e4dce69a/random_math_rmaiaaaa-0.0.13.tar.gz
+[2023-05-29 22:51:31] INFO root fetch - processPackages [latch-asgi]: executing diffoscope
+[2023-05-29 22:51:31] INFO root fetch - processPackages [latch-asgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_asgi-0.1.0.tar.gz tmp/latch_asgi-0.1.1.tar.gz --markdown 20230529/l/latch-asgi/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 22:51:31] INFO root fetch - processPackages [jaxrenderer]: Downloading https://files.pythonhosted.org/packages/0d/c0/0add72978211e5b92531eefb4e43614f324d4575c791f4e4f4a5c98a7367/jaxrenderer-0.0.1a1.tar.gz
+[2023-05-29 22:51:31] INFO root fetch - processPackages [random-math-rmaiaaaa]: executing diffoscope
+[2023-05-29 22:51:31] INFO root fetch - processPackages [random-math-rmaiaaaa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/random_math_rmaiaaaa-0.0.10.tar.gz tmp/random_math_rmaiaaaa-0.0.13.tar.gz --markdown 20230529/r/random-math-rmaiaaaa/0.0.10-0.0.13/diff.md --exclude *.pyd
+[2023-05-29 22:51:31] INFO root fetch - processPackages [jaxrenderer]: executing diffoscope
+[2023-05-29 22:51:31] INFO root fetch - processPackages [jaxrenderer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrenderer-0.0.1.post1.tar.gz tmp/jaxrenderer-0.0.1a1.tar.gz --markdown 20230529/j/jaxrenderer/0.0.1.post1-0.0.1a1/diff.md --exclude *.pyd
+[2023-05-29 22:51:32] INFO root fetch - main [MainThread]: End processing [latch-asgi]: success
+[2023-05-29 22:51:32] INFO root fetch - main [MainThread]: End processing [random-math-rmaiaaaa]: success
+[2023-05-29 22:51:33] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-29 22:51:33] INFO root fetch - main [MainThread]: End processing [jaxrenderer]: success
+[2023-05-29 22:51:33] INFO root fetch - main [MainThread]: Store serial: [18294421]
