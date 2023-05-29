@@ -6946,3 +6946,59 @@
 [2023-05-29 10:54:10] INFO root fetch - main [MainThread]: End processing [atlasq]: success
 [2023-05-29 10:54:10] INFO root fetch - main [MainThread]: End processing [pyqt-dreamstudio]: success
 [2023-05-29 10:54:10] INFO root fetch - main [MainThread]: Store serial: [18287770]
+[2023-05-29 10:59:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287770]
+[2023-05-29 10:59:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libtetrabz
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dronebuddylib
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-provider
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nlp-models
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clickzetta-connector
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blindbox
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: clickzetta-sqlalchemy
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ccmplots
+[2023-05-29 10:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qdx
+[2023-05-29 10:59:19] INFO root fetch - processPackages [my-provider]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 10:59:19] INFO root fetch - processPackages [dronebuddylib]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 10:59:19] INFO root fetch - processPackages [clickzetta-connector]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-29 10:59:19] INFO root fetch - processPackages [libtetrabz]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 10:59:19] WARNING root fetch - processPackages [ccmplots]: Skipping, unable to determine old version
+[2023-05-29 10:59:19] INFO root fetch - processPackages [blindbox]: New version: [0.2.0] Old Version: [0.1.0.post1]
+[2023-05-29 10:59:19] INFO root fetch - main [MainThread]: End processing [ccmplots] error
+[2023-05-29 10:59:19] INFO root fetch - processPackages [clickzetta-sqlalchemy]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-29 10:59:20] INFO root fetch - processPackages [nlp-models]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-29 10:59:20] INFO root fetch - processPackages [qdx]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-29 10:59:20] INFO root fetch - processPackages [blindbox]: Downloading https://files.pythonhosted.org/packages/46/a2/2e697dc50b9c3f1bd1836ff2766fad349b46bc64f8e826b2d05a4e20a345/blindbox-0.1.0.post1-py3-none-any.whl
+[2023-05-29 10:59:20] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/38/68/d4eb795e90ef9f669544b73ae36449ed70c13952576268903b770fb0d849/clickzetta-sqlalchemy-0.7.9.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [clickzetta-connector]: Downloading https://files.pythonhosted.org/packages/66/d2/5f17f50c910775f4f16907d61b47e6dd4a13ad4a823035bf6f16f520f515/clickzetta-connector-0.7.9.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [libtetrabz]: Downloading https://files.pythonhosted.org/packages/46/d3/5c7ed01c50393a3f8efdd23344090b7ae8ece7796f604fe437b615fa92b5/libtetrabz-0.1.0.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [dronebuddylib]: Downloading https://files.pythonhosted.org/packages/51/0d/c766092e4257b83208e10e9db8fd084b02e7401640e9a6c1a4b982207c3a/dronebuddylib-1.0.2.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [nlp-models]: Downloading https://files.pythonhosted.org/packages/a4/8e/34129f68d36a702ce48d0c215f6d5434f53bbf6ce322072742bed14e5942/nlp-models-2.2.0.tar.gz
+[2023-05-29 10:59:20] WARNING root fetch - processPackages [dronebuddylib]: Skipping package: exceeds size limit 41147009>=10485760
+[2023-05-29 10:59:20] INFO root fetch - main [MainThread]: End processing [dronebuddylib] error
+[2023-05-29 10:59:20] INFO root fetch - processPackages [clickzetta-connector]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [clickzetta-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-connector-0.7.8.tar.gz tmp/clickzetta-connector-0.7.9.tar.gz --markdown 20230529/c/clickzetta-connector/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-29 10:59:20] INFO root fetch - processPackages [my-provider]: Downloading https://files.pythonhosted.org/packages/c2/92/ed52d90e7c1419c1bd4b675b1239d34fc2a993b4105c909551adaba1a7ba/my_provider-0.1.5.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [qdx]: Downloading https://files.pythonhosted.org/packages/3d/68/31a15fb52a2456f51f21a446f55ef288a03b73545a55597b4bc1af67e3c4/qdx-0.6.0.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [nlp-models]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [nlp-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlp-models-2.1.0.tar.gz tmp/nlp-models-2.2.0.tar.gz --markdown 20230529/n/nlp-models/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-29 10:59:20] INFO root fetch - processPackages [clickzetta-sqlalchemy]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [clickzetta-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-sqlalchemy-0.7.8.tar.gz tmp/clickzetta-sqlalchemy-0.7.9.tar.gz --markdown 20230529/c/clickzetta-sqlalchemy/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-29 10:59:20] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_provider-0.1.4.tar.gz tmp/my_provider-0.1.5.tar.gz --markdown 20230529/m/my-provider/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 10:59:20] INFO root fetch - processPackages [blindbox]: Downloading https://files.pythonhosted.org/packages/05/87/bf6e73dae496bf35b494ddf007d9246072d02ee12df01eb15a3a227c3d17/blindbox-0.2.0.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [blindbox]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [blindbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blindbox-0.1.0.post1-py3-none-any.whl.zip tmp/blindbox-0.2.0.tar.gz --markdown 20230529/b/blindbox/0.1.0.post1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 10:59:20] INFO root fetch - processPackages [libtetrabz]: Downloading https://files.pythonhosted.org/packages/bf/4d/de4bc4afe1462c57486814d0ee80e6570187fc642e9cb55bdd0bed0ce8fe/libtetrabz-0.1.1.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [libtetrabz]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [libtetrabz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtetrabz-0.1.0.tar.gz tmp/libtetrabz-0.1.1.tar.gz --markdown 20230529/l/libtetrabz/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 10:59:20] INFO root fetch - processPackages [qdx]: Downloading https://files.pythonhosted.org/packages/4c/ba/de8b18933e89899e6d315d7e1996f3f4de8f39dacbbb6f26e4a303520ea8/qdx-0.7.0.tar.gz
+[2023-05-29 10:59:20] INFO root fetch - processPackages [qdx]: executing diffoscope
+[2023-05-29 10:59:20] INFO root fetch - processPackages [qdx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdx-0.6.0.tar.gz tmp/qdx-0.7.0.tar.gz --markdown 20230529/q/qdx/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-29 10:59:21] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-29 10:59:21] INFO root fetch - main [MainThread]: End processing [clickzetta-sqlalchemy]: success
+[2023-05-29 10:59:21] INFO root fetch - main [MainThread]: End processing [nlp-models]: success
+[2023-05-29 10:59:21] INFO root fetch - main [MainThread]: End processing [libtetrabz]: success
+[2023-05-29 10:59:21] INFO root fetch - main [MainThread]: End processing [blindbox]: success
+[2023-05-29 10:59:22] INFO root fetch - main [MainThread]: End processing [clickzetta-connector]: success
+[2023-05-29 10:59:22] INFO root fetch - main [MainThread]: End processing [qdx]: success
+[2023-05-29 10:59:22] INFO root fetch - main [MainThread]: Store serial: [18287799]
