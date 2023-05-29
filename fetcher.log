@@ -5684,3 +5684,34 @@
 [2023-05-29 08:55:39] INFO root fetch - main [MainThread]: End processing [scikit-rough]: success
 [2023-05-29 08:55:39] INFO root fetch - main [MainThread]: End processing [piperider]: success
 [2023-05-29 08:55:39] INFO root fetch - main [MainThread]: Store serial: [18286965]
+[2023-05-29 09:00:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286965]
+[2023-05-29 09:00:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 09:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piperider
+[2023-05-29 09:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xj-thread
+[2023-05-29 09:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eth-module
+[2023-05-29 09:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RFEM
+[2023-05-29 09:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xj-thread
+[2023-05-29 09:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cs-telegram-bot-api
+[2023-05-29 09:00:48] WARNING root fetch - processPackages [cs-telegram-bot-api]: Skipping, unable to determine old version
+[2023-05-29 09:00:48] INFO root fetch - main [MainThread]: End processing [cs-telegram-bot-api] error
+[2023-05-29 09:00:48] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-29 09:00:48] WARNING root fetch - processPackages [eth-module]: Skipping, unable to determine old version
+[2023-05-29 09:00:48] INFO root fetch - main [MainThread]: End processing [eth-module] error
+[2023-05-29 09:00:48] INFO root fetch - processPackages [RFEM]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-05-29 09:00:48] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-29 09:00:48] INFO root fetch - processPackages [piperider]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-05-29 09:00:49] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-05-29 09:00:49] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230529/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-29 09:00:49] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-05-29 09:00:49] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230529/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-29 09:00:49] INFO root fetch - processPackages [RFEM]: Downloading https://files.pythonhosted.org/packages/da/02/5d1a05af7bbb4e3a0116095016d02fde8efa05b303e15e369c5aeaf1443e/RFEM-1.7.0.tar.gz
+[2023-05-29 09:00:49] INFO root fetch - processPackages [piperider]: executing diffoscope
+[2023-05-29 09:00:49] INFO root fetch - processPackages [piperider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-0.9.0.tar.gz tmp/piperider-0.9.0rc1.tar.gz --markdown 20230529/p/piperider/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-29 09:00:49] INFO root fetch - processPackages [RFEM]: Downloading https://files.pythonhosted.org/packages/04/4a/d8d89fa7ceb20a3296448bd43f849bd6fc9910d7f19a25c7fac86c00f425/RFEM-1.8.0.tar.gz
+[2023-05-29 09:00:49] INFO root fetch - processPackages [RFEM]: executing diffoscope
+[2023-05-29 09:00:49] INFO root fetch - processPackages [RFEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RFEM-1.7.0.tar.gz tmp/RFEM-1.8.0.tar.gz --markdown 20230529/R/RFEM/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-05-29 09:00:50] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
+[2023-05-29 09:00:50] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
+[2023-05-29 09:00:51] INFO root fetch - main [MainThread]: End processing [RFEM]: success
+[2023-05-29 09:00:51] INFO root fetch - main [MainThread]: End processing [piperider]: success
+[2023-05-29 09:00:51] INFO root fetch - main [MainThread]: Store serial: [18287006]
