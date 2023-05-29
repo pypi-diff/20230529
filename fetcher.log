@@ -17275,3 +17275,52 @@ EOFError: EOF read where object expected
 [2023-05-29 22:19:32] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
 [2023-05-29 22:19:34] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-29 22:19:34] INFO root fetch - main [MainThread]: Store serial: [18294111]
+[2023-05-29 22:24:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294111]
+[2023-05-29 22:24:44] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trailml
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maestral-qt
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kerasUtility
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-core
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: terka
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nester-clu-codes
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dormer
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: datupapi
+[2023-05-29 22:24:44] INFO root fetch - processPackages [trailml]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-05-29 22:24:44] INFO root fetch - processPackages [maestral-qt]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a9] Old Version: [0.0.8a8]
+[2023-05-29 22:24:44] WARNING root fetch - processPackages [kerasUtility]: Skipping, unable to determine old version
+[2023-05-29 22:24:44] INFO root fetch - main [MainThread]: End processing [kerasUtility] error
+[2023-05-29 22:24:44] INFO root fetch - processPackages [datupapi]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-29 22:24:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-29 22:24:44] WARNING root fetch - processPackages [dormer]: Skipping, unable to determine old version
+[2023-05-29 22:24:44] WARNING root fetch - processPackages [nester-clu-codes]: Skipping, unable to determine old version
+[2023-05-29 22:24:44] INFO root fetch - main [MainThread]: End processing [dormer] error
+[2023-05-29 22:24:44] INFO root fetch - processPackages [terka]: New version: [1.9.1] Old Version: [1.9.0.1]
+[2023-05-29 22:24:44] INFO root fetch - main [MainThread]: End processing [nester-clu-codes] error
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ovos-core]: executing diffoscope
+[2023-05-29 22:24:44] INFO root fetch - processPackages [ovos-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_core-0.0.8a8-py3-none-any.whl.zip tmp/ovos_core-0.0.8a9-py3-none-any.whl.zip --markdown 20230529/o/ovos-core/0.0.8a8-0.0.8a9/diff.md --exclude *.pyd
+[2023-05-29 22:24:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-29 22:24:44] INFO root fetch - processPackages [maestral-qt]: executing diffoscope
+[2023-05-29 22:24:44] INFO root fetch - processPackages [maestral-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-qt-1.7.3.dev3.tar.gz tmp/maestral-qt-1.7.3.dev4.tar.gz --markdown 20230529/m/maestral-qt/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-29 22:24:44] INFO root fetch - processPackages [datupapi]: executing diffoscope
+[2023-05-29 22:24:44] INFO root fetch - processPackages [datupapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datupapi-1.9.0-py3-none-any.whl.zip tmp/datupapi-1.9.1-py3-none-any.whl.zip --markdown 20230529/d/datupapi/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-29 22:24:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-29 22:24:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230529/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-29 22:24:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-29 22:24:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230529/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-29 22:24:44] INFO root fetch - processPackages [trailml]: Downloading https://files.pythonhosted.org/packages/3c/ab/364723f0f878a12aa6256a10a9be372155bfe2f3e3c61c4f7fa9542040ca/trailml-0.1.2.tar.gz
+[2023-05-29 22:24:45] INFO root fetch - processPackages [trailml]: Downloading https://files.pythonhosted.org/packages/c1/a0/8c63a9244b25d27c5a35d30eea68db83fcb8450f173055470bc09397ecfb/trailml-1.0.0.tar.gz
+[2023-05-29 22:24:45] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-05-29 22:24:45] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.1.tar.gz tmp/terka-1.9.1.tar.gz --markdown 20230529/t/terka/1.9.0.1-1.9.1/diff.md --exclude *.pyd
+[2023-05-29 22:24:45] INFO root fetch - processPackages [trailml]: executing diffoscope
+[2023-05-29 22:24:45] INFO root fetch - processPackages [trailml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trailml-0.1.2.tar.gz tmp/trailml-1.0.0.tar.gz --markdown 20230529/t/trailml/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 22:24:46] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
+[2023-05-29 22:24:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-29 22:24:46] INFO root fetch - main [MainThread]: End processing [datupapi]: success
+[2023-05-29 22:24:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-29 22:24:46] INFO root fetch - main [MainThread]: End processing [trailml]: success
+[2023-05-29 22:24:46] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-05-29 22:24:59] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
+[2023-05-29 22:24:59] INFO root fetch - main [MainThread]: Store serial: [18294154]
