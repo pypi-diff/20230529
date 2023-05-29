@@ -1390,3 +1390,29 @@
 [2023-05-29 02:41:03] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
 [2023-05-29 02:41:03] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
 [2023-05-29 02:41:03] INFO root fetch - main [MainThread]: Store serial: [18284555]
+[2023-05-29 02:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284555]
+[2023-05-29 02:46:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 02:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cfr-graphem
+[2023-05-29 02:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NikGapps
+[2023-05-29 02:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-comprehend-s3olap
+[2023-05-29 02:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfds-nightly
+[2023-05-29 02:46:12] INFO root fetch - processPackages [NikGapps]: New version: [1.26] Old Version: [1.25]
+[2023-05-29 02:46:12] INFO root fetch - processPackages [cfr-graphem]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 02:46:12] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 02:46:12] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305280045] Old Version: [4.9.2.dev202305270044]
+[2023-05-29 02:46:12] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-29 02:46:12] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/55/c4/bd121037ca0da9bcdfec9c29706358680b86c17e5b0b506ad23d755c45f3/NikGapps-1.25.tar.gz
+[2023-05-29 02:46:12] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-29 02:46:12] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549843>=10485760
+[2023-05-29 02:46:12] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-29 02:46:12] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-29 02:46:12] INFO root fetch - processPackages [cfr-graphem]: Downloading https://files.pythonhosted.org/packages/95/9b/bb8495626f687817dd0a51d2e2392bd052d39b162ac3eff4fccb1d5d48d2/cfr-graphem-0.2.8.tar.gz
+[2023-05-29 02:46:12] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/d0/ae/ec5141f13eac18e78d9acfdabd86687e1c96f1a882b26dc36f328f8f9db1/tfds-nightly-4.9.2.dev202305280045.tar.gz
+[2023-05-29 02:46:12] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-29 02:46:12] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305270044.tar.gz tmp/tfds-nightly-4.9.2.dev202305280045.tar.gz --markdown 20230529/t/tfds-nightly/4.9.2.dev202305270044-4.9.2.dev202305280045/diff.md --exclude *.pyd
+[2023-05-29 02:46:13] INFO root fetch - processPackages [cfr-graphem]: Downloading https://files.pythonhosted.org/packages/7f/0a/7d73a29f913ac2c45b85f29927e046ede315f87a8a6606a08b0fcd940313/cfr-graphem-0.2.9.tar.gz
+[2023-05-29 02:46:13] INFO root fetch - processPackages [cfr-graphem]: executing diffoscope
+[2023-05-29 02:46:13] INFO root fetch - processPackages [cfr-graphem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfr-graphem-0.2.8.tar.gz tmp/cfr-graphem-0.2.9.tar.gz --markdown 20230529/c/cfr-graphem/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 02:46:14] INFO root fetch - main [MainThread]: End processing [cfr-graphem]: success
+[2023-05-29 02:46:23] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-29 02:46:23] INFO root fetch - main [MainThread]: Store serial: [18284567]
