@@ -4701,3 +4701,53 @@
 [2023-05-29 06:51:14] INFO root fetch - main [MainThread]: End processing [web-sand]: success
 [2023-05-29 06:51:15] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-05-29 06:51:15] INFO root fetch - main [MainThread]: Store serial: [18286401]
+[2023-05-29 06:56:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286401]
+[2023-05-29 06:56:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datasette-sqlite-hello
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlite-hello
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geemap
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rgmining-rsd
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: armonik
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: raster2dggs
+[2023-05-29 06:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: baklabel
+[2023-05-29 06:56:24] INFO root fetch - processPackages [rgmining-rsd]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-29 06:56:24] INFO root fetch - processPackages [datasette-sqlite-hello]: New version: [0.1.0a35] Old Version: [0.1.0a34]
+[2023-05-29 06:56:25] INFO root fetch - processPackages [sqlite-hello]: New version: [0.1.0a35] Old Version: [0.1.0a34]
+[2023-05-29 06:56:25] INFO root fetch - processPackages [raster2dggs]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 06:56:25] INFO root fetch - processPackages [baklabel]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-29 06:56:25] INFO root fetch - processPackages [armonik]: New version: [3.8.2.dev376] Old Version: [3.8.2.dev361]
+[2023-05-29 06:56:25] INFO root fetch - processPackages [geemap]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-29 06:56:25] INFO root fetch - processPackages [datasette-sqlite-hello]: Downloading https://files.pythonhosted.org/packages/7c/02/c91d6349f9f1af301fbd9b9c697ee5fc4344d3caf6242e1f1575dd322a52/datasette_sqlite_hello-0.1.0a34-py3-none-any.whl
+[2023-05-29 06:56:25] INFO root fetch - processPackages [sqlite-hello]: Downloading https://files.pythonhosted.org/packages/96/a4/02a6d9ce3d2d8d63e4bfca1945be7607a351056e4c58a7e23be9a9fe7667/sqlite_hello-0.1.0a34-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-29 06:56:25] INFO root fetch - processPackages [baklabel]: Downloading https://files.pythonhosted.org/packages/3e/73/ca61f4960708a8bb56e3dd470094bb80f190a21d3696f27023962359aa42/baklabel-1.1.0.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [rgmining-rsd]: Downloading https://files.pythonhosted.org/packages/db/41/491cf04d72bf72749ef98cc04ebb8947ce904f318ba0495299800869f00b/rgmining_rsd-0.3.2.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [geemap]: Downloading https://files.pythonhosted.org/packages/21/6e/5898075af0a4f152ce0b4ef0db8767cefbddd5b8df12dd72816394caa45d/geemap-0.9.4.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/b7/54/79e9236082efd37a2fb68739a642c79b19e26ef26ed04abb8234a09df912/armonik-3.8.2.dev361.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [rgmining-rsd]: executing diffoscope
+[2023-05-29 06:56:25] INFO root fetch - processPackages [rgmining-rsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgmining_rsd-0.3.1.tar.gz tmp/rgmining_rsd-0.3.2.tar.gz --markdown 20230529/r/rgmining-rsd/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-29 06:56:25] INFO root fetch - processPackages [raster2dggs]: Downloading https://files.pythonhosted.org/packages/2c/af/80c3f1a518b45f1c96e67684c585fb859166963407480cf18a6ba5f46789/raster2dggs-0.2.3.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [datasette-sqlite-hello]: Downloading https://files.pythonhosted.org/packages/3e/31/99a3593ea558d49a618b868488f5dc8547153fb0c857152a64a5556f026a/datasette_sqlite_hello-0.1.0a35-py3-none-any.whl
+[2023-05-29 06:56:25] INFO root fetch - processPackages [sqlite-hello]: Downloading https://files.pythonhosted.org/packages/16/c9/3f0cd79d450e23f341f8a97046b24f41ae225fffa2d61ecb4b8c42dc44ff/sqlite_hello-0.1.0a35-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-29 06:56:25] INFO root fetch - processPackages [baklabel]: Downloading https://files.pythonhosted.org/packages/63/52/c1255a4b0d0b57d44ec5e53ab082ff615364f131a91c8acf198745b5a63d/baklabel-1.2.0.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [raster2dggs]: executing diffoscope
+[2023-05-29 06:56:25] INFO root fetch - processPackages [raster2dggs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raster2dggs-0.2.2.tar.gz tmp/raster2dggs-0.2.3.tar.gz --markdown 20230529/r/raster2dggs/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 06:56:25] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/ca/42/7b2d3ae1093e6482364acd398e44442edc1d2eb7fa202ba77bcf3f3ff6f8/armonik-3.8.2.dev376.tar.gz
+[2023-05-29 06:56:25] INFO root fetch - processPackages [baklabel]: executing diffoscope
+[2023-05-29 06:56:25] INFO root fetch - processPackages [baklabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baklabel-1.1.0.tar.gz tmp/baklabel-1.2.0.tar.gz --markdown 20230529/b/baklabel/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 06:56:25] INFO root fetch - processPackages [datasette-sqlite-hello]: executing diffoscope
+[2023-05-29 06:56:25] INFO root fetch - processPackages [datasette-sqlite-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_hello-0.1.0a34-py3-none-any.whl.zip tmp/datasette_sqlite_hello-0.1.0a35-py3-none-any.whl.zip --markdown 20230529/d/datasette-sqlite-hello/0.1.0a34-0.1.0a35/diff.md --exclude *.pyd
+[2023-05-29 06:56:25] INFO root fetch - processPackages [sqlite-hello]: executing diffoscope
+[2023-05-29 06:56:25] INFO root fetch - processPackages [sqlite-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_hello-0.1.0a34-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_hello-0.1.0a35-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230529/s/sqlite-hello/0.1.0a34-0.1.0a35/diff.md --exclude *.pyd
+[2023-05-29 06:56:25] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-05-29 06:56:25] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.2.dev361.tar.gz tmp/armonik-3.8.2.dev376.tar.gz --markdown 20230529/a/armonik/3.8.2.dev361-3.8.2.dev376/diff.md --exclude *.pyd
+[2023-05-29 06:56:25] INFO root fetch - processPackages [geemap]: Downloading https://files.pythonhosted.org/packages/f3/0f/46be1c7fd40f4c083db73c113c1fe2026351af6892514fbe4303a371b938/geemap-0.9.5.tar.gz
+[2023-05-29 06:56:26] INFO root fetch - processPackages [geemap]: executing diffoscope
+[2023-05-29 06:56:26] INFO root fetch - processPackages [geemap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geemap-0.9.4.tar.gz tmp/geemap-0.9.5.tar.gz --markdown 20230529/g/geemap/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-29 06:56:26] INFO root fetch - main [MainThread]: End processing [baklabel]: success
+[2023-05-29 06:56:26] INFO root fetch - main [MainThread]: End processing [rgmining-rsd]: success
+[2023-05-29 06:56:27] INFO root fetch - main [MainThread]: End processing [raster2dggs]: success
+[2023-05-29 06:56:27] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-hello]: success
+[2023-05-29 06:56:27] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-05-29 06:56:27] INFO root fetch - main [MainThread]: End processing [sqlite-hello]: success
+[2023-05-29 06:56:30] INFO root fetch - main [MainThread]: End processing [geemap]: success
+[2023-05-29 06:56:30] INFO root fetch - main [MainThread]: Store serial: [18286423]
