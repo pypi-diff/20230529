@@ -13620,3 +13620,48 @@ EOFError: EOF read where object expected
 [2023-05-29 18:14:02] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-05-29 18:14:32] INFO root fetch - main [MainThread]: End processing [zen-dash]: success
 [2023-05-29 18:14:32] INFO root fetch - main [MainThread]: Store serial: [18291823]
+[2023-05-29 18:19:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291823]
+[2023-05-29 18:19:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-cdk.asset-awscli-v1
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bagbag
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ango
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: file-io-cli-tddschn
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polyfactory
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opencan-cand
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bpmn-tools
+[2023-05-29 18:19:41] INFO root fetch - processPackages [polyfactory]: New version: [2.2.0] Old Version: [2.1.2]
+[2023-05-29 18:19:41] INFO root fetch - processPackages [ango]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-29 18:19:41] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 18:19:41] INFO root fetch - processPackages [file-io-cli-tddschn]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-29 18:19:41] INFO root fetch - processPackages [opencan-cand]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 18:19:41] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: New version: [2.2.99] Old Version: [2.2.98]
+[2023-05-29 18:19:42] INFO root fetch - processPackages [bpmn-tools]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-29 18:19:42] INFO root fetch - processPackages [opencan-cand]: Downloading https://files.pythonhosted.org/packages/4d/9d/baa7eaf3c25c898c513fc0e2e6038574e09e3d285383824a45cbf9d2a4d8/opencan-cand-0.1.0.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: Downloading https://files.pythonhosted.org/packages/d8/5f/ec514d7b5296b58149a8b4407d5d4833dd7b24475d8d782b2c36a00c4d22/aws-cdk.asset-awscli-v1-2.2.98.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [bpmn-tools]: Downloading https://files.pythonhosted.org/packages/25/be/8c6b5181687497f830ab0642d7533123fd674b820e8c18808ed3e76fac60/bpmn-tools-0.0.1.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/dc/59/0ee1bba0a28d9f45b0ed45e1cfb7f9982f187da6eb3a8fa0d721acc4b220/file_io_cli_tddschn-1.1.4.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [polyfactory]: Downloading https://files.pythonhosted.org/packages/97/d8/7b3badccce10c8edd613767261d073ad7c670d9df9b616d2ebfe99d1ae45/polyfactory-2.2.0.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [ango]: Downloading https://files.pythonhosted.org/packages/7b/4e/fb692226e43a5592260341cb9a64b4d6bf8cb6bb2fc763e8390483d189ad/ango-1.0.5.tar.gz
+[2023-05-29 18:19:42] WARNING root fetch - processPackages [aws-cdk.asset-awscli-v1]: Skipping package: exceeds size limit 14653629>=10485760
+[2023-05-29 18:19:42] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-awscli-v1] error
+[2023-05-29 18:19:42] INFO root fetch - processPackages [file-io-cli-tddschn]: executing diffoscope
+[2023-05-29 18:19:42] INFO root fetch - processPackages [file-io-cli-tddschn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_io_cli_tddschn-1.1.3.tar.gz tmp/file_io_cli_tddschn-1.1.4.tar.gz --markdown 20230529/f/file-io-cli-tddschn/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-29 18:19:42] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 18:19:42] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 18:19:42] INFO root fetch - processPackages [polyfactory]: executing diffoscope
+[2023-05-29 18:19:42] INFO root fetch - processPackages [polyfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyfactory-2.1.2.tar.gz tmp/polyfactory-2.2.0.tar.gz --markdown 20230529/p/polyfactory/2.1.2-2.2.0/diff.md --exclude *.pyd
+[2023-05-29 18:19:42] INFO root fetch - processPackages [ango]: executing diffoscope
+[2023-05-29 18:19:42] INFO root fetch - processPackages [ango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ango-1.0.4.tar.gz tmp/ango-1.0.5.tar.gz --markdown 20230529/a/ango/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-29 18:19:42] INFO root fetch - processPackages [opencan-cand]: Downloading https://files.pythonhosted.org/packages/be/79/80c356e0fa3b82d3bb93e9d8ce20453ad25c78ba2e30d15c40b58e6416c6/opencan-cand-0.1.1.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [bpmn-tools]: Downloading https://files.pythonhosted.org/packages/48/5d/d01130d29844e8be1c54ea4ed94fb7ccdf84ae8eeff3d3c8ac326c569d77/bpmn-tools-0.0.3.tar.gz
+[2023-05-29 18:19:42] INFO root fetch - processPackages [opencan-cand]: executing diffoscope
+[2023-05-29 18:19:42] INFO root fetch - processPackages [opencan-cand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencan-cand-0.1.0.tar.gz tmp/opencan-cand-0.1.1.tar.gz --markdown 20230529/o/opencan-cand/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 18:19:43] INFO root fetch - processPackages [bpmn-tools]: executing diffoscope
+[2023-05-29 18:19:43] INFO root fetch - processPackages [bpmn-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpmn-tools-0.0.1.tar.gz tmp/bpmn-tools-0.0.3.tar.gz --markdown 20230529/b/bpmn-tools/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 18:19:43] INFO root fetch - main [MainThread]: End processing [file-io-cli-tddschn]: success
+[2023-05-29 18:19:43] INFO root fetch - main [MainThread]: End processing [ango]: success
+[2023-05-29 18:19:43] INFO root fetch - main [MainThread]: End processing [polyfactory]: success
+[2023-05-29 18:19:43] INFO root fetch - main [MainThread]: End processing [opencan-cand]: success
+[2023-05-29 18:19:44] INFO root fetch - main [MainThread]: End processing [bpmn-tools]: success
+[2023-05-29 18:19:44] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-29 18:19:44] INFO root fetch - main [MainThread]: Store serial: [18291841]
