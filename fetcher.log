@@ -9679,3 +9679,59 @@
 [2023-05-29 13:52:54] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
 [2023-05-29 13:52:54] INFO root fetch - main [MainThread]: End processing [mitzu]: success
 [2023-05-29 13:52:54] INFO root fetch - main [MainThread]: Store serial: [18289414]
+[2023-05-29 13:57:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289414]
+[2023-05-29 13:58:04] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appqos
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ygModbus
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bypassmappingproxy
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-xvfb
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ditty
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: teda
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: my-provider
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nlpaf
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edu-segmentation
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: docstruct
+[2023-05-29 13:58:04] WARNING root fetch - processPackages [appqos]: Skipping, unable to determine old version
+[2023-05-29 13:58:04] INFO root fetch - main [MainThread]: End processing [appqos] error
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ygModbus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 13:58:04] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 13:58:04] WARNING root fetch - processPackages [bypassmappingproxy]: Skipping, unable to determine old version
+[2023-05-29 13:58:04] INFO root fetch - main [MainThread]: End processing [bypassmappingproxy] error
+[2023-05-29 13:58:04] INFO root fetch - processPackages [pytest-xvfb]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-29 13:58:04] INFO root fetch - processPackages [teda]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-29 13:58:04] INFO root fetch - processPackages [my-provider]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ditty]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-29 13:58:04] INFO root fetch - processPackages [nlpaf]: New version: [2.8.8] Old Version: [2.8.7]
+[2023-05-29 13:58:04] INFO root fetch - processPackages [nlpaf]: Downloading https://files.pythonhosted.org/packages/5d/da/1b92550f6bc1e7b62d9eca934cf2d4d57ebcc3fb29072424036f138d98af/nlpaf-2.8.7.tar.gz
+[2023-05-29 13:58:04] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 13:58:04] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu-segmentation-0.0.98.tar.gz tmp/edu_segmentation-0.0.99.tar.gz --markdown 20230529/e/edu-segmentation/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 13:58:04] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-29 13:58:04] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my-provider-0.1.8.tar.gz tmp/my-provider-0.1.9.tar.gz --markdown 20230529/m/my-provider/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 13:58:04] INFO root fetch - processPackages [docstruct]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 13:58:04] WARNING root fetch - processPackages [nlpaf]: Skipping package: exceeds size limit 24324747>=10485760
+[2023-05-29 13:58:04] INFO root fetch - main [MainThread]: End processing [nlpaf] error
+[2023-05-29 13:58:04] INFO root fetch - processPackages [pytest-xvfb]: Downloading https://files.pythonhosted.org/packages/07/a5/78bbf89d95bdcf9c391c9ccab136fada0ad9bb8d5b8f467bbab7c4b5217e/pytest-xvfb-2.0.0.tar.gz
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ygModbus]: Downloading https://files.pythonhosted.org/packages/04/41/26f4938efdbb4ebeafa1b69f151a673150e0dc7f67fbfcb4e1c47d2492f7/ygModbus-0.0.9-py3-none-any.whl
+[2023-05-29 13:58:04] INFO root fetch - processPackages [teda]: Downloading https://files.pythonhosted.org/packages/36/bc/99a5330180a6473d2cf823922fe8b9d437d538309751a4fdc1f595ee2cf5/teda-3.1.1.tar.gz
+[2023-05-29 13:58:04] INFO root fetch - processPackages [docstruct]: Downloading https://files.pythonhosted.org/packages/b6/dd/ef382a3ef2f781e571fa44b24e715c99a80570ce64432ea7959058098147/docstruct-1.0.8.tar.gz
+[2023-05-29 13:58:04] INFO root fetch - processPackages [teda]: executing diffoscope
+[2023-05-29 13:58:04] INFO root fetch - processPackages [teda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teda-3.1.0.tar.gz tmp/teda-3.1.1.tar.gz --markdown 20230529/t/teda/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ditty]: Downloading https://files.pythonhosted.org/packages/c7/32/1325b5ddee37feaa4b25751b523389f54b6e27b5c49b5b4632f80a4f8cb7/ditty-0.3.1.tar.gz
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ygModbus]: executing diffoscope
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ygModbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ygModbus-0.0.8-py3-none-any.whl.zip tmp/ygModbus-0.0.9-py3-none-any.whl.zip --markdown 20230529/y/ygModbus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:58:04] INFO root fetch - processPackages [pytest-xvfb]: Downloading https://files.pythonhosted.org/packages/37/3b/323923d97a3a53d8f302b8115e6c58f3606f8d2a376d36fec821351bc678/pytest-xvfb-3.0.0.tar.gz
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ditty]: executing diffoscope
+[2023-05-29 13:58:04] INFO root fetch - processPackages [ditty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ditty-0.3.0.tar.gz tmp/ditty-0.3.1.tar.gz --markdown 20230529/d/ditty/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-29 13:58:04] INFO root fetch - processPackages [pytest-xvfb]: executing diffoscope
+[2023-05-29 13:58:04] INFO root fetch - processPackages [pytest-xvfb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-xvfb-2.0.0.tar.gz tmp/pytest-xvfb-3.0.0.tar.gz --markdown 20230529/p/pytest-xvfb/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-29 13:58:04] INFO root fetch - processPackages [docstruct]: Downloading https://files.pythonhosted.org/packages/67/cc/bf46d160e67c20e24bc07a7e2fa460e37f75a31caefaaab0b2d53bc678b2/docstruct-1.0.9.tar.gz
+[2023-05-29 13:58:05] INFO root fetch - processPackages [docstruct]: executing diffoscope
+[2023-05-29 13:58:05] INFO root fetch - processPackages [docstruct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docstruct-1.0.8.tar.gz tmp/docstruct-1.0.9.tar.gz --markdown 20230529/d/docstruct/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:58:05] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-29 13:58:05] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 13:58:05] INFO root fetch - main [MainThread]: End processing [ygModbus]: success
+[2023-05-29 13:58:05] INFO root fetch - main [MainThread]: End processing [pytest-xvfb]: success
+[2023-05-29 13:58:05] INFO root fetch - main [MainThread]: End processing [ditty]: success
+[2023-05-29 13:58:06] INFO root fetch - main [MainThread]: End processing [teda]: success
+[2023-05-29 13:58:06] INFO root fetch - main [MainThread]: End processing [docstruct]: success
+[2023-05-29 13:58:06] INFO root fetch - main [MainThread]: Store serial: [18289446]
