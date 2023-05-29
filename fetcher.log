@@ -14410,3 +14410,39 @@ EOFError: EOF read where object expected
 [2023-05-29 19:12:52] INFO root fetch - main [MainThread]: End processing [rembg]: success
 [2023-05-29 19:12:54] INFO root fetch - main [MainThread]: End processing [pautobot]: success
 [2023-05-29 19:12:54] INFO root fetch - main [MainThread]: Store serial: [18292259]
+[2023-05-29 19:17:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292259]
+[2023-05-29 19:18:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 19:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lab-partner
+[2023-05-29 19:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lab-partner-utils
+[2023-05-29 19:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: human-protocol-sdk
+[2023-05-29 19:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: specmatic
+[2023-05-29 19:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: IOTAILibrary
+[2023-05-29 19:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cnmfsns
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.36] Old Version: [0.7.35]
+[2023-05-29 19:18:04] INFO root fetch - processPackages [human-protocol-sdk]: New version: [1.1.4] Old Version: [1.1.2]
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner]: New version: [0.7.36] Old Version: [0.7.35]
+[2023-05-29 19:18:04] WARNING root fetch - processPackages [IOTAILibrary]: Skipping, unable to determine old version
+[2023-05-29 19:18:04] INFO root fetch - processPackages [specmatic]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-29 19:18:04] INFO root fetch - main [MainThread]: End processing [IOTAILibrary] error
+[2023-05-29 19:18:04] INFO root fetch - processPackages [specmatic]: Downloading https://files.pythonhosted.org/packages/94/7f/bdbf7a779e0c5cffbb84123b6b6e4d7f460197c31b6b1b4c5722dea21b02/specmatic-0.7.3.tar.gz
+[2023-05-29 19:18:04] WARNING root fetch - processPackages [specmatic]: Skipping package: exceeds size limit 79090502>=10485760
+[2023-05-29 19:18:04] INFO root fetch - main [MainThread]: End processing [specmatic] error
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/11/18/17d17dfb5136cfc63d2d0a2e73bd3ae8e901789087f1051948fd0f51385f/lab-partner-utils-0.7.36.tar.gz
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/61/53/86756d93aa17818247951f669a343ce9721f83e2c933e69bc8361806df0e/lab-partner-0.7.36.tar.gz
+[2023-05-29 19:18:04] INFO root fetch - processPackages [cnmfsns]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-29 19:18:04] INFO root fetch - processPackages [human-protocol-sdk]: Downloading https://files.pythonhosted.org/packages/e2/99/7e6e06622afe7e5650d7ee749861e871c3857b5485bb2ee672f5092b1b8f/human-protocol-sdk-1.1.4.tar.gz
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.7.35.tar.gz tmp/lab-partner-0.7.36.tar.gz --markdown 20230529/l/lab-partner/0.7.35-0.7.36/diff.md --exclude *.pyd
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 19:18:04] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.7.35.tar.gz tmp/lab-partner-utils-0.7.36.tar.gz --markdown 20230529/l/lab-partner-utils/0.7.35-0.7.36/diff.md --exclude *.pyd
+[2023-05-29 19:18:04] INFO root fetch - processPackages [cnmfsns]: Downloading https://files.pythonhosted.org/packages/f5/6c/81194e4ca30c27652411cef59cdcdd6a65e75feb36731163f1d95527c26a/cnmfsns-1.3.0.tar.gz
+[2023-05-29 19:18:04] INFO root fetch - processPackages [human-protocol-sdk]: executing diffoscope
+[2023-05-29 19:18:04] INFO root fetch - processPackages [human-protocol-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/human-protocol-sdk-1.1.2.tar.gz tmp/human-protocol-sdk-1.1.4.tar.gz --markdown 20230529/h/human-protocol-sdk/1.1.2-1.1.4/diff.md --exclude *.pyd
+[2023-05-29 19:18:05] INFO root fetch - processPackages [cnmfsns]: Downloading https://files.pythonhosted.org/packages/c0/51/8ee30764269193cbc7561ea361a983e664b853341a6848839f3756aff567/cnmfsns-1.3.1.tar.gz
+[2023-05-29 19:18:05] INFO root fetch - processPackages [cnmfsns]: executing diffoscope
+[2023-05-29 19:18:05] INFO root fetch - processPackages [cnmfsns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnmfsns-1.3.0.tar.gz tmp/cnmfsns-1.3.1.tar.gz --markdown 20230529/c/cnmfsns/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-29 19:18:06] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 19:18:06] INFO root fetch - main [MainThread]: End processing [human-protocol-sdk]: success
+[2023-05-29 19:18:06] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 19:18:07] INFO root fetch - main [MainThread]: End processing [cnmfsns]: success
+[2023-05-29 19:18:07] INFO root fetch - main [MainThread]: Store serial: [18292277]
