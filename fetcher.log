@@ -5352,3 +5352,75 @@
 [2023-05-29 08:23:07] INFO root fetch - main [MainThread]: End processing [foliolib]: success
 [2023-05-29 08:23:13] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-05-29 08:23:13] INFO root fetch - main [MainThread]: Store serial: [18286734]
+[2023-05-29 08:28:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286734]
+[2023-05-29 08:28:22] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AppDemo
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-fts
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lamindb
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bubble-env
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xj-resource
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sparrowcloud
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: binance-c2c-sapi-sdk
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Pras-Server
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: xklb
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ripandtear
+[2023-05-29 08:28:22] WARNING root fetch - processPackages [AppDemo]: Skipping, unable to determine old version
+[2023-05-29 08:28:22] INFO root fetch - processPackages [AppDemo]: Start processing: salesea
+[2023-05-29 08:28:22] INFO root fetch - main [MainThread]: End processing [AppDemo] error
+[2023-05-29 08:28:22] WARNING root fetch - processPackages [bubble-env]: Skipping, unable to determine old version
+[2023-05-29 08:28:22] INFO root fetch - processPackages [bubble-env]: Start processing: imvdb
+[2023-05-29 08:28:22] INFO root fetch - main [MainThread]: End processing [bubble-env] error
+[2023-05-29 08:28:22] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [yt-fts]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xj-resource]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [Pras-Server]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ripandtear]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xklb]: New version: [1.29.2] Old Version: [1.29.1]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [sparrowcloud]: New version: [4.1.2] Old Version: [4.1.1]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [salesea]: New version: [1.0.28] Old Version: [1.0.27]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [imvdb]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-05-29 08:28:22] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.7.tar.gz tmp/ripandtear-0.9.9.tar.gz --markdown 20230529/r/ripandtear/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 08:28:22] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-05-29 08:28:22] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230529/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-05-29 08:28:22] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: Downloading https://files.pythonhosted.org/packages/dc/43/1d38f187fbb3625ecb1a52cefdeb0412eedab7ee6670796da438f416aa63/binance-c2c-sapi-sdk-0.0.3.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [sparrowcloud]: Downloading https://files.pythonhosted.org/packages/fc/83/797480cb0b0794eee5efa7e95bea32e468c258c9f5da1318a97da487686b/sparrowcloud-4.1.1.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xj-resource]: Downloading https://files.pythonhosted.org/packages/2e/5b/dfbca3ebfd2bab615a5706c03c67c6dcd8ff0146259b1d1ab6b72799ceb8/xj_resource-1.2.8.tar.gz
+[2023-05-29 08:28:22] ERROR root fetch - processPackages [salesea]: Unable to fetch info: No such project/version 'salesea' 1.0.27
+[2023-05-29 08:28:22] INFO root fetch - processPackages [salesea]: Start processing: dLuxToliman
+[2023-05-29 08:28:22] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-29 08:28:22] WARNING root fetch - processPackages [dLuxToliman]: Skipping, unable to determine old version
+[2023-05-29 08:28:22] INFO root fetch - main [MainThread]: End processing [dLuxToliman] error
+[2023-05-29 08:28:22] INFO root fetch - processPackages [Pras-Server]: Downloading https://files.pythonhosted.org/packages/9e/64/0dde4715b24a7bde078d82e2773281a147625d21c49e34a2a7e0879b5041/Pras_Server-1.2.1.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/f2/7c/7ae3c33a3581aa11404540ef172fa6989a09f4987b0fdd2469d97c45eb27/xklb-1.29.2.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/6d/0f/6639adc09a340729b7bed7056e41371ccaad0969e66a1b47f652a06bd42a/yt-fts-0.1.6.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [imvdb]: Downloading https://files.pythonhosted.org/packages/06/54/01d52c2b23d988b2ed5f079023c32c35b20490c5f5a730cd0fd22ff20442/imvdb-0.1.1-py3-none-any.whl
+[2023-05-29 08:28:22] INFO root fetch - processPackages [Pras-Server]: executing diffoscope
+[2023-05-29 08:28:22] INFO root fetch - processPackages [Pras-Server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pras_Server-1.2.0.tar.gz tmp/Pras_Server-1.2.1.tar.gz --markdown 20230529/P/Pras-Server/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-29 08:28:22] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-29 08:28:22] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.5.tar.gz tmp/yt-fts-0.1.6.tar.gz --markdown 20230529/y/yt-fts/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 08:28:22] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: Downloading https://files.pythonhosted.org/packages/d7/f3/2a932da4c37ba5a326c09f05039d45e03d12c8653fecafc07510043931b9/binance-c2c-sapi-sdk-0.0.4.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xj-resource]: Downloading https://files.pythonhosted.org/packages/b5/1e/487305282c457d5880119bf06b811813dcf6752ff46510c4db578da83210/xj_resource-1.2.9.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-29 08:28:22] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.29.1.tar.gz tmp/xklb-1.29.2.tar.gz --markdown 20230529/x/xklb/1.29.1-1.29.2/diff.md --exclude *.pyd
+[2023-05-29 08:28:22] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: executing diffoscope
+[2023-05-29 08:28:22] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sapi-sdk-0.0.3.tar.gz tmp/binance-c2c-sapi-sdk-0.0.4.tar.gz --markdown 20230529/b/binance-c2c-sapi-sdk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 08:28:22] INFO root fetch - processPackages [sparrowcloud]: Downloading https://files.pythonhosted.org/packages/82/30/96edba81fe385f7a1707406b19e5c9890824049fba35d1f357b9ae47a330/sparrowcloud-4.1.2.tar.gz
+[2023-05-29 08:28:22] INFO root fetch - processPackages [imvdb]: Downloading https://files.pythonhosted.org/packages/bc/10/24ee89ca073f3f0866d12c658625dc9199bb3cbbd344e0914b301555664c/imvdb-1.0.0-cy310-cp310-win_amd64.whl
+[2023-05-29 08:28:23] INFO root fetch - processPackages [xj-resource]: executing diffoscope
+[2023-05-29 08:28:23] INFO root fetch - processPackages [xj-resource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_resource-1.2.8.tar.gz tmp/xj_resource-1.2.9.tar.gz --markdown 20230529/x/xj-resource/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 08:28:23] INFO root fetch - processPackages [sparrowcloud]: executing diffoscope
+[2023-05-29 08:28:23] INFO root fetch - processPackages [sparrowcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrowcloud-4.1.1.tar.gz tmp/sparrowcloud-4.1.2.tar.gz --markdown 20230529/s/sparrowcloud/4.1.1-4.1.2/diff.md --exclude *.pyd
+[2023-05-29 08:28:23] INFO root fetch - processPackages [imvdb]: executing diffoscope
+[2023-05-29 08:28:23] INFO root fetch - processPackages [imvdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imvdb-0.1.1-py3-none-any.whl.zip tmp/imvdb-1.0.0-cy310-cp310-win_amd64.whl.zip --markdown 20230529/i/imvdb/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi-sdk]: success
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [xj-resource]: success
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-05-29 08:28:24] INFO root fetch - main [MainThread]: End processing [imvdb]: success
+[2023-05-29 08:28:25] INFO root fetch - main [MainThread]: End processing [sparrowcloud]: success
+[2023-05-29 08:28:26] INFO root fetch - main [MainThread]: End processing [Pras-Server]: success
+[2023-05-29 08:28:26] INFO root fetch - main [MainThread]: Store serial: [18286782]
