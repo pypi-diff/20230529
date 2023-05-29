@@ -7955,3 +7955,61 @@
 [2023-05-29 12:06:19] INFO root fetch - main [MainThread]: End processing [irispreppy]: success
 [2023-05-29 12:06:19] INFO root fetch - main [MainThread]: End processing [smartchart]: success
 [2023-05-29 12:06:19] INFO root fetch - main [MainThread]: Store serial: [18288301]
+[2023-05-29 12:11:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288301]
+[2023-05-29 12:11:29] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simassis
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neulabs-cdk-constructs
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esparto
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycofitness
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gistingv3
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: area-test-mould
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lana
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyE2
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fetchify
+[2023-05-29 12:11:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: llm-rs
+[2023-05-29 12:11:29] INFO root fetch - processPackages [simassis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 12:11:29] WARNING root fetch - processPackages [gistingv3]: Skipping, unable to determine old version
+[2023-05-29 12:11:29] INFO root fetch - main [MainThread]: End processing [gistingv3] error
+[2023-05-29 12:11:29] INFO root fetch - processPackages [esparto]: New version: [4.3.0] Old Version: [4.2.0]
+[2023-05-29 12:11:29] INFO root fetch - processPackages [neulabs-cdk-constructs]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-29 12:11:29] INFO root fetch - processPackages [lana]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 12:11:29] WARNING root fetch - processPackages [area-test-mould]: Skipping, unable to determine old version
+[2023-05-29 12:11:29] WARNING root fetch - processPackages [pycofitness]: Skipping, unable to determine old version
+[2023-05-29 12:11:29] INFO root fetch - processPackages [PyE2]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-29 12:11:29] INFO root fetch - main [MainThread]: End processing [area-test-mould] error
+[2023-05-29 12:11:29] INFO root fetch - processPackages [fetchify]: New version: [1.2.0] Old Version: [1.1.7]
+[2023-05-29 12:11:29] INFO root fetch - main [MainThread]: End processing [pycofitness] error
+[2023-05-29 12:11:29] INFO root fetch - processPackages [llm-rs]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-29 12:11:29] INFO root fetch - processPackages [lana]: Downloading https://files.pythonhosted.org/packages/ec/38/9ba16bc7ac5769124b8ecd23a305acb2c5edfba2024701a37c3448a69427/lana-0.0.6.tar.gz
+[2023-05-29 12:11:29] INFO root fetch - processPackages [PyE2]: Downloading https://files.pythonhosted.org/packages/c2/1c/eb6627a92e518d325f05b138d27f2420ba048361b958c058ba30866ee0bc/pye2-0.4.4.tar.gz
+[2023-05-29 12:11:29] INFO root fetch - processPackages [esparto]: Downloading https://files.pythonhosted.org/packages/62/86/8debc11095f564aa1be19eecec743593292b0d9d12e7c86cd4abd738c826/esparto-4.2.0.tar.gz
+[2023-05-29 12:11:29] INFO root fetch - processPackages [simassis]: Downloading https://files.pythonhosted.org/packages/b8/f9/7c4853185941845af2523c1507a7e4189e6ca32dcf7bb111a4b4658c5bec/simassis-0.1.8.tar.gz
+[2023-05-29 12:11:29] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/4e/3b/1ea3ebc16dd44b5ce33ef8837c386c91832426cfc01d4092dd131558b87e/neulabs-cdk-constructs-0.4.4.tar.gz
+[2023-05-29 12:11:30] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/4c/63/7a538981c9aad136fc8ac92b1247c3573e91c91e873936ea74e652f39bb5/fetchify-1.2.0.tar.gz
+[2023-05-29 12:11:30] INFO root fetch - processPackages [llm-rs]: Downloading https://files.pythonhosted.org/packages/5c/48/729c2c4883c5ccaae16b572f3e10881a779dff9fb368e2a9931d0a4f7789/llm_rs-0.2.8-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 12:11:30] INFO root fetch - processPackages [lana]: Downloading https://files.pythonhosted.org/packages/5d/47/af60cc814fdfad4d07048984732669cb04b028c778a0f9d674a0a6509632/lana-0.0.7.tar.gz
+[2023-05-29 12:11:30] INFO root fetch - processPackages [PyE2]: Downloading https://files.pythonhosted.org/packages/22/af/87e6ce5e460ab92f1966080a7e7623260378d000677dc35ccac9696e51a0/pye2-0.4.5.tar.gz
+[2023-05-29 12:11:30] INFO root fetch - processPackages [neulabs-cdk-constructs]: executing diffoscope
+[2023-05-29 12:11:30] INFO root fetch - processPackages [neulabs-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neulabs-cdk-constructs-0.4.3.tar.gz tmp/neulabs-cdk-constructs-0.4.4.tar.gz --markdown 20230529/n/neulabs-cdk-constructs/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-29 12:11:30] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-29 12:11:30] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.1.7.tar.gz tmp/fetchify-1.2.0.tar.gz --markdown 20230529/f/fetchify/1.1.7-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 12:11:30] INFO root fetch - processPackages [simassis]: Downloading https://files.pythonhosted.org/packages/4a/3e/7172c3880ddf3ef0aa76e7741960a53cddb9f9efdb05d62d3231d91bee1e/simassis-0.1.9.tar.gz
+[2023-05-29 12:11:30] INFO root fetch - processPackages [lana]: executing diffoscope
+[2023-05-29 12:11:30] INFO root fetch - processPackages [lana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lana-0.0.6.tar.gz tmp/lana-0.0.7.tar.gz --markdown 20230529/l/lana/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 12:11:30] INFO root fetch - processPackages [esparto]: Downloading https://files.pythonhosted.org/packages/0c/f2/eb5565c237dc26046fcdf206027c4d10e09591218d0d21073071b0af535e/esparto-4.3.0.tar.gz
+[2023-05-29 12:11:30] INFO root fetch - processPackages [PyE2]: executing diffoscope
+[2023-05-29 12:11:30] INFO root fetch - processPackages [PyE2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pye2-0.4.4.tar.gz tmp/pye2-0.4.5.tar.gz --markdown 20230529/P/PyE2/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-29 12:11:30] INFO root fetch - processPackages [esparto]: executing diffoscope
+[2023-05-29 12:11:30] INFO root fetch - processPackages [esparto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esparto-4.2.0.tar.gz tmp/esparto-4.3.0.tar.gz --markdown 20230529/e/esparto/4.2.0-4.3.0/diff.md --exclude *.pyd
+[2023-05-29 12:11:30] INFO root fetch - processPackages [simassis]: executing diffoscope
+[2023-05-29 12:11:30] INFO root fetch - processPackages [simassis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simassis-0.1.8.tar.gz tmp/simassis-0.1.9.tar.gz --markdown 20230529/s/simassis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-29 12:11:31] INFO root fetch - processPackages [llm-rs]: executing diffoscope
+[2023-05-29 12:11:31] INFO root fetch - processPackages [llm-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_rs-0.2.7.tar.gz tmp/llm_rs-0.2.8-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/l/llm-rs/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [lana]: success
+[2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [neulabs-cdk-constructs]: success
+[2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [simassis]: success
+[2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [PyE2]: success
+[2023-05-29 12:11:31] INFO root fetch - main [MainThread]: End processing [esparto]: success
+[2023-05-29 12:11:32] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
+[2023-05-29 12:11:32] INFO root fetch - main [MainThread]: Store serial: [18288359]
