@@ -7244,3 +7244,55 @@
 [2023-05-29 11:15:11] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-05-29 11:15:11] INFO root fetch - main [MainThread]: End processing [dLuxToliman]: success
 [2023-05-29 11:15:11] INFO root fetch - main [MainThread]: Store serial: [18287910]
+[2023-05-29 11:20:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287910]
+[2023-05-29 11:20:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datamarket
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: season
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: etcd-client-py
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Mopiqtt
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vbarongdatools001
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pinject-design
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gisting
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lnschema_bionty
+[2023-05-29 11:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pingsafe-cli
+[2023-05-29 11:20:19] INFO root fetch - processPackages [vbarongdatools001]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 11:20:19] INFO root fetch - processPackages [pinject-design]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 11:20:19] INFO root fetch - processPackages [datamarket]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-29 11:20:19] INFO root fetch - processPackages [Mopiqtt]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 11:20:19] INFO root fetch - processPackages [season]: New version: [2.3.6] Old Version: [2.3.5]
+[2023-05-29 11:20:19] WARNING root fetch - processPackages [etcd-client-py]: Skipping, unable to determine old version
+[2023-05-29 11:20:19] INFO root fetch - main [MainThread]: End processing [etcd-client-py] error
+[2023-05-29 11:20:19] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-29 11:20:20] WARNING root fetch - processPackages [gisting]: Skipping, unable to determine old version
+[2023-05-29 11:20:20] INFO root fetch - main [MainThread]: End processing [gisting] error
+[2023-05-29 11:20:20] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-29 11:20:20] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230529/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pingsafe-cli]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 11:20:20] INFO root fetch - processPackages [vbarongdatools001]: Downloading https://files.pythonhosted.org/packages/54/a2/d6c6c150f3e3bafed5fb797ed29b4f808b8577a54b2c743aecfdab014cbf/vbarongdatools001-0.0.6.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pinject-design]: Downloading https://files.pythonhosted.org/packages/5f/f2/6f47beb8ae7800164b86a0ca180efa5ad86edb3b1419d97531dddcc0c026/pinject-design-0.1.8.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/0b/c3/92c71b8fc092df606b251e555a31b86893798d16911ce277b1ec61ffc239/season-2.3.5-py3-none-any.whl
+[2023-05-29 11:20:20] INFO root fetch - processPackages [Mopiqtt]: Downloading https://files.pythonhosted.org/packages/af/4d/5fcb1f8972f9f8979c48bba08a3771c1c17811152d62dc624cc0a584a31a/Mopiqtt-1.0.8.tar.gz
+[2023-05-29 11:20:20] WARNING root fetch - processPackages [season]: Skipping package: exceeds size limit 13772883>=10485760
+[2023-05-29 11:20:20] INFO root fetch - main [MainThread]: End processing [season] error
+[2023-05-29 11:20:20] INFO root fetch - processPackages [vbarongdatools001]: executing diffoscope
+[2023-05-29 11:20:20] INFO root fetch - processPackages [vbarongdatools001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbarongdatools001-0.0.5.tar.gz tmp/vbarongdatools001-0.0.6.tar.gz --markdown 20230529/v/vbarongdatools001/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 11:20:20] INFO root fetch - processPackages [datamarket]: Downloading https://files.pythonhosted.org/packages/e5/25/bdb291e33c6edf2c8f6e6873cce1679c8f87fa198e52f14058c5ed33e622/datamarket-0.3.5.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pingsafe-cli]: Downloading https://files.pythonhosted.org/packages/ec/35/3bf8cefc33c4c58e7073260a6e73cddf6b26116694c83da9caf9f0e6e928/pingsafe_cli-0.0.1.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [datamarket]: executing diffoscope
+[2023-05-29 11:20:20] INFO root fetch - processPackages [datamarket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamarket-0.3.4.tar.gz tmp/datamarket-0.3.5.tar.gz --markdown 20230529/d/datamarket/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-29 11:20:20] INFO root fetch - processPackages [Mopiqtt]: Downloading https://files.pythonhosted.org/packages/76/fd/2670f0420ea5b0458cf3bdbe172d85c09fe9c66e4f4b1050ce4ba0d40c81/Mopiqtt-1.0.9.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pinject-design]: Downloading https://files.pythonhosted.org/packages/52/12/a13d2115034630043d98ad1bf73e273115201ee763cd0fd21c61df995b87/pinject-design-0.1.9.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [Mopiqtt]: executing diffoscope
+[2023-05-29 11:20:20] INFO root fetch - processPackages [Mopiqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopiqtt-1.0.8.tar.gz tmp/Mopiqtt-1.0.9.tar.gz --markdown 20230529/M/Mopiqtt/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pingsafe-cli]: Downloading https://files.pythonhosted.org/packages/2c/7f/5a404646da21b8a1f6556712d1140faa1def946370497c29e01c1e023fb6/pingsafe_cli-0.0.2.tar.gz
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pinject-design]: executing diffoscope
+[2023-05-29 11:20:20] INFO root fetch - processPackages [pinject-design]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinject-design-0.1.8.tar.gz tmp/pinject-design-0.1.9.tar.gz --markdown 20230529/p/pinject-design/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 11:20:21] INFO root fetch - processPackages [pingsafe-cli]: executing diffoscope
+[2023-05-29 11:20:21] INFO root fetch - processPackages [pingsafe-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pingsafe_cli-0.0.1.tar.gz tmp/pingsafe_cli-0.0.2.tar.gz --markdown 20230529/p/pingsafe-cli/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 11:20:21] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-29 11:20:21] INFO root fetch - main [MainThread]: End processing [Mopiqtt]: success
+[2023-05-29 11:20:21] INFO root fetch - main [MainThread]: End processing [pinject-design]: success
+[2023-05-29 11:20:21] INFO root fetch - main [MainThread]: End processing [datamarket]: success
+[2023-05-29 11:20:22] INFO root fetch - main [MainThread]: End processing [pingsafe-cli]: success
+[2023-05-29 11:20:23] INFO root fetch - main [MainThread]: End processing [vbarongdatools001]: success
+[2023-05-29 11:20:23] INFO root fetch - main [MainThread]: Store serial: [18287951]
