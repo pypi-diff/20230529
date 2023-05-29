@@ -8872,3 +8872,101 @@
 [2023-05-29 13:02:54] INFO root fetch - main [MainThread]: End processing [cairo-lang]: success
 [2023-05-29 13:03:09] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-29 13:03:09] INFO root fetch - main [MainThread]: Store serial: [18288924]
+[2023-05-29 13:08:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288924]
+[2023-05-29 13:08:21] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mb-base
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krakenpy
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edu-segmentation
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: starrocks
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: always-updates
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: obrpy
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oneai
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SpectroscopicBinarySystem
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cloudpss
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ma-fi
+[2023-05-29 13:08:21] INFO root fetch - processPackages [krakenpy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291106] Old Version: [1.0.202305291103]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [starrocks]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.97] Old Version: [0.0.96]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [ma-fi]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [cloudpss]: New version: [3.5.0a1] Old Version: [3.2.0a2]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [oneai]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 13:08:21] INFO root fetch - processPackages [SpectroscopicBinarySystem]: New version: [1.4.0] Old Version: [1.3.3]
+[2023-05-29 13:08:22] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-29 13:08:22] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [oneai]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [oneai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oneai-0.9.8.tar.gz tmp/oneai-0.9.9.tar.gz --markdown 20230529/o/oneai/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/17/f4/b80b8eb2a3ea48c60459f3775ddc335d28dbcae60697efbe9f43edeff3f6/mb_base-1.0.202305291103-py3-none-any.whl
+[2023-05-29 13:08:22] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230529/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [SpectroscopicBinarySystem]: Downloading https://files.pythonhosted.org/packages/7d/45/361bd02af1c2ba775ad0ccd22f5dd174dbc6beb22daf0ad468294c4f2aa9/SpectroscopicBinarySystem-1.3.3.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [starrocks]: Downloading https://files.pythonhosted.org/packages/56/17/f8afc2d715d26fdf287ef76d3368fa863ea880434e4022180c5be6345eff/starrocks-1.0.3.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [krakenpy]: Downloading https://files.pythonhosted.org/packages/cf/91/2a486f8995e022a6c2e3b53e16b3c872f0834d2e9604c53fbdb8b4f05768/krakenpy-0.1.2.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [ma-fi]: Downloading https://files.pythonhosted.org/packages/2e/ca/a5b9ecac04b3207238cd2adceca6e9c48ebaab6eab27488949b9b21ce57f/ma_fi-0.1.7.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/3e/11/12830e53cab142a1b026e3d90c5affc4e540526bffd810070f5268bc41bf/edu-segmentation-0.0.97.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/d4/62/6fdc296728e9dbacd42b2b9936ef21cc09b12d2915d01265d884f4b78863/cloudpss-3.2.0a2.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.96.tar.gz tmp/edu-segmentation-0.0.97.tar.gz --markdown 20230529/e/edu-segmentation/0.0.96-0.0.97/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [ma-fi]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [ma-fi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ma_fi-0.1.6.tar.gz tmp/ma_fi-0.1.7.tar.gz --markdown 20230529/m/ma-fi/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/0a/ff/e2a9b931fe217bdce856a210bfbf0603b81df98c257ceb0963e78d91fbc7/mb_base-1.0.202305291106-py3-none-any.whl
+[2023-05-29 13:08:22] INFO root fetch - processPackages [SpectroscopicBinarySystem]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [SpectroscopicBinarySystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpectroscopicBinarySystem-1.3.3.tar.gz tmp/SpectroscopicBinarySystem-1.4.0.tar.gz --markdown 20230529/S/SpectroscopicBinarySystem/1.3.3-1.4.0/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [starrocks]: Downloading https://files.pythonhosted.org/packages/af/5b/66bb419622d2a285d8d6f10a29b2482ceff25adf96c979d0888341ffa8fe/starrocks-1.0.5.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [krakenpy]: Downloading https://files.pythonhosted.org/packages/0a/45/7144a1e02444469fe3b160ddc32a9bf85133ea63c28bbdbf3881cde7a883/krakenpy-0.1.3.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291103-py3-none-any.whl.zip tmp/mb_base-1.0.202305291106-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291103-1.0.202305291106/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [starrocks]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [starrocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrocks-1.0.3.tar.gz tmp/starrocks-1.0.5.tar.gz --markdown 20230529/s/starrocks/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/a1/ea/b982eca2d4f934e979415733a5cd17bfc1de57683a844475fac1be584921/cloudpss-3.5.0a1.tar.gz
+[2023-05-29 13:08:22] INFO root fetch - processPackages [krakenpy]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [krakenpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krakenpy-0.1.2.tar.gz tmp/krakenpy-0.1.3.tar.gz --markdown 20230529/k/krakenpy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 13:08:22] INFO root fetch - processPackages [cloudpss]: executing diffoscope
+[2023-05-29 13:08:22] INFO root fetch - processPackages [cloudpss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpss-3.2.0a2.tar.gz tmp/cloudpss-3.5.0a1.tar.gz --markdown 20230529/c/cloudpss/3.2.0a2-3.5.0a1/diff.md --exclude *.pyd
+[2023-05-29 13:08:23] INFO root fetch - processPackages [obrpy]: Start processing: bagbag
+[2023-05-29 13:08:23] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 13:08:23] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 13:08:23] INFO root fetch - processPackages [always-updates]: Start processing: wand-ai-client
+[2023-05-29 13:08:23] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-29 13:08:23] INFO root fetch - processPackages [wand-ai-client]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 13:08:23] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 13:08:23] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 13:08:23] INFO root fetch - processPackages [wand-ai-client]: Downloading https://files.pythonhosted.org/packages/e5/40/7cab7ac8be644d547c02905b3e7e5afdbb5a1b0fc409d803200e4e278174/wand-ai-client-0.0.4.tar.gz
+[2023-05-29 13:08:23] INFO root fetch - processPackages [ma-fi]: Start processing: mb-base
+[2023-05-29 13:08:23] INFO root fetch - main [MainThread]: End processing [ma-fi]: success
+[2023-05-29 13:08:23] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291106] Old Version: [1.0.202305291103]
+[2023-05-29 13:08:23] INFO root fetch - processPackages [wand-ai-client]: executing diffoscope
+[2023-05-29 13:08:23] INFO root fetch - processPackages [wand-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wand-ai-client-0.0.3.tar.gz tmp/wand-ai-client-0.0.4.tar.gz --markdown 20230529/w/wand-ai-client/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 13:08:24] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 13:08:24] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291103-py3-none-any.whl.zip tmp/mb_base-1.0.202305291106-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291103-1.0.202305291106/diff.md --exclude *.pyd
+[2023-05-29 13:08:24] INFO root fetch - processPackages [oneai]: Start processing: pyheartlib
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [oneai]: success
+[2023-05-29 13:08:24] INFO root fetch - processPackages [pyheartlib]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 13:08:24] INFO root fetch - processPackages [SpectroscopicBinarySystem]: Start processing: psqlpandas
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [SpectroscopicBinarySystem]: success
+[2023-05-29 13:08:24] INFO root fetch - processPackages [psqlpandas]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-05-29 13:08:24] INFO root fetch - processPackages [edu-segmentation]: Start processing: odoo-somconnexio-python-client
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 13:08:24] INFO root fetch - processPackages [odoo-somconnexio-python-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 13:08:24] INFO root fetch - processPackages [pyheartlib]: Downloading https://files.pythonhosted.org/packages/8f/80/6344e811ee4fee0192b29f6374706930d6140fd37e591cdd2d403d3450cd/pyheartlib-0.0.8.tar.gz
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 13:08:24] INFO root fetch - processPackages [psqlpandas]: Downloading https://files.pythonhosted.org/packages/c1/f3/b0067dd3242aa78a7b768afea70c982d14ff2230fae88cabcb5d1e9add8f/psqlpandas-0.0.2.tar.gz
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [krakenpy]: success
+[2023-05-29 13:08:24] INFO root fetch - processPackages [pyheartlib]: executing diffoscope
+[2023-05-29 13:08:24] INFO root fetch - processPackages [pyheartlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyheartlib-0.0.7.tar.gz tmp/pyheartlib-0.0.8.tar.gz --markdown 20230529/p/pyheartlib/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [starrocks]: success
+[2023-05-29 13:08:24] INFO root fetch - main [MainThread]: End processing [cloudpss]: success
+[2023-05-29 13:08:24] INFO root fetch - processPackages [psqlpandas]: Downloading https://files.pythonhosted.org/packages/b0/a9/17c77950f6b38a13a35350eea5274d75d2d11c671aa5c7a75207b68c46a6/psqlpandas-1.0.0.tar.gz
+[2023-05-29 13:08:24] INFO root fetch - processPackages [odoo-somconnexio-python-client]: executing diffoscope
+[2023-05-29 13:08:24] INFO root fetch - processPackages [odoo-somconnexio-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo-somconnexio-python-client-0.1.8.tar.gz tmp/odoo-somconnexio-python-client-0.1.9.tar.gz --markdown 20230529/o/odoo-somconnexio-python-client/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 13:08:24] INFO root fetch - processPackages [psqlpandas]: executing diffoscope
+[2023-05-29 13:08:24] INFO root fetch - processPackages [psqlpandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psqlpandas-0.0.2.tar.gz tmp/psqlpandas-1.0.0.tar.gz --markdown 20230529/p/psqlpandas/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 13:08:25] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 13:08:25] INFO root fetch - main [MainThread]: End processing [wand-ai-client]: success
+[2023-05-29 13:08:26] INFO root fetch - main [MainThread]: End processing [odoo-somconnexio-python-client]: success
+[2023-05-29 13:08:26] INFO root fetch - main [MainThread]: End processing [psqlpandas]: success
+[2023-05-29 13:08:26] INFO root fetch - main [MainThread]: End processing [pyheartlib]: success
+[2023-05-29 13:08:26] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-29 13:08:26] INFO root fetch - main [MainThread]: Store serial: [18288971]
