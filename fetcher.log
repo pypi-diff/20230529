@@ -8797,3 +8797,78 @@
 [2023-05-29 12:56:45] INFO root fetch - main [MainThread]: End processing [google-ads-api-report-fetcher]: success
 [2023-05-29 12:57:34] INFO root fetch - main [MainThread]: End processing [django-vendor-promo]: success
 [2023-05-29 12:57:34] INFO root fetch - main [MainThread]: Store serial: [18288882]
+[2023-05-29 13:02:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288882]
+[2023-05-29 13:02:43] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonofflan
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ioc-engine
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: perseus-restful-api-framework
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spectrally-constrained-lvms
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: areaTestMould
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: file-io-cli-tddschn
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: upgini
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gfs-dynamical-core
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cairo-lang
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dinosub
+[2023-05-29 13:02:43] INFO root fetch - processPackages [spectrally-constrained-lvms]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [file-io-cli-tddschn]: New version: [1.1.0] Old Version: [1.0.6]
+[2023-05-29 13:02:43] WARNING root fetch - processPackages [dinosub]: Skipping, unable to determine old version
+[2023-05-29 13:02:43] INFO root fetch - processPackages [dinosub]: Start processing: salt-nornir
+[2023-05-29 13:02:43] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 13:02:43] INFO root fetch - main [MainThread]: End processing [dinosub] error
+[2023-05-29 13:02:43] INFO root fetch - processPackages [cairo-lang]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [ioc-engine]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [perseus-restful-api-framework]: New version: [1.26.9] Old Version: [1.26.8]
+[2023-05-29 13:02:43] WARNING root fetch - processPackages [areaTestMould]: Skipping, unable to determine old version
+[2023-05-29 13:02:43] INFO root fetch - processPackages [areaTestMould]: Start processing: mb-base
+[2023-05-29 13:02:43] INFO root fetch - main [MainThread]: End processing [areaTestMould] error
+[2023-05-29 13:02:43] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [salt-nornir]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291101] Old Version: [1.0.202305291052]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [sonofflan]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-29 13:02:43] INFO root fetch - processPackages [spectrally-constrained-lvms]: Downloading https://files.pythonhosted.org/packages/2d/43/7d6f27dab08e36289ff0f9f5ace34c8652f7ad65f33218ba9c4dab9c5acd/spectrally_constrained_lvms-0.1.1.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/73/6a/4ebc99d7ccfc36223a9703e593d57694b45d2110ff65989a64423bdb5d5d/file_io_cli_tddschn-1.0.6.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/2b/f0/a50cdbf15c645240faed342a3bb63835d38065a71975d8eca39251161193/mb_base-1.0.202305291101-py3-none-any.whl
+[2023-05-29 13:02:44] INFO root fetch - processPackages [salt-nornir]: Downloading https://files.pythonhosted.org/packages/a1/13/10191ea405d1b2279b2871663f0446149a71aaae3cfbb7047c447bab296c/salt_nornir-0.8.0.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [sonofflan]: Downloading https://files.pythonhosted.org/packages/82/f1/0da4dba911b3d50146a0192e7b0dee0b1280f2c921f30162b4a36807e58b/sonofflan-0.3.2.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291052-py3-none-any.whl.zip tmp/mb_base-1.0.202305291101-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291052-1.0.202305291101/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [perseus-restful-api-framework]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [perseus-restful-api-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perseus_restful_api_framework-1.26.8.tar.gz tmp/perseus_restful_api_framework-1.26.9.tar.gz --markdown 20230529/p/perseus-restful-api-framework/1.26.8-1.26.9/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [cairo-lang]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [cairo-lang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cairo-lang-0.9.0.zip tmp/cairo-lang-0.9.1.zip --markdown 20230529/c/cairo-lang/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [ioc-engine]: Downloading https://files.pythonhosted.org/packages/01/42/d1da33ee928dae5a51d86501ae18a8cd82a757a4c5a726f3558b7f78132e/ioc_engine-0.0.4.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [ioc-engine]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [ioc-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioc_engine-0.0.3.tar.gz tmp/ioc_engine-0.0.4.tar.gz --markdown 20230529/i/ioc-engine/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [file-io-cli-tddschn]: Downloading https://files.pythonhosted.org/packages/92/eb/7ea21c9bde5550564173dab88cbe9f88c0df07a370d7dc38b73f4fa66823/file_io_cli_tddschn-1.1.0.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [spectrally-constrained-lvms]: Downloading https://files.pythonhosted.org/packages/52/36/37a31d57ef61ec22a9007bed584a264ed1193616fc242bd75b581c860ddc/spectrally_constrained_lvms-0.1.2.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230529/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [file-io-cli-tddschn]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [file-io-cli-tddschn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_io_cli_tddschn-1.0.6.tar.gz tmp/file_io_cli_tddschn-1.1.0.tar.gz --markdown 20230529/f/file-io-cli-tddschn/1.0.6-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [spectrally-constrained-lvms]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [spectrally-constrained-lvms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrally_constrained_lvms-0.1.1.tar.gz tmp/spectrally_constrained_lvms-0.1.2.tar.gz --markdown 20230529/s/spectrally-constrained-lvms/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [salt-nornir]: Downloading https://files.pythonhosted.org/packages/29/e0/e942cb8a42de6842bbc6fd2c7348b78910db1c1f9443eb88baa66a895e99/salt_nornir-0.9.0.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [sonofflan]: Downloading https://files.pythonhosted.org/packages/f6/c6/251bcb5c3fa70bcce625d26bc8fdf2ddfb0abd9f3dd7a097451ecea76422/sonofflan-0.3.3.tar.gz
+[2023-05-29 13:02:44] INFO root fetch - processPackages [sonofflan]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [sonofflan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonofflan-0.3.2.tar.gz tmp/sonofflan-0.3.3.tar.gz --markdown 20230529/s/sonofflan/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-29 13:02:44] INFO root fetch - processPackages [salt-nornir]: executing diffoscope
+[2023-05-29 13:02:44] INFO root fetch - processPackages [salt-nornir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salt_nornir-0.8.0.tar.gz tmp/salt_nornir-0.9.0.tar.gz --markdown 20230529/s/salt-nornir/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 13:02:45] INFO root fetch - processPackages [mb-base]: Start processing: Hefesto
+[2023-05-29 13:02:45] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 13:02:45] INFO root fetch - processPackages [Hefesto]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-29 13:02:46] INFO root fetch - main [MainThread]: End processing [file-io-cli-tddschn]: success
+[2023-05-29 13:02:46] INFO root fetch - processPackages [Hefesto]: Downloading https://files.pythonhosted.org/packages/a4/ff/bc512a919c77a0ea40096b18ddcb43b1a309f5b6654949cbefe606b82a71/Hefesto-0.4.2.tar.gz
+[2023-05-29 13:02:46] INFO root fetch - processPackages [Hefesto]: executing diffoscope
+[2023-05-29 13:02:46] INFO root fetch - processPackages [Hefesto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Hefesto-0.4.1.tar.gz tmp/Hefesto-0.4.2.tar.gz --markdown 20230529/H/Hefesto/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-29 13:02:46] INFO root fetch - main [MainThread]: End processing [ioc-engine]: success
+[2023-05-29 13:02:46] INFO root fetch - main [MainThread]: End processing [sonofflan]: success
+[2023-05-29 13:02:46] INFO root fetch - main [MainThread]: End processing [spectrally-constrained-lvms]: success
+[2023-05-29 13:02:46] INFO root fetch - main [MainThread]: End processing [salt-nornir]: success
+[2023-05-29 13:02:47] INFO root fetch - main [MainThread]: End processing [Hefesto]: success
+[2023-05-29 13:02:47] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-29 13:02:49] INFO root fetch - main [MainThread]: End processing [perseus-restful-api-framework]: success
+[2023-05-29 13:02:54] INFO root fetch - main [MainThread]: End processing [cairo-lang]: success
+[2023-05-29 13:03:09] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-29 13:03:09] INFO root fetch - main [MainThread]: Store serial: [18288924]
