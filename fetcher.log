@@ -4657,3 +4657,47 @@
 [2023-05-29 06:45:54] INFO root fetch - main [MainThread]: End processing [lolpop]: success
 [2023-05-29 06:45:58] INFO root fetch - main [MainThread]: End processing [pymavlink]: success
 [2023-05-29 06:45:58] INFO root fetch - main [MainThread]: Store serial: [18286379]
+[2023-05-29 06:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286379]
+[2023-05-29 06:51:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flake8-iw
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nxs-analysis-tools
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dLux
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asyncmake
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-board
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: web-sand
+[2023-05-29 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wasm-exec
+[2023-05-29 06:51:07] INFO root fetch - processPackages [flake8-iw]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [asyncmake]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [dLux]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [pipen-board]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [web-sand]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [wasm-exec]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [nxs-analysis-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 06:51:07] INFO root fetch - processPackages [flake8-iw]: Downloading https://files.pythonhosted.org/packages/b0/8d/d764ec8fc3145bc8fbf808e82ef21452099e732c3b5f745da6b66e0d913c/flake8_iw-0.0.8.tar.gz
+[2023-05-29 06:51:07] INFO root fetch - processPackages [wasm-exec]: executing diffoscope
+[2023-05-29 06:51:07] INFO root fetch - processPackages [wasm-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasm_exec-0.1.0.tar.gz tmp/wasm_exec-0.1.1.tar.gz --markdown 20230529/w/wasm-exec/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 06:51:07] INFO root fetch - processPackages [asyncmake]: Downloading https://files.pythonhosted.org/packages/e2/9c/d099038f3c06acf307e9a16ccb977bc38c09c5faa31fae0831576f907a04/asyncmake-0.1.3.tar.gz
+[2023-05-29 06:51:07] INFO root fetch - processPackages [web-sand]: Downloading https://files.pythonhosted.org/packages/78/20/c2e5281b16a66b0fc5583476802e20cf7e5df812bdd506f5efab7db98b0e/web-sand-2.1.8.tar.gz
+[2023-05-29 06:51:07] INFO root fetch - processPackages [asyncmake]: executing diffoscope
+[2023-05-29 06:51:07] INFO root fetch - processPackages [asyncmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncmake-0.1.2.tar.gz tmp/asyncmake-0.1.3.tar.gz --markdown 20230529/a/asyncmake/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 06:51:07] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/a9/5c/36d912296af7803b5d596830f429e5e36a24f8616b0a54435bf17a923fc5/pipen_board-0.2.8.tar.gz
+[2023-05-29 06:51:07] INFO root fetch - processPackages [flake8-iw]: Downloading https://files.pythonhosted.org/packages/90/59/09fa1637697936fa3c922cf9b20676bf22a192cc85b3b10a6d291163072a/flake8_iw-0.0.9.tar.gz
+[2023-05-29 06:51:07] INFO root fetch - processPackages [dLux]: executing diffoscope
+[2023-05-29 06:51:07] INFO root fetch - processPackages [dLux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dLux-0.9.1.tar.gz tmp/dLux-0.9.2.tar.gz --markdown 20230529/d/dLux/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-29 06:51:07] INFO root fetch - processPackages [nxs-analysis-tools]: executing diffoscope
+[2023-05-29 06:51:07] INFO root fetch - processPackages [nxs-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nxs_analysis_tools-0.0.8.tar.gz tmp/nxs_analysis_tools-0.0.9.tar.gz --markdown 20230529/n/nxs-analysis-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 06:51:07] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-05-29 06:51:07] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.2.7.tar.gz tmp/pipen_board-0.2.8.tar.gz --markdown 20230529/p/pipen-board/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-29 06:51:08] INFO root fetch - processPackages [flake8-iw]: executing diffoscope
+[2023-05-29 06:51:08] INFO root fetch - processPackages [flake8-iw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8_iw-0.0.8.tar.gz tmp/flake8_iw-0.0.9.tar.gz --markdown 20230529/f/flake8-iw/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 06:51:08] INFO root fetch - main [MainThread]: End processing [asyncmake]: success
+[2023-05-29 06:51:09] INFO root fetch - main [MainThread]: End processing [nxs-analysis-tools]: success
+[2023-05-29 06:51:09] INFO root fetch - main [MainThread]: End processing [flake8-iw]: success
+[2023-05-29 06:51:09] INFO root fetch - main [MainThread]: End processing [wasm-exec]: success
+[2023-05-29 06:51:09] INFO root fetch - processPackages [web-sand]: Downloading https://files.pythonhosted.org/packages/1b/7d/bcca9127e4e0ffb6964ec772eef09e7544dc0750b6083aabb4a84b61d8e0/web_sand-2.1.9.tar.gz
+[2023-05-29 06:51:09] INFO root fetch - main [MainThread]: End processing [dLux]: success
+[2023-05-29 06:51:11] INFO root fetch - processPackages [web-sand]: executing diffoscope
+[2023-05-29 06:51:11] INFO root fetch - processPackages [web-sand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-sand-2.1.8.tar.gz tmp/web_sand-2.1.9.tar.gz --markdown 20230529/w/web-sand/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-29 06:51:14] INFO root fetch - main [MainThread]: End processing [web-sand]: success
+[2023-05-29 06:51:15] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-05-29 06:51:15] INFO root fetch - main [MainThread]: Store serial: [18286401]
