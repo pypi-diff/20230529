@@ -11130,3 +11130,141 @@ EOFError: EOF read where object expected
 [2023-05-29 15:25:41] INFO root fetch - main [MainThread]: End processing [scaneo]: success
 [2023-05-29 15:25:42] INFO root fetch - main [MainThread]: End processing [dascore]: success
 [2023-05-29 15:25:42] INFO root fetch - main [MainThread]: Store serial: [18290309]
+[2023-05-29 15:30:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290309]
+[2023-05-29 15:30:51] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rvr
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: succulent
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-ninja-extra
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imagenet-w
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-zippy-form
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bagbag
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gps-building-blocks
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nr-metadata
+[2023-05-29 15:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchdevice
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-zippy-form]: New version: [1.0.1] Old Version: [1.0]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [gps-building-blocks]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [torchdevice]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-ninja-extra]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-05-29 15:30:51] WARNING root fetch - processPackages [imagenet-w]: Skipping, unable to determine old version
+[2023-05-29 15:30:51] INFO root fetch - processPackages [imagenet-w]: Start processing: agenta
+[2023-05-29 15:30:51] INFO root fetch - processPackages [succulent]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 15:30:51] INFO root fetch - main [MainThread]: End processing [imagenet-w] error
+[2023-05-29 15:30:51] INFO root fetch - processPackages [nr-metadata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [agenta]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 15:30:51] WARNING root fetch - processPackages [rvr]: Skipping, unable to determine old version
+[2023-05-29 15:30:51] INFO root fetch - processPackages [rvr]: Start processing: OrangePi.ws2812
+[2023-05-29 15:30:51] INFO root fetch - main [MainThread]: End processing [rvr] error
+[2023-05-29 15:30:51] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] ERROR root fetch - processPackages [OrangePi.ws2812]: Unable to get metadata: No such project 'OrangePi.ws2812'
+[2023-05-29 15:30:51] INFO root fetch - processPackages [OrangePi.ws2812]: Start processing: pycelium
+[2023-05-29 15:30:51] INFO root fetch - main [MainThread]: End processing [OrangePi.ws2812] error
+[2023-05-29 15:30:51] INFO root fetch - processPackages [pycelium]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [nr-metadata]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [nr-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nr-metadata-1.0.8.tar.gz tmp/nr-metadata-1.0.9.tar.gz --markdown 20230529/n/nr-metadata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/7a/9c/8bf8a0f04e9151dceec1a3290dd9647c178a2bcfa042920c0f01e3d4f0df/nonebot_plugin_spark_gpt-0.2.9.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-ninja-extra]: Downloading https://files.pythonhosted.org/packages/48/69/471f88be34c80dd909decaee2dbe8c2a74ea024954747c282bce8ed514f1/django-ninja-extra-0.18.8.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-zippy-form]: Downloading https://files.pythonhosted.org/packages/06/5f/54efb3ba089e34303f1d8c4b4c814116dd868c74d1bff0721fdd4b667b63/django_zippy_form-1.0-py3-none-any.whl
+[2023-05-29 15:30:51] INFO root fetch - processPackages [succulent]: Downloading https://files.pythonhosted.org/packages/c3/4c/93a802df3aa806756f9180643180dfaaaa251ebfb67dbd9722daf672730a/succulent-0.1.3.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [torchdevice]: Downloading https://files.pythonhosted.org/packages/77/f1/c81937af036571210092e06a3cd20c07436be358af70b3244be5499d92e4/torchdevice-0.1.0.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/69/71/a78e7d1fefb9753858b1d9f1887b52f00086fd2eb2a91fd1ca12de95391b/agenta-0.1.0.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [pycelium]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [pycelium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycelium-0.1.8.tar.gz tmp/pycelium-0.1.9.tar.gz --markdown 20230529/p/pycelium/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] WARNING root fetch - processPackages [nonebot-plugin-spark-gpt]: Skipping package: exceeds size limit 11187931>=10485760
+[2023-05-29 15:30:51] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Start processing: text2story
+[2023-05-29 15:30:51] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt] error
+[2023-05-29 15:30:51] INFO root fetch - processPackages [text2story]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 15:30:51] INFO root fetch - processPackages [gps-building-blocks]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-zippy-form]: Downloading https://files.pythonhosted.org/packages/ff/4b/122977b394507d8cdf5336a00a6c39d02d78d92604de968d2ad5a0f589da/django_zippy_form-1.0.1-py3-none-any.whl
+[2023-05-29 15:30:51] INFO root fetch - processPackages [gps-building-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gps_building_blocks-1.98.0-py3-none-any.whl.zip tmp/gps_building_blocks-1.99.0-py3-none-any.whl.zip --markdown 20230529/g/gps-building-blocks/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] INFO root fetch - processPackages [succulent]: Downloading https://files.pythonhosted.org/packages/e4/d7/accc6db252aa3f244be6f2bc5087c830b596e2637f1e794d7dcbc202a4c0/succulent-0.1.4.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-zippy-form]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [django-zippy-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_zippy_form-1.0-py3-none-any.whl.zip tmp/django_zippy_form-1.0.1-py3-none-any.whl.zip --markdown 20230529/d/django-zippy-form/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] INFO root fetch - processPackages [succulent]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [succulent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/succulent-0.1.3.tar.gz tmp/succulent-0.1.4.tar.gz --markdown 20230529/s/succulent/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] INFO root fetch - processPackages [torchdevice]: Downloading https://files.pythonhosted.org/packages/d3/d8/9e6001262db0c59af11ab817c4a5a1ba223b3650564b5644f3c0c057199f/torchdevice-0.2.0.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/55/72/eea51c973a100ad8d1c66b170b1f787f440a72f43c7f85002f7854e77192/agenta-0.1.1.tar.gz
+[2023-05-29 15:30:51] INFO root fetch - processPackages [torchdevice]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [torchdevice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdevice-0.1.0.tar.gz tmp/torchdevice-0.2.0.tar.gz --markdown 20230529/t/torchdevice/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] INFO root fetch - processPackages [agenta]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [agenta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenta-0.1.0.tar.gz tmp/agenta-0.1.1.tar.gz --markdown 20230529/a/agenta/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 15:30:51] INFO root fetch - processPackages [text2story]: executing diffoscope
+[2023-05-29 15:30:51] INFO root fetch - processPackages [text2story]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2story-1.2.8.tar.gz tmp/text2story-1.2.9.tar.gz --markdown 20230529/t/text2story/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 15:30:52] INFO root fetch - processPackages [django-ninja-extra]: Downloading https://files.pythonhosted.org/packages/40/3f/3febeb9c2e77392f2052492a26da9ff299838d1ebd2fff2ed0c044d04709/django_ninja_extra-0.18.9.tar.gz
+[2023-05-29 15:30:52] INFO root fetch - processPackages [django-ninja-extra]: executing diffoscope
+[2023-05-29 15:30:52] INFO root fetch - processPackages [django-ninja-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ninja-extra-0.18.8.tar.gz tmp/django_ninja_extra-0.18.9.tar.gz --markdown 20230529/d/django-ninja-extra/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-05-29 15:30:53] INFO root fetch - processPackages [succulent]: Start processing: centesimal-iot
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [succulent]: success
+[2023-05-29 15:30:53] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 15:30:53] INFO root fetch - processPackages [pycelium]: Start processing: streamlitopencvplayer
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [pycelium]: success
+[2023-05-29 15:30:53] INFO root fetch - processPackages [streamlitopencvplayer]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-29 15:30:53] INFO root fetch - processPackages [torchdevice]: Start processing: genomenotebook
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [torchdevice]: success
+[2023-05-29 15:30:53] INFO root fetch - processPackages [genomenotebook]: New version: [0.7.1] Old Version: [0.6.6]
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [django-zippy-form]: success
+[2023-05-29 15:30:53] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/7e/04/a91ecb2b6de1a286ea80bd55abf6f4975bb540d5ab488da8df7e6da13e4c/centesimal_iot-0.1.8-py2.py3-none-any.whl
+[2023-05-29 15:30:53] INFO root fetch - processPackages [genomenotebook]: Downloading https://files.pythonhosted.org/packages/35/d3/16cfc02731933e4530a272b4e511d8ec0987169f29771d0cf4ddae5cb893/genomenotebook-0.6.6.tar.gz
+[2023-05-29 15:30:53] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-29 15:30:53] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.7-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.8-py2.py3-none-any.whl.zip --markdown 20230529/c/centesimal-iot/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [agenta]: success
+[2023-05-29 15:30:53] INFO root fetch - processPackages [streamlitopencvplayer]: Downloading https://files.pythonhosted.org/packages/cd/60/afa77c17f3c4319fa1df113a6dd0bc28600c58d19a7e676ead35c2754ca2/streamlitopencvplayer-1.2.0.tar.gz
+[2023-05-29 15:30:53] WARNING root fetch - processPackages [genomenotebook]: Skipping package: exceeds size limit 21357851>=10485760
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [genomenotebook] error
+[2023-05-29 15:30:53] INFO root fetch - processPackages [streamlitopencvplayer]: executing diffoscope
+[2023-05-29 15:30:53] INFO root fetch - processPackages [streamlitopencvplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlitopencvplayer-1.1.0.tar.gz tmp/streamlitopencvplayer-1.2.0.tar.gz --markdown 20230529/s/streamlitopencvplayer/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 15:30:53] ERROR root fetch - processPackages [gps-building-blocks]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [gps-building-blocks] error
+[2023-05-29 15:30:53] INFO root fetch - main [MainThread]: End processing [text2story]: success
+[2023-05-29 15:30:54] INFO root fetch - main [MainThread]: End processing [streamlitopencvplayer]: success
+[2023-05-29 15:30:54] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-29 15:30:55] INFO root fetch - main [MainThread]: End processing [nr-metadata]: success
+[2023-05-29 15:30:55] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-29 15:30:57] INFO root fetch - main [MainThread]: End processing [django-ninja-extra]: success
+[2023-05-29 15:30:57] INFO root fetch - main [MainThread]: Store serial: [18290364]
