@@ -4845,3 +4845,45 @@
 [2023-05-29 07:06:54] INFO root fetch - main [MainThread]: End processing [flowmachine]: success
 [2023-05-29 07:09:43] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-29 07:09:43] INFO root fetch - main [MainThread]: Store serial: [18286483]
+[2023-05-29 07:14:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286483]
+[2023-05-29 07:14:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlink-serverless
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-model-maker-nightly
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kannada
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xj-thread
+[2023-05-29 07:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: always-updates
+[2023-05-29 07:14:52] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230529] Old Version: [0.1.1.dev20230528]
+[2023-05-29 07:14:52] INFO root fetch - processPackages [streamlink-serverless]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 07:14:52] WARNING root fetch - processPackages [kannada]: Skipping, unable to determine old version
+[2023-05-29 07:14:52] INFO root fetch - main [MainThread]: End processing [kannada] error
+[2023-05-29 07:14:52] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-29 07:14:52] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-29 07:14:52] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-29 07:14:52] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230529/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-29 07:14:52] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230528] Old Version: [2.14.0.dev20230527]
+[2023-05-29 07:14:52] INFO root fetch - processPackages [xj-thread]: Downloading https://files.pythonhosted.org/packages/d0/40/892813003a2b082a6e0c2667824534711f1cf8fdfc940df20ba978459e48/xj_thread-1.2.98.tar.gz
+[2023-05-29 07:14:52] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305290508] Old Version: [0.4.3.dev202305280506]
+[2023-05-29 07:14:52] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/ff/c1/7af86d324d4bbde9548ba5af1c79d092c5e3f887f4ed147c06dc6a76a0f3/rapid_pe-0.1.1.dev20230529.tar.gz
+[2023-05-29 07:14:52] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/a4/1f/0443dfff3b6b062b4a7241e5048a6a7f3510a14bfc85bd433ee6efb02887/tflite_runtime_nightly-2.14.0.dev20230527-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-29 07:14:52] INFO root fetch - processPackages [streamlink-serverless]: executing diffoscope
+[2023-05-29 07:14:52] INFO root fetch - processPackages [streamlink-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlink-serverless-0.0.8.tar.gz tmp/streamlink-serverless-0.0.9.tar.gz --markdown 20230529/s/streamlink-serverless/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 07:14:52] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-29 07:14:52] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230528.tar.gz tmp/rapid_pe-0.1.1.dev20230529.tar.gz --markdown 20230529/r/rapid-pe/0.1.1.dev20230528-0.1.1.dev20230529/diff.md --exclude *.pyd
+[2023-05-29 07:14:52] INFO root fetch - processPackages [xj-thread]: Downloading https://files.pythonhosted.org/packages/fc/75/4ed5778921ea61c4cdd8fe2c5f8b0a37873dc9cc5b9f507a3240f0380e69/xj_thread-1.2.99.tar.gz
+[2023-05-29 07:14:52] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/7d/8c/8cab8e9593619284e1df8981b70e1f3e7faaf264cd16a66dc3d557658268/tflite-model-maker-nightly-0.4.3.dev202305290508.tar.gz
+[2023-05-29 07:14:53] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-05-29 07:14:53] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230529/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-29 07:14:53] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-29 07:14:53] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305280506.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305290508.tar.gz --markdown 20230529/t/tflite-model-maker-nightly/0.4.3.dev202305280506-0.4.3.dev202305290508/diff.md --exclude *.pyd
+[2023-05-29 07:14:53] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/24/00/e6e6c5e17aa5772762d0bff44e5d147d37aec189237cc1cf050322affa0d/tflite_runtime_nightly-2.14.0.dev20230528-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-29 07:14:53] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-29 07:14:53] INFO root fetch - main [MainThread]: End processing [streamlink-serverless]: success
+[2023-05-29 07:14:53] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-29 07:14:53] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230527-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230528-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230529/t/tflite-runtime-nightly/2.14.0.dev20230527-2.14.0.dev20230528/diff.md --exclude *.pyd
+[2023-05-29 07:14:53] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-29 07:14:54] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
+[2023-05-29 07:14:54] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-29 07:14:57] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-29 07:14:57] INFO root fetch - main [MainThread]: Store serial: [18286516]
