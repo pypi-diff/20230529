@@ -5221,3 +5221,43 @@
 [2023-05-29 08:07:30] INFO root fetch - main [MainThread]: End processing [Pras-Server]: success
 [2023-05-29 08:07:33] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-29 08:07:33] INFO root fetch - main [MainThread]: Store serial: [18286664]
+[2023-05-29 08:12:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286664]
+[2023-05-29 08:12:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 08:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: macrometa-source-bigquery
+[2023-05-29 08:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotON_sdk
+[2023-05-29 08:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-bilichat
+[2023-05-29 08:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-dynamic-storage
+[2023-05-29 08:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: msg2po
+[2023-05-29 08:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AppDemo
+[2023-05-29 08:12:42] INFO root fetch - processPackages [django-dynamic-storage]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 08:12:42] INFO root fetch - processPackages [macrometa-source-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:12:42] INFO root fetch - processPackages [msg2po]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 08:12:42] INFO root fetch - processPackages [AppDemo]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 08:12:42] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-29 08:12:42] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.5.1] Old Version: [0.0.4.9991]
+[2023-05-29 08:12:42] INFO root fetch - processPackages [macrometa-source-bigquery]: executing diffoscope
+[2023-05-29 08:12:42] INFO root fetch - processPackages [macrometa-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-bigquery-0.0.8.tar.gz tmp/macrometa-source-bigquery-0.0.9.tar.gz --markdown 20230529/m/macrometa-source-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:12:42] INFO root fetch - processPackages [django-dynamic-storage]: Downloading https://files.pythonhosted.org/packages/72/89/ee5de28c07269e642df854bb0d8f66f94f67de03921482bdd9e9f0b85704/django_dynamic_storage-0.1.4.tar.gz
+[2023-05-29 08:12:42] INFO root fetch - processPackages [msg2po]: Downloading https://files.pythonhosted.org/packages/46/de/301bec65a59ec93d494cada058e20f7ff0e575c1c72d77008a73f6f9309d/msg2po-1.1.8.tar.gz
+[2023-05-29 08:12:42] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/26/b3/1f5ee2a01a0245cec0f99f24bb0a31fe48c4b68b7d444632b4dc6953ff78/nonebot_plugin_bilichat-2.0.2.tar.gz
+[2023-05-29 08:12:42] INFO root fetch - processPackages [AppDemo]: Downloading https://files.pythonhosted.org/packages/21/b1/28fb3ab90da3ce5e235948106faa86ac87cf28255aba41ab83dbe2fede4c/AppDemo-0.0.5-py3-none-any.whl
+[2023-05-29 08:12:42] INFO root fetch - processPackages [django-dynamic-storage]: executing diffoscope
+[2023-05-29 08:12:42] INFO root fetch - processPackages [django-dynamic-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_dynamic_storage-0.1.3.tar.gz tmp/django_dynamic_storage-0.1.4.tar.gz --markdown 20230529/d/django-dynamic-storage/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 08:12:43] INFO root fetch - processPackages [AppDemo]: executing diffoscope
+[2023-05-29 08:12:43] INFO root fetch - processPackages [AppDemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AppDemo-0.0.4-py3-none-any.whl.zip tmp/AppDemo-0.0.5-py3-none-any.whl.zip --markdown 20230529/A/AppDemo/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 08:12:43] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/b3/29/3cdd6f062b4ae0c6750c54c63b40590a14c29ed59486c0885331f002aa0f/spotON_sdk-0.0.5.1.tar.gz
+[2023-05-29 08:12:43] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-29 08:12:43] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.4.9991.tar.gz tmp/spotON_sdk-0.0.5.1.tar.gz --markdown 20230529/s/spotON_sdk/0.0.4.9991-0.0.5.1/diff.md --exclude *.pyd
+[2023-05-29 08:12:43] INFO root fetch - processPackages [msg2po]: Downloading https://files.pythonhosted.org/packages/ac/dc/1621b60d428bc024b8023645256b16777b5ae46f5100444ee5b7bff99854/msg2po-1.1.9.tar.gz
+[2023-05-29 08:12:43] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/0b/6a/7b0fa2bb3f27c3afc91ed97f1ade23545ee82d3d3f2e4fd5fd32ba2a0e24/nonebot_plugin_bilichat-2.0.3.tar.gz
+[2023-05-29 08:12:43] INFO root fetch - processPackages [msg2po]: executing diffoscope
+[2023-05-29 08:12:43] INFO root fetch - processPackages [msg2po]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msg2po-1.1.8.tar.gz tmp/msg2po-1.1.9.tar.gz --markdown 20230529/m/msg2po/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 08:12:43] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-05-29 08:12:43] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-2.0.2.tar.gz tmp/nonebot_plugin_bilichat-2.0.3.tar.gz --markdown 20230529/n/nonebot-plugin-bilichat/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [macrometa-source-bigquery]: success
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [AppDemo]: success
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [django-dynamic-storage]: success
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [msg2po]: success
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2023-05-29 08:12:44] INFO root fetch - main [MainThread]: Store serial: [18286683]
