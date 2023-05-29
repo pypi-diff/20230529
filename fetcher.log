@@ -5606,3 +5606,51 @@
 [2023-05-29 08:45:14] INFO root fetch - main [MainThread]: End processing [lidarr-py]: success
 [2023-05-29 08:45:16] INFO root fetch - main [MainThread]: End processing [readarr-py]: success
 [2023-05-29 08:45:16] INFO root fetch - main [MainThread]: Store serial: [18286912]
+[2023-05-29 08:50:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286912]
+[2023-05-29 08:50:25] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bs-admin-utils
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyVolSuggester
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs-binance-c2c-sapi
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpru
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datatable-ajax-request-parser
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: antchain-antverse
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tradernet-sdk
+[2023-05-29 08:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: api-Rocket
+[2023-05-29 08:50:25] INFO root fetch - processPackages [bs-admin-utils]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 08:50:25] INFO root fetch - processPackages [datatable-ajax-request-parser]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 08:50:25] INFO root fetch - processPackages [gpru]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 08:50:25] WARNING root fetch - processPackages [cs-binance-c2c-sapi]: Skipping, unable to determine old version
+[2023-05-29 08:50:25] INFO root fetch - main [MainThread]: End processing [cs-binance-c2c-sapi] error
+[2023-05-29 08:50:25] INFO root fetch - processPackages [api-Rocket]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-29 08:50:25] INFO root fetch - processPackages [PyVolSuggester]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 08:50:25] INFO root fetch - processPackages [tradernet-sdk]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 08:50:25] WARNING root fetch - processPackages [antchain-antverse]: Skipping, unable to determine old version
+[2023-05-29 08:50:25] INFO root fetch - main [MainThread]: End processing [antchain-antverse] error
+[2023-05-29 08:50:25] INFO root fetch - processPackages [api-Rocket]: executing diffoscope
+[2023-05-29 08:50:25] INFO root fetch - processPackages [api-Rocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-Rocket-1.6.1.tar.gz tmp/api-Rocket-1.6.2.tar.gz --markdown 20230529/a/api-Rocket/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-29 08:50:25] INFO root fetch - processPackages [bs-admin-utils]: Downloading https://files.pythonhosted.org/packages/a9/80/07778c40e7979a8fb1c54a456e1218c3fc4f9e63c88b66d0ba6b21715e6b/bs_admin_utils-1.0.3.tar.gz
+[2023-05-29 08:50:25] INFO root fetch - processPackages [tradernet-sdk]: Downloading https://files.pythonhosted.org/packages/44/d8/84a215ed8d4d769d7e481a250ee82ef6e4c616f4138198a270f88ae01644/tradernet_sdk-0.3.8.tar.gz
+[2023-05-29 08:50:25] INFO root fetch - processPackages [datatable-ajax-request-parser]: Downloading https://files.pythonhosted.org/packages/5f/af/e8b4a15e06ccf6662c48b675c969c014eb45821c9f65f4c755c80790e9df/datatable_ajax_request_parser-1.0.0.tar.gz
+[2023-05-29 08:50:25] INFO root fetch - processPackages [gpru]: Downloading https://files.pythonhosted.org/packages/5d/70/1d543ab6ba9e441612fd8cbef16c45315bc54e53f2397a30307c5dc68a74/gpru-0.0.1.tar.gz
+[2023-05-29 08:50:25] INFO root fetch - processPackages [PyVolSuggester]: Downloading https://files.pythonhosted.org/packages/70/6a/0d35f83d36a8e3e9b5e96f44463dbda27ee50835d0f26184f7f57190eda7/pyvolsuggester-0.0.5.tar.gz
+[2023-05-29 08:50:26] INFO root fetch - processPackages [PyVolSuggester]: executing diffoscope
+[2023-05-29 08:50:26] INFO root fetch - processPackages [PyVolSuggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvolsuggester-0.0.4.tar.gz tmp/pyvolsuggester-0.0.5.tar.gz --markdown 20230529/P/PyVolSuggester/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 08:50:26] INFO root fetch - processPackages [bs-admin-utils]: Downloading https://files.pythonhosted.org/packages/4e/bd/fbb2287ce0336e89f8d0f150ce72eb734f8cf8226736b4de1588a940a409/bs_admin_utils-1.0.4.tar.gz
+[2023-05-29 08:50:26] INFO root fetch - processPackages [tradernet-sdk]: Downloading https://files.pythonhosted.org/packages/e5/ed/3f74ecf89281c1e46a66ae2f0b88f5fdaa6c992eee6906b365aba2d28ec2/tradernet_sdk-0.3.9.tar.gz
+[2023-05-29 08:50:26] INFO root fetch - processPackages [datatable-ajax-request-parser]: Downloading https://files.pythonhosted.org/packages/fd/7f/cb0c8897f525b863af301df5018704490d8fc5f5e1f3f0c887e45c8652bc/datatable_ajax_request_parser-1.0.1.tar.gz
+[2023-05-29 08:50:26] INFO root fetch - processPackages [gpru]: Downloading https://files.pythonhosted.org/packages/7c/3b/4f5b3bf0585fd9e1b3a0ebe542d439143959164fa11032d8c8ef4f57084c/gpru-0.0.2.tar.gz
+[2023-05-29 08:50:26] INFO root fetch - processPackages [bs-admin-utils]: executing diffoscope
+[2023-05-29 08:50:26] INFO root fetch - processPackages [bs-admin-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bs_admin_utils-1.0.3.tar.gz tmp/bs_admin_utils-1.0.4.tar.gz --markdown 20230529/b/bs-admin-utils/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 08:50:26] INFO root fetch - processPackages [tradernet-sdk]: executing diffoscope
+[2023-05-29 08:50:26] INFO root fetch - processPackages [tradernet-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradernet_sdk-0.3.8.tar.gz tmp/tradernet_sdk-0.3.9.tar.gz --markdown 20230529/t/tradernet-sdk/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 08:50:26] INFO root fetch - processPackages [datatable-ajax-request-parser]: executing diffoscope
+[2023-05-29 08:50:26] INFO root fetch - processPackages [datatable-ajax-request-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatable_ajax_request_parser-1.0.0.tar.gz tmp/datatable_ajax_request_parser-1.0.1.tar.gz --markdown 20230529/d/datatable-ajax-request-parser/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 08:50:26] INFO root fetch - processPackages [gpru]: executing diffoscope
+[2023-05-29 08:50:26] INFO root fetch - processPackages [gpru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpru-0.0.1.tar.gz tmp/gpru-0.0.2.tar.gz --markdown 20230529/g/gpru/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 08:50:26] INFO root fetch - main [MainThread]: End processing [api-Rocket]: success
+[2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [PyVolSuggester]: success
+[2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [bs-admin-utils]: success
+[2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [tradernet-sdk]: success
+[2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [datatable-ajax-request-parser]: success
+[2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [gpru]: success
+[2023-05-29 08:50:27] INFO root fetch - main [MainThread]: Store serial: [18286944]
