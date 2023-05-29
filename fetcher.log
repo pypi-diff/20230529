@@ -6590,3 +6590,40 @@
 [2023-05-29 10:22:30] INFO root fetch - main [MainThread]: End processing [cirq-iqm]: success
 [2023-05-29 10:22:30] INFO root fetch - main [MainThread]: End processing [yambs]: success
 [2023-05-29 10:22:30] INFO root fetch - main [MainThread]: Store serial: [18287549]
+[2023-05-29 10:27:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287549]
+[2023-05-29 10:27:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a
+[2023-05-29 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2023-05-29 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpservice
+[2023-05-29 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mask-util
+[2023-05-29 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mltlk
+[2023-05-29 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tsaugmentation
+[2023-05-29 10:27:39] INFO root fetch - processPackages [antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mask-util]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-05-29 10:27:39] INFO root fetch - processPackages [tsaugmentation]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mltlk]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 10:27:39] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230529] Old Version: [2.14.0.dev20230528]
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mask-util]: Downloading https://files.pythonhosted.org/packages/8d/f5/8ee5127ad981cf4daf77dcb1aa35510e264ed492daea1aa44adc52929bd5/mask_util-0.0.9.tar.gz
+[2023-05-29 10:27:39] INFO root fetch - processPackages [antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a]: Downloading https://files.pythonhosted.org/packages/37/9f/3a0afdd911e92f99a36c79cb99b4859ed6f068cc1747bae2c6365076baaa/antchain_ak_039036ceaf344eae826f7a5f2e0c0a1a-1.0.0.tar.gz
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mask-util]: executing diffoscope
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mask-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mask_util-0.0.6.tar.gz tmp/mask_util-0.0.9.tar.gz --markdown 20230529/m/mask-util/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230529/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-29 10:27:39] INFO root fetch - processPackages [mltlk]: Downloading https://files.pythonhosted.org/packages/f6/94/826744f357eea6f09c4022da882d23b86207266ca8c2fb5b344820d49bb1/mltlk-0.1.3.tar.gz
+[2023-05-29 10:27:39] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/4b/53/ea79a82dd1ef86cd238482c62e62ae3909a13c7ce4a140fb891ec7cfbc76/tf_nightly-2.14.0.dev20230529-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 10:27:39] INFO root fetch - processPackages [antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a]: Downloading https://files.pythonhosted.org/packages/89/62/ca37cea2d0abc23820f740aa66ee90f301e7648c9e80dc6a0c324a88bdca/antchain_ak_039036ceaf344eae826f7a5f2e0c0a1a-1.0.1.tar.gz
+[2023-05-29 10:27:39] INFO root fetch - processPackages [tsaugmentation]: executing diffoscope
+[2023-05-29 10:27:39] INFO root fetch - processPackages [tsaugmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsaugmentation-0.5.8.tar.gz tmp/tsaugmentation-0.5.9.tar.gz --markdown 20230529/t/tsaugmentation/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 10:27:39] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 488235433>=10485760
+[2023-05-29 10:27:39] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-05-29 10:27:39] INFO root fetch - processPackages [antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a]: executing diffoscope
+[2023-05-29 10:27:39] INFO root fetch - processPackages [antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_ak_039036ceaf344eae826f7a5f2e0c0a1a-1.0.0.tar.gz tmp/antchain_ak_039036ceaf344eae826f7a5f2e0c0a1a-1.0.1.tar.gz --markdown 20230529/a/antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-29 10:27:40] INFO root fetch - processPackages [mltlk]: executing diffoscope
+[2023-05-29 10:27:40] INFO root fetch - processPackages [mltlk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltlk-0.1.2.tar.gz tmp/mltlk-0.1.3.tar.gz --markdown 20230529/m/mltlk/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 10:27:40] INFO root fetch - main [MainThread]: End processing [mask-util]: success
+[2023-05-29 10:27:40] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-29 10:27:40] INFO root fetch - main [MainThread]: End processing [antchain-ak-039036ceaf344eae826f7a5f2e0c0a1a]: success
+[2023-05-29 10:27:40] INFO root fetch - main [MainThread]: End processing [tsaugmentation]: success
+[2023-05-29 10:27:42] INFO root fetch - main [MainThread]: End processing [mltlk]: success
+[2023-05-29 10:27:42] INFO root fetch - main [MainThread]: Store serial: [18287569]
