@@ -14105,3 +14105,54 @@ EOFError: EOF read where object expected
 [2023-05-29 18:46:19] INFO root fetch - main [MainThread]: End processing [artesian-sdk]: success
 [2023-05-29 18:46:21] INFO root fetch - main [MainThread]: End processing [crappy]: success
 [2023-05-29 18:46:21] INFO root fetch - main [MainThread]: Store serial: [18292081]
+[2023-05-29 18:51:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292081]
+[2023-05-29 18:51:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datarobot-early-access
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: customdataclass
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MinAtar
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: databend
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-multincm
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: weatheril
+[2023-05-29 18:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tcod-ecs
+[2023-05-29 18:51:30] INFO root fetch - processPackages [weatheril]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [MinAtar]: New version: [1.0.15] Old Version: [1.0.14]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [nonebot-plugin-multincm]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [customdataclass]: New version: [0.1.1.4] Old Version: [0.1.1.3]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [databend]: New version: [1.1.52] Old Version: [1.1.51]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [sabledocs]: New version: [0.3.150] Old Version: [0.3.146]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [datarobot-early-access]: New version: [3.2.0.2023.5.8] Old Version: [3.2.0.2023.5.29]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [tcod-ecs]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-29 18:51:30] INFO root fetch - processPackages [customdataclass]: Downloading https://files.pythonhosted.org/packages/46/07/d4b4a42edd7c6dd9c5ecd624a2d43729a16b8ae15b86daeaf277ae284975/customdataclass-0.1.1.3.tar.gz
+[2023-05-29 18:51:30] INFO root fetch - processPackages [databend]: Downloading https://files.pythonhosted.org/packages/ec/cd/e0e6c57d5153855ea52daa145d6bdd70ef447cce71c82e1d4fbdd0a85ad4/databend-1.1.51-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 18:51:30] INFO root fetch - processPackages [datarobot-early-access]: Downloading https://files.pythonhosted.org/packages/f8/d2/5a504f074b26b77cbf49008e2688b93adedf66d1ed542377919ce79d3b9d/datarobot_early_access-3.2.0.2023.5.29.tar.gz
+[2023-05-29 18:51:30] INFO root fetch - processPackages [MinAtar]: Downloading https://files.pythonhosted.org/packages/10/4e/ef5665dd502ed4f31782c45b23391e257380308524d375a253fa16eac595/MinAtar-1.0.14.tar.gz
+[2023-05-29 18:51:30] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/19/df/d026476a808cdce36b6fd68a4f0aa3721d2bda78a027e2d3e68dc03cace6/sabledocs-0.3.150.tar.gz
+[2023-05-29 18:51:30] WARNING root fetch - processPackages [databend]: Skipping package: exceeds size limit 28822868>=10485760
+[2023-05-29 18:51:30] INFO root fetch - main [MainThread]: End processing [databend] error
+[2023-05-29 18:51:30] INFO root fetch - processPackages [nonebot-plugin-multincm]: Downloading https://files.pythonhosted.org/packages/31/36/9346822659b472566feb9d87252a7629777b096e736c30db325260a49257/nonebot_plugin_multincm-0.3.2.tar.gz
+[2023-05-29 18:51:30] INFO root fetch - processPackages [weatheril]: executing diffoscope
+[2023-05-29 18:51:30] INFO root fetch - processPackages [weatheril]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weatheril-0.8.0.tar.gz tmp/weatheril-0.9.0.tar.gz --markdown 20230529/w/weatheril/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 18:51:30] INFO root fetch - processPackages [customdataclass]: Downloading https://files.pythonhosted.org/packages/5f/51/51b5ce629c3b3ff3ca36974a7893c3377f4dcde85fb220b11610666aa730/customdataclass-0.1.1.4.tar.gz
+[2023-05-29 18:51:30] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/6a/c6/ef4d00ff87b2f98a3efb4ac661a242cd149a3c253cce16a59986aad1b072/tcod_ecs-3.0.0.tar.gz
+[2023-05-29 18:51:30] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-05-29 18:51:30] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.3.146.tar.gz tmp/sabledocs-0.3.150.tar.gz --markdown 20230529/s/sabledocs/0.3.146-0.3.150/diff.md --exclude *.pyd
+[2023-05-29 18:51:30] INFO root fetch - processPackages [MinAtar]: Downloading https://files.pythonhosted.org/packages/73/c3/4ea70dd08545e25ef53b07f3d64de36ca24d0b5f8579991f35557fc427f4/MinAtar-1.0.15.tar.gz
+[2023-05-29 18:51:31] INFO root fetch - processPackages [nonebot-plugin-multincm]: executing diffoscope
+[2023-05-29 18:51:31] INFO root fetch - processPackages [nonebot-plugin-multincm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_multincm-0.3.1.tar.gz tmp/nonebot_plugin_multincm-0.3.2.tar.gz --markdown 20230529/n/nonebot-plugin-multincm/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-29 18:51:31] INFO root fetch - processPackages [customdataclass]: executing diffoscope
+[2023-05-29 18:51:31] INFO root fetch - processPackages [customdataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customdataclass-0.1.1.3.tar.gz tmp/customdataclass-0.1.1.4.tar.gz --markdown 20230529/c/customdataclass/0.1.1.3-0.1.1.4/diff.md --exclude *.pyd
+[2023-05-29 18:51:31] INFO root fetch - processPackages [tcod-ecs]: executing diffoscope
+[2023-05-29 18:51:31] INFO root fetch - processPackages [tcod-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod_ecs-2.0.0.tar.gz tmp/tcod_ecs-3.0.0.tar.gz --markdown 20230529/t/tcod-ecs/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-29 18:51:31] INFO root fetch - processPackages [MinAtar]: executing diffoscope
+[2023-05-29 18:51:31] INFO root fetch - processPackages [MinAtar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MinAtar-1.0.14.tar.gz tmp/MinAtar-1.0.15.tar.gz --markdown 20230529/M/MinAtar/1.0.14-1.0.15/diff.md --exclude *.pyd
+[2023-05-29 18:51:31] INFO root fetch - processPackages [datarobot-early-access]: executing diffoscope
+[2023-05-29 18:51:31] INFO root fetch - processPackages [datarobot-early-access]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datarobot_early_access-3.2.0.2023.5.29.tar.gz tmp/datarobot_early_access-3.2.0.2023.5.8.tar.gz --markdown 20230529/d/datarobot-early-access/3.2.0.2023.5.29-3.2.0.2023.5.8/diff.md --exclude *.pyd
+[2023-05-29 18:51:32] INFO root fetch - main [MainThread]: End processing [weatheril]: success
+[2023-05-29 18:51:32] INFO root fetch - main [MainThread]: End processing [tcod-ecs]: success
+[2023-05-29 18:51:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-multincm]: success
+[2023-05-29 18:51:32] INFO root fetch - main [MainThread]: End processing [MinAtar]: success
+[2023-05-29 18:51:32] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-05-29 18:51:33] INFO root fetch - main [MainThread]: End processing [customdataclass]: success
+[2023-05-29 18:51:34] INFO root fetch - main [MainThread]: End processing [datarobot-early-access]: success
+[2023-05-29 18:51:34] INFO root fetch - main [MainThread]: Store serial: [18292105]
