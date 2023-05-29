@@ -8685,3 +8685,58 @@
 [2023-05-29 12:45:31] INFO root fetch - main [MainThread]: End processing [backend.ai-webserver]: success
 [2023-05-29 12:45:33] INFO root fetch - main [MainThread]: End processing [backend.ai-webserver]: success
 [2023-05-29 12:45:33] INFO root fetch - main [MainThread]: Store serial: [18288745]
+[2023-05-29 12:50:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288745]
+[2023-05-29 12:50:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: areaTestMouldByHuang
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funcat3
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astyle
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mb-base
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wand-ai-client
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cg
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mb-base
+[2023-05-29 12:50:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Photini
+[2023-05-29 12:50:42] INFO root fetch - processPackages [funcat3]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291049] Old Version: [1.0.202305291047]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [areaTestMouldByHuang]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [astyle]: New version: [3.3b3] Old Version: [3.3.1]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [wand-ai-client]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291049] Old Version: [1.0.202305291047]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [cg]: New version: [32.2.7] Old Version: [32.2.5]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [Photini]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-29 12:50:42] INFO root fetch - processPackages [astyle]: Downloading https://files.pythonhosted.org/packages/2e/42/fd5875eb50bb08de444ab7955d76c31e5a60425c79b9b2cb7142626fd518/astyle-3.3.1.tar.gz
+[2023-05-29 12:50:42] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/56/41/1d2bcb6ca47388a84be8a1e378b552856e23b074cb5a0ffaa14c9aa95e89/mb_base-1.0.202305291047-py3-none-any.whl
+[2023-05-29 12:50:42] INFO root fetch - processPackages [funcat3]: Downloading https://files.pythonhosted.org/packages/52/17/74c410e2b3100c4f6f1ade549192f59d115ac981d29b6455cf9b311468ba/funcat3-1.1.0.tar.gz
+[2023-05-29 12:50:42] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/56/41/1d2bcb6ca47388a84be8a1e378b552856e23b074cb5a0ffaa14c9aa95e89/mb_base-1.0.202305291047-py3-none-any.whl
+[2023-05-29 12:50:42] INFO root fetch - processPackages [areaTestMouldByHuang]: Downloading https://files.pythonhosted.org/packages/3d/de/dc19df67d409aa55934366959b9c461f12f6794f15729969443359465d7e/areaTestMouldByHuang-0.1.4.tar.gz
+[2023-05-29 12:50:43] INFO root fetch - processPackages [wand-ai-client]: Downloading https://files.pythonhosted.org/packages/03/11/27b240b553fd0ec1ea1a936f05e9bcdf0f36c04d07112c64e9999395cb9d/wand-ai-client-0.0.3.tar.gz
+[2023-05-29 12:50:43] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/ea/18/e04b2d58fb07102a2cf369e7a35f347952cad2c85898805733a8a37f5294/mb_base-1.0.202305291049-py3-none-any.whl
+[2023-05-29 12:50:43] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/ea/18/e04b2d58fb07102a2cf369e7a35f347952cad2c85898805733a8a37f5294/mb_base-1.0.202305291049-py3-none-any.whl
+[2023-05-29 12:50:43] INFO root fetch - processPackages [areaTestMouldByHuang]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [areaTestMouldByHuang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areaTestMouldByHuang-0.1.3.tar.gz tmp/areaTestMouldByHuang-0.1.4.tar.gz --markdown 20230529/a/areaTestMouldByHuang/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [funcat3]: Downloading https://files.pythonhosted.org/packages/cb/59/bb5cf8a215377132ed1a810bd54555ebf303f5ab9634807a7d9b4b223357/funcat3-1.1.1.tar.gz
+[2023-05-29 12:50:43] INFO root fetch - processPackages [Photini]: Downloading https://files.pythonhosted.org/packages/2d/10/ac051aa34ebb49828d684590f30a2ec0469da61bcd7e2a028ff816acd3ca/Photini-2023.5.2.tar.gz
+[2023-05-29 12:50:43] INFO root fetch - processPackages [wand-ai-client]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [wand-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wand-ai-client-0.0.2.tar.gz tmp/wand-ai-client-0.0.3.tar.gz --markdown 20230529/w/wand-ai-client/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291047-py3-none-any.whl.zip tmp/mb_base-1.0.202305291049-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291047-1.0.202305291049/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291047-py3-none-any.whl.zip tmp/mb_base-1.0.202305291049-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291047-1.0.202305291049/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [astyle]: Downloading https://files.pythonhosted.org/packages/ca/07/adc27a5ef7adbdf530efd10b0a30fba254079ce1fd75263238374f2c71d5/astyle-3.3b3.tar.gz
+[2023-05-29 12:50:43] INFO root fetch - processPackages [astyle]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [astyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astyle-3.3.1.tar.gz tmp/astyle-3.3b3.tar.gz --markdown 20230529/a/astyle/3.3.1-3.3b3/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/ea/2b/2015a585d7274756b23e32151abf06e28e8c0f3fda2f0efb995110d954cf/cg-32.2.7.tar.gz
+[2023-05-29 12:50:43] INFO root fetch - processPackages [funcat3]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [funcat3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcat3-1.1.0.tar.gz tmp/funcat3-1.1.1.tar.gz --markdown 20230529/f/funcat3/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [Photini]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [Photini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Photini-2023.5.1.tar.gz tmp/Photini-2023.5.2.tar.gz --markdown 20230529/P/Photini/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-29 12:50:43] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-29 12:50:43] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-32.2.5.tar.gz tmp/cg-32.2.7.tar.gz --markdown 20230529/c/cg/32.2.5-32.2.7/diff.md --exclude *.pyd
+[2023-05-29 12:50:44] INFO root fetch - main [MainThread]: End processing [areaTestMouldByHuang]: success
+[2023-05-29 12:50:44] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:50:44] INFO root fetch - main [MainThread]: End processing [wand-ai-client]: success
+[2023-05-29 12:50:44] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:50:45] INFO root fetch - main [MainThread]: End processing [astyle]: success
+[2023-05-29 12:50:45] INFO root fetch - main [MainThread]: End processing [Photini]: success
+[2023-05-29 12:50:58] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-29 12:51:33] INFO root fetch - main [MainThread]: End processing [funcat3]: success
+[2023-05-29 12:51:33] INFO root fetch - main [MainThread]: Store serial: [18288858]
