@@ -6291,3 +6291,48 @@
 [2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [psdm-analysis]: success
 [2023-05-29 09:55:40] INFO root fetch - main [MainThread]: End processing [liuzh594Crypto]: success
 [2023-05-29 09:55:40] INFO root fetch - main [MainThread]: Store serial: [18287374]
+[2023-05-29 10:00:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287374]
+[2023-05-29 10:00:49] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funcat3
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: example-package-zss
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timor-locations
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tkapps-py-packages
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flageval-serving
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blockpipe-db
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: impy-array
+[2023-05-29 10:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qiskit-iqm
+[2023-05-29 10:00:49] WARNING root fetch - processPackages [funcat3]: Skipping, unable to determine old version
+[2023-05-29 10:00:49] INFO root fetch - main [MainThread]: End processing [funcat3] error
+[2023-05-29 10:00:49] INFO root fetch - processPackages [timor-locations]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 10:00:49] WARNING root fetch - processPackages [tkapps-py-packages]: Skipping, unable to determine old version
+[2023-05-29 10:00:49] INFO root fetch - main [MainThread]: End processing [tkapps-py-packages] error
+[2023-05-29 10:00:49] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230529.7.58.347034] Old Version: [20230528.17.9.923907]
+[2023-05-29 10:00:49] WARNING root fetch - processPackages [example-package-zss]: Skipping, unable to determine old version
+[2023-05-29 10:00:49] WARNING root fetch - processPackages [flageval-serving]: Skipping, unable to determine old version
+[2023-05-29 10:00:49] INFO root fetch - main [MainThread]: End processing [example-package-zss] error
+[2023-05-29 10:00:49] INFO root fetch - main [MainThread]: End processing [flageval-serving] error
+[2023-05-29 10:00:49] INFO root fetch - processPackages [impy-array]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-29 10:00:49] INFO root fetch - processPackages [qiskit-iqm]: New version: [8.0] Old Version: [7.9]
+[2023-05-29 10:00:49] INFO root fetch - processPackages [blockpipe-db]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 10:00:49] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/20/e9/20c2c2aa2b7711012861cfb27e3ed1566cf77d933a4882598274f91de028/certora-cli-alpha-master-20230528.17.9.923907.tar.gz
+[2023-05-29 10:00:49] INFO root fetch - processPackages [timor-locations]: Downloading https://files.pythonhosted.org/packages/bf/e8/d8f9341af8c1e7627192b5676742fde747402cc67e3097d71596e53630f9/timor_locations-0.0.4.tar.gz
+[2023-05-29 10:00:49] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39091307>=10485760
+[2023-05-29 10:00:49] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-29 10:00:49] INFO root fetch - processPackages [impy-array]: Downloading https://files.pythonhosted.org/packages/8a/b0/e1e112ed182ee7d935346eae9e3a1275d619aafd21857d8cd7015da15936/impy_array-2.2.2.tar.gz
+[2023-05-29 10:00:49] INFO root fetch - processPackages [blockpipe-db]: Downloading https://files.pythonhosted.org/packages/3f/b3/5932d39f05310030254a8393b8ca9b57534058df53827872f34e3e2d8b6d/blockpipe_db-0.1.4.tar.gz
+[2023-05-29 10:00:49] INFO root fetch - processPackages [blockpipe-db]: executing diffoscope
+[2023-05-29 10:00:49] INFO root fetch - processPackages [blockpipe-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockpipe_db-0.1.3.tar.gz tmp/blockpipe_db-0.1.4.tar.gz --markdown 20230529/b/blockpipe-db/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 10:00:49] INFO root fetch - processPackages [timor-locations]: executing diffoscope
+[2023-05-29 10:00:49] INFO root fetch - processPackages [timor-locations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timor_locations-0.0.3.tar.gz tmp/timor_locations-0.0.4.tar.gz --markdown 20230529/t/timor-locations/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 10:00:49] INFO root fetch - processPackages [qiskit-iqm]: Downloading https://files.pythonhosted.org/packages/32/58/f85875ccbc9de9e686aa3753a4bbf155fbd282ced1a156a88a3308cf53cb/qiskit-iqm-8.0.tar.gz
+[2023-05-29 10:00:49] INFO root fetch - processPackages [impy-array]: Downloading https://files.pythonhosted.org/packages/52/15/1b6196f3f721a721065f55ec910d4a82ad6a18ef7d9587135cc0dd4585a8/impy_array-2.2.3.tar.gz
+[2023-05-29 10:00:50] INFO root fetch - processPackages [qiskit-iqm]: executing diffoscope
+[2023-05-29 10:00:50] INFO root fetch - processPackages [qiskit-iqm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit-iqm-7.9.tar.gz tmp/qiskit-iqm-8.0.tar.gz --markdown 20230529/q/qiskit-iqm/7.9-8.0/diff.md --exclude *.pyd
+[2023-05-29 10:00:50] INFO root fetch - processPackages [impy-array]: executing diffoscope
+[2023-05-29 10:00:50] INFO root fetch - processPackages [impy-array]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impy_array-2.2.2.tar.gz tmp/impy_array-2.2.3.tar.gz --markdown 20230529/i/impy-array/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-29 10:00:50] INFO root fetch - main [MainThread]: End processing [blockpipe-db]: success
+[2023-05-29 10:00:50] INFO root fetch - main [MainThread]: End processing [timor-locations]: success
+[2023-05-29 10:00:51] INFO root fetch - main [MainThread]: End processing [qiskit-iqm]: success
+[2023-05-29 10:00:52] INFO root fetch - main [MainThread]: End processing [impy-array]: success
+[2023-05-29 10:00:52] INFO root fetch - main [MainThread]: Store serial: [18287409]
