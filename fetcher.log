@@ -16569,3 +16569,39 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:26:03] INFO root fetch - main [MainThread]: End processing [pautobot]: success
 [2023-05-29 21:26:08] INFO root fetch - main [MainThread]: End processing [oloren]: success
 [2023-05-29 21:26:08] INFO root fetch - main [MainThread]: Store serial: [18293572]
+[2023-05-29 21:31:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293572]
+[2023-05-29 21:31:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: damo
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-rpautom
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csv-to-xls
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ajm1102pandemic2d
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-master
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cs-eventsender
+[2023-05-29 21:31:17] INFO root fetch - processPackages [py-rpautom]: New version: [0.0.9b0] Old Version: [0.0.8b0]
+[2023-05-29 21:31:17] INFO root fetch - processPackages [damo]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ajm1102pandemic2d]: New version: [0.4] Old Version: [0.3]
+[2023-05-29 21:31:17] INFO root fetch - processPackages [cs-eventsender]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-29 21:31:17] INFO root fetch - processPackages [csv-to-xls]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-29 21:31:17] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230529.7.58.347034] Old Version: [20230529.17.8.312329]
+[2023-05-29 21:31:17] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/28/aa/d2b7e915bdac117dd141d6d992bf39e054609f0bc69c0dd0e2c96315030a/certora-cli-alpha-master-20230529.17.8.312329.tar.gz
+[2023-05-29 21:31:17] INFO root fetch - processPackages [cs-eventsender]: executing diffoscope
+[2023-05-29 21:31:17] INFO root fetch - processPackages [cs-eventsender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-eventsender-0.0.2.tar.gz tmp/cs-eventsender-0.0.4.tar.gz --markdown 20230529/c/cs-eventsender/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 21:31:17] INFO root fetch - processPackages [ajm1102pandemic2d]: Downloading https://files.pythonhosted.org/packages/e7/6d/eac8eea8c1751041fd8f1712f842630b579201f0caae80b54039c76035f6/ajm1102pandemic2d-0.4-py3-none-any.whl
+[2023-05-29 21:31:17] INFO root fetch - processPackages [csv-to-xls]: Downloading https://files.pythonhosted.org/packages/98/bb/687ea37fdaa4a7c74494a800b428b4ec8c831a7eb76a485cabc8eb86939f/csv_to_xls-0.0.4.tar.gz
+[2023-05-29 21:31:17] INFO root fetch - processPackages [py-rpautom]: executing diffoscope
+[2023-05-29 21:31:17] INFO root fetch - processPackages [py-rpautom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-rpautom-0.0.8b0.tar.gz tmp/py-rpautom-0.0.9b0.tar.gz --markdown 20230529/p/py-rpautom/0.0.8b0-0.0.9b0/diff.md --exclude *.pyd
+[2023-05-29 21:31:17] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39091084>=10485760
+[2023-05-29 21:31:17] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-29 21:31:18] INFO root fetch - processPackages [damo]: Downloading https://files.pythonhosted.org/packages/41/0f/27ec7aa59d3e957afaee37a0693bc3c0a91fe945f13fa684a58196344aa5/damo-1.8.3.tar.gz
+[2023-05-29 21:31:18] INFO root fetch - processPackages [ajm1102pandemic2d]: executing diffoscope
+[2023-05-29 21:31:18] INFO root fetch - processPackages [ajm1102pandemic2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ajm1102pandemic2d-0.3-py3-none-any.whl.zip tmp/ajm1102pandemic2d-0.4-py3-none-any.whl.zip --markdown 20230529/a/ajm1102pandemic2d/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-29 21:31:18] INFO root fetch - processPackages [csv-to-xls]: executing diffoscope
+[2023-05-29 21:31:18] INFO root fetch - processPackages [csv-to-xls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv_to_xls-0.0.2.tar.gz tmp/csv_to_xls-0.0.4.tar.gz --markdown 20230529/c/csv-to-xls/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 21:31:18] INFO root fetch - processPackages [damo]: executing diffoscope
+[2023-05-29 21:31:18] INFO root fetch - processPackages [damo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/damo-1.8.2.tar.gz tmp/damo-1.8.3.tar.gz --markdown 20230529/d/damo/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-05-29 21:31:18] INFO root fetch - main [MainThread]: End processing [cs-eventsender]: success
+[2023-05-29 21:31:19] INFO root fetch - main [MainThread]: End processing [py-rpautom]: success
+[2023-05-29 21:31:19] INFO root fetch - main [MainThread]: End processing [csv-to-xls]: success
+[2023-05-29 21:31:19] INFO root fetch - main [MainThread]: End processing [ajm1102pandemic2d]: success
+[2023-05-29 21:31:19] INFO root fetch - main [MainThread]: End processing [damo]: success
+[2023-05-29 21:31:19] INFO root fetch - main [MainThread]: Store serial: [18293590]
