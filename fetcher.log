@@ -4539,3 +4539,57 @@
 [2023-05-29 06:24:30] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
 [2023-05-29 06:24:34] INFO root fetch - main [MainThread]: End processing [basxconnect]: success
 [2023-05-29 06:24:34] INFO root fetch - main [MainThread]: Store serial: [18286299]
+[2023-05-29 06:29:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286299]
+[2023-05-29 06:29:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: macrometa-source-snowflake
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cyberdrop-dl
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pmdsky-debug-py
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easymms
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ripandtear
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oemer
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: logedit
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cwsearch-utils
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: macrometa-source-bigquery
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [pmdsky-debug-py]: New version: [5.1.9] Old Version: [5.1.8]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ripandtear]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [easymms]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.51] Old Version: [4.2.49]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [logedit]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [oemer]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [pmdsky-debug-py]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [pmdsky-debug-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmdsky_debug_py-5.1.8-py3-none-any.whl.zip tmp/pmdsky_debug_py-5.1.9-py3-none-any.whl.zip --markdown 20230529/p/pmdsky-debug-py/5.1.8-5.1.9/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [macrometa-source-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.7.tar.gz tmp/ripandtear-0.9.9.tar.gz --markdown 20230529/r/ripandtear/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [logedit]: Downloading https://files.pythonhosted.org/packages/f7/f3/2f5e2ebc919fbfd09811c084500b7fd673dab68753ca771dc35a29b3f96b/logedit-0.0.1.tar.gz
+[2023-05-29 06:29:43] INFO root fetch - processPackages [easymms]: Downloading https://files.pythonhosted.org/packages/eb/77/1d04a23fdb6ef4a8b5eea5f435164f33c306b73815947443682c9191d274/easymms-0.1.2.tar.gz
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/9a/46/4d01c6c24e4bc0c34741a411d002dc37c6daac965022ebc6695beac1c305/cyberdrop-dl-4.2.51.tar.gz
+[2023-05-29 06:29:43] INFO root fetch - processPackages [oemer]: Downloading https://files.pythonhosted.org/packages/66/65/11f98df045d6d74ab907098da4adddc12d9276366e1da63a98ea8a2f2a0c/oemer-0.1.5-py3-none-any.whl
+[2023-05-29 06:29:43] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.49.tar.gz tmp/cyberdrop-dl-4.2.51.tar.gz --markdown 20230529/c/cyberdrop-dl/4.2.49-4.2.51/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230529/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [easymms]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [easymms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easymms-0.1.1.tar.gz tmp/easymms-0.1.2.tar.gz --markdown 20230529/e/easymms/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [logedit]: Downloading https://files.pythonhosted.org/packages/bb/97/b35c4d4b40bf45721542696a13473f81e3dd02e50a74bdc5761c306ba7f1/logedit-0.1.0.tar.gz
+[2023-05-29 06:29:43] INFO root fetch - processPackages [oemer]: Downloading https://files.pythonhosted.org/packages/ae/f0/138878542829eccdbf93652111578074d5a19a1b1e9f507abedaa14619f4/oemer-0.1.6-py3-none-any.whl
+[2023-05-29 06:29:43] INFO root fetch - processPackages [macrometa-source-bigquery]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [macrometa-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-bigquery-0.0.8.tar.gz tmp/macrometa-source-bigquery-0.0.9.tar.gz --markdown 20230529/m/macrometa-source-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [logedit]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [logedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logedit-0.0.1.tar.gz tmp/logedit-0.1.0.tar.gz --markdown 20230529/l/logedit/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 06:29:43] INFO root fetch - processPackages [oemer]: executing diffoscope
+[2023-05-29 06:29:43] INFO root fetch - processPackages [oemer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oemer-0.1.5-py3-none-any.whl.zip tmp/oemer-0.1.6-py3-none-any.whl.zip --markdown 20230529/o/oemer/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 06:29:44] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [easymms]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [logedit]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [macrometa-source-bigquery]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-05-29 06:29:45] INFO root fetch - main [MainThread]: End processing [oemer]: success
+[2023-05-29 06:29:48] INFO root fetch - main [MainThread]: End processing [pmdsky-debug-py]: success
+[2023-05-29 06:29:48] INFO root fetch - main [MainThread]: Store serial: [18286332]
