@@ -16760,3 +16760,155 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:52:11] INFO root fetch - main [MainThread]: End processing [bfcm]: success
 [2023-05-29 21:52:12] INFO root fetch - main [MainThread]: End processing [jsonl2]: success
 [2023-05-29 21:52:12] INFO root fetch - main [MainThread]: Store serial: [18293757]
+[2023-05-29 21:57:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293757]
+[2023-05-29 21:57:20] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agilicus
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baboo-game
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aimped
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: klp-commons
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bloic
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycalaos
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ovos-core
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: np-codeocean
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: problemator
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: klp-commons
+[2023-05-29 21:57:20] INFO root fetch - processPackages [baboo-game]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [bloic]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [np-codeocean]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [problemator]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [aimped]: New version: [0.1.46] Old Version: [0.1.45]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [pycalaos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a9] Old Version: [0.0.8a8]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [agilicus]: New version: [1.99.0] Old Version: [1.98.9]
+[2023-05-29 21:57:20] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-05-29 21:57:20] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230529/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:20] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-05-29 21:57:20] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230529/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:20] INFO root fetch - processPackages [pycalaos]: executing diffoscope
+[2023-05-29 21:57:20] INFO root fetch - processPackages [pycalaos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycalaos-0.0.8.tar.gz tmp/pycalaos-0.0.9.tar.gz --markdown 20230529/p/pycalaos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:20] INFO root fetch - processPackages [baboo-game]: Downloading https://files.pythonhosted.org/packages/97/20/737fd5a28d1e31468caae7a73cd932cde35c46cfdad5a7b052583837549f/baboo_game-2.0.6.tar.gz
+[2023-05-29 21:57:20] INFO root fetch - processPackages [problemator]: Downloading https://files.pythonhosted.org/packages/c3/01/c8807dcbd85f87c1b12748d6591fd6df6f488229f35e1e774b27417ffe69/problemator-1.0.5.tar.gz
+[2023-05-29 21:57:21] INFO root fetch - processPackages [aimped]: Downloading https://files.pythonhosted.org/packages/3e/b5/60f462c10d3eb892d69c6e531a37143916367641ab5487f12fe402562ca9/aimped-0.1.46.tar.gz
+[2023-05-29 21:57:21] INFO root fetch - processPackages [baboo-game]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [baboo-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baboo_game-2.0.5.tar.gz tmp/baboo_game-2.0.6.tar.gz --markdown 20230529/b/baboo-game/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-29 21:57:21] INFO root fetch - processPackages [bloic]: Downloading https://files.pythonhosted.org/packages/1c/d4/5d3a3539cd075fb4cde68529332b91be34ec37d761521c45e1b7f86f6cc6/bloic-1.1.0.tar.gz
+[2023-05-29 21:57:21] INFO root fetch - processPackages [np-codeocean]: Downloading https://files.pythonhosted.org/packages/30/f4/c1e0c67b9913e97a54340e5b4e55532f41bf0b347f329fee77fe48c552f6/np_codeocean-0.1.4.tar.gz
+[2023-05-29 21:57:21] INFO root fetch - processPackages [aimped]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [aimped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimped-0.1.45.tar.gz tmp/aimped-0.1.46.tar.gz --markdown 20230529/a/aimped/0.1.45-0.1.46/diff.md --exclude *.pyd
+[2023-05-29 21:57:21] INFO root fetch - processPackages [bloic]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [bloic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bloic-1.0.1.tar.gz tmp/bloic-1.1.0.tar.gz --markdown 20230529/b/bloic/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 21:57:21] INFO root fetch - processPackages [agilicus]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [agilicus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agilicus-1.98.9.tar.gz tmp/agilicus-1.99.0.tar.gz --markdown 20230529/a/agilicus/1.98.9-1.99.0/diff.md --exclude *.pyd
+[2023-05-29 21:57:21] INFO root fetch - processPackages [np-codeocean]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [np-codeocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_codeocean-0.1.3.tar.gz tmp/np_codeocean-0.1.4.tar.gz --markdown 20230529/n/np-codeocean/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 21:57:21] INFO root fetch - processPackages [ovos-core]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [ovos-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_core-0.0.8a8-py3-none-any.whl.zip tmp/ovos_core-0.0.8a9-py3-none-any.whl.zip --markdown 20230529/o/ovos-core/0.0.8a8-0.0.8a9/diff.md --exclude *.pyd
+[2023-05-29 21:57:21] INFO root fetch - processPackages [problemator]: Downloading https://files.pythonhosted.org/packages/43/eb/5d720c8ef06710652f13a9153bbd229056767bb5bbaa570004e04478367c/problemator-1.1.0.tar.gz
+[2023-05-29 21:57:21] INFO root fetch - processPackages [problemator]: executing diffoscope
+[2023-05-29 21:57:21] INFO root fetch - processPackages [problemator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/problemator-1.0.5.tar.gz tmp/problemator-1.1.0.tar.gz --markdown 20230529/p/problemator/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 21:57:22] INFO root fetch - processPackages [pycalaos]: Start processing: ovos-utils
+[2023-05-29 21:57:22] INFO root fetch - main [MainThread]: End processing [pycalaos]: success
+[2023-05-29 21:57:22] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-05-29 21:57:22] INFO root fetch - processPackages [klp-commons]: Start processing: satori-ci
+[2023-05-29 21:57:22] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-05-29 21:57:22] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 21:57:22] INFO root fetch - processPackages [klp-commons]: Start processing: satori-ci
+[2023-05-29 21:57:22] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-05-29 21:57:22] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 21:57:22] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 21:57:22] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:22] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 21:57:22] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:22] INFO root fetch - processPackages [bloic]: Start processing: xcodex
+[2023-05-29 21:57:22] INFO root fetch - main [MainThread]: End processing [bloic]: success
+[2023-05-29 21:57:22] INFO root fetch - processPackages [xcodex]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 21:57:22] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-05-29 21:57:22] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230529/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-05-29 21:57:23] INFO root fetch - processPackages [np-codeocean]: Start processing: klp-commons
+[2023-05-29 21:57:23] INFO root fetch - main [MainThread]: End processing [np-codeocean]: success
+[2023-05-29 21:57:23] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:57:23] INFO root fetch - processPackages [baboo-game]: Start processing: bfcm
+[2023-05-29 21:57:23] INFO root fetch - main [MainThread]: End processing [baboo-game]: success
+[2023-05-29 21:57:23] INFO root fetch - processPackages [bfcm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:57:23] INFO root fetch - processPackages [xcodex]: Downloading https://files.pythonhosted.org/packages/a8/85/b3cd14a3044e2c0518be9f9c45e9afc2a8e2b9860eae84b2fb63388a4892/xcodex-0.0.5.tar.gz
+[2023-05-29 21:57:23] INFO root fetch - processPackages [problemator]: Start processing: honkaistarrail
+[2023-05-29 21:57:23] INFO root fetch - main [MainThread]: End processing [problemator]: success
+[2023-05-29 21:57:23] INFO root fetch - processPackages [honkaistarrail]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 21:57:23] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-05-29 21:57:23] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230529/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:23] INFO root fetch - processPackages [bfcm]: executing diffoscope
+[2023-05-29 21:57:23] INFO root fetch - processPackages [bfcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfcm-0.0.8.tar.gz tmp/bfcm-0.0.9.tar.gz --markdown 20230529/b/bfcm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:57:23] INFO root fetch - processPackages [xcodex]: executing diffoscope
+[2023-05-29 21:57:23] INFO root fetch - processPackages [xcodex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcodex-0.0.4.tar.gz tmp/xcodex-0.0.5.tar.gz --markdown 20230529/x/xcodex/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 21:57:23] INFO root fetch - processPackages [honkaistarrail]: Downloading https://files.pythonhosted.org/packages/91/14/ecc2e62d8e644cbc40e27b8ca17bfd62defe20dbeb63a5d2e3d15fc8ad1b/honkaistarrail-0.0.3.tar.gz
+[2023-05-29 21:57:23] INFO root fetch - processPackages [aimped]: Start processing: holehebetter
+[2023-05-29 21:57:23] INFO root fetch - main [MainThread]: End processing [aimped]: success
+[2023-05-29 21:57:23] INFO root fetch - processPackages [honkaistarrail]: Downloading https://files.pythonhosted.org/packages/05/2b/1fd94e5fe606c85df35afc17087a53fd8d5c6d8fa8b85098d2e602766b2c/honkaistarrail-0.0.4.tar.gz
+[2023-05-29 21:57:23] WARNING root fetch - processPackages [holehebetter]: Skipping, unable to determine old version
+[2023-05-29 21:57:23] INFO root fetch - main [MainThread]: End processing [holehebetter] error
+[2023-05-29 21:57:23] INFO root fetch - processPackages [honkaistarrail]: executing diffoscope
+[2023-05-29 21:57:23] INFO root fetch - processPackages [honkaistarrail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honkaistarrail-0.0.3.tar.gz tmp/honkaistarrail-0.0.4.tar.gz --markdown 20230529/h/honkaistarrail/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 21:57:24] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 21:57:25] INFO root fetch - main [MainThread]: End processing [ovos-utils]: success
+[2023-05-29 21:57:25] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-05-29 21:57:25] INFO root fetch - main [MainThread]: End processing [bfcm]: success
+[2023-05-29 21:57:25] INFO root fetch - main [MainThread]: End processing [xcodex]: success
+[2023-05-29 21:57:25] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 21:57:25] INFO root fetch - main [MainThread]: End processing [honkaistarrail]: success
+[2023-05-29 21:57:34] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
+[2023-05-29 21:57:44] ERROR root fetch - processPackages [agilicus]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-05-29 21:57:44] INFO root fetch - main [MainThread]: End processing [agilicus] error
+[2023-05-29 21:57:44] INFO root fetch - main [MainThread]: Store serial: [18293812]
