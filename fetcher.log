@@ -11718,3 +11718,92 @@ EOFError: EOF read where object expected
 [2023-05-29 16:07:59] INFO root fetch - main [MainThread]: End processing [assemblyline-service-utilities]: success
 [2023-05-29 16:08:08] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-29 16:08:08] INFO root fetch - main [MainThread]: Store serial: [18290699]
+[2023-05-29 16:13:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290699]
+[2023-05-29 16:13:18] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: resomapper
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assemblyline-service-utilities
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hvc
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: centesimal-iot
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tupa123
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycelium
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Geode-Common
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: muuusiiik
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lib-dzne-auto-interface
+[2023-05-29 16:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dataherb
+[2023-05-29 16:13:18] INFO root fetch - processPackages [resomapper]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-29 16:13:18] WARNING root fetch - processPackages [hvc]: Skipping, unable to determine old version
+[2023-05-29 16:13:18] INFO root fetch - processPackages [hvc]: Start processing: obrpy
+[2023-05-29 16:13:18] INFO root fetch - main [MainThread]: End processing [hvc] error
+[2023-05-29 16:13:18] INFO root fetch - processPackages [assemblyline-service-utilities]: New version: [4.4.1.dev5] Old Version: [4.4.1.dev4]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [dataherb]: New version: [0.1.8] Old Version: [0.1.5]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [pycelium]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [muuusiiik]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [lib-dzne-auto-interface]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [tupa123]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [Geode-Common]: New version: [26.0.0rc1] Old Version: [25.0.9rc3]
+[2023-05-29 16:13:18] INFO root fetch - processPackages [assemblyline-service-utilities]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [assemblyline-service-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_utilities-4.4.1.dev4-py3-none-any.whl.zip tmp/assemblyline_service_utilities-4.4.1.dev5-py3-none-any.whl.zip --markdown 20230529/a/assemblyline-service-utilities/4.4.1.dev4-4.4.1.dev5/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [pycelium]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [pycelium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycelium-0.1.8.tar.gz tmp/pycelium-0.1.9.tar.gz --markdown 20230529/p/pycelium/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [resomapper]: Downloading https://files.pythonhosted.org/packages/21/fb/3fbffb030bd20892db037a33491942f557fef92f79b40af73e899a8432cd/resomapper-0.1.1.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [muuusiiik]: Downloading https://files.pythonhosted.org/packages/ef/39/7e98cd5b9baf0ec37fb9cd87ba5f6493d88d9f4292743f356d568fbd99ed/muuusiiik-0.0.5.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [dataherb]: Downloading https://files.pythonhosted.org/packages/ce/3b/58d43709564eb7c60c959d91ae8f8a06004a48bba5fe7820d89bf37f4fc0/dataherb-0.1.5.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [lib-dzne-auto-interface]: Downloading https://files.pythonhosted.org/packages/d9/62/efed22d12a5f122b05b7b8f39162bbdbadf6333c1405048a2e1bb460b6e6/lib-dzne-auto-interface-0.2.2.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/26/d1/7097b906a06c34498e8f887ce5c3cdd45691876802cbd16747ce4dbe9b3a/Geode_Common-26.0.0rc1-cp39-cp39-win_amd64.whl
+[2023-05-29 16:13:18] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/e4/b4/6f5f209b09ec26c5af7c0d46a270eb2c18486f6982919639276f4178d738/centesimal_iot-0.1.9-py2.py3-none-any.whl
+[2023-05-29 16:13:18] INFO root fetch - processPackages [lib-dzne-auto-interface]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [lib-dzne-auto-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-auto-interface-0.2.1.tar.gz tmp/lib-dzne-auto-interface-0.2.2.tar.gz --markdown 20230529/l/lib-dzne-auto-interface/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [dataherb]: Downloading https://files.pythonhosted.org/packages/ea/ff/08ceff42d882fb014c6b52b84b4e1e8f76b5c70415f67b4896f34c55bb69/dataherb-0.1.8.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.4.8.tar.gz tmp/tupa123-1.4.9.tar.gz --markdown 20230529/t/tupa123/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [resomapper]: Downloading https://files.pythonhosted.org/packages/6d/06/1a7c4e165df301bd69d1fc5f8fdfbca5627b8e7e95702d792bc693f4c733/resomapper-0.2.0.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [dataherb]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [dataherb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataherb-0.1.5.tar.gz tmp/dataherb-0.1.8.tar.gz --markdown 20230529/d/dataherb/0.1.5-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [muuusiiik]: Downloading https://files.pythonhosted.org/packages/e0/39/e630a56cda76e87dd52aa389497b8a0a76091f2073a00bbdfaf3426b7593/muuusiiik-0.0.6.tar.gz
+[2023-05-29 16:13:18] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.8-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.9-py2.py3-none-any.whl.zip --markdown 20230529/c/centesimal-iot/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [resomapper]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [resomapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resomapper-0.1.1.tar.gz tmp/resomapper-0.2.0.tar.gz --markdown 20230529/r/resomapper/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 16:13:18] INFO root fetch - processPackages [muuusiiik]: executing diffoscope
+[2023-05-29 16:13:18] INFO root fetch - processPackages [muuusiiik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muuusiiik-0.0.5.tar.gz tmp/muuusiiik-0.0.6.tar.gz --markdown 20230529/m/muuusiiik/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 16:13:19] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-05-29 16:13:19] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-25.0.9rc3-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-26.0.0rc1-cp39-cp39-win_amd64.whl.zip --markdown 20230529/G/Geode-Common/25.0.9rc3-26.0.0rc1/diff.md --exclude *.pyd
+[2023-05-29 16:13:19] INFO root fetch - processPackages [lib-dzne-auto-interface]: Start processing: noconf
+[2023-05-29 16:13:19] INFO root fetch - main [MainThread]: End processing [lib-dzne-auto-interface]: success
+[2023-05-29 16:13:19] INFO root fetch - processPackages [obrpy]: Start processing: django-treenode
+[2023-05-29 16:13:19] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 16:13:19] INFO root fetch - processPackages [noconf]: New version: [0.1a3] Old Version: [0.1a2]
+[2023-05-29 16:13:19] INFO root fetch - processPackages [django-treenode]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-29 16:13:20] INFO root fetch - processPackages [noconf]: Downloading https://files.pythonhosted.org/packages/29/d6/9b273721d22554ad6288f2962ab8fbd7ffacb82035b9768673dff4994769/noconf-0.1a2.tar.gz
+[2023-05-29 16:13:20] INFO root fetch - processPackages [django-treenode]: Downloading https://files.pythonhosted.org/packages/da/2d/7fc082a9a14f32355b36d6b0609f4c781815fefa584e60b7d2cd662d4e62/django-treenode-0.8.1.tar.gz
+[2023-05-29 16:13:20] INFO root fetch - processPackages [centesimal-iot]: Start processing: JsOnXmLSe814Rializer748
+[2023-05-29 16:13:20] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-29 16:13:20] WARNING root fetch - processPackages [JsOnXmLSe814Rializer748]: Skipping, unable to determine old version
+[2023-05-29 16:13:20] INFO root fetch - processPackages [JsOnXmLSe814Rializer748]: Start processing: tronapi-JCO
+[2023-05-29 16:13:20] INFO root fetch - main [MainThread]: End processing [JsOnXmLSe814Rializer748] error
+[2023-05-29 16:13:20] INFO root fetch - processPackages [noconf]: Downloading https://files.pythonhosted.org/packages/bf/c0/aaf180fdde474297e009be7db986be9e106f1d05d94163c27725fade42e7/noconf-0.1a3.tar.gz
+[2023-05-29 16:13:20] INFO root fetch - main [MainThread]: End processing [muuusiiik]: success
+[2023-05-29 16:13:20] INFO root fetch - processPackages [tronapi-JCO]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-29 16:13:20] INFO root fetch - main [MainThread]: End processing [resomapper]: success
+[2023-05-29 16:13:20] INFO root fetch - processPackages [noconf]: executing diffoscope
+[2023-05-29 16:13:20] INFO root fetch - processPackages [noconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noconf-0.1a2.tar.gz tmp/noconf-0.1a3.tar.gz --markdown 20230529/n/noconf/0.1a2-0.1a3/diff.md --exclude *.pyd
+[2023-05-29 16:13:20] INFO root fetch - main [MainThread]: End processing [dataherb]: success
+[2023-05-29 16:13:20] INFO root fetch - processPackages [django-treenode]: Downloading https://files.pythonhosted.org/packages/a4/d4/32df447652b017d9313b3551393e8ea962ca74845ec9929365105a5bfd4f/django-treenode-0.9.0.tar.gz
+[2023-05-29 16:13:20] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-05-29 16:13:20] INFO root fetch - processPackages [tronapi-JCO]: Downloading https://files.pythonhosted.org/packages/7a/24/1394b0dd1d24559beed3200c319bb23fd462c9844649ee9804b54ff2f3d9/tronapi-JCO-3.1.8.tar.gz
+[2023-05-29 16:13:20] INFO root fetch - processPackages [django-treenode]: executing diffoscope
+[2023-05-29 16:13:20] INFO root fetch - processPackages [django-treenode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-treenode-0.8.1.tar.gz tmp/django-treenode-0.9.0.tar.gz --markdown 20230529/d/django-treenode/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 16:13:21] INFO root fetch - processPackages [tronapi-JCO]: Downloading https://files.pythonhosted.org/packages/6d/ec/a33142b161553ba771f96997039ebbeb62c82b2576bf7ad8ed673b86a24b/tronapi-JCO-3.1.9.tar.gz
+[2023-05-29 16:13:21] INFO root fetch - processPackages [tronapi-JCO]: executing diffoscope
+[2023-05-29 16:13:21] INFO root fetch - processPackages [tronapi-JCO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tronapi-JCO-3.1.8.tar.gz tmp/tronapi-JCO-3.1.9.tar.gz --markdown 20230529/t/tronapi-JCO/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:13:21] INFO root fetch - main [MainThread]: End processing [pycelium]: success
+[2023-05-29 16:13:21] INFO root fetch - main [MainThread]: End processing [assemblyline-service-utilities]: success
+[2023-05-29 16:13:21] INFO root fetch - main [MainThread]: End processing [noconf]: success
+[2023-05-29 16:13:22] INFO root fetch - main [MainThread]: End processing [django-treenode]: success
+[2023-05-29 16:13:22] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
+[2023-05-29 16:13:32] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-05-29 16:13:32] INFO root fetch - main [MainThread]: Store serial: [18290756]
