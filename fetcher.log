@@ -17064,3 +17064,134 @@ EOFError: EOF read where object expected
 [2023-05-29 22:08:10] INFO root fetch - main [MainThread]: End processing [intake-xarray]: success
 [2023-05-29 22:09:01] INFO root fetch - main [MainThread]: End processing [coverage]: success
 [2023-05-29 22:09:01] INFO root fetch - main [MainThread]: Store serial: [18293948]
+[2023-05-29 22:14:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293948]
+[2023-05-29 22:14:10] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: named
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: joshua-test1
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gadapt
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: intake-sql
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oceano-algos
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycalaos
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jaxrenderer
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cost-of-code
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aim-ui
+[2023-05-29 22:14:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aioemit
+[2023-05-29 22:14:10] INFO root fetch - processPackages [intake-sql]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-29 22:14:10] INFO root fetch - processPackages [joshua-test1]: New version: [23.0.1] Old Version: [23.0.0rc3]
+[2023-05-29 22:14:10] INFO root fetch - processPackages [named]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-29 22:14:10] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 22:14:10] INFO root fetch - processPackages [cost-of-code]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 22:14:10] INFO root fetch - processPackages [gadapt]: New version: [0.2.16] Old Version: [0.2.15]
+[2023-05-29 22:14:10] WARNING root fetch - processPackages [jaxrenderer]: Skipping, unable to determine old version
+[2023-05-29 22:14:10] INFO root fetch - processPackages [jaxrenderer]: Start processing: prometheus-pve-sd
+[2023-05-29 22:14:10] INFO root fetch - main [MainThread]: End processing [jaxrenderer] error
+[2023-05-29 22:14:10] INFO root fetch - processPackages [pycalaos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 22:14:10] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0a3] Old Version: [4.0.0a2]
+[2023-05-29 22:14:11] INFO root fetch - processPackages [prometheus-pve-sd]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/dc/da/0f9770abf46cf31cb2dab139d78ac5cb21c4160a35c3b8966191a77ddca2/aim-ui-4.0.0a2.tar.gz
+[2023-05-29 22:14:11] WARNING root fetch - processPackages [aioemit]: Skipping, unable to determine old version
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aioemit]: Start processing: joshua-test1
+[2023-05-29 22:14:11] INFO root fetch - main [MainThread]: End processing [aioemit] error
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: New version: [23.0.1] Old Version: [23.0.0rc3]
+[2023-05-29 22:14:11] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 20219851>=10485760
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aim-ui]: Start processing: aim
+[2023-05-29 22:14:11] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-05-29 22:14:11] INFO root fetch - processPackages [intake-sql]: Downloading https://files.pythonhosted.org/packages/7e/f8/550368a0c2325aee236611d0ae373e6a9659ea8f7c029df42b6f5ea99822/intake-sql-0.3.1.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: Downloading https://files.pythonhosted.org/packages/8d/0b/41b56af1072ac701cd4baae7d1f34d3f5c16d550d8f88d38abc4ac89ab19/joshua-test1-23.0.0rc3.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: Downloading https://files.pythonhosted.org/packages/8d/0b/41b56af1072ac701cd4baae7d1f34d3f5c16d550d8f88d38abc4ac89ab19/joshua-test1-23.0.0rc3.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aim]: New version: [4.0.0a3] Old Version: [4.0.0a2]
+[2023-05-29 22:14:11] INFO root fetch - processPackages [cost-of-code]: Downloading https://files.pythonhosted.org/packages/4a/32/042c11b66c12eb333bda61fc419f17f781a7b2652d748882a82eb52b06e8/cost-of-code-0.1.3.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [pycalaos]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [pycalaos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycalaos-0.0.8.tar.gz tmp/pycalaos-0.0.9.tar.gz --markdown 20230529/p/pycalaos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [prometheus-pve-sd]: Downloading https://files.pythonhosted.org/packages/5e/ec/61bb6094d184ab5f991445e583388a0821c55f32becec4182d8011979893/prometheus-pve-sd-2.5.8.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230529/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [cost-of-code]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [cost-of-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cost-of-code-0.1.2.tar.gz tmp/cost-of-code-0.1.3.tar.gz --markdown 20230529/c/cost-of-code/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [named]: Downloading https://files.pythonhosted.org/packages/d4/f5/20401cc3e2a48a477de2a150c7f3859820ab82f351cb0db4cd5b53d8265e/named-1.3.0.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [intake-sql]: Downloading https://files.pythonhosted.org/packages/ca/88/18a7ba7eef6c93fd1888bc04d5b8e24f586c4364ffa19485107cf70039d2/intake-sql-0.4.0.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [named]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [named]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/named-1.2.0.tar.gz tmp/named-1.3.0.tar.gz --markdown 20230529/n/named/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: Downloading https://files.pythonhosted.org/packages/55/e0/4a93ddbf489e4af2014fdee4e1aefdac2599096c02fad151539e0d5073cf/joshua-test1-23.0.1.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: Downloading https://files.pythonhosted.org/packages/55/e0/4a93ddbf489e4af2014fdee4e1aefdac2599096c02fad151539e0d5073cf/joshua-test1-23.0.1.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/9c/0d/d0f9f456f36347ec8ccb72f3e3bd70cada354ed4d2bfb1ecb87767e6f9c5/gadapt-0.2.16.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [intake-sql]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [intake-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intake-sql-0.3.1.tar.gz tmp/intake-sql-0.4.0.tar.gz --markdown 20230529/i/intake-sql/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.15.tar.gz tmp/gadapt-0.2.16.tar.gz --markdown 20230529/g/gadapt/0.2.15-0.2.16/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [prometheus-pve-sd]: Downloading https://files.pythonhosted.org/packages/a3/62/18fe9e39907350837c1c7def16c60e91559617392f91303c97fd030c6c0d/prometheus-pve-sd-2.5.9.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/3c/31/da4b9bf3fe0dff01d2c9659bfa37e5602f094e5aa545cd51abf446bfbd51/aim-4.0.0a3.tar.gz
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joshua-test1-23.0.0rc3.tar.gz tmp/joshua-test1-23.0.1.tar.gz --markdown 20230529/j/joshua-test1/23.0.0rc3-23.0.1/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [joshua-test1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joshua-test1-23.0.0rc3.tar.gz tmp/joshua-test1-23.0.1.tar.gz --markdown 20230529/j/joshua-test1/23.0.0rc3-23.0.1/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0a2.tar.gz tmp/aim-4.0.0a3.tar.gz --markdown 20230529/a/aim/4.0.0a2-4.0.0a3/diff.md --exclude *.pyd
+[2023-05-29 22:14:11] INFO root fetch - processPackages [prometheus-pve-sd]: executing diffoscope
+[2023-05-29 22:14:11] INFO root fetch - processPackages [prometheus-pve-sd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prometheus-pve-sd-2.5.8.tar.gz tmp/prometheus-pve-sd-2.5.9.tar.gz --markdown 20230529/p/prometheus-pve-sd/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-05-29 22:14:12] INFO root fetch - processPackages [pycalaos]: Start processing: graphscope
+[2023-05-29 22:14:12] INFO root fetch - main [MainThread]: End processing [pycalaos]: success
+[2023-05-29 22:14:12] INFO root fetch - processPackages [graphscope]: New version: [0.22.0a20230529] Old Version: [0.22.0a20230528]
+[2023-05-29 22:14:12] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/f0/f4/16316986e42a7388670c05eb205cc6de8d0ac9ade14500ef99f64547289a/graphscope-0.22.0a20230528-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 22:14:12] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 136768058>=10485760
+[2023-05-29 22:14:12] INFO root fetch - processPackages [graphscope]: Start processing: graphscope-client
+[2023-05-29 22:14:12] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2023-05-29 22:14:12] INFO root fetch - processPackages [graphscope-client]: New version: [0.22.0a20230528] Old Version: [0.22.0a20230527]
+[2023-05-29 22:14:12] INFO root fetch - processPackages [cost-of-code]: Start processing: docker-tidy
+[2023-05-29 22:14:12] INFO root fetch - main [MainThread]: End processing [cost-of-code]: success
+[2023-05-29 22:14:12] INFO root fetch - processPackages [docker-tidy]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 22:14:13] INFO root fetch - processPackages [named]: Start processing: pyanalysis
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [named]: success
+[2023-05-29 22:14:13] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/c7/dc/16f0c1193c6d5eb072cede124447ed46110180b5123d3238fb241e476b8d/graphscope_client-0.22.0a20230527-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 22:14:13] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 63661869>=10485760
+[2023-05-29 22:14:13] INFO root fetch - processPackages [graphscope-client]: Start processing: micone
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-05-29 22:14:13] INFO root fetch - processPackages [pyanalysis]: New version: [2.1.0.2] Old Version: [2.0.8.6]
+[2023-05-29 22:14:13] INFO root fetch - processPackages [docker-tidy]: Downloading https://files.pythonhosted.org/packages/3a/f0/41c3d83f787830ce7ab9f93102bd3e0e5d13e6b936cfbf378ac03e247a6c/docker-tidy-1.1.8.tar.gz
+[2023-05-29 22:14:13] INFO root fetch - processPackages [micone]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-29 22:14:13] INFO root fetch - processPackages [intake-sql]: Start processing: sesg
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [intake-sql]: success
+[2023-05-29 22:14:13] INFO root fetch - processPackages [oceano-algos]: Start processing: LumosWeb
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-29 22:14:13] INFO root fetch - processPackages [LumosWeb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 22:14:13] INFO root fetch - processPackages [pyanalysis]: Downloading https://files.pythonhosted.org/packages/1e/a4/215c5830f0efd71d88a59126fea7a4927b0a4a7763e5f43c0332ff3ecf9e/pyanalysis-2.0.8.6.tar.gz
+[2023-05-29 22:14:13] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 22:14:13] INFO root fetch - processPackages [LumosWeb]: executing diffoscope
+[2023-05-29 22:14:13] INFO root fetch - processPackages [LumosWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LumosWeb-0.0.1.tar.gz tmp/LumosWeb-0.0.2.tar.gz --markdown 20230529/L/LumosWeb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 22:14:13] INFO root fetch - processPackages [docker-tidy]: Downloading https://files.pythonhosted.org/packages/7f/e1/e1eef38be8e8d81c764437f3762cd1652e9752d5019883141249df204eb7/docker-tidy-1.1.9.tar.gz
+[2023-05-29 22:14:13] INFO root fetch - processPackages [micone]: executing diffoscope
+[2023-05-29 22:14:13] INFO root fetch - processPackages [micone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micone-0.8.1.tar.gz tmp/micone-0.9.0.tar.gz --markdown 20230529/m/micone/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 22:14:13] INFO root fetch - processPackages [pyanalysis]: Downloading https://files.pythonhosted.org/packages/73/ad/382208b43d6bbfc3a1bc2b2e8d410be57df6c048d61ef20e34298358450d/pyanalysis-2.1.0.2.tar.gz
+[2023-05-29 22:14:13] INFO root fetch - processPackages [prometheus-pve-sd]: Start processing: cost-of-code
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [prometheus-pve-sd]: success
+[2023-05-29 22:14:13] INFO root fetch - processPackages [docker-tidy]: executing diffoscope
+[2023-05-29 22:14:13] INFO root fetch - processPackages [docker-tidy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-tidy-1.1.8.tar.gz tmp/docker-tidy-1.1.9.tar.gz --markdown 20230529/d/docker-tidy/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 22:14:13] INFO root fetch - processPackages [cost-of-code]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 22:14:13] INFO root fetch - processPackages [joshua-test1]: Start processing: nester-clucodes
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [joshua-test1]: success
+[2023-05-29 22:14:13] INFO root fetch - processPackages [pyanalysis]: executing diffoscope
+[2023-05-29 22:14:13] INFO root fetch - processPackages [pyanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanalysis-2.0.8.6.tar.gz tmp/pyanalysis-2.1.0.2.tar.gz --markdown 20230529/p/pyanalysis/2.0.8.6-2.1.0.2/diff.md --exclude *.pyd
+[2023-05-29 22:14:13] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-05-29 22:14:13] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230529/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 22:14:13] WARNING root fetch - processPackages [nester-clucodes]: Skipping, unable to determine old version
+[2023-05-29 22:14:13] INFO root fetch - processPackages [nester-clucodes]: Start processing: docker-autotag
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [nester-clucodes] error
+[2023-05-29 22:14:13] INFO root fetch - main [MainThread]: End processing [joshua-test1]: success
+[2023-05-29 22:14:13] INFO root fetch - processPackages [cost-of-code]: Downloading https://files.pythonhosted.org/packages/4c/09/894adbc88c8091abaae0dd902e3856f3088c7b97e5418a4cd723d6e31185/cost-of-code-0.1.4.tar.gz
+[2023-05-29 22:14:14] INFO root fetch - processPackages [docker-autotag]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 22:14:14] INFO root fetch - processPackages [cost-of-code]: executing diffoscope
+[2023-05-29 22:14:14] INFO root fetch - processPackages [cost-of-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cost-of-code-0.1.3.tar.gz tmp/cost-of-code-0.1.4.tar.gz --markdown 20230529/c/cost-of-code/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 22:14:14] INFO root fetch - processPackages [docker-autotag]: Downloading https://files.pythonhosted.org/packages/db/5a/00b407690b01e682716517ec3b78b08a8092753d94e1bf9438dd3d7fdac7/docker_autotag-1.2.8.tar.gz
+[2023-05-29 22:14:14] INFO root fetch - processPackages [docker-autotag]: Downloading https://files.pythonhosted.org/packages/34/a8/ab71a26bab2f6bec6e07c921acbe1e768b3194a662fde75fff069921a499/docker_autotag-1.2.9.tar.gz
+[2023-05-29 22:14:14] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-29 22:14:14] INFO root fetch - processPackages [docker-autotag]: executing diffoscope
+[2023-05-29 22:14:14] INFO root fetch - processPackages [docker-autotag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_autotag-1.2.8.tar.gz tmp/docker_autotag-1.2.9.tar.gz --markdown 20230529/d/docker-autotag/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 22:14:14] INFO root fetch - main [MainThread]: End processing [LumosWeb]: success
+[2023-05-29 22:14:15] INFO root fetch - main [MainThread]: End processing [docker-tidy]: success
+[2023-05-29 22:14:15] INFO root fetch - main [MainThread]: End processing [pyanalysis]: success
+[2023-05-29 22:14:15] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-05-29 22:14:15] INFO root fetch - main [MainThread]: End processing [cost-of-code]: success
+[2023-05-29 22:14:15] INFO root fetch - main [MainThread]: End processing [docker-autotag]: success
+[2023-05-29 22:14:16] INFO root fetch - main [MainThread]: End processing [micone]: success
+[2023-05-29 22:14:19] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-05-29 22:14:19] INFO root fetch - main [MainThread]: Store serial: [18294055]
