@@ -6777,3 +6777,57 @@
 [2023-05-29 10:38:18] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
 [2023-05-29 10:38:19] INFO root fetch - main [MainThread]: End processing [solox]: success
 [2023-05-29 10:38:19] INFO root fetch - main [MainThread]: Store serial: [18287691]
+[2023-05-29 10:43:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287691]
+[2023-05-29 10:43:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idbadapter
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testpipxyz4
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MCPoly
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edu-segmentation
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tff-nightly
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: semi-tensor-product
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pybase62
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nornir-routeros
+[2023-05-29 10:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edu-segmentation
+[2023-05-29 10:43:29] INFO root fetch - processPackages [idbadapter]: New version: [1.4] Old Version: [1.3]
+[2023-05-29 10:43:29] INFO root fetch - processPackages [MCPoly]: New version: [0.4.1] Old Version: [0.3.3]
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.91] Old Version: [0.0.90]
+[2023-05-29 10:43:29] WARNING root fetch - processPackages [testpipxyz4]: Skipping, unable to determine old version
+[2023-05-29 10:43:29] INFO root fetch - processPackages [nornir-routeros]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-29 10:43:29] INFO root fetch - processPackages [pybase62]: New version: [1.0.0] Old Version: [0.6.0]
+[2023-05-29 10:43:29] INFO root fetch - main [MainThread]: End processing [testpipxyz4] error
+[2023-05-29 10:43:29] WARNING root fetch - processPackages [semi-tensor-product]: Skipping, unable to determine old version
+[2023-05-29 10:43:29] INFO root fetch - main [MainThread]: End processing [semi-tensor-product] error
+[2023-05-29 10:43:29] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230528] Old Version: [0.0.1.dev20230527]
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.91] Old Version: [0.0.90]
+[2023-05-29 10:43:29] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230527-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230528-py2.py3-none-any.whl.zip --markdown 20230529/t/tff-nightly/0.0.1.dev20230527-0.0.1.dev20230528/diff.md --exclude *.pyd
+[2023-05-29 10:43:29] INFO root fetch - processPackages [pybase62]: Downloading https://files.pythonhosted.org/packages/2e/b0/10dcdfb152a36478dba5d4275c2790c8afb170c906f1fc2f214e47307b94/pybase62-0.6.0.tar.gz
+[2023-05-29 10:43:29] INFO root fetch - processPackages [nornir-routeros]: Downloading https://files.pythonhosted.org/packages/25/dd/24b479310c63aea0cef00c7b4791fcabe4e22855fdca7ba8a8d6cd08a1c8/nornir_routeros-0.5.0.tar.gz
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/6a/e7/62fb25f66a1323508606f7be02f21d3de06635eb085b9aea3cf570986c7b/edu_segmentation-0.0.90-py3-none-any.whl
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/6a/e7/62fb25f66a1323508606f7be02f21d3de06635eb085b9aea3cf570986c7b/edu_segmentation-0.0.90-py3-none-any.whl
+[2023-05-29 10:43:29] INFO root fetch - processPackages [idbadapter]: Downloading https://files.pythonhosted.org/packages/a9/33/24a14d0877f81c7d5aafe46e21eee1a3135a59699702121a1640767ecc89/idbadapter-1.4.tar.gz
+[2023-05-29 10:43:29] INFO root fetch - processPackages [idbadapter]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [idbadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idbadapter-1.3.tar.gz tmp/idbadapter-1.4.tar.gz --markdown 20230529/i/idbadapter/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-29 10:43:29] INFO root fetch - processPackages [MCPoly]: Downloading https://files.pythonhosted.org/packages/cd/43/b9eb4954d5e699561f387fdf805526b8ee6ed3bd289c959d058a9b1f4844/MCPoly-0.4.1.tar.gz
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/73/31/97faaf89ba848b6e6a7f54525fb2bd699ba3765de8fb14f16fdaf486842f/edu_segmentation-0.0.91-py3-none-any.whl
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/73/31/97faaf89ba848b6e6a7f54525fb2bd699ba3765de8fb14f16fdaf486842f/edu_segmentation-0.0.91-py3-none-any.whl
+[2023-05-29 10:43:29] INFO root fetch - processPackages [nornir-routeros]: Downloading https://files.pythonhosted.org/packages/a4/f4/eedc88e649115d3067c8a1e015f4fed957ae5aca31c1111a0235f4768261/nornir_routeros-0.6.0.tar.gz
+[2023-05-29 10:43:29] INFO root fetch - processPackages [pybase62]: Downloading https://files.pythonhosted.org/packages/11/07/8fe498201daece90af1725cf48d5de9d1a87ea8d457df52c986ef926ff33/pybase62-1.0.0-py3-none-any.whl
+[2023-05-29 10:43:29] INFO root fetch - processPackages [MCPoly]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [MCPoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MCPoly-0.3.3.tar.gz tmp/MCPoly-0.4.1.tar.gz --markdown 20230529/M/MCPoly/0.3.3-0.4.1/diff.md --exclude *.pyd
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.90-py3-none-any.whl.zip tmp/edu_segmentation-0.0.91-py3-none-any.whl.zip --markdown 20230529/e/edu-segmentation/0.0.90-0.0.91/diff.md --exclude *.pyd
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.90-py3-none-any.whl.zip tmp/edu_segmentation-0.0.91-py3-none-any.whl.zip --markdown 20230529/e/edu-segmentation/0.0.90-0.0.91/diff.md --exclude *.pyd
+[2023-05-29 10:43:29] INFO root fetch - processPackages [nornir-routeros]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [nornir-routeros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nornir_routeros-0.5.0.tar.gz tmp/nornir_routeros-0.6.0.tar.gz --markdown 20230529/n/nornir-routeros/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-29 10:43:29] INFO root fetch - processPackages [pybase62]: executing diffoscope
+[2023-05-29 10:43:29] INFO root fetch - processPackages [pybase62]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybase62-0.6.0.tar.gz tmp/pybase62-1.0.0-py3-none-any.whl.zip --markdown 20230529/p/pybase62/0.6.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [idbadapter]: success
+[2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [pybase62]: success
+[2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [nornir-routeros]: success
+[2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [MCPoly]: success
+[2023-05-29 10:43:31] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 10:43:32] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-29 10:43:32] INFO root fetch - main [MainThread]: Store serial: [18287718]
