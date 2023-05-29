@@ -18179,3 +18179,66 @@ EOFError: EOF read where object expected
 [2023-05-29 23:44:46] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
 [2023-05-29 23:44:49] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-05-29 23:44:49] INFO root fetch - main [MainThread]: Store serial: [18294695]
+[2023-05-29 23:49:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294695]
+[2023-05-29 23:49:57] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: granular-engine
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yandex-chargebacks
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: std-daq-client
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tesseract-olap
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-portfolio-index
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gitbuilding
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xklb
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: granular-engine
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastapi-cruddy-framework
+[2023-05-29 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: granular-engine
+[2023-05-29 23:49:58] INFO root fetch - processPackages [std-daq-client]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 23:49:58] WARNING root fetch - processPackages [py-portfolio-index]: Skipping, unable to determine old version
+[2023-05-29 23:49:58] INFO root fetch - processPackages [fastapi-cruddy-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 23:49:58] INFO root fetch - processPackages [py-portfolio-index]: Start processing: pytmlr
+[2023-05-29 23:49:58] INFO root fetch - main [MainThread]: End processing [py-portfolio-index] error
+[2023-05-29 23:49:58] INFO root fetch - processPackages [tesseract-olap]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-29 23:49:58] INFO root fetch - processPackages [gitbuilding]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 23:49:58] WARNING root fetch - processPackages [pytmlr]: Skipping, unable to determine old version
+[2023-05-29 23:49:58] INFO root fetch - processPackages [pytmlr]: Start processing: kfactory
+[2023-05-29 23:49:58] INFO root fetch - main [MainThread]: End processing [pytmlr] error
+[2023-05-29 23:49:58] INFO root fetch - processPackages [xklb]: New version: [1.29.4] Old Version: [1.29.3]
+[2023-05-29 23:49:58] WARNING root fetch - processPackages [yandex-chargebacks]: Skipping, unable to determine old version
+[2023-05-29 23:49:58] INFO root fetch - main [MainThread]: End processing [yandex-chargebacks] error
+[2023-05-29 23:49:58] INFO root fetch - processPackages [kfactory]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230529/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230529/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230529/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [gitbuilding]: Downloading https://files.pythonhosted.org/packages/5d/02/d9c71baf1393f7e1fed92d62be7ad76d2d954368badcb806fac4afb5d257/gitbuilding-0.9.0.tar.gz
+[2023-05-29 23:49:58] INFO root fetch - processPackages [std-daq-client]: Downloading https://files.pythonhosted.org/packages/9f/11/4747c4bcf2024dff628d1887a079663076b84cbd49c9689dad1f0e82a3a8/std_daq_client-1.3.2.tar.gz
+[2023-05-29 23:49:58] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/d3/32/9eeaa1e72e15452b768e70baeb71725acba9fff5d081c657d6f097b37f13/xklb-1.29.4.tar.gz
+[2023-05-29 23:49:58] INFO root fetch - processPackages [kfactory]: Downloading https://files.pythonhosted.org/packages/bc/ca/542328b58947e7c83d1e3366f220f23c99af82d7c6e32a510bd8c865b3cc/kfactory-0.7.4.tar.gz
+[2023-05-29 23:49:58] INFO root fetch - processPackages [std-daq-client]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [std-daq-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std_daq_client-1.3.1.tar.gz tmp/std_daq_client-1.3.2.tar.gz --markdown 20230529/s/std-daq-client/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [tesseract-olap]: Downloading https://files.pythonhosted.org/packages/b6/16/07e279576c135295bb4f454408f0b0f96855a00e7f49d44848f2dd6e6956/tesseract_olap-0.7.1.tar.gz
+[2023-05-29 23:49:58] INFO root fetch - processPackages [fastapi-cruddy-framework]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [fastapi-cruddy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_cruddy_framework-0.0.8.tar.gz tmp/fastapi_cruddy_framework-0.0.9.tar.gz --markdown 20230529/f/fastapi-cruddy-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [kfactory]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [kfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfactory-0.7.3.tar.gz tmp/kfactory-0.7.4.tar.gz --markdown 20230529/k/kfactory/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [tesseract-olap]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [tesseract-olap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesseract_olap-0.7.0.tar.gz tmp/tesseract_olap-0.7.1.tar.gz --markdown 20230529/t/tesseract-olap/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-29 23:49:58] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-29 23:49:58] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.29.3.tar.gz tmp/xklb-1.29.4.tar.gz --markdown 20230529/x/xklb/1.29.3-1.29.4/diff.md --exclude *.pyd
+[2023-05-29 23:49:59] INFO root fetch - processPackages [gitbuilding]: Downloading https://files.pythonhosted.org/packages/15/ed/67289495ef2328366701013c075dc09429e3101a0d66d3f73ca280175e13/gitbuilding-0.9.1.tar.gz
+[2023-05-29 23:49:59] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-29 23:49:59] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-29 23:49:59] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-29 23:49:59] INFO root fetch - processPackages [gitbuilding]: executing diffoscope
+[2023-05-29 23:49:59] INFO root fetch - processPackages [gitbuilding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitbuilding-0.9.0.tar.gz tmp/gitbuilding-0.9.1.tar.gz --markdown 20230529/g/gitbuilding/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 23:50:00] INFO root fetch - main [MainThread]: End processing [fastapi-cruddy-framework]: success
+[2023-05-29 23:50:00] INFO root fetch - main [MainThread]: End processing [std-daq-client]: success
+[2023-05-29 23:50:00] INFO root fetch - main [MainThread]: End processing [tesseract-olap]: success
+[2023-05-29 23:50:01] INFO root fetch - main [MainThread]: End processing [kfactory]: success
+[2023-05-29 23:50:02] INFO root fetch - main [MainThread]: End processing [gitbuilding]: success
+[2023-05-29 23:50:03] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-29 23:50:03] INFO root fetch - main [MainThread]: Store serial: [18294737]
