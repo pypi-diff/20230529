@@ -9425,3 +9425,122 @@
 [2023-05-29 13:34:48] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-05-29 13:36:01] INFO root fetch - main [MainThread]: End processing [jijbench]: success
 [2023-05-29 13:36:01] INFO root fetch - main [MainThread]: Store serial: [18289229]
+[2023-05-29 13:41:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289229]
+[2023-05-29 13:41:10] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-provider
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dgl_client
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BehaviorPattern
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ygModbus
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jina
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: configration
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: buildtime-statistics
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyre-check-nightly
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cumo
+[2023-05-29 13:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchx-nightly
+[2023-05-29 13:41:11] INFO root fetch - processPackages [configration]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-29 13:41:11] INFO root fetch - processPackages [ygModbus]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 13:41:11] INFO root fetch - processPackages [BehaviorPattern]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 13:41:11] INFO root fetch - processPackages [my-provider]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [buildtime-statistics]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [buildtime-statistics]: Start processing: changeCloseManager
+[2023-05-29 13:41:11] INFO root fetch - processPackages [dgl_client]: New version: [0.3] Old Version: [0.2]
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [buildtime-statistics] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [cumo]: New version: [0.27.1] Old Version: [0.26.0]
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [changeCloseManager]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [changeCloseManager]: Start processing: DistributeSystemNotify
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [changeCloseManager] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [jina]: New version: [3.9.3.dev9] Old Version: [3.9.3.dev8]
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [DistributeSystemNotify]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [DistributeSystemNotify]: Start processing: issuelocate
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [DistributeSystemNotify] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [issuelocate]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [issuelocate]: Start processing: lascerttokensvr
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [issuelocate] error
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [lascerttokensvr]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [lascerttokensvr]: Start processing: UnibuildAccess
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [lascerttokensvr] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101685358641] Old Version: [0.0.101685272158]
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [UnibuildAccess]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [cumo]: Downloading https://files.pythonhosted.org/packages/78/5d/24ecf69ad86b64b537b55acadc55faeb39096308f4849dd50e548a1f3a95/cumo-0.26.0.tar.gz
+[2023-05-29 13:41:11] INFO root fetch - processPackages [UnibuildAccess]: Start processing: xautotestbusi
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [UnibuildAccess] error
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [xautotestbusi]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [xautotestbusi]: Start processing: xautotestcli
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [xautotestbusi] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [dgl_client]: Downloading https://files.pythonhosted.org/packages/db/b7/970f433de7a4de25f5f86ee4c311a5a876fc884b6305dbeb754460ccb602/dgl_client-0.3.tar.gz
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [xautotestcli]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [ygModbus]: Downloading https://files.pythonhosted.org/packages/c2/1e/64f68fd07c789e39ad6bbf7cc4de826d6b135cd5deec4ce21caee7994530/ygModbus-0.0.5-py3-none-any.whl
+[2023-05-29 13:41:11] INFO root fetch - processPackages [xautotestcli]: Start processing: pylibblkid
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [xautotestcli] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [configration]: Downloading https://files.pythonhosted.org/packages/25/95/0924f782f3d4247b8e7fe42ca11ac73ffa9870290268ab301bf9db846629/configration-2.0.2.tar.gz
+[2023-05-29 13:41:11] INFO root fetch - processPackages [dgl_client]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [dgl_client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgl_client-0.2.tar.gz tmp/dgl_client-0.3.tar.gz --markdown 20230529/d/dgl_client/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] INFO root fetch - processPackages [pylibblkid]: New version: [0.3] Old Version: [0.2]
+[2023-05-29 13:41:11] INFO root fetch - processPackages [BehaviorPattern]: Downloading https://files.pythonhosted.org/packages/62/35/2b91dbcd8fbfe711ffdd7812986e24211429ba855d272f2fcbf23cef33a1/BehaviorPattern-0.0.8.tar.gz
+[2023-05-29 13:41:11] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/12/63/79dc96edba89092ba849d6e72274e659153db19297deb41eebc61194e4de/pyre_check_nightly-0.0.101685272158-py3-none-manylinux1_x86_64.whl
+[2023-05-29 13:41:11] INFO root fetch - processPackages [my-provider]: Downloading https://files.pythonhosted.org/packages/12/c4/f393a6b6acdc15def2d15fae285e3ec55928e7b2bf1384f6554629538e75/my-provider-0.1.9.tar.gz
+[2023-05-29 13:41:11] INFO root fetch - processPackages [jina]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [jina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-3.9.3.dev8.tar.gz tmp/jina-3.9.3.dev9.tar.gz --markdown 20230529/j/jina/3.9.3.dev8-3.9.3.dev9/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 45986114>=10485760
+[2023-05-29 13:41:11] INFO root fetch - processPackages [pyre-check-nightly]: Start processing: rclone-ls
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [BehaviorPattern]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [BehaviorPattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BehaviorPattern-0.0.7.tar.gz tmp/BehaviorPattern-0.0.8.tar.gz --markdown 20230529/B/BehaviorPattern/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] WARNING root fetch - processPackages [rclone-ls]: Skipping, unable to determine old version
+[2023-05-29 13:41:11] INFO root fetch - processPackages [rclone-ls]: Start processing: rabbitmq-broker
+[2023-05-29 13:41:11] INFO root fetch - main [MainThread]: End processing [rclone-ls] error
+[2023-05-29 13:41:11] INFO root fetch - processPackages [rabbitmq-broker]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 13:41:11] INFO root fetch - processPackages [ygModbus]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [ygModbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ygModbus-0.0.4-py3-none-any.whl.zip tmp/ygModbus-0.0.5-py3-none-any.whl.zip --markdown 20230529/y/ygModbus/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] INFO root fetch - processPackages [configration]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [configration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configration-2.0.1.tar.gz tmp/configration-2.0.2.tar.gz --markdown 20230529/c/configration/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] INFO root fetch - processPackages [cumo]: Downloading https://files.pythonhosted.org/packages/f1/a1/4ef45ccef6793c9741d3f138bb5b9c84ff3a9d017311890528ab00c17a62/cumo-0.27.1.tar.gz
+[2023-05-29 13:41:11] INFO root fetch - processPackages [pylibblkid]: Downloading https://files.pythonhosted.org/packages/ab/1b/d53d091f8d646e997a33424847b93f8c2be37efecca799247296a355e171/pylibblkid-0.2.tar.gz
+[2023-05-29 13:41:11] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my-provider-0.1.8.tar.gz tmp/my-provider-0.1.9.tar.gz --markdown 20230529/m/my-provider/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230529/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] INFO root fetch - processPackages [cumo]: executing diffoscope
+[2023-05-29 13:41:11] INFO root fetch - processPackages [cumo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cumo-0.26.0.tar.gz tmp/cumo-0.27.1.tar.gz --markdown 20230529/c/cumo/0.26.0-0.27.1/diff.md --exclude *.pyd
+[2023-05-29 13:41:11] INFO root fetch - processPackages [rabbitmq-broker]: Downloading https://files.pythonhosted.org/packages/f4/35/542532d139d156cd8d29d6027b85425687e21590632e93a005683a892e21/rabbitmq_broker-1.0.3-py3-none-any.whl
+[2023-05-29 13:41:11] INFO root fetch - processPackages [pylibblkid]: Downloading https://files.pythonhosted.org/packages/67/a3/c7cbe68dc5da0d891adeae3dcf66438f521c026f3134a2b221dd0b2b2d76/pylibblkid-0.3.tar.gz
+[2023-05-29 13:41:12] INFO root fetch - processPackages [rabbitmq-broker]: executing diffoscope
+[2023-05-29 13:41:12] INFO root fetch - processPackages [rabbitmq-broker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rabbitmq_broker-1.0.2-py3-none-any.whl.zip tmp/rabbitmq_broker-1.0.3-py3-none-any.whl.zip --markdown 20230529/r/rabbitmq-broker/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 13:41:12] INFO root fetch - processPackages [pylibblkid]: executing diffoscope
+[2023-05-29 13:41:12] INFO root fetch - processPackages [pylibblkid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylibblkid-0.2.tar.gz tmp/pylibblkid-0.3.tar.gz --markdown 20230529/p/pylibblkid/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-29 13:41:13] INFO root fetch - processPackages [dgl_client]: Start processing: Flask-of-Oil
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [dgl_client]: success
+[2023-05-29 13:41:13] INFO root fetch - processPackages [Flask-of-Oil]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-29 13:41:13] INFO root fetch - processPackages [ygModbus]: Start processing: dc-avro
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [ygModbus]: success
+[2023-05-29 13:41:13] INFO root fetch - processPackages [dc-avro]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-05-29 13:41:13] INFO root fetch - processPackages [Flask-of-Oil]: Downloading https://files.pythonhosted.org/packages/fb/75/d9ec15759e8224b0b5138f0105a1377972cca8d952fdef86a94534437964/Flask-of-Oil-1.2.2.tar.gz
+[2023-05-29 13:41:13] INFO root fetch - processPackages [configration]: Start processing: mixin-python
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [configration]: success
+[2023-05-29 13:41:13] INFO root fetch - processPackages [mixin-python]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 13:41:13] INFO root fetch - processPackages [Flask-of-Oil]: executing diffoscope
+[2023-05-29 13:41:13] INFO root fetch - processPackages [Flask-of-Oil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-of-Oil-1.2.1.tar.gz tmp/Flask-of-Oil-1.2.2.tar.gz --markdown 20230529/F/Flask-of-Oil/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-29 13:41:13] INFO root fetch - processPackages [BehaviorPattern]: Start processing: mb-base
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [BehaviorPattern]: success
+[2023-05-29 13:41:13] INFO root fetch - processPackages [dc-avro]: Downloading https://files.pythonhosted.org/packages/82/43/d227952e6f53a4066a7fc1f9b50b76351d4e226a55febb2f080cec81f0ba/dc_avro-0.6.4.tar.gz
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-29 13:41:13] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291140] Old Version: [1.0.202305291127]
+[2023-05-29 13:41:13] INFO root fetch - processPackages [mixin-python]: Downloading https://files.pythonhosted.org/packages/87/6b/3416b2f8bf4a734bfd60841fd7647ff80cfcc7486567469cf6a7a0519e61/mixin-python-0.2.8.tar.gz
+[2023-05-29 13:41:13] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/e9/8e/693b228d4214a0af54cc89e000056fde729a0eff4405e390835f8e39fcdb/mb_base-1.0.202305291140-py3-none-any.whl
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [rabbitmq-broker]: success
+[2023-05-29 13:41:13] WARNING root fetch - processPackages [mixin-python]: Skipping package: exceeds size limit 14181291>=10485760
+[2023-05-29 13:41:13] INFO root fetch - main [MainThread]: End processing [mixin-python] error
+[2023-05-29 13:41:13] INFO root fetch - processPackages [dc-avro]: Downloading https://files.pythonhosted.org/packages/77/94/6960c50b54340dd97d082622332570452a667a2a100feb22fd2a58f67e3e/dc_avro-0.6.5.tar.gz
+[2023-05-29 13:41:13] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 13:41:13] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291127-py3-none-any.whl.zip tmp/mb_base-1.0.202305291140-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291127-1.0.202305291140/diff.md --exclude *.pyd
+[2023-05-29 13:41:13] INFO root fetch - processPackages [dc-avro]: executing diffoscope
+[2023-05-29 13:41:13] INFO root fetch - processPackages [dc-avro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dc_avro-0.6.4.tar.gz tmp/dc_avro-0.6.5.tar.gz --markdown 20230529/d/dc-avro/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-05-29 13:41:14] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-29 13:41:14] INFO root fetch - main [MainThread]: End processing [Flask-of-Oil]: success
+[2023-05-29 13:41:14] INFO root fetch - main [MainThread]: End processing [pylibblkid]: success
+[2023-05-29 13:41:14] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 13:41:15] INFO root fetch - main [MainThread]: End processing [dc-avro]: success
+[2023-05-29 13:41:16] INFO root fetch - main [MainThread]: End processing [jina]: success
+[2023-05-29 13:42:29] INFO root fetch - main [MainThread]: End processing [cumo]: success
+[2023-05-29 13:42:29] INFO root fetch - main [MainThread]: Store serial: [18289341]
