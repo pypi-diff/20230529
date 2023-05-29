@@ -4004,3 +4004,29 @@
 [2023-05-29 05:14:58] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230528.tar.gz tmp/GANDLF-0.0.17.dev20230529.tar.gz --markdown 20230529/G/GANDLF/0.0.17.dev20230528-0.0.17.dev20230529/diff.md --exclude *.pyd
 [2023-05-29 05:15:00] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-29 05:15:00] INFO root fetch - main [MainThread]: Store serial: [18285989]
+[2023-05-29 05:20:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18285989]
+[2023-05-29 05:20:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 05:20:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: je-api-testka-dev
+[2023-05-29 05:20:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jatool
+[2023-05-29 05:20:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-adapters
+[2023-05-29 05:20:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spherediff
+[2023-05-29 05:20:09] INFO root fetch - processPackages [spherediff]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-29 05:20:09] INFO root fetch - processPackages [je-api-testka-dev]: New version: [0.0.9] Old Version: [0.0.89]
+[2023-05-29 05:20:09] WARNING root fetch - processPackages [torch-adapters]: Skipping, unable to determine old version
+[2023-05-29 05:20:09] INFO root fetch - processPackages [jatool]: New version: [1.97] Old Version: [1.96]
+[2023-05-29 05:20:09] INFO root fetch - main [MainThread]: End processing [torch-adapters] error
+[2023-05-29 05:20:09] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/80/bb/d38e15d6181bc5aa9079fce6b28add8c97e226aea63bac868e50ec521f1b/je_api_testka_dev-0.0.89.tar.gz
+[2023-05-29 05:20:09] INFO root fetch - processPackages [spherediff]: Downloading https://files.pythonhosted.org/packages/82/b0/fab9c1bc556ae61e4bf64534c34e1344f2ac97fac1daa9dfbd4c816a4fd8/spherediff-1.0.0.tar.gz
+[2023-05-29 05:20:09] INFO root fetch - processPackages [jatool]: Downloading https://files.pythonhosted.org/packages/f1/f7/68ad39a21c55429a07e26c94823d5c3e8c6508e22956b9301504adce8ed5/jatool-1.96.tar.gz
+[2023-05-29 05:20:10] INFO root fetch - processPackages [spherediff]: Downloading https://files.pythonhosted.org/packages/38/eb/3bd0b37c2fd5e369a45021df2cf21682c33b9fa0e33faafe31da664a557c/spherediff-1.1.0.tar.gz
+[2023-05-29 05:20:10] INFO root fetch - processPackages [jatool]: Downloading https://files.pythonhosted.org/packages/04/1b/d710c1fe7229524b08e9737f581800e6d69da4601ed8f523a8e5598d61ed/jatool-1.97.tar.gz
+[2023-05-29 05:20:10] INFO root fetch - processPackages [je-api-testka-dev]: executing diffoscope
+[2023-05-29 05:20:10] INFO root fetch - processPackages [je-api-testka-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka_dev-0.0.89.tar.gz tmp/je_api_testka_dev-0.0.9.tar.gz --markdown 20230529/j/je-api-testka-dev/0.0.89-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:20:10] INFO root fetch - processPackages [spherediff]: executing diffoscope
+[2023-05-29 05:20:10] INFO root fetch - processPackages [spherediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spherediff-1.0.0.tar.gz tmp/spherediff-1.1.0.tar.gz --markdown 20230529/s/spherediff/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-29 05:20:10] INFO root fetch - processPackages [jatool]: executing diffoscope
+[2023-05-29 05:20:10] INFO root fetch - processPackages [jatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jatool-1.96.tar.gz tmp/jatool-1.97.tar.gz --markdown 20230529/j/jatool/1.96-1.97/diff.md --exclude *.pyd
+[2023-05-29 05:20:11] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
+[2023-05-29 05:20:11] INFO root fetch - main [MainThread]: End processing [spherediff]: success
+[2023-05-29 05:20:11] INFO root fetch - main [MainThread]: End processing [jatool]: success
+[2023-05-29 05:20:11] INFO root fetch - main [MainThread]: Store serial: [18286003]
