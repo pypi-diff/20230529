@@ -8970,3 +8970,105 @@
 [2023-05-29 13:08:26] INFO root fetch - main [MainThread]: End processing [pyheartlib]: success
 [2023-05-29 13:08:26] INFO root fetch - main [MainThread]: End processing [bagbag]: success
 [2023-05-29 13:08:26] INFO root fetch - main [MainThread]: Store serial: [18288971]
+[2023-05-29 13:13:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288971]
+[2023-05-29 13:13:35] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: processingtools
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assisted-service-client
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edu-segmentation
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bagbag
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chromax
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytmac
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: taichu-serve
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: funcat3
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MCPoly
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ronnytest
+[2023-05-29 13:13:35] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.98] Old Version: [0.0.97]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [processingtools]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [pytmac]: New version: [3.5.1] Old Version: [3.5.0]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [taichu-serve]: New version: [2.0.9] Old Version: [2.0.29]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [MCPoly]: New version: [0.4.1.2] Old Version: [0.4.1.1]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [chromax]: New version: [0.0.2a0] Old Version: [0.0.1a0]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [funcat3]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ronnytest]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230529/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [taichu-serve]: Downloading https://files.pythonhosted.org/packages/06/98/77de619014d74af54e3d77889ab1f64ecfb2c6e6b8f146cf6f907db1e890/taichu-serve-2.0.29.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [MCPoly]: Downloading https://files.pythonhosted.org/packages/93/ab/4e7d45ab5460162e0011e64d57b6406dd8f4893164cb58a73e34a37f0b90/MCPoly-0.4.1.1.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [processingtools]: Downloading https://files.pythonhosted.org/packages/e1/df/b24c35ba5f0bec75a0b1a9fd4da1858025c3a8dc0ca1e6abf75c43d69bef/processingtools-0.2.8.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/45/b2/15ba05c59f73a7e3152afa982e545dd9be4495b10430d232d54b928b2112/edu-segmentation-0.0.98.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [pytmac]: Downloading https://files.pythonhosted.org/packages/7d/a7/10b52033195787743c8d6cd6a9979145f4bd30ff14b4b1e9b9ec56d7ed9a/pytmac-3.5.0.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [chromax]: Downloading https://files.pythonhosted.org/packages/c6/e5/f1606df7b7a2d50019d6d78dc5daa70b8406d55c3911ce956201b32c77ac/chromax-0.0.1a0.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [funcat3]: Downloading https://files.pythonhosted.org/packages/fe/47/a75c2e0d8b5eab16228f191a24a07b13e730593e644bdeeebd2922504ae9/funcat3-1.1.2.tar.gz
+[2023-05-29 13:13:35] ERROR root fetch - processPackages [bagbag]: Diffoscope failed: Error: error creating container storage: the container name "determined_mcnulty" is already in use by "e0d0f823dc0ab51ced7caea9bca0f707d799a42474776401c5d2b19679ee5c95". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-29 13:13:35] INFO root fetch - processPackages [bagbag]: Start processing: vmware-nsxlib
+[2023-05-29 13:13:35] INFO root fetch - main [MainThread]: End processing [bagbag] error
+[2023-05-29 13:13:35] INFO root fetch - processPackages [vmware-nsxlib]: New version: [19.3.1] Old Version: [19.3.0]
+[2023-05-29 13:13:35] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu-segmentation-0.0.97.tar.gz tmp/edu-segmentation-0.0.98.tar.gz --markdown 20230529/e/edu-segmentation/0.0.97-0.0.98/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/5c/9d/14f093897da721a69d147726f1c3b6eda3bdf58117b8695c2e5641dc448c/ronnytest-0.2.8.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [MCPoly]: Downloading https://files.pythonhosted.org/packages/5a/4d/9f83bbb797112129961b4a25b74f073d2dd661cbdf01f074761c1f6f1e7d/MCPoly-0.4.1.2.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [pytmac]: Downloading https://files.pythonhosted.org/packages/f2/53/a356a0c14475ad41e4b84c8a932f850149cf88cfe1d017b76f1b9b82bd5b/pytmac-3.5.1.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.2.7.tar.gz tmp/ronnytest-0.2.8.tar.gz --markdown 20230529/r/ronnytest/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [processingtools]: Downloading https://files.pythonhosted.org/packages/d4/f2/d0f2d8f7c3ee50f7aac0a94ec8c7d01e8098b8937608a9435926e031d34e/processingtools-0.2.9-py3-none-any.whl
+[2023-05-29 13:13:35] INFO root fetch - processPackages [funcat3]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [funcat3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcat3-1.1.1.tar.gz tmp/funcat3-1.1.2.tar.gz --markdown 20230529/f/funcat3/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [vmware-nsxlib]: Downloading https://files.pythonhosted.org/packages/89/c6/f7d2c06a1282201ac7a0b715ce1eb121aabd5d512ed869f31a1966578130/vmware-nsxlib-19.3.0.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [chromax]: Downloading https://files.pythonhosted.org/packages/29/64/4eb092148a24062fcbba068870ca2a686248edde86badb15c19f6df32836/chromax-0.0.2a0.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [pytmac]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [pytmac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmac-3.5.0.tar.gz tmp/pytmac-3.5.1.tar.gz --markdown 20230529/p/pytmac/3.5.0-3.5.1/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [taichu-serve]: Downloading https://files.pythonhosted.org/packages/87/5b/11b39ee031331a7156c71f80c42076cdf8bfd7790559669b2153af680f16/taichu-serve-2.0.9.tar.gz
+[2023-05-29 13:13:35] INFO root fetch - processPackages [MCPoly]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [MCPoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MCPoly-0.4.1.1.tar.gz tmp/MCPoly-0.4.1.2.tar.gz --markdown 20230529/M/MCPoly/0.4.1.1-0.4.1.2/diff.md --exclude *.pyd
+[2023-05-29 13:13:35] INFO root fetch - processPackages [processingtools]: executing diffoscope
+[2023-05-29 13:13:35] INFO root fetch - processPackages [processingtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/processingtools-0.2.8.tar.gz tmp/processingtools-0.2.9-py3-none-any.whl.zip --markdown 20230529/p/processingtools/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-29 13:13:36] INFO root fetch - processPackages [taichu-serve]: executing diffoscope
+[2023-05-29 13:13:36] INFO root fetch - processPackages [taichu-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taichu-serve-2.0.29.tar.gz tmp/taichu-serve-2.0.9.tar.gz --markdown 20230529/t/taichu-serve/2.0.29-2.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:13:36] INFO root fetch - processPackages [chromax]: executing diffoscope
+[2023-05-29 13:13:36] INFO root fetch - processPackages [chromax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromax-0.0.1a0.tar.gz tmp/chromax-0.0.2a0.tar.gz --markdown 20230529/c/chromax/0.0.1a0-0.0.2a0/diff.md --exclude *.pyd
+[2023-05-29 13:13:36] INFO root fetch - processPackages [vmware-nsxlib]: Downloading https://files.pythonhosted.org/packages/83/60/ad4ceebc882c61b1660c935b73dccc2723fcc139e7b6de2c3df049a13a29/vmware-nsxlib-19.3.1.tar.gz
+[2023-05-29 13:13:36] INFO root fetch - processPackages [vmware-nsxlib]: executing diffoscope
+[2023-05-29 13:13:36] INFO root fetch - processPackages [vmware-nsxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmware-nsxlib-19.3.0.tar.gz tmp/vmware-nsxlib-19.3.1.tar.gz --markdown 20230529/v/vmware-nsxlib/19.3.0-19.3.1/diff.md --exclude *.pyd
+[2023-05-29 13:13:37] INFO root fetch - processPackages [ronnytest]: Start processing: grafana-django-saml2-auth
+[2023-05-29 13:13:37] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-29 13:13:37] INFO root fetch - processPackages [grafana-django-saml2-auth]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-29 13:13:37] INFO root fetch - processPackages [grafana-django-saml2-auth]: Downloading https://files.pythonhosted.org/packages/7a/be/d6d4d574277edd19ef6d435d6e621d0c451b39c45f63962df5520a58c4b2/grafana_django_saml2_auth-3.8.0.tar.gz
+[2023-05-29 13:13:37] INFO root fetch - processPackages [processingtools]: Start processing: obrpy
+[2023-05-29 13:13:37] INFO root fetch - main [MainThread]: End processing [processingtools]: success
+[2023-05-29 13:13:37] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 13:13:37] INFO root fetch - processPackages [pytmac]: Start processing: finflo
+[2023-05-29 13:13:37] INFO root fetch - main [MainThread]: End processing [pytmac]: success
+[2023-05-29 13:13:37] INFO root fetch - processPackages [edu-segmentation]: Start processing: bagbag
+[2023-05-29 13:13:37] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 13:13:37] INFO root fetch - processPackages [finflo]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-29 13:13:37] INFO root fetch - processPackages [grafana-django-saml2-auth]: Downloading https://files.pythonhosted.org/packages/2e/57/be25686c87e990cdcaa9bb8586492766cc8858d6a9cbea4a66881bdb7ae3/grafana_django_saml2_auth-3.9.0.tar.gz
+[2023-05-29 13:13:37] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-29 13:13:37] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 13:13:37] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:13:37] INFO root fetch - processPackages [grafana-django-saml2-auth]: executing diffoscope
+[2023-05-29 13:13:37] INFO root fetch - processPackages [grafana-django-saml2-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grafana_django_saml2_auth-3.8.0.tar.gz tmp/grafana_django_saml2_auth-3.9.0.tar.gz --markdown 20230529/g/grafana-django-saml2-auth/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-29 13:13:37] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-29 13:13:37] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230529/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-29 13:13:37] INFO root fetch - processPackages [taichu-serve]: Start processing: cs-binance-c2c-sapi
+[2023-05-29 13:13:37] INFO root fetch - main [MainThread]: End processing [taichu-serve]: success
+[2023-05-29 13:13:37] INFO root fetch - processPackages [cs-binance-c2c-sapi]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 13:13:37] INFO root fetch - processPackages [cs-binance-c2c-sapi]: executing diffoscope
+[2023-05-29 13:13:37] INFO root fetch - processPackages [cs-binance-c2c-sapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-binance-c2c-sapi-0.0.4.tar.gz tmp/cs-binance-c2c-sapi-0.0.5.tar.gz --markdown 20230529/c/cs-binance-c2c-sapi/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 13:13:37] INFO root fetch - processPackages [finflo]: executing diffoscope
+[2023-05-29 13:13:37] INFO root fetch - processPackages [finflo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finflo-2.0.8.tar.gz tmp/finflo-2.0.9.tar.gz --markdown 20230529/f/finflo/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-29 13:13:38] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [grafana-django-saml2-auth]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [cs-binance-c2c-sapi]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [funcat3]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [chromax]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [MCPoly]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [finflo]: success
+[2023-05-29 13:13:39] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-29 13:13:40] INFO root fetch - main [MainThread]: End processing [vmware-nsxlib]: success
+[2023-05-29 13:13:40] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-29 13:13:40] INFO root fetch - main [MainThread]: Store serial: [18289025]
