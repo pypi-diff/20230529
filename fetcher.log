@@ -1741,3 +1741,58 @@
 [2023-05-29 03:23:15] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-29 03:23:34] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.runtime]: success
 [2023-05-29 03:23:34] INFO root fetch - main [MainThread]: Store serial: [18284765]
+[2023-05-29 03:28:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284765]
+[2023-05-29 03:28:44] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hj12hj-app
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyagrum-nightly
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiospamc
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-colors
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bioregistry
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: worktoy
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scotthsieh-projen-statemachine
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: honeybee-idaice
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: clementine
+[2023-05-29 03:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: guh
+[2023-05-29 03:28:44] WARNING root fetch - processPackages [hj12hj-app]: Skipping, unable to determine old version
+[2023-05-29 03:28:44] INFO root fetch - main [MainThread]: End processing [hj12hj-app] error
+[2023-05-29 03:28:44] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-29 03:28:44] INFO root fetch - processPackages [honeybee-idaice]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-29 03:28:44] WARNING root fetch - processPackages [func-colors]: Skipping, unable to determine old version
+[2023-05-29 03:28:44] INFO root fetch - processPackages [aiospamc]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-29 03:28:44] INFO root fetch - processPackages [worktoy]: New version: [0.31.1] Old Version: [0.31.0]
+[2023-05-29 03:28:44] INFO root fetch - processPackages [clementine]: New version: [0.0.3.dev0] Old Version: [0.0.2.dev0]
+[2023-05-29 03:28:44] INFO root fetch - processPackages [guh]: New version: [2.0] Old Version: [1.2]
+[2023-05-29 03:28:44] INFO root fetch - main [MainThread]: End processing [func-colors] error
+[2023-05-29 03:28:44] INFO root fetch - processPackages [bioregistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 03:28:44] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-05-29 03:28:44] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230529/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-29 03:28:44] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-05-29 03:28:44] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.8.tar.gz tmp/bioregistry-0.9.9.tar.gz --markdown 20230529/b/bioregistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 03:28:44] INFO root fetch - processPackages [guh]: executing diffoscope
+[2023-05-29 03:28:44] INFO root fetch - processPackages [guh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guh-1.2.tar.gz tmp/guh-2.0.tar.gz --markdown 20230529/g/guh/1.2-2.0/diff.md --exclude *.pyd
+[2023-05-29 03:28:44] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.1.dev202305251684934970] Old Version: [1.8.1.9.dev202305291685116202]
+[2023-05-29 03:28:44] INFO root fetch - processPackages [aiospamc]: Downloading https://files.pythonhosted.org/packages/f7/5d/a6db451b6bf37d09c130cb3ef04e38256ae6ffa3de01fb7c19da318ae2d2/aiospamc-0.8.1.tar.gz
+[2023-05-29 03:28:44] INFO root fetch - processPackages [clementine]: Downloading https://files.pythonhosted.org/packages/40/be/2fedfc8e62894b6706748007a6f71b949245f8101025a337da78c87e4736/clementine-0.0.3.dev0.tar.gz
+[2023-05-29 03:28:44] INFO root fetch - processPackages [worktoy]: Downloading https://files.pythonhosted.org/packages/5c/79/651a70ad758907ce1b3e0e9ce047256f58d728acc49a355a019c619aeb00/worktoy-0.31.1.tar.gz
+[2023-05-29 03:28:44] INFO root fetch - processPackages [honeybee-idaice]: Downloading https://files.pythonhosted.org/packages/34/20/a72186c4b586e2c876e336e2506637412121e24e0808756caaa6ab879f49/honeybee-idaice-0.2.0.tar.gz
+[2023-05-29 03:28:45] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/4d/37/f4f87407453fe6d6a6ba5cf2fb5ff90754bff989c858aa5e6f9dd81b6a75/pyAgrum_nightly-1.8.1.9.dev202305291685116202-cp39-cp39-win_amd64.whl
+[2023-05-29 03:28:45] INFO root fetch - processPackages [clementine]: executing diffoscope
+[2023-05-29 03:28:45] INFO root fetch - processPackages [clementine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clementine-0.0.2.dev0.tar.gz tmp/clementine-0.0.3.dev0.tar.gz --markdown 20230529/c/clementine/0.0.2.dev0-0.0.3.dev0/diff.md --exclude *.pyd
+[2023-05-29 03:28:45] INFO root fetch - processPackages [honeybee-idaice]: executing diffoscope
+[2023-05-29 03:28:45] INFO root fetch - processPackages [honeybee-idaice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-idaice-0.1.2.tar.gz tmp/honeybee-idaice-0.2.0.tar.gz --markdown 20230529/h/honeybee-idaice/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 03:28:45] INFO root fetch - processPackages [worktoy]: executing diffoscope
+[2023-05-29 03:28:45] INFO root fetch - processPackages [worktoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worktoy-0.31.0.tar.gz tmp/worktoy-0.31.1.tar.gz --markdown 20230529/w/worktoy/0.31.0-0.31.1/diff.md --exclude *.pyd
+[2023-05-29 03:28:45] INFO root fetch - processPackages [aiospamc]: Downloading https://files.pythonhosted.org/packages/42/ef/5800054e0bc4c3ac210e7c86357d6fd1a7f7641afea8e3ea7d29d1ad6aed/aiospamc-0.9.0.tar.gz
+[2023-05-29 03:28:45] INFO root fetch - processPackages [aiospamc]: executing diffoscope
+[2023-05-29 03:28:45] INFO root fetch - processPackages [aiospamc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiospamc-0.8.1.tar.gz tmp/aiospamc-0.9.0.tar.gz --markdown 20230529/a/aiospamc/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 03:28:45] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-29 03:28:45] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.1.9.dev202305291685116202-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.1.dev202305251684934970-cp39-cp39-win_amd64.whl.zip --markdown 20230529/p/pyagrum-nightly/1.8.1.9.dev202305291685116202-1.8.1.dev202305251684934970/diff.md --exclude *.pyd
+[2023-05-29 03:28:46] INFO root fetch - main [MainThread]: End processing [guh]: success
+[2023-05-29 03:28:46] INFO root fetch - main [MainThread]: End processing [clementine]: success
+[2023-05-29 03:28:46] INFO root fetch - main [MainThread]: End processing [honeybee-idaice]: success
+[2023-05-29 03:28:46] INFO root fetch - main [MainThread]: End processing [worktoy]: success
+[2023-05-29 03:28:47] INFO root fetch - main [MainThread]: End processing [aiospamc]: success
+[2023-05-29 03:28:47] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-29 03:28:48] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-05-29 03:30:43] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-05-29 03:30:43] INFO root fetch - main [MainThread]: Store serial: [18284819]
