@@ -18242,3 +18242,32 @@ EOFError: EOF read where object expected
 [2023-05-29 23:50:02] INFO root fetch - main [MainThread]: End processing [gitbuilding]: success
 [2023-05-29 23:50:03] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2023-05-29 23:50:03] INFO root fetch - main [MainThread]: Store serial: [18294737]
+[2023-05-29 23:55:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294737]
+[2023-05-29 23:55:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 23:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fieldedge-utilities
+[2023-05-29 23:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-gemspa
+[2023-05-29 23:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uk-postcodes-parsing
+[2023-05-29 23:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dscan-api-client
+[2023-05-29 23:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alpha-filter
+[2023-05-29 23:55:11] INFO root fetch - processPackages [uk-postcodes-parsing]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 23:55:11] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-29 23:55:11] WARNING root fetch - processPackages [napari-gemspa]: Skipping, unable to determine old version
+[2023-05-29 23:55:11] INFO root fetch - main [MainThread]: End processing [napari-gemspa] error
+[2023-05-29 23:55:11] INFO root fetch - processPackages [alpha-filter]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-29 23:55:11] INFO root fetch - processPackages [dscan-api-client]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 23:55:11] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/71/2b/c30b1a0707bde7f68d6bc2431c2c800ca9a343cb2ee209b84efd81ac567c/dscan_api_client-1.1.2-py3-none-any.whl
+[2023-05-29 23:55:11] INFO root fetch - processPackages [uk-postcodes-parsing]: Downloading https://files.pythonhosted.org/packages/d6/bb/eb3c23aa558c886b97654c3f53bb55659fd79b444b7b7fe8eccb4e32abe6/uk_postcodes_parsing-0.0.4.tar.gz
+[2023-05-29 23:55:12] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/82/c3/f29fa2d774ec1e4b37c2ad4ea152f5d5594f42e30d81d6cf60f891d8a977/alpha-filter-0.9.2.tar.gz
+[2023-05-29 23:55:12] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-29 23:55:12] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230529/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-29 23:55:12] INFO root fetch - processPackages [uk-postcodes-parsing]: executing diffoscope
+[2023-05-29 23:55:12] INFO root fetch - processPackages [uk-postcodes-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_postcodes_parsing-0.0.3.tar.gz tmp/uk_postcodes_parsing-0.0.4.tar.gz --markdown 20230529/u/uk-postcodes-parsing/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 23:55:12] INFO root fetch - processPackages [alpha-filter]: executing diffoscope
+[2023-05-29 23:55:12] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.9.1.tar.gz tmp/alpha-filter-0.9.2.tar.gz --markdown 20230529/a/alpha-filter/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-29 23:55:12] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-29 23:55:12] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.1.1-py3-none-any.whl.zip tmp/dscan_api_client-1.1.2-py3-none-any.whl.zip --markdown 20230529/d/dscan-api-client/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 23:55:13] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
+[2023-05-29 23:55:13] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-29 23:55:13] INFO root fetch - main [MainThread]: End processing [uk-postcodes-parsing]: success
+[2023-05-29 23:55:13] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-29 23:55:13] INFO root fetch - main [MainThread]: Store serial: [18294752]
