@@ -11510,3 +11510,71 @@ EOFError: EOF read where object expected
 [2023-05-29 15:52:13] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
 [2023-05-29 15:52:17] INFO root fetch - main [MainThread]: End processing [yangsuite-devices]: success
 [2023-05-29 15:52:17] INFO root fetch - main [MainThread]: Store serial: [18290532]
+[2023-05-29 15:57:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290532]
+[2023-05-29 15:57:29] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybrid-api-id-python
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cybrid-api-bank-python
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docker-run-docker-ros
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-sale-coupon-financial-risk
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: valo-api
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: web3-ethereum-defi
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gopro-overlay
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thrivve-core
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: testit-adapter-robotframework
+[2023-05-29 15:57:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: testit-python-commons
+[2023-05-29 15:57:29] WARNING root fetch - processPackages [docker-run-docker-ros]: Skipping, unable to determine old version
+[2023-05-29 15:57:29] INFO root fetch - processPackages [docker-run-docker-ros]: Start processing: testit-adapter-pytest
+[2023-05-29 15:57:29] INFO root fetch - main [MainThread]: End processing [docker-run-docker-ros] error
+[2023-05-29 15:57:29] WARNING root fetch - processPackages [odoo-addon-sale-coupon-financial-risk]: Skipping, unable to determine old version
+[2023-05-29 15:57:29] INFO root fetch - processPackages [odoo-addon-sale-coupon-financial-risk]: Start processing: testit-adapter-nose
+[2023-05-29 15:57:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-coupon-financial-risk] error
+[2023-05-29 15:57:29] INFO root fetch - processPackages [gopro-overlay]: New version: [0.98.0] Old Version: [0.97.0]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [valo-api]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [web3-ethereum-defi]: New version: [0.9] Old Version: [0.8]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [thrivve-core]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [testit-python-commons]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [testit-adapter-robotframework]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 15:57:29] INFO root fetch - processPackages [testit-adapter-pytest]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-nose]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 15:57:30] INFO root fetch - processPackages [valo-api]: Downloading https://files.pythonhosted.org/packages/14/6f/88683f403c90e911dbd58a9fff95e33c9cc71c136bda9e99dad5eed53295/valo_api-2.0.3.tar.gz
+[2023-05-29 15:57:30] INFO root fetch - processPackages [gopro-overlay]: Downloading https://files.pythonhosted.org/packages/92/3d/ae0a217ac566717cf61951a5d2dfb9e41f722ecfda7d22f6e6256a086202/gopro-overlay-0.98.0.tar.gz
+[2023-05-29 15:57:30] INFO root fetch - processPackages [gopro-overlay]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [gopro-overlay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gopro-overlay-0.97.0.tar.gz tmp/gopro-overlay-0.98.0.tar.gz --markdown 20230529/g/gopro-overlay/0.97.0-0.98.0/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [valo-api]: Downloading https://files.pythonhosted.org/packages/0b/15/345aa3bec9bcbe686e55bd80ce76e2cb486f1ea5a31ae9ac0c1f52837dba/valo_api-2.0.4.tar.gz
+[2023-05-29 15:57:30] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [valo-api]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [valo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valo_api-2.0.3.tar.gz tmp/valo_api-2.0.4.tar.gz --markdown 20230529/v/valo-api/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [web3-ethereum-defi]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [web3-ethereum-defi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3-ethereum-defi-0.8.tar.gz tmp/web3-ethereum-defi-0.9.tar.gz --markdown 20230529/w/web3-ethereum-defi/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [thrivve-core]: Downloading https://files.pythonhosted.org/packages/be/56/b38e8ecd30d1a4ad7d01e0ab81e4267fb1bb8f14ad185e0e1f7233c35beb/thrivve_core-0.3.0.tar.gz
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-python-commons]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-python-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-python-commons-2.1.8.tar.gz tmp/testit-python-commons-2.1.9.tar.gz --markdown 20230529/t/testit-python-commons/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-nose]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-nose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-nose-2.1.8.tar.gz tmp/testit-adapter-nose-2.1.9.tar.gz --markdown 20230529/t/testit-adapter-nose/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-pytest]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-pytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-pytest-2.1.8.tar.gz tmp/testit-adapter-pytest-2.1.9.tar.gz --markdown 20230529/t/testit-adapter-pytest/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-robotframework]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [testit-adapter-robotframework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-robotframework-2.1.8.tar.gz tmp/testit-adapter-robotframework-2.1.9.tar.gz --markdown 20230529/t/testit-adapter-robotframework/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:30] INFO root fetch - processPackages [thrivve-core]: executing diffoscope
+[2023-05-29 15:57:30] INFO root fetch - processPackages [thrivve-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thrivve_core-0.2.9.tar.gz tmp/thrivve_core-0.3.0.tar.gz --markdown 20230529/t/thrivve-core/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 15:57:32] INFO root fetch - processPackages [valo-api]: Start processing: testit-adapter-behave
+[2023-05-29 15:57:32] INFO root fetch - main [MainThread]: End processing [valo-api]: success
+[2023-05-29 15:57:32] INFO root fetch - processPackages [testit-adapter-behave]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 15:57:32] INFO root fetch - main [MainThread]: End processing [testit-python-commons]: success
+[2023-05-29 15:57:32] INFO root fetch - main [MainThread]: End processing [testit-adapter-nose]: success
+[2023-05-29 15:57:32] INFO root fetch - main [MainThread]: End processing [gopro-overlay]: success
+[2023-05-29 15:57:32] INFO root fetch - processPackages [testit-adapter-behave]: executing diffoscope
+[2023-05-29 15:57:32] INFO root fetch - processPackages [testit-adapter-behave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-behave-2.1.8.tar.gz tmp/testit-adapter-behave-2.1.9.tar.gz --markdown 20230529/t/testit-adapter-behave/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:57:32] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-29 15:57:32] INFO root fetch - main [MainThread]: End processing [testit-adapter-pytest]: success
+[2023-05-29 15:57:33] INFO root fetch - main [MainThread]: End processing [testit-adapter-robotframework]: success
+[2023-05-29 15:57:33] INFO root fetch - main [MainThread]: End processing [thrivve-core]: success
+[2023-05-29 15:57:33] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-29 15:57:33] INFO root fetch - main [MainThread]: End processing [web3-ethereum-defi]: success
+[2023-05-29 15:57:34] INFO root fetch - main [MainThread]: End processing [testit-adapter-behave]: success
+[2023-05-29 15:57:34] INFO root fetch - main [MainThread]: Store serial: [18290624]
