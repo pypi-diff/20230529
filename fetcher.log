@@ -1416,3 +1416,39 @@
 [2023-05-29 02:46:14] INFO root fetch - main [MainThread]: End processing [cfr-graphem]: success
 [2023-05-29 02:46:23] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-29 02:46:23] INFO root fetch - main [MainThread]: Store serial: [18284567]
+[2023-05-29 02:51:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284567]
+[2023-05-29 02:51:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 02:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kubric-nightly
+[2023-05-29 02:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bulma-sphinx-theme
+[2023-05-29 02:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-slack-chatbot
+[2023-05-29 02:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: projen
+[2023-05-29 02:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nounseed
+[2023-05-29 02:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bipartitepandas
+[2023-05-29 02:51:36] INFO root fetch - processPackages [nounseed]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 02:51:36] INFO root fetch - processPackages [bulma-sphinx-theme]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 02:51:36] INFO root fetch - processPackages [bipartitepandas]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-29 02:51:36] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-29 02:51:36] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-29 02:51:36] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-29 02:51:36] INFO root fetch - processPackages [bipartitepandas]: Downloading https://files.pythonhosted.org/packages/92/b2/7676ff28ca40b10df8b8164a9d1af8ec4b0c8bbad9c42512dcdb638b2e10/bipartitepandas-1.1.7.tar.gz
+[2023-05-29 02:51:37] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-05-29 02:51:37] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230529/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-29 02:51:37] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-29 02:51:37] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230529/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-29 02:51:37] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-29 02:51:37] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230529/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-29 02:51:37] INFO root fetch - processPackages [bulma-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/0c/3e/84a19f7f03095192388891cf2f03bffdbda5735f5b5c964faf4ffadff48f/bulma_sphinx_theme-0.0.5.tar.gz
+[2023-05-29 02:51:37] INFO root fetch - processPackages [nounseed]: Downloading https://files.pythonhosted.org/packages/07/61/51096192ad7c4c0ad9f97900a5fcff1ae5946a7c8f84962be7e6b590b70f/nounseed-1.0.3.tar.gz
+[2023-05-29 02:51:38] INFO root fetch - main [MainThread]: End processing [cdk-slack-chatbot]: success
+[2023-05-29 02:51:38] INFO root fetch - processPackages [bulma-sphinx-theme]: executing diffoscope
+[2023-05-29 02:51:38] INFO root fetch - processPackages [bulma-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bulma_sphinx_theme-0.0.4.tar.gz tmp/bulma_sphinx_theme-0.0.5.tar.gz --markdown 20230529/b/bulma-sphinx-theme/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 02:51:38] INFO root fetch - processPackages [bipartitepandas]: executing diffoscope
+[2023-05-29 02:51:38] INFO root fetch - processPackages [bipartitepandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipartitepandas-1.1.6.tar.gz tmp/bipartitepandas-1.1.7.tar.gz --markdown 20230529/b/bipartitepandas/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-29 02:51:38] INFO root fetch - processPackages [nounseed]: executing diffoscope
+[2023-05-29 02:51:38] INFO root fetch - processPackages [nounseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nounseed-1.0.2.tar.gz tmp/nounseed-1.0.3.tar.gz --markdown 20230529/n/nounseed/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 02:51:38] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-29 02:51:38] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-29 02:51:39] INFO root fetch - main [MainThread]: End processing [nounseed]: success
+[2023-05-29 02:51:39] INFO root fetch - main [MainThread]: End processing [bipartitepandas]: success
+[2023-05-29 02:51:39] INFO root fetch - main [MainThread]: End processing [bulma-sphinx-theme]: success
+[2023-05-29 02:51:39] INFO root fetch - main [MainThread]: Store serial: [18284584]
