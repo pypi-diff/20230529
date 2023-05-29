@@ -10345,3 +10345,56 @@ EOFError: EOF read where object expected
 [2023-05-29 14:35:18] INFO root fetch - main [MainThread]: End processing [qm-qua]: success
 [2023-05-29 14:35:25] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-29 14:35:25] INFO root fetch - main [MainThread]: Store serial: [18289796]
+[2023-05-29 14:40:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289796]
+[2023-05-29 14:40:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swh.web
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aimped
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: finaltrygist
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-dzne-workbook
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rpcclient
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tcflow
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: t8s
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: EdgeGPT
+[2023-05-29 14:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dgl_client
+[2023-05-29 14:40:34] WARNING root fetch - processPackages [finaltrygist]: Skipping, unable to determine old version
+[2023-05-29 14:40:34] INFO root fetch - main [MainThread]: End processing [finaltrygist] error
+[2023-05-29 14:40:34] INFO root fetch - processPackages [lib-dzne-workbook]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [t8s]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [dgl_client]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [aimped]: New version: [0.1.44] Old Version: [0.1.43]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [rpcclient]: New version: [3.16.1] Old Version: [3.16.0]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [swh.web]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [EdgeGPT]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-29 14:40:34] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-05-29 14:40:34] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230529/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 14:40:34] INFO root fetch - processPackages [dgl_client]: executing diffoscope
+[2023-05-29 14:40:34] INFO root fetch - processPackages [dgl_client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgl_client-0.3.1.tar.gz tmp/dgl_client-0.3.2.tar.gz --markdown 20230529/d/dgl_client/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-29 14:40:34] INFO root fetch - processPackages [lib-dzne-workbook]: Downloading https://files.pythonhosted.org/packages/38/57/c1a4336f5cc4bb8c32fb2a007f18bad3e1c1feb87a0a377e36f82a44cda5/lib-dzne-workbook-0.1.3.tar.gz
+[2023-05-29 14:40:34] INFO root fetch - processPackages [aimped]: Downloading https://files.pythonhosted.org/packages/6d/62/dc6879e0aa01bc026f71b3bd869f55f783ce83dbffc4077ae9ebb6ce6275/aimped-0.1.44.tar.gz
+[2023-05-29 14:40:34] INFO root fetch - processPackages [swh.web]: Downloading https://files.pythonhosted.org/packages/66/15/6bc04af12a23337bb393e57e21ffba928a503bf0e3a5106bea151682da0d/swh.web-0.2.8.tar.gz
+[2023-05-29 14:40:34] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/23/1b/1c84e4506bcf36b26ad89cfd3dc895c8664ed9c9eb2bbd9dad2253a91451/EdgeGPT-0.6.9.tar.gz
+[2023-05-29 14:40:35] INFO root fetch - processPackages [t8s]: Downloading https://files.pythonhosted.org/packages/b7/70/10f05eb411362b5a243d802de719121e3a2497f99b782cb6e6931d36de5c/t8s-0.1.8.tar.gz
+[2023-05-29 14:40:35] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-29 14:40:35] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.6.8.tar.gz tmp/EdgeGPT-0.6.9.tar.gz --markdown 20230529/E/EdgeGPT/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-29 14:40:35] INFO root fetch - processPackages [rpcclient]: Downloading https://files.pythonhosted.org/packages/76/10/a7ac352da8f4cd9f50755d0e21991a33ab69ec51546c3f11af973f7796de/rpcclient-3.16.0.tar.gz
+[2023-05-29 14:40:35] INFO root fetch - processPackages [aimped]: executing diffoscope
+[2023-05-29 14:40:35] INFO root fetch - processPackages [aimped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimped-0.1.43.tar.gz tmp/aimped-0.1.44.tar.gz --markdown 20230529/a/aimped/0.1.43-0.1.44/diff.md --exclude *.pyd
+[2023-05-29 14:40:35] INFO root fetch - processPackages [t8s]: executing diffoscope
+[2023-05-29 14:40:35] INFO root fetch - processPackages [t8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t8s-0.1.7.tar.gz tmp/t8s-0.1.8.tar.gz --markdown 20230529/t/t8s/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 14:40:35] INFO root fetch - processPackages [lib-dzne-workbook]: Downloading https://files.pythonhosted.org/packages/e5/e2/f86638252629179ce78cc6d1d76648418701fa05c90eb89fc2ab368451d6/lib-dzne-workbook-0.2.0.tar.gz
+[2023-05-29 14:40:35] INFO root fetch - processPackages [lib-dzne-workbook]: executing diffoscope
+[2023-05-29 14:40:35] INFO root fetch - processPackages [lib-dzne-workbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-workbook-0.1.3.tar.gz tmp/lib-dzne-workbook-0.2.0.tar.gz --markdown 20230529/l/lib-dzne-workbook/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:40:35] INFO root fetch - processPackages [rpcclient]: Downloading https://files.pythonhosted.org/packages/19/b1/ce1b9731ac46d2eae0e729d3b867cff3a115b0342404b002bfd2fbe75a6e/rpcclient-3.16.1.tar.gz
+[2023-05-29 14:40:35] WARNING root fetch - processPackages [swh.web]: Skipping package: exceeds size limit 13132382>=10485760
+[2023-05-29 14:40:35] INFO root fetch - main [MainThread]: End processing [swh.web] error
+[2023-05-29 14:40:35] INFO root fetch - processPackages [rpcclient]: executing diffoscope
+[2023-05-29 14:40:35] INFO root fetch - processPackages [rpcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpcclient-3.16.0.tar.gz tmp/rpcclient-3.16.1.tar.gz --markdown 20230529/r/rpcclient/3.16.0-3.16.1/diff.md --exclude *.pyd
+[2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [dgl_client]: success
+[2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [tcflow]: success
+[2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [aimped]: success
+[2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [lib-dzne-workbook]: success
+[2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [t8s]: success
+[2023-05-29 14:40:38] INFO root fetch - main [MainThread]: End processing [rpcclient]: success
+[2023-05-29 14:40:38] INFO root fetch - main [MainThread]: Store serial: [18289824]
