@@ -14315,3 +14315,45 @@ EOFError: EOF read where object expected
 [2023-05-29 19:02:03] INFO root fetch - main [MainThread]: End processing [tpmstream]: success
 [2023-05-29 19:02:07] INFO root fetch - main [MainThread]: End processing [dls-bxflow]: success
 [2023-05-29 19:02:07] INFO root fetch - main [MainThread]: Store serial: [18292192]
+[2023-05-29 19:07:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292192]
+[2023-05-29 19:07:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acl-anthology-py
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiddifypanel
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dls-bxflow-epsic
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seaplane
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypreql
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: red-postgres
+[2023-05-29 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: matchmakereft
+[2023-05-29 19:07:16] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-05-29 19:07:16] INFO root fetch - processPackages [seaplane]: New version: [0.3.4] Old Version: [0.3.2]
+[2023-05-29 19:07:16] WARNING root fetch - processPackages [red-postgres]: Skipping, unable to determine old version
+[2023-05-29 19:07:16] INFO root fetch - processPackages [dls-bxflow-epsic]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 19:07:16] INFO root fetch - main [MainThread]: End processing [red-postgres] error
+[2023-05-29 19:07:16] WARNING root fetch - processPackages [acl-anthology-py]: Skipping, unable to determine old version
+[2023-05-29 19:07:16] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.2] Old Version: [7.0.1]
+[2023-05-29 19:07:16] INFO root fetch - main [MainThread]: End processing [acl-anthology-py] error
+[2023-05-29 19:07:16] INFO root fetch - processPackages [matchmakereft]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-29 19:07:17] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-05-29 19:07:17] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230529/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-05-29 19:07:17] INFO root fetch - processPackages [seaplane]: Downloading https://files.pythonhosted.org/packages/2a/b9/5af31da1d4eea2abb2125a1ee3ab97585a3e1b400fc83a88d6ef042f0b65/seaplane-0.3.2.tar.gz
+[2023-05-29 19:07:17] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/1e/91/3641c84acdcb89d95dbb3ce786a6469130ea80132d7cf77618c810db4f48/hiddifypanel-7.0.1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-29 19:07:17] INFO root fetch - processPackages [matchmakereft]: Downloading https://files.pythonhosted.org/packages/2f/f8/2f40b818f4ea9aacfb4cb5529b750aa9756dfb4109bde85abcae39fb5d8e/matchmakereft-1.1.1-py2.py3-none-any.whl
+[2023-05-29 19:07:17] INFO root fetch - processPackages [dls-bxflow-epsic]: Downloading https://files.pythonhosted.org/packages/4d/51/6362a9b3eee98642bfb7eb98dede73d2f3179eed7b75b3433406d78f6598/dls-bxflow-epsic-1.1.0.tar.gz
+[2023-05-29 19:07:17] INFO root fetch - processPackages [matchmakereft]: Downloading https://files.pythonhosted.org/packages/03/e3/4e4fdd4a8fc6acbec8c58d20ecaf4f891761da1a0a39fdb07e7cbc199881/matchmakereft-1.1.2-py2.py3-none-any.whl
+[2023-05-29 19:07:17] INFO root fetch - processPackages [dls-bxflow-epsic]: Downloading https://files.pythonhosted.org/packages/37/20/387b89f0c4db96661c2b09d18d68aaca093a0818c611f3101ba734e976fd/dls-bxflow-epsic-1.1.1.tar.gz
+[2023-05-29 19:07:17] INFO root fetch - processPackages [seaplane]: Downloading https://files.pythonhosted.org/packages/04/49/6d38d94bd3ec3b7de8d8d70297eae8540b9337104ec014f98251db6648f4/seaplane-0.3.4.tar.gz
+[2023-05-29 19:07:17] INFO root fetch - processPackages [dls-bxflow-epsic]: executing diffoscope
+[2023-05-29 19:07:17] INFO root fetch - processPackages [dls-bxflow-epsic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dls-bxflow-epsic-1.1.0.tar.gz tmp/dls-bxflow-epsic-1.1.1.tar.gz --markdown 20230529/d/dls-bxflow-epsic/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 19:07:17] INFO root fetch - processPackages [matchmakereft]: executing diffoscope
+[2023-05-29 19:07:17] INFO root fetch - processPackages [matchmakereft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmakereft-1.1.1-py2.py3-none-any.whl.zip tmp/matchmakereft-1.1.2-py2.py3-none-any.whl.zip --markdown 20230529/m/matchmakereft/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-29 19:07:17] INFO root fetch - processPackages [seaplane]: executing diffoscope
+[2023-05-29 19:07:17] INFO root fetch - processPackages [seaplane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplane-0.3.2.tar.gz tmp/seaplane-0.3.4.tar.gz --markdown 20230529/s/seaplane/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2023-05-29 19:07:18] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/22/e1/3c695ca55c9e3568ea055100399bd84899ec67559a91052f8ad64131673b/hiddifypanel-7.0.2-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-29 19:07:18] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-05-29 19:07:19] INFO root fetch - main [MainThread]: End processing [seaplane]: success
+[2023-05-29 19:07:19] INFO root fetch - main [MainThread]: End processing [dls-bxflow-epsic]: success
+[2023-05-29 19:07:19] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-29 19:07:19] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.1-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.2-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230529/h/hiddifypanel/7.0.1-7.0.2/diff.md --exclude *.pyd
+[2023-05-29 19:07:30] INFO root fetch - main [MainThread]: End processing [matchmakereft]: success
+[2023-05-29 19:07:39] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-29 19:07:39] INFO root fetch - main [MainThread]: Store serial: [18292226]
