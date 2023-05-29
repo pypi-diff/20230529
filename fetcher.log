@@ -12379,3 +12379,83 @@ EOFError: EOF read where object expected
 [2023-05-29 16:50:37] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-29 16:50:37] INFO root fetch - main [MainThread]: End processing [WeConnect-SolarManager]: success
 [2023-05-29 16:50:37] INFO root fetch - main [MainThread]: Store serial: [18291101]
+[2023-05-29 16:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291101]
+[2023-05-29 16:55:46] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-of-thoughts
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yangsuite-gnmi
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tradesman
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alvin-cli
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rudderclient
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nsedt
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tablepy-lib
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vlogs
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: privlib
+[2023-05-29 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: EasyMCP2221
+[2023-05-29 16:55:46] INFO root fetch - processPackages [rudderclient]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [EasyMCP2221]: New version: [1.7.0] Old Version: [1.6.3]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [tablepy-lib]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [vlogs]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [tree-of-thoughts]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [tradesman]: New version: [0.2] Old Version: [0.1]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [nsedt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 16:55:46] WARNING root fetch - processPackages [privlib]: Skipping, unable to determine old version
+[2023-05-29 16:55:46] INFO root fetch - processPackages [alvin-cli]: New version: [1.2.0rc9] Old Version: [1.2.0rc8]
+[2023-05-29 16:55:46] INFO root fetch - processPackages [privlib]: Start processing: hackcqooc
+[2023-05-29 16:55:46] INFO root fetch - main [MainThread]: End processing [privlib] error
+[2023-05-29 16:55:46] INFO root fetch - processPackages [yangsuite-gnmi]: New version: [2.7.7] Old Version: [2.7.6]
+[2023-05-29 16:55:47] INFO root fetch - processPackages [hackcqooc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 16:55:47] INFO root fetch - processPackages [EasyMCP2221]: Downloading https://files.pythonhosted.org/packages/16/db/6768b3dd2770124c81f42846e6707f73f2d20e641eff4c476ed22acc4337/EasyMCP2221-1.6.3.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [rudderclient]: Downloading https://files.pythonhosted.org/packages/e8/06/bdf86e92d71c2207253516074b3f98368c90a082541d2b02589a5cc40cd5/rudderclient-1.6.0.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tablepy-lib]: Downloading https://files.pythonhosted.org/packages/03/f9/3256d260d919cef08d902dbe1e731bea01dcb4a38b84864f023be2c855f1/tablepy_lib-0.6.0.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [yangsuite-gnmi]: Downloading https://files.pythonhosted.org/packages/40/88/944016edb289d4c082b1c2d6e99790465ae626f51126756dc3e8dd30c50a/yangsuite_gnmi-2.7.6-py3-none-any.whl
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tradesman]: Downloading https://files.pythonhosted.org/packages/29/3f/f5af2bae44f7665640e3d0cf2debd444836ec09072aab67d77c197e5193a/tradesman-0.1-py3-none-any.whl
+[2023-05-29 16:55:47] INFO root fetch - processPackages [alvin-cli]: Downloading https://files.pythonhosted.org/packages/1b/6a/73c4be64b212d1c04a4a0ee4897a3745ec7758b1d6bfc714491eafddc6b1/alvin_cli-1.2.0rc8.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [nsedt]: Downloading https://files.pythonhosted.org/packages/c4/89/661740ffdfee587a5c985223a3c946003da23bc046ee4e61ef5338e1a8eb/nsedt-0.0.1.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [vlogs]: Downloading https://files.pythonhosted.org/packages/93/28/be24c066a820cc75390f4a246f9d43a495582aecb4ab3508d1ab70f08ba6/vlogs-1.0.3.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [rudderclient]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [rudderclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rudderclient-1.5.0.tar.gz tmp/rudderclient-1.6.0.tar.gz --markdown 20230529/r/rudderclient/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tree-of-thoughts]: Downloading https://files.pythonhosted.org/packages/45/90/d14e8c924098557b063b57ee6e368d082dc08c5a34f7afc4fe6a7e2b46bc/tree-of-thoughts-0.2.7.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [vlogs]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [vlogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vlogs-1.0.2.tar.gz tmp/vlogs-1.0.3.tar.gz --markdown 20230529/v/vlogs/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tablepy-lib]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tablepy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablepy_lib-0.5.0.tar.gz tmp/tablepy_lib-0.6.0.tar.gz --markdown 20230529/t/tablepy-lib/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tree-of-thoughts]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tree-of-thoughts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-of-thoughts-0.2.6.tar.gz tmp/tree-of-thoughts-0.2.7.tar.gz --markdown 20230529/t/tree-of-thoughts/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [EasyMCP2221]: Downloading https://files.pythonhosted.org/packages/f9/0c/295c2bf98c9826c67fddf9c652c9985cead57a25ae627ea6b1b1f89f6022/easymcp2221-1.7.0.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [hackcqooc]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [hackcqooc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hackcqooc-0.0.8.tar.gz tmp/hackcqooc-0.0.9.tar.gz --markdown 20230529/h/hackcqooc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [nsedt]: Downloading https://files.pythonhosted.org/packages/f5/59/441efb82c743fcba57094de792441acd599d1df42602c41127d795320c46/nsedt-0.0.2.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [EasyMCP2221]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [EasyMCP2221]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyMCP2221-1.6.3.tar.gz tmp/easymcp2221-1.7.0.tar.gz --markdown 20230529/E/EasyMCP2221/1.6.3-1.7.0/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [yangsuite-gnmi]: Downloading https://files.pythonhosted.org/packages/5d/8e/f235905f1d4dfc4426815cd52a7818bc4914cc72844a113cd31fd4db2e00/yangsuite_gnmi-2.7.7-py3-none-any.whl
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tradesman]: Downloading https://files.pythonhosted.org/packages/e7/5f/1e36ff3575161cf10a111e096867bb69a3bceb47e7d924b4f8dca2886d7b/tradesman-0.2.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [alvin-cli]: Downloading https://files.pythonhosted.org/packages/ea/4d/4552432f48b77c2b9f79da3907636f2977d47ffef3a806abe169a1121641/alvin_cli-1.2.0rc9.tar.gz
+[2023-05-29 16:55:47] INFO root fetch - processPackages [nsedt]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [nsedt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsedt-0.0.1.tar.gz tmp/nsedt-0.0.2.tar.gz --markdown 20230529/n/nsedt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [alvin-cli]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [alvin-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alvin_cli-1.2.0rc8.tar.gz tmp/alvin_cli-1.2.0rc9.tar.gz --markdown 20230529/a/alvin-cli/1.2.0rc8-1.2.0rc9/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tradesman]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [tradesman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradesman-0.1-py3-none-any.whl.zip tmp/tradesman-0.2.tar.gz --markdown 20230529/t/tradesman/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-29 16:55:47] INFO root fetch - processPackages [yangsuite-gnmi]: executing diffoscope
+[2023-05-29 16:55:47] INFO root fetch - processPackages [yangsuite-gnmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_gnmi-2.7.6-py3-none-any.whl.zip tmp/yangsuite_gnmi-2.7.7-py3-none-any.whl.zip --markdown 20230529/y/yangsuite-gnmi/2.7.6-2.7.7/diff.md --exclude *.pyd
+[2023-05-29 16:55:48] INFO root fetch - processPackages [vlogs]: Start processing: langchain
+[2023-05-29 16:55:48] INFO root fetch - main [MainThread]: End processing [vlogs]: success
+[2023-05-29 16:55:48] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-29 16:55:48] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-29 16:55:48] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230529/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-29 16:55:48] INFO root fetch - processPackages [rudderclient]: Start processing: pydflow
+[2023-05-29 16:55:48] INFO root fetch - main [MainThread]: End processing [rudderclient]: success
+[2023-05-29 16:55:48] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-29 16:55:49] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-05-29 16:55:49] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230529/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [tablepy-lib]: success
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [tree-of-thoughts]: success
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [nsedt]: success
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [EasyMCP2221]: success
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [hackcqooc]: success
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [tradesman]: success
+[2023-05-29 16:55:49] INFO root fetch - main [MainThread]: End processing [alvin-cli]: success
+[2023-05-29 16:55:50] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-05-29 16:55:51] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-29 16:55:54] INFO root fetch - main [MainThread]: End processing [yangsuite-gnmi]: success
+[2023-05-29 16:55:54] INFO root fetch - main [MainThread]: Store serial: [18291167]
