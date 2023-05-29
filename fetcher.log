@@ -5085,3 +5085,26 @@
 [2023-05-29 07:46:32] INFO root fetch - main [MainThread]: End processing [adbkit]: success
 [2023-05-29 07:46:44] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
 [2023-05-29 07:46:44] INFO root fetch - main [MainThread]: Store serial: [18286604]
+[2023-05-29 07:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286604]
+[2023-05-29 07:51:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 07:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zssfunniest
+[2023-05-29 07:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyDataSort001
+[2023-05-29 07:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-x-tui
+[2023-05-29 07:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MyDataSort001
+[2023-05-29 07:51:53] INFO root fetch - processPackages [MyDataSort001]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 07:51:53] INFO root fetch - processPackages [MyDataSort001]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 07:51:53] WARNING root fetch - processPackages [zssfunniest]: Skipping, unable to determine old version
+[2023-05-29 07:51:53] INFO root fetch - main [MainThread]: End processing [zssfunniest] error
+[2023-05-29 07:51:53] WARNING root fetch - processPackages [easy-x-tui]: Skipping, unable to determine old version
+[2023-05-29 07:51:53] INFO root fetch - main [MainThread]: End processing [easy-x-tui] error
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: Downloading https://files.pythonhosted.org/packages/29/8e/a68f5df6153b45b84bbae67863f41a2d2f53d21f7a77818875ba922697c6/MyDataSort001-0.0.1-py3-none-any.whl
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: Downloading https://files.pythonhosted.org/packages/29/8e/a68f5df6153b45b84bbae67863f41a2d2f53d21f7a77818875ba922697c6/MyDataSort001-0.0.1-py3-none-any.whl
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: Downloading https://files.pythonhosted.org/packages/b4/06/38a76188909c2c9a202edcf8c85ab91a6a2b8a305793c47d66ff49609f2b/MyDataSort001-0.0.2-py3-none-any.whl
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: Downloading https://files.pythonhosted.org/packages/b4/06/38a76188909c2c9a202edcf8c85ab91a6a2b8a305793c47d66ff49609f2b/MyDataSort001-0.0.2-py3-none-any.whl
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: executing diffoscope
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyDataSort001-0.0.1-py3-none-any.whl.zip tmp/MyDataSort001-0.0.2-py3-none-any.whl.zip --markdown 20230529/M/MyDataSort001/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: executing diffoscope
+[2023-05-29 07:51:54] INFO root fetch - processPackages [MyDataSort001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyDataSort001-0.0.1-py3-none-any.whl.zip tmp/MyDataSort001-0.0.2-py3-none-any.whl.zip --markdown 20230529/M/MyDataSort001/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 07:51:55] INFO root fetch - main [MainThread]: End processing [MyDataSort001]: success
+[2023-05-29 07:51:55] INFO root fetch - main [MainThread]: End processing [MyDataSort001]: success
+[2023-05-29 07:51:55] INFO root fetch - main [MainThread]: Store serial: [18286615]
