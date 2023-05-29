@@ -6111,3 +6111,60 @@
 [2023-05-29 09:33:37] INFO root fetch - main [MainThread]: End processing [smartchart]: success
 [2023-05-29 09:33:37] INFO root fetch - main [MainThread]: End processing [libmata]: success
 [2023-05-29 09:33:37] INFO root fetch - main [MainThread]: Store serial: [18287247]
+[2023-05-29 09:38:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287247]
+[2023-05-29 09:38:47] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatiq
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antchain-ak-727a48eea1b24a469ff11ca2938fb727
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydflow
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gestionatr
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edu-segmentation
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ChatLLM
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lalsuite
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: revo
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cabinet
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ChatLLM
+[2023-05-29 09:38:47] WARNING root fetch - processPackages [chatiq]: Skipping, unable to determine old version
+[2023-05-29 09:38:47] WARNING root fetch - processPackages [antchain-ak-727a48eea1b24a469ff11ca2938fb727]: Skipping, unable to determine old version
+[2023-05-29 09:38:47] INFO root fetch - processPackages [chatiq]: Start processing: ProjectB-clientside-template-package
+[2023-05-29 09:38:47] INFO root fetch - main [MainThread]: End processing [chatiq] error
+[2023-05-29 09:38:47] INFO root fetch - main [MainThread]: End processing [antchain-ak-727a48eea1b24a469ff11ca2938fb727] error
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.88] Old Version: [0.0.87]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [gestionatr]: New version: [3.1.7] Old Version: [3.1.6]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ProjectB-clientside-template-package]: New version: [0.2] Old Version: [0.1]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-29 09:38:47] WARNING root fetch - processPackages [revo]: Skipping, unable to determine old version
+[2023-05-29 09:38:47] INFO root fetch - main [MainThread]: End processing [revo] error
+[2023-05-29 09:38:47] INFO root fetch - processPackages [cabinet]: New version: [2023.5.29.1] Old Version: [2023.5.20.2]
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230529/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ProjectB-clientside-template-package]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ProjectB-clientside-template-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ProjectB_clientside_template_package-0.1.tar.gz tmp/ProjectB_clientside_template_package-0.2.tar.gz --markdown 20230529/P/ProjectB-clientside-template-package/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230529/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-29 09:38:47] INFO root fetch - processPackages [gestionatr]: Downloading https://files.pythonhosted.org/packages/12/c4/c50408690f9329e8bbd7945194e7d93d089aa165936d87ec2b13e697a999/gestionatr-3.1.6.tar.gz
+[2023-05-29 09:38:47] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 09:38:47] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/6d/fd/f908dc27581fcd9ce2054e573e59459ceb3e7120efc1b0fc32aec56ef212/edu_segmentation-0.0.88-py3-none-any.whl
+[2023-05-29 09:38:47] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/7f/6e/009f0e4a820d7ea2f40a62940ba7f8243dea8d7329eb7e57b894e8e16c14/cabinet-2023.5.20.2.tar.gz
+[2023-05-29 09:38:47] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.87.tar.gz tmp/edu_segmentation-0.0.88-py3-none-any.whl.zip --markdown 20230529/e/edu-segmentation/0.0.87-0.0.88/diff.md --exclude *.pyd
+[2023-05-29 09:38:47] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230529/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-29 09:38:47] INFO root fetch - processPackages [gestionatr]: Downloading https://files.pythonhosted.org/packages/3e/83/19585faeff054d0b833b27e53df3a89d23348d88446d1b765ad2956b760a/gestionatr-3.1.7.tar.gz
+[2023-05-29 09:38:47] INFO root fetch - processPackages [gestionatr]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [gestionatr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gestionatr-3.1.6.tar.gz tmp/gestionatr-3.1.7.tar.gz --markdown 20230529/g/gestionatr/3.1.6-3.1.7/diff.md --exclude *.pyd
+[2023-05-29 09:38:47] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/5f/70/62346c1158be43b97ef512f443d647880953832a2019cd5774559bb2ee0d/cabinet-2023.5.29.1.tar.gz
+[2023-05-29 09:38:47] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-29 09:38:47] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-29 09:38:47] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2023-05-29 09:38:47] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2023.5.20.2.tar.gz tmp/cabinet-2023.5.29.1.tar.gz --markdown 20230529/c/cabinet/2023.5.20.2-2023.5.29.1/diff.md --exclude *.pyd
+[2023-05-29 09:38:48] INFO root fetch - main [MainThread]: End processing [ProjectB-clientside-template-package]: success
+[2023-05-29 09:38:48] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 09:38:49] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-05-29 09:38:49] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2023-05-29 09:38:49] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-29 09:38:49] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-29 09:38:50] INFO root fetch - main [MainThread]: End processing [gestionatr]: success
+[2023-05-29 09:38:50] INFO root fetch - main [MainThread]: Store serial: [18287298]
