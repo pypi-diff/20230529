@@ -17769,3 +17769,49 @@ EOFError: EOF read where object expected
 [2023-05-29 22:56:49] INFO root fetch - main [MainThread]: End processing [libretranslate]: success
 [2023-05-29 22:56:50] INFO root fetch - main [MainThread]: End processing [python-dp]: success
 [2023-05-29 22:56:50] INFO root fetch - main [MainThread]: Store serial: [18294455]
+[2023-05-29 23:01:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294455]
+[2023-05-29 23:01:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonoff-ewelink-cube-client-api
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utillc
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchlie
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lab-partner
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lab-partner-utils
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-tetris-stats
+[2023-05-29 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchlie
+[2023-05-29 23:01:59] INFO root fetch - processPackages [utillc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 23:01:59] INFO root fetch - processPackages [lab-partner]: New version: [0.7.39] Old Version: [0.7.38]
+[2023-05-29 23:01:59] INFO root fetch - processPackages [lab-partner-utils]: New version: [0.7.39] Old Version: [0.7.38]
+[2023-05-29 23:01:59] INFO root fetch - processPackages [torchlie]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2023-05-29 23:01:59] INFO root fetch - processPackages [torchlie]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2023-05-29 23:01:59] WARNING root fetch - processPackages [sonoff-ewelink-cube-client-api]: Skipping, unable to determine old version
+[2023-05-29 23:01:59] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: New version: [0.4.0] Old Version: [0.3.3.post1]
+[2023-05-29 23:01:59] INFO root fetch - main [MainThread]: End processing [sonoff-ewelink-cube-client-api] error
+[2023-05-29 23:01:59] INFO root fetch - processPackages [lab-partner]: Downloading https://files.pythonhosted.org/packages/d8/76/01c10309f9308b2e663ba4755143c573b6b5b4986c41c7e66d285bc4a85a/lab-partner-0.7.39.tar.gz
+[2023-05-29 23:01:59] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/cc/f6/8602a3365c5bdae211c3ac294519f44f09a48d78f82481686f04441605d1/utillc-0.9.8-py2.py3-none-any.whl
+[2023-05-29 23:01:59] INFO root fetch - processPackages [lab-partner-utils]: Downloading https://files.pythonhosted.org/packages/9a/fb/5dc3283bae9fceba1305d9cb7b938c34b94772d53dba09e976f95ab0250d/lab-partner-utils-0.7.39.tar.gz
+[2023-05-29 23:01:59] INFO root fetch - processPackages [torchlie]: Downloading https://files.pythonhosted.org/packages/56/73/084d08e16fab697f67eb112dee09f8761c62019bbccd3b807e8c13622084/torchlie-0.0.1.dev0-py3-none-any.whl
+[2023-05-29 23:01:59] INFO root fetch - processPackages [torchlie]: Downloading https://files.pythonhosted.org/packages/56/73/084d08e16fab697f67eb112dee09f8761c62019bbccd3b807e8c13622084/torchlie-0.0.1.dev0-py3-none-any.whl
+[2023-05-29 23:02:00] INFO root fetch - processPackages [lab-partner]: executing diffoscope
+[2023-05-29 23:02:00] INFO root fetch - processPackages [lab-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-0.7.38.tar.gz tmp/lab-partner-0.7.39.tar.gz --markdown 20230529/l/lab-partner/0.7.38-0.7.39/diff.md --exclude *.pyd
+[2023-05-29 23:02:00] INFO root fetch - processPackages [lab-partner-utils]: executing diffoscope
+[2023-05-29 23:02:00] INFO root fetch - processPackages [lab-partner-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab-partner-utils-0.7.38.tar.gz tmp/lab-partner-utils-0.7.39.tar.gz --markdown 20230529/l/lab-partner-utils/0.7.38-0.7.39/diff.md --exclude *.pyd
+[2023-05-29 23:02:00] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/6c/0a/a4589a4263dbea217372029bc52e85be827fdde0eaf83cfd314f5cd22ec4/nonebot_plugin_tetris_stats-0.3.3.post1.tar.gz
+[2023-05-29 23:02:00] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/d8/3c/db840ab098014cd53956ab58f90e832f7dc4cd45fba1ebcbb74463d04f94/utillc-0.9.9-py2.py3-none-any.whl
+[2023-05-29 23:02:00] INFO root fetch - processPackages [utillc]: executing diffoscope
+[2023-05-29 23:02:00] INFO root fetch - processPackages [utillc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utillc-0.9.8-py2.py3-none-any.whl.zip tmp/utillc-0.9.9-py2.py3-none-any.whl.zip --markdown 20230529/u/utillc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 23:02:00] INFO root fetch - processPackages [torchlie]: Downloading https://files.pythonhosted.org/packages/a1/26/0ed8cf55469362b9a8e835e26d78863d12baa9802749df5b8bee1e6b0893/torchlie-0.0.1.dev1.tar.gz
+[2023-05-29 23:02:00] INFO root fetch - processPackages [torchlie]: Downloading https://files.pythonhosted.org/packages/a1/26/0ed8cf55469362b9a8e835e26d78863d12baa9802749df5b8bee1e6b0893/torchlie-0.0.1.dev1.tar.gz
+[2023-05-29 23:02:00] INFO root fetch - processPackages [torchlie]: executing diffoscope
+[2023-05-29 23:02:00] INFO root fetch - processPackages [torchlie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlie-0.0.1.dev0-py3-none-any.whl.zip tmp/torchlie-0.0.1.dev1.tar.gz --markdown 20230529/t/torchlie/0.0.1.dev0-0.0.1.dev1/diff.md --exclude *.pyd
+[2023-05-29 23:02:00] INFO root fetch - processPackages [torchlie]: executing diffoscope
+[2023-05-29 23:02:00] INFO root fetch - processPackages [torchlie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlie-0.0.1.dev0-py3-none-any.whl.zip tmp/torchlie-0.0.1.dev1.tar.gz --markdown 20230529/t/torchlie/0.0.1.dev0-0.0.1.dev1/diff.md --exclude *.pyd
+[2023-05-29 23:02:00] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/bb/73/08688ed824865961b2832d12a6a9101fdaacefcbd838edf37efe63e468bb/nonebot_plugin_tetris_stats-0.4.0.tar.gz
+[2023-05-29 23:02:00] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: executing diffoscope
+[2023-05-29 23:02:00] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_tetris_stats-0.3.3.post1.tar.gz tmp/nonebot_plugin_tetris_stats-0.4.0.tar.gz --markdown 20230529/n/nonebot-plugin-tetris-stats/0.3.3.post1-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 23:02:01] INFO root fetch - main [MainThread]: End processing [utillc]: success
+[2023-05-29 23:02:01] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
+[2023-05-29 23:02:01] INFO root fetch - main [MainThread]: End processing [lab-partner-utils]: success
+[2023-05-29 23:02:01] INFO root fetch - main [MainThread]: End processing [torchlie]: success
+[2023-05-29 23:02:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-tetris-stats]: success
+[2023-05-29 23:02:52] INFO root fetch - main [MainThread]: End processing [torchlie]: success
+[2023-05-29 23:02:52] INFO root fetch - main [MainThread]: Store serial: [18294481]
