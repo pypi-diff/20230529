@@ -16446,3 +16446,44 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:15:37] INFO root fetch - main [MainThread]: End processing [coinlib]: success
 [2023-05-29 21:15:37] INFO root fetch - main [MainThread]: End processing [strawberry-django-plus]: success
 [2023-05-29 21:15:37] INFO root fetch - main [MainThread]: Store serial: [18293511]
+[2023-05-29 21:20:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293511]
+[2023-05-29 21:20:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellpy
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ngdataenginterface
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csv-to-xls
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vigilant-kit
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cost-of-code
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dott-ng
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ajm1102pandemic2d
+[2023-05-29 21:20:46] INFO root fetch - processPackages [vigilant-kit]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-05-29 21:20:46] INFO root fetch - processPackages [dott-ng]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-29 21:20:46] WARNING root fetch - processPackages [csv-to-xls]: Skipping, unable to determine old version
+[2023-05-29 21:20:46] WARNING root fetch - processPackages [cost-of-code]: Skipping, unable to determine old version
+[2023-05-29 21:20:46] INFO root fetch - main [MainThread]: End processing [csv-to-xls] error
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ajm1102pandemic2d]: New version: [0.3] Old Version: [0.2]
+[2023-05-29 21:20:46] INFO root fetch - processPackages [ngdataenginterface]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-29 21:20:46] INFO root fetch - main [MainThread]: End processing [cost-of-code] error
+[2023-05-29 21:20:46] INFO root fetch - processPackages [cellpy]: New version: [1.0.0b0] Old Version: [1.0.0a9]
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ajm1102pandemic2d]: Downloading https://files.pythonhosted.org/packages/04/1d/58d7d3c5eb276d849d29ae44a0f609e941ca3470d40f9d770945d6f3077d/ajm1102pandemic2d-0.2-py3-none-any.whl
+[2023-05-29 21:20:47] INFO root fetch - processPackages [dott-ng]: Downloading https://files.pythonhosted.org/packages/91/37/2c8e32813f333208987c45ddd8403b75d9d2f22e9b77ef8d23de52fe5029/dott_ng-1.8.0-py3-none-any.whl
+[2023-05-29 21:20:47] INFO root fetch - processPackages [vigilant-kit]: Downloading https://files.pythonhosted.org/packages/28/56/c92c35c6e7f34b8cba4ee5bbf95f5985104c359a8ede974ff7ec343448c4/vigilant_kit-1.2.7.tar.gz
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ngdataenginterface]: Downloading https://files.pythonhosted.org/packages/69/00/0b6a940a1cc280b70c7a8b5b86a84ab737ed1b4242da2de62739b451e2fb/ngdataenginterface-0.1.0.tar.gz
+[2023-05-29 21:20:47] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/52/b6/39ef928d9d647fb3a001929c7de701d707729dc6f9b03ad21f6223548d1d/cellpy-1.0.0b0.tar.gz
+[2023-05-29 21:20:47] INFO root fetch - processPackages [vigilant-kit]: executing diffoscope
+[2023-05-29 21:20:47] INFO root fetch - processPackages [vigilant-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vigilant_kit-1.2.6.tar.gz tmp/vigilant_kit-1.2.7.tar.gz --markdown 20230529/v/vigilant-kit/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ngdataenginterface]: executing diffoscope
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ngdataenginterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngdataenginterface-0.0.7.tar.gz tmp/ngdataenginterface-0.1.0.tar.gz --markdown 20230529/n/ngdataenginterface/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 21:20:47] INFO root fetch - processPackages [dott-ng]: Downloading https://files.pythonhosted.org/packages/8a/e3/135a2e1a20c47818d0ce8fd4bcbd583c3b1ab6c55b05c6c7d74509f59c87/dott_ng-1.8.1-py3-none-any.whl
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ajm1102pandemic2d]: Downloading https://files.pythonhosted.org/packages/ad/f8/cb0021bc791296320cd34188cb24640acde9f2d462894333a2ea5659bf42/ajm1102pandemic2d-0.3-py3-none-any.whl
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ajm1102pandemic2d]: executing diffoscope
+[2023-05-29 21:20:47] INFO root fetch - processPackages [ajm1102pandemic2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ajm1102pandemic2d-0.2-py3-none-any.whl.zip tmp/ajm1102pandemic2d-0.3-py3-none-any.whl.zip --markdown 20230529/a/ajm1102pandemic2d/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-29 21:20:47] INFO root fetch - processPackages [dott-ng]: executing diffoscope
+[2023-05-29 21:20:47] INFO root fetch - processPackages [dott-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dott_ng-1.8.0-py3-none-any.whl.zip tmp/dott_ng-1.8.1-py3-none-any.whl.zip --markdown 20230529/d/dott-ng/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-29 21:20:47] INFO root fetch - processPackages [cellpy]: executing diffoscope
+[2023-05-29 21:20:47] INFO root fetch - processPackages [cellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellpy-1.0.0a9.tar.gz tmp/cellpy-1.0.0b0.tar.gz --markdown 20230529/c/cellpy/1.0.0a9-1.0.0b0/diff.md --exclude *.pyd
+[2023-05-29 21:20:48] INFO root fetch - main [MainThread]: End processing [ngdataenginterface]: success
+[2023-05-29 21:20:48] INFO root fetch - main [MainThread]: End processing [vigilant-kit]: success
+[2023-05-29 21:20:48] INFO root fetch - main [MainThread]: End processing [ajm1102pandemic2d]: success
+[2023-05-29 21:20:48] INFO root fetch - main [MainThread]: End processing [dott-ng]: success
+[2023-05-29 21:20:50] INFO root fetch - main [MainThread]: End processing [cellpy]: success
+[2023-05-29 21:20:50] INFO root fetch - main [MainThread]: Store serial: [18293535]
