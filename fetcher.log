@@ -7002,3 +7002,127 @@
 [2023-05-29 10:59:22] INFO root fetch - main [MainThread]: End processing [clickzetta-connector]: success
 [2023-05-29 10:59:22] INFO root fetch - main [MainThread]: End processing [qdx]: success
 [2023-05-29 10:59:22] INFO root fetch - main [MainThread]: Store serial: [18287799]
+[2023-05-29 11:04:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287799]
+[2023-05-29 11:04:31] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-29 11:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clickzetta-connector
+[2023-05-29 11:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: traveltimepy
+[2023-05-29 11:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gopro-overlay
+[2023-05-29 11:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clickzetta-sqlalchemy
+[2023-05-29 11:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edu-segmentation
+[2023-05-29 11:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BehaviorPattern
+[2023-05-29 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: keycloak-utils
+[2023-05-29 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nvosscript
+[2023-05-29 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbt-clickzetta
+[2023-05-29 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: losalina
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-connector]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-05-29 11:04:32] WARNING root fetch - processPackages [losalina]: Skipping, unable to determine old version
+[2023-05-29 11:04:32] INFO root fetch - processPackages [losalina]: Start processing: edu-segmentation
+[2023-05-29 11:04:32] INFO root fetch - main [MainThread]: End processing [losalina] error
+[2023-05-29 11:04:32] WARNING root fetch - processPackages [keycloak-utils]: Skipping, unable to determine old version
+[2023-05-29 11:04:32] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [keycloak-utils]: Start processing: kaioretry
+[2023-05-29 11:04:32] INFO root fetch - processPackages [nvosscript]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-29 11:04:32] INFO root fetch - main [MainThread]: End processing [keycloak-utils] error
+[2023-05-29 11:04:32] INFO root fetch - processPackages [traveltimepy]: New version: [3.3.0b1] Old Version: [3.3.0]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [BehaviorPattern]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-sqlalchemy]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [gopro-overlay]: New version: [0.97.0] Old Version: [0.96.0]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [kaioretry]: New version: [0.9.4] Old Version: [0.9.2]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.93] Old Version: [0.0.92]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.93] Old Version: [0.0.92]
+[2023-05-29 11:04:32] INFO root fetch - processPackages [kaioretry]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [kaioretry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaioretry-0.9.2.tar.gz tmp/kaioretry-0.9.4.tar.gz --markdown 20230529/k/kaioretry/0.9.2-0.9.4/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [BehaviorPattern]: Downloading https://files.pythonhosted.org/packages/45/85/7568a1f4e62c44fc4ab4c72489ae1ae3759dc37f49a3ee21ebfc6f866c9c/BehaviorPattern-0.0.1.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/7a/8b/b2e362e28e2bd26084c9132cfdddccde5e380617a775c161737d00225bed/dbt-clickzetta-0.1.2.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/ee/f5/93e27ed7a6ccae76b4c3b6e814cdbbe88ad928085c74ffc66d11a1e191b2/edu_segmentation-0.0.92-py3-none-any.whl
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/ee/f5/93e27ed7a6ccae76b4c3b6e814cdbbe88ad928085c74ffc66d11a1e191b2/edu_segmentation-0.0.92-py3-none-any.whl
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/1a/6e/9c7d9a819e16caf94934dd472792889494c69543bd95fa335a33818e8b93/clickzetta-sqlalchemy-0.8.0.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [traveltimepy]: Downloading https://files.pythonhosted.org/packages/93/a5/cf8d28ae7e1293929b0e889d5b8decf0af09c503d283b742551c414b934c/traveltimepy-3.3.0.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-connector]: Downloading https://files.pythonhosted.org/packages/2b/6f/6089e9e0289b3b48f4bd38e16409128d8575be65870020876a5664c511f2/clickzetta-connector-0.8.0.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.1.1.tar.gz tmp/dbt-clickzetta-0.1.2.tar.gz --markdown 20230529/d/dbt-clickzetta/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-connector]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-connector-0.7.9.tar.gz tmp/clickzetta-connector-0.8.0.tar.gz --markdown 20230529/c/clickzetta-connector/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/38/ac/a169df70153ac6908e59c31b3c83cb04c564d20124b4abbb6cdc8f3fbbf6/nvosscript-1.3.2.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-sqlalchemy]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [gopro-overlay]: Downloading https://files.pythonhosted.org/packages/f4/ed/2f0c1ccd392cc81133edfeff7cc7d37b8b26fc8e0c0684699dc5c24fe61d/gopro-overlay-0.97.0.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [clickzetta-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-sqlalchemy-0.7.9.tar.gz tmp/clickzetta-sqlalchemy-0.8.0.tar.gz --markdown 20230529/c/clickzetta-sqlalchemy/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [BehaviorPattern]: Downloading https://files.pythonhosted.org/packages/9a/74/33c5b7811d828f198af790f382d79b75ae03902e271a4da1d09447354225/BehaviorPattern-0.0.2.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/54/bb/eb727549493c98bdc79eec8f79ca3de042899373fae7ad9d5b873413496d/edu_segmentation-0.0.93-py3-none-any.whl
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/54/bb/eb727549493c98bdc79eec8f79ca3de042899373fae7ad9d5b873413496d/edu_segmentation-0.0.93-py3-none-any.whl
+[2023-05-29 11:04:32] INFO root fetch - processPackages [traveltimepy]: Downloading https://files.pythonhosted.org/packages/dc/21/205597c5e3e035620c082135289b068839b15952e4c45dbeba920a2e228d/traveltimepy-3.3.0b1.tar.gz
+[2023-05-29 11:04:32] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.3.1.tar.gz tmp/nvosscript-1.3.2.tar.gz --markdown 20230529/n/nvosscript/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [gopro-overlay]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [gopro-overlay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gopro-overlay-0.96.0.tar.gz tmp/gopro-overlay-0.97.0.tar.gz --markdown 20230529/g/gopro-overlay/0.96.0-0.97.0/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.92-py3-none-any.whl.zip tmp/edu_segmentation-0.0.93-py3-none-any.whl.zip --markdown 20230529/e/edu-segmentation/0.0.92-0.0.93/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.92-py3-none-any.whl.zip tmp/edu_segmentation-0.0.93-py3-none-any.whl.zip --markdown 20230529/e/edu-segmentation/0.0.92-0.0.93/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [traveltimepy]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [traveltimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traveltimepy-3.3.0.tar.gz tmp/traveltimepy-3.3.0b1.tar.gz --markdown 20230529/t/traveltimepy/3.3.0-3.3.0b1/diff.md --exclude *.pyd
+[2023-05-29 11:04:32] INFO root fetch - processPackages [BehaviorPattern]: executing diffoscope
+[2023-05-29 11:04:32] INFO root fetch - processPackages [BehaviorPattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BehaviorPattern-0.0.1.tar.gz tmp/BehaviorPattern-0.0.2.tar.gz --markdown 20230529/B/BehaviorPattern/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 11:04:33] INFO root fetch - processPackages [kaioretry]: Start processing: WebtoonScraper
+[2023-05-29 11:04:33] INFO root fetch - main [MainThread]: End processing [kaioretry]: success
+[2023-05-29 11:04:33] INFO root fetch - processPackages [WebtoonScraper]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 11:04:33] INFO root fetch - processPackages [WebtoonScraper]: executing diffoscope
+[2023-05-29 11:04:33] INFO root fetch - processPackages [WebtoonScraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WebtoonScraper-0.0.8.tar.gz tmp/WebtoonScraper-0.0.9.tar.gz --markdown 20230529/W/WebtoonScraper/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 11:04:34] INFO root fetch - processPackages [dbt-clickzetta]: Start processing: paketmutfak
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [edu-segmentation]: Start processing: ccxt
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [ccxt]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Start processing: autogluon.common
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [clickzetta-sqlalchemy]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.common]: New version: [0.7.1b20230529] Old Version: [0.7.1b20230528]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-29 11:04:34] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.1.8.tar.gz tmp/ccxt-3.1.9.tar.gz --markdown 20230529/c/ccxt/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-29 11:04:34] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-05-29 11:04:34] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230529/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 11:04:34] INFO root fetch - processPackages [traveltimepy]: Start processing: autogluon.core
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [traveltimepy]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.core]: New version: [0.7.1b20230529] Old Version: [0.7.1b20230528]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [edu-segmentation]: Start processing: autogluon.features
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/a8/e8/4405c5f3ab469a6960221282b17deb51ff724c5eebef9dbaa0def15e3b8f/autogluon.common-0.7.1b20230529.tar.gz
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.features]: New version: [0.7.1b20230528] Old Version: [0.7.1b20230527]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [BehaviorPattern]: Start processing: autogluon.tabular
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [BehaviorPattern]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.tabular]: New version: [0.7.1b20230528] Old Version: [0.7.1b20230527]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-0.7.1b20230527.tar.gz tmp/autogluon.features-0.7.1b20230528.tar.gz --markdown 20230529/a/autogluon.features/0.7.1b20230527-0.7.1b20230528/diff.md --exclude *.pyd
+[2023-05-29 11:04:34] INFO root fetch - processPackages [nvosscript]: Start processing: autogluon.multimodal
+[2023-05-29 11:04:34] INFO root fetch - main [MainThread]: End processing [nvosscript]: success
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/3e/fc/075dcaf42bdcf0540bc90d34f81e4f89ac341eb3380853eb67749aa3c357/autogluon.core-0.7.1b20230529.tar.gz
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-0.7.1b20230527.tar.gz tmp/autogluon.tabular-0.7.1b20230528.tar.gz --markdown 20230529/a/autogluon.tabular/0.7.1b20230527-0.7.1b20230528/diff.md --exclude *.pyd
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.multimodal]: New version: [0.7.1b20230528] Old Version: [0.7.1b20230527]
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2023-05-29 11:04:34] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-0.7.1b20230528.tar.gz tmp/autogluon.common-0.7.1b20230529.tar.gz --markdown 20230529/a/autogluon.common/0.7.1b20230528-0.7.1b20230529/diff.md --exclude *.pyd
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-0.7.1b20230527.tar.gz tmp/autogluon.multimodal-0.7.1b20230528.tar.gz --markdown 20230529/a/autogluon.multimodal/0.7.1b20230527-0.7.1b20230528/diff.md --exclude *.pyd
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-0.7.1b20230528.tar.gz tmp/autogluon.core-0.7.1b20230529.tar.gz --markdown 20230529/a/autogluon.core/0.7.1b20230528-0.7.1b20230529/diff.md --exclude *.pyd
+[2023-05-29 11:04:35] INFO root fetch - processPackages [gopro-overlay]: Start processing: autogluon.cloud
+[2023-05-29 11:04:35] INFO root fetch - main [MainThread]: End processing [gopro-overlay]: success
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.cloud]: New version: [0.2.1b20230528] Old Version: [0.2.1b20230527]
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.cloud]: executing diffoscope
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.cloud-0.2.1b20230527.tar.gz tmp/autogluon.cloud-0.2.1b20230528.tar.gz --markdown 20230529/a/autogluon.cloud/0.2.1b20230527-0.2.1b20230528/diff.md --exclude *.pyd
+[2023-05-29 11:04:35] INFO root fetch - processPackages [WebtoonScraper]: Start processing: autogluon.timeseries
+[2023-05-29 11:04:35] INFO root fetch - main [MainThread]: End processing [WebtoonScraper]: success
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.timeseries]: New version: [0.7.1b20230528] Old Version: [0.7.1b20230527]
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2023-05-29 11:04:35] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-0.7.1b20230527.tar.gz tmp/autogluon.timeseries-0.7.1b20230528.tar.gz --markdown 20230529/a/autogluon.timeseries/0.7.1b20230527-0.7.1b20230528/diff.md --exclude *.pyd
+[2023-05-29 11:04:36] INFO root fetch - main [MainThread]: End processing [clickzetta-connector]: success
+[2023-05-29 11:04:36] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-05-29 11:04:36] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2023-05-29 11:04:37] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2023-05-29 11:04:37] INFO root fetch - main [MainThread]: End processing [autogluon.cloud]: success
+[2023-05-29 11:04:37] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2023-05-29 11:04:38] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2023-05-29 11:04:38] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2023-05-29 11:04:39] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2023-05-29 11:04:44] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-29 11:04:44] INFO root fetch - main [MainThread]: Store serial: [18287859]
