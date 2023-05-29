@@ -6000,3 +6000,49 @@
 [2023-05-29 09:23:10] INFO root fetch - main [MainThread]: End processing [opencve]: success
 [2023-05-29 09:23:11] INFO root fetch - main [MainThread]: End processing [pretix-passbook]: success
 [2023-05-29 09:23:11] INFO root fetch - main [MainThread]: Store serial: [18287174]
+[2023-05-29 09:28:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287174]
+[2023-05-29 09:28:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pretix-servicefees
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-yaml-yoyo
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: movies-download
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: salesea
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylance
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ccmplots
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: projectb-testing-mypackage
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nutree
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: clear-junction-api-wrapper
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ccmplots]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 09:28:20] WARNING root fetch - processPackages [projectb-testing-mypackage]: Skipping, unable to determine old version
+[2023-05-29 09:28:20] INFO root fetch - main [MainThread]: End processing [projectb-testing-mypackage] error
+[2023-05-29 09:28:20] INFO root fetch - processPackages [pytest-yaml-yoyo]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-29 09:28:20] WARNING root fetch - processPackages [movies-download]: Skipping, unable to determine old version
+[2023-05-29 09:28:20] INFO root fetch - processPackages [pretix-servicefees]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-29 09:28:20] WARNING root fetch - processPackages [salesea]: Skipping, unable to determine old version
+[2023-05-29 09:28:20] INFO root fetch - processPackages [pylance]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-29 09:28:20] INFO root fetch - main [MainThread]: End processing [movies-download] error
+[2023-05-29 09:28:20] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-29 09:28:20] INFO root fetch - processPackages [nutree]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-29 09:28:20] WARNING root fetch - processPackages [clear-junction-api-wrapper]: Skipping, unable to determine old version
+[2023-05-29 09:28:20] INFO root fetch - main [MainThread]: End processing [clear-junction-api-wrapper] error
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ccmplots]: Downloading https://files.pythonhosted.org/packages/00/7d/553f92ff4ebcbeb34fce9fe25f036b517f627d273718edcf66cc17b54257/ccmplots-0.0.1.tar.gz
+[2023-05-29 09:28:20] INFO root fetch - processPackages [pylance]: Downloading https://files.pythonhosted.org/packages/1d/3d/b7f8dbc01ee9f99333c1a157af27411304e05950acd0a0a594cacfeb1537/pylance-0.4.8-cp38-abi3-win_amd64.whl
+[2023-05-29 09:28:20] INFO root fetch - processPackages [pretix-servicefees]: Downloading https://files.pythonhosted.org/packages/3b/06/6656546a837284ac8e0dd7a68f7185cb8fca1bf48f90a89a59f2b2290a0a/pretix-servicefees-1.8.0.tar.gz
+[2023-05-29 09:28:20] WARNING root fetch - processPackages [pylance]: Skipping package: exceeds size limit 20868431>=10485760
+[2023-05-29 09:28:20] INFO root fetch - main [MainThread]: End processing [pylance] error
+[2023-05-29 09:28:20] INFO root fetch - processPackages [nutree]: Downloading https://files.pythonhosted.org/packages/6a/a1/f63aee668b913c4265e5d2840c34886273c55c491aa0348ff138ee80ef29/nutree-0.5.1.tar.gz
+[2023-05-29 09:28:20] INFO root fetch - processPackages [pytest-yaml-yoyo]: Downloading https://files.pythonhosted.org/packages/41/dd/f50f6975df034e2591936a06e20fa2326296b1306809ecd9a8b6a0b43c7e/pytest-yaml-yoyo-1.2.3.tar.gz
+[2023-05-29 09:28:20] INFO root fetch - processPackages [ccmplots]: Downloading https://files.pythonhosted.org/packages/5c/db/4c8382abdd1712767646fa5cee5bffc9fe498d3394b683a3c685268f9a5e/ccmplots-0.0.2.tar.gz
+[2023-05-29 09:28:21] INFO root fetch - processPackages [nutree]: executing diffoscope
+[2023-05-29 09:28:21] INFO root fetch - processPackages [nutree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nutree-0.5.0.tar.gz tmp/nutree-0.5.1.tar.gz --markdown 20230529/n/nutree/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-29 09:28:21] INFO root fetch - processPackages [pytest-yaml-yoyo]: executing diffoscope
+[2023-05-29 09:28:21] INFO root fetch - processPackages [pytest-yaml-yoyo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-yaml-yoyo-1.2.2.tar.gz tmp/pytest-yaml-yoyo-1.2.3.tar.gz --markdown 20230529/p/pytest-yaml-yoyo/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-29 09:28:21] INFO root fetch - processPackages [pretix-servicefees]: Downloading https://files.pythonhosted.org/packages/c7/a4/1170ac07cb4d3e46c5e58616cbeab7aa1a8094b917c122e2be88509b6124/pretix-servicefees-1.9.0.tar.gz
+[2023-05-29 09:28:21] INFO root fetch - processPackages [ccmplots]: executing diffoscope
+[2023-05-29 09:28:21] INFO root fetch - processPackages [ccmplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccmplots-0.0.1.tar.gz tmp/ccmplots-0.0.2.tar.gz --markdown 20230529/c/ccmplots/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 09:28:21] INFO root fetch - processPackages [pretix-servicefees]: executing diffoscope
+[2023-05-29 09:28:21] INFO root fetch - processPackages [pretix-servicefees]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-servicefees-1.8.0.tar.gz tmp/pretix-servicefees-1.9.0.tar.gz --markdown 20230529/p/pretix-servicefees/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-29 09:28:22] INFO root fetch - main [MainThread]: End processing [ccmplots]: success
+[2023-05-29 09:28:22] INFO root fetch - main [MainThread]: End processing [pytest-yaml-yoyo]: success
+[2023-05-29 09:28:22] INFO root fetch - main [MainThread]: End processing [nutree]: success
+[2023-05-29 09:28:22] INFO root fetch - main [MainThread]: End processing [pretix-servicefees]: success
+[2023-05-29 09:28:22] INFO root fetch - main [MainThread]: Store serial: [18287212]
