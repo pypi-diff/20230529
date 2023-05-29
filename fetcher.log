@@ -5036,3 +5036,23 @@
 [2023-05-29 07:35:45] INFO root fetch - main [MainThread]: End processing [mlqd]: success
 [2023-05-29 07:35:47] INFO root fetch - main [MainThread]: End processing [iocbio.gel]: success
 [2023-05-29 07:35:47] INFO root fetch - main [MainThread]: Store serial: [18286583]
+[2023-05-29 07:40:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286583]
+[2023-05-29 07:40:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-29 07:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radvis
+[2023-05-29 07:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: timor-locations
+[2023-05-29 07:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gfs-dynamical-core
+[2023-05-29 07:40:56] INFO root fetch - processPackages [radvis]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-29 07:40:56] INFO root fetch - processPackages [timor-locations]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 07:40:56] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 07:40:57] INFO root fetch - processPackages [timor-locations]: Downloading https://files.pythonhosted.org/packages/b0/43/5ef4fd2d7cffa4e5977f10ba20542db3053087e26b9093a0b74101d1878b/timor_locations-0.0.3.tar.gz
+[2023-05-29 07:40:57] INFO root fetch - processPackages [radvis]: Downloading https://files.pythonhosted.org/packages/6b/ae/0557e663a1f0ccedae006761c70684e4f03750053dbd0ccaec86e95ebafe/radvis-0.2.2.tar.gz
+[2023-05-29 07:40:57] INFO root fetch - processPackages [timor-locations]: executing diffoscope
+[2023-05-29 07:40:57] INFO root fetch - processPackages [timor-locations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timor_locations-0.0.2.tar.gz tmp/timor_locations-0.0.3.tar.gz --markdown 20230529/t/timor-locations/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 07:40:57] INFO root fetch - processPackages [radvis]: executing diffoscope
+[2023-05-29 07:40:57] INFO root fetch - processPackages [radvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radvis-0.2.1.tar.gz tmp/radvis-0.2.2.tar.gz --markdown 20230529/r/radvis/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-29 07:40:57] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-29 07:40:57] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 07:40:58] INFO root fetch - main [MainThread]: End processing [timor-locations]: success
+[2023-05-29 07:40:58] INFO root fetch - main [MainThread]: End processing [radvis]: success
+[2023-05-29 07:41:19] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-29 07:41:19] INFO root fetch - main [MainThread]: Store serial: [18286593]
