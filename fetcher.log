@@ -10150,3 +10150,93 @@ EOFError: EOF read where object expected
 [2023-05-29 14:24:39] INFO root fetch - main [MainThread]: End processing [sortingx]: success
 [2023-05-29 14:24:51] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-29 14:24:51] INFO root fetch - main [MainThread]: Store serial: [18289677]
+[2023-05-29 14:29:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289677]
+[2023-05-29 14:30:00] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kodexa-cli
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-zippy-form
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gistsrc
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thsquant
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LumosWeb
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stigg-api-client
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chatgpt-mixin
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edu-segmentation
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: loggate
+[2023-05-29 14:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo14-addon-l10n-br-nfe
+[2023-05-29 14:30:00] WARNING root fetch - processPackages [gistsrc]: Skipping, unable to determine old version
+[2023-05-29 14:30:00] INFO root fetch - processPackages [gistsrc]: Start processing: specmatic
+[2023-05-29 14:30:00] INFO root fetch - main [MainThread]: End processing [gistsrc] error
+[2023-05-29 14:30:00] WARNING root fetch - processPackages [LumosWeb]: Skipping, unable to determine old version
+[2023-05-29 14:30:00] INFO root fetch - processPackages [LumosWeb]: Start processing: odoo14-addon-l10n-br-fiscal
+[2023-05-29 14:30:00] INFO root fetch - main [MainThread]: End processing [LumosWeb] error
+[2023-05-29 14:30:00] WARNING root fetch - processPackages [django-zippy-form]: Skipping, unable to determine old version
+[2023-05-29 14:30:00] INFO root fetch - processPackages [django-zippy-form]: Start processing: odoo14-addon-l10n-br-base
+[2023-05-29 14:30:00] INFO root fetch - main [MainThread]: End processing [django-zippy-form] error
+[2023-05-29 14:30:00] INFO root fetch - processPackages [thsquant]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [kodexa-cli]: New version: [6.2.25111841001] Old Version: [6.0.5a5044154294]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [specmatic]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [chatgpt-mixin]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [loggate]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: New version: [14.0.8.1.0] Old Version: [14.0.8.0.3.dev1]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [stigg-api-client]: New version: [0.5.0] Old Version: [0.446.0]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: New version: [14.0.3.2.0] Old Version: [14.0.3.1.2]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: New version: [14.0.9.2.1.dev3] Old Version: [14.0.9.2.1.dev2]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu-segmentation-0.0.98.tar.gz tmp/edu_segmentation-0.0.99.tar.gz --markdown 20230529/e/edu-segmentation/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/b1/8c/2c95558a4853fe871617a2dce620e5fb92325f0330df31a295159c1dc72e/stigg_api_client-0.446.0.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [thsquant]: Downloading https://files.pythonhosted.org/packages/e3/b2/34770aae8ecbe6010c788a53e2ff3f7998744f1a78b364a114c79337b23b/thsquant-0.1.8.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [kodexa-cli]: Downloading https://files.pythonhosted.org/packages/8e/f9/b234ef198c8e441f38618407af4147f6f2843cc66ac17e7da3377cb8276b/kodexa_cli-6.2.25111841001.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/a0/30/9df32adbf0ce596f3d776a973dd88d6ba077113f2768d057f7854042d194/odoo14_addon_l10n_br_nfe-14.0.8.0.3.dev1-py3-none-any.whl
+[2023-05-29 14:30:00] INFO root fetch - processPackages [chatgpt-mixin]: Downloading https://files.pythonhosted.org/packages/bf/fb/3bdda8806adbcb2a32b62f4d25d720eec72b6f77608fed5c75f0ff1583d9/chatgpt-mixin-0.1.6.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [loggate]: Downloading https://files.pythonhosted.org/packages/ae/20/604d971754fdc97d0cf169ca00bfc2c01e817ff7acf02ce6d685d7da1b0a/loggate-1.8.0.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-0.446.0.tar.gz tmp/stigg_api_client-0.5.0.tar.gz --markdown 20230529/s/stigg-api-client/0.446.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [thsquant]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [thsquant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thsquant-0.1.7.tar.gz tmp/thsquant-0.1.8.tar.gz --markdown 20230529/t/thsquant/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [specmatic]: Downloading https://files.pythonhosted.org/packages/a2/a5/c9605c7740da8f5f876b8f72ddc5a3ea78a05ecddc16845d3013b9b6742c/specmatic-0.7.2.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [kodexa-cli]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [kodexa-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa_cli-6.0.5a5044154294.tar.gz tmp/kodexa_cli-6.2.25111841001.tar.gz --markdown 20230529/k/kodexa-cli/6.0.5a5044154294-6.2.25111841001/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/0a/93/b0dc0acc875d64d16eca60feb1dd0022c0d9711e90315ff2073fc21ea429/odoo14_addon_l10n_br_base-14.0.3.2.0-py3-none-any.whl
+[2023-05-29 14:30:00] WARNING root fetch - processPackages [specmatic]: Skipping package: exceeds size limit 79090586>=10485760
+[2023-05-29 14:30:00] INFO root fetch - processPackages [specmatic]: Start processing: odoo14-addon-l10n-br-nfse
+[2023-05-29 14:30:00] INFO root fetch - main [MainThread]: End processing [specmatic] error
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfse]: New version: [14.0.1.9.5] Old Version: [14.0.1.9.4]
+[2023-05-29 14:30:00] INFO root fetch - processPackages [chatgpt-mixin]: Downloading https://files.pythonhosted.org/packages/32/1c/2f41101ecdbb398b20cf0609a51a85f58914d606a6f047f5f32a2721beb1/chatgpt-mixin-0.1.7.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/14/93/634470ff3b8d076a5afaed854ec840e25378c93f39f24b8273e373a6746b/odoo14_addon_l10n_br_nfe-14.0.8.1.0-py3-none-any.whl
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev3-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-l10n-br-fiscal/14.0.9.2.1.dev2-14.0.9.2.1.dev3/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_base-14.0.3.1.2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_base-14.0.3.2.0-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-l10n-br-base/14.0.3.1.2-14.0.3.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [chatgpt-mixin]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [chatgpt-mixin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-mixin-0.1.6.tar.gz tmp/chatgpt-mixin-0.1.7.tar.gz --markdown 20230529/c/chatgpt-mixin/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe-14.0.8.0.3.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe-14.0.8.1.0-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-l10n-br-nfe/14.0.8.0.3.dev1-14.0.8.1.0/diff.md --exclude *.pyd
+[2023-05-29 14:30:00] INFO root fetch - processPackages [loggate]: Downloading https://files.pythonhosted.org/packages/ad/3d/d86bb7f1a32bdc4e3b37bfa0487baef5e8488f8a42c54f503275a115c4a6/loggate-1.9.0.tar.gz
+[2023-05-29 14:30:00] INFO root fetch - processPackages [loggate]: executing diffoscope
+[2023-05-29 14:30:00] INFO root fetch - processPackages [loggate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggate-1.8.0.tar.gz tmp/loggate-1.9.0.tar.gz --markdown 20230529/l/loggate/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-29 14:30:01] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfse]: executing diffoscope
+[2023-05-29 14:30:01] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfse-14.0.1.9.4-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfse-14.0.1.9.5-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-l10n-br-nfse/14.0.1.9.4-14.0.1.9.5/diff.md --exclude *.pyd
+[2023-05-29 14:30:02] INFO root fetch - processPackages [thsquant]: Start processing: odoo14-addon-l10n-br-hr
+[2023-05-29 14:30:02] INFO root fetch - main [MainThread]: End processing [thsquant]: success
+[2023-05-29 14:30:02] INFO root fetch - processPackages [kodexa-cli]: Start processing: certbot-dns-vultr
+[2023-05-29 14:30:02] INFO root fetch - main [MainThread]: End processing [kodexa-cli]: success
+[2023-05-29 14:30:02] INFO root fetch - processPackages [odoo14-addon-l10n-br-hr]: New version: [14.0.1.2.0] Old Version: [14.0.1.1.1.dev1]
+[2023-05-29 14:30:02] INFO root fetch - processPackages [certbot-dns-vultr]: New version: [1.1.0rc1] Old Version: [1.1.0]
+[2023-05-29 14:30:02] INFO root fetch - processPackages [odoo14-addon-l10n-br-hr]: Downloading https://files.pythonhosted.org/packages/8c/6c/f309c5d1140ce16774fb74ff0d1c5309f3749d211e8fe0d8dd06b54f9d4e/odoo14_addon_l10n_br_hr-14.0.1.1.1.dev1-py3-none-any.whl
+[2023-05-29 14:30:02] INFO root fetch - processPackages [certbot-dns-vultr]: Downloading https://files.pythonhosted.org/packages/5b/03/da71df52ea53a6883e12b2d3f61f23ce92584aef7363011bae1fdd6471bc/certbot_dns_vultr-1.1.0-py3-none-any.whl
+[2023-05-29 14:30:02] INFO root fetch - main [MainThread]: End processing [loggate]: success
+[2023-05-29 14:30:02] INFO root fetch - processPackages [odoo14-addon-l10n-br-hr]: Downloading https://files.pythonhosted.org/packages/40/83/28c9bb334969606630fd1c3f00c13967f95db9ab17ed5eb6b7da855dc850/odoo14_addon_l10n_br_hr-14.0.1.2.0-py3-none-any.whl
+[2023-05-29 14:30:02] INFO root fetch - processPackages [certbot-dns-vultr]: executing diffoscope
+[2023-05-29 14:30:02] INFO root fetch - processPackages [certbot-dns-vultr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certbot_dns_vultr-1.1.0-py3-none-any.whl.zip tmp/certbot-dns-vultr-1.1.0rc1.tar.gz --markdown 20230529/c/certbot-dns-vultr/1.1.0-1.1.0rc1/diff.md --exclude *.pyd
+[2023-05-29 14:30:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-base]: success
+[2023-05-29 14:30:02] INFO root fetch - processPackages [odoo14-addon-l10n-br-hr]: executing diffoscope
+[2023-05-29 14:30:02] INFO root fetch - processPackages [odoo14-addon-l10n-br-hr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_hr-14.0.1.1.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_hr-14.0.1.2.0-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-l10n-br-hr/14.0.1.1.1.dev1-14.0.1.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:30:03] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe]: success
+[2023-05-29 14:30:03] INFO root fetch - main [MainThread]: End processing [chatgpt-mixin]: success
+[2023-05-29 14:30:03] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-05-29 14:30:03] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfse]: success
+[2023-05-29 14:30:03] INFO root fetch - main [MainThread]: End processing [certbot-dns-vultr]: success
+[2023-05-29 14:30:04] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-29 14:30:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-fiscal]: success
+[2023-05-29 14:30:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-hr]: success
+[2023-05-29 14:30:04] INFO root fetch - main [MainThread]: Store serial: [18289734]
