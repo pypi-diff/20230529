@@ -14855,3 +14855,45 @@ EOFError: EOF read where object expected
 [2023-05-29 19:54:38] INFO root fetch - main [MainThread]: End processing [jupysql]: success
 [2023-05-29 19:54:38] INFO root fetch - main [MainThread]: End processing [tinkoff-investments]: success
 [2023-05-29 19:54:38] INFO root fetch - main [MainThread]: Store serial: [18292502]
+[2023-05-29 19:59:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292502]
+[2023-05-29 19:59:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs-binance-c2c-sapi
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dnacentersdk
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chalkpy
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multitools
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whocan
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: absl-extra
+[2023-05-29 19:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: triessentials
+[2023-05-29 19:59:47] INFO root fetch - processPackages [cs-binance-c2c-sapi]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 19:59:47] INFO root fetch - processPackages [chalkpy]: New version: [2.4.4] Old Version: [2.4.3]
+[2023-05-29 19:59:47] INFO root fetch - processPackages [dnacentersdk]: New version: [2.6.5] Old Version: [2.6.4]
+[2023-05-29 19:59:47] WARNING root fetch - processPackages [multitools]: Skipping, unable to determine old version
+[2023-05-29 19:59:47] INFO root fetch - main [MainThread]: End processing [multitools] error
+[2023-05-29 19:59:47] INFO root fetch - processPackages [whocan]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-29 19:59:47] WARNING root fetch - processPackages [triessentials]: Skipping, unable to determine old version
+[2023-05-29 19:59:47] INFO root fetch - processPackages [absl-extra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 19:59:47] INFO root fetch - main [MainThread]: End processing [triessentials] error
+[2023-05-29 19:59:47] INFO root fetch - processPackages [cs-binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/bf/ff/30014b2d763ead6552e3c9c00207cb74a0355d629ca1c13b28e80eb23004/cs-binance-c2c-sapi-0.0.6.tar.gz
+[2023-05-29 19:59:47] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/3b/a6/1e1178286cbefd619dd4fb0e40b8fa0e1a5839d619f28d4268d49013ad17/chalkpy-2.4.4.tar.gz
+[2023-05-29 19:59:47] INFO root fetch - processPackages [whocan]: Downloading https://files.pythonhosted.org/packages/46/98/0913dced7f666bc9342313e4792d5a5337c12d6e411a5cecabc2d361ed29/whocan-0.3.4.tar.gz
+[2023-05-29 19:59:47] INFO root fetch - processPackages [absl-extra]: Downloading https://files.pythonhosted.org/packages/29/c2/2963a9d6af04f01e35537596dae79293de441ce549712ff30add2367a97e/absl_extra-0.0.8.tar.gz
+[2023-05-29 19:59:47] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-29 19:59:47] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.4.3.tar.gz tmp/chalkpy-2.4.4.tar.gz --markdown 20230529/c/chalkpy/2.4.3-2.4.4/diff.md --exclude *.pyd
+[2023-05-29 19:59:47] INFO root fetch - processPackages [dnacentersdk]: Downloading https://files.pythonhosted.org/packages/95/1a/fc399aeb14ccfb2b93b1fdf4badb148266374c095df85c09f27d37c0b3cc/dnacentersdk-2.6.5.tar.gz
+[2023-05-29 19:59:47] INFO root fetch - processPackages [cs-binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/82/7e/8b0bee545e09d27fba1451dd6d8cd88af8a6b9a7dd7b1dfb4ce83ad1119b/cs-binance-c2c-sapi-0.0.7.tar.gz
+[2023-05-29 19:59:48] INFO root fetch - processPackages [absl-extra]: Downloading https://files.pythonhosted.org/packages/77/5e/479618372d66392b53074e5ea5029923827042b97d6e1bea363d3ab81d91/absl_extra-0.0.9.tar.gz
+[2023-05-29 19:59:48] INFO root fetch - processPackages [whocan]: Downloading https://files.pythonhosted.org/packages/4c/e5/4404af7a7f2b9f6fa152c396b3102e58514cd84c60cdb8b08f64288a30b7/whocan-0.3.5.tar.gz
+[2023-05-29 19:59:48] INFO root fetch - processPackages [dnacentersdk]: executing diffoscope
+[2023-05-29 19:59:48] INFO root fetch - processPackages [dnacentersdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnacentersdk-2.6.4.tar.gz tmp/dnacentersdk-2.6.5.tar.gz --markdown 20230529/d/dnacentersdk/2.6.4-2.6.5/diff.md --exclude *.pyd
+[2023-05-29 19:59:48] INFO root fetch - processPackages [absl-extra]: executing diffoscope
+[2023-05-29 19:59:48] INFO root fetch - processPackages [absl-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/absl_extra-0.0.8.tar.gz tmp/absl_extra-0.0.9.tar.gz --markdown 20230529/a/absl-extra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 19:59:48] INFO root fetch - processPackages [cs-binance-c2c-sapi]: executing diffoscope
+[2023-05-29 19:59:48] INFO root fetch - processPackages [cs-binance-c2c-sapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-binance-c2c-sapi-0.0.6.tar.gz tmp/cs-binance-c2c-sapi-0.0.7.tar.gz --markdown 20230529/c/cs-binance-c2c-sapi/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 19:59:48] INFO root fetch - processPackages [whocan]: executing diffoscope
+[2023-05-29 19:59:48] INFO root fetch - processPackages [whocan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whocan-0.3.4.tar.gz tmp/whocan-0.3.5.tar.gz --markdown 20230529/w/whocan/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-29 19:59:49] INFO root fetch - main [MainThread]: End processing [absl-extra]: success
+[2023-05-29 19:59:49] INFO root fetch - main [MainThread]: End processing [whocan]: success
+[2023-05-29 19:59:49] INFO root fetch - main [MainThread]: End processing [cs-binance-c2c-sapi]: success
+[2023-05-29 19:59:53] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-29 20:00:13] INFO root fetch - main [MainThread]: End processing [dnacentersdk]: success
+[2023-05-29 20:00:13] INFO root fetch - main [MainThread]: Store serial: [18292530]
