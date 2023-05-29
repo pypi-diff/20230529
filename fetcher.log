@@ -9735,3 +9735,59 @@
 [2023-05-29 13:58:06] INFO root fetch - main [MainThread]: End processing [teda]: success
 [2023-05-29 13:58:06] INFO root fetch - main [MainThread]: End processing [docstruct]: success
 [2023-05-29 13:58:06] INFO root fetch - main [MainThread]: Store serial: [18289446]
+[2023-05-29 14:03:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289446]
+[2023-05-29 14:03:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shurjopay-plugin
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hdn-research-environment
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quao
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semiTensorProduct
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rabbitmq-broker
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SerShulyak53501
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tc-messageBroker
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yyxx-game-pkg
+[2023-05-29 14:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-web-responsive
+[2023-05-29 14:03:15] INFO root fetch - processPackages [shurjopay-plugin]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-29 14:03:15] INFO root fetch - processPackages [hdn-research-environment]: New version: [2.0.0] Old Version: [1.5.3]
+[2023-05-29 14:03:15] INFO root fetch - processPackages [rabbitmq-broker]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-29 14:03:15] INFO root fetch - processPackages [quao]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-29 14:03:15] INFO root fetch - processPackages [semiTensorProduct]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 14:03:15] INFO root fetch - processPackages [odoo-addon-web-responsive]: New version: [16.0.1.1.1] Old Version: [16.0.1.1.0.2]
+[2023-05-29 14:03:16] WARNING root fetch - processPackages [SerShulyak53501]: Skipping, unable to determine old version
+[2023-05-29 14:03:16] INFO root fetch - main [MainThread]: End processing [SerShulyak53501] error
+[2023-05-29 14:03:16] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.5.4.1] Old Version: [2023.5.29.1]
+[2023-05-29 14:03:16] INFO root fetch - processPackages [tc-messageBroker]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 14:03:16] INFO root fetch - processPackages [odoo-addon-web-responsive]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [odoo-addon-web-responsive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_responsive-16.0.1.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_web_responsive-16.0.1.1.1-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-web-responsive/16.0.1.1.0.2-16.0.1.1.1/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [semiTensorProduct]: Downloading https://files.pythonhosted.org/packages/39/9a/98a88f5333a8ad6a504fe83a87b4fe35f02c1134f5e19e2a11f7ba40e284/semiTensorProduct-0.0.1.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [shurjopay-plugin]: Downloading https://files.pythonhosted.org/packages/e4/37/a325b51c8df6c94484e5f41449b0a3f8546c8c19a41a6fac91df8aeae014/shurjopay-plugin-0.1.6.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [quao]: Downloading https://files.pythonhosted.org/packages/e3/13/1a3c8b86236bd34bae129efcb7656b915a7d053d12c856d067e94d147f2c/quao-0.1.5.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/03/c0/9c8c70aad05fe63c38e9745a60e0ec60d233b4c8af92946b9e6894387683/hdn-research-environment-1.5.3.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [yyxx-game-pkg]: Downloading https://files.pythonhosted.org/packages/97/1d/983856dd3f2227d19d73504327265aa2b6096e7ac00a5848bdb8451664d2/yyxx_game_pkg-2023.5.29.1.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [shurjopay-plugin]: Downloading https://files.pythonhosted.org/packages/34/b0/e22e54e0eeaf6e95e9664ecf17776628005228ea18f37707e1ed5295c61e/shurjopay-plugin-0.1.7.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [rabbitmq-broker]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [rabbitmq-broker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rabbitmq-broker-1.0.1.tar.gz tmp/rabbitmq_broker-1.0.2-py3-none-any.whl.zip --markdown 20230529/r/rabbitmq-broker/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [quao]: Downloading https://files.pythonhosted.org/packages/82/6b/02f02aefceedbe71cf4af2a936c9a93ea550caf4d18d8631b4918957918e/quao-0.1.6.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [tc-messageBroker]: Downloading https://files.pythonhosted.org/packages/e7/3d/c4dec3eda4b60d47c1cf6daa8b659bf1b944fc2be729965b5d485a9bca2e/tc-messageBroker-1.1.1.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [quao]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [quao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quao-0.1.5.tar.gz tmp/quao-0.1.6.tar.gz --markdown 20230529/q/quao/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [semiTensorProduct]: Downloading https://files.pythonhosted.org/packages/ad/4c/23f7554be210c078883fcf3d9a451b22d3b599b59239c815f85d15fa8727/semiTensorProduct-0.0.2.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [shurjopay-plugin]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [shurjopay-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shurjopay-plugin-0.1.6.tar.gz tmp/shurjopay-plugin-0.1.7.tar.gz --markdown 20230529/s/shurjopay-plugin/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/3b/f7/858aa6ca8162fdccdf1485b6e92f268c5d0a606f6b8eb64eae63702daace/hdn-research-environment-2.0.0.tar.gz
+[2023-05-29 14:03:16] INFO root fetch - processPackages [semiTensorProduct]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [semiTensorProduct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semiTensorProduct-0.0.1.tar.gz tmp/semiTensorProduct-0.0.2.tar.gz --markdown 20230529/s/semiTensorProduct/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [hdn-research-environment]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [hdn-research-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdn-research-environment-1.5.3.tar.gz tmp/hdn-research-environment-2.0.0.tar.gz --markdown 20230529/h/hdn-research-environment/1.5.3-2.0.0/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [tc-messageBroker]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [tc-messageBroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tc-messageBroker-1.1.0.tar.gz tmp/tc-messageBroker-1.1.1.tar.gz --markdown 20230529/t/tc-messageBroker/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 14:03:16] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-05-29 14:03:16] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.5.29.1.tar.gz tmp/yyxx_game_pkg-2023.5.4.1.tar.gz --markdown 20230529/y/yyxx-game-pkg/2023.5.29.1-2023.5.4.1/diff.md --exclude *.pyd
+[2023-05-29 14:03:17] INFO root fetch - main [MainThread]: End processing [rabbitmq-broker]: success
+[2023-05-29 14:03:17] INFO root fetch - main [MainThread]: End processing [quao]: success
+[2023-05-29 14:03:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-responsive]: success
+[2023-05-29 14:03:18] INFO root fetch - main [MainThread]: End processing [tc-messageBroker]: success
+[2023-05-29 14:03:18] INFO root fetch - main [MainThread]: End processing [semiTensorProduct]: success
+[2023-05-29 14:03:18] INFO root fetch - main [MainThread]: End processing [shurjopay-plugin]: success
+[2023-05-29 14:03:18] INFO root fetch - main [MainThread]: End processing [hdn-research-environment]: success
+[2023-05-29 14:03:19] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
+[2023-05-29 14:03:19] INFO root fetch - main [MainThread]: Store serial: [18289475]
