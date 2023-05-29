@@ -14446,3 +14446,67 @@ EOFError: EOF read where object expected
 [2023-05-29 19:18:06] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
 [2023-05-29 19:18:07] INFO root fetch - main [MainThread]: End processing [cnmfsns]: success
 [2023-05-29 19:18:07] INFO root fetch - main [MainThread]: Store serial: [18292277]
+[2023-05-29 19:23:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18292277]
+[2023-05-29 19:23:16] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rcplus-alloy-common
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycontext-lib
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keypact
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timeslime
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jadn
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deeplc
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: LegacyNeuralNetworks
+[2023-05-29 19:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qbittorrent-api
+[2023-05-29 19:23:16] INFO root fetch - processPackages [keypact]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [timeslime]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-29 19:23:16] WARNING root fetch - processPackages [pycontext-lib]: Skipping, unable to determine old version
+[2023-05-29 19:23:16] INFO root fetch - processPackages [pycontext-lib]: Start processing: aos-prov
+[2023-05-29 19:23:16] INFO root fetch - main [MainThread]: End processing [pycontext-lib] error
+[2023-05-29 19:23:16] INFO root fetch - processPackages [rcplus-alloy-common]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [LegacyNeuralNetworks]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [jadn]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [deeplc]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [aos-prov]: New version: [4.1.0b1] Old Version: [4.0.2b3]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [qbittorrent-api]: New version: [6.0.0] Old Version: [2023.5.48]
+[2023-05-29 19:23:16] INFO root fetch - processPackages [rcplus-alloy-common]: Downloading https://files.pythonhosted.org/packages/c9/5e/2fbc34e23b78f3ad6204aac64763746d9d273bcaedc6e164555b9aa417cc/rcplus_alloy_common-0.2.0.tar.gz
+[2023-05-29 19:23:16] INFO root fetch - processPackages [keypact]: Downloading https://files.pythonhosted.org/packages/64/04/4b74f385dcf155c4867149c4e189aff79571a2bd5f7767a448e17749001d/keypact-0.3.1.tar.gz
+[2023-05-29 19:23:16] INFO root fetch - processPackages [LegacyNeuralNetworks]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [LegacyNeuralNetworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LegacyNeuralNetworks-0.0.4.tar.gz tmp/LegacyNeuralNetworks-0.0.5.tar.gz --markdown 20230529/L/LegacyNeuralNetworks/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 19:23:16] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230529/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-29 19:23:16] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230529/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-29 19:23:16] INFO root fetch - processPackages [timeslime]: Downloading https://files.pythonhosted.org/packages/2f/c8/789b6fdc55c12a7419e373e30327bd724259a9faa7a41d631e2bd73016a7/timeslime-1.6.1-py3-none-any.whl
+[2023-05-29 19:23:16] INFO root fetch - processPackages [qbittorrent-api]: Downloading https://files.pythonhosted.org/packages/83/6c/cdde08887cc362b9d79b10397b840ad9b59a89bb080540736d1ec235cfbe/qbittorrent-api-2023.5.48.tar.gz
+[2023-05-29 19:23:16] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/1c/f8/7e1734798e74f05228e49ccdba0f4c01c158158e2fae9cb8d04478404d3d/deeplc-2.1.8.tar.gz
+[2023-05-29 19:23:16] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 77887541>=10485760
+[2023-05-29 19:23:16] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2023-05-29 19:23:16] INFO root fetch - processPackages [timeslime]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [timeslime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeslime-1.6.0-py3-none-any.whl.zip tmp/timeslime-1.6.1-py3-none-any.whl.zip --markdown 20230529/t/timeslime/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-29 19:23:16] INFO root fetch - processPackages [keypact]: Downloading https://files.pythonhosted.org/packages/10/e3/d6929d3414b7898091536fe990b4253cf0fcff64eb0330d2916259ff88ba/keypact-0.4.0.tar.gz
+[2023-05-29 19:23:16] INFO root fetch - processPackages [rcplus-alloy-common]: Downloading https://files.pythonhosted.org/packages/61/60/ac9de996dd20109159b4584465ce484d7e54e1236b268ff1d6d794625489/rcplus_alloy_common-1.0.0.tar.gz
+[2023-05-29 19:23:16] INFO root fetch - processPackages [aos-prov]: Downloading https://files.pythonhosted.org/packages/aa/93/dbda1baf9852528d42254e232cebc37e40f9007c64084fa3bf2202626ce7/aos_prov-4.1.0b1-py3-none-any.whl
+[2023-05-29 19:23:16] INFO root fetch - processPackages [keypact]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [keypact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keypact-0.3.1.tar.gz tmp/keypact-0.4.0.tar.gz --markdown 20230529/k/keypact/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 19:23:16] INFO root fetch - processPackages [rcplus-alloy-common]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [rcplus-alloy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcplus_alloy_common-0.2.0.tar.gz tmp/rcplus_alloy_common-1.0.0.tar.gz --markdown 20230529/r/rcplus-alloy-common/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 19:23:16] INFO root fetch - processPackages [qbittorrent-api]: Downloading https://files.pythonhosted.org/packages/36/02/332b4c5faf3f6ba012d81e95f3c6edee1a65892cd8e697f5424546c999ab/qbittorrent-api-6.0.0.tar.gz
+[2023-05-29 19:23:16] INFO root fetch - processPackages [aos-prov]: executing diffoscope
+[2023-05-29 19:23:16] INFO root fetch - processPackages [aos-prov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aos_prov-4.0.2b3-py3-none-any.whl.zip tmp/aos_prov-4.1.0b1-py3-none-any.whl.zip --markdown 20230529/a/aos-prov/4.0.2b3-4.1.0b1/diff.md --exclude *.pyd
+[2023-05-29 19:23:17] INFO root fetch - processPackages [jadn]: executing diffoscope
+[2023-05-29 19:23:17] INFO root fetch - processPackages [jadn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jadn-0.6.8.tar.gz tmp/jadn-0.6.9.tar.gz --markdown 20230529/j/jadn/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-29 19:23:17] INFO root fetch - processPackages [qbittorrent-api]: executing diffoscope
+[2023-05-29 19:23:17] INFO root fetch - processPackages [qbittorrent-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbittorrent-api-2023.5.48.tar.gz tmp/qbittorrent-api-6.0.0.tar.gz --markdown 20230529/q/qbittorrent-api/2023.5.48-6.0.0/diff.md --exclude *.pyd
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [LegacyNeuralNetworks]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [timeslime]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [keypact]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [rcplus-alloy-common]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [qbittorrent-api]: success
+[2023-05-29 19:23:18] INFO root fetch - main [MainThread]: End processing [aos-prov]: success
+[2023-05-29 19:23:19] INFO root fetch - main [MainThread]: End processing [jadn]: success
+[2023-05-29 19:23:19] INFO root fetch - main [MainThread]: Store serial: [18292309]
