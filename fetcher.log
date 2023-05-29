@@ -8358,3 +8358,98 @@
 [2023-05-29 12:34:04] INFO root fetch - main [MainThread]: End processing [lazynovel]: success
 [2023-05-29 12:34:07] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
 [2023-05-29 12:34:07] INFO root fetch - main [MainThread]: Store serial: [18288569]
+[2023-05-29 12:39:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288569]
+[2023-05-29 12:39:16] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib-dzne-filedata
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: areaTestMouldByHuang
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gistingv6
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: locust
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myl
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: esparto
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mb-base
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cloudstructs
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ipyfilite
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pizurscan
+[2023-05-29 12:39:16] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [lib-dzne-filedata]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-29 12:39:16] WARNING root fetch - processPackages [gistingv6]: Skipping, unable to determine old version
+[2023-05-29 12:39:16] INFO root fetch - processPackages [esparto]: New version: [4.3.1] Old Version: [4.3.0]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [gistingv6]: Start processing: mb-base
+[2023-05-29 12:39:16] INFO root fetch - main [MainThread]: End processing [gistingv6] error
+[2023-05-29 12:39:16] INFO root fetch - processPackages [areaTestMouldByHuang]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291038] Old Version: [1.0.202305291037]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [pizurscan]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ipyfilite]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [myl]: New version: [0.6] Old Version: [0.5]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [cloudstructs]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305291038] Old Version: [1.0.202305291037]
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/b5/9d/6ccbef9a29b4f5524781acacba8aabc0866edea5615bc2f5c56568571f70/mb_base-1.0.202305291037-py3-none-any.whl
+[2023-05-29 12:39:16] INFO root fetch - processPackages [areaTestMouldByHuang]: Downloading https://files.pythonhosted.org/packages/c6/4d/56cae8540a83d0557aff22a9ed5526223a0eb10283fe33dff540d7cea92a/areaTestMouldByHuang-0.1.2.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/b5/9d/6ccbef9a29b4f5524781acacba8aabc0866edea5615bc2f5c56568571f70/mb_base-1.0.202305291037-py3-none-any.whl
+[2023-05-29 12:39:16] INFO root fetch - processPackages [esparto]: Downloading https://files.pythonhosted.org/packages/da/95/62a3b25bfa8079977d457fb6f5c67ab2d7d47fb78e698f6cdf21e0fc6b61/esparto-4.3.1.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [lib-dzne-filedata]: Downloading https://files.pythonhosted.org/packages/ea/1e/7cfb9446a752b5ad0d841deb8368db0d3abcf677ab85a1f21a84e8bf1015/lib-dzne-filedata-0.2.0.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ipyfilite]: Downloading https://files.pythonhosted.org/packages/f3/6b/db7425e902de9a21d99bff4f712e9535eddcd3ac243e0a01d5a851eaa7e7/ipyfilite-0.1.4.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [myl]: Downloading https://files.pythonhosted.org/packages/54/fe/1c09b6cc99ad405d17826ffb458a62c91930403da94ba25e038fd244aaeb/myl-0.6.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [myl]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [myl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myl-0.5.tar.gz tmp/myl-0.6.tar.gz --markdown 20230529/m/myl/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [esparto]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [esparto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esparto-4.3.0.tar.gz tmp/esparto-4.3.1.tar.gz --markdown 20230529/e/esparto/4.3.0-4.3.1/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [pizurscan]: Downloading https://files.pythonhosted.org/packages/a0/b9/f1dbe03b41682649c1da08fff748d7920df0f0aec06f3acd756de78fc33b/pizurscan-0.1.8.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [lib-dzne-filedata]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [lib-dzne-filedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-filedata-0.1.2.tar.gz tmp/lib-dzne-filedata-0.2.0.tar.gz --markdown 20230529/l/lib-dzne-filedata/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ipyfilite]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [ipyfilite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyfilite-0.1.3.tar.gz tmp/ipyfilite-0.1.4.tar.gz --markdown 20230529/i/ipyfilite/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [cloudstructs]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [cloudstructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudstructs-0.6.8.tar.gz tmp/cloudstructs-0.6.9.tar.gz --markdown 20230529/c/cloudstructs/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [locust]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20230529/l/locust/2.9.1.dev38-2.9.1.dev45/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/af/4e/f1aaf9d6c78806c488bf76822124d56e72dfed407cda054df37d0dd0f0c9/mb_base-1.0.202305291038-py3-none-any.whl
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/af/4e/f1aaf9d6c78806c488bf76822124d56e72dfed407cda054df37d0dd0f0c9/mb_base-1.0.202305291038-py3-none-any.whl
+[2023-05-29 12:39:16] INFO root fetch - processPackages [pizurscan]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [pizurscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pizurscan-0.1.7.tar.gz tmp/pizurscan-0.1.8.tar.gz --markdown 20230529/p/pizurscan/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [areaTestMouldByHuang]: Downloading https://files.pythonhosted.org/packages/92/f8/2c34a835d072a97ade35d98f6bbd2b136276df0f15d58f0efeb875e2d8bc/areaTestMouldByHuang-0.1.3.tar.gz
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291037-py3-none-any.whl.zip tmp/mb_base-1.0.202305291038-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291037-1.0.202305291038/diff.md --exclude *.pyd
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 12:39:16] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305291037-py3-none-any.whl.zip tmp/mb_base-1.0.202305291038-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305291037-1.0.202305291038/diff.md --exclude *.pyd
+[2023-05-29 12:39:17] INFO root fetch - processPackages [areaTestMouldByHuang]: executing diffoscope
+[2023-05-29 12:39:17] INFO root fetch - processPackages [areaTestMouldByHuang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areaTestMouldByHuang-0.1.2.tar.gz tmp/areaTestMouldByHuang-0.1.3.tar.gz --markdown 20230529/a/areaTestMouldByHuang/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 12:39:18] INFO root fetch - processPackages [esparto]: Start processing: areaTestMouldByHuang
+[2023-05-29 12:39:18] INFO root fetch - main [MainThread]: End processing [esparto]: success
+[2023-05-29 12:39:18] INFO root fetch - processPackages [areaTestMouldByHuang]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 12:39:18] INFO root fetch - processPackages [myl]: Start processing: ptal-api
+[2023-05-29 12:39:18] INFO root fetch - main [MainThread]: End processing [myl]: success
+[2023-05-29 12:39:18] INFO root fetch - processPackages [ptal-api]: New version: [0.12.0] Old Version: [0.11.6.1]
+[2023-05-29 12:39:18] INFO root fetch - processPackages [areaTestMouldByHuang]: executing diffoscope
+[2023-05-29 12:39:18] INFO root fetch - processPackages [areaTestMouldByHuang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areaTestMouldByHuang-0.1.2.tar.gz tmp/areaTestMouldByHuang-0.1.3.tar.gz --markdown 20230529/a/areaTestMouldByHuang/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 12:39:18] INFO root fetch - processPackages [pizurscan]: Start processing: gkligo
+[2023-05-29 12:39:18] INFO root fetch - main [MainThread]: End processing [pizurscan]: success
+[2023-05-29 12:39:18] INFO root fetch - processPackages [lib-dzne-filedata]: Start processing: httplus
+[2023-05-29 12:39:18] INFO root fetch - main [MainThread]: End processing [lib-dzne-filedata]: success
+[2023-05-29 12:39:18] INFO root fetch - processPackages [gkligo]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 12:39:18] INFO root fetch - processPackages [gkligo]: executing diffoscope
+[2023-05-29 12:39:18] INFO root fetch - processPackages [gkligo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkligo-0.1.3.tar.gz tmp/gkligo-0.1.4.tar.gz --markdown 20230529/g/gkligo/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 12:39:18] WARNING root fetch - processPackages [httplus]: Skipping, unable to determine old version
+[2023-05-29 12:39:18] INFO root fetch - processPackages [httplus]: Start processing: gistingv10
+[2023-05-29 12:39:18] INFO root fetch - main [MainThread]: End processing [httplus] error
+[2023-05-29 12:39:18] WARNING root fetch - processPackages [gistingv10]: Skipping, unable to determine old version
+[2023-05-29 12:39:18] INFO root fetch - processPackages [gistingv10]: Start processing: qosd
+[2023-05-29 12:39:18] INFO root fetch - main [MainThread]: End processing [gistingv10] error
+[2023-05-29 12:39:18] INFO root fetch - processPackages [ptal-api]: Downloading https://files.pythonhosted.org/packages/b9/03/591adb8803928b6737f862eecca857b49aade654ab82d22b717a2e033681/ptal_api-0.12.0.tar.gz
+[2023-05-29 12:39:19] INFO root fetch - main [MainThread]: End processing [areaTestMouldByHuang]: success
+[2023-05-29 12:39:19] INFO root fetch - main [MainThread]: End processing [cloudstructs]: success
+[2023-05-29 12:39:19] INFO root fetch - processPackages [qosd]: New version: [20230529] Old Version: [20230518]
+[2023-05-29 12:39:19] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:39:19] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 12:39:19] INFO root fetch - processPackages [ptal-api]: executing diffoscope
+[2023-05-29 12:39:19] INFO root fetch - processPackages [ptal-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptal_api-0.11.6.1.tar.gz tmp/ptal_api-0.12.0.tar.gz --markdown 20230529/p/ptal-api/0.11.6.1-0.12.0/diff.md --exclude *.pyd
+[2023-05-29 12:39:19] INFO root fetch - processPackages [qosd]: Downloading https://files.pythonhosted.org/packages/ff/19/21f9e803a661066b7f8112e46327f6e153008811a08d7c4f68f4f2eb5f10/qosd-20230529.tar.gz
+[2023-05-29 12:39:19] INFO root fetch - processPackages [qosd]: executing diffoscope
+[2023-05-29 12:39:19] INFO root fetch - processPackages [qosd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qosd-20230518.tar.gz tmp/qosd-20230529.tar.gz --markdown 20230529/q/qosd/20230518-20230529/diff.md --exclude *.pyd
+[2023-05-29 12:39:20] INFO root fetch - main [MainThread]: End processing [areaTestMouldByHuang]: success
+[2023-05-29 12:39:20] INFO root fetch - main [MainThread]: End processing [gkligo]: success
+[2023-05-29 12:39:20] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2023-05-29 12:39:20] INFO root fetch - main [MainThread]: End processing [ipyfilite]: success
+[2023-05-29 12:39:20] INFO root fetch - main [MainThread]: End processing [qosd]: success
+[2023-05-29 12:40:10] INFO root fetch - main [MainThread]: End processing [ptal-api]: success
+[2023-05-29 12:40:10] INFO root fetch - main [MainThread]: Store serial: [18288623]
