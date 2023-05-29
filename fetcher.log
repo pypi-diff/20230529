@@ -11268,3 +11268,60 @@ EOFError: EOF read where object expected
 [2023-05-29 15:30:55] INFO root fetch - main [MainThread]: End processing [bagbag]: success
 [2023-05-29 15:30:57] INFO root fetch - main [MainThread]: End processing [django-ninja-extra]: success
 [2023-05-29 15:30:57] INFO root fetch - main [MainThread]: Store serial: [18290364]
+[2023-05-29 15:36:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290364]
+[2023-05-29 15:36:06] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: type3detect
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spaemis
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clickzetta-connector
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Oz-Engine
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clickzetta-sqlalchemy
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fief-server
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qwak-core
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: custom-json-serializer-123
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbt-upsolver
+[2023-05-29 15:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: quanturf
+[2023-05-29 15:36:06] WARNING root fetch - processPackages [Oz-Engine]: Skipping, unable to determine old version
+[2023-05-29 15:36:06] INFO root fetch - main [MainThread]: End processing [Oz-Engine] error
+[2023-05-29 15:36:06] INFO root fetch - processPackages [qwak-core]: New version: [0.0.85] Old Version: [0.0.84]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [type3detect]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 15:36:06] WARNING root fetch - processPackages [custom-json-serializer-123]: Skipping, unable to determine old version
+[2023-05-29 15:36:06] INFO root fetch - main [MainThread]: End processing [custom-json-serializer-123] error
+[2023-05-29 15:36:06] INFO root fetch - processPackages [clickzetta-connector]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [spaemis]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [clickzetta-sqlalchemy]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [dbt-upsolver]: New version: [1.5.23] Old Version: [1.5.22]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [quanturf]: New version: [8.6] Old Version: [8.5]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [fief-server]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-29 15:36:06] INFO root fetch - processPackages [clickzetta-connector]: Downloading https://files.pythonhosted.org/packages/c7/e4/55f312d36dc6cb9686cbcce7b23652f72a68a2afc4bbcb26dc8b4c017e5b/clickzetta-connector-0.8.2.tar.gz
+[2023-05-29 15:36:06] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/01/76/bf2f9df28daf24d9237461d1cf3219012e768425ca5fb5419fdbe0b84878/qwak_core-0.0.85.tar.gz
+[2023-05-29 15:36:06] INFO root fetch - processPackages [quanturf]: Downloading https://files.pythonhosted.org/packages/4e/99/cc4145979d7ad9ceed8d09819e7c44c43670a622285159786e1a3459eae2/quanturf-8.5.tar.gz
+[2023-05-29 15:36:06] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/32/e6/63e4c4133ae3d90a29257e06792ebfb6a2a46b40e68ed5c51ac8189e8032/clickzetta-sqlalchemy-0.8.2.tar.gz
+[2023-05-29 15:36:07] INFO root fetch - processPackages [type3detect]: Downloading https://files.pythonhosted.org/packages/9b/55/1e7ef84441ec8b7693933e5a5e05abb7ad13ac87096d453008f3d36f259b/type3detect-0.0.3.tar.gz
+[2023-05-29 15:36:07] INFO root fetch - processPackages [spaemis]: Downloading https://files.pythonhosted.org/packages/92/97/702fc3c780833d555335361a2400f9f54256e65c9a8b4a5a3b0473dea01b/spaemis-0.2.3.tar.gz
+[2023-05-29 15:36:07] INFO root fetch - processPackages [clickzetta-sqlalchemy]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [clickzetta-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-sqlalchemy-0.8.1.tar.gz tmp/clickzetta-sqlalchemy-0.8.2.tar.gz --markdown 20230529/c/clickzetta-sqlalchemy/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [clickzetta-connector]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [clickzetta-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-connector-0.8.1.tar.gz tmp/clickzetta-connector-0.8.2.tar.gz --markdown 20230529/c/clickzetta-connector/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.84.tar.gz tmp/qwak_core-0.0.85.tar.gz --markdown 20230529/q/qwak-core/0.0.84-0.0.85/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [dbt-upsolver]: Downloading https://files.pythonhosted.org/packages/17/57/606d56d3708f3ee8bcb712a591ce2d1ca9c39f6df2bd90a6ee02634e3bf4/dbt-upsolver-1.5.23.tar.gz
+[2023-05-29 15:36:07] INFO root fetch - processPackages [spaemis]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [spaemis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaemis-0.2.2.tar.gz tmp/spaemis-0.2.3.tar.gz --markdown 20230529/s/spaemis/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [dbt-upsolver]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [dbt-upsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-upsolver-1.5.22.tar.gz tmp/dbt-upsolver-1.5.23.tar.gz --markdown 20230529/d/dbt-upsolver/1.5.22-1.5.23/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [type3detect]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [quanturf]: Downloading https://files.pythonhosted.org/packages/ac/8a/0d4fbf6e47658c594725dae5e22329387b573ff7bd24625ffb0a26198bf5/quanturf-8.6.tar.gz
+[2023-05-29 15:36:07] INFO root fetch - processPackages [type3detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/type3detect-0.0.2.tar.gz tmp/type3detect-0.0.3.tar.gz --markdown 20230529/t/type3detect/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [fief-server]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [fief-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fief-server-0.8.2.tar.gz tmp/fief-server-0.9.0.tar.gz --markdown 20230529/f/fief-server/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 15:36:07] INFO root fetch - processPackages [quanturf]: executing diffoscope
+[2023-05-29 15:36:07] INFO root fetch - processPackages [quanturf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quanturf-8.5.tar.gz tmp/quanturf-8.6.tar.gz --markdown 20230529/q/quanturf/8.5-8.6/diff.md --exclude *.pyd
+[2023-05-29 15:36:08] INFO root fetch - main [MainThread]: End processing [clickzetta-sqlalchemy]: success
+[2023-05-29 15:36:09] INFO root fetch - main [MainThread]: End processing [dbt-upsolver]: success
+[2023-05-29 15:36:09] INFO root fetch - main [MainThread]: End processing [spaemis]: success
+[2023-05-29 15:36:09] INFO root fetch - main [MainThread]: End processing [quanturf]: success
+[2023-05-29 15:36:09] INFO root fetch - main [MainThread]: End processing [clickzetta-connector]: success
+[2023-05-29 15:36:09] INFO root fetch - main [MainThread]: End processing [type3detect]: success
+[2023-05-29 15:36:09] INFO root fetch - main [MainThread]: End processing [fief-server]: success
+[2023-05-29 15:36:12] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-29 15:36:12] INFO root fetch - main [MainThread]: Store serial: [18290396]
