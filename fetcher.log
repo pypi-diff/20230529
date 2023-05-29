@@ -12119,3 +12119,69 @@ EOFError: EOF read where object expected
 [2023-05-29 16:34:37] INFO root fetch - main [MainThread]: End processing [modal-client]: success
 [2023-05-29 16:34:42] INFO root fetch - main [MainThread]: End processing [yangsuite-yangtree]: success
 [2023-05-29 16:34:42] INFO root fetch - main [MainThread]: Store serial: [18290953]
+[2023-05-29 16:39:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290953]
+[2023-05-29 16:39:51] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msaDocModels
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-flux
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gemato
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tupa123
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dolphin-python
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyathena
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webpy-framework
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ardilla
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: yangsuite-restconf
+[2023-05-29 16:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mgz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [msaDocModels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [gemato]: New version: [9.3] Old Version: [9.2]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [yangsuite-restconf]: New version: [2.1.5] Old Version: [2.1.4]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [dolphin-python]: New version: [0.0.6.5] Old Version: [0.0.6.3]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [ardilla]: New version: [0.3.2b0] Old Version: [0.3.1b0]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [mgz]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [tupa123]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pyathena]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [webpy-framework]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pulumi-flux]: New version: [1.0.0] Old Version: [0.25.3]
+[2023-05-29 16:39:52] INFO root fetch - processPackages [mgz]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [mgz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgz-1.8.8.tar.gz tmp/mgz-1.8.9.tar.gz --markdown 20230529/m/mgz/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/7a/e7/d0fbd48f6647091035faace376b8e4a0cefe2fe39322ee0d40bdff395dfd/ardilla-0.3.1b0.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [dolphin-python]: Downloading https://files.pythonhosted.org/packages/83/bc/f38ff86655d503f519072a3aea8186cce5bae901d69680a5b6dc8f8d5395/dolphin_python-0.0.6.3-py2.py3-none-any.whl
+[2023-05-29 16:39:52] INFO root fetch - processPackages [yangsuite-restconf]: Downloading https://files.pythonhosted.org/packages/a1/bf/40c6fa65b209549040621f1752fead758a93c1ad0a600f89fe333182de85/yangsuite_restconf-2.1.4-py3-none-any.whl
+[2023-05-29 16:39:52] INFO root fetch - processPackages [gemato]: Downloading https://files.pythonhosted.org/packages/56/28/7c39e4646ac8b94ad9c1113e7c9a0b341c2fa200299b9377f8ebd89981a3/gemato-9.2.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pulumi-flux]: Downloading https://files.pythonhosted.org/packages/87/65/7104cd0aa09bd35f3e7c433ea89dd00df6c688fc583ed9ce0cd7982dec72/pulumi_flux-0.25.3.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.4.8.tar.gz tmp/tupa123-1.4.9.tar.gz --markdown 20230529/t/tupa123/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [msaDocModels]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [msaDocModels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msaDocModels-0.0.8.tar.gz tmp/msaDocModels-0.0.9.tar.gz --markdown 20230529/m/msaDocModels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/e2/68/eb6b17341e909c711f4fa258a77482bc666225a87b8e38d6aefe429935b2/pyathena-3.0.3.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/28/15/018cbb64c23174651499704a286de6126e0e2d689f6a9bbbdfe2480f892b/webpy-framework-1.2.0.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/b9/65/b720a3c2706b9d96282a612ea01aba0e8a81f81a4ca989876b28348a1ed3/ardilla-0.3.2b0.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [dolphin-python]: Downloading https://files.pythonhosted.org/packages/65/b1/c86f0c694a4c85e01edeef15787b82c15a1ace0880f5b685ed3975c10d85/dolphin_python-0.0.6.5-py2.py3-none-any.whl
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyathena-3.0.2.tar.gz tmp/pyathena-3.0.3.tar.gz --markdown 20230529/p/pyathena/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [gemato]: Downloading https://files.pythonhosted.org/packages/8b/b9/eb7c0e9069c07656a7773e15538d682df2767ee30d5281a3709e64a00aaf/gemato-9.3.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.3.1b0.tar.gz tmp/ardilla-0.3.2b0.tar.gz --markdown 20230529/a/ardilla/0.3.1b0-0.3.2b0/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pulumi-flux]: Downloading https://files.pythonhosted.org/packages/31/71/bd0658462e9ab262f4daa82bcfefe5358c4af2f147d518997e8c59e391ce/pulumi_flux-1.0.0.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [yangsuite-restconf]: Downloading https://files.pythonhosted.org/packages/7f/fe/8e4024f0e31e8005b15f82ce5820676ac88dacc2295bf74e1c2afc496c2b/yangsuite_restconf-2.1.5-py3-none-any.whl
+[2023-05-29 16:39:52] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/4f/ba/c531fb4b4ea14462dd357ef2a8f924792f5868ee864082bc1c1c31a6f6e7/webpy-framework-1.2.1.tar.gz
+[2023-05-29 16:39:52] INFO root fetch - processPackages [dolphin-python]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [dolphin-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolphin_python-0.0.6.3-py2.py3-none-any.whl.zip tmp/dolphin_python-0.0.6.5-py2.py3-none-any.whl.zip --markdown 20230529/d/dolphin-python/0.0.6.3-0.0.6.5/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [gemato]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [gemato]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemato-9.2.tar.gz tmp/gemato-9.3.tar.gz --markdown 20230529/g/gemato/9.2-9.3/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pulumi-flux]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [pulumi-flux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_flux-0.25.3.tar.gz tmp/pulumi_flux-1.0.0.tar.gz --markdown 20230529/p/pulumi-flux/0.25.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [yangsuite-restconf]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [yangsuite-restconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_restconf-2.1.4-py3-none-any.whl.zip tmp/yangsuite_restconf-2.1.5-py3-none-any.whl.zip --markdown 20230529/y/yangsuite-restconf/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2023-05-29 16:39:52] INFO root fetch - processPackages [webpy-framework]: executing diffoscope
+[2023-05-29 16:39:52] INFO root fetch - processPackages [webpy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpy-framework-1.2.0.tar.gz tmp/webpy-framework-1.2.1.tar.gz --markdown 20230529/w/webpy-framework/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-29 16:39:53] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-05-29 16:39:54] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-29 16:39:54] INFO root fetch - main [MainThread]: End processing [msaDocModels]: success
+[2023-05-29 16:39:54] INFO root fetch - main [MainThread]: End processing [mgz]: success
+[2023-05-29 16:39:54] INFO root fetch - main [MainThread]: End processing [dolphin-python]: success
+[2023-05-29 16:39:54] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
+[2023-05-29 16:39:54] INFO root fetch - main [MainThread]: End processing [pulumi-flux]: success
+[2023-05-29 16:39:55] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-05-29 16:39:55] INFO root fetch - main [MainThread]: End processing [gemato]: success
+[2023-05-29 16:40:02] INFO root fetch - main [MainThread]: End processing [yangsuite-restconf]: success
+[2023-05-29 16:40:02] INFO root fetch - main [MainThread]: Store serial: [18290981]
