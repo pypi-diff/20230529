@@ -18048,3 +18048,44 @@ EOFError: EOF read where object expected
 [2023-05-29 23:29:02] INFO root fetch - main [MainThread]: End processing [manipulation]: success
 [2023-05-29 23:29:02] INFO root fetch - main [MainThread]: End processing [dimod]: success
 [2023-05-29 23:29:02] INFO root fetch - main [MainThread]: Store serial: [18294626]
+[2023-05-29 23:34:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294626]
+[2023-05-29 23:34:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoscrum
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PikhtovSerLib
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maisaedu-utilities-prefect
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maisaedu-poormans-dms
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphdisplay
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: authomize-rest-api-client
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yt-fts
+[2023-05-29 23:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shawn
+[2023-05-29 23:34:12] INFO root fetch - processPackages [maisaedu-poormans-dms]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 23:34:12] WARNING root fetch - processPackages [PikhtovSerLib]: Skipping, unable to determine old version
+[2023-05-29 23:34:12] INFO root fetch - main [MainThread]: End processing [PikhtovSerLib] error
+[2023-05-29 23:34:12] INFO root fetch - processPackages [maisaedu-utilities-prefect]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 23:34:12] WARNING root fetch - processPackages [autoscrum]: Skipping, unable to determine old version
+[2023-05-29 23:34:12] INFO root fetch - main [MainThread]: End processing [autoscrum] error
+[2023-05-29 23:34:12] INFO root fetch - processPackages [authomize-rest-api-client]: New version: [4.1.3] Old Version: [4.1.2]
+[2023-05-29 23:34:12] INFO root fetch - processPackages [graphdisplay]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-29 23:34:12] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 23:34:12] INFO root fetch - processPackages [maisaedu-poormans-dms]: executing diffoscope
+[2023-05-29 23:34:12] INFO root fetch - processPackages [maisaedu-poormans-dms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-poormans-dms-1.0.8.tar.gz tmp/maisaedu-poormans-dms-1.0.9.tar.gz --markdown 20230529/m/maisaedu-poormans-dms/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:34:12] INFO root fetch - processPackages [maisaedu-utilities-prefect]: executing diffoscope
+[2023-05-29 23:34:12] INFO root fetch - processPackages [maisaedu-utilities-prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-utilities-prefect-1.0.8.tar.gz tmp/maisaedu-utilities-prefect-1.0.9.tar.gz --markdown 20230529/m/maisaedu-utilities-prefect/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 23:34:12] WARNING root fetch - processPackages [shawn]: Skipping, unable to determine old version
+[2023-05-29 23:34:12] INFO root fetch - main [MainThread]: End processing [shawn] error
+[2023-05-29 23:34:12] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/07/27/81af49bf3228838a5be25585fd9eafb45419bd52a1bd7d47660f8fd3f1e6/yt-fts-0.1.9.tar.gz
+[2023-05-29 23:34:12] INFO root fetch - processPackages [graphdisplay]: Downloading https://files.pythonhosted.org/packages/26/c8/16e0f89ce8042ba2aea2d0c929ebc2e9938157aa2a056cf7234e66bb20a7/graphdisplay-0.4.0.tar.gz
+[2023-05-29 23:34:12] INFO root fetch - processPackages [authomize-rest-api-client]: Downloading https://files.pythonhosted.org/packages/08/67/a72e0b1081127c85223c05ba31090fa955ecc5ab2359d0e2d1bb59701c23/authomize-rest-api-client-4.1.3.tar.gz
+[2023-05-29 23:34:13] INFO root fetch - main [MainThread]: End processing [maisaedu-poormans-dms]: success
+[2023-05-29 23:34:13] INFO root fetch - main [MainThread]: End processing [maisaedu-utilities-prefect]: success
+[2023-05-29 23:34:14] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-29 23:34:14] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20230529/y/yt-fts/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 23:34:14] INFO root fetch - processPackages [authomize-rest-api-client]: executing diffoscope
+[2023-05-29 23:34:14] INFO root fetch - processPackages [authomize-rest-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authomize-rest-api-client-4.1.2.tar.gz tmp/authomize-rest-api-client-4.1.3.tar.gz --markdown 20230529/a/authomize-rest-api-client/4.1.2-4.1.3/diff.md --exclude *.pyd
+[2023-05-29 23:34:14] INFO root fetch - processPackages [graphdisplay]: Downloading https://files.pythonhosted.org/packages/5a/de/687a3a09436147fe461a05a7e2206fedcb3540a7e60eb2230213e66b3685/graphdisplay-0.4.1.tar.gz
+[2023-05-29 23:34:14] INFO root fetch - processPackages [graphdisplay]: executing diffoscope
+[2023-05-29 23:34:14] INFO root fetch - processPackages [graphdisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphdisplay-0.4.0.tar.gz tmp/graphdisplay-0.4.1.tar.gz --markdown 20230529/g/graphdisplay/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-29 23:34:15] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-29 23:34:15] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
+[2023-05-29 23:34:15] INFO root fetch - main [MainThread]: End processing [graphdisplay]: success
+[2023-05-29 23:34:15] INFO root fetch - main [MainThread]: Store serial: [18294652]
