@@ -11807,3 +11807,88 @@ EOFError: EOF read where object expected
 [2023-05-29 16:13:22] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
 [2023-05-29 16:13:32] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-05-29 16:13:32] INFO root fetch - main [MainThread]: Store serial: [18290756]
+[2023-05-29 16:18:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290756]
+[2023-05-29 16:18:45] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dls-servbase
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: obrpy
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: centesimal-iot
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: boardgen
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lib-dzne-sqlite
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: satori-ci
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tablepy-lib
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: roktools
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tufup
+[2023-05-29 16:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hello2
+[2023-05-29 16:18:45] INFO root fetch - processPackages [boardgen]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [tablepy-lib]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [lib-dzne-sqlite]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [dls-servbase]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [obrpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [roktools]: New version: [5.4.0] Old Version: [5.3.0]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [satori-ci]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [tufup]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [hello2]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-29 16:18:45] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-29 16:18:45] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.8-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.9-py2.py3-none-any.whl.zip --markdown 20230529/c/centesimal-iot/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 16:18:45] INFO root fetch - processPackages [tablepy-lib]: Downloading https://files.pythonhosted.org/packages/d5/be/70df2c578cc1c9c4795c78f4d7cfb93f5ed970a79e73c71ad6a9c9397934/tablepy_lib-0.5.0.tar.gz
+[2023-05-29 16:18:45] INFO root fetch - processPackages [boardgen]: Downloading https://files.pythonhosted.org/packages/d1/5c/a54112699c9e1cc9f8b9daaf14bf9a97f2be9708a1e3243cfc88124d31d6/boardgen-0.6.1.tar.gz
+[2023-05-29 16:18:45] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/89/83/ec91ad23a50d6138d32022061008c9b5e22daa60e2a102cfcea54a276996/hello2-1.8.1.tar.gz
+[2023-05-29 16:18:45] INFO root fetch - processPackages [roktools]: Downloading https://files.pythonhosted.org/packages/ee/37/4e0a61995e2be942fcb2cfc2cf3f57a4567c5cec145bb6cb15158dd2f2dd/roktools-5.3.0-py2.py3-none-any.whl
+[2023-05-29 16:18:45] INFO root fetch - processPackages [lib-dzne-sqlite]: Downloading https://files.pythonhosted.org/packages/5f/f5/77d2d4c33152083ede21f60045a5436d3783d56132eb36fe8046cd99a423/lib-dzne-sqlite-0.1.1.tar.gz
+[2023-05-29 16:18:45] INFO root fetch - processPackages [tufup]: Downloading https://files.pythonhosted.org/packages/60/dc/a0fa438c9bbb330304fffdf81981d295e168df055a069adf8f5e167a8c88/tufup-0.4.9.tar.gz
+[2023-05-29 16:18:46] INFO root fetch - processPackages [tablepy-lib]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [tablepy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablepy_lib-0.4.0.tar.gz tmp/tablepy_lib-0.5.0.tar.gz --markdown 20230529/t/tablepy-lib/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [dls-servbase]: Downloading https://files.pythonhosted.org/packages/de/0f/bb51a53ff052e0543d86c352f086db6cbefb41c2425fc43929e8107e673d/dls-servbase-1.4.1.tar.gz
+[2023-05-29 16:18:46] INFO root fetch - processPackages [obrpy]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [obrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obrpy-0.0.8.tar.gz tmp/obrpy-0.0.9.tar.gz --markdown 20230529/o/obrpy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.8.0.tar.gz tmp/hello2-1.8.1.tar.gz --markdown 20230529/h/hello2/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [boardgen]: Downloading https://files.pythonhosted.org/packages/01/66/c557e716cafdceac888ef55d6a32054a53ccb7b36b185fc020dfeb3e32f4/boardgen-0.6.2.tar.gz
+[2023-05-29 16:18:46] INFO root fetch - processPackages [dls-servbase]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [dls-servbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dls-servbase-1.4.0.tar.gz tmp/dls-servbase-1.4.1.tar.gz --markdown 20230529/d/dls-servbase/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_ci-1.2.8.tar.gz tmp/satori_ci-1.2.9.tar.gz --markdown 20230529/s/satori-ci/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [tufup]: Downloading https://files.pythonhosted.org/packages/c1/90/d7eace23432ed28fd1139602f3ed36d7255be7124492407ad024e83fa031/tufup-0.5.0.tar.gz
+[2023-05-29 16:18:46] INFO root fetch - processPackages [boardgen]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [boardgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boardgen-0.6.1.tar.gz tmp/boardgen-0.6.2.tar.gz --markdown 20230529/b/boardgen/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [roktools]: Downloading https://files.pythonhosted.org/packages/45/ad/bcb703fdbadc6acd94e247da0eea39cece3e098ee5cb8912260d74cf90a7/roktools-5.4.0-py2.py3-none-any.whl
+[2023-05-29 16:18:46] INFO root fetch - processPackages [lib-dzne-sqlite]: Downloading https://files.pythonhosted.org/packages/2c/be/2b37638cdfd9ccfc4c11ea7891b3d542f4d5eb56cb7a1fb33a2482bee28c/lib-dzne-sqlite-0.2.0.tar.gz
+[2023-05-29 16:18:46] INFO root fetch - processPackages [tufup]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [tufup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tufup-0.4.9.tar.gz tmp/tufup-0.5.0.tar.gz --markdown 20230529/t/tufup/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [lib-dzne-sqlite]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [lib-dzne-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-sqlite-0.1.1.tar.gz tmp/lib-dzne-sqlite-0.2.0.tar.gz --markdown 20230529/l/lib-dzne-sqlite/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 16:18:46] INFO root fetch - processPackages [roktools]: executing diffoscope
+[2023-05-29 16:18:46] INFO root fetch - processPackages [roktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roktools-5.3.0-py2.py3-none-any.whl.zip tmp/roktools-5.4.0-py2.py3-none-any.whl.zip --markdown 20230529/r/roktools/5.3.0-5.4.0/diff.md --exclude *.pyd
+[2023-05-29 16:18:47] INFO root fetch - processPackages [centesimal-iot]: Start processing: housekeeper
+[2023-05-29 16:18:47] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-29 16:18:47] INFO root fetch - processPackages [housekeeper]: New version: [4.5.0] Old Version: [4.4.0]
+[2023-05-29 16:18:47] INFO root fetch - processPackages [housekeeper]: Downloading https://files.pythonhosted.org/packages/54/66/4581f92fdaa3e4e484a56fb030b7cba84d3620734a4f251775740078276c/housekeeper-4.4.0.tar.gz
+[2023-05-29 16:18:47] INFO root fetch - processPackages [tablepy-lib]: Start processing: tikzplotly
+[2023-05-29 16:18:47] INFO root fetch - main [MainThread]: End processing [tablepy-lib]: success
+[2023-05-29 16:18:47] WARNING root fetch - processPackages [tikzplotly]: Skipping, unable to determine old version
+[2023-05-29 16:18:47] INFO root fetch - processPackages [tikzplotly]: Start processing: airflow-mcd
+[2023-05-29 16:18:47] INFO root fetch - main [MainThread]: End processing [tikzplotly] error
+[2023-05-29 16:18:47] INFO root fetch - processPackages [airflow-mcd]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 16:18:47] INFO root fetch - processPackages [obrpy]: Start processing: marionette-predeployed
+[2023-05-29 16:18:47] INFO root fetch - main [MainThread]: End processing [obrpy]: success
+[2023-05-29 16:18:47] INFO root fetch - processPackages [marionette-predeployed]: New version: [2.0.0b1] Old Version: [2.0.0b0]
+[2023-05-29 16:18:47] INFO root fetch - processPackages [housekeeper]: Downloading https://files.pythonhosted.org/packages/2b/40/f1f62d34392d6da339388a83e0eff22b725106ab682dd32d4ccd39abb036/housekeeper-4.5.0.tar.gz
+[2023-05-29 16:18:47] INFO root fetch - processPackages [housekeeper]: executing diffoscope
+[2023-05-29 16:18:47] INFO root fetch - processPackages [housekeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/housekeeper-4.4.0.tar.gz tmp/housekeeper-4.5.0.tar.gz --markdown 20230529/h/housekeeper/4.4.0-4.5.0/diff.md --exclude *.pyd
+[2023-05-29 16:18:47] INFO root fetch - processPackages [airflow-mcd]: Downloading https://files.pythonhosted.org/packages/23/d5/02256fdef26f1fc04de9b679c5129a83c2ad151a53b13a66decbbdb6da92/airflow_mcd-0.1.1.tar.gz
+[2023-05-29 16:18:48] INFO root fetch - processPackages [airflow-mcd]: executing diffoscope
+[2023-05-29 16:18:48] INFO root fetch - processPackages [airflow-mcd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_mcd-0.1.0.tar.gz tmp/airflow_mcd-0.1.1.tar.gz --markdown 20230529/a/airflow-mcd/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 16:18:48] INFO root fetch - processPackages [marionette-predeployed]: executing diffoscope
+[2023-05-29 16:18:48] INFO root fetch - processPackages [marionette-predeployed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marionette-predeployed-2.0.0b0.tar.gz tmp/marionette-predeployed-2.0.0b1.tar.gz --markdown 20230529/m/marionette-predeployed/2.0.0b0-2.0.0b1/diff.md --exclude *.pyd
+[2023-05-29 16:18:48] INFO root fetch - main [MainThread]: End processing [roktools]: success
+[2023-05-29 16:18:48] INFO root fetch - main [MainThread]: End processing [lib-dzne-sqlite]: success
+[2023-05-29 16:18:48] INFO root fetch - main [MainThread]: End processing [dls-servbase]: success
+[2023-05-29 16:18:48] INFO root fetch - main [MainThread]: End processing [hello2]: success
+[2023-05-29 16:18:48] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-05-29 16:18:48] INFO root fetch - main [MainThread]: End processing [tufup]: success
+[2023-05-29 16:18:49] INFO root fetch - main [MainThread]: End processing [housekeeper]: success
+[2023-05-29 16:18:49] INFO root fetch - main [MainThread]: End processing [boardgen]: success
+[2023-05-29 16:18:49] INFO root fetch - main [MainThread]: End processing [airflow-mcd]: success
+[2023-05-29 16:18:49] INFO root fetch - main [MainThread]: End processing [marionette-predeployed]: success
+[2023-05-29 16:18:49] INFO root fetch - main [MainThread]: Store serial: [18290806]
