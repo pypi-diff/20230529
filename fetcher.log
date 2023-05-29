@@ -2029,3 +2029,53 @@
 [2023-05-29 03:51:33] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-29 03:52:20] INFO root fetch - main [MainThread]: End processing [guh]: success
 [2023-05-29 03:52:20] INFO root fetch - main [MainThread]: Store serial: [18284952]
+[2023-05-29 03:57:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18284952]
+[2023-05-29 03:57:30] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coconut-develop
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: guh
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ats-case
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rajx
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-talk-with-chatgpt
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: liuzh594Crypto
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mcnets
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dl-package
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mlflow-tmp
+[2023-05-29 03:57:30] WARNING root fetch - processPackages [rajx]: Skipping, unable to determine old version
+[2023-05-29 03:57:30] INFO root fetch - main [MainThread]: End processing [rajx] error
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ats-case]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-05-29 03:57:30] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev9] Old Version: [3.0.1.post0.dev8]
+[2023-05-29 03:57:30] INFO root fetch - processPackages [liuzh594Crypto]: New version: [5.9.4.9.9.9] Old Version: [5.9.4]
+[2023-05-29 03:57:30] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-29 03:57:30] INFO root fetch - processPackages [mcnets]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-29 03:57:30] INFO root fetch - processPackages [guh]: New version: [3.0] Old Version: [2.6]
+[2023-05-29 03:57:30] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-29 03:57:30] WARNING root fetch - processPackages [dl-package]: Skipping, unable to determine old version
+[2023-05-29 03:57:30] INFO root fetch - main [MainThread]: End processing [dl-package] error
+[2023-05-29 03:57:30] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-29 03:57:30] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev8.tar.gz tmp/coconut-develop-3.0.1.post0.dev9.tar.gz --markdown 20230529/c/coconut-develop/3.0.1.post0.dev8-3.0.1.post0.dev9/diff.md --exclude *.pyd
+[2023-05-29 03:57:30] INFO root fetch - processPackages [mcnets]: executing diffoscope
+[2023-05-29 03:57:30] INFO root fetch - processPackages [mcnets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcnets-0.2.5.tar.gz tmp/mcnets-0.2.6.tar.gz --markdown 20230529/m/mcnets/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-29 03:57:30] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-29 03:57:30] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230529/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/95/c3/37fce308533570a291a9f29b8446e0284b0d5d2131318f0deb168e923a9c/ats_case-0.7.9.tar.gz
+[2023-05-29 03:57:30] INFO root fetch - processPackages [liuzh594Crypto]: Downloading https://files.pythonhosted.org/packages/8c/69/e299ddb65719ea64f8a8f8cc8f1c9916b90132bed17345c4cfa896e6890b/liuzh594Crypto-5.9.4.tar.gz
+[2023-05-29 03:57:30] INFO root fetch - processPackages [guh]: Downloading https://files.pythonhosted.org/packages/a1/10/e4af43546a43f5e8715a2e441026d3031d96d553cb146c74edaaaca8d3b3/guh-3.0.tar.gz
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/9a/bd/f10ce47591f9e0f4b46ffdff81d275e884dfc6606a6184f500cada7f067c/ats_case-0.8.0.tar.gz
+[2023-05-29 03:57:30] INFO root fetch - processPackages [liuzh594Crypto]: Downloading https://files.pythonhosted.org/packages/50/1a/00db08cfe8f86b845f710d928854f3a4ec9d80e7be4af03e7788bebe1408/liuzh594Crypto-5.9.4.9.9.9.tar.gz
+[2023-05-29 03:57:30] INFO root fetch - processPackages [guh]: executing diffoscope
+[2023-05-29 03:57:30] INFO root fetch - processPackages [guh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guh-2.6.tar.gz tmp/guh-3.0.tar.gz --markdown 20230529/g/guh/2.6-3.0/diff.md --exclude *.pyd
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-05-29 03:57:30] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.7.9.tar.gz tmp/ats_case-0.8.0.tar.gz --markdown 20230529/a/ats-case/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-05-29 03:57:30] INFO root fetch - processPackages [liuzh594Crypto]: executing diffoscope
+[2023-05-29 03:57:30] INFO root fetch - processPackages [liuzh594Crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liuzh594Crypto-5.9.4.tar.gz tmp/liuzh594Crypto-5.9.4.9.9.9.tar.gz --markdown 20230529/l/liuzh594Crypto/5.9.4-5.9.4.9.9.9/diff.md --exclude *.pyd
+[2023-05-29 03:57:31] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: Downloading https://files.pythonhosted.org/packages/5c/89/271fc3be1e22f35f5494b6c1f96a0bf591b0f9ca0758a2191d502038df19/nonebot_plugin_talk_with_chatgpt-0.4.3.tar.gz
+[2023-05-29 03:57:31] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: executing diffoscope
+[2023-05-29 03:57:31] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_talk_with_chatgpt-0.4.2.tar.gz tmp/nonebot_plugin_talk_with_chatgpt-0.4.3.tar.gz --markdown 20230529/n/nonebot-plugin-talk-with-chatgpt/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-29 03:57:31] INFO root fetch - main [MainThread]: End processing [guh]: success
+[2023-05-29 03:57:32] INFO root fetch - main [MainThread]: End processing [mcnets]: success
+[2023-05-29 03:57:32] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-05-29 03:57:32] INFO root fetch - main [MainThread]: End processing [liuzh594Crypto]: success
+[2023-05-29 03:57:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-talk-with-chatgpt]: success
+[2023-05-29 03:57:33] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-29 03:57:34] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-29 03:57:34] INFO root fetch - main [MainThread]: Store serial: [18284981]
