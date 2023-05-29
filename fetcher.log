@@ -4517,3 +4517,25 @@
 [2023-05-29 06:19:10] INFO root fetch - main [MainThread]: End processing [pdc-dp-means]: success
 [2023-05-29 06:19:20] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2023-05-29 06:19:20] INFO root fetch - main [MainThread]: Store serial: [18286293]
+[2023-05-29 06:24:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286293]
+[2023-05-29 06:24:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-29 06:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: basxconnect
+[2023-05-29 06:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hkkang-utils
+[2023-05-29 06:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macrometa-source-snowflake
+[2023-05-29 06:24:29] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 06:24:29] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.92] Old Version: [0.1.91]
+[2023-05-29 06:24:29] INFO root fetch - processPackages [basxconnect]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-05-29 06:24:29] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-29 06:24:29] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230529/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 06:24:29] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/25/a3/1ba054a33fa851b07b20d1b2ab5aebe2d403caf4508809a5dffadfefbf6b/hkkang_utils-0.1.91.tar.gz
+[2023-05-29 06:24:29] INFO root fetch - processPackages [basxconnect]: Downloading https://files.pythonhosted.org/packages/36/8a/9f7186c57ead3dc755c291a8a338a2cabd60361c713051dfe2e39afb2b72/basxconnect-0.4.6.tar.gz
+[2023-05-29 06:24:29] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/75/35/9401244edd24f1af2a9dfc237500fc96f727c05780206221ec95e4c8691c/hkkang_utils-0.1.92.tar.gz
+[2023-05-29 06:24:29] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-05-29 06:24:29] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.91.tar.gz tmp/hkkang_utils-0.1.92.tar.gz --markdown 20230529/h/hkkang-utils/0.1.91-0.1.92/diff.md --exclude *.pyd
+[2023-05-29 06:24:29] INFO root fetch - processPackages [basxconnect]: Downloading https://files.pythonhosted.org/packages/6c/10/3809eee2e25a1ae44da3cafb0cd756ebfcfcfd4c3b4909ac5df3a1be3a81/basxconnect-0.4.7.tar.gz
+[2023-05-29 06:24:30] INFO root fetch - processPackages [basxconnect]: executing diffoscope
+[2023-05-29 06:24:30] INFO root fetch - processPackages [basxconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basxconnect-0.4.6.tar.gz tmp/basxconnect-0.4.7.tar.gz --markdown 20230529/b/basxconnect/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-05-29 06:24:30] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-29 06:24:30] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
+[2023-05-29 06:24:34] INFO root fetch - main [MainThread]: End processing [basxconnect]: success
+[2023-05-29 06:24:34] INFO root fetch - main [MainThread]: Store serial: [18286299]
