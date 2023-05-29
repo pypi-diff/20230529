@@ -3862,3 +3862,50 @@
 [2023-05-29 04:54:00] INFO root fetch - main [MainThread]: End processing [imageio]: success
 [2023-05-29 04:54:03] INFO root fetch - main [MainThread]: End processing [sloth-framework]: success
 [2023-05-29 04:54:03] INFO root fetch - main [MainThread]: Store serial: [18285878]
+[2023-05-29 04:59:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18285878]
+[2023-05-29 04:59:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ripandtear
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blockpipe-db
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xj-user
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blockpipe-db
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stale-maccarone
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maccarone
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: streamlit-code-editor
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [stale-maccarone]: New version: [0.0.4.dev0] Old Version: [0.0.4]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ripandtear]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [streamlit-code-editor]: New version: [0.9.1] Old Version: [0.1.0]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [maccarone]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-29 04:59:12] INFO root fetch - processPackages [stale-maccarone]: Downloading https://files.pythonhosted.org/packages/40/b9/31c93381caba8fe9688a0f8bc0a570c6a61bb2f97b893f978f3594dd1ea7/stale_maccarone-0.0.4.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [xj-user]: Downloading https://files.pythonhosted.org/packages/26/be/e0d28eecf05fff47ab8dc5bf0e46eff90f3cee3ae03596f052698e5df93d/xj_user-1.2.98.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: Downloading https://files.pythonhosted.org/packages/94/f1/a01ca09cfcd4535426b42a560e970ed5285410330761238aa8ab7fe8ae50/blockpipe_db-0.1.2.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: Downloading https://files.pythonhosted.org/packages/94/f1/a01ca09cfcd4535426b42a560e970ed5285410330761238aa8ab7fe8ae50/blockpipe_db-0.1.2.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [maccarone]: Downloading https://files.pythonhosted.org/packages/6a/d2/0226ba5f9928584d0028bcb903f03e31d4a6696c1860267a6f7dad2d722a/maccarone-0.0.4.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [streamlit-code-editor]: Downloading https://files.pythonhosted.org/packages/40/ee/358c009cd884daf5238f3b01b573393f41d68433f78643cb7bb7f79f13ee/streamlit-code-editor-0.9.1.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [maccarone]: executing diffoscope
+[2023-05-29 04:59:12] INFO root fetch - processPackages [maccarone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maccarone-0.0.3.tar.gz tmp/maccarone-0.0.4.tar.gz --markdown 20230529/m/maccarone/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 04:59:12] INFO root fetch - processPackages [stale-maccarone]: executing diffoscope
+[2023-05-29 04:59:12] INFO root fetch - processPackages [stale-maccarone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stale_maccarone-0.0.4.tar.gz tmp/stale_maccarone-0.0.4.dev0.tar.gz --markdown 20230529/s/stale-maccarone/0.0.4-0.0.4.dev0/diff.md --exclude *.pyd
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: Downloading https://files.pythonhosted.org/packages/db/d3/32202d7ad77f1a1b07f958ae35471e40b3d4e2f6eaae51ee9365dfd1fd32/blockpipe_db-0.1.3.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-05-29 04:59:12] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.7.tar.gz tmp/ripandtear-0.9.9.tar.gz --markdown 20230529/r/ripandtear/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: Downloading https://files.pythonhosted.org/packages/db/d3/32202d7ad77f1a1b07f958ae35471e40b3d4e2f6eaae51ee9365dfd1fd32/blockpipe_db-0.1.3.tar.gz
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: executing diffoscope
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: executing diffoscope
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockpipe_db-0.1.2.tar.gz tmp/blockpipe_db-0.1.3.tar.gz --markdown 20230529/b/blockpipe-db/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 04:59:12] INFO root fetch - processPackages [blockpipe-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockpipe_db-0.1.2.tar.gz tmp/blockpipe_db-0.1.3.tar.gz --markdown 20230529/b/blockpipe-db/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 04:59:12] INFO root fetch - processPackages [xj-user]: Downloading https://files.pythonhosted.org/packages/f9/79/9b7536f52cd2a21b092678ce5bc888a17a7c527cef9ae891d864354f2e5c/xj_user-1.2.99.tar.gz
+[2023-05-29 04:59:13] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-05-29 04:59:13] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230529/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-29 04:59:13] INFO root fetch - processPackages [streamlit-code-editor]: executing diffoscope
+[2023-05-29 04:59:13] INFO root fetch - processPackages [streamlit-code-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-code-editor-0.1.0.tar.gz tmp/streamlit-code-editor-0.9.1.tar.gz --markdown 20230529/s/streamlit-code-editor/0.1.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 04:59:14] INFO root fetch - main [MainThread]: End processing [stale-maccarone]: success
+[2023-05-29 04:59:14] INFO root fetch - main [MainThread]: End processing [maccarone]: success
+[2023-05-29 04:59:14] INFO root fetch - main [MainThread]: End processing [blockpipe-db]: success
+[2023-05-29 04:59:14] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-05-29 04:59:14] INFO root fetch - main [MainThread]: End processing [blockpipe-db]: success
+[2023-05-29 04:59:14] INFO root fetch - main [MainThread]: End processing [xj-user]: success
+[2023-05-29 04:59:20] INFO root fetch - main [MainThread]: End processing [streamlit-code-editor]: success
+[2023-05-29 04:59:20] INFO root fetch - main [MainThread]: Store serial: [18285899]
