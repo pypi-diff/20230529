@@ -5654,3 +5654,33 @@
 [2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [datatable-ajax-request-parser]: success
 [2023-05-29 08:50:27] INFO root fetch - main [MainThread]: End processing [gpru]: success
 [2023-05-29 08:50:27] INFO root fetch - main [MainThread]: Store serial: [18286944]
+[2023-05-29 08:55:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286944]
+[2023-05-29 08:55:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 08:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs-binance-c2c-sapi
+[2023-05-29 08:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p-template-crawler
+[2023-05-29 08:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thsquant
+[2023-05-29 08:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scikit-rough
+[2023-05-29 08:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piperider
+[2023-05-29 08:55:36] WARNING root fetch - processPackages [thsquant]: Skipping, unable to determine old version
+[2023-05-29 08:55:36] INFO root fetch - main [MainThread]: End processing [thsquant] error
+[2023-05-29 08:55:36] INFO root fetch - processPackages [cs-binance-c2c-sapi]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 08:55:36] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 08:55:36] INFO root fetch - processPackages [scikit-rough]: New version: [0.1.0] Old Version: [0.0.1a2]
+[2023-05-29 08:55:36] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-05-29 08:55:36] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230529/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 08:55:36] INFO root fetch - processPackages [cs-binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/56/4b/2b112a21c2c007aaf86f57ff4025a26c0ff614e9ce3b5416e1fd71d8d1b0/cs-binance-c2c-sapi-0.0.1.tar.gz
+[2023-05-29 08:55:36] INFO root fetch - processPackages [piperider]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-05-29 08:55:36] INFO root fetch - processPackages [scikit-rough]: Downloading https://files.pythonhosted.org/packages/5e/77/b1dbfb4a1e9c89cf634655b564d6ed3d91c1a1a4b25554ce6a39b53846b8/scikit_rough-0.0.1a2.tar.gz
+[2023-05-29 08:55:36] INFO root fetch - processPackages [cs-binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/27/94/bbdad68ba1aa888a6c51d1b012f064e3873918190655d01ce7f7ffcfe743/cs-binance-c2c-sapi-0.0.2.tar.gz
+[2023-05-29 08:55:37] INFO root fetch - processPackages [cs-binance-c2c-sapi]: executing diffoscope
+[2023-05-29 08:55:37] INFO root fetch - processPackages [cs-binance-c2c-sapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-binance-c2c-sapi-0.0.1.tar.gz tmp/cs-binance-c2c-sapi-0.0.2.tar.gz --markdown 20230529/c/cs-binance-c2c-sapi/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 08:55:37] INFO root fetch - processPackages [scikit-rough]: Downloading https://files.pythonhosted.org/packages/fe/42/b93e052f7f80abadfb4a8d42b06464b3cd13e50504837a80b7a6dc6a3ee4/scikit_rough-0.1.0.tar.gz
+[2023-05-29 08:55:37] INFO root fetch - processPackages [piperider]: executing diffoscope
+[2023-05-29 08:55:37] INFO root fetch - processPackages [piperider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-0.9.0.tar.gz tmp/piperider-0.9.0rc1.tar.gz --markdown 20230529/p/piperider/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-29 08:55:37] INFO root fetch - processPackages [scikit-rough]: executing diffoscope
+[2023-05-29 08:55:37] INFO root fetch - processPackages [scikit-rough]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_rough-0.0.1a2.tar.gz tmp/scikit_rough-0.1.0.tar.gz --markdown 20230529/s/scikit-rough/0.0.1a2-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 08:55:37] INFO root fetch - main [MainThread]: End processing [p-template-crawler]: success
+[2023-05-29 08:55:38] INFO root fetch - main [MainThread]: End processing [cs-binance-c2c-sapi]: success
+[2023-05-29 08:55:39] INFO root fetch - main [MainThread]: End processing [scikit-rough]: success
+[2023-05-29 08:55:39] INFO root fetch - main [MainThread]: End processing [piperider]: success
+[2023-05-29 08:55:39] INFO root fetch - main [MainThread]: Store serial: [18286965]
