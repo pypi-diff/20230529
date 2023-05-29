@@ -4357,3 +4357,25 @@
 [2023-05-29 05:58:04] INFO root fetch - main [MainThread]: End processing [aws-sso-magic]: success
 [2023-05-29 05:58:07] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
 [2023-05-29 05:58:07] INFO root fetch - main [MainThread]: Store serial: [18286195]
+[2023-05-29 06:03:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286195]
+[2023-05-29 06:03:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-29 06:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rgmining-rsd
+[2023-05-29 06:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acrcloudclient
+[2023-05-29 06:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-sso-magic
+[2023-05-29 06:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mask-util
+[2023-05-29 06:03:17] WARNING root fetch - processPackages [mask-util]: Skipping, unable to determine old version
+[2023-05-29 06:03:17] INFO root fetch - main [MainThread]: End processing [mask-util] error
+[2023-05-29 06:03:17] INFO root fetch - processPackages [aws-sso-magic]: New version: [1.0.34] Old Version: [1.0.29]
+[2023-05-29 06:03:17] WARNING root fetch - processPackages [acrcloudclient]: Skipping, unable to determine old version
+[2023-05-29 06:03:17] INFO root fetch - main [MainThread]: End processing [acrcloudclient] error
+[2023-05-29 06:03:17] INFO root fetch - processPackages [rgmining-rsd]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-29 06:03:17] INFO root fetch - processPackages [aws-sso-magic]: Downloading https://files.pythonhosted.org/packages/c7/2e/bbe2e80babdbad140830a154aa7b58a99649451b812f6c3c566ad55f63a3/aws-sso-magic-1.0.29.tar.gz
+[2023-05-29 06:03:17] INFO root fetch - processPackages [rgmining-rsd]: Downloading https://files.pythonhosted.org/packages/78/20/695749a7b882f0219565201422dde0c0a8a265d5907d419abbfd22f8a825/rgmining_rsd-0.3.0.tar.gz
+[2023-05-29 06:03:17] INFO root fetch - processPackages [aws-sso-magic]: executing diffoscope
+[2023-05-29 06:03:17] INFO root fetch - processPackages [aws-sso-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-sso-magic-1.0.29.tar.gz tmp/aws-sso-magic-1.0.34.tar.gz --markdown 20230529/a/aws-sso-magic/1.0.29-1.0.34/diff.md --exclude *.pyd
+[2023-05-29 06:03:18] INFO root fetch - processPackages [rgmining-rsd]: Downloading https://files.pythonhosted.org/packages/2c/cb/15cab45df1f0079e3e37bd44ee7696cc65d20cdc277ff5439bdb58202db3/rgmining_rsd-0.3.1.tar.gz
+[2023-05-29 06:03:18] INFO root fetch - processPackages [rgmining-rsd]: executing diffoscope
+[2023-05-29 06:03:18] INFO root fetch - processPackages [rgmining-rsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgmining_rsd-0.3.0.tar.gz tmp/rgmining_rsd-0.3.1.tar.gz --markdown 20230529/r/rgmining-rsd/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-29 06:03:19] INFO root fetch - main [MainThread]: End processing [aws-sso-magic]: success
+[2023-05-29 06:03:19] INFO root fetch - main [MainThread]: End processing [rgmining-rsd]: success
+[2023-05-29 06:03:19] INFO root fetch - main [MainThread]: Store serial: [18286211]
