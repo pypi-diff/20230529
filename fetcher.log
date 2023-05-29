@@ -16487,3 +16487,85 @@ zipfile.BadZipFile: File name in directory 'genie.libs.ops-3.1.6-py3.6-nspkg.pth
 [2023-05-29 21:20:48] INFO root fetch - main [MainThread]: End processing [dott-ng]: success
 [2023-05-29 21:20:50] INFO root fetch - main [MainThread]: End processing [cellpy]: success
 [2023-05-29 21:20:50] INFO root fetch - main [MainThread]: Store serial: [18293535]
+[2023-05-29 21:25:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18293535]
+[2023-05-29 21:25:59] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digikuery
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: red-postgres
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pautobot
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kayle
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trilogy-public-models
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oloren
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cost-of-code
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: intake
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyscm-ml
+[2023-05-29 21:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: csv-to-xls
+[2023-05-29 21:25:59] INFO root fetch - processPackages [cost-of-code]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [digikuery]: New version: [20230529.post2] Old Version: [20230529]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [red-postgres]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [pautobot]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [oloren]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [pyscm-ml]: New version: [1.1.1] Old Version: [1.0.3]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [intake]: New version: [0.7.0] Old Version: [0.6.8]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [trilogy-public-models]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-29 21:25:59] INFO root fetch - processPackages [csv-to-xls]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 21:26:00] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230529/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [trilogy-public-models]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [trilogy-public-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trilogy-public-models-0.0.6.tar.gz tmp/trilogy-public-models-0.0.8.tar.gz --markdown 20230529/t/trilogy-public-models/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [cost-of-code]: Downloading https://files.pythonhosted.org/packages/5a/c7/d4dad17db1b2c12f4ea21d11cf6441a74f06f74f33c22938495e2c335895/cost-of-code-0.1.0.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [digikuery]: Downloading https://files.pythonhosted.org/packages/3a/5a/97364391b6dd811fe5d9c6ac78618cb361649e63fc38c403f8185bbc44de/digikuery-20230529.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [csv-to-xls]: Downloading https://files.pythonhosted.org/packages/89/19/bd4566beab76077a4fdb75d7fdece32ff94a61b6a43bdb08cccf4629d261/csv_to_xls-0.0.1.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [red-postgres]: Downloading https://files.pythonhosted.org/packages/37/1f/c1d68c02cc7831189ec454e8e9ba46c1c4cb6a6c6570143be2591e17e6ba/red-postgres-0.0.7.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pautobot]: Downloading https://files.pythonhosted.org/packages/ae/ad/26c18a38fa0b231fb442675781ed2e202c59811404ec1fca52245f1f3d56/pautobot-0.0.5.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pyscm-ml]: Downloading https://files.pythonhosted.org/packages/7b/0c/f7fab775e1a2c01da5ff45d563d62021e878926decb04cb061047ccb144a/pyscm-ml-1.0.3.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [intake]: Downloading https://files.pythonhosted.org/packages/66/de/3ed31f84244602cea4e5d42a669423ccdc5eafdedec596942bac14c25121/intake-0.6.8.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pautobot]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pautobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pautobot-0.0.4.tar.gz tmp/pautobot-0.0.5.tar.gz --markdown 20230529/p/pautobot/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [csv-to-xls]: Downloading https://files.pythonhosted.org/packages/6a/e9/efcf31dd835385fccb53aaed5a7ea88af738efd7d05f0f5083504b8e2c1d/csv_to_xls-0.0.2.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [digikuery]: Downloading https://files.pythonhosted.org/packages/90/3a/24527dff32f73c8f4a176bc6d11066324a90323e12743d1059d1933e6d6d/digikuery-20230529.post2.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [oloren]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [oloren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oloren-0.0.8.tar.gz tmp/oloren-0.0.9.tar.gz --markdown 20230529/o/oloren/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [cost-of-code]: Downloading https://files.pythonhosted.org/packages/be/8b/2cef18c48d5d396bf419340f02bfd365eb72028cbda6d4c6f30f703e2cba/cost-of-code-0.1.1.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pyscm-ml]: Downloading https://files.pythonhosted.org/packages/9a/3e/87a1c4039950cf7cd6dc84697b639db1037c3cb6de6115857e22216275a7/pyscm-ml-1.1.1.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [intake]: Downloading https://files.pythonhosted.org/packages/17/8b/28b0612968ca7728540e02a4ce92c310e0cf43c097290671492c7ec4de99/intake-0.7.0.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [csv-to-xls]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [red-postgres]: Downloading https://files.pythonhosted.org/packages/85/75/431584d5451174e89130624ac9139622eb80494b111fcf23e2f7857911e8/red-postgres-0.0.8.tar.gz
+[2023-05-29 21:26:00] INFO root fetch - processPackages [csv-to-xls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv_to_xls-0.0.1.tar.gz tmp/csv_to_xls-0.0.2.tar.gz --markdown 20230529/c/csv-to-xls/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [cost-of-code]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [cost-of-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cost-of-code-0.1.0.tar.gz tmp/cost-of-code-0.1.1.tar.gz --markdown 20230529/c/cost-of-code/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pyscm-ml]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [pyscm-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscm-ml-1.0.3.tar.gz tmp/pyscm-ml-1.1.1.tar.gz --markdown 20230529/p/pyscm-ml/1.0.3-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [digikuery]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [digikuery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digikuery-20230529.tar.gz tmp/digikuery-20230529.post2.tar.gz --markdown 20230529/d/digikuery/20230529-20230529.post2/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [intake]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [intake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intake-0.6.8.tar.gz tmp/intake-0.7.0.tar.gz --markdown 20230529/i/intake/0.6.8-0.7.0/diff.md --exclude *.pyd
+[2023-05-29 21:26:00] INFO root fetch - processPackages [red-postgres]: executing diffoscope
+[2023-05-29 21:26:00] INFO root fetch - processPackages [red-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red-postgres-0.0.7.tar.gz tmp/red-postgres-0.0.8.tar.gz --markdown 20230529/r/red-postgres/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 21:26:01] INFO root fetch - processPackages [kayle]: Start processing: synthdog
+[2023-05-29 21:26:01] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-29 21:26:01] INFO root fetch - processPackages [synthdog]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-05-29 21:26:01] INFO root fetch - processPackages [trilogy-public-models]: Start processing: boltz-client
+[2023-05-29 21:26:01] INFO root fetch - main [MainThread]: End processing [trilogy-public-models]: success
+[2023-05-29 21:26:01] INFO root fetch - processPackages [boltz-client]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 21:26:01] INFO root fetch - processPackages [synthdog]: Downloading https://files.pythonhosted.org/packages/f6/be/3ba8b0def312c40aef28e653cc8242c767cd789439c8ae89ab54dd28c961/synthdog-0.5.7.tar.gz
+[2023-05-29 21:26:01] INFO root fetch - processPackages [boltz-client]: Downloading https://files.pythonhosted.org/packages/89/b4/17670c124c756b1135543356fabc38664c08be7de9553fb4cbb893beea2d/boltz_client-0.1.8.tar.gz
+[2023-05-29 21:26:01] WARNING root fetch - processPackages [synthdog]: Skipping package: exceeds size limit 21932796>=10485760
+[2023-05-29 21:26:01] INFO root fetch - processPackages [synthdog]: Start processing: turbo-docs
+[2023-05-29 21:26:01] INFO root fetch - main [MainThread]: End processing [synthdog] error
+[2023-05-29 21:26:01] INFO root fetch - main [MainThread]: End processing [cost-of-code]: success
+[2023-05-29 21:26:02] INFO root fetch - processPackages [turbo-docs]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-29 21:26:02] INFO root fetch - main [MainThread]: End processing [csv-to-xls]: success
+[2023-05-29 21:26:02] INFO root fetch - processPackages [boltz-client]: executing diffoscope
+[2023-05-29 21:26:02] INFO root fetch - processPackages [boltz-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boltz_client-0.1.7.tar.gz tmp/boltz_client-0.1.8.tar.gz --markdown 20230529/b/boltz-client/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 21:26:02] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-05-29 21:26:02] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.8.0.tar.gz tmp/turbo_docs-0.8.1.tar.gz --markdown 20230529/t/turbo-docs/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-29 21:26:02] INFO root fetch - main [MainThread]: End processing [red-postgres]: success
+[2023-05-29 21:26:02] INFO root fetch - main [MainThread]: End processing [pyscm-ml]: success
+[2023-05-29 21:26:02] INFO root fetch - main [MainThread]: End processing [digikuery]: success
+[2023-05-29 21:26:02] INFO root fetch - main [MainThread]: End processing [intake]: success
+[2023-05-29 21:26:03] INFO root fetch - main [MainThread]: End processing [boltz-client]: success
+[2023-05-29 21:26:03] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-05-29 21:26:03] INFO root fetch - main [MainThread]: End processing [pautobot]: success
+[2023-05-29 21:26:08] INFO root fetch - main [MainThread]: End processing [oloren]: success
+[2023-05-29 21:26:08] INFO root fetch - main [MainThread]: Store serial: [18293572]
