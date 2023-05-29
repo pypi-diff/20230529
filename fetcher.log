@@ -4240,3 +4240,48 @@
 [2023-05-29 05:41:07] INFO root fetch - main [MainThread]: End processing [look-like-scanned]: success
 [2023-05-29 05:41:09] INFO root fetch - main [MainThread]: End processing [jatool]: success
 [2023-05-29 05:41:09] INFO root fetch - main [MainThread]: Store serial: [18286110]
+[2023-05-29 05:46:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286110]
+[2023-05-29 05:46:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scikit-recommender
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PySide6-Fluent-Widgets
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AppDemo
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jatool
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xj-enroll
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: open-autonomy
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: open-aea-test-autonomy
+[2023-05-29 05:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pystools
+[2023-05-29 05:46:17] WARNING root fetch - processPackages [AppDemo]: Skipping, unable to determine old version
+[2023-05-29 05:46:17] INFO root fetch - main [MainThread]: End processing [AppDemo] error
+[2023-05-29 05:46:17] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [scikit-recommender]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [jatool]: New version: [1.991] Old Version: [1.99]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [open-aea-test-autonomy]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [open-autonomy]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-29 05:46:17] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2023-05-29 05:46:17] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20230529/p/pystools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:46:18] INFO root fetch - processPackages [scikit-recommender]: Downloading https://files.pythonhosted.org/packages/0d/92/5f36924fb7855d8e79c159108b9dbd9bed37beed367f7f1d744945bd4b31/scikit_recommender-0.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 05:46:18] INFO root fetch - processPackages [jatool]: Downloading https://files.pythonhosted.org/packages/32/1a/1ab2b1ccd91ef5234c03cae7a2b0d531e6f474f21d3c89ff614ad4a1a001/jatool-1.991.tar.gz
+[2023-05-29 05:46:18] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-05-29 05:46:18] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230529/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-29 05:46:18] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/80/a1/b744488c15ac15bea0711d54cfc0a6a860b3e126e1ecad8560fcca9bbb76/PySide6-Fluent-Widgets-0.9.2.tar.gz
+[2023-05-29 05:46:18] INFO root fetch - processPackages [jatool]: executing diffoscope
+[2023-05-29 05:46:18] INFO root fetch - processPackages [jatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jatool-1.99.tar.gz tmp/jatool-1.991.tar.gz --markdown 20230529/j/jatool/1.99-1.991/diff.md --exclude *.pyd
+[2023-05-29 05:46:18] INFO root fetch - processPackages [open-autonomy]: executing diffoscope
+[2023-05-29 05:46:18] INFO root fetch - processPackages [open-autonomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-autonomy-0.9.0.tar.gz tmp/open-autonomy-0.9.1.tar.gz --markdown 20230529/o/open-autonomy/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 05:46:18] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2023-05-29 05:46:18] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-0.9.1.tar.gz tmp/PySide6-Fluent-Widgets-0.9.2.tar.gz --markdown 20230529/P/PySide6-Fluent-Widgets/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-29 05:46:18] INFO root fetch - processPackages [open-aea-test-autonomy]: executing diffoscope
+[2023-05-29 05:46:18] INFO root fetch - processPackages [open-aea-test-autonomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-aea-test-autonomy-0.9.0.tar.gz tmp/open-aea-test-autonomy-0.9.1.tar.gz --markdown 20230529/o/open-aea-test-autonomy/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-29 05:46:18] INFO root fetch - processPackages [scikit-recommender]: Downloading https://files.pythonhosted.org/packages/78/ee/bd0947b1c004074aa6261f66e56cb58c8835b6573fcf90bb0ec7d7b7a148/scikit_recommender-0.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 05:46:19] INFO root fetch - processPackages [scikit-recommender]: executing diffoscope
+[2023-05-29 05:46:19] INFO root fetch - processPackages [scikit-recommender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_recommender-0.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/scikit_recommender-0.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230529/s/scikit-recommender/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 05:46:19] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2023-05-29 05:46:19] INFO root fetch - main [MainThread]: End processing [xj-enroll]: success
+[2023-05-29 05:46:19] INFO root fetch - main [MainThread]: End processing [open-aea-test-autonomy]: success
+[2023-05-29 05:46:20] INFO root fetch - main [MainThread]: End processing [jatool]: success
+[2023-05-29 05:46:22] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
+[2023-05-29 05:46:31] INFO root fetch - main [MainThread]: End processing [open-autonomy]: success
+[2023-05-29 05:46:47] INFO root fetch - main [MainThread]: End processing [scikit-recommender]: success
+[2023-05-29 05:46:47] INFO root fetch - main [MainThread]: Store serial: [18286142]
