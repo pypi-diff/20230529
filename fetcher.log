@@ -10656,3 +10656,104 @@ EOFError: EOF read where object expected
 [2023-05-29 14:56:25] INFO root fetch - main [MainThread]: End processing [jarvis-tools]: success
 [2023-05-29 14:57:14] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
 [2023-05-29 14:57:14] INFO root fetch - main [MainThread]: Store serial: [18289987]
+[2023-05-29 15:02:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289987]
+[2023-05-29 15:02:24] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygmssl
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lib-dzne-basetables
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weavenn
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: valgrind-codequality
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: draggan
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nr-metadata
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ldeep
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oss2
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: LumosWeb
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openepd
+[2023-05-29 15:02:24] INFO root fetch - processPackages [valgrind-codequality]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [lib-dzne-basetables]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [pygmssl]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [ldeep]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [openepd]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [LumosWeb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [nr-metadata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [oss2]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [draggan]: New version: [1.1.0b2] Old Version: [1.1.0b1]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [weavenn]: New version: [1.0.0] Old Version: [0.0.5]
+[2023-05-29 15:02:24] INFO root fetch - processPackages [lib-dzne-basetables]: Downloading https://files.pythonhosted.org/packages/01/7b/10b2e633f84f9dc3f93ca957bacfcca65f45dd152d2bfb0ba751b917f179/lib-dzne-basetables-0.1.1.tar.gz
+[2023-05-29 15:02:24] INFO root fetch - processPackages [nr-metadata]: Downloading https://files.pythonhosted.org/packages/c8/d2/ecd2a36d73bd8615ec5c741fdebaea54f978bade8f4566182e53851073e1/nr-metadata-1.0.8.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [weavenn]: Downloading https://files.pythonhosted.org/packages/b1/b3/fb7d56d50e2e60443d69cfdabc9563cf86d72ebc2f52ddb7ef7fef8f1a61/weavenn-0.0.5.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [LumosWeb]: Downloading https://files.pythonhosted.org/packages/04/a3/c255680f4380e59b08ce60f6d70eaab3352cfdd19c7b6e817a132e1c79ad/LumosWeb-0.0.1.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [oss2]: Downloading https://files.pythonhosted.org/packages/11/93/b5041bd6472b0826de4326358c0ee61bb39d82714cfd47f500d4a23866c8/oss2-2.9.0.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [valgrind-codequality]: Downloading https://files.pythonhosted.org/packages/7e/51/409f6a2d88753c698ed43cf68194704e175f681007b701e668a4a060f437/valgrind_codequality-1.1.0.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [draggan]: Downloading https://files.pythonhosted.org/packages/1f/96/e761bf136401e808d96734731474757f3e53f72133b041e00a36a4c7a56c/draggan-1.1.0b2.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [lib-dzne-basetables]: Downloading https://files.pythonhosted.org/packages/c6/77/fbb313e856e522df47a8fd73b3c4452354a3d3889792d311447bb72f95c1/lib-dzne-basetables-0.2.0.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [pygmssl]: Downloading https://files.pythonhosted.org/packages/ce/a3/225843c655575024955ff6b4061fc0f708599dbdc407c8a65f8800ccbb0b/pygmssl-0.0.5.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [openepd]: Downloading https://files.pythonhosted.org/packages/29/27/91735055e5a1c0667c0b858c4595ded2a3f6c57c3994230c95c34ef2a540/openepd-0.3.0.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [ldeep]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [ldeep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldeep-1.0.8.tar.gz tmp/ldeep-1.0.9.tar.gz --markdown 20230529/l/ldeep/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [draggan]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [draggan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/draggan-1.1.0b1.tar.gz tmp/draggan-1.1.0b2.tar.gz --markdown 20230529/d/draggan/1.1.0b1-1.1.0b2/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [LumosWeb]: Downloading https://files.pythonhosted.org/packages/0d/45/a9f79b291b3894ef6053f20f202493bf1d79fd21b87004b16de45ea583db/LumosWeb-0.0.2.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [lib-dzne-basetables]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [lib-dzne-basetables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-basetables-0.1.1.tar.gz tmp/lib-dzne-basetables-0.2.0.tar.gz --markdown 20230529/l/lib-dzne-basetables/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [openepd]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [openepd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openepd-0.2.0.tar.gz tmp/openepd-0.3.0.tar.gz --markdown 20230529/o/openepd/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [pygmssl]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [pygmssl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmssl-0.0.4.tar.gz tmp/pygmssl-0.0.5.tar.gz --markdown 20230529/p/pygmssl/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [LumosWeb]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [LumosWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LumosWeb-0.0.1.tar.gz tmp/LumosWeb-0.0.2.tar.gz --markdown 20230529/L/LumosWeb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [valgrind-codequality]: Downloading https://files.pythonhosted.org/packages/73/d9/2c2f21da7ec26974a27e91862f25aecc17a5a726fd3bc5da5f48ad8b51b7/valgrind_codequality-1.2.0.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [oss2]: Downloading https://files.pythonhosted.org/packages/d2/48/eb57178164aa2ec0bf3a19b95b297c9d34c18307ccc23e217e881767a57a/oss2-2.9.1.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [weavenn]: Downloading https://files.pythonhosted.org/packages/52/b1/438266c2cbe1d54fb57d5f96e596a6ec894bb9c67fa42abde7454f146e43/weavenn-1.0.0.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [nr-metadata]: Downloading https://files.pythonhosted.org/packages/f4/d8/aa840642b0ba69c0068b58b4f652bf87455628a7d66e8a485e55f9a583a3/nr-metadata-1.0.9.tar.gz
+[2023-05-29 15:02:25] INFO root fetch - processPackages [valgrind-codequality]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [valgrind-codequality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valgrind_codequality-1.1.0.tar.gz tmp/valgrind_codequality-1.2.0.tar.gz --markdown 20230529/v/valgrind-codequality/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [weavenn]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [weavenn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weavenn-0.0.5.tar.gz tmp/weavenn-1.0.0.tar.gz --markdown 20230529/w/weavenn/0.0.5-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [oss2]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [oss2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oss2-2.9.0.tar.gz tmp/oss2-2.9.1.tar.gz --markdown 20230529/o/oss2/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-29 15:02:25] INFO root fetch - processPackages [nr-metadata]: executing diffoscope
+[2023-05-29 15:02:25] INFO root fetch - processPackages [nr-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nr-metadata-1.0.8.tar.gz tmp/nr-metadata-1.0.9.tar.gz --markdown 20230529/n/nr-metadata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 15:02:26] INFO root fetch - processPackages [ldeep]: Start processing: lib-dzne-auto-interface
+[2023-05-29 15:02:26] INFO root fetch - main [MainThread]: End processing [ldeep]: success
+[2023-05-29 15:02:26] INFO root fetch - processPackages [lib-dzne-auto-interface]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 15:02:27] INFO root fetch - processPackages [lib-dzne-basetables]: Start processing: DI-toolkit
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [lib-dzne-basetables]: success
+[2023-05-29 15:02:27] INFO root fetch - processPackages [LumosWeb]: Start processing: strawberry-django-auth
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [LumosWeb]: success
+[2023-05-29 15:02:27] INFO root fetch - processPackages [DI-toolkit]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-29 15:02:27] INFO root fetch - processPackages [strawberry-django-auth]: New version: [0.374.6] Old Version: [0.374.5]
+[2023-05-29 15:02:27] INFO root fetch - processPackages [lib-dzne-auto-interface]: Downloading https://files.pythonhosted.org/packages/6c/30/c377b48e46582fb858a108b7961ce034129bf1fde84a2de9ca710f41ba3d/lib-dzne-auto-interface-0.2.1.tar.gz
+[2023-05-29 15:02:27] INFO root fetch - processPackages [lib-dzne-auto-interface]: executing diffoscope
+[2023-05-29 15:02:27] INFO root fetch - processPackages [lib-dzne-auto-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-auto-interface-0.2.0.tar.gz tmp/lib-dzne-auto-interface-0.2.1.tar.gz --markdown 20230529/l/lib-dzne-auto-interface/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 15:02:27] INFO root fetch - processPackages [pygmssl]: Start processing: fittrackee
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [pygmssl]: success
+[2023-05-29 15:02:27] INFO root fetch - processPackages [DI-toolkit]: Downloading https://files.pythonhosted.org/packages/89/d0/ee4bcbd78638c63867cdbb5a8986db40597213b27ea8e10662ff4159a9fc/DI-toolkit-0.1.0.tar.gz
+[2023-05-29 15:02:27] INFO root fetch - processPackages [strawberry-django-auth]: Downloading https://files.pythonhosted.org/packages/bd/65/f2c1ea61b6937c3a92363b3555c4e4f2e91a5c64f5bddd6050ef9761c20d/strawberry_django_auth-0.374.5.tar.gz
+[2023-05-29 15:02:27] INFO root fetch - processPackages [fittrackee]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-29 15:02:27] INFO root fetch - processPackages [valgrind-codequality]: Start processing: odoo-addon-web-responsive
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [valgrind-codequality]: success
+[2023-05-29 15:02:27] INFO root fetch - processPackages [odoo-addon-web-responsive]: New version: [16.0.1.1.2] Old Version: [16.0.1.1.1]
+[2023-05-29 15:02:27] INFO root fetch - processPackages [DI-toolkit]: Downloading https://files.pythonhosted.org/packages/33/cc/1f565e2d0af1e88bc5cb92e4505c11d1423917a4231dd44c5609c4b11583/DI-toolkit-0.2.0.tar.gz
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [openepd]: success
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [weavenn]: success
+[2023-05-29 15:02:27] INFO root fetch - processPackages [strawberry-django-auth]: Downloading https://files.pythonhosted.org/packages/83/4e/93a797973a25c24fe87688bf8f0a9f4664e7fe658396fc8c7a240cb68b8d/strawberry_django_auth-0.374.6.tar.gz
+[2023-05-29 15:02:27] INFO root fetch - processPackages [fittrackee]: Downloading https://files.pythonhosted.org/packages/39/9b/88cac6ba5c302ee2897f01f34c7c18d6be412aa901f8bf35933443299379/fittrackee-0.7.8.tar.gz
+[2023-05-29 15:02:27] INFO root fetch - main [MainThread]: End processing [draggan]: success
+[2023-05-29 15:02:27] INFO root fetch - processPackages [DI-toolkit]: executing diffoscope
+[2023-05-29 15:02:27] INFO root fetch - processPackages [DI-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DI-toolkit-0.1.0.tar.gz tmp/DI-toolkit-0.2.0.tar.gz --markdown 20230529/D/DI-toolkit/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 15:02:27] INFO root fetch - processPackages [strawberry-django-auth]: executing diffoscope
+[2023-05-29 15:02:27] INFO root fetch - processPackages [strawberry-django-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_django_auth-0.374.5.tar.gz tmp/strawberry_django_auth-0.374.6.tar.gz --markdown 20230529/s/strawberry-django-auth/0.374.5-0.374.6/diff.md --exclude *.pyd
+[2023-05-29 15:02:27] INFO root fetch - processPackages [odoo-addon-web-responsive]: Downloading https://files.pythonhosted.org/packages/5c/d9/547433fbe3d72f74430324f28ba8ce9a93d1bdee0f2908975f166c144d2c/odoo_addon_web_responsive-16.0.1.1.2-py3-none-any.whl
+[2023-05-29 15:02:27] INFO root fetch - processPackages [odoo-addon-web-responsive]: executing diffoscope
+[2023-05-29 15:02:27] INFO root fetch - processPackages [odoo-addon-web-responsive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_responsive-16.0.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_web_responsive-16.0.1.1.2-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-web-responsive/16.0.1.1.1-16.0.1.1.2/diff.md --exclude *.pyd
+[2023-05-29 15:02:28] INFO root fetch - main [MainThread]: End processing [oss2]: success
+[2023-05-29 15:02:28] INFO root fetch - main [MainThread]: End processing [lib-dzne-auto-interface]: success
+[2023-05-29 15:02:28] INFO root fetch - main [MainThread]: End processing [DI-toolkit]: success
+[2023-05-29 15:02:29] INFO root fetch - main [MainThread]: End processing [strawberry-django-auth]: success
+[2023-05-29 15:02:29] INFO root fetch - processPackages [fittrackee]: Downloading https://files.pythonhosted.org/packages/ad/fd/33da1267f6c6e89f719de2ccc15dce823a7f50e5306a5f5ea891fb3e1f9a/fittrackee-0.7.9.tar.gz
+[2023-05-29 15:02:30] INFO root fetch - main [MainThread]: End processing [nr-metadata]: success
+[2023-05-29 15:02:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-responsive]: success
+[2023-05-29 15:02:31] INFO root fetch - processPackages [fittrackee]: executing diffoscope
+[2023-05-29 15:02:31] INFO root fetch - processPackages [fittrackee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fittrackee-0.7.8.tar.gz tmp/fittrackee-0.7.9.tar.gz --markdown 20230529/f/fittrackee/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-29 15:03:47] INFO root fetch - main [MainThread]: End processing [fittrackee]: success
+[2023-05-29 15:03:47] INFO root fetch - main [MainThread]: Store serial: [18290046]
