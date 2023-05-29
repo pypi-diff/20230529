@@ -9919,3 +9919,95 @@ EOFError: EOF read where object expected
 [2023-05-29 14:08:31] INFO root fetch - main [MainThread]: End processing [mysql-oop]: success
 [2023-05-29 14:08:38] INFO root fetch - main [MainThread]: End processing [fhir.resources]: success
 [2023-05-29 14:08:38] INFO root fetch - main [MainThread]: Store serial: [18289518]
+[2023-05-29 14:13:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289518]
+[2023-05-29 14:13:46] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-agents-nightly
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: talk-codebase
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eArsivPortal
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cybrid-api-organization-python
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cybrid-api-id-python
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cybrid-api-bank-python
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-account-credit-control
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rhods-model-registry-poc
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eth-writer
+[2023-05-29 14:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openirt
+[2023-05-29 14:13:46] INFO root fetch - processPackages [odoo-addon-account-credit-control]: New version: [16.0.1.0.0.3] Old Version: [15.0.1.3.0.2]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.21] Old Version: [0.1.20]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [openirt]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [eArsivPortal]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [rhods-model-registry-poc]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [eth-writer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:13:46] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:13:47] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-05-29 14:13:47] INFO root fetch - processPackages [odoo-addon-account-credit-control]: Downloading https://files.pythonhosted.org/packages/33/9c/8e942d587361cd9592c9d62870c9c232f03f750c69c9fda68b23426da8a5/odoo_addon_account_credit_control-15.0.1.3.0.2-py3-none-any.whl
+[2023-05-29 14:13:47] INFO root fetch - processPackages [openirt]: Downloading https://files.pythonhosted.org/packages/65/3b/596d5941a2f6c55ac35055a4a365f2482e99674d603d2b8d1ec7687fad2e/openirt-0.1.1.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/c3/5a/a86261dd9607351f0a6ed041f7349f75146f930bcd71191460cea9b31bcb/talk_codebase-0.1.21.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eth-writer]: Downloading https://files.pythonhosted.org/packages/6e/3c/a14a8acdbd0b6d15621bd2b6d5a1a46523780a0f8551f1af3729f291ac45/eth-writer-0.0.1.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/c2/e6/39341e3f8ec182e6a4c7c5c9350e58b5f1996618c70fb431f26eaad3093e/eArsivPortal-0.0.5.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [rhods-model-registry-poc]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [rhods-model-registry-poc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhods_model_registry_poc-0.1.7.tar.gz tmp/rhods_model_registry_poc-0.1.8.tar.gz --markdown 20230529/r/rhods-model-registry-poc/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.20.tar.gz tmp/talk_codebase-0.1.21.tar.gz --markdown 20230529/t/talk-codebase/0.1.20-0.1.21/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230529/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/58/46/f4fca89bcce026718e1cee53d49f2886f8b4399d7ab1a0329e6697aebf48/eArsivPortal-0.0.6.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [odoo-addon-account-credit-control]: Downloading https://files.pythonhosted.org/packages/bd/00/3fd381842a6f73a01f8cc88617f9accf499b517e126055a0714bd340a1da/odoo_addon_account_credit_control-16.0.1.0.0.3-py3-none-any.whl
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eth-writer]: Downloading https://files.pythonhosted.org/packages/05/f2/15a70f6e63fa9f3f1b9845717822ace23c2a615fe1d5d99451f21840d1d7/eth-writer-0.0.2.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eArsivPortal]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eArsivPortal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eArsivPortal-0.0.5.tar.gz tmp/eArsivPortal-0.0.6.tar.gz --markdown 20230529/e/eArsivPortal/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [openirt]: Downloading https://files.pythonhosted.org/packages/03/a9/fbf88c68aa18c901d1839503829624c6f47d6b29a44727b0a164461ef868/openirt-0.1.2.tar.gz
+[2023-05-29 14:13:47] INFO root fetch - processPackages [odoo-addon-account-credit-control]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [odoo-addon-account-credit-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_credit_control-15.0.1.3.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_credit_control-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-account-credit-control/15.0.1.3.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eth-writer]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [eth-writer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth-writer-0.0.1.tar.gz tmp/eth-writer-0.0.2.tar.gz --markdown 20230529/e/eth-writer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:13:47] INFO root fetch - processPackages [openirt]: executing diffoscope
+[2023-05-29 14:13:47] INFO root fetch - processPackages [openirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openirt-0.1.1.tar.gz tmp/openirt-0.1.2.tar.gz --markdown 20230529/o/openirt/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-29 14:13:48] INFO root fetch - processPackages [rhods-model-registry-poc]: Start processing: sqlcrafty
+[2023-05-29 14:13:48] INFO root fetch - main [MainThread]: End processing [rhods-model-registry-poc]: success
+[2023-05-29 14:13:48] INFO root fetch - processPackages [sqlcrafty]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 14:13:48] INFO root fetch - processPackages [sqlcrafty]: Downloading https://files.pythonhosted.org/packages/16/10/132cab60b4f579aaeefe35c198863fb6a663cbd5efa319ea7aa948078aed/sqlcrafty-0.0.1.tar.gz
+[2023-05-29 14:13:49] INFO root fetch - processPackages [sqlcrafty]: Downloading https://files.pythonhosted.org/packages/8b/49/c9698574d4cc8c6f277d933eddf12cccbd520fa047dcbc8bc6e2c07ebd4b/sqlcrafty-0.0.2.tar.gz
+[2023-05-29 14:13:49] INFO root fetch - processPackages [sqlcrafty]: executing diffoscope
+[2023-05-29 14:13:49] INFO root fetch - processPackages [sqlcrafty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlcrafty-0.0.1.tar.gz tmp/sqlcrafty-0.0.2.tar.gz --markdown 20230529/s/sqlcrafty/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:13:49] INFO root fetch - processPackages [talk-codebase]: Start processing: kodexa-cli
+[2023-05-29 14:13:49] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-29 14:13:49] INFO root fetch - processPackages [kodexa-cli]: New version: [6.0.5a5044154294] Old Version: [6.0.5a4617368474]
+[2023-05-29 14:13:49] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: Geode-Common
+[2023-05-29 14:13:49] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-29 14:13:49] INFO root fetch - processPackages [Geode-Common]: New version: [25.0.9rc3] Old Version: [25.0.9]
+[2023-05-29 14:13:49] INFO root fetch - processPackages [cybrid-api-id-python]: Start processing: assemblyline-service-utilities
+[2023-05-29 14:13:49] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-29 14:13:49] INFO root fetch - processPackages [kodexa-cli]: executing diffoscope
+[2023-05-29 14:13:49] INFO root fetch - processPackages [kodexa-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa_cli-6.0.5a4617368474.tar.gz tmp/kodexa_cli-6.0.5a5044154294.tar.gz --markdown 20230529/k/kodexa-cli/6.0.5a4617368474-6.0.5a5044154294/diff.md --exclude *.pyd
+[2023-05-29 14:13:49] INFO root fetch - processPackages [assemblyline-service-utilities]: New version: [4.4.1.dev4] Old Version: [4.4.1.dev3]
+[2023-05-29 14:13:49] INFO root fetch - processPackages [openirt]: Start processing: omniunibot
+[2023-05-29 14:13:49] INFO root fetch - main [MainThread]: End processing [openirt]: success
+[2023-05-29 14:13:49] INFO root fetch - main [MainThread]: End processing [eth-writer]: success
+[2023-05-29 14:13:49] INFO root fetch - processPackages [omniunibot]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 14:13:49] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
+[2023-05-29 14:13:50] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-05-29 14:13:50] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-25.0.9-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-25.0.9rc3-cp39-cp39-win_amd64.whl.zip --markdown 20230529/G/Geode-Common/25.0.9-25.0.9rc3/diff.md --exclude *.pyd
+[2023-05-29 14:13:50] INFO root fetch - processPackages [assemblyline-service-utilities]: Downloading https://files.pythonhosted.org/packages/a0/b0/3588b8fba6d853d2a0e39d66087f0d6ec7a5bd2e2e5e3c0a67854ef30a3e/assemblyline_service_utilities-4.4.1.dev4-py3-none-any.whl
+[2023-05-29 14:13:50] INFO root fetch - processPackages [omniunibot]: Downloading https://files.pythonhosted.org/packages/d0/61/548c09d9da71631a719f39c6f3ae9c990d54081bbbc14a4cfee44d49cc31/omniunibot-0.0.5.tar.gz
+[2023-05-29 14:13:50] INFO root fetch - processPackages [assemblyline-service-utilities]: executing diffoscope
+[2023-05-29 14:13:50] INFO root fetch - processPackages [assemblyline-service-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_utilities-4.4.1.dev3-py3-none-any.whl.zip tmp/assemblyline_service_utilities-4.4.1.dev4-py3-none-any.whl.zip --markdown 20230529/a/assemblyline-service-utilities/4.4.1.dev3-4.4.1.dev4/diff.md --exclude *.pyd
+[2023-05-29 14:13:50] INFO root fetch - processPackages [omniunibot]: Downloading https://files.pythonhosted.org/packages/09/da/60d12eb52796f4a0dfb8242e26f0ad0125cb1f253fdfa44dcd36ca722128/omniunibot-0.0.6.tar.gz
+[2023-05-29 14:13:50] INFO root fetch - processPackages [omniunibot]: executing diffoscope
+[2023-05-29 14:13:50] INFO root fetch - processPackages [omniunibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniunibot-0.0.5.tar.gz tmp/omniunibot-0.0.6.tar.gz --markdown 20230529/o/omniunibot/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 14:13:50] INFO root fetch - main [MainThread]: End processing [sqlcrafty]: success
+[2023-05-29 14:13:50] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-29 14:13:51] INFO root fetch - main [MainThread]: End processing [kodexa-cli]: success
+[2023-05-29 14:13:51] INFO root fetch - main [MainThread]: End processing [assemblyline-service-utilities]: success
+[2023-05-29 14:13:51] INFO root fetch - main [MainThread]: End processing [omniunibot]: success
+[2023-05-29 14:13:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-credit-control]: success
+[2023-05-29 14:13:54] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-05-29 14:14:02] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-05-29 14:14:02] INFO root fetch - main [MainThread]: Store serial: [18289563]
