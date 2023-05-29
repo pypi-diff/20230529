@@ -10398,3 +10398,71 @@ EOFError: EOF read where object expected
 [2023-05-29 14:40:36] INFO root fetch - main [MainThread]: End processing [t8s]: success
 [2023-05-29 14:40:38] INFO root fetch - main [MainThread]: End processing [rpcclient]: success
 [2023-05-29 14:40:38] INFO root fetch - main [MainThread]: Store serial: [18289824]
+[2023-05-29 14:45:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289824]
+[2023-05-29 14:45:47] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qontract-reconcile
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feature-store-utils
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aheadworks-deploy-manager
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-nagabus
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lib-dzne-tsv
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: th2-common-utils
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spotify-to-ytmusic
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cybrid-api-organization-python
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nomnomdata-engine
+[2023-05-29 14:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: thsquant
+[2023-05-29 14:45:47] INFO root fetch - processPackages [aheadworks-deploy-manager]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [spotify-to-ytmusic]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [lib-dzne-tsv]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [thsquant]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-29 14:45:47] WARNING root fetch - processPackages [feature-store-utils]: Skipping, unable to determine old version
+[2023-05-29 14:45:47] INFO root fetch - processPackages [feature-store-utils]: Start processing: cybrid-api-id-python
+[2023-05-29 14:45:47] INFO root fetch - main [MainThread]: End processing [feature-store-utils] error
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nonebot-plugin-nagabus]: New version: [0.1.4.post1] Old Version: [0.1.4]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [th2-common-utils]: New version: [2.0.1] Old Version: [2.0.0.dev4574477823]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nomnomdata-engine]: New version: [1.1.9] Old Version: [1.1.8.post6.dev0]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:45:47] INFO root fetch - processPackages [lib-dzne-tsv]: Downloading https://files.pythonhosted.org/packages/66/45/d932517376242e068f4d78689757eb8f8b5e2c05047147588f33cbc5be2b/lib-dzne-tsv-0.1.6.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [aheadworks-deploy-manager]: Downloading https://files.pythonhosted.org/packages/a8/12/71f81e88013c286d993248a3e8753667bc491c5fb22fa884278b068c5303/aheadworks_deploy_manager-1.4.8.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [spotify-to-ytmusic]: Downloading https://files.pythonhosted.org/packages/27/5f/b23978c6febeb89d9c5b3eb571f1dd5a160728a516928c20c78c6b95b76f/spotify_to_ytmusic-0.1.4.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [thsquant]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [thsquant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thsquant-0.1.7.tar.gz tmp/thsquant-0.1.8.tar.gz --markdown 20230529/t/thsquant/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nonebot-plugin-nagabus]: Downloading https://files.pythonhosted.org/packages/59/2d/9c1e43ad57e3ba1272acef8bef186d2b1e1912e54b559fc7addf8dfb590b/nonebot_plugin_nagabus-0.1.4.post1.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nonebot-plugin-nagabus]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nonebot-plugin-nagabus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nagabus-0.1.4.tar.gz tmp/nonebot_plugin_nagabus-0.1.4.post1.tar.gz --markdown 20230529/n/nonebot-plugin-nagabus/0.1.4-0.1.4.post1/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [lib-dzne-tsv]: Downloading https://files.pythonhosted.org/packages/80/fb/8115225f63d77bbdbaf80b2efe990381108956744f9896829f574f28e9fd/lib-dzne-tsv-0.2.0.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230529/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [spotify-to-ytmusic]: Downloading https://files.pythonhosted.org/packages/b1/c7/ce83e9617cc6cd2899a8d5b0d535caa386179535901f56980e7a52607f79/spotify_to_ytmusic-0.2.0.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nomnomdata-engine]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [nomnomdata-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomnomdata-engine-1.1.8.post6.dev0.tar.gz tmp/nomnomdata-engine-1.1.9.tar.gz --markdown 20230529/n/nomnomdata-engine/1.1.8.post6.dev0-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [th2-common-utils]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [th2-common-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_common_utils-2.0.0.dev4574477823.tar.gz tmp/th2_common_utils-2.0.1.tar.gz --markdown 20230529/t/th2-common-utils/2.0.0.dev4574477823-2.0.1/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [aheadworks-deploy-manager]: Downloading https://files.pythonhosted.org/packages/b8/01/5da57b9f1dbd79a13b113866cf9afb24012c894a5971947bf7d29ae2ad18/aheadworks_deploy_manager-1.4.9.tar.gz
+[2023-05-29 14:45:47] INFO root fetch - processPackages [lib-dzne-tsv]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [lib-dzne-tsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-tsv-0.1.6.tar.gz tmp/lib-dzne-tsv-0.2.0.tar.gz --markdown 20230529/l/lib-dzne-tsv/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [spotify-to-ytmusic]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [spotify-to-ytmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_to_ytmusic-0.1.4.tar.gz tmp/spotify_to_ytmusic-0.2.0.tar.gz --markdown 20230529/s/spotify-to-ytmusic/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-29 14:45:47] INFO root fetch - processPackages [aheadworks-deploy-manager]: executing diffoscope
+[2023-05-29 14:45:47] INFO root fetch - processPackages [aheadworks-deploy-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aheadworks_deploy_manager-1.4.8.tar.gz tmp/aheadworks_deploy_manager-1.4.9.tar.gz --markdown 20230529/a/aheadworks-deploy-manager/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-29 14:45:49] INFO root fetch - processPackages [thsquant]: Start processing: cybrid-api-bank-python
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [thsquant]: success
+[2023-05-29 14:45:49] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-29 14:45:49] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-29 14:45:49] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230529/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [lib-dzne-tsv]: success
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [nomnomdata-engine]: success
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nagabus]: success
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [th2-common-utils]: success
+[2023-05-29 14:45:49] INFO root fetch - main [MainThread]: End processing [spotify-to-ytmusic]: success
+[2023-05-29 14:45:50] INFO root fetch - main [MainThread]: End processing [aheadworks-deploy-manager]: success
+[2023-05-29 14:45:50] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-29 14:45:55] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-29 14:45:55] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-29 14:45:55] INFO root fetch - main [MainThread]: Store serial: [18289863]
