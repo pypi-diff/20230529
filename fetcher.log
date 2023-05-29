@@ -11039,3 +11039,94 @@ EOFError: EOF read where object expected
 [2023-05-29 15:20:26] INFO root fetch - main [MainThread]: End processing [human-protocol-sdk]: success
 [2023-05-29 15:20:27] INFO root fetch - main [MainThread]: End processing [iLCDirac]: success
 [2023-05-29 15:20:27] INFO root fetch - main [MainThread]: Store serial: [18290225]
+[2023-05-29 15:25:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18290225]
+[2023-05-29 15:25:36] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datasieve
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superfluid
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superfluid
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: superfluid
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wand-ai-client
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scaneo
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langchain-utils
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rvr
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-account-financial-report
+[2023-05-29 15:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fr-delettre
+[2023-05-29 15:25:36] INFO root fetch - processPackages [superfluid]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [wand-ai-client]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [datasieve]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [odoo-addon-account-financial-report]: New version: [16.0.1.3.5] Old Version: [16.0.1.3.4.4]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [superfluid]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [superfluid]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 15:25:36] WARNING root fetch - processPackages [fr-delettre]: Skipping, unable to determine old version
+[2023-05-29 15:25:36] INFO root fetch - processPackages [fr-delettre]: Start processing: gisting
+[2023-05-29 15:25:36] INFO root fetch - main [MainThread]: End processing [fr-delettre] error
+[2023-05-29 15:25:36] INFO root fetch - processPackages [scaneo]: New version: [2023.5.29.post2] Old Version: [2023.5.29]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [langchain-utils]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-29 15:25:36] WARNING root fetch - processPackages [gisting]: Skipping, unable to determine old version
+[2023-05-29 15:25:36] INFO root fetch - processPackages [gisting]: Start processing: fbgemm-gpu-nightly
+[2023-05-29 15:25:36] INFO root fetch - main [MainThread]: End processing [gisting] error
+[2023-05-29 15:25:36] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.28] Old Version: [2023.5.27]
+[2023-05-29 15:25:36] ERROR root fetch - processPackages [rvr]: Unable to get metadata: No such project 'rvr'
+[2023-05-29 15:25:36] INFO root fetch - processPackages [rvr]: Start processing: crosspredict
+[2023-05-29 15:25:36] INFO root fetch - main [MainThread]: End processing [rvr] error
+[2023-05-29 15:25:36] INFO root fetch - processPackages [datasieve]: executing diffoscope
+[2023-05-29 15:25:36] INFO root fetch - processPackages [datasieve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasieve-0.0.6.tar.gz tmp/datasieve-0.0.8.tar.gz --markdown 20230529/d/datasieve/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-29 15:25:36] INFO root fetch - processPackages [crosspredict]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-29 15:25:36] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/f8/58/6f484ee5c9f41fbb76f6f27046945aabe9cd3665e2141d73fa6e26ba02ed/langchain_utils-0.4.2.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/89/1d/f18ddd0c95171612471aa8845ddd0e3d8572e0aeae784548ee0fbfa2f925/fbgemm_gpu_nightly-2023.5.27-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: Downloading https://files.pythonhosted.org/packages/92/04/100212980b8113786dc07a149a31706b19507282a3e8f86d2ef5aecfcf18/superfluid-0.1.0.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/68/47/4e10003a07e881e22158e2a622764f03ef1786904502a77f1fa74f86409a/scaneo-2023.5.29.post2.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: Downloading https://files.pythonhosted.org/packages/92/04/100212980b8113786dc07a149a31706b19507282a3e8f86d2ef5aecfcf18/superfluid-0.1.0.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [wand-ai-client]: Downloading https://files.pythonhosted.org/packages/1d/ca/10ecf083657178e4587f7db13b409a8a9e7a41f2675615f8ed263d62bc42/wand-ai-client-0.0.5.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: Downloading https://files.pythonhosted.org/packages/92/04/100212980b8113786dc07a149a31706b19507282a3e8f86d2ef5aecfcf18/superfluid-0.1.0.tar.gz
+[2023-05-29 15:25:37] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 287271115>=10485760
+[2023-05-29 15:25:37] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Start processing: kenzy-image
+[2023-05-29 15:25:37] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-29 15:25:37] INFO root fetch - processPackages [kenzy-image]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superfluid-0.0.9.tar.gz tmp/superfluid-0.1.0.tar.gz --markdown 20230529/s/superfluid/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superfluid-0.0.9.tar.gz tmp/superfluid-0.1.0.tar.gz --markdown 20230529/s/superfluid/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [wand-ai-client]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [wand-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wand-ai-client-0.0.4.tar.gz tmp/wand-ai-client-0.0.5.tar.gz --markdown 20230529/w/wand-ai-client/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [superfluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superfluid-0.0.9.tar.gz tmp/superfluid-0.1.0.tar.gz --markdown 20230529/s/superfluid/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [odoo-addon-account-financial-report]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [odoo-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_financial_report-16.0.1.3.4.4-py3-none-any.whl.zip tmp/odoo_addon_account_financial_report-16.0.1.3.5-py3-none-any.whl.zip --markdown 20230529/o/odoo-addon-account-financial-report/16.0.1.3.4.4-16.0.1.3.5/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.4.1.tar.gz tmp/langchain_utils-0.4.2.tar.gz --markdown 20230529/l/langchain-utils/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [crosspredict]: Downloading https://files.pythonhosted.org/packages/f1/59/7a14b642fcc53232b8a3f7af05b3f2a1e93a3b50329d7a438324a56d8f34/crosspredict-1.1.9.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-2023.5.29.tar.gz tmp/scaneo-2023.5.29.post2.tar.gz --markdown 20230529/s/scaneo/2023.5.29-2023.5.29.post2/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] INFO root fetch - processPackages [kenzy-image]: Downloading https://files.pythonhosted.org/packages/f1/40/9848aa015f9b9b536b9f3c081202378f8ccf6e2c44104c504d6a6287ec01/kenzy_image-0.0.4.tar.gz
+[2023-05-29 15:25:37] INFO root fetch - processPackages [crosspredict]: executing diffoscope
+[2023-05-29 15:25:37] INFO root fetch - processPackages [crosspredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosspredict-1.1.8.tar.gz tmp/crosspredict-1.1.9.tar.gz --markdown 20230529/c/crosspredict/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-29 15:25:37] WARNING root fetch - processPackages [kenzy-image]: Skipping package: exceeds size limit 12310667>=10485760
+[2023-05-29 15:25:37] INFO root fetch - processPackages [kenzy-image]: Start processing: dascore
+[2023-05-29 15:25:37] INFO root fetch - main [MainThread]: End processing [kenzy-image] error
+[2023-05-29 15:25:37] INFO root fetch - processPackages [dascore]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 15:25:37] INFO root fetch - processPackages [dascore]: Downloading https://files.pythonhosted.org/packages/26/c1/98045c7d84554e25a25d5085d054e982a78a578f579f858a49355a12a213/dascore-0.0.8.tar.gz
+[2023-05-29 15:25:38] INFO root fetch - processPackages [dascore]: Downloading https://files.pythonhosted.org/packages/be/12/83ece8d27b65115d48e36ac6886cea309c3b2969b0371cc8fd3bdacc8f81/dascore-0.0.9.tar.gz
+[2023-05-29 15:25:38] INFO root fetch - processPackages [datasieve]: Start processing: clip-retrieval
+[2023-05-29 15:25:38] INFO root fetch - main [MainThread]: End processing [datasieve]: success
+[2023-05-29 15:25:38] INFO root fetch - processPackages [clip-retrieval]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-05-29 15:25:38] INFO root fetch - processPackages [dascore]: executing diffoscope
+[2023-05-29 15:25:38] INFO root fetch - processPackages [dascore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dascore-0.0.8.tar.gz tmp/dascore-0.0.9.tar.gz --markdown 20230529/d/dascore/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 15:25:38] INFO root fetch - processPackages [clip-retrieval]: Downloading https://files.pythonhosted.org/packages/26/42/60bd3624c543f5f942020e94aaf18222f34af62e3309616c783d81197f03/clip_retrieval-2.9.1.tar.gz
+[2023-05-29 15:25:38] INFO root fetch - processPackages [clip-retrieval]: Downloading https://files.pythonhosted.org/packages/71/44/da313b412e540a273aca824c02a5efcbf2105393a1324f1f0713183e0e10/clip_retrieval-2.9.2.tar.gz
+[2023-05-29 15:25:38] INFO root fetch - processPackages [clip-retrieval]: executing diffoscope
+[2023-05-29 15:25:38] INFO root fetch - processPackages [clip-retrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip_retrieval-2.9.1.tar.gz tmp/clip_retrieval-2.9.2.tar.gz --markdown 20230529/c/clip-retrieval/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-05-29 15:25:39] INFO root fetch - processPackages [langchain-utils]: Start processing: predict0.1
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
+[2023-05-29 15:25:39] WARNING root fetch - processPackages [predict0.1]: Skipping, unable to determine old version
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [predict0.1] error
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [superfluid]: success
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [wand-ai-client]: success
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [superfluid]: success
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [superfluid]: success
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [crosspredict]: success
+[2023-05-29 15:25:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
+[2023-05-29 15:25:40] INFO root fetch - main [MainThread]: End processing [clip-retrieval]: success
+[2023-05-29 15:25:41] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-29 15:25:42] INFO root fetch - main [MainThread]: End processing [dascore]: success
+[2023-05-29 15:25:42] INFO root fetch - main [MainThread]: Store serial: [18290309]
