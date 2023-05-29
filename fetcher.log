@@ -17859,3 +17859,59 @@ EOFError: EOF read where object expected
 [2023-05-29 23:08:04] INFO root fetch - main [MainThread]: End processing [medialibrary]: success
 [2023-05-29 23:08:07] INFO root fetch - main [MainThread]: End processing [calixa-proto-py]: success
 [2023-05-29 23:08:07] INFO root fetch - main [MainThread]: Store serial: [18294515]
+[2023-05-29 23:13:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294515]
+[2023-05-29 23:13:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reddit-photo-aggregator
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simba-UW-tf-dev
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anticor-features
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-shopfloor
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spotPython
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-shopfloor-reception
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jupyterview
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apigratis-sdk-python
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: assisted-service-client
+[2023-05-29 23:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mrmr-selection
+[2023-05-29 23:13:17] WARNING root fetch - processPackages [reddit-photo-aggregator]: Skipping, unable to determine old version
+[2023-05-29 23:13:17] INFO root fetch - main [MainThread]: End processing [reddit-photo-aggregator] error
+[2023-05-29 23:13:17] INFO root fetch - processPackages [spotPython]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [odoo14-addon-shopfloor]: New version: [14.0.2.9.3.dev1] Old Version: [14.0.2.9.2]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [apigratis-sdk-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [odoo14-addon-shopfloor-reception]: New version: [14.0.1.3.0] Old Version: [14.0.1.2.0]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.61.4] Old Version: [1.61.3]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [anticor-features]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [jupyterview]: New version: [0.6.0] Old Version: [0.5.2]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [odoo14-addon-shopfloor-reception]: executing diffoscope
+[2023-05-29 23:13:17] INFO root fetch - processPackages [odoo14-addon-shopfloor-reception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopfloor_reception-14.0.1.2.0-py3-none-any.whl.zip tmp/odoo14_addon_shopfloor_reception-14.0.1.3.0-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-shopfloor-reception/14.0.1.2.0-14.0.1.3.0/diff.md --exclude *.pyd
+[2023-05-29 23:13:17] INFO root fetch - processPackages [odoo14-addon-shopfloor]: executing diffoscope
+[2023-05-29 23:13:17] INFO root fetch - processPackages [odoo14-addon-shopfloor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopfloor-14.0.2.9.2-py3-none-any.whl.zip tmp/odoo14_addon_shopfloor-14.0.2.9.3.dev1-py3-none-any.whl.zip --markdown 20230529/o/odoo14-addon-shopfloor/14.0.2.9.2-14.0.2.9.3.dev1/diff.md --exclude *.pyd
+[2023-05-29 23:13:17] INFO root fetch - processPackages [apigratis-sdk-python]: executing diffoscope
+[2023-05-29 23:13:17] INFO root fetch - processPackages [apigratis-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apigratis-sdk-python-0.0.1.tar.gz tmp/apigratis_sdk_python-0.0.2-py3-none-any.whl.zip --markdown 20230529/a/apigratis-sdk-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 23:13:17] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-29 23:13:17] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.2.0.tar.gz tmp/spotPython-0.2.1.tar.gz --markdown 20230529/s/spotPython/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 23:13:17] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-29 23:13:17] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230529/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-29 23:13:17] INFO root fetch - processPackages [mrmr-selection]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-29 23:13:17] INFO root fetch - processPackages [anticor-features]: Downloading https://files.pythonhosted.org/packages/af/7a/a6d13f715b76f71b3bc7b682694d02b0652c03f903334c6217d4c843f768/anticor_features-0.2.0.tar.gz
+[2023-05-29 23:13:17] INFO root fetch - processPackages [jupyterview]: Downloading https://files.pythonhosted.org/packages/23/c1/68de43c26090eed7a9747f78cd37f313e4f468bc7bbdb30ffe70e0c98341/jupyterview-0.5.2.tar.gz
+[2023-05-29 23:13:17] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/56/89/821c1d57bc17edc5e370f94dcde8c0d3265bf657ed8e4c811adc9bdb462c/Simba-UW-tf-dev-1.61.4.tar.gz
+[2023-05-29 23:13:17] INFO root fetch - processPackages [mrmr-selection]: Downloading https://files.pythonhosted.org/packages/af/51/43dfda70cf22230fdd3b1de9e5f3bf3eafccb7a04c1615acab09c8a71c09/mrmr_selection-0.2.6-py3-none-any.whl
+[2023-05-29 23:13:17] WARNING root fetch - processPackages [jupyterview]: Skipping package: exceeds size limit 13297546>=10485760
+[2023-05-29 23:13:17] INFO root fetch - main [MainThread]: End processing [jupyterview] error
+[2023-05-29 23:13:18] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-05-29 23:13:18] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.61.3.tar.gz tmp/Simba-UW-tf-dev-1.61.4.tar.gz --markdown 20230529/S/Simba-UW-tf-dev/1.61.3-1.61.4/diff.md --exclude *.pyd
+[2023-05-29 23:13:18] INFO root fetch - processPackages [anticor-features]: Downloading https://files.pythonhosted.org/packages/4e/50/e8f785eb3fc52e50e245ae94cc99318d6ca5de525463fe428dc64fd3c728/anticor_features-0.2.1.tar.gz
+[2023-05-29 23:13:18] INFO root fetch - processPackages [anticor-features]: executing diffoscope
+[2023-05-29 23:13:18] INFO root fetch - processPackages [anticor-features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anticor_features-0.2.0.tar.gz tmp/anticor_features-0.2.1.tar.gz --markdown 20230529/a/anticor-features/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 23:13:18] INFO root fetch - processPackages [mrmr-selection]: Downloading https://files.pythonhosted.org/packages/1b/c9/cfe2d07f644d0969a8699e18fe0511c271858a3704cca453d2fa9769bdd8/mrmr_selection-0.2.7-py3-none-any.whl
+[2023-05-29 23:13:18] INFO root fetch - processPackages [mrmr-selection]: executing diffoscope
+[2023-05-29 23:13:18] INFO root fetch - processPackages [mrmr-selection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrmr_selection-0.2.6-py3-none-any.whl.zip tmp/mrmr_selection-0.2.7-py3-none-any.whl.zip --markdown 20230529/m/mrmr-selection/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-29 23:13:18] INFO root fetch - main [MainThread]: End processing [apigratis-sdk-python]: success
+[2023-05-29 23:13:19] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor-reception]: success
+[2023-05-29 23:13:19] INFO root fetch - main [MainThread]: End processing [anticor-features]: success
+[2023-05-29 23:13:20] INFO root fetch - main [MainThread]: End processing [mrmr-selection]: success
+[2023-05-29 23:13:20] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor]: success
+[2023-05-29 23:13:20] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-29 23:13:21] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-29 23:13:22] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-05-29 23:13:22] INFO root fetch - main [MainThread]: Store serial: [18294544]
