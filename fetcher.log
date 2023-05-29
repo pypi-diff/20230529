@@ -7672,3 +7672,90 @@
 [2023-05-29 11:47:41] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-available-to-promise-release]: success
 [2023-05-29 11:47:41] INFO root fetch - main [MainThread]: End processing [norwegianblue]: success
 [2023-05-29 11:47:41] INFO root fetch - main [MainThread]: Store serial: [18288170]
+[2023-05-29 11:52:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18288170]
+[2023-05-29 11:52:50] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vid2info
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lino
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: always-updates
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semi-tensor-product
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gkligo
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: seven-cloudapp-frame
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: iotcore-api
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PyTraffic
+[2023-05-29 11:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: OSF-EIMTC
+[2023-05-29 11:52:50] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [gkligo]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [PyTraffic]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-29 11:52:50] WARNING root fetch - processPackages [semi-tensor-product]: Skipping, unable to determine old version
+[2023-05-29 11:52:50] INFO root fetch - processPackages [semi-tensor-product]: Start processing: financepy
+[2023-05-29 11:52:50] INFO root fetch - main [MainThread]: End processing [semi-tensor-product] error
+[2023-05-29 11:52:50] INFO root fetch - processPackages [OSF-EIMTC]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [lino]: New version: [23.5.2] Old Version: [23.5.1]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [iotcore-api]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [financepy]: New version: [0.300] Old Version: [0.290]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [OSF-EIMTC]: Downloading https://files.pythonhosted.org/packages/07/47/16d078e1107ddbfc1c5606fa448180e3bd7923ef32d5aad2a9a3e97e0214/OSF_EIMTC-0.1.8.tar.gz
+[2023-05-29 11:52:50] WARNING root fetch - processPackages [OSF-EIMTC]: Skipping package: exceeds size limit 13771117>=10485760
+[2023-05-29 11:52:50] INFO root fetch - processPackages [OSF-EIMTC]: Start processing: vbarongdatools001
+[2023-05-29 11:52:50] INFO root fetch - main [MainThread]: End processing [OSF-EIMTC] error
+[2023-05-29 11:52:50] INFO root fetch - processPackages [gkligo]: Downloading https://files.pythonhosted.org/packages/e8/36/ee91f3ebcd694d9549a2544eec4593b1dfbea562cb6073dd49d4ea9364d4/gkligo-0.1.2.tar.gz
+[2023-05-29 11:52:50] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-29 11:52:50] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230529/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-29 11:52:50] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-29 11:52:50] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230529/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-29 11:52:50] INFO root fetch - processPackages [vbarongdatools001]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 11:52:50] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/2d/f7/b351700a8f3d7d2208ae76b5552c1dcc6245f3d47c1b5501cfdbc3630974/PyTraffic-1.1.7.tar.gz
+[2023-05-29 11:52:50] INFO root fetch - processPackages [lino]: Downloading https://files.pythonhosted.org/packages/14/b2/b35f4cfb251d70d60f4967493f249f88d866b179bdb755e59498204c59ce/lino-23.5.1.tar.gz
+[2023-05-29 11:52:50] INFO root fetch - processPackages [financepy]: Downloading https://files.pythonhosted.org/packages/b5/6f/04e4c251716a4ff7110d11dd36d6a3cc393d846bdfbb9ff054bc1bac753d/financepy-0.290.tar.gz
+[2023-05-29 11:52:50] INFO root fetch - processPackages [iotcore-api]: Downloading https://files.pythonhosted.org/packages/1c/df/c513c5e2e68d6177e616e38a6b7a5f8529d2699440c18901128f3a477466/iotcore_api-1.1.0.tar.gz
+[2023-05-29 11:52:51] INFO root fetch - processPackages [vbarongdatools001]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [vbarongdatools001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbarongdatools001-0.0.6.tar.gz tmp/vbarongdatools001-0.0.7.tar.gz --markdown 20230529/v/vbarongdatools001/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 11:52:51] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230529/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-29 11:52:51] INFO root fetch - processPackages [gkligo]: Downloading https://files.pythonhosted.org/packages/46/13/bffc684f574c35b88d292be1ec2cfa1f677a0d746bc81053810a0425e1d7/gkligo-0.1.3.tar.gz
+[2023-05-29 11:52:51] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230529/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-05-29 11:52:51] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/41/0a/a1a98b5c06b044050c03fd75c8ceccb58978b85f82b3c6f14cb52a00d5fc/PyTraffic-1.1.8.tar.gz
+[2023-05-29 11:52:51] INFO root fetch - processPackages [financepy]: Downloading https://files.pythonhosted.org/packages/c4/f7/9f65539643a312c031b05cd5517b5d2b2ad3db72d724a5ce4b96aee53cb4/financepy-0.300.tar.gz
+[2023-05-29 11:52:51] INFO root fetch - processPackages [iotcore-api]: Downloading https://files.pythonhosted.org/packages/e9/cf/cac15dbd089c7fdefab9fa4209312544edffbc1c2f3a053b7ca200784048/iotcore_api-1.1.1.tar.gz
+[2023-05-29 11:52:51] INFO root fetch - processPackages [gkligo]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [gkligo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkligo-0.1.2.tar.gz tmp/gkligo-0.1.3.tar.gz --markdown 20230529/g/gkligo/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-29 11:52:51] WARNING root fetch - processPackages [PyTraffic]: Skipping package: exceeds size limit 53117613>=10485760
+[2023-05-29 11:52:51] INFO root fetch - processPackages [PyTraffic]: Start processing: mb-base
+[2023-05-29 11:52:51] INFO root fetch - main [MainThread]: End processing [PyTraffic] error
+[2023-05-29 11:52:51] INFO root fetch - processPackages [iotcore-api]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [iotcore-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iotcore_api-1.1.0.tar.gz tmp/iotcore_api-1.1.1.tar.gz --markdown 20230529/i/iotcore-api/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-29 11:52:51] INFO root fetch - processPackages [financepy]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [financepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/financepy-0.290.tar.gz tmp/financepy-0.300.tar.gz --markdown 20230529/f/financepy/0.290-0.300/diff.md --exclude *.pyd
+[2023-05-29 11:52:51] INFO root fetch - processPackages [mb-base]: New version: [1.0.202305290951] Old Version: [1.0.202305260118]
+[2023-05-29 11:52:51] INFO root fetch - processPackages [mb-base]: Downloading https://files.pythonhosted.org/packages/e3/98/2b89f2da6ecbc7dd40d17dbb04abb7ddcea6483ae974b1ef6fcfe26c1821/mb_base-1.0.202305290951-py3-none-any.whl
+[2023-05-29 11:52:51] INFO root fetch - processPackages [mb-base]: executing diffoscope
+[2023-05-29 11:52:51] INFO root fetch - processPackages [mb-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_base-1.0.202305260118-py3-none-any.whl.zip tmp/mb_base-1.0.202305290951-py3-none-any.whl.zip --markdown 20230529/m/mb-base/1.0.202305260118-1.0.202305290951/diff.md --exclude *.pyd
+[2023-05-29 11:52:52] INFO root fetch - processPackages [always-updates]: Start processing: mask-util
+[2023-05-29 11:52:52] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-29 11:52:52] INFO root fetch - processPackages [lino]: Downloading https://files.pythonhosted.org/packages/04/72/5a4327aa26fcf2524b9e214d4c5ed17c67e2f67966e2e06e07ce1571cad6/lino-23.5.2.tar.gz
+[2023-05-29 11:52:52] INFO root fetch - processPackages [mask-util]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-29 11:52:52] INFO root fetch - processPackages [always-updates]: Start processing: MeUtils
+[2023-05-29 11:52:52] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-29 11:52:52] INFO root fetch - processPackages [lino]: executing diffoscope
+[2023-05-29 11:52:52] INFO root fetch - processPackages [lino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino-23.5.1.tar.gz tmp/lino-23.5.2.tar.gz --markdown 20230529/l/lino/23.5.1-23.5.2/diff.md --exclude *.pyd
+[2023-05-29 11:52:52] INFO root fetch - processPackages [mask-util]: Downloading https://files.pythonhosted.org/packages/07/d4/6d8849f2076fa4aa2ad87c8d9781571d628c34340efa80a251b0b102d3d0/mask_util-0.1.0.tar.gz
+[2023-05-29 11:52:52] INFO root fetch - processPackages [mask-util]: executing diffoscope
+[2023-05-29 11:52:52] INFO root fetch - processPackages [mask-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mask_util-0.0.9.tar.gz tmp/mask_util-0.1.0.tar.gz --markdown 20230529/m/mask-util/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 11:52:52] INFO root fetch - processPackages [MeUtils]: New version: [2023.5.9.15.50.17] Old Version: [2023.5.5.13.0.43]
+[2023-05-29 11:52:52] INFO root fetch - main [MainThread]: End processing [gkligo]: success
+[2023-05-29 11:52:52] INFO root fetch - main [MainThread]: End processing [iotcore-api]: success
+[2023-05-29 11:52:53] INFO root fetch - main [MainThread]: End processing [mb-base]: success
+[2023-05-29 11:52:53] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-05-29 11:52:53] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.5.5.13.0.43.tar.gz tmp/MeUtils-2023.5.9.15.50.17.tar.gz --markdown 20230529/M/MeUtils/2023.5.5.13.0.43-2023.5.9.15.50.17/diff.md --exclude *.pyd
+[2023-05-29 11:52:53] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-05-29 11:52:53] INFO root fetch - main [MainThread]: End processing [mask-util]: success
+[2023-05-29 11:52:54] INFO root fetch - main [MainThread]: End processing [financepy]: success
+[2023-05-29 11:52:55] INFO root fetch - main [MainThread]: End processing [vbarongdatools001]: success
+[2023-05-29 11:52:56] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-29 11:52:59] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-05-29 11:55:42] INFO root fetch - main [MainThread]: End processing [lino]: success
+[2023-05-29 11:55:42] INFO root fetch - main [MainThread]: Store serial: [18288211]
