@@ -10240,3 +10240,108 @@ EOFError: EOF read where object expected
 [2023-05-29 14:30:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-fiscal]: success
 [2023-05-29 14:30:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-hr]: success
 [2023-05-29 14:30:04] INFO root fetch - main [MainThread]: Store serial: [18289734]
+[2023-05-29 14:35:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18289734]
+[2023-05-29 14:35:13] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medsenger-api
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cg
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-nagabus
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revo
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: irails
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: talk-codebase
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: STA2STAC
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dgl_client
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edaplore
+[2023-05-29 14:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hdn-research-environment
+[2023-05-29 14:35:13] INFO root fetch - processPackages [irails]: New version: [1.3.34] Old Version: [1.3.33]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [revo]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-29 14:35:13] WARNING root fetch - processPackages [STA2STAC]: Skipping, unable to determine old version
+[2023-05-29 14:35:13] INFO root fetch - processPackages [STA2STAC]: Start processing: lib-dzne-filedata
+[2023-05-29 14:35:13] INFO root fetch - processPackages [nonebot-plugin-nagabus]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 14:35:13] INFO root fetch - main [MainThread]: End processing [STA2STAC] error
+[2023-05-29 14:35:13] INFO root fetch - processPackages [dgl_client]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.22] Old Version: [0.1.21]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [edaplore]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [lib-dzne-filedata]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [medsenger-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [hdn-research-environment]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [cg]: New version: [33.0.0] Old Version: [32.2.8]
+[2023-05-29 14:35:13] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-29 14:35:13] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.3.8-py3-none-any.whl.zip tmp/edaplore-0.3.9-py3-none-any.whl.zip --markdown 20230529/e/edaplore/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 14:35:13] INFO root fetch - processPackages [revo]: Downloading https://files.pythonhosted.org/packages/1a/69/0c632b4f0e9562c35ce7a3293dd0c2d2921b291cdbde25eceb1d584f46f3/revo-0.0.1-py3-none-any.whl
+[2023-05-29 14:35:13] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/e7/2b/33acf9d46aabeca9164f90c3d66605c48c5740cb4946f018efae79c70e3a/irails-1.3.34.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/9b/89/fc00ec444f6f992201fd9497fe66929f8847b76bffe34b68622d6c94e996/hdn-research-environment-2.0.1.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [nonebot-plugin-nagabus]: Downloading https://files.pythonhosted.org/packages/32/48/14b20fd3cd071c80394d77a7afe955fb4bf4fb14ee1096949f43ee26d4b7/nonebot_plugin_nagabus-0.1.4.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/62/26/b458a1fd2bcb6ce63bd1051033a289a7919d824297db2b3371a166e43672/talk_codebase-0.1.22.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [lib-dzne-filedata]: Downloading https://files.pythonhosted.org/packages/99/cd/ab89ded1149774d7f5289ef11bd9276e67ace6fcf95dd5b7b57ec6cd4f34/lib-dzne-filedata-0.4.0.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/1c/e7/82c150cbe161b20e535246a5e09b4ffab4148dba2bc1b642498eca0b55b7/cg-33.0.0.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [dgl_client]: Downloading https://files.pythonhosted.org/packages/1b/f3/01cefe26cdfc2a4b611bf4dc4041ab3a52ee3982cc4581c6b946d07a4133/dgl_client-0.3.2.tar.gz
+[2023-05-29 14:35:13] INFO root fetch - processPackages [hdn-research-environment]: executing diffoscope
+[2023-05-29 14:35:13] INFO root fetch - processPackages [hdn-research-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdn-research-environment-2.0.0.tar.gz tmp/hdn-research-environment-2.0.1.tar.gz --markdown 20230529/h/hdn-research-environment/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-29 14:35:13] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-29 14:35:13] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.33.tar.gz tmp/irails-1.3.34.tar.gz --markdown 20230529/i/irails/1.3.33-1.3.34/diff.md --exclude *.pyd
+[2023-05-29 14:35:13] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-29 14:35:13] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.21.tar.gz tmp/talk_codebase-0.1.22.tar.gz --markdown 20230529/t/talk-codebase/0.1.21-0.1.22/diff.md --exclude *.pyd
+[2023-05-29 14:35:13] INFO root fetch - processPackages [nonebot-plugin-nagabus]: executing diffoscope
+[2023-05-29 14:35:13] INFO root fetch - processPackages [nonebot-plugin-nagabus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nagabus-0.1.3.tar.gz tmp/nonebot_plugin_nagabus-0.1.4.tar.gz --markdown 20230529/n/nonebot-plugin-nagabus/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 14:35:13] INFO root fetch - processPackages [dgl_client]: executing diffoscope
+[2023-05-29 14:35:13] INFO root fetch - processPackages [dgl_client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgl_client-0.3.1.tar.gz tmp/dgl_client-0.3.2.tar.gz --markdown 20230529/d/dgl_client/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-29 14:35:14] INFO root fetch - processPackages [revo]: Downloading https://files.pythonhosted.org/packages/aa/89/003c2d6f1bbf6ea9c51849f2afff61735dfafafd4bb68abe5eeac72a4841/revo-0.1.0-py3-none-any.whl
+[2023-05-29 14:35:14] INFO root fetch - processPackages [lib-dzne-filedata]: executing diffoscope
+[2023-05-29 14:35:14] INFO root fetch - processPackages [lib-dzne-filedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-filedata-0.3.0.tar.gz tmp/lib-dzne-filedata-0.4.0.tar.gz --markdown 20230529/l/lib-dzne-filedata/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-29 14:35:14] INFO root fetch - processPackages [medsenger-api]: executing diffoscope
+[2023-05-29 14:35:14] INFO root fetch - processPackages [medsenger-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medsenger_api-0.1.8.tar.gz tmp/medsenger_api-0.1.9.tar.gz --markdown 20230529/m/medsenger-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 14:35:14] INFO root fetch - processPackages [revo]: executing diffoscope
+[2023-05-29 14:35:14] INFO root fetch - processPackages [revo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revo-0.0.1-py3-none-any.whl.zip tmp/revo-0.1.0-py3-none-any.whl.zip --markdown 20230529/r/revo/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-29 14:35:14] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-29 14:35:14] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-32.2.8.tar.gz tmp/cg-33.0.0.tar.gz --markdown 20230529/c/cg/32.2.8-33.0.0/diff.md --exclude *.pyd
+[2023-05-29 14:35:14] INFO root fetch - processPackages [edaplore]: Start processing: optimuslib
+[2023-05-29 14:35:14] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-29 14:35:15] INFO root fetch - processPackages [optimuslib]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 14:35:15] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/4c/57/2ff9128246e1fe105894dcb3006adf0e56917ef2ad3f684142c51917141a/optimuslib-0.0.1.tar.gz
+[2023-05-29 14:35:15] INFO root fetch - processPackages [talk-codebase]: Start processing: lana
+[2023-05-29 14:35:15] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-29 14:35:15] INFO root fetch - processPackages [lana]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 14:35:15] INFO root fetch - processPackages [optimuslib]: Downloading https://files.pythonhosted.org/packages/11/72/bf2f349a4ae9ac452f63c94733844772ea2fa295210bf373f8f5c10612c4/optimuslib-0.0.2.tar.gz
+[2023-05-29 14:35:15] INFO root fetch - processPackages [lib-dzne-filedata]: Start processing: qm-qua
+[2023-05-29 14:35:15] INFO root fetch - main [MainThread]: End processing [lib-dzne-filedata]: success
+[2023-05-29 14:35:15] INFO root fetch - processPackages [qm-qua]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-29 14:35:15] INFO root fetch - processPackages [lana]: Downloading https://files.pythonhosted.org/packages/58/01/37efda4fcdb32d8de8dc7a49e7942d560e46363193179edf2dce9c7bbe62/lana-0.0.9.tar.gz
+[2023-05-29 14:35:15] INFO root fetch - processPackages [optimuslib]: executing diffoscope
+[2023-05-29 14:35:15] INFO root fetch - processPackages [optimuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimuslib-0.0.1.tar.gz tmp/optimuslib-0.0.2.tar.gz --markdown 20230529/o/optimuslib/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 14:35:15] INFO root fetch - processPackages [lana]: executing diffoscope
+[2023-05-29 14:35:15] INFO root fetch - processPackages [lana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lana-0.0.8.tar.gz tmp/lana-0.0.9.tar.gz --markdown 20230529/l/lana/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 14:35:15] INFO root fetch - processPackages [qm-qua]: Downloading https://files.pythonhosted.org/packages/14/7b/593ad613b66c8e823cd37399361bc94f27938a9d06de207f0926551605f9/qm_qua-1.1.2.tar.gz
+[2023-05-29 14:35:15] INFO root fetch - processPackages [revo]: Start processing: sqlcrafty
+[2023-05-29 14:35:15] INFO root fetch - main [MainThread]: End processing [revo]: success
+[2023-05-29 14:35:15] ERROR root fetch - processPackages [sqlcrafty]: Unable to get metadata: No such project 'sqlcrafty'
+[2023-05-29 14:35:15] INFO root fetch - processPackages [sqlcrafty]: Start processing: prose
+[2023-05-29 14:35:15] INFO root fetch - main [MainThread]: End processing [sqlcrafty] error
+[2023-05-29 14:35:16] INFO root fetch - processPackages [dgl_client]: Start processing: honeybee-idaice
+[2023-05-29 14:35:16] INFO root fetch - main [MainThread]: End processing [dgl_client]: success
+[2023-05-29 14:35:16] INFO root fetch - processPackages [honeybee-idaice]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 14:35:16] INFO root fetch - processPackages [nonebot-plugin-nagabus]: Start processing: tsaugmentation
+[2023-05-29 14:35:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nagabus]: success
+[2023-05-29 14:35:16] INFO root fetch - processPackages [prose]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-29 14:35:16] INFO root fetch - processPackages [honeybee-idaice]: executing diffoscope
+[2023-05-29 14:35:16] INFO root fetch - processPackages [honeybee-idaice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-idaice-0.2.0.tar.gz tmp/honeybee-idaice-0.2.1.tar.gz --markdown 20230529/h/honeybee-idaice/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 14:35:16] INFO root fetch - main [MainThread]: End processing [medsenger-api]: success
+[2023-05-29 14:35:16] INFO root fetch - main [MainThread]: End processing [hdn-research-environment]: success
+[2023-05-29 14:35:16] INFO root fetch - processPackages [tsaugmentation]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-29 14:35:16] INFO root fetch - processPackages [qm-qua]: Downloading https://files.pythonhosted.org/packages/ab/0f/42d20f3374bb02a1dd952e729f232fdcb164fcf9b54cf56d588d20f8fd33/qm_qua-1.1.3.tar.gz
+[2023-05-29 14:35:16] INFO root fetch - processPackages [prose]: Downloading https://files.pythonhosted.org/packages/c4/87/d73c481371bbb2ca6240733a1848a977545fa2241e2d634acac65dd779cc/prose-3.1.0.tar.gz
+[2023-05-29 14:35:16] INFO root fetch - processPackages [tsaugmentation]: executing diffoscope
+[2023-05-29 14:35:16] INFO root fetch - processPackages [tsaugmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsaugmentation-0.5.8.tar.gz tmp/tsaugmentation-0.5.9.tar.gz --markdown 20230529/t/tsaugmentation/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-29 14:35:16] INFO root fetch - processPackages [qm-qua]: executing diffoscope
+[2023-05-29 14:35:16] INFO root fetch - processPackages [qm-qua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qm_qua-1.1.2.tar.gz tmp/qm_qua-1.1.3.tar.gz --markdown 20230529/q/qm-qua/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-29 14:35:16] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-29 14:35:16] INFO root fetch - processPackages [prose]: Downloading https://files.pythonhosted.org/packages/94/c1/7dcb4f41fda24d2975a2b57fcfafa025865e7752648d1964d81b98a980c9/prose-3.1.1.tar.gz
+[2023-05-29 14:35:16] INFO root fetch - processPackages [prose]: executing diffoscope
+[2023-05-29 14:35:16] INFO root fetch - processPackages [prose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prose-3.1.0.tar.gz tmp/prose-3.1.1.tar.gz --markdown 20230529/p/prose/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-29 14:35:17] INFO root fetch - main [MainThread]: End processing [optimuslib]: success
+[2023-05-29 14:35:17] INFO root fetch - main [MainThread]: End processing [lana]: success
+[2023-05-29 14:35:17] INFO root fetch - main [MainThread]: End processing [honeybee-idaice]: success
+[2023-05-29 14:35:17] INFO root fetch - main [MainThread]: End processing [tsaugmentation]: success
+[2023-05-29 14:35:18] INFO root fetch - main [MainThread]: End processing [prose]: success
+[2023-05-29 14:35:18] INFO root fetch - main [MainThread]: End processing [qm-qua]: success
+[2023-05-29 14:35:25] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-29 14:35:25] INFO root fetch - main [MainThread]: Store serial: [18289796]
