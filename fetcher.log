@@ -13177,3 +13177,91 @@ EOFError: EOF read where object expected
 [2023-05-29 17:47:28] ERROR root fetch - processPackages [mkdocs-material]: Timeout during execution of pkgdiff
 [2023-05-29 17:47:28] INFO root fetch - main [MainThread]: End processing [mkdocs-material] error
 [2023-05-29 17:47:28] INFO root fetch - main [MainThread]: Store serial: [18291562]
+[2023-05-29 17:52:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291562]
+[2023-05-29 17:52:37] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cnd-cr-obj-naming
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cnd-cr-obj-naming
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lrservice
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coffeefetch
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: selenium-supporter
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: propan
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yangsuite-coverage
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: discminer
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: neopolitan
+[2023-05-29 17:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cardano-clusterlib
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 17:52:37] WARNING root fetch - processPackages [coffeefetch]: Skipping, unable to determine old version
+[2023-05-29 17:52:37] INFO root fetch - processPackages [coffeefetch]: Start processing: elkpy
+[2023-05-29 17:52:37] INFO root fetch - main [MainThread]: End processing [coffeefetch] error
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [selenium-supporter]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [lrservice]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [elkpy]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-coverage]: New version: [3.0.9.post0.dev2] Old Version: [3.0.9]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [discminer]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [propan]: New version: [0.1.2.4] Old Version: [0.1.2.3]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cardano-clusterlib]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230529/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/8e/6f/3bbe0e92b2ee227e788bb6f854d56a190fc5398d3ef84fc52518a2430cdb/cnd_cr_obj_naming-1.0.2-py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/8e/6f/3bbe0e92b2ee227e788bb6f854d56a190fc5398d3ef84fc52518a2430cdb/cnd_cr_obj_naming-1.0.2-py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [lrservice]: Downloading https://files.pythonhosted.org/packages/6e/05/acba5b12ce090141b82ac49b684f3393b5ccd53d8a40c22b7bd9bd3f1a2a/lrservice-0.0.1.tar.gz
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-coverage]: Downloading https://files.pythonhosted.org/packages/d0/9b/c0f963d3535b117eef30800b9dfdf490325376b28d8fb0957c9fffa4f969/yangsuite_coverage-3.0.9-py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cardano-clusterlib]: Downloading https://files.pythonhosted.org/packages/c4/fa/96b7daff4a2c0b0fe74bd8acc0300a372761ebfe068f4b5b83ec02adb44a/cardano-clusterlib-0.4.8.tar.gz
+[2023-05-29 17:52:37] WARNING root fetch - processPackages [yangsuite-coverage]: Skipping package: exceeds size limit 14794051>=10485760
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-coverage]: Start processing: yangsuite-devices
+[2023-05-29 17:52:37] INFO root fetch - main [MainThread]: End processing [yangsuite-coverage] error
+[2023-05-29 17:52:37] INFO root fetch - processPackages [propan]: Downloading https://files.pythonhosted.org/packages/ee/60/588b7a99fa7f957dda5b47c2e09ca05d80d883712aebf3ea1db5eee0b80f/propan-0.1.2.4.tar.gz
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/1f/b9/9fc15d47d5f82426e170e1038f36f3bc6ec6dd64d9cde52b899e3723c96d/cnd_cr_obj_naming-1.0.3-py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-devices]: New version: [2.9.6] Old Version: [2.9.5.post0.dev6]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [selenium-supporter]: Downloading https://files.pythonhosted.org/packages/7c/30/823874ed40eac915da0cc733f2efa0757de2c7e19d8df41b5a6cfee59202/selenium-supporter-0.0.6.tar.gz
+[2023-05-29 17:52:37] INFO root fetch - processPackages [lrservice]: Downloading https://files.pythonhosted.org/packages/03/9e/4ba77f4e1540fc3ab7c2969f6cd24df86f2ad1e800e8945899dff1f0aeee/lrservice-0.0.2.tar.gz
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/1f/b9/9fc15d47d5f82426e170e1038f36f3bc6ec6dd64d9cde52b899e3723c96d/cnd_cr_obj_naming-1.0.3-py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [elkpy]: Downloading https://files.pythonhosted.org/packages/58/c9/74381b50efe327023be216596141623971a5898894a51634d8505c9940d6/elkpy-1.1.8.tar.gz
+[2023-05-29 17:52:37] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/82/25/c05cbcbaea7b51dcc80bf33dbe97400f612e7521d9e0a7c767f170087a8c/discminer-0.2.9.tar.gz
+[2023-05-29 17:52:37] WARNING root fetch - processPackages [discminer]: Skipping package: exceeds size limit 11323881>=10485760
+[2023-05-29 17:52:37] INFO root fetch - processPackages [discminer]: Start processing: quik-ml-lib
+[2023-05-29 17:52:37] INFO root fetch - main [MainThread]: End processing [discminer] error
+[2023-05-29 17:52:37] INFO root fetch - processPackages [propan]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [propan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propan-0.1.2.3.tar.gz tmp/propan-0.1.2.4.tar.gz --markdown 20230529/p/propan/0.1.2.3-0.1.2.4/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnd_cr_obj_naming-1.0.2-py3-none-any.whl.zip tmp/cnd_cr_obj_naming-1.0.3-py3-none-any.whl.zip --markdown 20230529/c/cnd-cr-obj-naming/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] WARNING root fetch - processPackages [quik-ml-lib]: Skipping, unable to determine old version
+[2023-05-29 17:52:37] INFO root fetch - processPackages [quik-ml-lib]: Start processing: termcolor-whl
+[2023-05-29 17:52:37] INFO root fetch - main [MainThread]: End processing [quik-ml-lib] error
+[2023-05-29 17:52:37] INFO root fetch - processPackages [lrservice]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [lrservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lrservice-0.0.1.tar.gz tmp/lrservice-0.0.2.tar.gz --markdown 20230529/l/lrservice/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [selenium-supporter]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cnd-cr-obj-naming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnd_cr_obj_naming-1.0.2-py3-none-any.whl.zip tmp/cnd_cr_obj_naming-1.0.3-py3-none-any.whl.zip --markdown 20230529/c/cnd-cr-obj-naming/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [selenium-supporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-supporter-0.0.5.tar.gz tmp/selenium-supporter-0.0.6.tar.gz --markdown 20230529/s/selenium-supporter/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cardano-clusterlib]: Downloading https://files.pythonhosted.org/packages/88/30/597da1831245f564f433502db235d1fcd2185f76b982dc4eb96099dd0b90/cardano-clusterlib-0.4.9.tar.gz
+[2023-05-29 17:52:37] INFO root fetch - processPackages [elkpy]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [elkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elkpy-1.1.7.tar.gz tmp/elkpy-1.1.8.tar.gz --markdown 20230529/e/elkpy/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [termcolor-whl]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-devices]: Downloading https://files.pythonhosted.org/packages/fa/3f/fbf9f6964d245f1246e48217053d5225be6368e8626d2f30db919a3baf8d/yangsuite_devices-2.9.6-py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cardano-clusterlib]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [cardano-clusterlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardano-clusterlib-0.4.8.tar.gz tmp/cardano-clusterlib-0.4.9.tar.gz --markdown 20230529/c/cardano-clusterlib/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-29 17:52:37] INFO root fetch - processPackages [termcolor-whl]: Downloading https://files.pythonhosted.org/packages/2b/ad/9e826b1bd69dc3faa5abb7b6459528e16831c0e73b353479a467ed5ee995/termcolor_whl-1.1.2-py2.py3-none-any.whl
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-devices]: executing diffoscope
+[2023-05-29 17:52:37] INFO root fetch - processPackages [yangsuite-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_devices-2.9.5.post0.dev6-py3-none-any.whl.zip tmp/yangsuite_devices-2.9.6-py3-none-any.whl.zip --markdown 20230529/y/yangsuite-devices/2.9.5.post0.dev6-2.9.6/diff.md --exclude *.pyd
+[2023-05-29 17:52:38] INFO root fetch - processPackages [termcolor-whl]: Downloading https://files.pythonhosted.org/packages/3a/fa/61c0a99d9fa786fc2bcd219dc4c0d15be65ebb3152e126308a4b3e01dd35/termcolor_whl-1.1.3.tar.gz
+[2023-05-29 17:52:38] INFO root fetch - processPackages [termcolor-whl]: executing diffoscope
+[2023-05-29 17:52:38] INFO root fetch - processPackages [termcolor-whl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termcolor_whl-1.1.2-py2.py3-none-any.whl.zip tmp/termcolor_whl-1.1.3.tar.gz --markdown 20230529/t/termcolor-whl/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-29 17:52:38] INFO root fetch - processPackages [neopolitan]: Start processing: neopolitan
+[2023-05-29 17:52:38] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-29 17:52:38] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 17:52:39] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-29 17:52:39] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230529/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 17:52:39] INFO root fetch - main [MainThread]: End processing [lrservice]: success
+[2023-05-29 17:52:39] INFO root fetch - main [MainThread]: End processing [cnd-cr-obj-naming]: success
+[2023-05-29 17:52:39] INFO root fetch - main [MainThread]: End processing [cnd-cr-obj-naming]: success
+[2023-05-29 17:52:39] INFO root fetch - main [MainThread]: End processing [selenium-supporter]: success
+[2023-05-29 17:52:39] INFO root fetch - main [MainThread]: End processing [termcolor-whl]: success
+[2023-05-29 17:52:39] INFO root fetch - main [MainThread]: End processing [elkpy]: success
+[2023-05-29 17:52:40] INFO root fetch - main [MainThread]: End processing [propan]: success
+[2023-05-29 17:52:40] INFO root fetch - main [MainThread]: End processing [cardano-clusterlib]: success
+[2023-05-29 17:52:40] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-29 17:52:44] INFO root fetch - main [MainThread]: End processing [yangsuite-devices]: success
+[2023-05-29 17:52:44] INFO root fetch - main [MainThread]: Store serial: [18291606]
