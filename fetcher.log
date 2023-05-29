@@ -13065,3 +13065,63 @@ EOFError: EOF read where object expected
 [2023-05-29 17:33:55] INFO root fetch - main [MainThread]: End processing [boris-behav-obs]: success
 [2023-05-29 17:33:59] INFO root fetch - main [MainThread]: End processing [yangsuite-filemanager]: success
 [2023-05-29 17:33:59] INFO root fetch - main [MainThread]: Store serial: [18291509]
+[2023-05-29 17:39:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18291509]
+[2023-05-29 17:39:08] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncio-oss
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datajunction-server
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yangsuite-grpc-telemetry
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vlogs
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vyper
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deepapi
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: numerbay
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datajunction
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: golum
+[2023-05-29 17:39:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rosecape-airflow
+[2023-05-29 17:39:08] WARNING root fetch - processPackages [asyncio-oss]: Skipping, unable to determine old version
+[2023-05-29 17:39:08] INFO root fetch - processPackages [yangsuite-grpc-telemetry]: New version: [1.0.6] Old Version: [1.0.4.post0.dev6]
+[2023-05-29 17:39:08] INFO root fetch - main [MainThread]: End processing [asyncio-oss] error
+[2023-05-29 17:39:08] INFO root fetch - processPackages [datajunction-server]: New version: [0.0.1a8] Old Version: [0.0.1a7]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vlogs]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vyper]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [datajunction]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [deepapi]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [rosecape-airflow]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [numerbay]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [golum]: New version: [1.0.1] Old Version: [0.2.3]
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vlogs]: Downloading https://files.pythonhosted.org/packages/66/35/5b59d6921e37eb5b21e1a2f157acdea90557c79f018cd4194fec74cc4721/vlogs-1.0.4.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [golum]: Downloading https://files.pythonhosted.org/packages/ff/5e/742306463500856d9b06f47da48af751d2997f384755de8cafdd33e22432/golum-0.2.3.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [numerbay]: Downloading https://files.pythonhosted.org/packages/6f/39/d465182470129f39847ce24ae3a9179fa2c4e391a5f3f44dd51874f975aa/numerbay-0.2.3.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [yangsuite-grpc-telemetry]: Downloading https://files.pythonhosted.org/packages/73/d4/dff5e91378ff44eb9939a87b2e88ec5aed3661f247048ee5490ddf22180c/yangsuite_grpc_telemetry-1.0.4.post0.dev6-py3-none-any.whl
+[2023-05-29 17:39:08] INFO root fetch - processPackages [rosecape-airflow]: Downloading https://files.pythonhosted.org/packages/58/7b/b2194bf867e871cc6cb4d8ea5157cde6c927297d952110b8e6b398b93d88/rosecape_airflow-0.0.4.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [deepapi]: Downloading https://files.pythonhosted.org/packages/54/f4/3c8122a2f8ae8e49b22cd29f18fada0e9d1ceb1cfe1eb3e07ebd46daf762/deepapi-0.4.2.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vlogs]: executing diffoscope
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vlogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vlogs-1.0.3.tar.gz tmp/vlogs-1.0.4.tar.gz --markdown 20230529/v/vlogs/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vyper]: Downloading https://files.pythonhosted.org/packages/78/13/a843e7fefd7fa97cf1cf20ba2164b6c155b1b4575ca56ef01f5cf4f71e74/vyper-0.3.9.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [rosecape-airflow]: executing diffoscope
+[2023-05-29 17:39:08] INFO root fetch - processPackages [rosecape-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosecape_airflow-0.0.3.tar.gz tmp/rosecape_airflow-0.0.4.tar.gz --markdown 20230529/r/rosecape-airflow/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-29 17:39:08] WARNING root fetch - processPackages [golum]: Skipping package: exceeds size limit 31258165>=10485760
+[2023-05-29 17:39:08] INFO root fetch - main [MainThread]: End processing [golum] error
+[2023-05-29 17:39:08] INFO root fetch - processPackages [datajunction]: executing diffoscope
+[2023-05-29 17:39:08] INFO root fetch - processPackages [datajunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datajunction-0.0.1a8.tar.gz tmp/datajunction-0.0.1a9.tar.gz --markdown 20230529/d/datajunction/0.0.1a8-0.0.1a9/diff.md --exclude *.pyd
+[2023-05-29 17:39:08] INFO root fetch - processPackages [datajunction-server]: Downloading https://files.pythonhosted.org/packages/5e/74/837b55d32da7e6b69cec7b2da69fbb3dcc2a71dc1ee1e0d3dd407363f091/datajunction_server-0.0.1a8.tar.gz
+[2023-05-29 17:39:08] WARNING root fetch - processPackages [datajunction-server]: Skipping package: exceeds size limit 25698763>=10485760
+[2023-05-29 17:39:08] INFO root fetch - main [MainThread]: End processing [datajunction-server] error
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vyper]: executing diffoscope
+[2023-05-29 17:39:08] INFO root fetch - processPackages [vyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vyper-0.3.8.tar.gz tmp/vyper-0.3.9.tar.gz --markdown 20230529/v/vyper/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-29 17:39:08] INFO root fetch - processPackages [deepapi]: Downloading https://files.pythonhosted.org/packages/27/74/462068bcf025f6dad53b1de1541d45e4968f6fe1d744fd8988d2a437dadc/deepapi-0.4.3.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [numerbay]: Downloading https://files.pythonhosted.org/packages/48/7c/6e718bfdb544c58ef7d258b0fc78b7e94fb16155a3e0228482c2327f7046/numerbay-0.2.4.tar.gz
+[2023-05-29 17:39:08] INFO root fetch - processPackages [deepapi]: executing diffoscope
+[2023-05-29 17:39:08] INFO root fetch - processPackages [deepapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepapi-0.4.2.tar.gz tmp/deepapi-0.4.3.tar.gz --markdown 20230529/d/deepapi/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-29 17:39:08] INFO root fetch - processPackages [numerbay]: executing diffoscope
+[2023-05-29 17:39:08] INFO root fetch - processPackages [numerbay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numerbay-0.2.3.tar.gz tmp/numerbay-0.2.4.tar.gz --markdown 20230529/n/numerbay/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-29 17:39:09] INFO root fetch - processPackages [yangsuite-grpc-telemetry]: Downloading https://files.pythonhosted.org/packages/64/9d/dc21752096b0bc7eef3b29694139985b1e2a2fdc2c14bcb3298631145dac/yangsuite_grpc_telemetry-1.0.6-py3-none-any.whl
+[2023-05-29 17:39:09] INFO root fetch - processPackages [yangsuite-grpc-telemetry]: executing diffoscope
+[2023-05-29 17:39:09] INFO root fetch - processPackages [yangsuite-grpc-telemetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_grpc_telemetry-1.0.4.post0.dev6-py3-none-any.whl.zip tmp/yangsuite_grpc_telemetry-1.0.6-py3-none-any.whl.zip --markdown 20230529/y/yangsuite-grpc-telemetry/1.0.4.post0.dev6-1.0.6/diff.md --exclude *.pyd
+[2023-05-29 17:39:09] INFO root fetch - main [MainThread]: End processing [rosecape-airflow]: success
+[2023-05-29 17:39:09] INFO root fetch - main [MainThread]: End processing [vlogs]: success
+[2023-05-29 17:39:09] INFO root fetch - main [MainThread]: End processing [datajunction]: success
+[2023-05-29 17:39:10] INFO root fetch - main [MainThread]: End processing [numerbay]: success
+[2023-05-29 17:39:11] INFO root fetch - main [MainThread]: End processing [deepapi]: success
+[2023-05-29 17:39:13] INFO root fetch - main [MainThread]: End processing [vyper]: success
+[2023-05-29 17:39:15] INFO root fetch - main [MainThread]: End processing [yangsuite-grpc-telemetry]: success
+[2023-05-29 17:39:15] INFO root fetch - main [MainThread]: Store serial: [18291539]
