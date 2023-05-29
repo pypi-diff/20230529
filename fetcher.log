@@ -17493,3 +17493,86 @@ EOFError: EOF read where object expected
 [2023-05-29 22:30:16] INFO root fetch - main [MainThread]: End processing [large-image-source-vips]: success
 [2023-05-29 22:30:17] INFO root fetch - main [MainThread]: End processing [lab-partner]: success
 [2023-05-29 22:30:17] INFO root fetch - main [MainThread]: Store serial: [18294252]
+[2023-05-29 22:35:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294252]
+[2023-05-29 22:35:27] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: price-charting
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars-lts-cpu
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dormer
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eXirt
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-partiql-parser
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bfcm
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: polars
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vector-vault
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: quask
+[2023-05-29 22:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rororo
+[2023-05-29 22:35:27] WARNING root fetch - processPackages [price-charting]: Skipping, unable to determine old version
+[2023-05-29 22:35:27] INFO root fetch - processPackages [price-charting]: Start processing: fxn
+[2023-05-29 22:35:27] INFO root fetch - main [MainThread]: End processing [price-charting] error
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars-lts-cpu]: New version: [0.18.0] Old Version: [0.17.9]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [dormer]: New version: [0.2] Old Version: [0.1]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [eXirt]: New version: [1.0.2] Old Version: [1.0.1.4]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [bfcm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 22:35:27] WARNING root fetch - processPackages [quask]: Skipping, unable to determine old version
+[2023-05-29 22:35:27] INFO root fetch - processPackages [quask]: Start processing: lightweight-charts
+[2023-05-29 22:35:27] INFO root fetch - main [MainThread]: End processing [quask] error
+[2023-05-29 22:35:27] INFO root fetch - processPackages [vector-vault]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [rororo]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [py-partiql-parser]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [fxn]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [lightweight-charts]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-29 22:35:27] INFO root fetch - processPackages [bfcm]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [bfcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfcm-0.0.8.tar.gz tmp/bfcm-0.0.9.tar.gz --markdown 20230529/b/bfcm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [dormer]: Downloading https://files.pythonhosted.org/packages/b6/3a/d8f62586a6d728f33bb12f9414de9a69d3f02757a772c1dae42842382297/dormer-0.1.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [eXirt]: Downloading https://files.pythonhosted.org/packages/37/55/f97f2d57d268348e70899e49b17464f2797b39b3ebd8810fad31fae8bb89/eXirt-1.0.1.4.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/f3/fa/fea9a9dc9a1ce046352f3f6eebd8e2e77387e1d6800c1178240af453ba6a/fxn-0.0.7.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/08/a4/74f6a87d9eb9751f8e63a593965054ac86487f863a1b9a13f9749ded0dbf/vector_vault-1.5.0.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [rororo]: Downloading https://files.pythonhosted.org/packages/1c/18/20da2e219d8324289a45908a6916021a7dca35f35805dab5eb6f35a6c6d2/rororo-3.1.0.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [fxn]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [fxn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fxn-0.0.6.tar.gz tmp/fxn-0.0.7.tar.gz --markdown 20230529/f/fxn/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.4.0.tar.gz tmp/vector_vault-1.5.0.tar.gz --markdown 20230529/v/vector-vault/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/d6/fc/1b2a4689dcf317b3cae35bd5fe763c4279e216275d232be676767bd9a899/polars_lts_cpu-0.18.0.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [lightweight-charts]: Downloading https://files.pythonhosted.org/packages/cf/d4/9663fbc09e849ab1b6fd51555de471f4d107dde6cb568043398b7376aeee/lightweight_charts-1.0.9.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/93/e4/9a718409473643b22e12accd47ccdecbdb9a2c989581b94e2309d00cc986/py-partiql-parser-0.3.3.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [eXirt]: Downloading https://files.pythonhosted.org/packages/71/b9/f11d46e0fdaa35b5aaab3f42f2dd81e091911c77fb21a0b1ed764b36e894/eXirt-1.0.2.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20230529/p/polars/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [dormer]: Downloading https://files.pythonhosted.org/packages/11/78/439d6402c6f9e62e1dc851a0a63c184e0c94fb8e8579c13487eae566f2f1/dormer-0.2.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [py-partiql-parser]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [py-partiql-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-partiql-parser-0.3.2.tar.gz tmp/py-partiql-parser-0.3.3.tar.gz --markdown 20230529/p/py-partiql-parser/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [lightweight-charts]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [lightweight-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightweight_charts-1.0.8.tar.gz tmp/lightweight_charts-1.0.9.tar.gz --markdown 20230529/l/lightweight-charts/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [rororo]: Downloading https://files.pythonhosted.org/packages/8a/ee/94fee4a4fc7b56daae796b280f8e08b7bee6bd361bc9e0f4d7c54dada1e9/rororo-3.2.0.tar.gz
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars-lts-cpu]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [polars-lts-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_lts_cpu-0.17.9.tar.gz tmp/polars_lts_cpu-0.18.0.tar.gz --markdown 20230529/p/polars-lts-cpu/0.17.9-0.18.0/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [eXirt]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [eXirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eXirt-1.0.1.4.tar.gz tmp/eXirt-1.0.2.tar.gz --markdown 20230529/e/eXirt/1.0.1.4-1.0.2/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [rororo]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [rororo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rororo-3.1.0.tar.gz tmp/rororo-3.2.0.tar.gz --markdown 20230529/r/rororo/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-29 22:35:27] INFO root fetch - processPackages [dormer]: executing diffoscope
+[2023-05-29 22:35:27] INFO root fetch - processPackages [dormer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dormer-0.1.tar.gz tmp/dormer-0.2.tar.gz --markdown 20230529/d/dormer/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-29 22:35:28] INFO root fetch - processPackages [bfcm]: Start processing: polars-u64-idx
+[2023-05-29 22:35:28] INFO root fetch - main [MainThread]: End processing [bfcm]: success
+[2023-05-29 22:35:28] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.18.0] Old Version: [0.17.9]
+[2023-05-29 22:35:29] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/aa/d1/d5d89a32100f77039a136ac5e09e15c4777a8cbc98dbe3ac680a61501140/polars_u64_idx-0.18.0.tar.gz
+[2023-05-29 22:35:29] INFO root fetch - processPackages [vector-vault]: Start processing: poetry-plugin-bundle
+[2023-05-29 22:35:29] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-29 22:35:29] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2023-05-29 22:35:29] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.17.9.tar.gz tmp/polars_u64_idx-0.18.0.tar.gz --markdown 20230529/p/polars-u64-idx/0.17.9-0.18.0/diff.md --exclude *.pyd
+[2023-05-29 22:35:29] INFO root fetch - processPackages [poetry-plugin-bundle]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-29 22:35:29] INFO root fetch - main [MainThread]: End processing [lightweight-charts]: success
+[2023-05-29 22:35:29] INFO root fetch - processPackages [poetry-plugin-bundle]: Downloading https://files.pythonhosted.org/packages/55/4f/33e2ccdadfc47b108918019824d7c413a0d65910431d23e6ed75441dc05c/poetry_plugin_bundle-1.2.0.tar.gz
+[2023-05-29 22:35:29] INFO root fetch - main [MainThread]: End processing [fxn]: success
+[2023-05-29 22:35:29] INFO root fetch - main [MainThread]: End processing [dormer]: success
+[2023-05-29 22:35:29] INFO root fetch - main [MainThread]: End processing [rororo]: success
+[2023-05-29 22:35:29] INFO root fetch - processPackages [poetry-plugin-bundle]: Downloading https://files.pythonhosted.org/packages/ad/50/aeb02562e55448b8104e9348af749115363c0252ad620fdccb7c9553d2a9/poetry_plugin_bundle-1.3.0.tar.gz
+[2023-05-29 22:35:29] INFO root fetch - processPackages [poetry-plugin-bundle]: executing diffoscope
+[2023-05-29 22:35:29] INFO root fetch - processPackages [poetry-plugin-bundle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_bundle-1.2.0.tar.gz tmp/poetry_plugin_bundle-1.3.0.tar.gz --markdown 20230529/p/poetry-plugin-bundle/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-29 22:35:30] INFO root fetch - main [MainThread]: End processing [eXirt]: success
+[2023-05-29 22:35:30] INFO root fetch - main [MainThread]: End processing [py-partiql-parser]: success
+[2023-05-29 22:35:31] INFO root fetch - main [MainThread]: End processing [poetry-plugin-bundle]: success
+[2023-05-29 22:35:34] INFO root fetch - main [MainThread]: End processing [polars]: success
+[2023-05-29 22:35:55] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
+[2023-05-29 22:35:57] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2023-05-29 22:35:57] INFO root fetch - main [MainThread]: Store serial: [18294296]
