@@ -4626,3 +4626,34 @@
 [2023-05-29 06:40:07] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-05-29 06:40:42] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
 [2023-05-29 06:40:42] INFO root fetch - main [MainThread]: Store serial: [18286362]
+[2023-05-29 06:45:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286362]
+[2023-05-29 06:45:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-29 06:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lolpop
+[2023-05-29 06:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dLuxToliman
+[2023-05-29 06:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: appletree
+[2023-05-29 06:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: preprocessing-pgp
+[2023-05-29 06:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymavlink
+[2023-05-29 06:45:51] WARNING root fetch - processPackages [dLuxToliman]: Skipping, unable to determine old version
+[2023-05-29 06:45:51] INFO root fetch - main [MainThread]: End processing [dLuxToliman] error
+[2023-05-29 06:45:51] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.post9.dev7] Old Version: [0.2.9.post8.dev7]
+[2023-05-29 06:45:51] INFO root fetch - processPackages [pymavlink]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-05-29 06:45:51] INFO root fetch - processPackages [lolpop]: New version: [0.1.0a6] Old Version: [0.1.0a5]
+[2023-05-29 06:45:51] INFO root fetch - processPackages [appletree]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-29 06:45:51] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/a9/1b/319352b361b9b01f65b5b0dca86df4dc3e5f06b995022ef3976f71acd45d/preprocessing-pgp-0.2.9.post8.dev7.tar.gz
+[2023-05-29 06:45:52] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 78857923>=10485760
+[2023-05-29 06:45:52] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-05-29 06:45:52] INFO root fetch - processPackages [pymavlink]: Downloading https://files.pythonhosted.org/packages/cd/6a/3a068f16c5549e500a9cdeae738b5a92214174446e5a5ad9d1f6bd51a98b/pymavlink-2.4.8.tar.gz
+[2023-05-29 06:45:52] INFO root fetch - processPackages [appletree]: Downloading https://files.pythonhosted.org/packages/ed/3c/b3b017d2be3c5ae12b8dbf8692ed8f90b4b239da7f0a2051079f2fd5efc3/appletree-0.2.2.tar.gz
+[2023-05-29 06:45:52] INFO root fetch - processPackages [lolpop]: Downloading https://files.pythonhosted.org/packages/b6/46/be4ad6edd52f2a71214ef2a01c7e93d25b1b33a74cd2e1b6c4b6bc5a9ef6/lolpop-0.1.0a6.tar.gz
+[2023-05-29 06:45:52] INFO root fetch - processPackages [lolpop]: executing diffoscope
+[2023-05-29 06:45:52] INFO root fetch - processPackages [lolpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lolpop-0.1.0a5.tar.gz tmp/lolpop-0.1.0a6.tar.gz --markdown 20230529/l/lolpop/0.1.0a5-0.1.0a6/diff.md --exclude *.pyd
+[2023-05-29 06:45:52] INFO root fetch - processPackages [appletree]: Downloading https://files.pythonhosted.org/packages/6a/22/e92f0fafdd082ac6bb888298ec5259107349271820acf4e214c89389aeb6/appletree-0.2.3.tar.gz
+[2023-05-29 06:45:52] INFO root fetch - processPackages [pymavlink]: Downloading https://files.pythonhosted.org/packages/77/6b/502081988b0a0a0b0a41716653817bb924260bbfdd349ca2f8b78c27ddcd/pymavlink-2.4.9.tar.gz
+[2023-05-29 06:45:52] INFO root fetch - processPackages [appletree]: executing diffoscope
+[2023-05-29 06:45:52] INFO root fetch - processPackages [appletree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appletree-0.2.2.tar.gz tmp/appletree-0.2.3.tar.gz --markdown 20230529/a/appletree/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-29 06:45:53] INFO root fetch - processPackages [pymavlink]: executing diffoscope
+[2023-05-29 06:45:53] INFO root fetch - processPackages [pymavlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymavlink-2.4.8.tar.gz tmp/pymavlink-2.4.9.tar.gz --markdown 20230529/p/pymavlink/2.4.8-2.4.9/diff.md --exclude *.pyd
+[2023-05-29 06:45:53] INFO root fetch - main [MainThread]: End processing [appletree]: success
+[2023-05-29 06:45:54] INFO root fetch - main [MainThread]: End processing [lolpop]: success
+[2023-05-29 06:45:58] INFO root fetch - main [MainThread]: End processing [pymavlink]: success
+[2023-05-29 06:45:58] INFO root fetch - main [MainThread]: Store serial: [18286379]
