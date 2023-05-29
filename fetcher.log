@@ -4285,3 +4285,38 @@
 [2023-05-29 05:46:31] INFO root fetch - main [MainThread]: End processing [open-autonomy]: success
 [2023-05-29 05:46:47] INFO root fetch - main [MainThread]: End processing [scikit-recommender]: success
 [2023-05-29 05:46:47] INFO root fetch - main [MainThread]: Store serial: [18286142]
+[2023-05-29 05:51:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286142]
+[2023-05-29 05:52:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-29 05:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clickzetta-connector
+[2023-05-29 05:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testpipxyz2
+[2023-05-29 05:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clickzetta-sqlalchemy
+[2023-05-29 05:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cengal
+[2023-05-29 05:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-clickzetta
+[2023-05-29 05:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jatool
+[2023-05-29 05:52:03] INFO root fetch - processPackages [clickzetta-sqlalchemy]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-29 05:52:03] INFO root fetch - processPackages [cengal]: New version: [3.2.5] Old Version: [3.2.3]
+[2023-05-29 05:52:03] WARNING root fetch - processPackages [testpipxyz2]: Skipping, unable to determine old version
+[2023-05-29 05:52:03] INFO root fetch - main [MainThread]: End processing [testpipxyz2] error
+[2023-05-29 05:52:03] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 05:52:03] INFO root fetch - processPackages [jatool]: New version: [1.991] Old Version: [1.99]
+[2023-05-29 05:52:03] INFO root fetch - processPackages [clickzetta-connector]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-29 05:52:03] INFO root fetch - processPackages [jatool]: executing diffoscope
+[2023-05-29 05:52:03] INFO root fetch - processPackages [jatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jatool-1.99.tar.gz tmp/jatool-1.991.tar.gz --markdown 20230529/j/jatool/1.99-1.991/diff.md --exclude *.pyd
+[2023-05-29 05:52:03] INFO root fetch - processPackages [clickzetta-connector]: Downloading https://files.pythonhosted.org/packages/d1/e2/29969b1ebad35062bf838e8e52e1eb0afc236cfd9d484f2230d11b19acbd/clickzetta-connector-0.7.5.tar.gz
+[2023-05-29 05:52:03] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-29 05:52:03] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230529/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 05:52:03] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/b5/e7/6121e9cbc85af3028db8e24c2ab093998e40be93a9aff33b4a2ce474c3a0/cengal-3.2.5.tar.gz
+[2023-05-29 05:52:03] INFO root fetch - processPackages [clickzetta-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/40/a3/c85fbf86ba3e72b306ec2546ebfd2dd503a78ccc9508fe3052ebcf7e6cfb/clickzetta-sqlalchemy-0.7.6.tar.gz
+[2023-05-29 05:52:04] INFO root fetch - processPackages [clickzetta-sqlalchemy]: executing diffoscope
+[2023-05-29 05:52:04] INFO root fetch - processPackages [clickzetta-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-sqlalchemy-0.7.5.tar.gz tmp/clickzetta-sqlalchemy-0.7.6.tar.gz --markdown 20230529/c/clickzetta-sqlalchemy/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-29 05:52:04] INFO root fetch - processPackages [clickzetta-connector]: Downloading https://files.pythonhosted.org/packages/1a/3a/b37e34a78025dd8105e2396f86198c97b35aaf06bed6fbf81db2c0d32979/clickzetta-connector-0.7.6.tar.gz
+[2023-05-29 05:52:04] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-29 05:52:04] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.2.3.tar.gz tmp/cengal-3.2.5.tar.gz --markdown 20230529/c/cengal/3.2.3-3.2.5/diff.md --exclude *.pyd
+[2023-05-29 05:52:04] INFO root fetch - processPackages [clickzetta-connector]: executing diffoscope
+[2023-05-29 05:52:04] INFO root fetch - processPackages [clickzetta-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickzetta-connector-0.7.5.tar.gz tmp/clickzetta-connector-0.7.6.tar.gz --markdown 20230529/c/clickzetta-connector/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-29 05:52:05] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-29 05:52:05] INFO root fetch - main [MainThread]: End processing [clickzetta-sqlalchemy]: success
+[2023-05-29 05:52:05] INFO root fetch - main [MainThread]: End processing [clickzetta-connector]: success
+[2023-05-29 05:52:06] INFO root fetch - main [MainThread]: End processing [jatool]: success
+[2023-05-29 05:52:50] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-29 05:52:50] INFO root fetch - main [MainThread]: Store serial: [18286167]
