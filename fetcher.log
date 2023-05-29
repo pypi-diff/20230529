@@ -6168,3 +6168,47 @@
 [2023-05-29 09:38:49] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
 [2023-05-29 09:38:50] INFO root fetch - main [MainThread]: End processing [gestionatr]: success
 [2023-05-29 09:38:50] INFO root fetch - main [MainThread]: Store serial: [18287298]
+[2023-05-29 09:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18287298]
+[2023-05-29 09:43:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hopic
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neclib
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lib-dzne-seq
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hatch-build-scripts
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mammopy
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: krakenpy
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: whitson-tool-helper
+[2023-05-29 09:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: percy-appium-app
+[2023-05-29 09:43:59] INFO root fetch - processPackages [lib-dzne-seq]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-29 09:43:59] INFO root fetch - processPackages [mammopy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 09:43:59] WARNING root fetch - processPackages [hatch-build-scripts]: Skipping, unable to determine old version
+[2023-05-29 09:43:59] INFO root fetch - main [MainThread]: End processing [hatch-build-scripts] error
+[2023-05-29 09:43:59] INFO root fetch - processPackages [neclib]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-29 09:43:59] INFO root fetch - processPackages [hopic]: New version: [1.61.3] Old Version: [1.61.2]
+[2023-05-29 09:43:59] INFO root fetch - processPackages [whitson-tool-helper]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-29 09:43:59] INFO root fetch - processPackages [percy-appium-app]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-29 09:43:59] WARNING root fetch - processPackages [krakenpy]: Skipping, unable to determine old version
+[2023-05-29 09:43:59] INFO root fetch - main [MainThread]: End processing [krakenpy] error
+[2023-05-29 09:43:59] INFO root fetch - processPackages [neclib]: executing diffoscope
+[2023-05-29 09:43:59] INFO root fetch - processPackages [neclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neclib-0.8.0.tar.gz tmp/neclib-0.9.0.tar.gz --markdown 20230529/n/neclib/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-29 09:43:59] INFO root fetch - processPackages [hopic]: Downloading https://files.pythonhosted.org/packages/8c/a8/dbae05f09a5b7378145ac535b09d07e2245f5ba61214369e5c026066c3dd/hopic-1.61.2.tar.gz
+[2023-05-29 09:43:59] INFO root fetch - processPackages [lib-dzne-seq]: Downloading https://files.pythonhosted.org/packages/b1/86/7613e954ce85fb601242a8086dcd7a44058d556ee538149c6203d09b0993/lib-dzne-seq-0.2.1.tar.gz
+[2023-05-29 09:43:59] INFO root fetch - processPackages [mammopy]: executing diffoscope
+[2023-05-29 09:43:59] INFO root fetch - processPackages [mammopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mammopy-0.0.8.tar.gz tmp/mammopy-0.0.9.tar.gz --markdown 20230529/m/mammopy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 09:43:59] INFO root fetch - processPackages [lib-dzne-seq]: executing diffoscope
+[2023-05-29 09:43:59] INFO root fetch - processPackages [lib-dzne-seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-seq-0.2.0.tar.gz tmp/lib-dzne-seq-0.2.1.tar.gz --markdown 20230529/l/lib-dzne-seq/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-29 09:43:59] INFO root fetch - processPackages [percy-appium-app]: Downloading https://files.pythonhosted.org/packages/1f/63/8ec4bb2be2dfa785647962cb209b1b1b4ad590d868ea764fafa5f1dcdd87/percy-appium-app-1.2.2.tar.gz
+[2023-05-29 09:43:59] INFO root fetch - processPackages [hopic]: Downloading https://files.pythonhosted.org/packages/39/da/ee2b2746ce9986be3a657c612156e9c209a36fea658d3a0409bb3b308ee9/hopic-1.61.3.tar.gz
+[2023-05-29 09:43:59] INFO root fetch - processPackages [percy-appium-app]: executing diffoscope
+[2023-05-29 09:43:59] INFO root fetch - processPackages [percy-appium-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/percy-appium-app-1.2.1.tar.gz tmp/percy-appium-app-1.2.2.tar.gz --markdown 20230529/p/percy-appium-app/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-29 09:44:00] INFO root fetch - processPackages [whitson-tool-helper]: Downloading https://files.pythonhosted.org/packages/99/95/0edd37042b96676e382093029673218db46797bc0d9c7499631f9acd1fa2/whitson_tool_helper-0.1.5.tar.gz
+[2023-05-29 09:44:00] INFO root fetch - processPackages [hopic]: executing diffoscope
+[2023-05-29 09:44:00] INFO root fetch - processPackages [hopic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hopic-1.61.2.tar.gz tmp/hopic-1.61.3.tar.gz --markdown 20230529/h/hopic/1.61.2-1.61.3/diff.md --exclude *.pyd
+[2023-05-29 09:44:00] INFO root fetch - processPackages [whitson-tool-helper]: executing diffoscope
+[2023-05-29 09:44:00] INFO root fetch - processPackages [whitson-tool-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whitson_tool_helper-0.1.4.tar.gz tmp/whitson_tool_helper-0.1.5.tar.gz --markdown 20230529/w/whitson-tool-helper/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-29 09:44:00] INFO root fetch - main [MainThread]: End processing [neclib]: success
+[2023-05-29 09:44:00] INFO root fetch - main [MainThread]: End processing [lib-dzne-seq]: success
+[2023-05-29 09:44:01] INFO root fetch - main [MainThread]: End processing [percy-appium-app]: success
+[2023-05-29 09:44:01] INFO root fetch - main [MainThread]: End processing [whitson-tool-helper]: success
+[2023-05-29 09:44:01] INFO root fetch - main [MainThread]: End processing [hopic]: success
+[2023-05-29 09:44:02] INFO root fetch - main [MainThread]: End processing [mammopy]: success
+[2023-05-29 09:44:02] INFO root fetch - main [MainThread]: Store serial: [18287326]
