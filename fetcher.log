@@ -5108,3 +5108,54 @@
 [2023-05-29 07:51:55] INFO root fetch - main [MainThread]: End processing [MyDataSort001]: success
 [2023-05-29 07:51:55] INFO root fetch - main [MainThread]: End processing [MyDataSort001]: success
 [2023-05-29 07:51:55] INFO root fetch - main [MainThread]: Store serial: [18286615]
+[2023-05-29 07:56:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18286615]
+[2023-05-29 07:57:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MyDataSort001
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-quizz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nautobot-circuit-maintenance
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cwsearch-utils
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: je-mail-thunder-dev
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yz-core2
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fenjing
+[2023-05-29 07:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Pras-Server
+[2023-05-29 07:57:04] INFO root fetch - processPackages [MyDataSort001]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-29 07:57:04] INFO root fetch - processPackages [Pras-Server]: New version: [1.1.14] Old Version: [1.1.0]
+[2023-05-29 07:57:04] WARNING root fetch - processPackages [jupyter-quizz]: Skipping, unable to determine old version
+[2023-05-29 07:57:04] INFO root fetch - main [MainThread]: End processing [jupyter-quizz] error
+[2023-05-29 07:57:04] INFO root fetch - processPackages [yz-core2]: New version: [1.0.50] Old Version: [1.0.49]
+[2023-05-29 07:57:04] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-29 07:57:04] INFO root fetch - processPackages [je-mail-thunder-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 07:57:04] INFO root fetch - processPackages [nautobot-circuit-maintenance]: New version: [1.0.0] Old Version: [0.6.2]
+[2023-05-29 07:57:04] INFO root fetch - processPackages [fenjing]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-29 07:57:04] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-29 07:57:04] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230529/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-29 07:57:04] INFO root fetch - processPackages [Pras-Server]: Downloading https://files.pythonhosted.org/packages/b5/3b/333104557ccfc27597d69cb86edf1a929a07d1e4865482a3631f34cea966/Pras_Server-1.1.0.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [yz-core2]: Downloading https://files.pythonhosted.org/packages/b6/38/d10b6c8b4f1678ed637020fbaa21db70d18e068717894ae8248f3611b60d/yz-core2-1.0.49.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [je-mail-thunder-dev]: Downloading https://files.pythonhosted.org/packages/d9/2d/666cfbe7457d16fd8f9c298e28fd54c3ff6c7a5cb10d6ebd6397b2764c96/je_mail_thunder_dev-0.0.8.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [nautobot-circuit-maintenance]: Downloading https://files.pythonhosted.org/packages/25/0c/6f98aa949e9248e6845c0dbc37288dd6a44557dc3950b560ab0e76b5d213/nautobot_circuit_maintenance-0.6.2.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [MyDataSort001]: Downloading https://files.pythonhosted.org/packages/cc/40/0049c76c86e18e29b0341dc5dfd41dc0f37c618e5a25b30126fa31ed8823/MyDataSort001-0.0.3-py3-none-any.whl
+[2023-05-29 07:57:04] INFO root fetch - processPackages [MyDataSort001]: executing diffoscope
+[2023-05-29 07:57:04] INFO root fetch - processPackages [MyDataSort001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyDataSort001-0.0.2-py3-none-any.whl.zip tmp/MyDataSort001-0.0.3-py3-none-any.whl.zip --markdown 20230529/M/MyDataSort001/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-29 07:57:04] INFO root fetch - processPackages [fenjing]: Downloading https://files.pythonhosted.org/packages/45/d8/a1892bd7aa8891f89d15dae701da2c5974332b67d80110cabceed3765743/fenjing-0.3.7.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [fenjing]: executing diffoscope
+[2023-05-29 07:57:04] INFO root fetch - processPackages [fenjing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenjing-0.3.6.tar.gz tmp/fenjing-0.3.7.tar.gz --markdown 20230529/f/fenjing/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-29 07:57:04] INFO root fetch - processPackages [yz-core2]: Downloading https://files.pythonhosted.org/packages/32/c2/de2584ebe77412dcd68db65cdce92e0a96c0044ee597c08b1034bc49e665/yz-core2-1.0.50.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [je-mail-thunder-dev]: Downloading https://files.pythonhosted.org/packages/50/83/96de4dcb88c3fe1000dbe2a57639ee261684eff5193860f20204d5850501/je_mail_thunder_dev-0.0.9.tar.gz
+[2023-05-29 07:57:04] INFO root fetch - processPackages [Pras-Server]: Downloading https://files.pythonhosted.org/packages/d5/ec/e5d7b8e5271343f4b45babb2d80e4f987f0e8e720b682c6db0d7471625ad/Pras_Server-1.1.14.tar.gz
+[2023-05-29 07:57:05] INFO root fetch - processPackages [nautobot-circuit-maintenance]: Downloading https://files.pythonhosted.org/packages/c5/34/fb72ee068958b797faea87e3e47e523a925f35be230128842f98a04feb8d/nautobot_circuit_maintenance-1.0.0.tar.gz
+[2023-05-29 07:57:05] INFO root fetch - processPackages [yz-core2]: executing diffoscope
+[2023-05-29 07:57:05] INFO root fetch - processPackages [yz-core2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yz-core2-1.0.49.tar.gz tmp/yz-core2-1.0.50.tar.gz --markdown 20230529/y/yz-core2/1.0.49-1.0.50/diff.md --exclude *.pyd
+[2023-05-29 07:57:05] INFO root fetch - processPackages [Pras-Server]: executing diffoscope
+[2023-05-29 07:57:05] INFO root fetch - processPackages [Pras-Server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pras_Server-1.1.0.tar.gz tmp/Pras_Server-1.1.14.tar.gz --markdown 20230529/P/Pras-Server/1.1.0-1.1.14/diff.md --exclude *.pyd
+[2023-05-29 07:57:05] INFO root fetch - processPackages [nautobot-circuit-maintenance]: executing diffoscope
+[2023-05-29 07:57:05] INFO root fetch - processPackages [nautobot-circuit-maintenance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautobot_circuit_maintenance-0.6.2.tar.gz tmp/nautobot_circuit_maintenance-1.0.0.tar.gz --markdown 20230529/n/nautobot-circuit-maintenance/0.6.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-29 07:57:05] INFO root fetch - processPackages [je-mail-thunder-dev]: executing diffoscope
+[2023-05-29 07:57:05] INFO root fetch - processPackages [je-mail-thunder-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_mail_thunder_dev-0.0.8.tar.gz tmp/je_mail_thunder_dev-0.0.9.tar.gz --markdown 20230529/j/je-mail-thunder-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 07:57:05] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-29 07:57:05] INFO root fetch - main [MainThread]: End processing [MyDataSort001]: success
+[2023-05-29 07:57:06] INFO root fetch - main [MainThread]: End processing [fenjing]: success
+[2023-05-29 07:57:06] INFO root fetch - main [MainThread]: End processing [je-mail-thunder-dev]: success
+[2023-05-29 07:57:06] INFO root fetch - main [MainThread]: End processing [Pras-Server]: success
+[2023-05-29 07:57:07] INFO root fetch - main [MainThread]: End processing [yz-core2]: success
+[2023-05-29 07:57:07] INFO root fetch - main [MainThread]: End processing [nautobot-circuit-maintenance]: success
+[2023-05-29 07:57:07] INFO root fetch - main [MainThread]: Store serial: [18286638]
