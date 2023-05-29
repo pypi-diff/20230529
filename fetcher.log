@@ -17195,3 +17195,83 @@ EOFError: EOF read where object expected
 [2023-05-29 22:14:16] INFO root fetch - main [MainThread]: End processing [micone]: success
 [2023-05-29 22:14:19] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-29 22:14:19] INFO root fetch - main [MainThread]: Store serial: [18294055]
+[2023-05-29 22:19:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18294055]
+[2023-05-29 22:19:28] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gs-apps
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auth-package
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: get-cli
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pveagle
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytmac
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chalkpy
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bfcm
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: maestral
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: relativedate
+[2023-05-29 22:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: baboo-game
+[2023-05-29 22:19:28] WARNING root fetch - processPackages [auth-package]: Skipping, unable to determine old version
+[2023-05-29 22:19:28] INFO root fetch - processPackages [auth-package]: Start processing: pveagledemo
+[2023-05-29 22:19:28] INFO root fetch - main [MainThread]: End processing [auth-package] error
+[2023-05-29 22:19:28] INFO root fetch - processPackages [baboo-game]: New version: [2.1.0] Old Version: [2.0.6]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [get-cli]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 22:19:28] WARNING root fetch - processPackages [pveagle]: Skipping, unable to determine old version
+[2023-05-29 22:19:28] INFO root fetch - processPackages [pveagle]: Start processing: get-cli
+[2023-05-29 22:19:28] INFO root fetch - main [MainThread]: End processing [pveagle] error
+[2023-05-29 22:19:28] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230529] Old Version: [0.22.0a20230528]
+[2023-05-29 22:19:28] WARNING root fetch - processPackages [pveagledemo]: Skipping, unable to determine old version
+[2023-05-29 22:19:28] INFO root fetch - processPackages [pveagledemo]: Start processing: dktoeasysqlite3
+[2023-05-29 22:19:28] INFO root fetch - main [MainThread]: End processing [pveagledemo] error
+[2023-05-29 22:19:28] INFO root fetch - processPackages [relativedate]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [pytmac]: New version: [3.6.0] Old Version: [3.5.1]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [bfcm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [maestral]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [get-cli]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [chalkpy]: New version: [2.4.5] Old Version: [2.4.4]
+[2023-05-29 22:19:28] WARNING root fetch - processPackages [dktoeasysqlite3]: Skipping, unable to determine old version
+[2023-05-29 22:19:28] INFO root fetch - processPackages [dktoeasysqlite3]: Start processing: tablebase
+[2023-05-29 22:19:28] INFO root fetch - main [MainThread]: End processing [dktoeasysqlite3] error
+[2023-05-29 22:19:28] INFO root fetch - processPackages [tablebase]: New version: [1.6.3] Old Version: [1.6.2]
+[2023-05-29 22:19:28] INFO root fetch - processPackages [bfcm]: executing diffoscope
+[2023-05-29 22:19:28] INFO root fetch - processPackages [bfcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfcm-0.0.8.tar.gz tmp/bfcm-0.0.9.tar.gz --markdown 20230529/b/bfcm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-29 22:19:28] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2023-05-29 22:19:28] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.7.3.dev3.tar.gz tmp/maestral-1.7.3.dev4.tar.gz --markdown 20230529/m/maestral/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-29 22:19:28] INFO root fetch - processPackages [get-cli]: Downloading https://files.pythonhosted.org/packages/af/ff/423d099dd793a4bde2d8f414f8e617352b5b7be23b2296ff912776d772ea/get_cli-0.1.3.tar.gz
+[2023-05-29 22:19:28] INFO root fetch - processPackages [get-cli]: Downloading https://files.pythonhosted.org/packages/af/ff/423d099dd793a4bde2d8f414f8e617352b5b7be23b2296ff912776d772ea/get_cli-0.1.3.tar.gz
+[2023-05-29 22:19:28] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/e5/a7/30d3e9cbeccfcfd02b3c202b33bf9fa55bddeb2b888324a3d85b134a2da5/gs_apps-0.22.0a20230528-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-29 22:19:28] INFO root fetch - processPackages [baboo-game]: Downloading https://files.pythonhosted.org/packages/0e/30/805b8d068b872047e1d5858301174e8afeaa226071d0754b877eb562d704/baboo_game-2.1.0.tar.gz
+[2023-05-29 22:19:28] INFO root fetch - processPackages [relativedate]: Downloading https://files.pythonhosted.org/packages/20/36/b75810e9d3206801d958f51ef05c65110c0af43b9a93466e309225e8307e/relativedate-1.3.1.tar.gz
+[2023-05-29 22:19:29] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/3b/e0/9bd11955b1940ce2a8492026ea5bd60fe589abb06a84c5898884ad4ee661/chalkpy-2.4.5.tar.gz
+[2023-05-29 22:19:29] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47797585>=10485760
+[2023-05-29 22:19:29] INFO root fetch - processPackages [gs-apps]: Start processing: maestral-cocoa
+[2023-05-29 22:19:29] INFO root fetch - processPackages [pytmac]: Downloading https://files.pythonhosted.org/packages/51/fc/080ae9a1ce01220680ad260317e17cd98d2360449fbdca65a5a8157e7106/pytmac-3.6.0.tar.gz
+[2023-05-29 22:19:29] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-05-29 22:19:29] INFO root fetch - processPackages [maestral-cocoa]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-29 22:19:29] INFO root fetch - processPackages [pytmac]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [pytmac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmac-3.5.1.tar.gz tmp/pytmac-3.6.0.tar.gz --markdown 20230529/p/pytmac/3.5.1-3.6.0/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [maestral-cocoa]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [maestral-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-cocoa-1.7.3.dev3.tar.gz tmp/maestral-cocoa-1.7.3.dev4.tar.gz --markdown 20230529/m/maestral-cocoa/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [baboo-game]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [baboo-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baboo_game-2.0.6.tar.gz tmp/baboo_game-2.1.0.tar.gz --markdown 20230529/b/baboo-game/2.0.6-2.1.0/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [get-cli]: Downloading https://files.pythonhosted.org/packages/1d/25/852acd42fe7210a1bd58fc99ee0738c1b8b33c83f508503e1c3ee4987a8f/get_cli-0.1.4.tar.gz
+[2023-05-29 22:19:29] INFO root fetch - processPackages [get-cli]: Downloading https://files.pythonhosted.org/packages/1d/25/852acd42fe7210a1bd58fc99ee0738c1b8b33c83f508503e1c3ee4987a8f/get_cli-0.1.4.tar.gz
+[2023-05-29 22:19:29] INFO root fetch - processPackages [tablebase]: Downloading https://files.pythonhosted.org/packages/ce/1c/e0a7d8b0a6b89bc61ef7be8d780b5508fc92dcd10b6aec985fa87bc9b0bc/tablebase-1.6.3.tar.gz
+[2023-05-29 22:19:29] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.4.4.tar.gz tmp/chalkpy-2.4.5.tar.gz --markdown 20230529/c/chalkpy/2.4.4-2.4.5/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [relativedate]: Downloading https://files.pythonhosted.org/packages/6d/8e/5ed858f620b219dd189ac8b76ffd1435cbb2e44ea891a618b5a4ec981a6d/relativedate-1.3.2.tar.gz
+[2023-05-29 22:19:29] INFO root fetch - processPackages [get-cli]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [get-cli]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [get-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_cli-0.1.3.tar.gz tmp/get_cli-0.1.4.tar.gz --markdown 20230529/g/get-cli/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [get-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_cli-0.1.3.tar.gz tmp/get_cli-0.1.4.tar.gz --markdown 20230529/g/get-cli/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [tablebase]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [tablebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablebase-1.6.2.tar.gz tmp/tablebase-1.6.3.tar.gz --markdown 20230529/t/tablebase/1.6.2-1.6.3/diff.md --exclude *.pyd
+[2023-05-29 22:19:29] INFO root fetch - processPackages [relativedate]: executing diffoscope
+[2023-05-29 22:19:29] INFO root fetch - processPackages [relativedate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230529:/home/abi/fetcher/20230529:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relativedate-1.3.1.tar.gz tmp/relativedate-1.3.2.tar.gz --markdown 20230529/r/relativedate/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-29 22:19:30] INFO root fetch - main [MainThread]: End processing [bfcm]: success
+[2023-05-29 22:19:30] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2023-05-29 22:19:30] INFO root fetch - main [MainThread]: End processing [baboo-game]: success
+[2023-05-29 22:19:31] INFO root fetch - main [MainThread]: End processing [get-cli]: success
+[2023-05-29 22:19:31] INFO root fetch - main [MainThread]: End processing [pytmac]: success
+[2023-05-29 22:19:31] INFO root fetch - main [MainThread]: End processing [relativedate]: success
+[2023-05-29 22:19:31] INFO root fetch - main [MainThread]: End processing [tablebase]: success
+[2023-05-29 22:19:31] INFO root fetch - main [MainThread]: End processing [get-cli]: success
+[2023-05-29 22:19:32] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
+[2023-05-29 22:19:34] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-29 22:19:34] INFO root fetch - main [MainThread]: Store serial: [18294111]
